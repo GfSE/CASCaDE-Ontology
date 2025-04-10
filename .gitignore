@@ -1,1 +1,4 @@
 **/*.bak
+
+# Ignore VisualStudio files
+.vs

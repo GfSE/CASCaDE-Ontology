@@ -1,0 +1,18 @@
+body { margin-top:2%; margin-right:2%; margin-bottom:2%; margin-left:2%; font-family:Arial,sans-serif; font-size:100%; font-weight: normal; } 
+div.max-width-md { max-width: 768px; margin: auto; } 
+div.max-width-lg { max-width: 992px; margin: auto; } 
+div, p { margin: 0.6em 0em 0em 0em; } 
+div.title { font-size:200%; margin-top:2.4rem } 
+ul { padding-left: 1.2rem; } 
+.inline-label { font-size: 90%; font-style: italic; margin-top:0.9em; } 
+p.metaTitle { color: #0071B9; font-size: NaN; margin-top:0.9em; } 
+a { color: #0071B9; } 
+table.propertyTable, table.statementTable { color: #0071B9; width:100%; border-top: 1px solid #DDDDDD; border-collapse:collapse; margin: 0.6em 0em 0em 0em; padding: 0;} 
+table.propertyTable td, table.statementTable td { font-size: 90%; border-bottom:  1px solid #DDDDDD; border-collapse:collapse; margin: 0; padding: 0em 0.2em 0em 0.2em; } 
+td.propertyTitle, td.statementTitle { font-style: italic; } 
+table.stdInlineWithBorder, table.doors-table { width:100%; border: 1px solid #DDDDDD; border-collapse:collapse; vertical-align:top; margin: 0; padding: 0; } 
+table.stdInlineWithBorder th, table.stdInlineWithBorder td, table.doors-table th, table.doors-table td { border: 1px solid  #DDDDDD; margin: 0; padding: 0 0.1em 0 0.1em; font-size: 90% } 
+h4 { font-family:Arial,sans-serif; font-size:120%; font-weight: normal; margin: 0.9rem 0em 0em 0em; page-break-after: avoid; } 
+h3 { font-family:Arial,sans-serif; font-size:140%; font-weight: normal; margin: 1.2rem 0em 0em 0em; page-break-after: avoid; } 
+h2 { font-family:Arial,sans-serif; font-size:160%; font-weight: normal; margin: 1.8rem 0em 0em 0em; page-break-after: avoid; } 
+h1 { font-family:Arial,sans-serif; font-size:180%; font-weight: normal; margin: 2.4rem 0em 0em 0em; page-break-after: avoid; } 

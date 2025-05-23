@@ -1,0 +1,2077 @@
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix W3C: <https://www.w3.org/standards/semanticweb#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix schema: <https://schema.org#> .
+@prefix iana: <https://www.iana.org/assignments/media-types#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix FMC: <http://fmc-modeling.org#> .
+@prefix IR: <https://www.adesso.de/de/impulse/interaction-room/index.jsp#> .
+@prefix IREB: <https://www.ireb.org/en/downloads/#cpre-glossary> .
+@prefix ReqIF: <https://www.prostep.org/fileadmin/downloads/PSI_ImplementationGuide_ReqIF_V1-7.pdf#> .
+@prefix ReqIF-WF: <https://www.prostep.org/fileadmin/downloads/Recommendation_ReqIF_V2_RZ3.pdf#> .
+@prefix HIS: <https://www.itwissen.info/Herstellerinitiative-Software-Automotive-HIS.html#> .
+@prefix oslc: <http://open-services.net/ns/core#> .
+@prefix oslc_rm: <http://open-services.net/ns/rm#> .
+@prefix oslc_cm: <http://open-services.net/ns/cm#> .
+@prefix ArchiMate: <https://pubs.opengroup.org#> .
+@prefix bpmn: <https://www.bpmn.org/#> .
+@prefix uml: <https://www.omg.org/spec/UML#> .
+@prefix sysml: <https://www.omg.org/spec/SysML#> .
+@prefix pig: <https://cascade.gfse.org/results#> .
+@prefix DDP: <http://www.prostep.org/dictionary/2.0#> .
+@prefix SpecIF: <https://specif.de/v1.1/schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+@prefix : <https://specif.de/examples/SpecIF_Classes_for_Ontology.specif.zip/> .
+
+#################################################################
+# Project Metadata
+#################################################################
+
+:
+	a owl:Ontology ;
+	rdfs:label "SpecIF Classes for Ontology" ;
+	rdfs:comment "<p>A set of SpecIF Classes derived from a SpecIF Ontology for the domain SpecIF:DomainOntology.</p>" ;
+	owl:imports <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ,
+		<http://www.w3.org/2000/01/rdf-schema#> .
+
+#################################################################
+# Data Types with Enumerated Values
+#################################################################
+
+:DT-TermStatus
+	a owl:Class ;
+	rdfs:label "SpecIF:TermStatus" ;
+	rdfs:comment "Text string with enumerated values for SpecIF:TermStatus" ;
+	dcterms:modified "2023-08-15T07:44:22.466Z" ;
+	owl:oneOf ( :V-TermStatus-16 :V-TermStatus-12 :V-TermStatus-50 :V-TermStatus-48 :V-TermStatus-90 ) .
+:V-TermStatus-16
+	a :DT-TermStatus ;
+	rdfs:label "SpecIF:LifecycleStatusExperimental" .
+:V-TermStatus-12
+	a :DT-TermStatus ;
+	rdfs:label "SpecIF:LifecycleStatusSubmitted" .
+:V-TermStatus-50
+	a :DT-TermStatus ;
+	rdfs:label "SpecIF:LifecycleStatusReleased" .
+:V-TermStatus-48
+	a :DT-TermStatus ;
+	rdfs:label "SpecIF:LifecycleStatusEquivalent" .
+:V-TermStatus-90
+	a :DT-TermStatus ;
+	rdfs:label "SpecIF:LifecycleStatusDeprecated" .
+
+:DT-Domain
+	a owl:Class ;
+	rdfs:label "SpecIF:Domain" ;
+	rdfs:comment "Text string with enumerated values for SpecIF:Domain" ;
+	dcterms:modified "2024-03-07T14:12:37.693Z" ;
+	owl:oneOf ( :V-Domain-00 :V-Domain-10 :V-Domain-16 :V-Domain-20 :V-Domain-44 :V-Domain-26 :V-Domain-30 :V-Domain-42 :V-Domain-40 :V-Domain-46 :V-Domain-80 :V-Domain-99 ) .
+:V-Domain-00
+	a :DT-Domain ;
+	rdfs:label "SpecIF:DomainBase" .
+:V-Domain-10
+	a :DT-Domain ;
+	rdfs:label "SpecIF:DomainRequirementsEngineering" .
+:V-Domain-16
+	a :DT-Domain ;
+	rdfs:label "SpecIF:DomainRequirementsEngineeringSRC" .
+:V-Domain-20
+	a :DT-Domain ;
+	rdfs:label "SpecIF:DomainSystemsEngineering" .
+:V-Domain-44
+	a :DT-Domain ;
+	rdfs:label "SpecIF:DomainSystemTesting" .
+:V-Domain-26
+	a :DT-Domain ;
+	rdfs:label "SpecIF:DomainSystemModelIntegration" .
+:V-Domain-30
+	a :DT-Domain ;
+	rdfs:label "SpecIF:DomainVariantManagement" .
+:V-Domain-42
+	a :DT-Domain ;
+	rdfs:label "SpecIF:DomainIssueManagement" .
+:V-Domain-40
+	a :DT-Domain ;
+	rdfs:label "SpecIF:DomainAgileSystemDevelopment" .
+:V-Domain-46
+	a :DT-Domain ;
+	rdfs:label "SpecIF:DomainProductLifecycleManagement" .
+:V-Domain-80
+	a :DT-Domain ;
+	rdfs:label "SpecIF:DomainOntology" .
+:V-Domain-99
+	a :DT-Domain ;
+	rdfs:label "SpecIF:DomainOther" .
+
+:DT-TextFormat
+	a owl:Class ;
+	rdfs:label "SpecIF:TextFormat" ;
+	rdfs:comment "Text string with enumerated values for SpecIF:TextFormat" ;
+	dcterms:modified "2024-03-02T22:10:28.074Z" ;
+	owl:oneOf ( :V-TextFormat-10 :V-TextFormat-20 ) .
+:V-TextFormat-10
+	a :DT-TextFormat ;
+	rdfs:label "SpecIF:TextFormatPlain" .
+:V-TextFormat-20
+	a :DT-TextFormat ;
+	rdfs:label "SpecIF:TextFormatXhtml" .
+
+:DT-Instantiation
+	a owl:Class ;
+	rdfs:label "SpecIF:Instantiation" ;
+	rdfs:comment "Text string with enumerated values for SpecIF:Instantiation" ;
+	dcterms:modified "2024-03-02T22:01:52.908Z" ;
+	owl:oneOf ( :V-Instantiation-10 :V-Instantiation-20 ) .
+:V-Instantiation-10
+	a :DT-Instantiation ;
+	rdfs:label "SpecIF:InstantiationAuto" .
+:V-Instantiation-20
+	a :DT-Instantiation ;
+	rdfs:label "SpecIF:InstantiationUser" .
+
+#################################################################
+# Property Classes
+#################################################################
+
+SpecIF:Term
+	a owl:DatatypeProperty ;
+	rdfs:comment "A name given to an ontology term." .
+
+:PC-SpecifTerm-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-SpecifTerm ;
+	sh:datatype xsd:string ;
+	sh:maxLength "256" ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-SpecifTerm
+	owl:subPropertyOf SpecIF:Term ;
+	rdfs:label "SpecIF:Term" ;
+	rdfs:comment "A name given to an ontology term." ;
+	dcterms:modified "2025-03-06T15:03:26.959Z" .
+
+SpecIF:Index
+	a owl:DatatypeProperty .
+
+:PC-SpecifIndex-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-SpecifIndex ;
+	sh:datatype xsd:integer ;
+	sh:maxInclusive "2147483647" ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-SpecifIndex
+	owl:subPropertyOf SpecIF:Index ;
+	rdfs:label "SpecIF:Index" ;
+	dcterms:modified "2024-03-03T22:41:16.834Z" .
+
+# No shape yet for propertyClass with enumerated dataType: PC-TermStatus
+
+:PC-TermStatus
+	a owl:ObjectProperty ;
+	rdfs:label "SpecIF:TermStatus" ;
+	rdfs:comment "The lifecycle status of the ontology term." ;
+	dcterms:modified "2023-08-15T07:44:22.466Z" .
+
+# No shape yet for propertyClass with enumerated dataType: PC-Domain
+
+:PC-Domain
+	a owl:ObjectProperty ;
+	rdfs:label "SpecIF:Domain" ;
+	dcterms:modified "2024-03-07T14:12:37.693Z" .
+
+SpecIF:LocalTerm
+	a owl:DatatypeProperty ;
+	rdfs:comment "<p>A name of the resource used in one or more national languages. Multiple values can be defined so that different local terms can be transformed ('globalized') to the ontology term.</p>" .
+
+:PC-SpecifLocalterm-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-SpecifLocalterm ;
+	sh:datatype xsd:string ;
+	sh:maxLength "256" .
+
+:PC-SpecifLocalterm
+	owl:subPropertyOf SpecIF:LocalTerm ;
+	rdfs:label "SpecIF:LocalTerm" ;
+	rdfs:comment "<p>A name of the resource used in one or more national languages. Multiple values can be defined so that different local terms can be transformed ('globalized') to the ontology term.</p>" ;
+	dcterms:modified "2023-05-30T06:06:45.673Z" .
+
+SpecIF:LocalTermPlural
+	a owl:DatatypeProperty ;
+	rdfs:comment "<p>A name of the resource in plural form used in one or more national languages. Multiple values can be defined so that different local terms can be transformed ('globalized') to the ontology term.</p>" .
+
+:PC-SpecifLocaltermplural-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-SpecifLocaltermplural ;
+	sh:datatype xsd:string ;
+	sh:maxLength "256" .
+
+:PC-SpecifLocaltermplural
+	owl:subPropertyOf SpecIF:LocalTermPlural ;
+	rdfs:label "SpecIF:LocalTermPlural" ;
+	rdfs:comment "<p>A name of the resource in plural form used in one or more national languages. Multiple values can be defined so that different local terms can be transformed ('globalized') to the ontology term.</p>" ;
+	dcterms:modified "2023-06-08T14:59:00.821Z" .
+
+SpecIF:multiple
+	a owl:DatatypeProperty ;
+	rdfs:comment "The property may have multiple values; by default, it is 'false'." .
+
+:PC-multiple-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-multiple ;
+	sh:datatype xsd:boolean ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-multiple
+	owl:subPropertyOf SpecIF:multiple ;
+	rdfs:label "SpecIF:multiple" ;
+	rdfs:comment "The property may have multiple values; by default, it is 'false'." ;
+	dcterms:modified "2024-03-02T22:06:09.801Z" .
+
+SpecIF:singleLanguage
+	a owl:DatatypeProperty ;
+	rdfs:comment "A property value must not have more than a single languages; by default, it is 'false'." .
+
+:PC-singleLanguage-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-singleLanguage ;
+	sh:datatype xsd:boolean ;
+	sh:maxCount "1" .
+
+:PC-singleLanguage
+	owl:subPropertyOf SpecIF:singleLanguage ;
+	rdfs:label "SpecIF:singleLanguage" ;
+	rdfs:comment "A property value must not have more than a single languages; by default, it is 'false'." ;
+	dcterms:modified "2023-07-17T09:02:33.088Z" .
+
+SpecIF:isHeading
+	a owl:DatatypeProperty ;
+	rdfs:comment "Indicates whether the resource is a heading, e.g. for adding automatic numbering or influencing the display size." .
+
+:PC-isHeading-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-isHeading ;
+	sh:datatype xsd:boolean ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-isHeading
+	owl:subPropertyOf SpecIF:isHeading ;
+	rdfs:label "SpecIF:isHeading" ;
+	rdfs:comment "Indicates whether the resource is a heading, e.g. for adding automatic numbering or influencing the display size." ;
+	dcterms:modified "2024-03-02T22:01:00.714Z" .
+
+SpecIF:isUndirected
+	a owl:DatatypeProperty ;
+	rdfs:comment "Indicates whether the statement is undirected, i.e. whether is can be reversed without change in meaning. A typical example is [[SpecIF:isSynonymOf]]." .
+
+:PC-isUndirected-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-isUndirected ;
+	sh:datatype xsd:boolean ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-isUndirected
+	owl:subPropertyOf SpecIF:isUndirected ;
+	rdfs:label "SpecIF:isUndirected" ;
+	rdfs:comment "Indicates whether the statement is undirected, i.e. whether is can be reversed without change in meaning. A typical example is [[SpecIF:isSynonymOf]]." ;
+	dcterms:modified "2024-03-02T22:03:47.278Z" .
+
+SpecIF:isRequired
+	a owl:DatatypeProperty ;
+	rdfs:comment "Indicates whether the property is required." .
+
+:PC-isRequired-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-isRequired ;
+	sh:datatype xsd:boolean ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-isRequired
+	owl:subPropertyOf SpecIF:isRequired ;
+	rdfs:label "SpecIF:isRequired" ;
+	rdfs:comment "Indicates whether the property is required." ;
+	dcterms:modified "2024-03-02T22:05:38.943Z" .
+
+SpecIF:DefaultValueString
+	a owl:DatatypeProperty ;
+	rdfs:comment "Default values for a property of type 'string' with multiple languages." .
+
+:PC-DefaultValueString-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-DefaultValueString ;
+	sh:datatype xsd:string ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-DefaultValueString
+	owl:subPropertyOf SpecIF:DefaultValueString ;
+	rdfs:label "SpecIF:DefaultValueString" ;
+	rdfs:comment "Default values for a property of type 'string' with multiple languages." ;
+	dcterms:modified "2024-03-09T16:40:46.254Z" .
+
+SpecIF:DefaultValueBoolean
+	a owl:DatatypeProperty ;
+	rdfs:comment "Default values for a property of type 'boolean'." .
+
+:PC-DefaultValueBoolean-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-DefaultValueBoolean ;
+	sh:datatype xsd:boolean ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-DefaultValueBoolean
+	owl:subPropertyOf SpecIF:DefaultValueBoolean ;
+	rdfs:label "SpecIF:DefaultValueBoolean" ;
+	rdfs:comment "Default values for a property of type 'boolean'." ;
+	dcterms:modified "2024-03-09T16:41:14.412Z" .
+
+SpecIF:DefaultValueInteger
+	a owl:DatatypeProperty ;
+	rdfs:comment "Default values for a property of type 'integer'." .
+
+:PC-DefaultValueInteger-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-DefaultValueInteger ;
+	sh:datatype xsd:integer ;
+	sh:minInclusive "-2147483648" ;
+	sh:maxInclusive "2147483647" ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-DefaultValueInteger
+	owl:subPropertyOf SpecIF:DefaultValueInteger ;
+	rdfs:label "SpecIF:DefaultValueInteger" ;
+	rdfs:comment "Default values for a property of type 'integer'." ;
+	dcterms:modified "2024-03-09T16:42:03.842Z" .
+
+SpecIF:DefaultValueReal
+	a owl:DatatypeProperty ;
+	rdfs:comment "Default values for a property of type 'real'." .
+
+:PC-DefaultValueReal-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-DefaultValueReal ;
+	sh:datatype xsd:double ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-DefaultValueReal
+	owl:subPropertyOf SpecIF:DefaultValueReal ;
+	rdfs:label "SpecIF:DefaultValueReal" ;
+	rdfs:comment "Default values for a property of type 'real'." ;
+	dcterms:modified "2024-03-09T16:42:51.434Z" .
+
+SpecIF:DefaultValueTimestamp
+	a owl:DatatypeProperty ;
+	rdfs:comment "Default values for a property of type 'dateTime'." .
+
+:PC-DefaultValueTimestamp-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-DefaultValueTimestamp ;
+	sh:datatype xsd:dateTime ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-DefaultValueTimestamp
+	owl:subPropertyOf SpecIF:DefaultValueTimestamp ;
+	rdfs:label "SpecIF:DefaultValueTimestamp" ;
+	rdfs:comment "Default values for a property of type 'dateTime'." ;
+	dcterms:modified "2024-03-09T16:43:30.859Z" .
+
+SpecIF:DefaultValueDuration
+	a owl:DatatypeProperty ;
+	rdfs:comment "Default values for a property of type 'duration'." .
+
+:PC-DefaultValueDuration-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-DefaultValueDuration ;
+	sh:datatype xsd:duration ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-DefaultValueDuration
+	owl:subPropertyOf SpecIF:DefaultValueDuration ;
+	rdfs:label "SpecIF:DefaultValueDuration" ;
+	rdfs:comment "Default values for a property of type 'duration'." ;
+	dcterms:modified "2024-03-09T16:44:15.549Z" .
+
+# No shape yet for propertyClass with enumerated dataType: PC-TextFormat
+
+:PC-TextFormat
+	a owl:ObjectProperty ;
+	rdfs:label "SpecIF:TextFormat" ;
+	rdfs:comment "The type of formatting, plain or XHTML." ;
+	dcterms:modified "2024-03-02T22:10:28.074Z" .
+
+SpecIF:StringMaxLength
+	a owl:DatatypeProperty ;
+	rdfs:comment "Maximum length of a string value." .
+
+:PC-StringMaxLength-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-StringMaxLength ;
+	sh:datatype xsd:integer ;
+	sh:maxInclusive "2147483647" ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-StringMaxLength
+	owl:subPropertyOf SpecIF:StringMaxLength ;
+	rdfs:label "SpecIF:StringMaxLength" ;
+	rdfs:comment "Maximum length of a string value." ;
+	dcterms:modified "2024-03-02T22:14:20.706Z" .
+
+SpecIF:IntegerMinInclusive
+	a owl:DatatypeProperty ;
+	rdfs:comment "Inclusive minimum of an integer value." .
+
+:PC-IntegerMinInclusive-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-IntegerMinInclusive ;
+	sh:datatype xsd:integer ;
+	sh:minInclusive "-2147483648" ;
+	sh:maxInclusive "2147483647" ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-IntegerMinInclusive
+	owl:subPropertyOf SpecIF:IntegerMinInclusive ;
+	rdfs:label "SpecIF:IntegerMinInclusive" ;
+	rdfs:comment "Inclusive minimum of an integer value." ;
+	dcterms:modified "2024-03-02T22:14:50.363Z" .
+
+SpecIF:IntegerMaxInclusive
+	a owl:DatatypeProperty ;
+	rdfs:comment "Inclusive maximum of an integer value." .
+
+:PC-IntegerMaxInclusive-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-IntegerMaxInclusive ;
+	sh:datatype xsd:integer ;
+	sh:minInclusive "-2147483648" ;
+	sh:maxInclusive "2147483647" ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-IntegerMaxInclusive
+	owl:subPropertyOf SpecIF:IntegerMaxInclusive ;
+	rdfs:label "SpecIF:IntegerMaxInclusive" ;
+	rdfs:comment "Inclusive maximum of an integer value." ;
+	dcterms:modified "2024-03-02T22:15:08.810Z" .
+
+dcterms:title
+	a owl:DatatypeProperty ;
+	rdfs:comment "<p>A name given to the resource. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/title\">DCMI</a></i>)</small></p><p>Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML 'span' element. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>" .
+
+:PC-Name-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-Name ;
+	sh:datatype xsd:string ;
+	sh:maxLength "256" ;
+	sh:maxCount "1" .
+
+:PC-Name
+	owl:subPropertyOf dcterms:title ;
+	rdfs:label "dcterms:title" ;
+	rdfs:comment "<p>A name given to the resource. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/title\">DCMI</a></i>)</small></p><p>Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML 'span' element. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>" ;
+	dcterms:modified "2023-05-22T22:51:56.698Z" .
+
+dcterms:description
+	a owl:DatatypeProperty ;
+	rdfs:comment "<p>An account of the resource. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/description\">DCMI</a></i>)</small></p><p>Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML 'div' element. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>" .
+
+:PC-Description-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-Description ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1" .
+
+:PC-Description
+	owl:subPropertyOf dcterms:description ;
+	rdfs:label "dcterms:description" ;
+	rdfs:comment "<p>An account of the resource. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/description\">DCMI</a></i>)</small></p><p>Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML 'div' element. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>" ;
+	dcterms:modified "2023-05-22T22:54:51.783Z" .
+
+SpecIF:Diagram
+	a owl:DatatypeProperty ;
+	rdfs:comment "One or more diagrams illustrating the resource." .
+
+:PC-Diagram-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-Diagram ;
+	sh:datatype xsd:string .
+
+:PC-Diagram
+	owl:subPropertyOf SpecIF:Diagram ;
+	rdfs:label "SpecIF:Diagram" ;
+	rdfs:comment "One or more diagrams illustrating the resource." ;
+	dcterms:modified "2023-02-26T14:40:17.601Z" .
+
+dcterms:type
+	a owl:DatatypeProperty ;
+	rdfs:comment "<p>The nature or genre of the resource. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/type\">DCMI</a></i>)</small></p><p>Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.</p><p>For example, a [[FMC:Actor]] may represent a <i>System Function</i>, a <i>System Component</i> or a <i>User Role</i>. Similarly, in the context of process modelling, a FMC:Actor may represent a <i>Process Step</i> or again a <i>User Role</i>. So, all of these are meaningful values for a FMC:Actor's property named dcterms:type.</p>" .
+
+:PC-Type-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-Type ;
+	sh:datatype xsd:string ;
+	sh:maxLength "32" ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-Type
+	owl:subPropertyOf dcterms:type ;
+	rdfs:label "dcterms:type" ;
+	rdfs:comment "<p>The nature or genre of the resource. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/type\">DCMI</a></i>)</small></p><p>Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.</p><p>For example, a [[FMC:Actor]] may represent a <i>System Function</i>, a <i>System Component</i> or a <i>User Role</i>. Similarly, in the context of process modelling, a FMC:Actor may represent a <i>Process Step</i> or again a <i>User Role</i>. So, all of these are meaningful values for a FMC:Actor's property named dcterms:type.</p>" ;
+	dcterms:modified "2025-03-06T15:04:02.280Z" .
+
+SpecIF:Origin
+	a owl:DatatypeProperty ;
+	rdfs:comment "The origin (source, reference) of an information or requirement" .
+
+:PC-SpecifOrigin-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-SpecifOrigin ;
+	sh:datatype xsd:string ;
+	sh:maxLength "256" .
+
+:PC-SpecifOrigin
+	owl:subPropertyOf SpecIF:Origin ;
+	rdfs:label "SpecIF:Origin" ;
+	rdfs:comment "The origin (source, reference) of an information or requirement" ;
+	dcterms:modified "2018-02-17T14:52:03+01:00" .
+
+dcterms:identifier
+	a owl:DatatypeProperty ;
+	rdfs:comment "<p>A unique reference to the resource within a given context. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/identifier\">DCMI</a></i>)</small></p><p>An identifier for a resource. This identifier may be unique with a scope that is defined by the RM provider. Assigned by the service provider when a resource is created. Not intended for end-user display. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>" .
+
+:PC-VisibleId-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-VisibleId ;
+	sh:datatype xsd:string ;
+	sh:maxLength "256" ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-VisibleId
+	owl:subPropertyOf dcterms:identifier ;
+	rdfs:label "dcterms:identifier" ;
+	rdfs:comment "<p>A unique reference to the resource within a given context. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/identifier\">DCMI</a></i>)</small></p><p>An identifier for a resource. This identifier may be unique with a scope that is defined by the RM provider. Assigned by the service provider when a resource is created. Not intended for end-user display. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>" ;
+	dcterms:modified "2025-03-06T15:02:55.574Z" .
+
+SpecIF:Revision
+	a owl:DatatypeProperty .
+
+:PC-SpecifRevision-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-SpecifRevision ;
+	sh:datatype xsd:string ;
+	sh:maxLength "32" ;
+	sh:maxCount "1" .
+
+:PC-SpecifRevision
+	owl:subPropertyOf SpecIF:Revision ;
+	rdfs:label "SpecIF:Revision" ;
+	dcterms:modified "2023-06-20T14:31:22.597Z" .
+
+SpecIF:Icon
+	a owl:DatatypeProperty ;
+	rdfs:comment "A symbol or icon for display as a prefix to titles; applicable to all instances of the class. Is usually a XML-encoded UTF-8 symbol, can be an URL or dataURL." .
+
+:PC-Icon-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-Icon ;
+	sh:datatype xsd:string ;
+	sh:maxLength "256" ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-Icon
+	owl:subPropertyOf SpecIF:Icon ;
+	rdfs:label "SpecIF:Icon" ;
+	rdfs:comment "A symbol or icon for display as a prefix to titles; applicable to all instances of the class. Is usually a XML-encoded UTF-8 symbol, can be an URL or dataURL." ;
+	dcterms:modified "2024-03-02T22:01:23.453Z" .
+
+# No shape yet for propertyClass with enumerated dataType: PC-Instantiation
+
+:PC-Instantiation
+	a owl:ObjectProperty ;
+	rdfs:label "SpecIF:Instantiation" ;
+	rdfs:comment "Indicates whether an instance of the class is created automatically, manually or both. Manual *and* automatic instantiation is allowed, if the property is omitted. The class is abstract and cannot be instantiated, if the property list is present, but empty.
+-'user': a user creates, updates and deletes a resource's instance manually.
+-'auto': a resource's instance is created, updated or deleted by an algorithm." ;
+	dcterms:modified "2024-03-02T22:01:52.908Z" .
+
+SpecIF:Unit
+	a owl:DatatypeProperty ;
+	rdfs:comment "The unit of a property's numeric value; preferably an SI unit symbol such as 'm^3/kg' (Système international (d'unités)) or a currency symbol." .
+
+:PC-Unit-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-Unit ;
+	sh:datatype xsd:string ;
+	sh:maxLength "32" ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-Unit
+	owl:subPropertyOf SpecIF:Unit ;
+	rdfs:label "SpecIF:Unit" ;
+	rdfs:comment "The unit of a property's numeric value; preferably an SI unit symbol such as 'm^3/kg' (Système international (d'unités)) or a currency symbol." ;
+	dcterms:modified "2024-03-02T22:12:47.853Z" .
+
+SpecIF:RealMinInclusive
+	a owl:DatatypeProperty ;
+	rdfs:comment "Inclusive minimum of a real value." .
+
+:PC-RealMinInclusive-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-RealMinInclusive ;
+	sh:datatype xsd:double ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-RealMinInclusive
+	owl:subPropertyOf SpecIF:RealMinInclusive ;
+	rdfs:label "SpecIF:RealMinInclusive" ;
+	rdfs:comment "Inclusive minimum of a real value." ;
+	dcterms:modified "2024-03-02T22:15:25.706Z" .
+
+SpecIF:RealMaxInclusive
+	a owl:DatatypeProperty ;
+	rdfs:comment "Inclusive maximum of a real value." .
+
+:PC-RealMaxInclusive-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-RealMaxInclusive ;
+	sh:datatype xsd:double ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-RealMaxInclusive
+	owl:subPropertyOf SpecIF:RealMaxInclusive ;
+	rdfs:label "SpecIF:RealMaxInclusive" ;
+	rdfs:comment "Inclusive maximum of a real value." ;
+	dcterms:modified "2024-03-02T22:15:40.742Z" .
+
+SpecIF:RealFractionDigits
+	a owl:DatatypeProperty ;
+	rdfs:comment "Max. count of decimals of a real number." .
+
+:PC-RealFractionDigits-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-RealFractionDigits ;
+	sh:datatype xsd:integer ;
+	sh:maxInclusive "2147483647" ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-RealFractionDigits
+	owl:subPropertyOf SpecIF:RealFractionDigits ;
+	rdfs:label "SpecIF:RealFractionDigits" ;
+	rdfs:comment "Max. count of decimals of a real number." ;
+	dcterms:modified "2024-03-09T22:57:28.819Z" .
+
+SpecIF:DefaultValueAnyURI
+	a owl:DatatypeProperty ;
+	rdfs:comment "Default values for a property of type 'anyURI'." .
+
+:PC-DefaultValueAnyURI-Shape
+	a sh:PropertyShape ;
+	sh:path :PC-DefaultValueAnyURI ;
+	sh:datatype xsd:anyURI ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:PC-DefaultValueAnyURI
+	owl:subPropertyOf SpecIF:DefaultValueAnyURI ;
+	rdfs:label "SpecIF:DefaultValueAnyURI" ;
+	rdfs:comment "Default values for a property of type 'anyURI'." ;
+	dcterms:modified "2024-03-09T22:08:47.379Z" .
+
+#################################################################
+# Resource Classes
+#################################################################
+
+pig:OrganizerClass
+	a owl:Class .
+
+pig:EntityClass
+	a owl:Class .
+
+SpecIF:Paragraph
+	a owl:Class ;
+	rdfs:comment "<p>Ein 'Textabschnitt' in einem Dokument auf beliebiger Ebene.</p>" .
+
+:RC-Paragraph-Shape
+	a sh:NodeShape ;
+	sh:targetClass :RC-Paragraph ;
+	sh:property :PC-Name-Shape ;
+	sh:property :PC-Description-Shape ;
+	sh:property :PC-Diagram-Shape ;
+	sh:property :PC-Type-Shape .
+
+:RC-Paragraph
+	owl:subClassOf SpecIF:Paragraph ;
+	rdfs:label "SpecIF:Paragraph" ;
+	rdfs:comment "<p>A 'Paragraph' is an unspecified information in a document at any level.</p>" ;
+	dcterms:modified "2023-07-16T09:30:25.850Z" .
+
+SpecIF:OntologyTerm
+	a owl:Class .
+
+:RC-SpecifOntologyterm-Shape
+	a sh:NodeShape ;
+	sh:targetClass :RC-SpecifOntologyterm ;
+	sh:property :PC-VisibleId-Shape ;
+	sh:property :PC-SpecifRevision-Shape ;
+	sh:property :PC-SpecifTerm-Shape ;
+	sh:property :PC-Description-Shape ;
+	sh:property :PC-SpecifLocalterm-Shape .
+# No shapes yet for propertyClasses with enumerated dataType: PC-Domain,PC-TermStatus
+
+:RC-SpecifOntologyterm
+	owl:subClassOf SpecIF:OntologyTerm ;
+	rdfs:label "SpecIF:OntologyTerm" ;
+	dcterms:modified "2024-06-09T18:28:43.192Z" .
+
+SpecIF:TermPropertyClass
+	a owl:Class ;
+	rdfs:comment "Abstract parent class for property class terms belonging to the SpecIF Ontology." .
+
+:RC-SpecifTermpropertyclass-Shape
+	a sh:NodeShape ;
+	sh:targetClass :RC-SpecifTermpropertyclass ;
+	sh:property :PC-VisibleId-Shape ;
+	sh:property :PC-SpecifRevision-Shape ;
+	sh:property :PC-SpecifTerm-Shape ;
+	sh:property :PC-Description-Shape ;
+	sh:property :PC-SpecifLocalterm-Shape ;
+	sh:property :PC-isRequired-Shape ;
+	sh:property :PC-multiple-Shape .
+# No shapes yet for propertyClasses with enumerated dataType: PC-Domain,PC-TermStatus
+
+:RC-SpecifTermpropertyclass
+	owl:subClassOf SpecIF:TermPropertyClass ;
+	rdfs:label "SpecIF:TermPropertyClass" ;
+	rdfs:comment "Abstract parent class for property class terms belonging to the SpecIF Ontology." ;
+	dcterms:modified "2024-06-09T18:29:27.203Z" .
+
+SpecIF:Heading
+	a owl:Class ;
+	rdfs:comment "Eine 'Überschrift' in einem Dokument ist der Titel eines Kapitels. Sie kann eine Beschreibung haben, die als Einleitung oder Zusammenfassung des Kapitels genutzt werden kann." .
+
+:RC-Folder-Shape
+	a sh:NodeShape ;
+	sh:targetClass :RC-Folder ;
+	sh:property :PC-Name-Shape ;
+	sh:property :PC-Description-Shape ;
+	sh:property :PC-Diagram-Shape ;
+	sh:property :PC-Type-Shape .
+
+:RC-Folder
+	owl:subClassOf SpecIF:Heading ;
+	rdfs:label "SpecIF:Heading" ;
+	rdfs:comment "A 'Heading' is a chapter title at any level with optional description." ;
+	dcterms:modified "2024-03-02T15:28:50.414Z" .
+
+SpecIF:Namespace
+	a owl:Class ;
+	rdfs:comment "<p>A 'Namespace' is a is a set of signs (names) that are used to identify and refer to objects of various kinds. A namespace ensures that all of a given set of objects have unique names so that they can be easily identified. <small>(<i>Source: <a href=\"https://en.wikipedia.org/wiki/Requirement\">Wikipedia</a></i>)</small></p>" .
+
+:RC-SpecifNamespace-Shape
+	a sh:NodeShape ;
+	sh:targetClass :RC-SpecifNamespace ;
+	sh:property :PC-SpecifTerm-Shape ;
+	sh:property :PC-Description-Shape ;
+	sh:property :PC-SpecifOrigin-Shape .
+
+:RC-SpecifNamespace
+	owl:subClassOf SpecIF:Namespace ;
+	rdfs:label "SpecIF:Namespace" ;
+	rdfs:comment "<p>A 'Namespace' is a is a set of signs (names) that are used to identify and refer to objects of various kinds. A namespace ensures that all of a given set of objects have unique names so that they can be easily identified. <small>(<i>Source: <a href=\"https://en.wikipedia.org/wiki/Requirement\">Wikipedia</a></i>)</small></p>" ;
+	dcterms:modified "2024-03-02T15:31:58.538Z" .
+
+SpecIF:Comment
+	a owl:Class ;
+	rdfs:comment "A 'Comment' is reader feedback referring to a model element ('resource' or 'statement' in general)." .
+
+:RC-Comment-Shape
+	a sh:NodeShape ;
+	sh:targetClass :RC-Comment ;
+	sh:property :PC-Description-Shape .
+
+:RC-Comment
+	owl:subClassOf SpecIF:Comment ;
+	rdfs:label "SpecIF:Comment" ;
+	rdfs:comment "A 'Comment' is reader feedback referring to a model element ('resource' or 'statement' in general)." ;
+	pig:Icon "🗅" ;
+	dcterms:modified "2024-03-09T16:59:44.361Z" .
+
+SpecIF:TermResourceClass
+	a owl:Class ;
+	rdfs:comment "A term for SpecIF resources, often used as title of a resourceClass to denote the class type." .
+
+:RC-SpecifTermresourceclass-Shape
+	a sh:NodeShape ;
+	sh:targetClass :RC-SpecifTermresourceclass ;
+	sh:property :PC-VisibleId-Shape ;
+	sh:property :PC-SpecifRevision-Shape ;
+	sh:property :PC-SpecifTerm-Shape ;
+	sh:property :PC-Description-Shape ;
+	sh:property :PC-SpecifLocalterm-Shape ;
+	sh:property :PC-SpecifLocaltermplural-Shape ;
+	sh:property :PC-Icon-Shape ;
+	sh:property :PC-isHeading-Shape .
+# No shapes yet for propertyClasses with enumerated dataType: PC-Domain,PC-TermStatus,PC-Instantiation
+
+:RC-SpecifTermresourceclass
+	owl:subClassOf SpecIF:TermResourceClass ;
+	rdfs:label "SpecIF:TermResourceClass" ;
+	rdfs:comment "A term for SpecIF resources, often used as title of a resourceClass to denote the class type." ;
+	dcterms:modified "2023-10-21T20:42:11.843Z" .
+
+SpecIF:TermStatementClass
+	a owl:Class ;
+	rdfs:comment "A term for SpecIF statements, often used as title of a statementClass to denote the class type." .
+
+:RC-SpecifTermstatementclass-Shape
+	a sh:NodeShape ;
+	sh:targetClass :RC-SpecifTermstatementclass ;
+	sh:property :PC-VisibleId-Shape ;
+	sh:property :PC-SpecifRevision-Shape ;
+	sh:property :PC-SpecifTerm-Shape ;
+	sh:property :PC-Description-Shape ;
+	sh:property :PC-SpecifLocalterm-Shape ;
+	sh:property :PC-Icon-Shape ;
+	sh:property :PC-isUndirected-Shape .
+# No shapes yet for propertyClasses with enumerated dataType: PC-Domain,PC-TermStatus,PC-Instantiation
+
+:RC-SpecifTermstatementclass
+	owl:subClassOf SpecIF:TermStatementClass ;
+	rdfs:label "SpecIF:TermStatementClass" ;
+	rdfs:comment "A term for SpecIF statements, often used as title of a statementClass to denote the class type." ;
+	dcterms:modified "2023-10-21T20:42:28.294Z" .
+
+SpecIF:TermPropertyClassString
+	a owl:Class ;
+	rdfs:comment "A term for SpecIF properties with data type 'xs:string', often used as title of a propertyClass to denote the class type." .
+
+:RC-SpecifTermpropertyclassstring-Shape
+	a sh:NodeShape ;
+	sh:targetClass :RC-SpecifTermpropertyclassstring ;
+	sh:property :PC-VisibleId-Shape ;
+	sh:property :PC-SpecifRevision-Shape ;
+	sh:property :PC-SpecifTerm-Shape ;
+	sh:property :PC-Description-Shape ;
+	sh:property :PC-SpecifLocalterm-Shape ;
+	sh:property :PC-isRequired-Shape ;
+	sh:property :PC-multiple-Shape ;
+	sh:property :PC-singleLanguage-Shape ;
+	sh:property :PC-DefaultValueString-Shape ;
+	sh:property :PC-StringMaxLength-Shape .
+# No shapes yet for propertyClasses with enumerated dataType: PC-Domain,PC-TermStatus,PC-TextFormat
+
+:RC-SpecifTermpropertyclassstring
+	owl:subClassOf SpecIF:TermPropertyClassString ;
+	rdfs:label "SpecIF:TermPropertyClassString" ;
+	rdfs:comment "A term for SpecIF properties with data type 'xs:string', often used as title of a propertyClass to denote the class type." ;
+	dcterms:modified "2023-08-18T11:23:09.113Z" .
+
+SpecIF:TermPropertyClassBoolean
+	a owl:Class ;
+	rdfs:comment "A term for SpecIF properties with data type 'xs:boolean', often used as title of a propertyClass to denote the class type." .
+
+:RC-SpecifTermpropertyclassboolean-Shape
+	a sh:NodeShape ;
+	sh:targetClass :RC-SpecifTermpropertyclassboolean ;
+	sh:property :PC-VisibleId-Shape ;
+	sh:property :PC-SpecifRevision-Shape ;
+	sh:property :PC-SpecifTerm-Shape ;
+	sh:property :PC-Description-Shape ;
+	sh:property :PC-SpecifLocalterm-Shape ;
+	sh:property :PC-isRequired-Shape ;
+	sh:property :PC-multiple-Shape ;
+	sh:property :PC-DefaultValueBoolean-Shape .
+# No shapes yet for propertyClasses with enumerated dataType: PC-Domain,PC-TermStatus
+
+:RC-SpecifTermpropertyclassboolean
+	owl:subClassOf SpecIF:TermPropertyClassBoolean ;
+	rdfs:label "SpecIF:TermPropertyClassBoolean" ;
+	rdfs:comment "A term for SpecIF properties with data type 'xs:boolean', often used as title of a propertyClass to denote the class type." ;
+	dcterms:modified "2023-08-18T11:21:20.750Z" .
+
+SpecIF:TermPropertyClassInteger
+	a owl:Class ;
+	rdfs:comment "A term for SpecIF properties with data type 'xs:integer', often used as title of a propertyClass to denote the class type." .
+
+:RC-SpecifTermpropertyclassinteger-Shape
+	a sh:NodeShape ;
+	sh:targetClass :RC-SpecifTermpropertyclassinteger ;
+	sh:property :PC-VisibleId-Shape ;
+	sh:property :PC-SpecifRevision-Shape ;
+	sh:property :PC-SpecifTerm-Shape ;
+	sh:property :PC-Description-Shape ;
+	sh:property :PC-SpecifLocalterm-Shape ;
+	sh:property :PC-isRequired-Shape ;
+	sh:property :PC-multiple-Shape ;
+	sh:property :PC-DefaultValueInteger-Shape ;
+	sh:property :PC-Unit-Shape ;
+	sh:property :PC-IntegerMinInclusive-Shape ;
+	sh:property :PC-IntegerMaxInclusive-Shape .
+# No shapes yet for propertyClasses with enumerated dataType: PC-Domain,PC-TermStatus
+
+:RC-SpecifTermpropertyclassinteger
+	owl:subClassOf SpecIF:TermPropertyClassInteger ;
+	rdfs:label "SpecIF:TermPropertyClassInteger" ;
+	rdfs:comment "A term for SpecIF properties with data type 'xs:integer', often used as title of a propertyClass to denote the class type." ;
+	dcterms:modified "2023-08-18T11:18:16.952Z" .
+
+SpecIF:TermPropertyClassReal
+	a owl:Class ;
+	rdfs:comment "A term for SpecIF properties with data type 'xs:double', often used as title of a propertyClass to denote the class type." .
+
+:RC-SpecifTermpropertyclassreal-Shape
+	a sh:NodeShape ;
+	sh:targetClass :RC-SpecifTermpropertyclassreal ;
+	sh:property :PC-VisibleId-Shape ;
+	sh:property :PC-SpecifRevision-Shape ;
+	sh:property :PC-SpecifTerm-Shape ;
+	sh:property :PC-Description-Shape ;
+	sh:property :PC-SpecifLocalterm-Shape ;
+	sh:property :PC-isRequired-Shape ;
+	sh:property :PC-multiple-Shape ;
+	sh:property :PC-DefaultValueReal-Shape ;
+	sh:property :PC-Unit-Shape ;
+	sh:property :PC-RealMinInclusive-Shape ;
+	sh:property :PC-RealMaxInclusive-Shape ;
+	sh:property :PC-RealFractionDigits-Shape .
+# No shapes yet for propertyClasses with enumerated dataType: PC-Domain,PC-TermStatus
+
+:RC-SpecifTermpropertyclassreal
+	owl:subClassOf SpecIF:TermPropertyClassReal ;
+	rdfs:label "SpecIF:TermPropertyClassReal" ;
+	rdfs:comment "A term for SpecIF properties with data type 'xs:double', often used as title of a propertyClass to denote the class type." ;
+	dcterms:modified "2023-08-18T11:17:03.746Z" .
+
+SpecIF:TermPropertyClassTimestamp
+	a owl:Class ;
+	rdfs:comment "A term for SpecIF properties with data type 'xs:dateTime', often used as title of a propertyClass to denote the class type." .
+
+:RC-SpecifTermpropertyclasstimestamp-Shape
+	a sh:NodeShape ;
+	sh:targetClass :RC-SpecifTermpropertyclasstimestamp ;
+	sh:property :PC-VisibleId-Shape ;
+	sh:property :PC-SpecifRevision-Shape ;
+	sh:property :PC-SpecifTerm-Shape ;
+	sh:property :PC-Description-Shape ;
+	sh:property :PC-SpecifLocalterm-Shape ;
+	sh:property :PC-isRequired-Shape ;
+	sh:property :PC-multiple-Shape ;
+	sh:property :PC-DefaultValueTimestamp-Shape .
+# No shapes yet for propertyClasses with enumerated dataType: PC-Domain,PC-TermStatus
+
+:RC-SpecifTermpropertyclasstimestamp
+	owl:subClassOf SpecIF:TermPropertyClassTimestamp ;
+	rdfs:label "SpecIF:TermPropertyClassTimestamp" ;
+	rdfs:comment "A term for SpecIF properties with data type 'xs:dateTime', often used as title of a propertyClass to denote the class type." ;
+	dcterms:modified "2023-08-18T11:15:40.385Z" .
+
+SpecIF:TermPropertyClassDuration
+	a owl:Class ;
+	rdfs:comment "A term for SpecIF properties with data type 'xs:duration', often used as title of a propertyClass to denote the class type." .
+
+:RC-SpecifTermpropertyclassduration-Shape
+	a sh:NodeShape ;
+	sh:targetClass :RC-SpecifTermpropertyclassduration ;
+	sh:property :PC-VisibleId-Shape ;
+	sh:property :PC-SpecifRevision-Shape ;
+	sh:property :PC-SpecifTerm-Shape ;
+	sh:property :PC-Description-Shape ;
+	sh:property :PC-SpecifLocalterm-Shape ;
+	sh:property :PC-isRequired-Shape ;
+	sh:property :PC-multiple-Shape ;
+	sh:property :PC-DefaultValueDuration-Shape .
+# No shapes yet for propertyClasses with enumerated dataType: PC-Domain,PC-TermStatus
+
+:RC-SpecifTermpropertyclassduration
+	owl:subClassOf SpecIF:TermPropertyClassDuration ;
+	rdfs:label "SpecIF:TermPropertyClassDuration" ;
+	rdfs:comment "A term for SpecIF properties with data type 'xs:duration', often used as title of a propertyClass to denote the class type." ;
+	dcterms:modified "2023-08-18T10:26:50.181Z" .
+
+SpecIF:TermPropertyClassURI
+	a owl:Class ;
+	rdfs:comment "A term for SpecIF properties with data type 'xs:anyURI', often used as title of a propertyClass to denote the class type." .
+
+:RC-SpecifTermpropertyclassuri-Shape
+	a sh:NodeShape ;
+	sh:targetClass :RC-SpecifTermpropertyclassuri ;
+	sh:property :PC-VisibleId-Shape ;
+	sh:property :PC-SpecifRevision-Shape ;
+	sh:property :PC-SpecifTerm-Shape ;
+	sh:property :PC-Description-Shape ;
+	sh:property :PC-SpecifLocalterm-Shape ;
+	sh:property :PC-isRequired-Shape ;
+	sh:property :PC-multiple-Shape ;
+	sh:property :PC-DefaultValueAnyURI-Shape .
+# No shapes yet for propertyClasses with enumerated dataType: PC-Domain,PC-TermStatus
+
+:RC-SpecifTermpropertyclassuri
+	owl:subClassOf SpecIF:TermPropertyClassURI ;
+	rdfs:label "SpecIF:TermPropertyClassURI" ;
+	rdfs:comment "A term for SpecIF properties with data type 'xs:anyURI', often used as title of a propertyClass to denote the class type." ;
+	dcterms:modified "2023-08-18T10:26:04.295Z" .
+
+SpecIF:TermPropertyValue
+	a owl:Class ;
+	rdfs:comment "A term for SpecIF property values, often used in enumerated dataTypes." .
+
+:RC-SpecifTermpropertyvalue-Shape
+	a sh:NodeShape ;
+	sh:targetClass :RC-SpecifTermpropertyvalue ;
+	sh:property :PC-VisibleId-Shape ;
+	sh:property :PC-SpecifRevision-Shape ;
+	sh:property :PC-SpecifTerm-Shape ;
+	sh:property :PC-Description-Shape ;
+	sh:property :PC-SpecifLocalterm-Shape .
+# No shapes yet for propertyClasses with enumerated dataType: PC-Domain,PC-TermStatus
+
+:RC-SpecifTermpropertyvalue
+	owl:subClassOf SpecIF:TermPropertyValue ;
+	rdfs:label "SpecIF:TermPropertyValue" ;
+	rdfs:comment "A term for SpecIF property values, often used in enumerated dataTypes." ;
+	dcterms:modified "2023-03-06T09:01:18.856Z" .
+
+W3C:Ontology
+	a owl:Class ;
+	rdfs:comment "An ontology according to the SpecIF class definitions for the domain 'Ontology'.
+
+There is no clear division between what is referred to as “vocabularies” and “ontologies”. The trend is to use the word “ontology” for more complex, and possibly quite formal collection of terms, whereas “vocabulary” is used when such strict formalism is not necessarily used or only in a very loose sense. Vocabularies are the basic building blocks for inference techniques on the Semantic Web." .
+
+:RC-W3cOntology-Shape
+	a sh:NodeShape ;
+	sh:targetClass :RC-W3cOntology ;
+	sh:property :PC-Name-Shape ;
+	sh:property :PC-Description-Shape ;
+	sh:property :PC-Type-Shape .
+
+:RC-W3cOntology
+	owl:subClassOf W3C:Ontology ;
+	rdfs:label "W3C:Ontology" ;
+	rdfs:comment "An ontology according to the SpecIF class definitions for the domain 'Ontology'.
+
+There is no clear division between what is referred to as “vocabularies” and “ontologies”. The trend is to use the word “ontology” for more complex, and possibly quite formal collection of terms, whereas “vocabulary” is used when such strict formalism is not necessarily used or only in a very loose sense. Vocabularies are the basic building blocks for inference techniques on the Semantic Web." ;
+	dcterms:modified "2023-03-15T17:00:51.751Z" .
+
+#################################################################
+# Statement Classes
+#################################################################
+
+pig:RelationshipClass
+	a owl:Class .
+
+pig:hasSubject
+	a owl:ObjectProperty .
+
+pig:hasObject
+	a owl:ObjectProperty .
+
+dcterms:hasPart
+	a owl:ObjectProperty ;
+	rdfs:comment "General containment relationship" .
+
+pig:organizes
+	owl:subPropertyOf dcterms:hasPart ;
+	rdfs:comment "Containment relationship reserved for use in a hierarchy." .
+
+SpecIF:isSpecializationOf
+	a owl:Class ;
+	rdfs:comment "<p>A FMC:Actor is a specialization of another FMC:Actor; similarly for FMC:State and FMC:Event.</p>" .
+
+:SC-SpecifIsspecializationof-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-SpecifIsspecializationof ;
+	sh:property :SC-SpecifIsspecializationof-hasSubject-Shape ;
+	sh:property :SC-SpecifIsspecializationof-hasObject-Shape .
+
+:SC-SpecifIsspecializationof
+	owl:subClassOf SpecIF:isSpecializationOf ;
+	rdfs:label "SpecIF:isSpecializationOf" ;
+	rdfs:comment "<p>A FMC:Actor is a specialization of another FMC:Actor; similarly for FMC:State and FMC:Event.</p>" ;
+	dcterms:modified "2024-07-17T15:12:53.003Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-SpecifIsspecializationof-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-SpecifIsspecializationof-hasSubject ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-SpecifIsspecializationof-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-SpecifIsspecializationof" ;
+	rdfs:domain :SC-SpecifIsspecializationof ;
+	dcterms:modified "2024-07-17T15:12:53.003Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-SpecifIsspecializationof-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-SpecifIsspecializationof-hasObject ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-SpecifIsspecializationof-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-SpecifIsspecializationof" ;
+	rdfs:domain :SC-SpecifIsspecializationof ;
+	dcterms:modified "2024-07-17T15:12:53.003Z" .
+
+SpecIF:refersTo
+	a owl:Class ;
+	rdfs:comment "<p>A resource 'refers to' any other resource.</p>" .
+
+:SC-refersTo-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-refersTo ;
+	sh:property :SC-refersTo-hasSubject-Shape ;
+	sh:property :SC-refersTo-hasObject-Shape .
+
+:SC-refersTo
+	owl:subClassOf SpecIF:refersTo ;
+	rdfs:label "SpecIF:refersTo" ;
+	rdfs:comment "<p>A resource 'refers to' any other resource.</p>" ;
+	dcterms:modified "2023-07-16T15:40:57.453Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-refersTo-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-refersTo-hasSubject ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-refersTo-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-refersTo" ;
+	rdfs:domain :SC-refersTo ;
+	dcterms:modified "2023-07-16T15:40:57.453Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-refersTo-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-refersTo-hasObject ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-refersTo-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-refersTo" ;
+	rdfs:domain :SC-refersTo ;
+	dcterms:modified "2023-07-16T15:40:57.453Z" .
+
+SpecIF:isSynonymOf
+	a owl:Class ;
+	rdfs:comment "<p>A term is synonymous with another term, if both represent the same <a href=\"https://en.wikipedia.org/wiki/Concept\">concept</a>.</p><p>According to Wikipedia, <i>a <a href=\"https://en.wikipedia.org/wiki/Synonym\">synonym</a> is a word or phrase that means exactly or nearly the same as another word or phrase in the same language. Words that are synonyms are said to be synonymous</i>.</p>" .
+
+:SC-SpecifIssynonymof-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-SpecifIssynonymof ;
+	sh:property :SC-SpecifIssynonymof-hasSubject-Shape ;
+	sh:property :SC-SpecifIssynonymof-hasObject-Shape .
+
+:SC-SpecifIssynonymof
+	owl:subClassOf SpecIF:isSynonymOf ;
+	rdfs:label "SpecIF:isSynonymOf" ;
+	rdfs:comment "<p>A term is synonymous with another term, if both represent the same <a href=\"https://en.wikipedia.org/wiki/Concept\">concept</a>.</p><p>According to Wikipedia, <i>a <a href=\"https://en.wikipedia.org/wiki/Synonym\">synonym</a> is a word or phrase that means exactly or nearly the same as another word or phrase in the same language. Words that are synonyms are said to be synonymous</i>.</p>" ;
+	dcterms:modified "2024-06-13T07:59:04.780Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-SpecifIssynonymof-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-SpecifIssynonymof-hasSubject ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-SpecifIssynonymof-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-SpecifIssynonymof" ;
+	rdfs:domain :SC-SpecifIssynonymof ;
+	dcterms:modified "2024-06-13T07:59:04.780Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-SpecifIssynonymof-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-SpecifIssynonymof-hasObject ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-SpecifIssynonymof-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-SpecifIssynonymof" ;
+	rdfs:domain :SC-SpecifIssynonymof ;
+	dcterms:modified "2024-06-13T07:59:04.780Z" .
+
+SpecIF:isAntonymOf
+	a owl:Class ;
+	rdfs:comment "According to Wikipedia, <i>the term antonym (and the related antonymy) is commonly taken to be synonymous with opposite, but antonym also has other more restricted meanings. Graded (or gradable) antonyms are word pairs whose meanings are opposite and which lie on a continuous spectrum (_hot_, _cold_). Complementary antonyms are word pairs whose meanings are opposite but whose meanings do not lie on a continuous spectrum (_push_, _pull_). Relational antonyms are word pairs where opposite makes sense only in the context of the relationship between the two meanings (_teacher_, _pupil_)</i>." .
+
+:SC-SpecifIsantonymof-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-SpecifIsantonymof ;
+	sh:property :SC-SpecifIsantonymof-hasSubject-Shape ;
+	sh:property :SC-SpecifIsantonymof-hasObject-Shape .
+
+:SC-SpecifIsantonymof
+	owl:subClassOf SpecIF:isAntonymOf ;
+	rdfs:label "SpecIF:isAntonymOf" ;
+	rdfs:comment "According to Wikipedia, <i>the term antonym (and the related antonymy) is commonly taken to be synonymous with opposite, but antonym also has other more restricted meanings. Graded (or gradable) antonyms are word pairs whose meanings are opposite and which lie on a continuous spectrum (_hot_, _cold_). Complementary antonyms are word pairs whose meanings are opposite but whose meanings do not lie on a continuous spectrum (_push_, _pull_). Relational antonyms are word pairs where opposite makes sense only in the context of the relationship between the two meanings (_teacher_, _pupil_)</i>." ;
+	dcterms:modified "2024-03-03T13:47:25.379Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-SpecifIsantonymof-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-SpecifIsantonymof-hasSubject ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-SpecifIsantonymof-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-SpecifIsantonymof" ;
+	rdfs:domain :SC-SpecifIsantonymof ;
+	dcterms:modified "2024-03-03T13:47:25.379Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-SpecifIsantonymof-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-SpecifIsantonymof-hasObject ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-SpecifIsantonymof-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-SpecifIsantonymof" ;
+	rdfs:domain :SC-SpecifIsantonymof ;
+	dcterms:modified "2024-03-03T13:47:25.379Z" .
+
+SpecIF:isPluralOf
+	a owl:Class .
+
+:SC-SpecifIspluralof-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-SpecifIspluralof ;
+	sh:property :SC-SpecifIspluralof-hasSubject-Shape ;
+	sh:property :SC-SpecifIspluralof-hasObject-Shape .
+
+:SC-SpecifIspluralof
+	owl:subClassOf SpecIF:isPluralOf ;
+	rdfs:label "SpecIF:isPluralOf" ;
+	dcterms:modified "2024-03-03T13:50:50.511Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-SpecifIspluralof-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-SpecifIspluralof-hasSubject ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-SpecifIspluralof-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-SpecifIspluralof" ;
+	rdfs:domain :SC-SpecifIspluralof ;
+	dcterms:modified "2024-03-03T13:50:50.511Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-SpecifIspluralof-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-SpecifIspluralof-hasObject ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-SpecifIspluralof-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-SpecifIspluralof" ;
+	rdfs:domain :SC-SpecifIspluralof ;
+	dcterms:modified "2024-03-03T13:50:50.511Z" .
+
+SpecIF:isSpecializationOfResource
+	a owl:Class ;
+	rdfs:comment "A resource-class term is a specialization of another, such as 'Passenger Car' and 'Vehicle'." .
+
+:SC-isSpecializationOfResource-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-isSpecializationOfResource ;
+	sh:property :SC-isSpecializationOfResource-hasSubject-Shape ;
+	sh:property :SC-isSpecializationOfResource-hasObject-Shape .
+
+:SC-isSpecializationOfResource
+	owl:subClassOf SpecIF:isSpecializationOfResource ;
+	rdfs:label "SpecIF:isSpecializationOfResource" ;
+	rdfs:comment "A resource-class term is a specialization of another, such as 'Passenger Car' and 'Vehicle'." ;
+	dcterms:modified "2024-03-09T21:02:39.189Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-isSpecializationOfResource-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isSpecializationOfResource-hasSubject ;
+	sh:class :RC-SpecifTermresourceclass ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isSpecializationOfResource-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-isSpecializationOfResource" ;
+	rdfs:domain :SC-isSpecializationOfResource ;
+	dcterms:modified "2024-03-09T21:02:39.189Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-isSpecializationOfResource-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isSpecializationOfResource-hasObject ;
+	sh:class :RC-SpecifTermresourceclass ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isSpecializationOfResource-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-isSpecializationOfResource" ;
+	rdfs:domain :SC-isSpecializationOfResource ;
+	dcterms:modified "2024-03-09T21:02:39.189Z" .
+
+SpecIF:isSpecializationOfStatement
+	a owl:Class ;
+	rdfs:comment "A statement-class term is a specialization of another, such as 'is aggregated by' and 'contains'." .
+
+:SC-isSpecializationOfStatement-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-isSpecializationOfStatement ;
+	sh:property :SC-isSpecializationOfStatement-hasSubject-Shape ;
+	sh:property :SC-isSpecializationOfStatement-hasObject-Shape .
+
+:SC-isSpecializationOfStatement
+	owl:subClassOf SpecIF:isSpecializationOfStatement ;
+	rdfs:label "SpecIF:isSpecializationOfStatement" ;
+	rdfs:comment "A statement-class term is a specialization of another, such as 'is aggregated by' and 'contains'." ;
+	dcterms:modified "2024-03-09T21:03:21.693Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-isSpecializationOfStatement-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isSpecializationOfStatement-hasSubject ;
+	sh:class :RC-SpecifTermstatementclass ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isSpecializationOfStatement-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-isSpecializationOfStatement" ;
+	rdfs:domain :SC-isSpecializationOfStatement ;
+	dcterms:modified "2024-03-09T21:03:21.693Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-isSpecializationOfStatement-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isSpecializationOfStatement-hasObject ;
+	sh:class :RC-SpecifTermstatementclass ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isSpecializationOfStatement-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-isSpecializationOfStatement" ;
+	rdfs:domain :SC-isSpecializationOfStatement ;
+	dcterms:modified "2024-03-09T21:03:21.693Z" .
+
+SpecIF:commentRefersTo
+	a owl:Class ;
+	rdfs:comment "A [[SpecIF:Comment]] 'refers to' a model element ('resource' in general)." .
+
+:SC-commentRefersTo-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-commentRefersTo ;
+	sh:property :SC-commentRefersTo-hasSubject-Shape ;
+	sh:property :SC-commentRefersTo-hasObject-Shape .
+
+:SC-commentRefersTo
+	owl:subClassOf SpecIF:commentRefersTo ;
+	rdfs:label "SpecIF:commentRefersTo" ;
+	rdfs:comment "A [[SpecIF:Comment]] 'refers to' a model element ('resource' in general)." ;
+	dcterms:modified "2024-03-09T21:14:13.722Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-commentRefersTo-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-commentRefersTo-hasSubject ;
+	sh:class :RC-Comment ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-commentRefersTo-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-commentRefersTo" ;
+	rdfs:domain :SC-commentRefersTo ;
+	dcterms:modified "2024-03-09T21:14:13.722Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-commentRefersTo-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-commentRefersTo-hasObject ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-commentRefersTo-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-commentRefersTo" ;
+	rdfs:domain :SC-commentRefersTo ;
+	dcterms:modified "2024-03-09T21:14:13.722Z" .
+
+SpecIF:isSynonymOfResource
+	a owl:Class ;
+	rdfs:comment "A resource-class term is synonymous with another." .
+
+:SC-isSynonymOfResource-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-isSynonymOfResource ;
+	sh:property :SC-isSynonymOfResource-hasSubject-Shape ;
+	sh:property :SC-isSynonymOfResource-hasObject-Shape .
+
+:SC-isSynonymOfResource
+	owl:subClassOf SpecIF:isSynonymOfResource ;
+	rdfs:label "SpecIF:isSynonymOfResource" ;
+	rdfs:comment "A resource-class term is synonymous with another." ;
+	dcterms:modified "2024-03-09T17:31:13.161Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-isSynonymOfResource-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isSynonymOfResource-hasSubject ;
+	sh:class :RC-SpecifTermresourceclass ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isSynonymOfResource-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-isSynonymOfResource" ;
+	rdfs:domain :SC-isSynonymOfResource ;
+	dcterms:modified "2024-03-09T17:31:13.161Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-isSynonymOfResource-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isSynonymOfResource-hasObject ;
+	sh:class :RC-SpecifTermresourceclass ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isSynonymOfResource-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-isSynonymOfResource" ;
+	rdfs:domain :SC-isSynonymOfResource ;
+	dcterms:modified "2024-03-09T17:31:13.161Z" .
+
+SpecIF:isSynonymOfStatement
+	a owl:Class ;
+	rdfs:comment "A statement-class term is synonymous with another." .
+
+:SC-isSynonymOfStatement-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-isSynonymOfStatement ;
+	sh:property :SC-isSynonymOfStatement-hasSubject-Shape ;
+	sh:property :SC-isSynonymOfStatement-hasObject-Shape .
+
+:SC-isSynonymOfStatement
+	owl:subClassOf SpecIF:isSynonymOfStatement ;
+	rdfs:label "SpecIF:isSynonymOfStatement" ;
+	rdfs:comment "A statement-class term is synonymous with another." ;
+	dcterms:modified "2024-03-09T17:32:03.299Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-isSynonymOfStatement-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isSynonymOfStatement-hasSubject ;
+	sh:class :RC-SpecifTermstatementclass ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isSynonymOfStatement-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-isSynonymOfStatement" ;
+	rdfs:domain :SC-isSynonymOfStatement ;
+	dcterms:modified "2024-03-09T17:32:03.299Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-isSynonymOfStatement-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isSynonymOfStatement-hasObject ;
+	sh:class :RC-SpecifTermstatementclass ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isSynonymOfStatement-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-isSynonymOfStatement" ;
+	rdfs:domain :SC-isSynonymOfStatement ;
+	dcterms:modified "2024-03-09T17:32:03.299Z" .
+
+SpecIF:isSynonymOfProperty
+	a owl:Class ;
+	rdfs:comment "A property-class term is synonymous with another.
+
+Limitation: This statement is applicable for properties of all data types - the user must pay attention." .
+
+:SC-isSynonymOfProperty-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-isSynonymOfProperty ;
+	sh:property :SC-isSynonymOfProperty-hasSubject-Shape ;
+	sh:property :SC-isSynonymOfProperty-hasObject-Shape .
+
+:SC-isSynonymOfProperty
+	owl:subClassOf SpecIF:isSynonymOfProperty ;
+	rdfs:label "SpecIF:isSynonymOfProperty" ;
+	rdfs:comment "A property-class term is synonymous with another.
+
+Limitation: This statement is applicable for properties of all data types - the user must pay attention." ;
+	dcterms:modified "2024-03-09T17:32:28.443Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-isSynonymOfProperty-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isSynonymOfProperty-hasSubject ;
+	sh:class :RC-SpecifTermpropertyclassstring, :RC-SpecifTermpropertyclassboolean, :RC-SpecifTermpropertyclassinteger, :RC-SpecifTermpropertyclassreal, :RC-SpecifTermpropertyclasstimestamp, :RC-SpecifTermpropertyclassduration, :RC-SpecifTermpropertyclassuri ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isSynonymOfProperty-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-isSynonymOfProperty" ;
+	rdfs:domain :SC-isSynonymOfProperty ;
+	dcterms:modified "2024-03-09T17:32:28.443Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-isSynonymOfProperty-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isSynonymOfProperty-hasObject ;
+	sh:class :RC-SpecifTermpropertyclassstring, :RC-SpecifTermpropertyclassboolean, :RC-SpecifTermpropertyclassinteger, :RC-SpecifTermpropertyclassreal, :RC-SpecifTermpropertyclasstimestamp, :RC-SpecifTermpropertyclassduration, :RC-SpecifTermpropertyclassuri ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isSynonymOfProperty-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-isSynonymOfProperty" ;
+	rdfs:domain :SC-isSynonymOfProperty ;
+	dcterms:modified "2024-03-09T17:32:28.443Z" .
+
+SpecIF:isSynonymOfValue
+	a owl:Class ;
+	rdfs:comment "A value term is synonymous with another.
+
+Limitation: This statement is applicable for property values of all data types - the user must pay attention." .
+
+:SC-isSynonymOfValue-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-isSynonymOfValue ;
+	sh:property :SC-isSynonymOfValue-hasSubject-Shape ;
+	sh:property :SC-isSynonymOfValue-hasObject-Shape .
+
+:SC-isSynonymOfValue
+	owl:subClassOf SpecIF:isSynonymOfValue ;
+	rdfs:label "SpecIF:isSynonymOfValue" ;
+	rdfs:comment "A value term is synonymous with another.
+
+Limitation: This statement is applicable for property values of all data types - the user must pay attention." ;
+	dcterms:modified "2024-03-09T17:32:47.846Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-isSynonymOfValue-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isSynonymOfValue-hasSubject ;
+	sh:class :RC-SpecifTermpropertyvalue ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isSynonymOfValue-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-isSynonymOfValue" ;
+	rdfs:domain :SC-isSynonymOfValue ;
+	dcterms:modified "2024-03-09T17:32:47.846Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-isSynonymOfValue-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isSynonymOfValue-hasObject ;
+	sh:class :RC-SpecifTermpropertyvalue ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isSynonymOfValue-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-isSynonymOfValue" ;
+	rdfs:domain :SC-isSynonymOfValue ;
+	dcterms:modified "2024-03-09T17:32:47.846Z" .
+
+SpecIF:isAntonymOfStatement
+	a owl:Class ;
+	rdfs:comment "A statement term is antonymous with another." .
+
+:SC-isAntonymOfStatement-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-isAntonymOfStatement ;
+	sh:property :SC-isAntonymOfStatement-hasSubject-Shape ;
+	sh:property :SC-isAntonymOfStatement-hasObject-Shape .
+
+:SC-isAntonymOfStatement
+	owl:subClassOf SpecIF:isAntonymOfStatement ;
+	rdfs:label "SpecIF:isAntonymOfStatement" ;
+	rdfs:comment "A statement term is antonymous with another." ;
+	dcterms:modified "2024-03-09T17:38:23.597Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-isAntonymOfStatement-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isAntonymOfStatement-hasSubject ;
+	sh:class :RC-SpecifTermstatementclass ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isAntonymOfStatement-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-isAntonymOfStatement" ;
+	rdfs:domain :SC-isAntonymOfStatement ;
+	dcterms:modified "2024-03-09T17:38:23.597Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-isAntonymOfStatement-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isAntonymOfStatement-hasObject ;
+	sh:class :RC-SpecifTermstatementclass ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isAntonymOfStatement-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-isAntonymOfStatement" ;
+	rdfs:domain :SC-isAntonymOfStatement ;
+	dcterms:modified "2024-03-09T17:38:23.597Z" .
+
+SpecIF:isAntonymOfValue
+	a owl:Class ;
+	rdfs:comment "A value term is antonymous with another." .
+
+:SC-isAntonymOfValue-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-isAntonymOfValue ;
+	sh:property :SC-isAntonymOfValue-hasSubject-Shape ;
+	sh:property :SC-isAntonymOfValue-hasObject-Shape .
+
+:SC-isAntonymOfValue
+	owl:subClassOf SpecIF:isAntonymOfValue ;
+	rdfs:label "SpecIF:isAntonymOfValue" ;
+	rdfs:comment "A value term is antonymous with another." ;
+	dcterms:modified "2024-03-09T17:38:49.753Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-isAntonymOfValue-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isAntonymOfValue-hasSubject ;
+	sh:class :RC-SpecifTermpropertyvalue ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isAntonymOfValue-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-isAntonymOfValue" ;
+	rdfs:domain :SC-isAntonymOfValue ;
+	dcterms:modified "2024-03-09T17:38:49.753Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-isAntonymOfValue-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isAntonymOfValue-hasObject ;
+	sh:class :RC-SpecifTermpropertyvalue ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isAntonymOfValue-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-isAntonymOfValue" ;
+	rdfs:domain :SC-isAntonymOfValue ;
+	dcterms:modified "2024-03-09T17:38:49.753Z" .
+
+SpecIF:isPluralOfResource
+	a owl:Class .
+
+:SC-isPluralOfResource-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-isPluralOfResource ;
+	sh:property :SC-isPluralOfResource-hasSubject-Shape ;
+	sh:property :SC-isPluralOfResource-hasObject-Shape .
+
+:SC-isPluralOfResource
+	owl:subClassOf SpecIF:isPluralOfResource ;
+	rdfs:label "SpecIF:isPluralOfResource" ;
+	dcterms:modified "2024-03-09T20:59:25.127Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-isPluralOfResource-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isPluralOfResource-hasSubject ;
+	sh:class :RC-SpecifTermresourceclass ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isPluralOfResource-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-isPluralOfResource" ;
+	rdfs:domain :SC-isPluralOfResource ;
+	dcterms:modified "2024-03-09T20:59:25.127Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-isPluralOfResource-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isPluralOfResource-hasObject ;
+	sh:class :RC-SpecifTermresourceclass ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isPluralOfResource-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-isPluralOfResource" ;
+	rdfs:domain :SC-isPluralOfResource ;
+	dcterms:modified "2024-03-09T20:59:25.127Z" .
+
+SpecIF:isNamespace
+	a owl:Class ;
+	rdfs:comment "A namespace includes a term." .
+
+:SC-isNamespace-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-isNamespace ;
+	sh:property :SC-isNamespace-hasSubject-Shape ;
+	sh:property :SC-isNamespace-hasObject-Shape .
+
+:SC-isNamespace
+	owl:subClassOf SpecIF:isNamespace ;
+	rdfs:label "SpecIF:isNamespace" ;
+	rdfs:comment "A namespace includes a term." ;
+	dcterms:modified "2024-03-09T21:09:41.795Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-isNamespace-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isNamespace-hasSubject ;
+	sh:class :RC-SpecifNamespace ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isNamespace-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-isNamespace" ;
+	rdfs:domain :SC-isNamespace ;
+	dcterms:modified "2024-03-09T21:09:41.795Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-isNamespace-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isNamespace-hasObject ;
+	sh:class :RC-SpecifTermresourceclass, :RC-SpecifTermstatementclass, :RC-SpecifTermpropertyclassstring, :RC-SpecifTermpropertyclassboolean, :RC-SpecifTermpropertyclassinteger, :RC-SpecifTermpropertyclassreal, :RC-SpecifTermpropertyclassduration, :RC-SpecifTermpropertyclasstimestamp, :RC-SpecifTermpropertyclassuri, :RC-SpecifTermpropertyvalue ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isNamespace-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-isNamespace" ;
+	rdfs:domain :SC-isNamespace ;
+	dcterms:modified "2024-03-09T21:09:41.795Z" .
+
+SpecIF:hasProperty
+	a owl:Class ;
+	rdfs:comment "A resource or statement of this class has a property." .
+
+:SC-hasProperty-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-hasProperty ;
+	sh:property :PC-SpecifIndex-Shape ;
+	sh:property :SC-hasProperty-hasSubject-Shape ;
+	sh:property :SC-hasProperty-hasObject-Shape .
+
+:SC-hasProperty
+	owl:subClassOf SpecIF:hasProperty ;
+	rdfs:label "SpecIF:hasProperty" ;
+	rdfs:comment "A resource or statement of this class has a property." ;
+	dcterms:modified "2024-03-03T22:51:12.251Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-hasProperty-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-hasProperty-hasSubject ;
+	sh:class :RC-SpecifTermresourceclass, :RC-SpecifTermstatementclass ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-hasProperty-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-hasProperty" ;
+	rdfs:domain :SC-hasProperty ;
+	dcterms:modified "2024-03-03T22:51:12.251Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-hasProperty-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-hasProperty-hasObject ;
+	sh:class :RC-SpecifTermpropertyclassstring, :RC-SpecifTermpropertyclassboolean, :RC-SpecifTermpropertyclassinteger, :RC-SpecifTermpropertyclassreal, :RC-SpecifTermpropertyclassduration, :RC-SpecifTermpropertyclasstimestamp, :RC-SpecifTermpropertyclassuri ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-hasProperty-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-hasProperty" ;
+	rdfs:domain :SC-hasProperty ;
+	dcterms:modified "2024-03-03T22:51:12.251Z" .
+
+SpecIF:hasEnumValue
+	a owl:Class ;
+	rdfs:comment "<p>A property may have none, one or more enumerated values. The value may be an ontology term of a resourcClass, a statementClass or a propertyValue.</p><p><i>Please note: This holds, if an enumerated value is defined by the ontology. In general, the SpecIF schema allows enumerated values of any data-type. In case of 'xs:string', not only ontology terms, but any string is allowed as value.</i></p>" .
+
+:SC-hasEnumValue-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-hasEnumValue ;
+	sh:property :PC-SpecifIndex-Shape ;
+	sh:property :SC-hasEnumValue-hasSubject-Shape ;
+	sh:property :SC-hasEnumValue-hasObject-Shape .
+
+:SC-hasEnumValue
+	owl:subClassOf SpecIF:hasEnumValue ;
+	rdfs:label "SpecIF:hasEnumValue" ;
+	rdfs:comment "<p>A property may have none, one or more enumerated values. The value may be an ontology term of a resourcClass, a statementClass or a propertyValue.</p><p><i>Please note: This holds, if an enumerated value is defined by the ontology. In general, the SpecIF schema allows enumerated values of any data-type. In case of 'xs:string', not only ontology terms, but any string is allowed as value.</i></p>" ;
+	dcterms:modified "2024-03-03T22:46:15.573Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-hasEnumValue-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-hasEnumValue-hasSubject ;
+	sh:class :RC-SpecifTermpropertyclassstring, :RC-SpecifTermpropertyclassinteger, :RC-SpecifTermpropertyclassreal, :RC-SpecifTermpropertyclassduration, :RC-SpecifTermpropertyclasstimestamp, :RC-SpecifTermpropertyclassuri ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-hasEnumValue-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-hasEnumValue" ;
+	rdfs:domain :SC-hasEnumValue ;
+	dcterms:modified "2024-03-03T22:46:15.573Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-hasEnumValue-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-hasEnumValue-hasObject ;
+	sh:class :RC-SpecifTermresourceclass, :RC-SpecifTermstatementclass, :RC-SpecifTermpropertyvalue ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-hasEnumValue-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-hasEnumValue" ;
+	rdfs:domain :SC-hasEnumValue ;
+	dcterms:modified "2024-03-03T22:46:15.573Z" .
+
+SpecIF:isEligibleAsSubject
+	a owl:Class ;
+	rdfs:comment "A resource-term or statement-term is eligible as a subject of a statement-term.
+
+Or concretely: A resource or statement of this class is eligible as the statement's subject." .
+
+:SC-isEligibleAsSubject-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-isEligibleAsSubject ;
+	sh:property :PC-SpecifIndex-Shape ;
+	sh:property :SC-isEligibleAsSubject-hasSubject-Shape ;
+	sh:property :SC-isEligibleAsSubject-hasObject-Shape .
+
+:SC-isEligibleAsSubject
+	owl:subClassOf SpecIF:isEligibleAsSubject ;
+	rdfs:label "SpecIF:isEligibleAsSubject" ;
+	rdfs:comment "A resource-term or statement-term is eligible as a subject of a statement-term.
+
+Or concretely: A resource or statement of this class is eligible as the statement's subject." ;
+	dcterms:modified "2024-03-09T21:05:22.579Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-isEligibleAsSubject-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isEligibleAsSubject-hasSubject ;
+	sh:class :RC-SpecifTermresourceclass, :RC-SpecifTermstatementclass ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isEligibleAsSubject-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-isEligibleAsSubject" ;
+	rdfs:domain :SC-isEligibleAsSubject ;
+	dcterms:modified "2024-03-09T21:05:22.579Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-isEligibleAsSubject-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isEligibleAsSubject-hasObject ;
+	sh:class :RC-SpecifTermstatementclass ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isEligibleAsSubject-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-isEligibleAsSubject" ;
+	rdfs:domain :SC-isEligibleAsSubject ;
+	dcterms:modified "2024-03-09T21:05:22.579Z" .
+
+SpecIF:isEligibleAsObject
+	a owl:Class ;
+	rdfs:comment "A resource-term or statement-term is eligible as an object of a predicate-term.
+
+Or concretely: A resource or statement of this class is eligible as the predicate's object." .
+
+:SC-isEligibleAsObject-Shape
+	a sh:NodeShape ;
+	sh:targetClass :SC-isEligibleAsObject ;
+	sh:property :PC-SpecifIndex-Shape ;
+	sh:property :SC-isEligibleAsObject-hasSubject-Shape ;
+	sh:property :SC-isEligibleAsObject-hasObject-Shape .
+
+:SC-isEligibleAsObject
+	owl:subClassOf SpecIF:isEligibleAsObject ;
+	rdfs:label "SpecIF:isEligibleAsObject" ;
+	rdfs:comment "A resource-term or statement-term is eligible as an object of a predicate-term.
+
+Or concretely: A resource or statement of this class is eligible as the predicate's object." ;
+	dcterms:modified "2024-03-09T21:05:48.518Z" .
+
+# Limit the node classes eligible as subject. Correct this way?
+:SC-isEligibleAsObject-hasSubject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isEligibleAsObject-hasSubject ;
+	sh:class :RC-SpecifTermresourceclass, :RC-SpecifTermstatementclass ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isEligibleAsObject-hasSubject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasSubject ;
+	rdfs:label "Connects the subject of :SC-isEligibleAsObject" ;
+	rdfs:domain :SC-isEligibleAsObject ;
+	dcterms:modified "2024-03-09T21:05:48.518Z" .
+
+# Limit the node classes eligible as object. Correct this way?
+:SC-isEligibleAsObject-hasObject-Shape
+	a sh:PropertyShape ;
+	sh:path :SC-isEligibleAsObject-hasObject ;
+	sh:class :RC-SpecifTermstatementclass ;
+	sh:minCount "1" ;
+	sh:maxCount "1" .
+
+:SC-isEligibleAsObject-hasObject
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf pig:hasObject ;
+	rdfs:label "Connects the object of :SC-isEligibleAsObject" ;
+	rdfs:domain :SC-isEligibleAsObject ;
+	dcterms:modified "2024-03-09T21:05:48.518Z" .
+
+#################################################################
+# Resources
+#################################################################
+
+:R-FolderOntology
+	a :RC-Folder ;
+	:PC-Name "SpecIF Ontology" ;
+	:PC-Type "Ontologie" ;
+	dcterms:modified "2023-01-29T14:52:15+01:00" .
+
+:R-FolderTermsResourceClass
+	a :RC-Folder ;
+	:PC-Name "Resource Class Terms" ;
+	:PC-Description "<p>A resource represents an artefact, e.g. a model element or a requirement. The terms listed in this chapter may be used to distinguish different classes (types) of artefacts constituting a system specification. A resource may serve as subject or as object in a subject-predicate-object statement. Each resource class may define an individual set of properties for carrying the information 'payload'.</p><p>A resource class corresponds to a 'SPEC-OBJECT-TYPE' and a resource is a 'SPEC-OBJECT' in the Requirements Interchange Format (ReqIF). In ArchiMate® 3.0, a resource is an <a href=\"http://pubs.opengroup.org/architecture/archimate3-doc/chap04.html\"><em>Element</em></a>.</p>" ;
+	dcterms:modified "2021-10-12T12:37:46.567Z" .
+
+:R-FolderTermsStatementClass
+	a :RC-Folder ;
+	:PC-Name "Statement Class Terms" ;
+	:PC-Description "<p>A statement represents a logic affinity or association between two resources, i.e. system specification artefacts. The terms listed in this chapter may be used as predicates to distinguish different classes (types) of statements. Each statement class may define an individual set of properties for carrying the information 'payload'.</p><p>In SpecIF, a statement is first order predicate logic. For each predicate (statement class), a list of eligible resource classes may be defined for subjects and objects, respectively. For example, the predicate [[oslc_rm:satisfies]] is usually confined to [[FMC:Actor]] and [[FMC:State]] as subject and [[IREB:Requirement]] as object.</p><p>A statement consisting of subject-predicate-object (where a resource may serve as subject or object) can be directly mapped to a ReqIF relation, a RDF triple in OSLC or 'linked data' in general.</p><p>A statement class corresponds to a 'SPEC-RELATION-TYPE' and a statement is a 'SPEC-RELATION' in the Requirements Interchange Format (ReqIF). In ArchiMate® 3.0, a statement is a <a href=\"http://pubs.opengroup.org/architecture/archimate3-doc/chap05.html\"><em>Relationship</em></a>.</p>" ;
+	dcterms:modified "2021-10-12T12:38:13.480Z" .
+
+:R-FolderTermsPropertyClass
+	a :RC-Folder ;
+	:PC-Name "Property Class Terms" ;
+	:PC-Description "<p>A property carries information 'payload' and may be applied to resources or statements. The SpecIF terms listed in this chapter are used as property name/title, whereas the information is provided as 'value'. Usually a combination of complimentary properties is used per resource or statement class.</p><p>A property corresponds to an 'ATTRIBUTE-DEFINITION' resp. 'ATTRIBUTE-VALUE' in the Requirements Interchange Format (ReqIF).</p>" ;
+	dcterms:modified "2021-10-12T12:38:25.138Z" .
+
+:R-FolderTermsPropertyValue
+	a :RC-Folder ;
+	:PC-Name "Property Value Terms" ;
+	:PC-Description "<p>These are terms for certain enumerated property values. Not only the property titles, but also any enumerated value must be mapped between different systems or domains; therefore using defined terms is beneficial. Of course, like any other vocabulary term, a term used as property value for transmission or storage can be translated for display.</p>" ;
+	dcterms:modified "2023-03-15T17:16:33.330Z" .
+
+#################################################################
+# Hierarchies
+#################################################################
+
+:HierarchyRoot
+	a pig:OrganizerClass ;
+	rdfs:label "Hierarchy Root" ;
+	rdfs:comment "... anchoring all hierarchies of this graph (project)" .
+
+:HierarchyRoot
+	pig:organizes :R-FolderOntology .
+
+:R-FolderOntology
+	pig:organizes :R-FolderTermsResourceClass ;
+	pig:organizes :R-FolderTermsStatementClass ;
+	pig:organizes :R-FolderTermsPropertyClass ;
+	pig:organizes :R-FolderTermsPropertyValue .

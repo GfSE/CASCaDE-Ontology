@@ -5,7 +5,7 @@
 @prefix : <http://www.omg.org/spec/CASCaDE/ontology/>.
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
-@prefix pig: <http://www.omg.org/spec/CASCaDE/metamodel>.
+@prefix pig: <http://www.omg.org/spec/CASCaDE/metamodel/>.
 @prefix dim: <http://www.omg.org/spec/CASCaDE/ontology/Dimensions/>.
 
 dc:description_Shape a <http://www.w3.org/ns/shacl#PropertyShape>;
@@ -19,7 +19,7 @@ dc:title_Shape a <http://www.w3.org/ns/shacl#PropertyShape>;
                <http://www.w3.org/ns/shacl#path> dc:title.
 <http://www.omg.org/spec/CASCaDE/ontology/> dcterms:license <https://opensource.org/licenses/MIT>;
                                             a owl:Ontology;
-                                            rdfs:comment "OMG CASCaDE Ontology Ontology Version 1.0 created 17.09.2025 11:13:45 by Michael Kirsch, :em engineering methods AG";
+                                            rdfs:comment "OMG CASCaDE Ontology Ontology Version 1.0 created 24.09.2025 15:35:57 by Michael Kirsch, :em engineering methods AG";
                                             owl:versionInfo "1.0".
 <http://www.omg.org/spec/CASCaDE/ontology/ContextElements/Configuration_Shape> a <http://www.w3.org/ns/shacl#NodeShape>;
                                                                                <http://www.w3.org/ns/shacl#property> dc:identifier_Shape,

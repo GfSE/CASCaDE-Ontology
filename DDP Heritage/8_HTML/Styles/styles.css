@@ -1,16 +1,16 @@
 body { margin-top:2%; margin-right:2%; margin-bottom:2%; margin-left:2%; font-family:Arial,sans-serif; font-size:100%; font-weight: normal; } 
 div.max-width-md { max-width: 768px; margin: auto; } 
 div.max-width-lg { max-width: 992px; margin: auto; } 
-div, p { margin: 0.6em 0em 0em 0em; } 
+div, p { margin: 0.9rem 0em 0em 0em; } 
 div.title { font-size:200%; margin-top:2.4rem } 
 ul { padding-left: 1.2rem; } 
-.inline-label { font-size: 90%; font-style: italic; margin-top:0.9em; } 
-p.metaTitle { color: #0071B9; font-size: 108%; margin-top:0.9em; } 
+.inline-label { font-size: 90%; font-style: italic; margin-top:0.9rem; } 
+p.metaTitle { color: #0071B9; font-size: 108%; margin-top:0.9rem; } 
 a { color: #0071B9; } 
 table { width:100%; border: 1px solid #DDDDDD; border-collapse:collapse; vertical-align:top; margin: 0; padding: 0; } 
 table th { background-color: #DDDDDD; margin: 0; padding: 0 0.2em 0 0.2em; font-size: 90% } 
 table td { border: 1px solid #DDDDDD; margin: 0; padding: 0 0.2em 0 0.2em; font-size: 90% } 
-table.propertyTable, table.statementTable { color: #0071B9; width:100%; border-left-style: none; border-right-style: none; border-collapse:collapse; margin: 0.6em 0em 0em 0em; } 
+table.propertyTable, table.statementTable { color: #0071B9; width:100%; border-left-style: none; border-right-style: none; border-collapse:collapse; margin: 0.9rem 0em 0em 0em; } 
 table.propertyTable td, table.statementTable td { font-size: 90%; border-left-style: none; border-right-style: none; border-collapse:collapse; } 
 td.propertyTitle, td.statementTitle { font-style: italic; } 
 h4 { font-family:Arial,sans-serif; font-size:120%; font-weight: normal; margin: 0.9rem 0em 0em 0em; page-break-after: avoid; } 

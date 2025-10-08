@@ -1,0 +1,71 @@
+#################################################################
+# Project Metadata
+#################################################################
+
+d:
+	rdf:type owl:Ontology ;
+	rdfs:label "Project 'Very Simple Model (FMC) with Requirements'" ;
+	owl:imports <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ,
+		<http://www.w3.org/2000/01/rdf-schema#> ;
+	dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+	dcterms:createdAt "2025-09-23T17:04:20.888Z" .
+
+#################################################################
+### META-ONTOLOGY = PIG Metamodel (pig:)
+#################################################################
+
+pig:Organizer
+	rdf:type owl:Class ;
+	rdfs:label "Organizer" ;
+	rdfs:comment "A PIG meta-model element used for organizing model-elements." .
+
+pig:Entity
+	rdf:type owl:Class ;
+	rdfs:label "Entity" ;
+	rdfs:comment "A PIG meta-model element used for entities (aka resources or artifacts)." .
+
+pig:Relationship
+	rdf:type owl:Class ;
+	rdfs:label "Relationship" ;
+	rdfs:comment "A PIG meta-model element used for reified relationships (aka predicates)." .
+
+pig:eligibleSource
+	rdf:type owl:ObjectProperty ;
+	rdfs:domain pig:Relationship ;
+	rdfs:range pig:Entity ;
+	rdfs:label "has source" ;
+	rdfs:comment "Connects the source of a reified relationship." .
+
+pig:eligibleTarget
+	rdf:type owl:ObjectProperty ;
+	rdfs:domain pig:Relationship ;
+	rdfs:range pig:Entity ;
+	rdfs:label "has target" ;
+	rdfs:comment "Connects the target of a reified relationship." .
+
+pig:eligibleElement
+	rdf:type owl:ObjectProperty ;
+	rdfs:domain pig:Organizer ;
+	rdfs:range [ owl:unionOf( pig:Entity pig:Relationship pig:Organizer )] ;
+	rdfs:label "has element" ;
+	rdfs:comment "References an entity, a relationship or a subordinated organizer." .
+
+pig:lists
+	rdfs:subPropertyOf pig:eligibleElement ;
+	rdfs:domain pig:Outline ;
+	rdfs:label "lists" ;
+	rdfs:comment "Lists (references) an entity, a relationship or a subordinated organizer." .
+
+pig:shows
+	rdfs:subPropertyOf pig:eligibleElement ;
+	rdfs:domain pig:View ;
+	rdfs:range [ owl:unionOf( pig:Entity pig:Relationship )] ;
+	rdfs:label "shows" ;
+	rdfs:comment "Shows (references) an entity or a relationship." .
+
+pig:depicts
+	rdfs:subPropertyOf pig:eligibleElement ;
+	rdfs:domain pig:View ;
+	rdfs:range pig:Entity ;
+	rdfs:label "depicts" ;
+	rdfs:comment "Depicts an entity; inverse of uml:ownedDiagram." .

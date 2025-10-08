@@ -2,8 +2,29 @@
 # Project Metadata
 #################################################################
 
-d:
-	rdf:type owl:Ontology ;
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix : <http://www.omg.org/spec/CASCaDE/ontology/>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix pig: <http://www.omg.org/spec/CASCaDE/metamodel/>.
+@prefix dim: <http://www.omg.org/spec/CASCaDE/ontology/Dimensions/>.
+@prefix org: <http://www.omg.org/spec/CASCaDE/ontology/Organization/>.
+@prefix arch: <http://www.omg.org/spec/CASCaDE/ontology/ProductArchitecture/>.
+@prefix sys: <http://www.omg.org/spec/CASCaDE/ontology/ProductDesign/SystemsDesign/>.
+@prefix mech: <http://www.omg.org/spec/CASCaDE/ontology/ProductDesign/MechanicalDesign/>.
+@prefix ee: <http://www.omg.org/spec/CASCaDE/ontology/ProductDesign/ElectricElectronicDesign/>.
+@prefix sw: <http://www.omg.org/spec/CASCaDE/ontology/ProductDesign/SoftwareDesign/>.
+@prefix fld: <http://www.omg.org/spec/CASCaDE/ontology/ProductDesign/Fluids/>.
+@prefix ver: <http://www.omg.org/spec/CASCaDE/ontology/ProductVerification/>.
+@prefix val: <http://www.omg.org/spec/CASCaDE/ontology/ProductValidation/>.
+@prefix mnf: <http://www.omg.org/spec/CASCaDE/ontology/ManufacturingSupplyChain/>.
+@prefix op: <http://www.omg.org/spec/CASCaDE/ontology/Operation/>.
+@prefix ctx: <http://www.omg.org/spec/CASCaDE/ontology/ContextElements/>.
+
+:CascadeMetamodel rdf:type owl:Ontology ;
 	rdfs:label "Project 'Very Simple Model (FMC) with Requirements'" ;
 	owl:imports <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ,
 		<http://www.w3.org/2000/01/rdf-schema#> ;

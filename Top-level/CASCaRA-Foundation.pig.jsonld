@@ -1,0 +1,376 @@
+{
+    "@context": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "sh": "http://www.w3.org/ns/shacl#",
+        "xs": "http://www.w3.org/2001/XMLSchema#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "pig": "https://product-information-graph.org/ontology/2026-01-20/#"
+    },
+    "@id": "pig:CASCaRA-Foundation",
+    "@type": "pig:Package",
+    "dcterms:title": [
+        {
+            "@value": "CASCaRA Foundation"
+        }
+    ],
+    "dcterms:description": [
+        {
+            "@value": "Attaches the CASCaRA Ontology to the metamodel items"
+        }
+    ],
+    "dcterms:modified": "2026-01-20T09:38:26.464Z",
+    "@graph": [
+        {
+            "@id": "pig:Entity",
+            "@type": "owl:Class",
+            "pig:itemType": {
+                "@id": "pig:Entity"
+            },
+            "dcterms:title": [
+                {
+                    "@value": "Entity"
+                }
+            ],
+            "dcterms:description": [
+                {
+                    "@value": "A PIG meta-model item used for entities (aka resources or artifacts)."
+                }
+            ],
+            "pig:eligibleProperty": [
+                {
+                    "@id": "pig:category"
+                },
+                {
+                    "@id": "pig:icon"
+                }
+            ]
+        },
+        {
+            "@id": "pig:Organizer",
+            "pig:specializes": {
+                "@id": "pig:Entity"
+            },
+            "pig:itemType": {
+                "@id": "pig:Entity"
+            },
+            "dcterms:title": [
+                {
+                    "@value": "Organizer"
+                }
+            ],
+            "dcterms:description": [
+                {
+                    "@value": "An element organizing model elements. An example is a list of requirements or a diagram using a certain notation."
+                }
+            ],
+            "pig:eligibleProperty": [
+                {
+                    "@id": "pig:category"
+                }
+            ]
+        },
+        {
+            "@id": "pig:HierarchyRoot",
+            "pig:specializes": {
+                "@id": "pig:Organizer"
+            },
+            "pig:itemType": {
+                "@id": "pig:Entity"
+            },
+            "dcterms:title": [
+                {
+                    "@value": "Hierarchy Root"
+                }
+            ],
+            "dcterms:description": [
+                {
+                    "@value": "A subclass of PIG organizer serving as a root for hierarchically organized graph elements."
+                }
+            ],
+            "pig:eligibleProperty": [
+            ],
+            "pig:eligibleTargetLink": [
+                {
+                    "@id": "pig:lists"
+                }
+            ]
+        },
+        {
+            "@id": "pig:Outline",
+            "pig:specializes": {
+                "@id": "pig:Organizer"
+            },
+            "pig:itemType": {
+                "@id": "pig:Entity"
+            },
+            "dcterms:title": [
+                {
+                    "@value": "Outline"
+                }
+            ],
+            "dcterms:description": [
+                {
+                    "@value": "A subclass of PIG organizer comprising all information items of a human-readable document. As usual, the outline is hierarchically organized."
+                }
+            ],
+            "pig:eligibleProperty": [
+                {
+                    "@id": "pig:category"
+                }
+            ],
+            "pig:eligibleTargetLink": [
+                {
+                    "@id": "pig:lists"
+                }
+            ]
+        },
+        {
+            "@id": "pig:View",
+            "pig:specializes": {
+                "@id": "pig:Organizer"
+            },
+            "pig:itemType": {
+                "@id": "pig:Entity"
+            },
+            "dcterms:title": [
+                {
+                    "@value": "View"
+                }
+            ],
+            "dcterms:description": [
+                {
+                    "@value": "A subclass of PIG organizer representing a model view (diagram) using a certain notation showing selected model elements."
+                }
+            ],
+            "pig:eligibleProperty": [
+                {
+                    "@id": "pig:category"
+                },
+                {
+                    "@id": "pig:icon"
+                }
+            ],
+            "pig:eligibleTargetLink": [
+                {
+                    "@id": "pig:shows"
+                },
+                {
+                    "@id": "pig:depicts"
+                }
+            ]
+        },
+        {
+            "@id": "pig:Relationship",
+            "@type": "owl:Class",
+            "pig:itemType": {
+                "@id": "pig:Relationship"
+            },
+            "dcterms:title": [
+                {
+                    "@value": "Relationship"
+                }
+            ],
+            "dcterms:description": [
+                {
+                    "@value": "A PIG meta-model item used for reified relationships (aka predicates)."
+                }
+            ],
+            "pig:eligibleProperty": [
+                {
+                    "@id": "pig:category"
+                },
+                {
+                    "@id": "pig:icon"
+                }
+            ],
+            "pig:eligibleSourceLink": {
+                "@id": "pig:SourceLink"
+            },
+            "pig:eligibleTargetLink": {
+                "@id": "pig:TargetLink"
+            }
+        },
+        {
+            "@id": "pig:Property",
+            "@type": "owl:DatatypeProperty",
+            "pig:itemType": {
+                "@id": "pig:Property"
+            },
+            "dcterms:title": [
+                {
+                    "@value": "Property"
+                }
+            ],
+            "dcterms:description": [
+                {
+                    "@value": "A PIG meta-model item used for properties (aka attributes)."
+                }
+            ],
+            "sh:datatype": {
+                "@id": "xs:anyType"
+            }
+        },
+        {
+            "@id": "pig:Link",
+            "@type": "owl:ObjectProperty",
+            "pig:itemType": {
+                "@id": "pig:Link"
+            },
+            "pig:eligibleEndpoint": [
+                {
+                    "@id": "pig:Entity"
+                },
+                {
+                    "@id": "pig:Relationship"
+                }
+            ],
+            "dcterms:title": [
+                {
+                    "@value": "linked with"
+                }
+            ],
+            "dcterms:description": [
+                {
+                    "@value": "A PIG meta-model item connecting a reified relationship with its source or target. Also connects an organizer to a model element"
+                }
+            ]
+        },
+        {
+            "@id": "pig:SourceLink",
+            "pig:specializes": {
+                "@id": "pig:Link"
+            },
+            "pig:itemType": {
+                "@id": "pig:Link"
+            },
+            "pig:eligibleEndpoint": [
+                {
+                    "@id": "pig:Entity"
+                },
+                {
+                    "@id": "pig:Relationship"
+                }
+            ],
+            "dcterms:title": [
+                {
+                    "@value": "to source"
+                }
+            ],
+            "dcterms:description": [
+                {
+                    "@value": "Connects the source of a reified relationship."
+                }
+            ]
+        },
+        {
+            "@id": "pig:TargetLink",
+            "pig:specializes": {
+                "@id": "pig:Link"
+            },
+            "pig:itemType": {
+                "@id": "pig:Link"
+            },
+            "pig:eligibleEndpoint": [
+                {
+                    "@id": "pig:Entity"
+                },
+                {
+                    "@id": "pig:Relationship"
+                }
+            ],
+            "dcterms:title": [
+                {
+                    "@value": "to target"
+                }
+            ],
+            "dcterms:description": [
+                {
+                    "@value": "Connects the target of a reified relationship or an organizer."
+                }
+            ]
+        },
+        {
+            "@id": "pig:lists",
+            "pig:specializes": {
+                "@id": "pig:TargetLink"
+            },
+            "pig:itemType": {
+                "@id": "pig:Link"
+            },
+            "pig:eligibleEndpoint": [
+                {
+                    "@id": "pig:Entity"
+                },
+                {
+                    "@id": "pig:Relationship"
+                },
+                {
+                    "@id": "pig:Organizer"
+                }
+            ],
+            "dcterms:title": [
+                {
+                    "@value": "lists"
+                }
+            ],
+            "dcterms:description": [
+                {
+                    "@value": "Lists an entity, a relationship or a subordinated organizer."
+                }
+            ]
+        },
+        {
+            "@id": "pig:shows",
+            "pig:specializes": {
+                "@id": "pig:TargetLink"
+            },
+            "pig:itemType": {
+                "@id": "pig:Link"
+            },
+            "pig:eligibleEndpoint": [
+                {
+                    "@id": "pig:Entity"
+                },
+                {
+                    "@id": "pig:Relationship"
+                }
+            ],
+            "dcterms:title": [
+                {
+                    "@value": "shows"
+                }
+            ],
+            "dcterms:description": [
+                {
+                    "@value": "Shows an entity or a relationship."
+                }
+            ]
+        },
+        {
+            "@id": "pig:depicts",
+            "pig:specializes": {
+                "@id": "pig:TargetLink"
+            },
+            "pig:itemType": {
+                "@id": "pig:Link"
+            },
+            "pig:eligibleEndpoint": [
+                {
+                    "@id": "pig:Entity"
+                }
+            ],
+            "dcterms:title": [
+                {
+                    "@value": "depicts"
+                }
+            ],
+            "dcterms:description": [
+                {
+                    "@value": "Depicts an entity; inverse of uml:ownedDiagram."
+                }
+            ]
+        }
+    ]
+}

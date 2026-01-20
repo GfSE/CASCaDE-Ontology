@@ -1,0 +1,217 @@
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix pig: <https://product-information-graph.org/ontology/2026-01-20/#> .
+@prefix pigShapes_rdfs: <https://product-information-graph.org/ontology/2026-01-20/shapes/rdfs#> .
+@prefix pigShapes_pig: <https://product-information-graph.org/ontology/2026-01-20/shapes/pig#> .
+
+#################################################################
+# Project Metadata
+#################################################################
+
+pig:
+	rdf:type owl:Ontology ;
+	rdfs:label "CASCaRA Foundation" ;
+	rdfs:comment "Attaches the CASCaRA Ontology to the metamodel items" ;
+	owl:imports <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ,
+		<http://www.w3.org/2000/01/rdf-schema#> ;
+	dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+	dcterms:modified "2026-01-20T09:38:26.464Z" .
+
+#################################################################
+# PIG Metamodel (pig:)
+#################################################################
+
+pig:Entity
+	rdf:type owl:Class ;
+	rdfs:label "Entity" ;
+	rdfs:comment "A PIG meta-model item used for entities (aka resources or artifacts)." .
+
+pigShapes_pig:Entity
+	rdf:type sh:NodeShape ;
+	sh:targetClass pig:Entity ;
+	sh:property pigShapes_rdfs:label ,
+		pigShapes_rdfs:comment ,
+		pigShapes_pig:category ,
+		pigShapes_pig:icon .
+
+pig:Organizer
+	rdfs:subClassOf pig:Entity ;
+	rdfs:label "Organizer" ;
+	rdfs:comment "An element organizing model elements. An example is a list of requirements or a diagram using a certain notation." .
+
+pigShapes_pig:Organizer
+	rdf:type sh:NodeShape ;
+	sh:targetClass pig:Organizer ;
+	sh:property pigShapes_rdfs:label ,
+		pigShapes_rdfs:comment ,
+		pigShapes_pig:category .
+
+pig:HierarchyRoot
+	rdfs:subClassOf pig:Organizer ;
+	rdfs:label "Hierarchy Root" ;
+	rdfs:comment "A subclass of PIG organizer serving as a root for hierarchically organized graph elements." .
+
+pigShapes_pig:HierarchyRoot
+	rdf:type sh:NodeShape ;
+	sh:targetClass pig:HierarchyRoot ;
+	sh:property pigShapes_rdfs:label ,
+		pigShapes_rdfs:comment ,
+		pigShapes_pig:lists .
+
+pig:Outline
+	rdfs:subClassOf pig:Organizer ;
+	rdfs:label "Outline" ;
+	rdfs:comment "A subclass of PIG organizer comprising all information items of a human-readable document. As usual, the outline is hierarchically organized." .
+
+pigShapes_pig:Outline
+	rdf:type sh:NodeShape ;
+	sh:targetClass pig:Outline ;
+	sh:property pigShapes_rdfs:label ,
+		pigShapes_rdfs:comment ,
+		pigShapes_pig:category ,
+		pigShapes_pig:lists .
+
+pig:View
+	rdfs:subClassOf pig:Organizer ;
+	rdfs:label "View" ;
+	rdfs:comment "A subclass of PIG organizer representing a model view (diagram) using a certain notation showing selected model elements." .
+
+pigShapes_pig:View
+	rdf:type sh:NodeShape ;
+	sh:targetClass pig:View ;
+	sh:property pigShapes_rdfs:label ,
+		pigShapes_rdfs:comment ,
+		pigShapes_pig:category ,
+		pigShapes_pig:icon ,
+		pigShapes_pig:shows ,
+		pigShapes_pig:depicts .
+
+pig:Relationship
+	rdf:type owl:Class ;
+	rdfs:label "Relationship" ;
+	rdfs:comment "A PIG meta-model item used for reified relationships (aka predicates)." .
+
+pigShapes_pig:Relationship
+	rdf:type sh:NodeShape ;
+	sh:targetClass pig:Relationship ;
+	sh:property pigShapes_rdfs:label ,
+		pigShapes_rdfs:comment ,
+		pigShapes_pig:category ,
+		pigShapes_pig:icon ,
+		pigShapes_pig:SourceLink ,
+		pigShapes_pig:TargetLink .
+
+pig:Property
+	rdf:type owl:DatatypeProperty ;
+	rdfs:label "Property" ;
+	rdfs:comment "A PIG meta-model item used for properties (aka attributes)." .
+
+pigShapes_pig:Property
+	rdf:type sh:PropertyShape ;
+	sh:path pig:Property ;
+	sh:datatype xs:anyType .
+
+pig:Link
+	rdf:type owl:ObjectProperty ;
+	rdfs:range [ owl:unionOf(
+			pig:Entity
+			pig:Relationship
+		)] ;
+	rdfs:label "linked with" ;
+	rdfs:comment "A PIG meta-model item connecting a reified relationship with its source or target. Also connects an organizer to a model element" .
+
+pigShapes_pig:Link
+	rdf:type sh:PropertyShape ;
+	sh:path pig:Link ;
+	sh:or (
+			[ sh:class pig:Entity ]
+			[ sh:class pig:Relationship ]
+		) .
+
+pig:SourceLink
+	rdfs:subPropertyOf pig:Link ;
+	rdfs:range [ owl:unionOf(
+			pig:Entity
+			pig:Relationship
+		)] ;
+	rdfs:label "to source" ;
+	rdfs:comment "Connects the source of a reified relationship." .
+
+pigShapes_pig:SourceLink
+	rdf:type sh:PropertyShape ;
+	sh:path pig:SourceLink ;
+	sh:or (
+			[ sh:class pig:Entity ]
+			[ sh:class pig:Relationship ]
+		) .
+
+pig:TargetLink
+	rdfs:subPropertyOf pig:Link ;
+	rdfs:range [ owl:unionOf(
+			pig:Entity
+			pig:Relationship
+		)] ;
+	rdfs:label "to target" ;
+	rdfs:comment "Connects the target of a reified relationship or an organizer." .
+
+pigShapes_pig:TargetLink
+	rdf:type sh:PropertyShape ;
+	sh:path pig:TargetLink ;
+	sh:or (
+			[ sh:class pig:Entity ]
+			[ sh:class pig:Relationship ]
+		) .
+
+pig:lists
+	rdfs:subPropertyOf pig:TargetLink ;
+	rdfs:range [ owl:unionOf(
+			pig:Entity
+			pig:Relationship
+			pig:Organizer
+		)] ;
+	rdfs:label "lists" ;
+	rdfs:comment "Lists an entity, a relationship or a subordinated organizer." .
+
+pigShapes_pig:lists
+	rdf:type sh:PropertyShape ;
+	sh:path pig:lists ;
+	sh:or (
+			[ sh:class pig:Entity ]
+			[ sh:class pig:Relationship ]
+			[ sh:class pig:Organizer ]
+		) .
+
+pig:shows
+	rdfs:subPropertyOf pig:TargetLink ;
+	rdfs:range [ owl:unionOf(
+			pig:Entity
+			pig:Relationship
+		)] ;
+	rdfs:label "shows" ;
+	rdfs:comment "Shows an entity or a relationship." .
+
+pigShapes_pig:shows
+	rdf:type sh:PropertyShape ;
+	sh:path pig:shows ;
+	sh:or (
+			[ sh:class pig:Entity ]
+			[ sh:class pig:Relationship ]
+		) .
+
+pig:depicts
+	rdfs:subPropertyOf pig:TargetLink ;
+	rdfs:range pig:Entity ;
+	rdfs:label "depicts" ;
+	rdfs:comment "Depicts an entity; inverse of uml:ownedDiagram." .
+
+pigShapes_pig:depicts
+	rdf:type sh:PropertyShape ;
+	sh:path pig:depicts ;
+	sh:or (
+			[ sh:class pig:Entity ]
+		) .
+

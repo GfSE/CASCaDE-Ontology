@@ -4,7 +4,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xs: <http://www.w3.org/2001/XMLSchema#> .
-@prefix pig: <https://product-information-graph.org/ontology/2026-01-20/#> .
+@prefix pig: <https://product-information-graph.org/ontology/2026-01-20/foundation#> .
 @prefix pigShapes_rdfs: <https://product-information-graph.org/ontology/2026-01-20/shapes/rdfs#> .
 @prefix pigShapes_pig: <https://product-information-graph.org/ontology/2026-01-20/shapes/pig#> .
 
@@ -115,6 +115,31 @@ pigShapes_pig:Property
 	sh:path pig:Property ;
 	sh:datatype xs:anyType .
 
+pig:icon
+	rdfs:subPropertyOf pig:Property ;
+	rdfs:label "has icon" ;
+	rdfs:comment "Specifies an icon for a model element (entity or relationship)." .
+
+pigShapes_pig:icon
+	rdf:type sh:PropertyShape ;
+	sh:path pig:icon ;
+	sh:datatype xs:string ;
+	sh:minCount "0" ;
+	sh:maxCount "1" .
+
+pig:category
+	rdfs:subPropertyOf dcterms:type ;
+	rdfs:label "has category" ;
+	rdfs:comment "Specifies a category for an element (entity, relationship or organizer)." .
+
+pigShapes_pig:category
+	rdf:type sh:PropertyShape ;
+	sh:path pig:category ;
+	sh:datatype xs:string ;
+	sh:maxLength "32" ;
+	sh:minCount "0" ;
+	sh:maxCount "1" .
+
 pig:Link
 	rdf:type owl:ObjectProperty ;
 	rdfs:range [ owl:unionOf(
@@ -214,4 +239,3 @@ pigShapes_pig:depicts
 	sh:or (
 			[ sh:class pig:Entity ]
 		) .
-

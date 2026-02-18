@@ -1,0 +1,632 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix : <http://www.omg.org/spec/CASCaDE/ontology/>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix pig: <http://www.omg.org/spec/CASCaDE/metamodel/>.
+@prefix prov: <http://www.w3.org/ns/prov/>.
+@prefix dim: <http://www.omg.org/spec/CASCaDE/ontology/Dimensions/>.
+@prefix pro: <http://www.omg.org/spec/CASCaDE/ontology/ProductLineEngineering/>.
+@prefix con: <http://www.omg.org/spec/CASCaDE/ontology/ProductDevelopment/ConceptDefinition/>.
+@prefix org: <http://www.omg.org/spec/CASCaDE/ontology/Organization/>.
+@prefix arch: <http://www.omg.org/spec/CASCaDE/ontology/ProductArchitecture/>.
+@prefix sys: <http://www.omg.org/spec/CASCaDE/ontology/ProductDesign/SystemsDesign/>.
+@prefix mec: <http://www.omg.org/spec/CASCaDE/ontology/ProductDevelopment/ProductDesign/MechanicalDesign/>.
+@prefix mech: <http://www.omg.org/spec/CASCaDE/ontology/ProductDesign/MechanicalDesign/>.
+@prefix ee: <http://www.omg.org/spec/CASCaDE/ontology/ProductDesign/ElectricElectronicDesign/>.
+@prefix ctx: <http://www.omg.org/spec/CASCaDE/ontology/ContextElements/>.
+@prefix sw: <http://www.omg.org/spec/CASCaDE/ontology/ProductDesign/SoftwareDesign/>.
+@prefix ver: <http://www.omg.org/spec/CASCaDE/ontology/ProductVerification/>.
+@prefix val: <http://www.omg.org/spec/CASCaDE/ontology/ProductValidation/>.
+@prefix fld: <http://www.omg.org/spec/CASCaDE/ontology/ProductDesign/Fluids/>.
+@prefix mnf: <http://www.omg.org/spec/CASCaDE/ontology/ManufacturingSupplyChain/>.
+@prefix man: <http://www.omg.org/spec/CASCaDE/ontology/ManufacturingSupplyChain/>.
+@prefix op: <http://www.omg.org/spec/CASCaDE/ontology/Operation/>.
+
+<http://www.omg.org/spec/CASCaDE/ontology/> dcterms:license <https://opensource.org/licenses/MIT>;
+                                            a owl:Ontology;
+                                            rdfs:comment "OMG CASCaDE Ontology Ontology Version 1.0 created 13.10.2025 03:50:52 by Michael Kirsch, :em engineering methods AG";
+                                            owl:versionInfo "1.0".
+:ConceptDefinition dcterms:modified "2022-02-18T11:17:54Z"^^xsd:dateTime;
+                   a owl:Class;
+                   rdfs:comment """In conceptual design, new products or systems are defined through requirements and specified through a functional structure in mechanical, electrics/electronics, and software domains. A logical structure specifies the future product architecture in order to implement the specified functions.
+Besides new products, existing products may be changed or modified significantly to better comply with customer needs, or to attract new customers. Eventually, the product may be changed or adopted to comply to new standards, regulations or laws.
+Conceptual design is usually performed at a high abstraction level and low level of detail, using parameter studies, system models, and rough geometry, if any.
+For the Digital Data Package, model-based methods and data for product conceptual design are assumed."""@en;
+                   rdfs:label "Concept definition"@en,
+                              "Konzeptdefinition"@de;
+                   rdfs:subClassOf pig:Entity.
+:LongTermArchiving a owl:Class;
+                   rdfs:comment "For long-term archiving, all product information must be configured and stored in a retrievable way. Product information includes domain-specifc models, relations between models and model entities, and meta-data about the documents and models."@en;
+                   rdfs:label "Long-Term Archiving"@en,
+                              "Langzeitarchivierung"@de;
+                   rdfs:subClassOf prov:Activity;
+                   prov:generated arch:StakeholderRequirement,
+                                  arch:SystemRequirement,
+                                  arch:Function,
+                                  arch:FunctionFailure,
+                                  sys:SystemComponent,
+                                  sys:ComponentInterface,
+                                  sys:ComponentConnection,
+                                  sys:ComponentState,
+                                  mech:MechanicalComponent,
+                                  mech:Body,
+                                  mech:Material,
+                                  mech:ModelAnnotation,
+                                  mech:KinematicMechanism,
+                                  mech:KinematicJoint,
+                                  mech:JoiningProcess,
+                                  mech:JoiningElement,
+                                  ver:VerificationRun,
+                                  ver:VerificationResult,
+                                  val:ValidationRun,
+                                  val:ValidationResult,
+                                  val:Displacement.
+:ManufacturingSupplyChain dcterms:modified "2021-11-24T10:35:16Z"^^xsd:dateTime;
+                          a owl:Class;
+                          rdfs:comment "Includes all activities related to source and manufacture a product in different companies, plants, or locations."@en;
+                          rdfs:label "Manufacturing & Supply Chain"@en,
+                                     "Produktion & Lieferkette"@de;
+                          rdfs:subClassOf pig:Entity.
+mnf:PackagingLogistics a owl:Class;
+                       rdfs:comment "Includes the definition of all kinds of packaging and transport equipment to ensure a product or its components will be supplied to their destination safely."@en;
+                       rdfs:label "Packaging & Logistics"@en,
+                                  "Verpackung & Logistik"@de;
+                       rdfs:subClassOf prov:Activity;
+                       prov:generated mech:MechanicalComponent,
+                                      mech:Body,
+                                      mech:Material,
+                                      mech:JoiningProcess,
+                                      mech:JoiningElement,
+                                      fld:HydraulicPneumaticConnection,
+                                      fld:HydraulicPneumaticPort.
+mnf:PartsManufacturing a owl:Class;
+                       rdfs:comment "Manufacturing of single parts using a variety of production processes and methods, each with specific sets of data, such as CNC programs, bending specification, holes specifications, joining features, etc."@en;
+                       rdfs:label "Parts Manufacturing"@en,
+                                  "Teilefertigung"@de;
+                       rdfs:subClassOf prov:Activity;
+                       prov:generated mech:MechanicalComponent,
+                                      mech:Body,
+                                      mech:Material,
+                                      mech:ModelView,
+                                      mech:Datum,
+                                      mech:GeometricTolerance,
+                                      mech:Size,
+                                      mech:SurfaceTexture,
+                                      mech:PaintingCoating,
+                                      mech:MarkingLabeling,
+                                      mnf:ManufacturingOperation,
+                                      mnf:ManufacturingEquipmentComponent.
+mnf:ProductAssembly a owl:Class;
+                    rdfs:comment "Assembly of components or products from single parts or sub-components according to a production plan, using all kinds of joinig and bonding."@en;
+                    rdfs:label "Product Assembly"@en,
+                               "Montage"@de;
+                    rdfs:subClassOf prov:Activity;
+                    prov:generated mech:MechanicalComponent,
+                                   mech:Body,
+                                   mech:Material,
+                                   mech:ModelView,
+                                   mech:Datum,
+                                   mech:GeometricTolerance,
+                                   mech:Size,
+                                   mech:SurfaceTexture,
+                                   mech:KinematicMechanism,
+                                   mech:KinematicJoint,
+                                   mech:JoiningProcess,
+                                   mech:JoiningElement,
+                                   mnf:ManufacturingOperation,
+                                   mnf:ManufacturingEquipmentComponent.
+mnf:QualityInspection a owl:Class;
+                      rdfs:comment "Includes the inspection of single parts, components or products during or after the manufacturing process, as well as the documentation of inspection results."@en;
+                      rdfs:label "Quality Inspection"@en,
+                                 "Qualitätskontrolle"@de;
+                      rdfs:subClassOf prov:Activity;
+                      prov:generated mech:MechanicalComponent,
+                                     mech:Body,
+                                     mech:JoiningProcess,
+                                     mech:JoiningElement,
+                                     ver:VerificationCharacteristic,
+                                     ver:VerificationPlan,
+                                     ver:VerificationResource,
+                                     mnf:ControlPlan.
+:MechanicalDesign dcterms:modified "2023-10-22T15:48:39Z"^^xsd:dateTime;
+                  a owl:Class;
+                  rdfs:comment """In Mechanical Design, physical product structure, product geometry, as well as all specifications are defined.
+This includes shape, dimensioning and tolerancing, material (including semi-finished parts and treatment), surface and edge specifications.
+Mechanical design is usually conducted using a mechanical CAD system."""@en;
+                  rdfs:label "Mechanical Design"@en,
+                             "Mechanische Konstruktion"@de;
+                  rdfs:subClassOf pig:Entity.
+:Procurement a owl:Class;
+             rdfs:comment "Communication between procurement and suppliers in the bidding and iquiry phase. Supports the OMG Model-Based Aqcuisition initiative."@en;
+             rdfs:label "Procurement"@en,
+                        "Beschaffung"@de;
+             rdfs:subClassOf prov:Activity;
+             prov:generated mech:MechanicalComponent,
+                            mech:Body,
+                            mech:Material,
+                            mech:Datum,
+                            mech:GeometricTolerance,
+                            mech:Size,
+                            mech:SurfaceTexture,
+                            mech:Hole,
+                            mech:JoiningProcess,
+                            mech:JoiningElement,
+                            mech:PaintingCoating,
+                            mech:MarkingLabeling,
+                            mech:HeatTreatment,
+                            mech:BendingSpecification,
+                            ee:ElectricElectronicComponent,
+                            ee:ElectricElectronicPort,
+                            ee:ElectricElectronicConnection.
+:ProductDesign dcterms:modified "2021-11-29T12:59:20Z"^^xsd:dateTime;
+               a owl:Class;
+               rdfs:comment """Product Design is the specific synthesis, implentation and documentation of design solutions suggested by systems engineering.
+Product design comprises the domain-specific design processes of mechanical, electrical/electronical design, and software engineering."""@en;
+               rdfs:label "Product Design"@en,
+                          "Produktentwurf"@de;
+               rdfs:subClassOf pig:Entity.
+:ProductDevelopment dcterms:modified "2022-02-18T11:15:52Z"^^xsd:dateTime;
+                    a owl:Class;
+                    rdfs:comment """Product development is the creation of products with new or modified characteristics that offer new or additional benefits to the customer, or comply with new or changed standards, rules and regulations.
+Product development may involve modification of an existing product or its presentation or formulation of an entirely new product that satisfies a newly-defined or changed customer need or market segment.
+Description based on: https://cio-wiki.org/wiki/Product_Development"""@en;
+                    rdfs:label "Product Development"@en,
+                               "Produktentwicklung"@de;
+                    rdfs:subClassOf pig:Entity.
+con:BusinessOrMissionAnalysis a owl:Class;
+                              rdfs:comment """Product Planning is the ongoing process of identifying and articulating market requirements that define a product's feature set. Product planning serves as the basis for decisions about price, distribution and promotion.
+Product planning is the process of creating a product idea and following through on it until the product is introduced to the market. Additionally, a small company must have an exit strategy for its product in case the product does not sell.
+Product planning entails managing the product throughout its life using various marketing strategies, including product extensions or improvements, increased distribution, price changes and promotions.
+
+Also includes the identification of relevant legal requirements as well as customs and tax regulations applicable to the product and the respective target markets.
+Description based on: https://en.wikipedia.org/wiki/Product_planning"""@en;
+                              rdfs:label "Business or Mission Analysis"@en,
+                                         "Geschäfts- oder Einsatzanalyse"@de;
+                              rdfs:subClassOf prov:Activity;
+                              prov:used org:Role,
+                                        arch:UseCase.
+con:FunctionalSafety a owl:Class;
+                     rdfs:label "Functional Safety"@en,
+                                "Funktionale Sicherheit"@de;
+                     rdfs:subClassOf prov:Activity;
+                     prov:generated org:Role,
+                                    arch:UseCase,
+                                    arch:SystemRequirement,
+                                    arch:Function,
+                                    sys:SystemComponent,
+                                    sys:ComponentInterface,
+                                    sys:ComponentConnection,
+                                    sys:ComponentState;
+                     prov:used arch:Function,
+                               arch:FunctionFailure,
+                               sys:SystemComponent,
+                               sys:ComponentInterface,
+                               sys:ComponentConnection,
+                               sys:ComponentState.
+con:RequirementsEngineering a owl:Class;
+                            rdfs:comment """Requirements engineering is the process of defining, eliciting, documenting, and maintaining requirements in the engineering design process.
+Description based on: https://en.wikipedia.org/wiki/Requirements_engineering"""@en;
+                            rdfs:label "Requirements Engineering"@en,
+                                       "Anforderungsmanagement"@de;
+                            rdfs:subClassOf prov:Activity;
+                            prov:generated org:Role,
+                                           arch:UseCase;
+                            prov:used arch:Requirement.
+con:SystemsArchitecture a owl:Class;
+                        rdfs:comment "Systems architecture refers to the cross-domain definition of functions and logical structures at systems level, that will be pursued in detail by the individual domains mechanical design, electric/electronic design and software design."@en;
+                        rdfs:label "Systems Architecture"@en,
+                                   "Systemarchitektur"@de;
+                        rdfs:subClassOf prov:Activity;
+                        prov:generated org:Role,
+                                       arch:UseCase,
+                                       arch:StakeholderRequirement;
+                        prov:used arch:Function,
+                                  arch:FunctionFailure,
+                                  sys:SystemComponent,
+                                  sys:ComponentInterface,
+                                  sys:ComponentConnection,
+                                  sys:ComponentState.
+<http://www.omg.org/spec/CASCaDE/ontology/ProductDevelopment/ProductDesign/ElectricalElectronicalDesign> a owl:Class;
+                                                                                                         rdfs:comment """In Electrical/Electronic Design, all electrical and electronic products functions will be implemented through electrical and electonic components selection and allocation, circuit board design, and wire and harness routing.
+Electrical/Electronic Design is usually performed using an electrical/electronic CAD system."""@en;
+                                                                                                         rdfs:label "Electrical/Electronical Design"@en,
+                                                                                                                    "Elektrik-/Elektronikentwicklung"@de;
+                                                                                                         rdfs:subClassOf prov:Activity;
+                                                                                                         prov:generated arch:SystemRequirement,
+                                                                                                                        arch:Function,
+                                                                                                                        sys:SystemComponent,
+                                                                                                                        sys:ComponentInterface,
+                                                                                                                        sys:ComponentConnection,
+                                                                                                                        sys:ComponentState,
+                                                                                                                        mech:MechanicalComponent,
+                                                                                                                        mech:Body;
+                                                                                                         prov:used ee:ElectricElectronicComponent,
+                                                                                                                   ee:ElectricElectronicPort,
+                                                                                                                   ee:ElectricElectronicConnection,
+                                                                                                                   ctx:Configuration,
+                                                                                                                   ctx:Variant,
+                                                                                                                   ctx:Reference.
+<http://www.omg.org/spec/CASCaDE/ontology/ProductDevelopment/ProductDesign/ElectricalMechanicalDesignCollaboration> a owl:Class;
+                                                                                                                    rdfs:comment "In Electrical/Mechanical Design Collaboration, both design disciplines involved will collaborate in a common 3D space in order to adjust and coordinate allocation, dimensioning and positioning of components."@en;
+                                                                                                                    rdfs:label "Electrical/Mechanical Design Collaboration"@en,
+                                                                                                                               "Zusammenarbeit Elektrik/Mechanik-Konstruktion"@de;
+                                                                                                                    rdfs:subClassOf prov:Activity;
+                                                                                                                    prov:generated mech:MechanicalComponent,
+                                                                                                                                   mech:Body,
+                                                                                                                                   ee:ElectricElectronicComponent,
+                                                                                                                                   ee:ElectricElectronicPort,
+                                                                                                                                   ee:ElectricElectronicConnection.
+mec:DefineJoiningElements a owl:Class;
+                          rdfs:label "Define Joining Elements"@en,
+                                     "Fügeverbindungen definieren"@de;
+                          rdfs:subClassOf prov:Activity;
+                          prov:generated arch:SystemRequirement,
+                                         mech:MechanicalComponent,
+                                         mech:Face,
+                                         mech:Material,
+                                         mech:JoiningProcess;
+                          prov:used mech:JoiningElement.
+<http://www.omg.org/spec/CASCaDE/ontology/ProductDevelopment/ProductDesign/SoftwareEngineering> a owl:Class;
+                                                                                                rdfs:comment """In Software Engineering, embedded software is developed that will connect the product to the user, as well as to other products and systems.
+For configuration reasons it may be that software is treated a part to be considered in Bills of Material of products or systems and to be configured related to mechanical or electronic configurations of a system."""@en;
+                                                                                                rdfs:label "Software Engineering"@en,
+                                                                                                           "Softwareentwicklung"@de;
+                                                                                                rdfs:subClassOf prov:Activity;
+                                                                                                prov:generated arch:SystemRequirement,
+                                                                                                               arch:Function,
+                                                                                                               sys:SystemComponent,
+                                                                                                               sys:ComponentInterface,
+                                                                                                               sys:ComponentConnection,
+                                                                                                               sys:ComponentState,
+                                                                                                               mech:MechanicalComponent,
+                                                                                                               mech:Body,
+                                                                                                               ee:ElectricElectronicComponent,
+                                                                                                               ee:ElectricElectronicPort,
+                                                                                                               ee:ElectricElectronicConnection;
+                                                                                                prov:used sw:SoftwareClass,
+                                                                                                          sw:SoftwareInterface,
+                                                                                                          sw:SoftwareComponent,
+                                                                                                          ctx:Configuration,
+                                                                                                          ctx:Variant,
+                                                                                                          ctx:Reference.
+<http://www.omg.org/spec/CASCaDE/ontology/ProductDevelopment/VerificationValidationUsingSimulation/PerformAndDocumentSimulation> a owl:Class;
+                                                                                                                                 rdfs:comment "Simulation execution includes performing the simulation as well as documenting and summarizing the simulation results."@en;
+                                                                                                                                 rdfs:label "Perform and document Simulation"@en,
+                                                                                                                                            "Simulation durchführen und dokumentieren"@de;
+                                                                                                                                 rdfs:subClassOf prov:Activity;
+                                                                                                                                 prov:generated mech:MechanicalComponent,
+                                                                                                                                                mech:Body,
+                                                                                                                                                mech:Material,
+                                                                                                                                                val:ValidationCriterium,
+                                                                                                                                                val:ValidationPlan,
+                                                                                                                                                val:ValidationBoundaryCondition,
+                                                                                                                                                val:ValidationRun;
+                                                                                                                                 prov:used ver:VerificationRun,
+                                                                                                                                           ver:VerificationResult,
+                                                                                                                                           val:ValidationRun,
+                                                                                                                                           val:ValidationResult.
+<http://www.omg.org/spec/CASCaDE/ontology/ProductDevelopment/VerificationValidationUsingSimulation/PlanAndPrepareSimulation> a owl:Class;
+                                                                                                                             rdfs:comment "Planning and preparation of a simulation includes the specification of the simulation objectives based on product requirements and functions. This is followed by the definition of the simulation boundary conditions and the createion of simulation models according to simulation objectives."@en,
+                                                                                                                                          "Die Planung und Vorbereitung einer Simulation umfasst die Spezifikation der Simulationsziele auf der Grundlage der Produktanforderungen und -funktionen. Es folgt die Definition der Simulationsrandbedingungen und die Erstellung von Simulationsmodellen entsprechend den Simulationszielen."@de;
+                                                                                                                             rdfs:label "Plan and prepare Simulation"@en,
+                                                                                                                                        "Simulation planen und vorbereiten"@de;
+                                                                                                                             rdfs:subClassOf prov:Activity;
+                                                                                                                             prov:generated arch:SystemRequirement,
+                                                                                                                                            arch:Function,
+                                                                                                                                            mech:MechanicalComponent,
+                                                                                                                                            mech:Body,
+                                                                                                                                            mech:GeometricInterference,
+                                                                                                                                            mech:Material,
+                                                                                                                                            mech:Datum,
+                                                                                                                                            mech:GeometricTolerance,
+                                                                                                                                            mech:Size,
+                                                                                                                                            mech:SurfaceTexture,
+                                                                                                                                            mech:Hole,
+                                                                                                                                            mech:KinematicMechanism,
+                                                                                                                                            mech:KinematicJoint,
+                                                                                                                                            mech:KinematicSensor,
+                                                                                                                                            mech:KinematicMotion,
+                                                                                                                                            mech:JoiningProcess,
+                                                                                                                                            mech:JoiningElement,
+                                                                                                                                            mech:PaintingCoating,
+                                                                                                                                            mech:MarkingLabeling,
+                                                                                                                                            mech:HeatTreatment,
+                                                                                                                                            mech:BendingSpecification,
+                                                                                                                                            ee:ElectricElectronicComponent,
+                                                                                                                                            ee:ElectricElectronicPort,
+                                                                                                                                            ee:ElectricElectronicConnection,
+                                                                                                                                            sw:SoftwareClass,
+                                                                                                                                            sw:SoftwareInterface,
+                                                                                                                                            sw:SoftwareComponent,
+                                                                                                                                            fld:HydraulicPneumaticConnection,
+                                                                                                                                            fld:HydraulicPneumaticPort;
+                                                                                                                             prov:used ver:VerificationCharacteristic,
+                                                                                                                                       ver:VerificationPlan,
+                                                                                                                                       ver:VerificationResource,
+                                                                                                                                       val:ValidationCriterium,
+                                                                                                                                       val:ValidationPlan,
+                                                                                                                                       val:ValidationBoundaryCondition.
+<http://www.omg.org/spec/CASCaDE/ontology/ProductDevelopment/VerificationValidationUsingTest/PerformAndDocumentTesting> a owl:Class;
+                                                                                                                        rdfs:comment "Testing execution includes scheduling tests, allocating the test rig, executing and documenting the test."@en;
+                                                                                                                        rdfs:label "Perform and document Testing"@en,
+                                                                                                                                   "Versuch durchführen und dokumentieren"@de;
+                                                                                                                        rdfs:subClassOf prov:Activity;
+                                                                                                                        prov:generated mech:MechanicalComponent,
+                                                                                                                                       mech:Material,
+                                                                                                                                       val:ValidationCriterium,
+                                                                                                                                       val:ValidationPlan,
+                                                                                                                                       val:ValidationBoundaryCondition,
+                                                                                                                                       val:ValidationRun;
+                                                                                                                        prov:used ver:VerificationRun,
+                                                                                                                                  ver:VerificationResult,
+                                                                                                                                  val:ValidationRun,
+                                                                                                                                  val:ValidationResult.
+<http://www.omg.org/spec/CASCaDE/ontology/ProductDevelopment/VerificationValidationUsingTest/PrepareTesting> a owl:Class;
+                                                                                                             rdfs:comment "Testing preparation includes the definition of product requirements and functions to be validated, the specification, design and manufacturing of samples, prototypes and test rigs."@en;
+                                                                                                             rdfs:label "Prepare Testing"@en,
+                                                                                                                        "Versuch vorbereiten"@de;
+                                                                                                             rdfs:subClassOf prov:Activity;
+                                                                                                             prov:generated arch:SystemRequirement,
+                                                                                                                            arch:Function,
+                                                                                                                            mech:MechanicalComponent,
+                                                                                                                            mech:Body,
+                                                                                                                            mech:Material,
+                                                                                                                            mech:Datum,
+                                                                                                                            mech:GeometricTolerance,
+                                                                                                                            mech:Size,
+                                                                                                                            mech:SurfaceTexture,
+                                                                                                                            mech:Hole,
+                                                                                                                            mech:KinematicMechanism,
+                                                                                                                            mech:KinematicJoint,
+                                                                                                                            mech:KinematicSensor,
+                                                                                                                            mech:KinematicMotion,
+                                                                                                                            mech:JoiningProcess,
+                                                                                                                            mech:JoiningElement,
+                                                                                                                            mech:PaintingCoating,
+                                                                                                                            mech:MarkingLabeling,
+                                                                                                                            mech:HeatTreatment,
+                                                                                                                            mech:BendingSpecification,
+                                                                                                                            ee:ElectricElectronicComponent,
+                                                                                                                            ee:ElectricElectronicPort,
+                                                                                                                            ee:ElectricElectronicConnection,
+                                                                                                                            sw:SoftwareClass,
+                                                                                                                            sw:SoftwareInterface,
+                                                                                                                            sw:SoftwareComponent,
+                                                                                                                            fld:HydraulicPneumaticConnection,
+                                                                                                                            fld:HydraulicPneumaticPort;
+                                                                                                             prov:used ver:VerificationCharacteristic,
+                                                                                                                       ver:VerificationPlan,
+                                                                                                                       ver:VerificationResource,
+                                                                                                                       val:ValidationCriterium,
+                                                                                                                       val:ValidationPlan,
+                                                                                                                       val:ValidationBoundaryCondition.
+:ProductLineEngineering dcterms:modified "2025-10-02T20:45:35Z"^^xsd:dateTime;
+                        a owl:Class;
+                        rdfs:label "Product Line Engineering"@en,
+                                   "Produktlinienentwicklung"@de;
+                        rdfs:subClassOf pig:Entity.
+pro:DefinitionProductAssetInstanceConfigurabilitySpace a owl:Class;
+                                                       rdfs:comment "Definition of the CU product asset instance configurability space: the objective is to define the set of configuration options that will be made available to the CU end user for each CU instance. Typical options available for CU include clock selection, clock speed, caching and cache policy, protocol for external bus interfaces, general purpose I/O configuration (direction, active etc.) as well as dedicated options for peripherals and co-processors. A key aspect is also the definition of the configuration mechanisms that will be made available to the user including configuration protection features to prevent undesired/unauthorized changes. This is a collaborative efforts involving the same actors as Use Case 1, though driven by different criteria. The CU architect must balance the flexibility provided by configurability options with the added complexity it typically brings in terms of hardware design as well as verification effort. The product owner must balance programming complexity, potential higher cost and lower efficiency, with the capability of having their single CU instance capable of covering a broader problem space."@en;
+                                                       rdfs:label "Definition product asset instance configurability space"@en;
+                                                       rdfs:subClassOf prov:Activity.
+pro:DesignProductAssetInstance a owl:Class;
+                               rdfs:comment "Design of the CU product asset instance, implying the definition of the bill of features: the ultimate goal of this collaboration use case is the specification of the features, selected from the feature catalogue, that define the solution to the specific customer problem within the solution/family portfolio. The bill of feature is basically the set of actual values assigned to the variation point, which fully determine a single specific family instance. Collaboration still happens between product and CU architects, with the former specifying requirements and high level architecture for a specific problem (within their problem domain) and the latter providing a set of potential solutions, all belonging to the same CU family."@en;
+                               rdfs:label "Design product asset instance"@en;
+                               rdfs:subClassOf prov:Activity.
+pro:DesignProductLine a owl:Class;
+                      rdfs:comment "Definition of the “shared asset supersets” and feature catalog: this is a collaborative effort typically involving the CU architect, customer product owner and possibly supplier tech marketing team. The goal is eventually to define the product family i.e. to identify all the assets and their potential variations that can be used to provide a solution to any given problem within the target problem domain, rather than building for each problem an ad-hoc solution. The problem domain is specified by the customer/product owner, but can be typically expanded by the tech marketing team who captures requirements from other customers and push for alignment with strategic objectives. In defining the product line the CU architect is driven by objectives as costs, reuse, IPs while the product owner wants the product family to allow for a problem solution as close as possible to an “optimal” ad-hoc architecture."@en;
+                      rdfs:label "Design product line"@en;
+                      rdfs:subClassOf prov:Activity.
+:ProductOperation dcterms:modified "2021-11-24T10:30:35Z"^^xsd:dateTime;
+                  a owl:Class;
+                  rdfs:comment "Includes all phases and activities in the operation phase of a product."@en;
+                  rdfs:label "Product Operation"@en,
+                             "Produktbetrieb"@de;
+                  rdfs:subClassOf pig:Entity.
+<http://www.omg.org/spec/CASCaDE/ontology/ProductOperation/DisassemblyRecycling> a owl:Class;
+                                                                                 rdfs:comment "Includes all end-of-life activities required to putting a product or its component to recycling."@en;
+                                                                                 rdfs:label "Disassembly & Recycling"@en,
+                                                                                            "Zerlegung & Recycling"@de;
+                                                                                 rdfs:subClassOf prov:Activity;
+                                                                                 prov:generated arch:Function,
+                                                                                                mech:MechanicalComponent,
+                                                                                                mech:Body,
+                                                                                                mech:Material,
+                                                                                                mech:JoiningProcess,
+                                                                                                mech:JoiningElement,
+                                                                                                ee:ElectricElectronicComponent,
+                                                                                                ee:ElectricElectronicPort,
+                                                                                                ee:ElectricElectronicConnection,
+                                                                                                fld:HydraulicPneumaticConnection,
+                                                                                                fld:HydraulicPneumaticPort.
+<http://www.omg.org/spec/CASCaDE/ontology/ProductOperation/MaintenanceService> a owl:Class;
+                                                                               rdfs:comment "Includes all activities performed in order to maintain a product in operation."@en;
+                                                                               rdfs:label "Maintenance & Service"@en,
+                                                                                          "Wartung & Instandhaltung"@de;
+                                                                               rdfs:subClassOf prov:Activity;
+                                                                               prov:generated arch:UseCase,
+                                                                                              arch:Function,
+                                                                                              mech:MechanicalComponent,
+                                                                                              mech:Body,
+                                                                                              mech:Material,
+                                                                                              mech:JoiningProcess,
+                                                                                              mech:JoiningElement,
+                                                                                              ee:ElectricElectronicComponent,
+                                                                                              ee:ElectricElectronicPort,
+                                                                                              ee:ElectricElectronicConnection,
+                                                                                              sw:SoftwareClass,
+                                                                                              sw:SoftwareInterface,
+                                                                                              sw:SoftwareComponent,
+                                                                                              fld:HydraulicPneumaticConnection,
+                                                                                              fld:HydraulicPneumaticPort.
+<http://www.omg.org/spec/CASCaDE/ontology/ProductOperation/ProductUsage> a owl:Class;
+                                                                         rdfs:comment "Usage of a product according to the designated purpose and function."@en;
+                                                                         rdfs:label "Product Usage"@en,
+                                                                                    "Produktnutzung"@de;
+                                                                         rdfs:subClassOf prov:Activity;
+                                                                         prov:generated arch:UseCase,
+                                                                                        arch:Function,
+                                                                                        mech:MechanicalComponent,
+                                                                                        mech:Material,
+                                                                                        ee:ElectricElectronicComponent,
+                                                                                        ee:ElectricElectronicPort,
+                                                                                        ee:ElectricElectronicConnection,
+                                                                                        sw:SoftwareInterface,
+                                                                                        sw:SoftwareComponent,
+                                                                                        fld:HydraulicPneumaticConnection,
+                                                                                        fld:HydraulicPneumaticPort;
+                                                                         prov:used op:OperationIncident.
+:ProductionDevelopment dcterms:modified "2020-10-29T12:15:18Z"^^xsd:dateTime;
+                       a owl:Class;
+                       rdfs:comment """The manufacturing or production engineer's primary focus is to turn raw material into an updated or new product in the most effective, efficient & economic way possible.
+Manufacturing Engineering is based on core industrial engineering and mechanical engineering skills, adding important elements from mechatronics, commerce, economics and business management.
+Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en;
+                       rdfs:label "Production Development"@en,
+                                  "Produktionsentwicklung"@de;
+                       rdfs:subClassOf pig:Entity.
+<http://www.omg.org/spec/CASCaDE/ontology/ProductionDevelopment/CostCalculation> a owl:Class;
+                                                                                 rdfs:comment "Includes the calculation of product cost using relevant information from product and production specifications, including dimensions, material, mass, geometric & topological complexity, surface finish including paint or coatings."@en;
+                                                                                 rdfs:label "Cost Calculation"@en,
+                                                                                            "Kostenkalkulation"@de;
+                                                                                 rdfs:subClassOf prov:Activity;
+                                                                                 prov:generated mech:MechanicalComponent,
+                                                                                                mech:Body,
+                                                                                                mech:Material,
+                                                                                                mech:ModelView,
+                                                                                                mech:Datum,
+                                                                                                mech:GeometricTolerance,
+                                                                                                mech:Size,
+                                                                                                mech:SurfaceTexture,
+                                                                                                mech:Hole,
+                                                                                                mech:KinematicMechanism,
+                                                                                                mech:KinematicJoint,
+                                                                                                mech:JoiningProcess,
+                                                                                                mech:JoiningElement,
+                                                                                                mech:PaintingCoating,
+                                                                                                mech:MarkingLabeling,
+                                                                                                mech:HeatTreatment,
+                                                                                                mech:BendingSpecification,
+                                                                                                ee:ElectricElectronicComponent,
+                                                                                                ee:ElectricElectronicPort,
+                                                                                                ee:ElectricElectronicConnection,
+                                                                                                mnf:ManufacturingOperation,
+                                                                                                mnf:ManufacturingEquipmentComponent,
+                                                                                                mnf:ControlPlan.
+<http://www.omg.org/spec/CASCaDE/ontology/ProductionDevelopment/InspectionPlanning> a owl:Class;
+                                                                                    rdfs:comment "Includes the selection of relevant inspection criteria from product and production specifications, identification and assignment of appropriate inspection methods and equipment, as well as the allocation of appropriate inspection criteria per inspection event (first-article inspection, re-qualification, inspection in production, etc.)"@en;
+                                                                                    rdfs:label "Inspection Planning"@en,
+                                                                                               "Prüfplanung"@de;
+                                                                                    rdfs:subClassOf prov:Activity;
+                                                                                    prov:generated arch:FunctionFailure,
+                                                                                                   mech:MechanicalComponent,
+                                                                                                   mech:Body,
+                                                                                                   mech:Material,
+                                                                                                   mech:ModelView,
+                                                                                                   mech:Datum,
+                                                                                                   mech:GeometricTolerance,
+                                                                                                   mech:Size,
+                                                                                                   mech:SurfaceTexture,
+                                                                                                   mech:Hole,
+                                                                                                   mech:KinematicMechanism,
+                                                                                                   mech:KinematicJoint,
+                                                                                                   mech:JoiningProcess,
+                                                                                                   mech:JoiningElement,
+                                                                                                   mech:PaintingCoating,
+                                                                                                   mech:MarkingLabeling,
+                                                                                                   mech:HeatTreatment,
+                                                                                                   mech:BendingSpecification,
+                                                                                                   ee:ElectricElectronicComponent,
+                                                                                                   ee:ElectricElectronicPort,
+                                                                                                   ee:ElectricElectronicConnection;
+                                                                                    prov:used ver:VerificationCharacteristic,
+                                                                                              ver:VerificationPlan,
+                                                                                              ver:VerificationResource.
+<http://www.omg.org/spec/CASCaDE/ontology/ProductionDevelopment/PlantLayout> a owl:Class;
+                                                                             rdfs:comment "Defines the logical and physical layout of a production line in a plant or buiding using information from product and production specifications, including production steps, material handling, as well as the physical dimensions of product components, tools, fixtures and equipment within the  topology and systems of the manufacturing site or building."@en;
+                                                                             rdfs:label "Plant Layout"@en,
+                                                                                        "Fabriklayout"@de;
+                                                                             rdfs:subClassOf prov:Activity;
+                                                                             prov:generated mech:MechanicalComponent,
+                                                                                            mech:Body,
+                                                                                            mech:ModelView,
+                                                                                            mech:Datum,
+                                                                                            mech:GeometricTolerance,
+                                                                                            mech:Size,
+                                                                                            mech:SurfaceTexture,
+                                                                                            ee:ElectricElectronicComponent,
+                                                                                            ee:ElectricElectronicPort,
+                                                                                            ee:ElectricElectronicConnection;
+                                                                             prov:used mnf:ManufacturingEquipmentComponent.
+<http://www.omg.org/spec/CASCaDE/ontology/ProductionDevelopment/ProcessPlanning> a owl:Class;
+                                                                                 rdfs:comment """The task in the manufacturing process planning domain is to find a plan to manufacture a set of parts.
+Source: https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume15/ambite01a-html/node23.html"""@en;
+                                                                                 rdfs:label "Process Planning"@en,
+                                                                                            "Prozessplanung"@de;
+                                                                                 rdfs:subClassOf prov:Activity;
+                                                                                 prov:generated mech:MechanicalComponent,
+                                                                                                mech:Body,
+                                                                                                mech:Material,
+                                                                                                mech:ModelView,
+                                                                                                mech:Datum,
+                                                                                                mech:GeometricTolerance,
+                                                                                                mech:Size,
+                                                                                                mech:SurfaceTexture,
+                                                                                                mech:Hole,
+                                                                                                mech:KinematicMechanism,
+                                                                                                mech:KinematicJoint,
+                                                                                                mech:JoiningProcess,
+                                                                                                mech:JoiningElement,
+                                                                                                mech:PaintingCoating,
+                                                                                                mech:MarkingLabeling,
+                                                                                                mech:HeatTreatment,
+                                                                                                mech:BendingSpecification,
+                                                                                                ee:ElectricElectronicComponent,
+                                                                                                ee:ElectricElectronicPort,
+                                                                                                ee:ElectricElectronicConnection,
+                                                                                                fld:HydraulicPneumaticConnection,
+                                                                                                fld:HydraulicPneumaticPort;
+                                                                                 prov:used mnf:ManufacturingOperation.
+<http://www.omg.org/spec/CASCaDE/ontology/ProductionDevelopment/ToolsEquipmentDesign> a owl:Class;
+                                                                                      rdfs:comment "The design of tools and equipment aligned with product design, the manufacturing process plan and plant layout."@en;
+                                                                                      rdfs:label "Tools & Equipment Design"@en,
+                                                                                                 "Werkzeug- & Vorrichtungsbau"@de;
+                                                                                      rdfs:subClassOf prov:Activity;
+                                                                                      prov:generated mech:MechanicalComponent,
+                                                                                                     mech:Body,
+                                                                                                     mech:Material,
+                                                                                                     mech:ModelView,
+                                                                                                     mech:Datum,
+                                                                                                     mech:GeometricTolerance,
+                                                                                                     mech:Size,
+                                                                                                     mech:SurfaceTexture,
+                                                                                                     mech:JoiningProcess,
+                                                                                                     mech:JoiningElement,
+                                                                                                     mech:PaintingCoating,
+                                                                                                     mech:MarkingLabeling,
+                                                                                                     mech:HeatTreatment,
+                                                                                                     mech:BendingSpecification,
+                                                                                                     ee:ElectricElectronicComponent,
+                                                                                                     ee:ElectricElectronicPort,
+                                                                                                     ee:ElectricElectronicConnection;
+                                                                                      prov:used mnf:ManufacturingEquipmentComponent.
+:VerificationValidationUsingSimulation dcterms:modified "2023-03-10T07:09:37Z"^^xsd:dateTime;
+                                       a owl:Class;
+                                       rdfs:comment """Modeling and simulation (M&S) is the domain-specific use of models (e.g., physical, mathematical, or logical representation of a system, entity, phenomenon, or process) as a basis for simulations to develop data utilized for management or technical decision making.
+Simulation may include finite elements analysis, fluid analysis, DMU simulation, kinematics simulation, as well as simulation based on software prototypes. It also includes X-in-the-Loop (XiL), using integrated design and simulation models and capabilities.
+Verification aims at the demonstration of product compliance to the specified design requirements.
+Validation aims at the demonstration of conformance to stakeholder requirements.
+Description based on: https://en.wikipedia.org/wiki/Modeling_and_simulation, ISO 29148, ISO 15288"""@en;
+                                       rdfs:label "Verification & Validation using Simulation"@en,
+                                                  "Verifikation & Validierung durch Simulation"@de;
+                                       rdfs:subClassOf pig:Entity.
+:VerificationValidationUsingTest dcterms:modified "2023-03-10T07:29:10Z"^^xsd:dateTime;
+                                 a owl:Class;
+                                 rdfs:comment """While simulation is based on virtual models, testing is based on prototypes and samples.
+Verification is to demonstrate product compliance to the specified design requirements. Validation is to demonstrate conformance to stakeholder requirements.
+Description based on ISO 29148, resp. ISO 15288"""@en;
+                                 rdfs:label "Verification & Validation using Test"@en,
+                                            "Verifikation & Validierung durch Test"@de;
+                                 rdfs:subClassOf pig:Entity.

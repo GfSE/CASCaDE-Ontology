@@ -1,0 +1,1813 @@
+# baseURI: http://www.omg.org/spec/CASCaRA/ontology/
+
+@base <http://www.omg.org/spec/CASCaRA/ontology/> .
+@prefix : <http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/> .
+@prefix arch: <http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/> .
+@prefix con: <http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/ConceptDefinition/> .
+@prefix csc-meta: <http://www.omg.org/spec/CASCaRA/metamodel/> .
+@prefix ctx: <http://www.omg.org/spec/CASCaRA/ontology/ContextElements/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dim: <http://www.omg.org/spec/CASCaRA/ontology/Dimensions/> .
+@prefix ee: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/> .
+@prefix fld: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/> .
+@prefix man: <http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/> .
+@prefix mec: <http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/ProductDesign/MechanicalDesign/> .
+@prefix mech: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/> .
+@prefix mnf: <http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/> .
+@prefix op: <http://www.omg.org/spec/CASCaRA/ontology/Operation/> .
+@prefix org: <http://www.omg.org/spec/CASCaRA/ontology/Organization/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pro: <http://www.omg.org/spec/CASCaRA/ontology/ProductLineEngineering/> .
+@prefix prov: <http://www.w3.org/ns/prov/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sw: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/> .
+@prefix sys: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/> .
+@prefix val: <http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/> .
+@prefix ver: <http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.omg.org/spec/CASCaRA/ontology/>
+	a owl:Ontology ;
+	rdfs:label "Process Ontology" ;
+	dcterms:abstract "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice." ;
+	dcterms:contributor
+		"3D Master ()" ,
+		"3D Master - Main Stories ()" ,
+		"3D Master - Phase 2 ()" ,
+		"3D Master - Sprint 1 ()" ,
+		"3D Master - Sprint 14 ()" ,
+		"3D Master - Sprint 15 ()" ,
+		"3D Master - Sprint 16 ()" ,
+		"3D Master - Sprint 17 ()" ,
+		"3D Master - Sprint 18 ()" ,
+		"3D Master - Sprint 19 ()" ,
+		"3D Master - Sprint 2 ()" ,
+		"3D Master - Sprint 20 ()" ,
+		"3D Master - Sprint 21 ()" ,
+		"3D Master - Sprint 22 ()" ,
+		"3D Master - Sprint 25 ()" ,
+		"3D Master - Sprint 26 ()" ,
+		"3D Master - Sprint 27 ()" ,
+		"3D Master - Sprint 28 ()" ,
+		"3D Master - Sprint 29 ()" ,
+		"3D Master - Sprint 3 ()" ,
+		"3D Master - Sprint 30 ()" ,
+		"3D Master - Sprint 31 ()" ,
+		"3D Master - Sprint 32 ()" ,
+		"3D Master - Sprint 33 ()" ,
+		"3D Master - Sprint 34 ()" ,
+		"3D Master - Sprint 35 ()" ,
+		"3D Master - Sprint 36 ()" ,
+		"3D Master - Sprint 4 ()" ,
+		"3D Master - Sprint 5 ()" ,
+		"3D Master Pilots (2019-2020)" ,
+		"3D Master Sprint 23 ()" ,
+		"3D Master Sprint 24 ()" ,
+		"3D Master Workshop mit Key-Usern der Entwicklung (2023-2023)" ,
+		"3D-Master (Drawing-Less PEP) ()" ,
+		"3D-Master Project-Setup (2024-2024)" ,
+		"3D-Master Sprint 1 ()" ,
+		"3D-Master Sprint 2 ()" ,
+		"3D-Master Sprint 3 ()" ,
+		"3D-Master Workshop 2018: Daimler-Kooperation (2018-2018)" ,
+		"3D-Master Workshop 2019: Sensibilisierung und Auftragsklärung (2019-2019)" ,
+		"3D-Master Workshop 2021: Anwendungsfälle Datennutzer (2021-2021)" ,
+		"3D-Master Workshops 2022/23 ()" ,
+		"3D-Master-Teamwork (2024-2024)" ,
+		'3D-Master-Workshop "End-to-End use of GD&T" (2024-2024)' ,
+		"3D-Master: Info und Impact auf Architektur und Infrastruktur (2024-2024)" ,
+		'3D-Master: Workshop "Creation of models with PMI and GD&T" (2024-2024)' ,
+		"3DMaster - Sprint 10 ()" ,
+		"3DMaster - Sprint 11 ()" ,
+		"3DMaster - Sprint 12 ()" ,
+		"3DMaster - Sprint 13 ()" ,
+		"3DMaster - Sprint 6 ()" ,
+		"3DMaster - Sprint 6 offen ()" ,
+		"3DMaster - Sprint 7 ()" ,
+		"3DMaster - Sprint 7 offen ()" ,
+		"3DMaster - Sprint 8 ()" ,
+		"3DMaster - Sprint 8 offen ()" ,
+		"3DMaster - Sprint 9 ()" ,
+		"3DMaster - Sprint 9 offen ()" ,
+		"3DMaster - Sprint x offen ()" ,
+		":em engineering methods AG (2019-2019)" ,
+		":em engineering methods AG (2019-2026)" ,
+		"ABB Material Lifecycle Management (2025-2025)" ,
+		"ALM (SWE) ()" ,
+		"AVL ()" ,
+		"AVL List (2019-2026)" ,
+		"Abholen Eurer Erwartung an :em AG (2024-2024)" ,
+		"Abstimmung Definition MBD für FIT4 (2023-2023)" ,
+		"Abstimmung MBD  (2023-2023)" ,
+		"Abstimmung MBD (2023-2023)" ,
+		"Abstimmung mit parallel laufenden Projekten (2017-2018)" ,
+		"Access Mgmt. ()" ,
+		"Airbus Operations ()" ,
+		"Airbus Operations GmbH (2019-2020)" ,
+		"Analyse & Spezifikation ()" ,
+		"Analyse & Spezifikation (2022-2022)" ,
+		"Analyse Prozess- und Methodenoptimierung auf Basis 3D-Master ()" ,
+		"Analyse der Informationsflüsse von Zeichnungsinformationen ()" ,
+		"Analyse kritischer Zeichnungen ()" ,
+		"Analyse und Zielbild für verknüpfte Dokumente (z. B. CZ-Normen) (2023-2023)" ,
+		"Analyse verbleibender Freitexte ()" ,
+		"Analysephase ()" ,
+		"Anark (2019-2026)" ,
+		"Anark Corporation (2019-2020)" ,
+		"Anforderungen an Viewer ermitteln ()" ,
+		"Anforderungen an automatisiertes Auslesen und Ausgeben von Mess-und Prüfinformationen ermitteln ()" ,
+		"Anforderungen an eine technische Lösung spezifizieren (2023-2023)" ,
+		"Anforderungen für Drucksteuerung aus 3D-Modell ermitteln ()" ,
+		"Anforderungen zum Copyright für 3D-Daten erfassen ()" ,
+		"Anforderungsanalyse ()" ,
+		"Anpassung von Konfiguratoren (KBE) ()" ,
+		"Anpassung vorhandener Prozeduren, S-Normen, Richtlinien, Arbeitsanweisungen, die Mess und Prüfinformationen betreffen ()" ,
+		"Anpassung vorhandener Prozeduren, S-Normen, Richtlinien, Arbeitsanweiungen, die Standardtexte betreffen (2017-2017)" ,
+		"Anwendung von MBD in der Entwicklung mit COM & SPC   (2022-2022)" ,
+		"Anwendung von MBD in der Entwicklung mit IQS & RMS (2022-2022)" ,
+		"Anwendung von MBD in der Entwicklung mit MED (2022-2022)" ,
+		"Anwendung von MBD in der Entwicklung mit SMT   (2022-2022)" ,
+		"Anwendung von Model-Based Definition in den Folgeprozessen  (2021-2021)" ,
+		"Anwendung von Model-Based Definition in der Entwicklung  (2021-2021)" ,
+		"Anwendungsfälle & Informationsflüsse ()" ,
+		'Audi "Qualitätskriterien Virtuelles Maschinenmodell" ()' ,
+		"Ausblick und weiteres Vorgehen mit :em AG (2024-2024)" ,
+		"Auswahl und Befähigung von Zulieferern ()" ,
+		"Auswahl und Einführung einer technischen Lösung (2024-2024)" ,
+		"Autoliv Model-Based Definition ()" ,
+		"Automatisiertes Auslesen und Ausgeben von Mess-und Prüfinformationen ()" ,
+		"Automotive Systems ()" ,
+		"Benchmark 3D-Formate für 3D-Master ()" ,
+		"Benchmarking der technischen Lösungen zur Visulaisierung von MDB Modelle (2024-2024)" ,
+		"Benchmarking und Auswahl eines Tools zum Modellvergleich (2023-2023)" ,
+		"Benefits & MVPs 3D-Master  (2024-2024)" ,
+		"Bereistellung des 3D-Änderungssymbols (2023-2023)" ,
+		"Bereitstellung der Lösung zur Verlinkung von Gesamtdokument (2024-2024)" ,
+		"Bereitstellung der Lösung: Abschnitt verlinken (2025-2025)" ,
+		"Bereitstellung der Lösung: semantische Verlinkung (2025-2025)" ,
+		"Bereitstellung der Tools zur Übernahme von Funktionens- und Maschinenelemente für die NC-Programmierung (2025-2025)" ,
+		"Bereitstellung einer Lösung zum Modellvergleich (2024-2024)" ,
+		"Bereitstellung und Einführung für Betrieb und Instandhaltung (2024-2024)" ,
+		"Bereitstellung und Einführung für die Arbeitsvorbereitung (2024-2024)" ,
+		"Bereitstellung und Einführung für die Produktion (2024-2024)" ,
+		"Boeing Company (2019-2019)" ,
+		"Bosch (2022-2026)" ,
+		"Brose 3D-Master ()" ,
+		"Build CATIA application for reused texts ()" ,
+		"""CAD Data Mgmt.CATIA ()""" ,
+		"""CAD Data Mgmt.Creo ()""" ,
+		"""CAD Data Mgmt.SolidWorks ()""" ,
+		"CAD-Methoden ()" ,
+		"CAD-Neutralformate erzeugen und prüfen (STEP, etc.) (2024-2024)" ,
+		"CAE Data Mgmt. ()" ,
+		"CETOL 6σ beschaffen und Methoden entwickeln (2023-2024)" ,
+		"Car 4.0 ()" ,
+		"Change Management ()" ,
+		"Change Mgmt. ()" ,
+		"Chassis Systems ()" ,
+		"Concept Development (2019-2019)" ,
+		"Concept Phase (2020-2020)" ,
+		"Configura-tion Mgmt. ()" ,
+		"Conweaver (2019-2022)" ,
+		"Cost Calculation & Design during Concept/acquisition phase (2022-2022)" ,
+		"Creo GD&T-Advisor beschaffen und Methoden entwickeln (2023-2023)" ,
+		"Cross Platform - Main Stories ()" ,
+		"Cross Platform - Sprint 0 ()" ,
+		"Cross Platform - Sprint 1 ()" ,
+		"Cross Platform - Sprint 10 ()" ,
+		"Cross Platform - Sprint 11 ()" ,
+		"Cross Platform - Sprint 12 ()" ,
+		"Cross Platform - Sprint 13 ()" ,
+		"Cross Platform - Sprint 14 ()" ,
+		"Cross Platform - Sprint 15 ()" ,
+		"Cross Platform - Sprint 16 ()" ,
+		"Cross Platform - Sprint 17 ()" ,
+		"Cross Platform - Sprint 2 ()" ,
+		"Cross Platform - Sprint 3 ()" ,
+		"Cross Platform - Sprint 4 ()" ,
+		"Cross Platform - Sprint 5 ()" ,
+		"Cross Platform - Sprint 6 ()" ,
+		"Cross Platform - Sprint 7 ()" ,
+		"Cross Platform - Sprint 7 open ()" ,
+		"Cross Platform - Sprint 8 ()" ,
+		"Cross Platform - Sprint 9 ()" ,
+		"Cross Platform - Sprint 9 open ()" ,
+		"Cross Platform - Sprint x open ()" ,
+		"Cross Platform - Sprint10 open ()" ,
+		"Cross Platform Sprint 18 ()" ,
+		"Cross Platform Sprint 19 ()" ,
+		"Cross Platform Sprint 20 ()" ,
+		"Cross Platform Sprint 21 ()" ,
+		"Cross Platform Sprint 22 ()" ,
+		"Cross Platform Sprint 23 ()" ,
+		"Cross Platform Sprint 24 ()" ,
+		"Cross Platform Sprint 25 ()" ,
+		"Cross Platform Sprint 26 ()" ,
+		"Current situation (2026-2026)" ,
+		"Cust. Req. Mgmt. ()" ,
+		"Customer/ Partner Dev. Integration ()" ,
+		"DDP Sprint 1 ()" ,
+		"DDP Sprint 10 ()" ,
+		"DDP Sprint 11 ()" ,
+		"DDP Sprint 2 ()" ,
+		"DDP Sprint 3 ()" ,
+		"DDP Sprint 4 ()" ,
+		"DDP Sprint 5 ()" ,
+		"DDP Sprint 6 ()" ,
+		"DDP Sprint 7 ()" ,
+		"DDP Sprint 8 ()" ,
+		"DDP Sprint 9 ()" ,
+		"DDP-Support 2023 ()" ,
+		"DDP-Support I2 ()" ,
+		"DF Sprint 10 ()" ,
+		"DF Sprint 11 ()" ,
+		"DF Sprint 12 ()" ,
+		"DF Sprint 13 ()" ,
+		"DF Sprint 14 ()" ,
+		"DF Sprint 15 ()" ,
+		"DF Sprint 16 ()" ,
+		"DF Sprint 17 ()" ,
+		"DF Sprint 18 ()" ,
+		"DF Sprint 19 ()" ,
+		"DF Sprint 4 ()" ,
+		"DF Sprint 5 ()" ,
+		"DF Sprint 6 ()" ,
+		"DF Sprint 7 ()" ,
+		"DF Sprint 8 ()" ,
+		"DF Sprint 9 ()" ,
+		"DF_SP01_15/02-01/03 ()" ,
+		"DF_SP02_01/03-15/03 ()" ,
+		"DF_SP03_15/03-31/03 ()" ,
+		"DMS (Day 1/2) (2023-2023)" ,
+		"Daimler AG Fahrzeugprojekte ()" ,
+		"Daimler Buses der Marken Mercedes-Benz und Setra Entwicklung ()" ,
+		"Daimler Trucks Marke Mercedes-Benz Entwicklung ()" ,
+		"Daimler Trucks North America ()" ,
+		"Data Analytics - Sprint 1 ()" ,
+		"Data Analytics - Sprint 10 ()" ,
+		"Data Analytics - Sprint 11 ()" ,
+		"Data Analytics - Sprint 12 ()" ,
+		"Data Analytics - Sprint 13 ()" ,
+		"Data Analytics - Sprint 14 ()" ,
+		"Data Analytics - Sprint 15 ()" ,
+		"Data Analytics - Sprint 16 ()" ,
+		"Data Analytics - Sprint 17 ()" ,
+		"Data Analytics - Sprint 18 ()" ,
+		"Data Analytics - Sprint 19 ()" ,
+		"Data Analytics - Sprint 2 ()" ,
+		"Data Analytics - Sprint 20 ()" ,
+		"Data Analytics - Sprint 21 ()" ,
+		"Data Analytics - Sprint 22 ()" ,
+		"Data Analytics - Sprint 23 ()" ,
+		"Data Analytics - Sprint 24 ()" ,
+		"Data Analytics - Sprint 25 ()" ,
+		"Data Analytics - Sprint 26 ()" ,
+		"Data Analytics - Sprint 27 ()" ,
+		"Data Analytics - Sprint 28 ()" ,
+		"Data Analytics - Sprint 29 ()" ,
+		"Data Analytics - Sprint 3 ()" ,
+		"Data Analytics - Sprint 30 ()" ,
+		"Data Analytics - Sprint 31 ()" ,
+		"Data Analytics - Sprint 32 ()" ,
+		"Data Analytics - Sprint 33 ()" ,
+		"Data Analytics - Sprint 34 ()" ,
+		"Data Analytics - Sprint 35 ()" ,
+		"Data Analytics - Sprint 36 ()" ,
+		"Data Analytics - Sprint 37 ()" ,
+		"Data Analytics - Sprint 38 ()" ,
+		"Data Analytics - Sprint 39 ()" ,
+		"Data Analytics - Sprint 4 ()" ,
+		"Data Analytics - Sprint 40 ()" ,
+		"Data Analytics - Sprint 41 ()" ,
+		"Data Analytics - Sprint 42 ()" ,
+		"Data Analytics - Sprint 43 ()" ,
+		"Data Analytics - Sprint 44 ()" ,
+		"Data Analytics - Sprint 5 ()" ,
+		"Data Analytics - Sprint 6 ()" ,
+		"Data Analytics - Sprint 7 ()" ,
+		"Data Analytics - Sprint 8 ()" ,
+		"Data Analytics - Sprint 9 ()" ,
+		"Data Exchange Mgmt. ()" ,
+		"Data Translation (PDF, JT, …) ()" ,
+		"Datenhaltung 3D-Master (3D-Neutralformat, Metadaten) ()" ,
+		"Datenversand durch Konstruktion ()" ,
+		"Day 2 - Deep dive in variant handling (2026-2026)" ,
+		"Day 3 - Deep dive in downstream effects identification (2026-2026)" ,
+		"Definition der Methodik zur Verlinkung von Dokumentabschnitte (2024-2024)" ,
+		"Definition der Methodik zur Verlinkung von Dokumente (2024-2024)" ,
+		"Definition der Methodik zur Verlinkung von semantischer Inhalte (2025-2025)" ,
+		"Definition der User Story anbringen von Tropfensymbolen am 3D-CAD Modell (2018-2018)" ,
+		"Definition of titleblock attributes for 3D Master ()" ,
+		"Demonstrator ()" ,
+		"Demonstrator - Sprint 18 ()" ,
+		"Demonstrator Sprint 19 ()" ,
+		"Demonstrator erstellen: Abschnitt verlinken (2024-2024)" ,
+		"Demonstrator erstellen: Gesamtdokument verlinken (2024-2024)" ,
+		"Demonstrator erstellen: Semantische Verlinkung (2025-2025)" ,
+		"Design Data (CAD) (2023-2023)" ,
+		"Design HVAC (2022-2022)" ,
+		"Design Heizkörper & Verdampfer (2022-2022)" ,
+		"Design Thinking Engineering Twin (2022-2022)" ,
+		"Design Thinking Workshop Prüfplanung (2018-2018)" ,
+		"Design Thinking Workshops ()" ,
+		"Digital Data Package ()" ,
+		"Digital Engineering & E-BoM ()" ,
+		"Digital Manufacturing & Process Planning ()" ,
+		"Digital Mock-Up ()" ,
+		"Digital Twin ()" ,
+		"Digital assistance systems ()" ,
+		"Digital assisted shop floor mgmt. ()" ,
+		"Digital production ()" ,
+		"Digitale Agenda 4+1 ()" ,
+		"Diskussion Zwischenergebnisse WZB (2023-2023)" ,
+		"Diskussion: Zwischenergebnisse PDI (2023-2023)" ,
+		"Diskussion: Zwischenergebnisse SDI (2023-2023)" ,
+		"Diskussion: Zwischenergebnisse WZE (2023-2023)" ,
+		"Document Mgmt. ()" ,
+		"Dr.-Ing. h.c. F. Porsche (2019-2023)" ,
+		"Drives and Controls ()" ,
+		"Drucksteuerung aus 3D-Modell ()" ,
+		"Drucksteuerung aus 3D-Modell implementieren und testen ()" ,
+		"Drucksteuerung aus 3D-Modell verifizieren ()" ,
+		"Durchsprache von Anwendungsfällen in den Folgeprozessen (2022-2022)" ,
+		"Durchsprache von Anwendungsfällen in den Folgeprozessen - SPU (2022-2022)" ,
+		"E-BoM Mgmt. ()" ,
+		"Eberspächer 3D-Master ()" ,
+		"Einfluss weiterer Creo Apps ()" ,
+		"Einführung ()" ,
+		"Einführung ZEISS CALYPSO STEP-Schnittstelle (2023-2024)" ,
+		"Einsatz von MBD in der Koordinatenmesstechnik (2024-2024)" ,
+		"Einsatz von MBD in der NC-Programmierung (2024-2024)" ,
+		"Einsatz von MBE in der Toleranzanalyse (2024-2024)" ,
+		"Electrical & Software Design ()" ,
+		"Electrical Design ()" ,
+		"Elysium (2019-2019)" ,
+		"Elysium (2019-2026)" ,
+		"Engineering Twin - Sprint 1 ()" ,
+		"Engineering Twin - Sprint 10 ()" ,
+		"Engineering Twin - Sprint 11 ()" ,
+		"Engineering Twin - Sprint 2 ()" ,
+		"Engineering Twin - Sprint 3 ()" ,
+		"Engineering Twin - Sprint 4 ()" ,
+		"Engineering Twin - Sprint 5 ()" ,
+		"Engineering Twin - Sprint 6 ()" ,
+		"Engineering Twin - Sprint 7 ()" ,
+		"Engineering Twin - Sprint 8 ()" ,
+		"Engineering Twin - Sprint 9 ()" ,
+		"Enhancement of Master Models for 3D Master ()" ,
+		"Entwicklung (2022-2022)" ,
+		"Entwicklung und Bereitstellung von GPS-Toleranzkonzepten zur Wiederverwendung für häufig verwendete Teile (NX-Mastermodelle mit GPS) (2024-2024)" ,
+		"Equipment Mgmt. ()" ,
+		"Erfassen möglicher parallel einwirkender Projekte/Konzepte ()" ,
+		'Ergebnispräsentation "Prozessunterstützung OU MU" mit :em und nächste Schritte (2023-2023)' ,
+		"Erstellung und Ausführung Koordinatenmessprogramm (2023-2023)" ,
+		"Erstellung und Durchführung Prüfplan (2023-2023)" ,
+		"FESTO 3D-Master ()" ,
+		"FIT4 DMS – Topic Slot (2023-2023)" ,
+		"FIT4 SAP S/4 HANA ()" ,
+		"Fachliche Grundlagen für 3D-Master ()" ,
+		"Festlegung Grundkonzept 3D-Master ()" ,
+		"Fraunhofer IESE (2019-2020)" ,
+		"Fraunhofer IESE (2019-2021)" ,
+		"Freigabeprozess 3D-Master verifizieren ()" ,
+		"Freigabeprozess auf Basis von 3D-Master ()" ,
+		"Funktions- und Maschinenelemente für die NC-Programmierung (2025-2025)" ,
+		"Führungsschiene CVT ()" ,
+		"GPS-Anwenderschulung entwickeln (2023-2023)" ,
+		"GPS-Musterlösungen für Blech-Umformteile (2024-2024)" ,
+		"GPS-Musterlösungen für Formteile (2024-2024)" ,
+		"GPS-Musterlösungen für Zerspanungsteile (2024-2024)" ,
+		"Gemeinsames Verständnis von Model-Based Definition und erstes Zielbild (2021-2021)" ,
+		"Go Live ()" ,
+		"Gruppe 1 ()" ,
+		"Gruppe 2 ()" ,
+		"HAD/People Mover ()" ,
+		"HVAC TDP (2022-2022)" ,
+		"Hauptabmessungen als CAD- und PDM-Attribute einführen (2023-2023)" ,
+		"Hinweise zur Weiterverarbeitung von 3D-annotierten Modellen in Folgeprozessen (2023-2023)" ,
+		"Holistic energy management  ()" ,
+		"Holistic plant steering ()" ,
+		"IT-Lösung auswählen und einführen (2023-2024)" ,
+		"IT-Umfeld, Relevante Standards, Technologien und Lösungen  (2021-2021)" ,
+		"IT-Umfeld, Relevante Standards, Technologien und Lösungen (2022-2022)" ,
+		"IT-Workshop (2023-2023)" ,
+		"Identification of 3D Master use cases in further domains Marketing, Sales, Logistics and Production ()" ,
+		"Identifikation & Aufbau 3D-Master-Demonstratoren ()" ,
+		"Identifikation und Bewertung möglicher technischer Lösungen (2024-2024)" ,
+		"Implementation & rollout of pilots + Solution extension (2019-2020)" ,
+		"Implementation of first Prototypes (2017-2018)" ,
+		"Implementierung 3D-Format & Konverter für 3D-Master ()" ,
+		"Implementierung Technical Data Package (2023-2023)" ,
+		"Implementierung automatisiertes Auslesen und Ausgeben von Mess-und Prüfinformationen ()" ,
+		"Info-Workshop (2023-2023)" ,
+		"Inhalte von Normen referenzieren (2025-2025)" ,
+		"Integrated PPE - Main Stories ()" ,
+		"Integrated PPE - Sprint 1 ()" ,
+		"Integrated PPE - Sprint 10 ()" ,
+		"Integrated PPE - Sprint 11 ()" ,
+		"Integrated PPE - Sprint 12 ()" ,
+		"Integrated PPE - Sprint 13 ()" ,
+		"Integrated PPE - Sprint 14 ()" ,
+		"Integrated PPE - Sprint 15 ()" ,
+		"Integrated PPE - Sprint 16 ()" ,
+		"Integrated PPE - Sprint 17 ()" ,
+		"Integrated PPE - Sprint 18 ()" ,
+		"Integrated PPE - Sprint 19 ()" ,
+		"Integrated PPE - Sprint 2 ()" ,
+		"Integrated PPE - Sprint 20 ()" ,
+		"Integrated PPE - Sprint 21 ()" ,
+		"Integrated PPE - Sprint 22 ()" ,
+		"Integrated PPE - Sprint 23 ()" ,
+		"Integrated PPE - Sprint 24 ()" ,
+		"Integrated PPE - Sprint 25 ()" ,
+		"Integrated PPE - Sprint 26 ()" ,
+		"Integrated PPE - Sprint 27 ()" ,
+		"Integrated PPE - Sprint 28 ()" ,
+		"Integrated PPE - Sprint 29 ()" ,
+		"Integrated PPE - Sprint 3 ()" ,
+		"Integrated PPE - Sprint 30 ()" ,
+		"Integrated PPE - Sprint 31 ()" ,
+		"Integrated PPE - Sprint 32 ()" ,
+		"Integrated PPE - Sprint 33 ()" ,
+		"Integrated PPE - Sprint 34 ()" ,
+		"Integrated PPE - Sprint 35 ()" ,
+		"Integrated PPE - Sprint 36 ()" ,
+		"Integrated PPE - Sprint 37 ()" ,
+		"Integrated PPE - Sprint 4 ()" ,
+		"Integrated PPE - Sprint 5 ()" ,
+		"Integrated PPE - Sprint 6 ()" ,
+		"Integrated PPE - Sprint 7 ()" ,
+		"Integrated PPE - Sprint 7offen ()" ,
+		"Integrated PPE - Sprint 8 ()" ,
+		"Integrated PPE - Sprint 8 open ()" ,
+		"Integrated PPE - Sprint 9 ()" ,
+		"Integrated PPE - Sprint 9 open ()" ,
+		"Integrated PPE - Sprint x open ()" ,
+		"Integrated Product and Production Engineering ()" ,
+		"""Integration PLM / SAP ()""" ,
+		"Integration Mgmt. ()" ,
+		"Integrators ()" ,
+		"Interview Corinna Zink (2017-2017)" ,
+		"Interview Dr. Peter-Frederik Brenner (2017-2017)" ,
+		"Interview Gerhard Backoefer (2017-2017)" ,
+		"Interview Günther Petri (2017-2017)" ,
+		"Interview Jörg Scholz (2017-2017)" ,
+		"Interview Karl Huber (2017-2017)" ,
+		"Interview LCA & EcoDesign - Italy (2025-2025)" ,
+		"Interview Michaela Zeilinger ()" ,
+		"Interview Murat Karaoez ()" ,
+		"Interview Peter Hofmann ()" ,
+		"Interview Rüdiger Wenger (2017-2017)" ,
+		"Interview Sebastian Metz (2017-2017)" ,
+		"Interview Stefan Serrer (2017-2017)" ,
+		"Interview Thomas Braeun (2017-2017)" ,
+		"Interview Tobias Huber ()" ,
+		"Interview Ulrike Weisskopf (2017-2017)" ,
+		"Interview WC process expert - China (2025-2025)" ,
+		"Interview WC process expert - China; Germany (2025-2025)" ,
+		"Interview compliance - Italy (2025-2025)" ,
+		"Interview designer - France (2025-2025)" ,
+		"Interview designer - Germany, Heidelberg (2025-2025)" ,
+		"Interview designer - Italy (2025-2025)" ,
+		"Interview designer - Italy, Garbagnate (2025-2025)" ,
+		"Interview designer, WC key user, procurement, product engineer - Finland (2025-2025)" ,
+		"Interview engineering - Italy, Frosinone (2025-2025)" ,
+		"Interview engineering - Sweden (2025-2025)" ,
+		"Interview material expert - China (2025-2025)" ,
+		"Interview material expert - France (2025-2025)" ,
+		"Interview material expert - France 2 (2025-2025)" ,
+		"Interview material expert - India (2025-2025)" ,
+		"Interview material expert - Italy, Bergamo (2025-2025)" ,
+		"Interview material expert - Italy, Bergamo 2 (2025-2025)" ,
+		"Interview material expert - Sweden (2025-2025)" ,
+		"Interview procurement - Bulgaria, Rakovski (2025-2025)" ,
+		"Interview procurement - Italy (2025-2025)" ,
+		"Interview procurement - Italy 2 (2025-2025)" ,
+		"Interview simulation - China (2025-2025)" ,
+		"Interview simulation - Italy (2025-2025)" ,
+		"Interview with Green Products & Sustainability (2025-2025)" ,
+		"Interview with Material Technologies (2025-2025)" ,
+		"Interview with Mechanical Engineering I (Schaeffler old) (2025-2025)" ,
+		"Interview with Mechanical Engineering II (Vitesco) (2025-2025)" ,
+		"Interview with Mechanical Engineering III (Key Users) (2025-2025)" ,
+		"Interview with Procurement (2025-2025)" ,
+		"Interview with Purchasing Risk & Corporate Customs (2025-2025)" ,
+		"Interview with Simulation I (2025-2025)" ,
+		"Interview with Simulation II (2025-2025)" ,
+		"Interview with Technical Compliance (Schaeffler old) (2025-2025)" ,
+		"Interview with Technical Compliance (Vitesco) (2025-2025)" ,
+		"Interview with Testing (2025-2025)" ,
+		"Interviews ()" ,
+		"JAXA (2025-2026)" ,
+		"John Deere (2021-2024)" ,
+		"KBA Model-Based Definition & NX PMI ()" ,
+		"Kick-Off & Sensibilisierung (2023-2023)" ,
+		"Kick-Off Workshop „DMU mit Lieferanten und Datenaustausch“ (2024-2024)" ,
+		"Kick-off & Workshop (2022-2022)" ,
+		"Kickoff - Model Based Definition: One MBD at Rolls Royce (2024-2024)" ,
+		"Kickoff-Workshop (2019-2019)" ,
+		"Klärung Normen (2017-2017)" ,
+		"Konverter-Benchmark ()" ,
+		"Konverter-Benchmark und Auswahlempfehlung ()" ,
+		"Konzept Freigabeprozess 3D-Master anpassen ()" ,
+		"Konzept Freigabeprozess 3D-Master erarbeiten ()" ,
+		"Konzept für MultiLanguageNotes (MuLaN) für 3D-Modell entwickeln und mit anderen Konzepten abgleichen ()" ,
+		"Konzept für MultiLanguageNotes (MuLaN) für 3D-Modell implementieren ()" ,
+		"Konzept für automatisiertes Auslesen und Ausgeben von Mess-und Prüfinformationen ()" ,
+		"Konzept/e für Drucksteuerung aus 3D-Modell erstellen ()" ,
+		"Konzepte für automatisches Übersetzen verifizieren ()" ,
+		"Konzernforschung & Mercedes-Benz Cars Entwicklung ()" ,
+		"Kromberg & Schubert (2019-2019)" ,
+		"Kromberg & Schubert (2019-2021)" ,
+		"LTP Lastdatenanalyse V1 ()" ,
+		"Law, Norm, Standard Mgmt. ()" ,
+		"Liebherr 3D-Master ()" ,
+		"Lieferantenqualität (2023-2023)" ,
+		"Logistik (2023-2023)" ,
+		"Lösung für Viewing und modelbasierte Zusammenarbeit bereitstellen (2023-2024)" ,
+		"Lösung zum 3D-Modellvergleich bereitstellen (2023-2024)" ,
+		"Lösungskonzept ()" ,
+		"M-BoM Mgmt. ()" ,
+		"MAHLE 3D-Master ()" ,
+		"MBD in Beschaffung, Arbeitsvorbereitung und Produktion (2024-2025)" ,
+		"MBD in Toleranzanalyse & Messtechnik (2023-2024)" ,
+		"MBD-Anwenderschulung für Creo entwickeln (2023-2024)" ,
+		"MBD-CAD-Modelle erstellen (2023-2023)" ,
+		"MBD-Daten extern bereitstellen (2024-2024)" ,
+		"MBD-Daten freigeben (2024-2024)" ,
+		"MBD-Daten intern bereitstellen (2024-2024)" ,
+		"MBD-Daten prüfen (CheckMate, HQM, etc.) (2024-2024)" ,
+		"MBD-Datenbereitstellung ()" ,
+		"MBD-Datenerstellung ()" ,
+		"MBD-Datennutzung (2024-2024)" ,
+		"MBD-Einsatzprojekte (2023-2023)" ,
+		"MBD-Lösungsentwicklung (2023-2025)" ,
+		"MBD-Methoden & Tools für Beschichtung & Beschriftung (2024-2024)" ,
+		"MBD-Methoden & Tools für Verbindungstechnik (2024-2024)" ,
+		"MBD-Methoden & Tools für mechanische Elemente (Bohrungen, Gewinde, 3DBohr, etc.) (2024-2024)" ,
+		"MBD-Methoden & Tools zur Verknüpfung von Normen & Standards (2024-2024)" ,
+		"MBD-Prüfkriterien für Creo ModelCheck entwickeln (2023-2023)" ,
+		"MBD-Rollout & -Einsatz (Fokus: annotiertes 3D-Modell) ()" ,
+		"MBD-Use Cases & Potenziale (2023-2025)" ,
+		"MBD-Weiterentwicklung (vollständige Produktdokumentation) ()" ,
+		"MBD/TDP workshop ()" ,
+		"ME ()" ,
+		"MIM Interview with Electrical/Electronic Engineering (2025-2025)" ,
+		"MSO-046 Deep Dive 2026-1 (2026-2026)" ,
+		"MTU Aero Engines (2024-2026)" ,
+		"MTU Aero Engines AG ()" ,
+		"Machbarkeitsanalyse 3D-Notierungen in CREO ()" ,
+		"Main User Stories ()" ,
+		"Marquardt Model-Based Definition/PMI ()" ,
+		"Massenschwungrad ()" ,
+		'Master-Thesis "Smart Standards und KI" (2023-2023)' ,
+		"Material Data Mgmt. ()" ,
+		"Material Information Management ()" ,
+		"Mechanical Design ()" ,
+		"Meeting with BU2 (2022-2022)" ,
+		"Membership ()" ,
+		"Mercedes-Benz (2019-2026)" ,
+		"Mercedes-Benz Cars Anlauffabrik ()" ,
+		"Mercedes-Benz Vans Entwicklung ()" ,
+		"Met BOM - Sprint 10 ()" ,
+		"Met BOM - Sprint 11 ()" ,
+		"Met BOM - Sprint 12 ()" ,
+		"Met BOM - Sprint 13 ()" ,
+		"Met BOM - Sprint 14 ()" ,
+		"Met BOM - Sprint 15 ()" ,
+		"Met BOM - Sprint 16 ()" ,
+		"Met BOM - Sprint 17 ()" ,
+		"Met BOM - Sprint 18 ()" ,
+		"Met BOM - Sprint 19 ()" ,
+		"Met BOM - Sprint 5 ()" ,
+		"Met BOM - Sprint 6 ()" ,
+		"Met BOM - Sprint 7 ()" ,
+		"Met BOM - Sprint 7 offen ()" ,
+		"Met BOM - Sprint 8 ()" ,
+		"Met BOM - Sprint 9 ()" ,
+		"Met BOM Übergangssprint ()" ,
+		"MetBom Sprint 20 ()" ,
+		"Methoden und Richtlinien für 3D-Annotationen entwickeln (2023-2023)" ,
+		"Methoden und Richtlinien für 3D-Modellansichten entwickeln (2023-2023)" ,
+		"Methoden und Tools zur Stammdatenpflege entwickeln (2023-2023)" ,
+		"Methodendokumentation 3D-Notierungen ()" ,
+		"Methodentwicklung zur Übernahme von Funktionens- und Maschinenelemente für die NC-Programmierung (2025-2025)" ,
+		"Methodentwicklung zur Übernahme von Toleranz für die NC-Programmierung (2024-2024)" ,
+		"Migration Mgmt. ()" ,
+		"Mobile maintenance solutions ()" ,
+		"Model Based Definition (MBD) PoC - Kickoff & Workshop - Day 1 (2024-2024)" ,
+		"Model Based Definition (MBD) PoC - Kickoff & Workshop - Day 2 (2024-2024)" ,
+		"Mossec ()" ,
+		"Normdokumente per URL referenzieren (2024-2024)" ,
+		"Normen aus MBD referenzieren (2024-2025)" ,
+		"OIM - TwinDrive 1.0 ()" ,
+		"OPS ()" ,
+		"OU Cold-Forging ()" ,
+		"One MBD - Analysis & Proof-of-Concept ()" ,
+		"Optimierung Mehrsprachigkeit ()" ,
+		"Optimierung Standardtexte ()" ,
+		"Overall Benefit (2022-2028)" ,
+		"PEP - Workstream - Sprint 0 ()" ,
+		"PEP link to Digitalization (2017-2022)" ,
+		"PMI in Neutralformaten gegenüber Anforderungen analysieren ()" ,
+		"PMI- & GPS-Schulungen durchführen (2023-2023)" ,
+		"PROSTEP AG (2019-2019)" ,
+		"PROSTEP AG (2019-2026)" ,
+		"Parameter Mgmt. ()" ,
+		"Part I (2021-2021)" ,
+		"Part II (2021-2021)" ,
+		"Part Mgmt. ()" ,
+		"Phase 1 (2018-2018)" ,
+		"Phase 2 (2019-2019)" ,
+		"Phases ()" ,
+		"Pilot selection & Business Cases (2018-2019)" ,
+		"Pilotbereich Automation Standardisierung SMB ()" ,
+		"Pilotbereich China ()" ,
+		"Pilotbereich Corporate Tool Management & Prototyping ()" ,
+		"Pilotbereich Corporate Tool Management BHL ()" ,
+		"Pilotbereich Development NRB ()" ,
+		"Pilotbereich Development TRB ()" ,
+		"Pilotbereich Korea ()" ,
+		"Pilotbereich Produktentwicklung Mechatronik ()" ,
+		"Pilotprojekt Consumer Products, Jena (2023-2023)" ,
+		"Pilotprojekt Meditec, Oberkochen (2023-2023)" ,
+		"Pilotprojekt Semiconductor Manufacturing Technology (2023-2023)" ,
+		"Pilotprojekt Spektroskopie, Jena (2023-2023)" ,
+		"Planung nächste Schritte OU Cold Forging (2024-2024)" ,
+		"Porsche AG (2019-2019)" ,
+		"Potenzialanalyse & -Priorisierung ()" ,
+		"Potenziale für MBD ()" ,
+		"Potenziale für Model Based Definition - 24.05.27 (2024-2024)" ,
+		"Potenziale für Model Based Definition - 24.05.29 (2024-2024)" ,
+		"Potenziale für Model Based Definition - 24.06.13 (2024-2024)" ,
+		"Potenziale für Model Based Definition - 24.06.14 (2024-2024)" ,
+		"Potenziale für Model Based Definition - 24.06.20 (2024-2024)" ,
+		"Potenziale für Model Based Definition - 24.07.04 (2024-2024)" ,
+		"Power Tools ()" ,
+		"Pre-Analysis & Demonstrator (2019-2019)" ,
+		"Preliminary study ()" ,
+		"Preventive Quality (2022-2022)" ,
+		"Process Mgmt. ()" ,
+		"Process information system ()" ,
+		"Process planning, Vorrichtungsbau & Werkzeugbau (2022-2022)" ,
+		"Production line 4.0 ()" ,
+		"Produktstammdaten um technische Attribute erweitern (2023-2023)" ,
+		"Projects ()" ,
+		"Projektinterne Abstimmung mit SMT (2022-2022)" ,
+		"Projektkommunikation ()" ,
+		"Proof-of Concept Meditec, Jena (2023-2023)" ,
+		"Prototyp für MultiLanguageNotes (MuLaN) für 3D-Modell ()" ,
+		"Prototype - Sprint10 ()" ,
+		"Prototype - Sprint3 ()" ,
+		"Prototype - Sprint4 ()" ,
+		"Prototype - Sprint5 ()" ,
+		"Prototype - Sprint7 ()" ,
+		"Prototype - Sprint8 ()" ,
+		"Prototype - Sprint9 ()" ,
+		"Prototype Developmt. ()" ,
+		"Prototyping/Musterbau (2022-2022)" ,
+		"Prozessunterstützung Geschäftsbereich Massivumformung (2023-2023)" ,
+		"Purchasing (2022-2022)" ,
+		"Quality Mgmt. ()" ,
+		"R&D Test Data Analytics & Mining ()" ,
+		"RTX Corporation (Collins, Pratt & Whitney, Raytheon) (2025-2026)" ,
+		"Ramp-up Phase I (2023-2023)" ,
+		"Ramp-up Phase II (2024-2024)" ,
+		"Ramp-up Phase III (2025-2025)" ,
+		"Ramp-up Phase IV (2026-2026)" ,
+		"Ramp-up Phase V (2027-2027)" ,
+		"Ramp-up Phase VI (2028-2028)" ,
+		"Realisierung ()" ,
+		"Recipe Mgmt. ()" ,
+		"Reduzierte Nutzung zentraler Druckdienste (2024-2024)" ,
+		"Release 1 ()" ,
+		"Release 2 ()" ,
+		"Release Mgmt. ()" ,
+		"Relevante Abschnitte aus Normdokumenten per URL referenzieren (2024-2025)" ,
+		"Req. Engineering ()" ,
+		"Req. Mgmt. ()" ,
+		"Req. Spec. Mgmt. ()" ,
+		"Requirements Engineering & MBSE ()" ,
+		"Review Process Planning (2019-2019)" ,
+		"Review Product Design (2019-2019)" ,
+		"Review Purchasing (2019-2019)" ,
+		"Review Quality (2019-2019)" ,
+		"Robert Bosch hPLM ()" ,
+		"Rollout MultiLanguageNotes (MuLaN) für 3D-Modell ()" ,
+		"Rollout automatisiertes Auslesen und Ausgeben von Mess-und Prüfinformationen ()" ,
+		"Rolls-Royce Power Systems ()" ,
+		"Routing Mgmt. ()" ,
+		"Rückgekoppelte Informationen ()" ,
+		"SCM ()" ,
+		"SCRUM Training Sprint 1 ()" ,
+		"SLM Advanced ()" ,
+		"SLM Backbone & Foundation ()" ,
+		"SLM Core ()" ,
+		"SLM Workshop OU PCF mit :em (2024-2024)" ,
+		"SLM Workstreams ()" ,
+		"SSC Services (2019-2019)" ,
+		"SSC Services (2019-2020)" ,
+		"Schaeffler ()" ,
+		"Schaeffler (2019-2019)" ,
+		"Schaeffler Digitalization Framework ()" ,
+		"Schaeffler Engineering Twin ()" ,
+		"Schaeffler Technologies AG & Co. KG (2019-2024)" ,
+		"Schiene/Linearführung ()" ,
+		"Schulung der Anwender zur Übernahme von Funktionens- und Maschinenelemente für die NC-Programmierung (2025-2025)" ,
+		"Schulung der Anwender zur Übernahme von Toleranzen für die NC-Programmierung (2024-2024)" ,
+		"Sensibilisierungsworkshops ()" ,
+		"Setup 3D-Master @Festo (2024-2024)" ,
+		"Sichten, Filter, Abbildungsregeln für Informationen aus 2D erarbeiten ()" ,
+		"Simulation Data Mgmt. ()" ,
+		"Skizze Roadmap und Projektplan  (2021-2021)" ,
+		"Sodius Willert (2025-2026)" ,
+		"Software Design ()" ,
+		"Spanner ()" ,
+		"Speed 1.2 ()" ,
+		"Speichermedium für Standardtexte analysieren und Konzept entwickeln ()" ,
+		"Spezifikation eines Templates für das TDP/DDP (2023-2023)" ,
+		"Spezifikation und Umsetzung  relevanter Inhalte für weitere Rollen (2024-2024)" ,
+		"Spezifikation und Umsetzung Anwendungsfälle ()" ,
+		"Spezifikation und Umsetzung relevanter Inhalte für Betrieb und Instandhaltung (2024-2024)" ,
+		"Spezifikation und Umsetzung relevanter Inhalte für die Arbeitsvorbereitung (2024-2024)" ,
+		"Spezifikation und Umsetzung relevanter Inhalte für die Produktion (2024-2024)" ,
+		"Spezifikation von Kantenangaben (ISO 13715) (2023-2023)" ,
+		"Sprint 00 ()" ,
+		"Sprint 01 ()" ,
+		"Sprint 02 ()" ,
+		"Sprint 03 ()" ,
+		"Sprint 04 ()" ,
+		"Sprint 05 ()" ,
+		"Sprint 06 ()" ,
+		"Sprint 07 ()" ,
+		"Sprint 08 ()" ,
+		"Sprint 09 ()" ,
+		"Sprint 10 ()" ,
+		"Sprint 11 ()" ,
+		"Sprint 12 ()" ,
+		"Sprint 13 ()" ,
+		"Sprint 14 ()" ,
+		"Sprint 15 ()" ,
+		"Sprint 16 ()" ,
+		"Sprint 17 ()" ,
+		"Sprint 18 ()" ,
+		"Sprint 19 ()" ,
+		"Sprint 20 ()" ,
+		"Sprint 21 ()" ,
+		"Sprint 22 ()" ,
+		"Sprint 23 ()" ,
+		"Sprint 24 ()" ,
+		"Sprint 25 ()" ,
+		"Sprint 26 ()" ,
+		"Sprint 27 ()" ,
+		"Sprint 28 ()" ,
+		"Sprint 29 ()" ,
+		"Sprint 30 ()" ,
+		"Sprint 31 ()" ,
+		"Sprint 32 ()" ,
+		"Sprint 32 Preview ()" ,
+		"Sprint 33 ()" ,
+		"Sprint 34 ()" ,
+		"Sprint 35 ()" ,
+		"Sprint 36 ()" ,
+		"Sprint 37 ()" ,
+		"Sprint 38 ()" ,
+		"Sprint 39 ()" ,
+		"Sprint 40 ()" ,
+		"Sprint 41 ()" ,
+		"Sprint 42 ()" ,
+		"Sprint 43 ()" ,
+		"Sprint 44 ()" ,
+		"Sprint x ()" ,
+		"Sprints ()" ,
+		"Stakeholder-Interviews ()" ,
+		"Stand der Technik erheben und dokumentieren (2017-2017)" ,
+		"Standardtexte klassifizieren ()" ,
+		"Steering Committee Workstream (SCW) ()" ,
+		"Storyline Demonstrator (2023-2023)" ,
+		"Strategie & Methodik zum Einsatz nichtgeometrischer Neutralformate (2023-2023)" ,
+		"Strategie & Methodik zum Einsatz von 3D-CAD-Neutralformaten (2023-2023)" ,
+		"Summary & Auswertung und weitere Planung / Reservetermin (2022-2022)" ,
+		"Symbol zur Änderungskennzeichnung aus dem Bereich SMT übertragen (2023-2023)" ,
+		"Systems Engineering ()" ,
+		"Technical Data Package (TDP) (2023-2023)" ,
+		"Technical Safety Mgmt. ()" ,
+		"Technische Grundlagen 3D-Master ()" ,
+		"Technisches Datenpaket erzeugen und prüfen (2024-2024)" ,
+		"Test Case Mgmt. ()" ,
+		"Test Data Mgmt. ()" ,
+		"Test Mgmt. ()" ,
+		"The Boeing Corporation (2022-2026)" ,
+		"Themenbereich Copyright & IPP ()" ,
+		"Toleranzanalyse & Einlesen für Koodinatenmesstechnik (2023-2023)" ,
+		"Transfer existing reused texts to a database ()" ,
+		"Transfer to Line Organisation & Global Rollout (2020)" ,
+		"Umsetzung 3D-Master-Demonstratoren ()" ,
+		"Universities ()" ,
+		"Unterstützung, Problemanalyse und Problemlösungen beim Einsatz von ISO GPS (2023-2024)" ,
+		"Users ()" ,
+		"Validation (2022-2022)" ,
+		"Value based offerings Automotive ()" ,
+		"Variantenzeichnungen ()" ,
+		"Vendors ()" ,
+		"Verifikation & Validierung - Test (2023-2023)" ,
+		"Versuch (2023-2023)" ,
+		"Viewer Benchmark ()" ,
+		"Viewer-Benchmark und Auswahlempfehlung ()" ,
+		"Viewing und modellbasierte Zusammenarbeit für Betrieb und Instandhaltung (2024-2024)" ,
+		"Viewing und modellbasierte Zusammenarbeit für die Arbeitsvorbereitung (2024-2024)" ,
+		"Viewing und modellbasierte Zusammenarbeit für die Produktion (2024-2024)" ,
+		"Viewing und modellbasierte Zusammenarbeit für weitere Rollen (2024-2024)" ,
+		"Volkswagen AG (2022-2026)" ,
+		"Vorabstimmung OU PCF und :em (2024-2024)" ,
+		"Vorbereitung zur Ergenisvorstellung (2024-2024)" ,
+		"Vorbereitungsrunde Workshop emAG (2024-2024)" ,
+		"Vorhandene Werknormen für semantischen Zugriff erschließen (2025-2025)" ,
+		"Vorstellung Ergebnisse und Abschluss  (2021-2021)" ,
+		"Vorstellung Hr. Schlund -> 3D Master (2018-2018)" ,
+		"Vorstellung der NX-CAM-Programmierung & Nachbereitung (2024-2024)" ,
+		"Vorstellung der NX-CAM-Programmierung (2024-2024)" ,
+		"WAGO Model-Based Definition ()" ,
+		"Werkstoffprüfung (2023-2023)" ,
+		"Werkzeugbau ()" ,
+		"Werkzeugbau/-betreuung (2022-2022)" ,
+		"Work Instruction Mgmt. ()" ,
+		"Workcenter Mgmt. ()" ,
+		"Workflow Mgmt. ()" ,
+		'Workshop "Approvals & Quality" (2023-2023)' ,
+		'Workshop "Data Managment" (2023-2023)' ,
+		'Workshop "Development 1" (2023-2023)' ,
+		'Workshop "Development 2" (2023-2023)' ,
+		'Workshop "Logistics" (2023-2023)' ,
+		'Workshop "Manufacturing" (2023-2023)' ,
+		'Workshop "Process Managment" (2023-2023)' ,
+		'Workshop "Production Planning" (2023-2023)' ,
+		'Workshop "Purchasing" (2023-2023)' ,
+		'Workshop "Testing" (2023-2023)' ,
+		"Workshop Acquisition, Cost Calculation, Teamlead Design ()" ,
+		"Workshop Pre-Development (2021-2021)" ,
+		"Workshop Preventive Quality (2021-2021)" ,
+		"Workshop Process Planning & Logistics (2021-2021)" ,
+		"Workshop Process Planning, Tooling & Fixtures ()" ,
+		"Workshop Product Design (2019-2019)" ,
+		"Workshop Production Quality (2021-2021)" ,
+		"Workshop Project & Product Management, Controlling (2021-2021)" ,
+		"Workshop Prototyping (2021-2021)" ,
+		"Workshop Prototyping, focus on Tooling & CNC (2021-2021)" ,
+		"Workshop Prozessplanung (2019-2019)" ,
+		"Workshop Purchasing (2019-2019)" ,
+		"Workshop Purchasing (2021-2021)" ,
+		"Workshop Quality (2019-2019)" ,
+		"Workshop Sales ()" ,
+		"Workshop Simulation & Validation ()" ,
+		"Workshop Tolerance Simulation (2021-2021)" ,
+		"Workshop: Anwendungsfälle Folgeprozesse (2023-2023)" ,
+		"Workshop: Darstellung der Anwendungsfälle und Potenziale (2023-2023)" ,
+		"Workshop: Durchsprache der annotierten Pilotmodelle mit AV und QS (2023-2023)" ,
+		"Workshop: Durchsprache der annotierten Pilotmodelle mit der Konstruktion (2023-2023)" ,
+		"Workshop: Durchsprache von Zeichnungen mit der Konstruktion, Grundlagen ISO GPS (2023-2023)" ,
+		"Workshop: IT-Bebauung (2023-2023)" ,
+		"Workshop: Konstruktion, QS und CAM (2023-2023)" ,
+		"Workshop: Produktentwicklung (2023-2023)" ,
+		"Workshop: Produktmanagement (2023-2023)" ,
+		"Workshop: Sensibilisierung & Einführung (2023-2023)" ,
+		"Workshop: Vorstellung MBD/PMI mit Kernteam (2024-2024)" ,
+		"Workshop: Vorstellung Nicht-geometrische Daten (2024-2024)" ,
+		"Workshop: Werkzeugbau (2023-2023)" ,
+		"Workshop: Werkzeugentwicklung (2023-2023)" ,
+		"Workshop: Zwischenergebnisse (2023-2023)" ,
+		"Workshops ()" ,
+		"Wälzlager ()" ,
+		"Wärmemanagement-Modul ()" ,
+		"ZEISS Model-Based Definition (2022-2025)" ,
+		"ZF Friedrichshafen AG (2019-2026)" ,
+		"ZMS ()" ,
+		"Zielbild und Übergangsszenarien für die Technischen Produktdokumentation (2023-2023)" ,
+		"Zusätzliche Symbole für geometriebezogene Inhalte (2023-2023)" ,
+		"ggf. geänderte Viewer in Prototypen integrieren ()" ,
+		"iCAC TDP (2021-2021)" ,
+		"iPPE - Sprint 6 offen ()" ,
+		"interner Kick-off Kernteam (2022-2022)" ,
+		"thyssenkrupp Presta SLM ()" ,
+		"Änderungssymbol und Methodik einführen (2023-2023)" ,
+		"Übernahme von Toleranzinformationen für die NC-Programmierung (2024-2024)" ,
+		"Übersetzungskonzept Standardtexte ()"
+		;
+	dcterms:created "18.02.2026 07:47:22" ;
+	dcterms:license
+		"Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software." ,
+		<https://opensource.org/licenses/MIT>
+		;
+	dcterms:title "CASCaRA Process Ontology" ;
+	owl:versionInfo "1.0" ;
+	.
+
+<ConceptDefinition>
+	a owl:Class ;
+	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:label
+		"Concept definition"@en ,
+		"Konzeptdefinition"@de
+		;
+	dcterms:modified "2022-02-18T11:17:54Z"^^xsd:dateTime ;
+	skos:definition """In conceptual design, new products or systems are defined through requirements and specified through a functional structure in mechanical, electrics/electronics, and software domains. A logical structure specifies the future product architecture in order to implement the specified functions.
+Besides new products, existing products may be changed or modified significantly to better comply with customer needs, or to attract new customers. Eventually, the product may be changed or adopted to comply to new standards, regulations or laws.
+Conceptual design is usually performed at a high abstraction level and low level of detail, using parameter studies, system models, and rough geometry, if any.
+For the Digital Data Package, model-based methods and data for product conceptual design are assumed."""@en ;
+	.
+
+<LongTermArchiving>
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Langzeitarchivierung"@de ,
+		"Long-Term Archiving"@en
+		;
+	skos:definition "For long-term archiving, all product information must be configured and stored in a retrievable way. Product information includes domain-specifc models, relations between models and model entities, and meta-data about the documents and models."@en ;
+	prov:used
+		:JoiningProcess ,
+		arch:Function ,
+		arch:FunctionFailure ,
+		arch:StakeholderRequirement ,
+		arch:SystemRequirement ,
+		mech:Body ,
+		mech:JoiningElement ,
+		mech:KinematicJoint ,
+		mech:KinematicMechanism ,
+		mech:Material ,
+		mech:MechanicalComponent ,
+		mech:ModelAnnotation ,
+		sys:ComponentConnection ,
+		sys:ComponentInterface ,
+		sys:ComponentState ,
+		sys:SystemComponent ,
+		val:Displacement ,
+		val:ValidationResult ,
+		val:ValidationRun ,
+		ver:VerificationResult ,
+		ver:VerificationRun
+		;
+	.
+
+<ManufacturingSupplyChain>
+	a owl:Class ;
+	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:label
+		"Manufacturing & Supply Chain"@en ,
+		"Produktion & Lieferkette"@de
+		;
+	dcterms:modified "2021-11-24T10:35:16Z"^^xsd:dateTime ;
+	skos:definition "Includes all activities related to source and manufacture a product in different companies, plants, or locations."@en ;
+	.
+
+mnf:PackagingLogistics
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Packaging & Logistics"@en ,
+		"Verpackung & Logistik"@de
+		;
+	skos:definition "Includes the definition of all kinds of packaging and transport equipment to ensure a product or its components will be supplied to their destination safely."@en ;
+	prov:used
+		:JoiningProcess ,
+		fld:HydraulicPneumaticConnection ,
+		fld:HydraulicPneumaticPort ,
+		mech:Body ,
+		mech:JoiningElement ,
+		mech:Material ,
+		mech:MechanicalComponent
+		;
+	.
+
+mnf:PartsManufacturing
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Parts Manufacturing"@en ,
+		"Teilefertigung"@de
+		;
+	skos:definition "Manufacturing of single parts using a variety of production processes and methods, each with specific sets of data, such as CNC programs, bending specification, holes specifications, joining features, etc."@en ;
+	prov:used
+		mnf:ManufacturingEquipmentComponent ,
+		:ManufacturingOperation ,
+		mech:BendingSpecification ,
+		mech:Body ,
+		mech:Cleanliness ,
+		mech:Datum ,
+		mech:DimensionalSize ,
+		mech:Gearing ,
+		mech:GeometricTolerance ,
+		mech:HeatTreatedArea ,
+		mech:Hole ,
+		mech:MarkingLabeling ,
+		mech:Material ,
+		mech:MechanicalComponent ,
+		mech:ModelView ,
+		mech:PaintingCoating ,
+		mech:SurfaceTexture
+		;
+	.
+
+mnf:ProductAssembly
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Montage"@de ,
+		"Product Assembly"@en
+		;
+	skos:definition "Assembly of components or products from single parts or sub-components according to a production plan, using all kinds of joinig and bonding."@en ;
+	prov:used
+		mnf:ManufacturingEquipmentComponent ,
+		:JoiningProcess ,
+		:ManufacturingOperation ,
+		mech:Body ,
+		mech:Datum ,
+		mech:DimensionalSize ,
+		mech:GeometricTolerance ,
+		mech:JoiningElement ,
+		mech:KinematicJoint ,
+		mech:KinematicMechanism ,
+		mech:Material ,
+		mech:MechanicalComponent ,
+		mech:ModelView ,
+		mech:SurfaceTexture
+		;
+	.
+
+mnf:QualityInspection
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Quality Inspection"@en ,
+		"Qualitätskontrolle"@de
+		;
+	skos:definition "Includes the inspection of single parts, components or products during or after the manufacturing process, as well as the documentation of inspection results."@en ;
+	prov:used
+		mnf:ControlPlan ,
+		:JoiningProcess ,
+		mech:Body ,
+		mech:JoiningElement ,
+		mech:MechanicalComponent ,
+		ver:VerificationCharacteristic ,
+		ver:VerificationPlan ,
+		ver:VerificationResource
+		;
+	.
+
+<MechanicalDesign>
+	a owl:Class ;
+	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:label
+		"Mechanical Design"@en ,
+		"Mechanische Konstruktion"@de
+		;
+	dcterms:modified "2023-10-22T15:48:39Z"^^xsd:dateTime ;
+	skos:definition """In Mechanical Design, physical product structure, product geometry, as well as all specifications are defined.
+This includes shape, dimensioning and tolerancing, material (including semi-finished parts and treatment), surface and edge specifications.
+Mechanical design is usually conducted using a mechanical CAD system."""@en ;
+	.
+
+<Procurement>
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Beschaffung"@de ,
+		"Procurement"@en
+		;
+	skos:definition "Communication between procurement and suppliers in the bidding and iquiry phase. Supports the OMG Model-Based Aqcuisition initiative."@en ;
+	prov:used
+		:JoiningProcess ,
+		ee:ElectricElectronicComponent ,
+		ee:ElectricElectronicConnection ,
+		ee:ElectricElectronicPort ,
+		mech:BendingSpecification ,
+		mech:Body ,
+		mech:Cleanliness ,
+		mech:Datum ,
+		mech:DimensionalSize ,
+		mech:Gearing ,
+		mech:GeometricTolerance ,
+		mech:HeatTreatedArea ,
+		mech:Hole ,
+		mech:JoiningElement ,
+		mech:MarkingLabeling ,
+		mech:Material ,
+		mech:MechanicalComponent ,
+		mech:PaintingCoating ,
+		mech:SurfaceTexture
+		;
+	.
+
+<ProductDesign>
+	a owl:Class ;
+	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:label
+		"Product Design"@en ,
+		"Produktentwurf"@de
+		;
+	dcterms:modified "2021-11-29T12:59:20Z"^^xsd:dateTime ;
+	skos:definition """Product Design is the specific synthesis, implentation and documentation of design solutions suggested by systems engineering.
+Product design comprises the domain-specific design processes of mechanical, electrical/electronical design, and software engineering."""@en ;
+	.
+
+<ProductDevelopment>
+	a owl:Class ;
+	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:label
+		"Product Development"@en ,
+		"Produktentwicklung"@de
+		;
+	dcterms:modified "2022-02-18T11:15:52Z"^^xsd:dateTime ;
+	skos:definition """Product development is the creation of products with new or modified characteristics that offer new or additional benefits to the customer, or comply with new or changed standards, rules and regulations.
+Product development may involve modification of an existing product or its presentation or formulation of an entirely new product that satisfies a newly-defined or changed customer need or market segment.
+Description based on: https://cio-wiki.org/wiki/Product_Development"""@en ;
+	.
+
+con:BusinessOrMissionAnalysis
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Business or Mission Analysis"@en ,
+		"Geschäfts- oder Einsatzanalyse"@de
+		;
+	skos:definition """Product Planning is the ongoing process of identifying and articulating market requirements that define a product's feature set. Product planning serves as the basis for decisions about price, distribution and promotion.
+Product planning is the process of creating a product idea and following through on it until the product is introduced to the market. Additionally, a small company must have an exit strategy for its product in case the product does not sell.
+Product planning entails managing the product throughout its life using various marketing strategies, including product extensions or improvements, increased distribution, price changes and promotions.
+
+Also includes the identification of relevant legal requirements as well as customs and tax regulations applicable to the product and the respective target markets.
+Description based on: https://en.wikipedia.org/wiki/Product_planning"""@en ;
+	prov:generated
+		org:Role ,
+		arch:UseCase
+		;
+	.
+
+con:FunctionalSafety
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Functional Safety"@en ,
+		"Funktionale Sicherheit"@de
+		;
+	prov:generated
+		arch:Function ,
+		arch:FunctionFailure ,
+		sys:ComponentConnection ,
+		sys:ComponentInterface ,
+		sys:ComponentState ,
+		sys:SystemComponent
+		;
+	prov:used
+		org:Role ,
+		arch:Function ,
+		arch:SystemRequirement ,
+		arch:UseCase ,
+		sys:ComponentConnection ,
+		sys:ComponentInterface ,
+		sys:ComponentState ,
+		sys:SystemComponent
+		;
+	.
+
+con:RequirementsEngineering
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Anforderungsmanagement"@de ,
+		"Requirements Engineering"@en
+		;
+	skos:definition """Requirements engineering is the process of defining, eliciting, documenting, and maintaining requirements in the engineering design process.
+Description based on: https://en.wikipedia.org/wiki/Requirements_engineering"""@en ;
+	prov:generated arch:Requirement ;
+	prov:used
+		org:Role ,
+		arch:UseCase
+		;
+	.
+
+con:SystemsArchitecture
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Systemarchitektur"@de ,
+		"Systems Architecture"@en
+		;
+	skos:definition "Systems architecture refers to the cross-domain definition of functions and logical structures at systems level, that will be pursued in detail by the individual domains mechanical design, electric/electronic design and software design."@en ;
+	prov:generated
+		arch:Function ,
+		arch:FunctionFailure ,
+		sys:ComponentConnection ,
+		sys:ComponentInterface ,
+		sys:ComponentState ,
+		sys:SystemComponent
+		;
+	prov:used
+		org:Role ,
+		arch:StakeholderRequirement ,
+		arch:UseCase
+		;
+	.
+
+<ProductDevelopment/ProductDesign/ElectricalElectronicalDesign>
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Electrical/Electronical Design"@en ,
+		"Elektrik-/Elektronikentwicklung"@de
+		;
+	skos:definition """In Electrical/Electronic Design, all electrical and electronic products functions will be implemented through electrical and electonic components selection and allocation, circuit board design, and wire and harness routing.
+Electrical/Electronic Design is usually performed using an electrical/electronic CAD system."""@en ;
+	prov:generated
+		ctx:Configuration ,
+		ctx:Reference ,
+		ctx:Variant ,
+		ee:ElectricElectronicComponent ,
+		ee:ElectricElectronicConnection ,
+		ee:ElectricElectronicPort
+		;
+	prov:used
+		arch:Function ,
+		arch:SystemRequirement ,
+		mech:Body ,
+		mech:MechanicalComponent ,
+		sys:ComponentConnection ,
+		sys:ComponentInterface ,
+		sys:ComponentState ,
+		sys:SystemComponent
+		;
+	.
+
+<ProductDevelopment/ProductDesign/ElectricalMechanicalDesignCollaboration>
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Electrical/Mechanical Design Collaboration"@en ,
+		"Zusammenarbeit Elektrik/Mechanik-Konstruktion"@de
+		;
+	skos:definition "In Electrical/Mechanical Design Collaboration, both design disciplines involved will collaborate in a common 3D space in order to adjust and coordinate allocation, dimensioning and positioning of components."@en ;
+	prov:used
+		ee:ElectricElectronicComponent ,
+		ee:ElectricElectronicConnection ,
+		ee:ElectricElectronicPort ,
+		mech:Body ,
+		mech:MechanicalComponent
+		;
+	.
+
+mec:DefineJoiningElements
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Define Joining Elements"@en ,
+		"Fügeverbindungen definieren"@de
+		;
+	prov:generated mech:JoiningElement ;
+	prov:used
+		arch:SystemRequirement ,
+		mech:Face ,
+		mech:Material ,
+		mech:MechanicalComponent
+		;
+	.
+
+<ProductDevelopment/ProductDesign/SoftwareEngineering>
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Software Engineering"@en ,
+		"Softwareentwicklung"@de
+		;
+	skos:definition """In Software Engineering, embedded software is developed that will connect the product to the user, as well as to other products and systems.
+For configuration reasons it may be that software is treated a part to be considered in Bills of Material of products or systems and to be configured related to mechanical or electronic configurations of a system."""@en ;
+	prov:generated
+		ctx:Configuration ,
+		ctx:Reference ,
+		ctx:Variant ,
+		sw:SoftwareClass ,
+		sw:SoftwareComponent ,
+		sw:SoftwareInterface
+		;
+	prov:used
+		arch:Function ,
+		arch:SystemRequirement ,
+		ee:ElectricElectronicComponent ,
+		ee:ElectricElectronicConnection ,
+		ee:ElectricElectronicPort ,
+		mech:Body ,
+		mech:MechanicalComponent ,
+		sys:ComponentConnection ,
+		sys:ComponentInterface ,
+		sys:ComponentState ,
+		sys:SystemComponent
+		;
+	.
+
+<ProductDevelopment/VerificationValidationUsingSimulation/PerformAndDocumentSimulation>
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Perform and document Simulation"@en ,
+		"Simulation durchführen und dokumentieren"@de
+		;
+	skos:definition "Simulation execution includes performing the simulation as well as documenting and summarizing the simulation results."@en ;
+	prov:generated
+		val:ValidationResult ,
+		val:ValidationRun ,
+		ver:VerificationResult ,
+		ver:VerificationRun
+		;
+	prov:used
+		mech:Body ,
+		mech:Material ,
+		mech:MechanicalComponent ,
+		val:ValidationBoundaryCondition ,
+		val:ValidationCriterium ,
+		val:ValidationPlan ,
+		val:ValidationRun
+		;
+	.
+
+<ProductDevelopment/VerificationValidationUsingSimulation/PlanAndPrepareSimulation>
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Plan and prepare Simulation"@en ,
+		"Simulation planen und vorbereiten"@de
+		;
+	skos:definition
+		"Die Planung und Vorbereitung einer Simulation umfasst die Spezifikation der Simulationsziele auf der Grundlage der Produktanforderungen und -funktionen. Es folgt die Definition der Simulationsrandbedingungen und die Erstellung von Simulationsmodellen entsprechend den Simulationszielen."@de ,
+		"Planning and preparation of a simulation includes the specification of the simulation objectives based on product requirements and functions. This is followed by the definition of the simulation boundary conditions and the createion of simulation models according to simulation objectives."@en
+		;
+	prov:generated
+		val:ValidationBoundaryCondition ,
+		val:ValidationCriterium ,
+		val:ValidationPlan ,
+		ver:VerificationCharacteristic ,
+		ver:VerificationPlan ,
+		ver:VerificationResource
+		;
+	prov:used
+		arch:Function ,
+		arch:SystemRequirement ,
+		ee:ElectricElectronicComponent ,
+		ee:ElectricElectronicConnection ,
+		ee:ElectricElectronicPort ,
+		fld:HydraulicPneumaticConnection ,
+		fld:HydraulicPneumaticPort ,
+		mech:BendingSpecification ,
+		mech:Body ,
+		mech:Cleanliness ,
+		mech:Datum ,
+		mech:DimensionalSize ,
+		mech:Gearing ,
+		mech:GeometricInterference ,
+		mech:GeometricTolerance ,
+		mech:HeatTreatedArea ,
+		mech:Hole ,
+		mech:JoiningElement ,
+		mech:KinematicJoint ,
+		mech:KinematicMechanism ,
+		mech:KinematicMotion ,
+		mech:KinematicSensor ,
+		mech:MarkingLabeling ,
+		mech:Material ,
+		mech:MechanicalComponent ,
+		mech:PaintingCoating ,
+		mech:SurfaceTexture ,
+		sw:SoftwareClass ,
+		sw:SoftwareComponent ,
+		sw:SoftwareInterface
+		;
+	.
+
+<ProductDevelopment/VerificationValidationUsingTest/PerformAndDocumentTesting>
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Perform and document Testing"@en ,
+		"Versuch durchführen und dokumentieren"@de
+		;
+	skos:definition "Testing execution includes scheduling tests, allocating the test rig, executing and documenting the test."@en ;
+	prov:generated
+		val:ValidationResult ,
+		val:ValidationRun ,
+		ver:VerificationResult ,
+		ver:VerificationRun
+		;
+	prov:used
+		mech:Material ,
+		mech:MechanicalComponent ,
+		val:ValidationBoundaryCondition ,
+		val:ValidationCriterium ,
+		val:ValidationPlan ,
+		val:ValidationRun
+		;
+	.
+
+<ProductDevelopment/VerificationValidationUsingTest/PrepareTesting>
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Prepare Testing"@en ,
+		"Versuch vorbereiten"@de
+		;
+	skos:definition "Testing preparation includes the definition of product requirements and functions to be validated, the specification, design and manufacturing of samples, prototypes and test rigs."@en ;
+	prov:generated
+		val:ValidationBoundaryCondition ,
+		val:ValidationCriterium ,
+		val:ValidationPlan ,
+		ver:VerificationCharacteristic ,
+		ver:VerificationPlan ,
+		ver:VerificationResource
+		;
+	prov:used
+		arch:Function ,
+		arch:SystemRequirement ,
+		ee:ElectricElectronicComponent ,
+		ee:ElectricElectronicConnection ,
+		ee:ElectricElectronicPort ,
+		fld:HydraulicPneumaticConnection ,
+		fld:HydraulicPneumaticPort ,
+		mech:BendingSpecification ,
+		mech:Body ,
+		mech:Cleanliness ,
+		mech:Datum ,
+		mech:DimensionalSize ,
+		mech:Gearing ,
+		mech:GeometricTolerance ,
+		mech:HeatTreatedArea ,
+		mech:Hole ,
+		mech:JoiningElement ,
+		mech:KinematicJoint ,
+		mech:KinematicMechanism ,
+		mech:KinematicMotion ,
+		mech:KinematicSensor ,
+		mech:MarkingLabeling ,
+		mech:Material ,
+		mech:MechanicalComponent ,
+		mech:PaintingCoating ,
+		mech:SurfaceTexture ,
+		sw:SoftwareClass ,
+		sw:SoftwareComponent ,
+		sw:SoftwareInterface
+		;
+	.
+
+<ProductLineEngineering>
+	a owl:Class ;
+	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:label
+		"Product Line Engineering"@en ,
+		"Produktlinienentwicklung"@de
+		;
+	dcterms:modified "2025-10-02T20:45:35Z"^^xsd:dateTime ;
+	.
+
+pro:DefinitionProductAssetInstanceConfigurabilitySpace
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label "Definition product asset instance configurability space"@en ;
+	skos:definition "Definition of the CU product asset instance configurability space: the objective is to define the set of configuration options that will be made available to the CU end user for each CU instance. Typical options available for CU include clock selection, clock speed, caching and cache policy, protocol for external bus interfaces, general purpose I/O configuration (direction, active etc.) as well as dedicated options for peripherals and co-processors. A key aspect is also the definition of the configuration mechanisms that will be made available to the user including configuration protection features to prevent undesired/unauthorized changes. This is a collaborative efforts involving the same actors as Use Case 1, though driven by different criteria. The CU architect must balance the flexibility provided by configurability options with the added complexity it typically brings in terms of hardware design as well as verification effort. The product owner must balance programming complexity, potential higher cost and lower efficiency, with the capability of having their single CU instance capable of covering a broader problem space."@en ;
+	prov:used
+		sys:ComponentConnection ,
+		sys:ComponentInterface ,
+		sys:ComponentState ,
+		sys:SystemComponent
+		;
+	.
+
+pro:DesignProductAssetInstance
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label "Design product asset instance"@en ;
+	skos:definition "Design of the CU product asset instance, implying the definition of the bill of features: the ultimate goal of this collaboration use case is the specification of the features, selected from the feature catalogue, that define the solution to the specific customer problem within the solution/family portfolio. The bill of feature is basically the set of actual values assigned to the variation point, which fully determine a single specific family instance. Collaboration still happens between product and CU architects, with the former specifying requirements and high level architecture for a specific problem (within their problem domain) and the latter providing a set of potential solutions, all belonging to the same CU family."@en ;
+	prov:used
+		sys:ComponentConnection ,
+		sys:ComponentInterface ,
+		sys:ComponentState ,
+		sys:SystemComponent
+		;
+	.
+
+pro:DesignProductLine
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label "Design product line"@en ;
+	skos:definition "Definition of the “shared asset supersets” and feature catalog: this is a collaborative effort typically involving the CU architect, customer product owner and possibly supplier tech marketing team. The goal is eventually to define the product family i.e. to identify all the assets and their potential variations that can be used to provide a solution to any given problem within the target problem domain, rather than building for each problem an ad-hoc solution. The problem domain is specified by the customer/product owner, but can be typically expanded by the tech marketing team who captures requirements from other customers and push for alignment with strategic objectives. In defining the product line the CU architect is driven by objectives as costs, reuse, IPs while the product owner wants the product family to allow for a problem solution as close as possible to an “optimal” ad-hoc architecture."@en ;
+	prov:used
+		arch:Function ,
+		arch:SystemRequirement ,
+		sys:ComponentConnection ,
+		sys:ComponentInterface ,
+		sys:ComponentState ,
+		sys:SystemComponent
+		;
+	.
+
+<ProductOperation>
+	a owl:Class ;
+	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:label
+		"Product Operation"@en ,
+		"Produktbetrieb"@de
+		;
+	dcterms:modified "2021-11-24T10:30:35Z"^^xsd:dateTime ;
+	skos:definition "Includes all phases and activities in the operation phase of a product."@en ;
+	.
+
+<ProductOperation/DisassemblyRecycling>
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Disassembly & Recycling"@en ,
+		"Zerlegung & Recycling"@de
+		;
+	skos:definition "Includes all end-of-life activities required to putting a product or its component to recycling."@en ;
+	prov:used
+		:JoiningProcess ,
+		arch:Function ,
+		ee:ElectricElectronicComponent ,
+		ee:ElectricElectronicConnection ,
+		ee:ElectricElectronicPort ,
+		fld:HydraulicPneumaticConnection ,
+		fld:HydraulicPneumaticPort ,
+		mech:Body ,
+		mech:Hole ,
+		mech:JoiningElement ,
+		mech:Material ,
+		mech:MechanicalComponent ,
+		mech:PaintingCoating
+		;
+	.
+
+<ProductOperation/MaintenanceService>
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Maintenance & Service"@en ,
+		"Wartung & Instandhaltung"@de
+		;
+	skos:definition "Includes all activities performed in order to maintain a product in operation."@en ;
+	prov:used
+		:JoiningProcess ,
+		arch:Function ,
+		arch:UseCase ,
+		ee:ElectricElectronicComponent ,
+		ee:ElectricElectronicConnection ,
+		ee:ElectricElectronicPort ,
+		fld:HydraulicPneumaticConnection ,
+		fld:HydraulicPneumaticPort ,
+		mech:Body ,
+		mech:JoiningElement ,
+		mech:Material ,
+		mech:MechanicalComponent ,
+		sw:SoftwareClass ,
+		sw:SoftwareComponent ,
+		sw:SoftwareInterface
+		;
+	.
+
+<ProductOperation/ProductUsage>
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Product Usage"@en ,
+		"Produktnutzung"@de
+		;
+	skos:definition "Usage of a product according to the designated purpose and function."@en ;
+	prov:generated op:OperationIncident ;
+	prov:used
+		arch:Function ,
+		arch:UseCase ,
+		ee:ElectricElectronicComponent ,
+		ee:ElectricElectronicConnection ,
+		ee:ElectricElectronicPort ,
+		fld:HydraulicPneumaticConnection ,
+		fld:HydraulicPneumaticPort ,
+		mech:Material ,
+		mech:MechanicalComponent ,
+		sw:SoftwareComponent ,
+		sw:SoftwareInterface
+		;
+	.
+
+<ProductionDevelopment>
+	a owl:Class ;
+	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:label
+		"Production Development"@en ,
+		"Produktionsentwicklung"@de
+		;
+	dcterms:modified "2020-10-29T12:15:18Z"^^xsd:dateTime ;
+	skos:definition """The manufacturing or production engineer's primary focus is to turn raw material into an updated or new product in the most effective, efficient & economic way possible.
+Manufacturing Engineering is based on core industrial engineering and mechanical engineering skills, adding important elements from mechatronics, commerce, economics and business management.
+Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
+	.
+
+<ProductionDevelopment/CostCalculation>
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Cost Calculation"@en ,
+		"Kostenkalkulation"@de
+		;
+	skos:definition "Includes the calculation of product cost using relevant information from product and production specifications, including dimensions, material, mass, geometric & topological complexity, surface finish including paint or coatings."@en ;
+	prov:used
+		mnf:ControlPlan ,
+		mnf:ManufacturingEquipmentComponent ,
+		:AssemblyOperation ,
+		:HeatTreatment ,
+		:JoiningProcess ,
+		:ManufacturingOperation ,
+		ee:ElectricElectronicComponent ,
+		ee:ElectricElectronicConnection ,
+		ee:ElectricElectronicPort ,
+		mech:BendingSpecification ,
+		mech:Body ,
+		mech:Cleanliness ,
+		mech:Datum ,
+		mech:DimensionalSize ,
+		mech:Gearing ,
+		mech:GeometricTolerance ,
+		mech:HeatTreatedArea ,
+		mech:Hole ,
+		mech:JoiningElement ,
+		mech:KinematicJoint ,
+		mech:KinematicMechanism ,
+		mech:MarkingLabeling ,
+		mech:Material ,
+		mech:MechanicalComponent ,
+		mech:ModelView ,
+		mech:PaintingCoating ,
+		mech:SurfaceTexture
+		;
+	.
+
+<ProductionDevelopment/InspectionPlanning>
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Inspection Planning"@en ,
+		"Prüfplanung"@de
+		;
+	skos:definition "Includes the selection of relevant inspection criteria from product and production specifications, identification and assignment of appropriate inspection methods and equipment, as well as the allocation of appropriate inspection criteria per inspection event (first-article inspection, re-qualification, inspection in production, etc.)"@en ;
+	prov:generated
+		ver:VerificationCharacteristic ,
+		ver:VerificationPlan ,
+		ver:VerificationResource
+		;
+	prov:used
+		arch:FunctionFailure ,
+		ee:ElectricElectronicComponent ,
+		ee:ElectricElectronicConnection ,
+		ee:ElectricElectronicPort ,
+		mech:BendingSpecification ,
+		mech:Body ,
+		mech:Cleanliness ,
+		mech:Datum ,
+		mech:DimensionalSize ,
+		mech:Gearing ,
+		mech:GeometricTolerance ,
+		mech:HeatTreatedArea ,
+		mech:Hole ,
+		mech:JoiningElement ,
+		mech:KinematicJoint ,
+		mech:KinematicMechanism ,
+		mech:MarkingLabeling ,
+		mech:Material ,
+		mech:MechanicalComponent ,
+		mech:ModelView ,
+		mech:PaintingCoating ,
+		mech:SurfaceTexture
+		;
+	.
+
+<ProductionDevelopment/PlantLayout>
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Fabriklayout"@de ,
+		"Plant Layout"@en
+		;
+	skos:definition "Defines the logical and physical layout of a production line in a plant or buiding using information from product and production specifications, including production steps, material handling, as well as the physical dimensions of product components, tools, fixtures and equipment within the  topology and systems of the manufacturing site or building."@en ;
+	prov:generated mnf:ManufacturingEquipmentComponent ;
+	prov:used
+		:AssemblyOperation ,
+		:HeatTreatment ,
+		:JoiningProcess ,
+		:ManufacturingOperation ,
+		ee:ElectricElectronicComponent ,
+		ee:ElectricElectronicConnection ,
+		ee:ElectricElectronicPort ,
+		mech:Body ,
+		mech:Datum ,
+		mech:DimensionalSize ,
+		mech:GeometricTolerance ,
+		mech:MechanicalComponent ,
+		mech:ModelView ,
+		mech:SurfaceTexture
+		;
+	.
+
+<ProductionDevelopment/ProcessPlanning>
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Process Planning"@en ,
+		"Prozessplanung"@de
+		;
+	skos:definition """The task in the manufacturing process planning domain is to find a plan to manufacture a set of parts.
+Source: https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume15/ambite01a-html/node23.html"""@en ;
+	prov:generated :ManufacturingOperation ;
+	prov:used
+		ee:ElectricElectronicComponent ,
+		ee:ElectricElectronicConnection ,
+		ee:ElectricElectronicPort ,
+		fld:HydraulicPneumaticConnection ,
+		fld:HydraulicPneumaticPort ,
+		mech:BendingSpecification ,
+		mech:Body ,
+		mech:Cleanliness ,
+		mech:Datum ,
+		mech:DimensionalSize ,
+		mech:Gearing ,
+		mech:GeometricTolerance ,
+		mech:HeatTreatedArea ,
+		mech:Hole ,
+		mech:JoiningElement ,
+		mech:KinematicJoint ,
+		mech:KinematicMechanism ,
+		mech:MarkingLabeling ,
+		mech:Material ,
+		mech:MechanicalComponent ,
+		mech:ModelView ,
+		mech:PaintingCoating ,
+		mech:SurfaceTexture
+		;
+	.
+
+<ProductionDevelopment/ToolsEquipmentDesign>
+	a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:label
+		"Tools & Equipment Design"@en ,
+		"Werkzeug- & Vorrichtungsbau"@de
+		;
+	skos:definition "The design of tools and equipment aligned with product design, the manufacturing process plan and plant layout."@en ;
+	prov:generated mnf:ManufacturingEquipmentComponent ;
+	prov:used
+		:AssemblyOperation ,
+		:HeatTreatment ,
+		:JoiningProcess ,
+		:ManufacturingOperation ,
+		ee:ElectricElectronicComponent ,
+		ee:ElectricElectronicConnection ,
+		ee:ElectricElectronicPort ,
+		mech:BendingSpecification ,
+		mech:Body ,
+		mech:Cleanliness ,
+		mech:Datum ,
+		mech:DimensionalSize ,
+		mech:GeometricTolerance ,
+		mech:HeatTreatedArea ,
+		mech:JoiningElement ,
+		mech:MarkingLabeling ,
+		mech:Material ,
+		mech:MechanicalComponent ,
+		mech:ModelView ,
+		mech:PaintingCoating ,
+		mech:SurfaceTexture
+		;
+	.
+
+<VerificationValidationUsingSimulation>
+	a owl:Class ;
+	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:label
+		"Verification & Validation using Simulation"@en ,
+		"Verifikation & Validierung durch Simulation"@de
+		;
+	dcterms:modified "2023-03-10T07:09:37Z"^^xsd:dateTime ;
+	skos:definition """Modeling and simulation (M&S) is the domain-specific use of models (e.g., physical, mathematical, or logical representation of a system, entity, phenomenon, or process) as a basis for simulations to develop data utilized for management or technical decision making.
+Simulation may include finite elements analysis, fluid analysis, DMU simulation, kinematics simulation, as well as simulation based on software prototypes. It also includes X-in-the-Loop (XiL), using integrated design and simulation models and capabilities.
+Verification aims at the demonstration of product compliance to the specified design requirements.
+Validation aims at the demonstration of conformance to stakeholder requirements.
+Description based on: https://en.wikipedia.org/wiki/Modeling_and_simulation, ISO 29148, ISO 15288"""@en ;
+	.
+
+<VerificationValidationUsingTest>
+	a owl:Class ;
+	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:label
+		"Verification & Validation using Test"@en ,
+		"Verifikation & Validierung durch Test"@de
+		;
+	dcterms:modified "2023-03-10T07:29:10Z"^^xsd:dateTime ;
+	skos:definition """While simulation is based on virtual models, testing is based on prototypes and samples.
+Verification is to demonstrate product compliance to the specified design requirements. Validation is to demonstrate conformance to stakeholder requirements.
+Description based on ISO 29148, resp. ISO 15288"""@en ;
+	.
+

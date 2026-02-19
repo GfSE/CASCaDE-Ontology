@@ -28,12 +28,83 @@
 <http://www.omg.org/spec/CASCaRA/ontology/>
 	a owl:Ontology ;
 	rdfs:label "Domain Ontology" ;
-	dcterms:abstract "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice." ;
-	dcterms:created "18.02.2026 07:47:22" ;
-	dcterms:license
-		"Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software." ,
-		<https://opensource.org/licenses/MIT>
+	dcterms:abstract """The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.
+Note that this version of the ontology is in development and may be subject to modifications without notice.""" ;
+	dcterms:contributor
+		"Andreas Mueller, Schaeffler Technologies AG & Co. KG" ,
+		"Daniel Krems, AVL List" ,
+		"Dominic Schopper, Mercedes-Benz" ,
+		"Dr. Oliver Klaar, ZF Friedrichshafen AG" ,
+		"Dr. Oskar von Dungern, enso managers" ,
+		"José Mendo, The Boeing Corporation" ,
+		"Massimo Baleani, Collins Aerospace" ,
+		"Michael Kirsch, :em engineering methods AG" ,
+		"Momme Stuerken, Schaeffler Technologies AG & Co. KG" ,
+		"Pete Rivett, Federated Knowledge, LLC " ,
+		"René Bielert, Dr.-Ing. h.c. F. Porsche" ,
+		"Robert Klöppner, MTU Aero Engines" ,
+		"Sebastian Dörr, Conweaver" ,
+		"Serkan Arslan, INOMIC Solutions" ,
+		"Stefan Gliniorz, Bosch" ,
+		"Torsten Schmied, PROSTEP AG" ,
+		"Uwe Kaufmann, ModelAlchemy Consulting" ,
+		"Zirui Li, TU Ilmenau"
 		;
+	dcterms:created "19.02.2026 04:30:31" ;
+	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
+Copyright (c) 2024-2026 :em engineering methods AG
+Copyright (c) 2024-2026 Aerospace Corp.
+Copyright (c) 2024-2026 Airbus
+Copyright (c) 2024-2026 ATLAS Elektronik
+Copyright (c) 2024-2026 Collins Aerospace
+Copyright (c) 2024-2026 enso managers
+Copyright (c) 2024-2026 Federated Knowledge, LLC 
+Copyright (c) 2024-2026 HSU Helmut Schmidt University
+Copyright (c) 2024-2026 INOMIC Solutions
+Copyright (c) 2024-2026 Manfred Harms Consulting
+Copyright (c) 2024-2026 ModelAlchemy Consulting
+Copyright (c) 2024-2026 Modern Technology Solutions, Inc.
+Copyright (c) 2024-2026 oose
+Copyright (c) 2024-2026 PDES Inc.
+Copyright (c) 2024-2026 PROSTEP AG
+Copyright (c) 2024-2026 PSG Prime Solutions Group
+Copyright (c) 2024-2026 RPTU
+Copyright (c) 2024-2026 Schaeffler Technologies AG & Co. KG
+Copyright (c) 2024-2026 Thematix Partners
+Copyright (c) 2024-2026 TU Hamburg-Harburg
+Copyright (c) 2024-2026 TU Ilmenau
+Copyright (c) 2024-2026 UC3 Madrid
+Copyright (c) 2024-2026 VDA
+
+Digital Data Package Working Group: Defines use-cases and domain ontology as a foundation for CASCaRA
+Copyright (c) 2019-2026 :em engineering methods AG
+Copyright (c) 2019-2020 Airbus Operations GmbH
+Copyright (c) 2019-2026 Anark
+Copyright (c) 2019-2026 AVL List
+Copyright (c) 2022-2026 Bosch
+Copyright (c) 2019-2022 Conweaver
+Copyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche
+Copyright (c) 2019-2026 Elysium
+Copyright (c) 2019-2021 Fraunhofer IESE
+Copyright (c) 2025-2026 INOMIC Solutions
+Copyright (c) 2025-2026 JAXA
+Copyright (c) 2021-2024 John Deere
+Copyright (c) 2019-2021 Kromberg & Schubert
+Copyright (c) 2019-2026 Mercedes-Benz
+Copyright (c) 2024-2026 MTU Aero Engines
+Copyright (c) 2019-2026 PROSTEP AG
+Copyright (c) 2025-2026 RTX Corporation (Collins, Pratt & Whitney, Raytheon)
+Copyright (c) 2019-2024 Schaeffler Technologies AG & Co. KG
+Copyright (c) 2025-2026 Sodius Willert
+Copyright (c) 2019-2020 SSC Services
+Copyright (c) 2022-2026 The Boeing Corporation
+Copyright (c) 2022-2026 Volkswagen AG
+Copyright (c) 2019-2026 ZF Friedrichshafen AG
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+The software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
+https://opensource.org/licenses/MIT""" ;
 	dcterms:title "CASCaRA Domain Ontology" ;
 	owl:versionInfo "1.0" ;
 	.

@@ -1,0 +1,19 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cas-mech: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/>
+PREFIX cas-mech-body: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/Body/>
+PREFIX cas-mech-material: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/Material/>
+PREFIX cas-mech-mechanicalComponent: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/MechanicalComponent/>
+
+SELECT ?body ?bodyLabel ?volume ?material ?materialLabel ?density (?volume * ?density AS ?mass)
+WHERE {
+  ?body a cas-mech:Body ;
+        rdfs:label ?bodyLabel ;
+        cas-mech:volume ?volume ;
+        cas-mech:Body_partOf_MechanicalComponent ?component .
+  
+  ?component cas-mech:MechanicalComponent_madeOf_Material ?material .
+  ?material rdfs:label ?materialLabel ;
+            cas-mech:density ?density .
+}
+ORDER BY ?bodyLabel

@@ -1,10 +1,9 @@
-# baseURI: http://www.omg.org/spec/CASCaRA/ontology/
+# imports: http://www.omg.org/spec/CASCaRA/metamodel/
 
-@base <http://www.omg.org/spec/CASCaRA/ontology/> .
-@prefix : <http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/> .
+@prefix : <http://www.omg.org/spec/CASCaRA/ontology/> .
 @prefix arch: <http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/> .
+@prefix cas-meta: <http://www.omg.org/spec/CASCaRA/metamodel/> .
 @prefix con: <http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/ConceptDefinition/> .
-@prefix csc-meta: <http://www.omg.org/spec/CASCaRA/metamodel/> .
 @prefix ctx: <http://www.omg.org/spec/CASCaRA/ontology/ContextElements/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -19,6 +18,7 @@
 @prefix org: <http://www.omg.org/spec/CASCaRA/ontology/Organization/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pro: <http://www.omg.org/spec/CASCaRA/ontology/ProductLineEngineering/> .
+@prefix proc: <http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/> .
 @prefix prov: <http://www.w3.org/ns/prov/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -32,35 +32,44 @@
 <http://www.omg.org/spec/CASCaRA/ontology/>
 	a owl:Ontology ;
 	rdfs:label "Process Ontology" ;
-	dcterms:abstract """The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.
-Note that this version of the ontology is in development and may be subject to modifications without notice.""" ;
+	dcterms:abstract "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice." ;
 	dcterms:contributor
 		"Andreas Mueller, Schaeffler Technologies AG & Co. KG" ,
+		"Atsushi Hashimoto, JAXA" ,
 		"Daniel Krems, AVL List" ,
-		"Dominic Schopper, Mercedes-Benz" ,
+		"Dominik Schopper, Mercedes-Benz" ,
+		"Dr. Christian Grünwald, Volkswagen AG" ,
+		"Dr. Momme Stürken, Schaeffler Technologies AG & Co. KG" ,
 		"Dr. Oliver Klaar, ZF Friedrichshafen AG" ,
 		"Dr. Oskar von Dungern, enso managers" ,
-		"José Mendo, The Boeing Corporation" ,
-		"Massimo Baleani, Collins Aerospace" ,
+		"Elisa Kendall, Thematix Partners" ,
+		"James Martin, Anark" ,
+		"Joachim Engelhardt, Sodius Willert" ,
+		"Joe Marvin, PSG Prime Solutions Group" ,
+		"Johan Nielsen, Elysium" ,
+		"José Maria Alvarez Rodriguez, UC3 Madrid" ,
+		"Juan Carlos Mendo, The Boeing Corporation" ,
+		"Manfred Harms, Manfred Harms Consulting" ,
+		"Massimo Baleani, RTX Technologies" ,
 		"Michael Kirsch, :em engineering methods AG" ,
-		"Momme Stuerken, Schaeffler Technologies AG & Co. KG" ,
+		"Nico Meyer, Volkswagen AG" ,
 		"Pete Rivett, Federated Knowledge, LLC " ,
 		"René Bielert, Dr.-Ing. h.c. F. Porsche" ,
-		"Robert Klöppner, MTU Aero Engines" ,
-		"Sebastian Dörr, Conweaver" ,
+		"Robert Klöppner, MTU Aero Engines AG" ,
+		"Sebastian Dörr, CONWEAVER GmbH" ,
 		"Serkan Arslan, INOMIC Solutions" ,
 		"Stefan Gliniorz, Bosch" ,
 		"Torsten Schmied, PROSTEP AG" ,
 		"Uwe Kaufmann, ModelAlchemy Consulting" ,
+		"William Beavin, The Boeing Corporation" ,
 		"Zirui Li, TU Ilmenau"
 		;
-	dcterms:created "19.02.2026 04:30:31" ;
+	dcterms:created "06.03.2026 01:08:21" ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 Aerospace Corp.
 Copyright (c) 2024-2026 Airbus
 Copyright (c) 2024-2026 ATLAS Elektronik
-Copyright (c) 2024-2026 Collins Aerospace
 Copyright (c) 2024-2026 enso managers
 Copyright (c) 2024-2026 Federated Knowledge, LLC 
 Copyright (c) 2024-2026 HSU Helmut Schmidt University
@@ -73,7 +82,9 @@ Copyright (c) 2024-2026 PDES Inc.
 Copyright (c) 2024-2026 PROSTEP AG
 Copyright (c) 2024-2026 PSG Prime Solutions Group
 Copyright (c) 2024-2026 RPTU
+Copyright (c) 2024-2026 RTX Technologies
 Copyright (c) 2024-2026 Schaeffler Technologies AG & Co. KG
+Copyright (c) 2024-2026 The Boeing Corporation
 Copyright (c) 2024-2026 Thematix Partners
 Copyright (c) 2024-2026 TU Hamburg-Harburg
 Copyright (c) 2024-2026 TU Ilmenau
@@ -86,7 +97,7 @@ Copyright (c) 2019-2020 Airbus Operations GmbH
 Copyright (c) 2019-2026 Anark
 Copyright (c) 2019-2026 AVL List
 Copyright (c) 2022-2026 Bosch
-Copyright (c) 2019-2022 Conweaver
+Copyright (c) 2019-2022 CONWEAVER GmbH
 Copyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche
 Copyright (c) 2019-2026 Elysium
 Copyright (c) 2019-2021 Fraunhofer IESE
@@ -95,9 +106,9 @@ Copyright (c) 2025-2026 JAXA
 Copyright (c) 2021-2024 John Deere
 Copyright (c) 2019-2021 Kromberg & Schubert
 Copyright (c) 2019-2026 Mercedes-Benz
-Copyright (c) 2024-2026 MTU Aero Engines
+Copyright (c) 2024-2026 MTU Aero Engines AG
 Copyright (c) 2019-2026 PROSTEP AG
-Copyright (c) 2025-2026 RTX Corporation (Collins, Pratt & Whitney, Raytheon)
+Copyright (c) 2025-2026 RTX Technologies
 Copyright (c) 2019-2024 Schaeffler Technologies AG & Co. KG
 Copyright (c) 2025-2026 Sodius Willert
 Copyright (c) 2019-2020 SSC Services
@@ -105,17 +116,16 @@ Copyright (c) 2022-2026 The Boeing Corporation
 Copyright (c) 2022-2026 Volkswagen AG
 Copyright (c) 2019-2026 ZF Friedrichshafen AG
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-The software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
 https://opensource.org/licenses/MIT""" ;
 	dcterms:title "CASCaRA Process Ontology" ;
+	owl:imports <http://www.omg.org/spec/CASCaRA/metamodel/> ;
 	owl:versionInfo "1.0" ;
 	.
 
-<ConceptDefinition>
+:ConceptDefinition
 	a owl:Class ;
-	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:subClassOf cas-meta:Entity ;
 	rdfs:label
 		"Concept definition"@en ,
 		"Konzeptdefinition"@de
@@ -127,7 +137,7 @@ Conceptual design is usually performed at a high abstraction level and low level
 For the Digital Data Package, model-based methods and data for product conceptual design are assumed."""@en ;
 	.
 
-<LongTermArchiving>
+:LongTermArchiving
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -136,7 +146,7 @@ For the Digital Data Package, model-based methods and data for product conceptua
 		;
 	skos:definition "For long-term archiving, all product information must be configured and stored in a retrievable way. Product information includes domain-specifc models, relations between models and model entities, and meta-data about the documents and models."@en ;
 	prov:used
-		:JoiningProcess ,
+		proc:JoiningProcess ,
 		arch:Function ,
 		arch:FunctionFailure ,
 		arch:StakeholderRequirement ,
@@ -160,9 +170,9 @@ For the Digital Data Package, model-based methods and data for product conceptua
 		;
 	.
 
-<ManufacturingSupplyChain>
+:ManufacturingSupplyChain
 	a owl:Class ;
-	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:subClassOf cas-meta:Entity ;
 	rdfs:label
 		"Manufacturing & Supply Chain"@en ,
 		"Produktion & Lieferkette"@de
@@ -180,7 +190,7 @@ mnf:PackagingLogistics
 		;
 	skos:definition "Includes the definition of all kinds of packaging and transport equipment to ensure a product or its components will be supplied to their destination safely."@en ;
 	prov:used
-		:JoiningProcess ,
+		proc:JoiningProcess ,
 		fld:HydraulicPneumaticConnection ,
 		fld:HydraulicPneumaticPort ,
 		mech:Body ,
@@ -200,7 +210,7 @@ mnf:PartsManufacturing
 	skos:definition "Manufacturing of single parts using a variety of production processes and methods, each with specific sets of data, such as CNC programs, bending specification, holes specifications, joining features, etc."@en ;
 	prov:used
 		mnf:ManufacturingEquipmentComponent ,
-		:ManufacturingOperation ,
+		proc:ManufacturingOperation ,
 		mech:BendingSpecification ,
 		mech:Body ,
 		mech:Cleanliness ,
@@ -229,8 +239,8 @@ mnf:ProductAssembly
 	skos:definition "Assembly of components or products from single parts or sub-components according to a production plan, using all kinds of joinig and bonding."@en ;
 	prov:used
 		mnf:ManufacturingEquipmentComponent ,
-		:JoiningProcess ,
-		:ManufacturingOperation ,
+		proc:JoiningProcess ,
+		proc:ManufacturingOperation ,
 		mech:Body ,
 		mech:Datum ,
 		mech:DimensionalSize ,
@@ -255,7 +265,7 @@ mnf:QualityInspection
 	skos:definition "Includes the inspection of single parts, components or products during or after the manufacturing process, as well as the documentation of inspection results."@en ;
 	prov:used
 		mnf:ControlPlan ,
-		:JoiningProcess ,
+		proc:JoiningProcess ,
 		mech:Body ,
 		mech:JoiningElement ,
 		mech:MechanicalComponent ,
@@ -265,9 +275,9 @@ mnf:QualityInspection
 		;
 	.
 
-<MechanicalDesign>
+:MechanicalDesign
 	a owl:Class ;
-	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:subClassOf cas-meta:Entity ;
 	rdfs:label
 		"Mechanical Design"@en ,
 		"Mechanische Konstruktion"@de
@@ -278,7 +288,7 @@ This includes shape, dimensioning and tolerancing, material (including semi-fini
 Mechanical design is usually conducted using a mechanical CAD system."""@en ;
 	.
 
-<Procurement>
+:Procurement
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -287,7 +297,7 @@ Mechanical design is usually conducted using a mechanical CAD system."""@en ;
 		;
 	skos:definition "Communication between procurement and suppliers in the bidding and iquiry phase. Supports the OMG Model-Based Aqcuisition initiative."@en ;
 	prov:used
-		:JoiningProcess ,
+		proc:JoiningProcess ,
 		ee:ElectricElectronicComponent ,
 		ee:ElectricElectronicConnection ,
 		ee:ElectricElectronicPort ,
@@ -309,9 +319,9 @@ Mechanical design is usually conducted using a mechanical CAD system."""@en ;
 		;
 	.
 
-<ProductDesign>
+:ProductDesign
 	a owl:Class ;
-	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:subClassOf cas-meta:Entity ;
 	rdfs:label
 		"Product Design"@en ,
 		"Produktentwurf"@de
@@ -321,9 +331,9 @@ Mechanical design is usually conducted using a mechanical CAD system."""@en ;
 Product design comprises the domain-specific design processes of mechanical, electrical/electronical design, and software engineering."""@en ;
 	.
 
-<ProductDevelopment>
+:ProductDevelopment
 	a owl:Class ;
-	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:subClassOf cas-meta:Entity ;
 	rdfs:label
 		"Product Development"@en ,
 		"Produktentwicklung"@de
@@ -419,7 +429,7 @@ con:SystemsArchitecture
 		;
 	.
 
-<ProductDevelopment/ProductDesign/ElectricalElectronicalDesign>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/ProductDesign/ElectricalElectronicalDesign>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -448,7 +458,7 @@ Electrical/Electronic Design is usually performed using an electrical/electronic
 		;
 	.
 
-<ProductDevelopment/ProductDesign/ElectricalMechanicalDesignCollaboration>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/ProductDesign/ElectricalMechanicalDesignCollaboration>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -481,7 +491,7 @@ mec:DefineJoiningElements
 		;
 	.
 
-<ProductDevelopment/ProductDesign/SoftwareEngineering>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/ProductDesign/SoftwareEngineering>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -513,7 +523,7 @@ For configuration reasons it may be that software is treated a part to be consid
 		;
 	.
 
-<ProductDevelopment/VerificationValidationUsingSimulation/PerformAndDocumentSimulation>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/VerificationValidationUsingSimulation/PerformAndDocumentSimulation>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -538,7 +548,7 @@ For configuration reasons it may be that software is treated a part to be consid
 		;
 	.
 
-<ProductDevelopment/VerificationValidationUsingSimulation/PlanAndPrepareSimulation>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/VerificationValidationUsingSimulation/PlanAndPrepareSimulation>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -591,7 +601,7 @@ For configuration reasons it may be that software is treated a part to be consid
 		;
 	.
 
-<ProductDevelopment/VerificationValidationUsingTest/PerformAndDocumentTesting>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/VerificationValidationUsingTest/PerformAndDocumentTesting>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -615,7 +625,7 @@ For configuration reasons it may be that software is treated a part to be consid
 		;
 	.
 
-<ProductDevelopment/VerificationValidationUsingTest/PrepareTesting>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/VerificationValidationUsingTest/PrepareTesting>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -664,9 +674,9 @@ For configuration reasons it may be that software is treated a part to be consid
 		;
 	.
 
-<ProductLineEngineering>
+:ProductLineEngineering
 	a owl:Class ;
-	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:subClassOf cas-meta:Entity ;
 	rdfs:label
 		"Product Line Engineering"@en ,
 		"Produktlinienentwicklung"@de
@@ -715,9 +725,9 @@ pro:DesignProductLine
 		;
 	.
 
-<ProductOperation>
+:ProductOperation
 	a owl:Class ;
-	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:subClassOf cas-meta:Entity ;
 	rdfs:label
 		"Product Operation"@en ,
 		"Produktbetrieb"@de
@@ -726,7 +736,7 @@ pro:DesignProductLine
 	skos:definition "Includes all phases and activities in the operation phase of a product."@en ;
 	.
 
-<ProductOperation/DisassemblyRecycling>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductOperation/DisassemblyRecycling>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -735,7 +745,7 @@ pro:DesignProductLine
 		;
 	skos:definition "Includes all end-of-life activities required to putting a product or its component to recycling."@en ;
 	prov:used
-		:JoiningProcess ,
+		proc:JoiningProcess ,
 		arch:Function ,
 		ee:ElectricElectronicComponent ,
 		ee:ElectricElectronicConnection ,
@@ -751,7 +761,7 @@ pro:DesignProductLine
 		;
 	.
 
-<ProductOperation/MaintenanceService>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductOperation/MaintenanceService>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -760,7 +770,7 @@ pro:DesignProductLine
 		;
 	skos:definition "Includes all activities performed in order to maintain a product in operation."@en ;
 	prov:used
-		:JoiningProcess ,
+		proc:JoiningProcess ,
 		arch:Function ,
 		arch:UseCase ,
 		ee:ElectricElectronicComponent ,
@@ -778,7 +788,7 @@ pro:DesignProductLine
 		;
 	.
 
-<ProductOperation/ProductUsage>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductOperation/ProductUsage>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -802,9 +812,9 @@ pro:DesignProductLine
 		;
 	.
 
-<ProductionDevelopment>
+:ProductionDevelopment
 	a owl:Class ;
-	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:subClassOf cas-meta:Entity ;
 	rdfs:label
 		"Production Development"@en ,
 		"Produktionsentwicklung"@de
@@ -815,7 +825,7 @@ Manufacturing Engineering is based on core industrial engineering and mechanical
 Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 	.
 
-<ProductionDevelopment/CostCalculation>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductionDevelopment/CostCalculation>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -826,10 +836,10 @@ Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 	prov:used
 		mnf:ControlPlan ,
 		mnf:ManufacturingEquipmentComponent ,
-		:AssemblyOperation ,
-		:HeatTreatment ,
-		:JoiningProcess ,
-		:ManufacturingOperation ,
+		proc:AssemblyOperation ,
+		proc:HeatTreatment ,
+		proc:JoiningProcess ,
+		proc:ManufacturingOperation ,
 		ee:ElectricElectronicComponent ,
 		ee:ElectricElectronicConnection ,
 		ee:ElectricElectronicPort ,
@@ -854,7 +864,7 @@ Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 		;
 	.
 
-<ProductionDevelopment/InspectionPlanning>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductionDevelopment/InspectionPlanning>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -893,7 +903,7 @@ Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 		;
 	.
 
-<ProductionDevelopment/PlantLayout>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductionDevelopment/PlantLayout>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -903,10 +913,10 @@ Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 	skos:definition "Defines the logical and physical layout of a production line in a plant or buiding using information from product and production specifications, including production steps, material handling, as well as the physical dimensions of product components, tools, fixtures and equipment within the  topology and systems of the manufacturing site or building."@en ;
 	prov:generated mnf:ManufacturingEquipmentComponent ;
 	prov:used
-		:AssemblyOperation ,
-		:HeatTreatment ,
-		:JoiningProcess ,
-		:ManufacturingOperation ,
+		proc:AssemblyOperation ,
+		proc:HeatTreatment ,
+		proc:JoiningProcess ,
+		proc:ManufacturingOperation ,
 		ee:ElectricElectronicComponent ,
 		ee:ElectricElectronicConnection ,
 		ee:ElectricElectronicPort ,
@@ -920,7 +930,7 @@ Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 		;
 	.
 
-<ProductionDevelopment/ProcessPlanning>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductionDevelopment/ProcessPlanning>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -929,7 +939,7 @@ Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 		;
 	skos:definition """The task in the manufacturing process planning domain is to find a plan to manufacture a set of parts.
 Source: https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume15/ambite01a-html/node23.html"""@en ;
-	prov:generated :ManufacturingOperation ;
+	prov:generated proc:ManufacturingOperation ;
 	prov:used
 		ee:ElectricElectronicComponent ,
 		ee:ElectricElectronicConnection ,
@@ -957,7 +967,7 @@ Source: https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume15/ambite01a-html/n
 		;
 	.
 
-<ProductionDevelopment/ToolsEquipmentDesign>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductionDevelopment/ToolsEquipmentDesign>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -967,10 +977,10 @@ Source: https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume15/ambite01a-html/n
 	skos:definition "The design of tools and equipment aligned with product design, the manufacturing process plan and plant layout."@en ;
 	prov:generated mnf:ManufacturingEquipmentComponent ;
 	prov:used
-		:AssemblyOperation ,
-		:HeatTreatment ,
-		:JoiningProcess ,
-		:ManufacturingOperation ,
+		proc:AssemblyOperation ,
+		proc:HeatTreatment ,
+		proc:JoiningProcess ,
+		proc:ManufacturingOperation ,
 		ee:ElectricElectronicComponent ,
 		ee:ElectricElectronicConnection ,
 		ee:ElectricElectronicPort ,
@@ -991,9 +1001,9 @@ Source: https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume15/ambite01a-html/n
 		;
 	.
 
-<VerificationValidationUsingSimulation>
+:VerificationValidationUsingSimulation
 	a owl:Class ;
-	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:subClassOf cas-meta:Entity ;
 	rdfs:label
 		"Verification & Validation using Simulation"@en ,
 		"Verifikation & Validierung durch Simulation"@de
@@ -1006,9 +1016,9 @@ Validation aims at the demonstration of conformance to stakeholder requirements.
 Description based on: https://en.wikipedia.org/wiki/Modeling_and_simulation, ISO 29148, ISO 15288"""@en ;
 	.
 
-<VerificationValidationUsingTest>
+:VerificationValidationUsingTest
 	a owl:Class ;
-	rdfs:subClassOf csc-meta:Entity ;
+	rdfs:subClassOf cas-meta:Entity ;
 	rdfs:label
 		"Verification & Validation using Test"@en ,
 		"Verifikation & Validierung durch Test"@de

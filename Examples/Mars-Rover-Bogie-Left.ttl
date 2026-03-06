@@ -1,0 +1,393 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix : <http://www.omg.org/spec/CASCaRA/ontology/>.
+@prefix cas-mech: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/>.
+@prefix cas-mech-body: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/Body/>.
+@prefix cas-mech-material: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/Material/>.
+@prefix cas-mech-mechanicalComponent: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/MechanicalComponent/>.
+@prefix cas-mech-modelAnnotation: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/ModelAnnotation/>.
+@prefix cas-mech-modelView: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/ModelView/>.
+@prefix cas-org: <http://www.omg.org/spec/CASCaRA/ontology/Organization/>.
+@prefix cas-org-person: <http://www.omg.org/spec/CASCaRA/ontology/Organization/Person/>.
+@prefix cas-sys: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/>.
+
+cas-org-person:Johannes_Lehnen cas-org:firstname "Johannes";
+                               cas-org:lastname "Lehnen";
+                               a cas-org:Person;
+                               rdfs:label "Johannes Lehnen".
+cas-org-person:Michael_Kirsch cas-org:firstname "Michael";
+                              cas-org:lastname "Kirsch";
+                              a cas-org:Person;
+                              rdfs:label "Michael Kirsch".
+cas-mech-body:Chamfer1 dc:identifier "SHCS 6-32 x 0.25_Chamfer1";
+                       dc:title "Chamfer1";
+                       cas-mech:Body_partOf_MechanicalComponent cas-mech-mechanicalComponent:SHCS-6-32-x-0-25;
+                       cas-mech:volume 1.278528782939659E-07;
+                       a cas-mech:Body;
+                       rdfs:label "Chamfer1".
+cas-mech-body:Part-Body dc:identifier "Channel Connector_Part Body";
+                        dc:title "Part Body";
+                        cas-mech:Body_partOf_MechanicalComponent cas-mech-mechanicalComponent:Channel-Connector;
+                        cas-mech:volume 1.4800902479380025E-06;
+                        a cas-mech:Body;
+                        rdfs:label "Part Body".
+cas-mech-body:Part-Body1 dc:identifier "Spacer 6-32 L0 25_Part Body";
+                         dc:title "Part Body";
+                         cas-mech:Body_partOf_MechanicalComponent cas-mech-mechanicalComponent:Spacer-6-32-L0-25;
+                         cas-mech:volume 1.4672221770651656E-07;
+                         a cas-mech:Body;
+                         rdfs:label "Part Body".
+cas-mech-body:Part-Body2 dc:identifier "Hex Nut 6-32_Part Body";
+                         dc:title "Part Body";
+                         cas-mech:Body_partOf_MechanicalComponent cas-mech-mechanicalComponent:Hex-Nut-6-32;
+                         cas-mech:volume 1.269130752673077E-07;
+                         a cas-mech:Body;
+                         rdfs:label "Part Body".
+cas-mech-body:Part-Body3 dc:identifier "SHCS 6-32 x 0.5_Part Body";
+                         dc:title "Part Body";
+                         cas-mech:Body_partOf_MechanicalComponent cas-mech-mechanicalComponent:SHCS-6-32-x-0-5;
+                         cas-mech:volume 1.9270303778933264E-07;
+                         a cas-mech:Body;
+                         rdfs:label "Part Body".
+cas-mech-body:PartBody dc:identifier "Bogie Machined Left_PartBody";
+                       dc:title "PartBody";
+                       cas-mech:Body_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                       cas-mech:volume "0.0001936940617195289"^^xsd:double;
+                       a cas-mech:Body;
+                       rdfs:label "PartBody".
+cas-mech-body:PartBody1 dc:identifier "Aluminum Channel 1.5_PartBody";
+                        dc:title "PartBody";
+                        cas-mech:Body_partOf_MechanicalComponent cas-mech-mechanicalComponent:Aluminum-Channel-1-5;
+                        cas-mech:volume 7.179571442749614E-06;
+                        a cas-mech:Body;
+                        rdfs:label "PartBody".
+cas-mech-body:PartBody2 dc:identifier "Aluminum Channel 3_PartBody";
+                        dc:title "PartBody";
+                        cas-mech:Body_partOf_MechanicalComponent cas-mech-mechanicalComponent:Aluminum-Channel-3;
+                        cas-mech:volume 1.3363272287729892E-05;
+                        a cas-mech:Body;
+                        rdfs:label "PartBody".
+cas-mech-body:PartBody3 dc:identifier "Bracket Flat_PartBody";
+                        dc:title "PartBody";
+                        cas-mech:Body_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bracket-Flat;
+                        cas-mech:volume 1.0509179504336536E-05;
+                        a cas-mech:Body;
+                        rdfs:label "PartBody".
+cas-mech-body:PartBody4 dc:identifier "Aluminum Channel 3 Modified_PartBody";
+                        dc:title "PartBody";
+                        cas-mech:Body_partOf_MechanicalComponent cas-mech-mechanicalComponent:Aluminum-Channel-3-Modified;
+                        cas-mech:volume 1.178024191882728E-05;
+                        a cas-mech:Body;
+                        rdfs:label "PartBody".
+cas-mech-body:PartBody5 dc:identifier "Aluminum Channel 3.75_PartBody";
+                        dc:title "PartBody";
+                        cas-mech:Body_partOf_MechanicalComponent cas-mech-mechanicalComponent:Aluminum-Channel-3-75;
+                        cas-mech:volume 1.6752255406268307E-05;
+                        a cas-mech:Body;
+                        rdfs:label "PartBody".
+cas-mech-body:PartBody6 dc:identifier "SHCS 6-32 x 0.75_PartBody";
+                        dc:title "PartBody";
+                        cas-mech:Body_partOf_MechanicalComponent cas-mech-mechanicalComponent:SHCS-6-32-x-0-75;
+                        cas-mech:volume 2.452025401192797E-07;
+                        a cas-mech:Body;
+                        rdfs:label "PartBody".
+cas-mech-body:PartBody7 dc:identifier "Clamping Mount 25mm Side Tapped _PartBody";
+                        dc:title "PartBody";
+                        cas-mech:Body_partOf_MechanicalComponent cas-mech-mechanicalComponent:Clamping-Mount-25mm-Side-Tapped-;
+                        cas-mech:volume 4.305272736405212E-06;
+                        a cas-mech:Body;
+                        rdfs:label "PartBody".
+cas-mech-material:Aluminum-wrought-alloy-EN-AW-2024-EN-573-3 dc:identifier "Aluminum wrought alloy - EN AW-2024 - EN 573-3";
+                                                             dc:title "Aluminum wrought alloy - EN AW-2024 - EN 573-3";
+                                                             cas-mech:density "2770"^^xsd:double;
+                                                             cas-mech:thermalExpansion 2.36E-05;
+                                                             a cas-mech:Material;
+                                                             rdfs:label "Aluminum wrought alloy - EN AW-2024 - EN 573-3".
+cas-mech-material:Aluminum-wrought-alloy-EN-AW-6060-EN-573-3 dc:identifier "Aluminum wrought alloy - EN AW-6060 - EN 573-3";
+                                                             dc:title "Aluminum wrought alloy - EN AW-6060 - EN 573-3";
+                                                             cas-mech:density "2700"^^xsd:double;
+                                                             cas-mech:thermalExpansion 2.36E-05;
+                                                             a cas-mech:Material;
+                                                             rdfs:label "Aluminum wrought alloy - EN AW-6060 - EN 573-3".
+cas-mech-material:Aluminum-wrought-alloy-EN-AW-6061-T6-EN-573-3 dc:identifier "Aluminum wrought alloy - EN AW-6061-T6 - EN 573-3";
+                                                                dc:title "Aluminum wrought alloy - EN AW-6061-T6 - EN 573-3";
+                                                                cas-mech:density "2800"^^xsd:double;
+                                                                cas-mech:thermalExpansion 2.36E-05;
+                                                                a cas-mech:Material;
+                                                                rdfs:label "Aluminum wrought alloy - EN AW-6061-T6 - EN 573-3".
+cas-mech-material:Polyamide-PA-6-6-DIN-EN-ISO-1043-1 dc:identifier "Polyamide - PA 6.6 - DIN EN ISO 1043-1";
+                                                     dc:title "Polyamide - PA 6.6 - DIN EN ISO 1043-1";
+                                                     cas-mech:density "1150"^^xsd:double;
+                                                     cas-mech:thermalExpansion 6.84E-05;
+                                                     a cas-mech:Material;
+                                                     rdfs:label "Polyamide - PA 6.6 - DIN EN ISO 1043-1".
+cas-mech-material:Steel-low-alloy-8-8-DIN-EN-ISO-898-1 dc:identifier "Steel, low-alloy - 8.8 - DIN EN ISO 898-1";
+                                                       dc:title "Steel, low-alloy - 8.8 - DIN EN ISO 898-1";
+                                                       cas-mech:density "7860"^^xsd:double;
+                                                       cas-mech:thermalExpansion 1.17E-05;
+                                                       a cas-mech:Material;
+                                                       rdfs:label "Steel, low-alloy - 8.8 - DIN EN ISO 898-1".
+cas-mech-mechanicalComponent:Aluminum-Channel-1-5 cas-mech:MechanicalComponent_madeOf_Material cas-mech-material:Aluminum-wrought-alloy-EN-AW-6060-EN-573-3;
+                                                  cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Bogie-Fabricated;
+                                                  a cas-mech:MechanicalComponent;
+                                                  rdfs:label "Aluminum Channel 1.5".
+cas-mech-mechanicalComponent:Aluminum-Channel-3 cas-mech:MechanicalComponent_madeOf_Material cas-mech-material:Aluminum-wrought-alloy-EN-AW-6060-EN-573-3;
+                                                cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Bogie-Fabricated,
+                                                                                               cas-mech-mechanicalComponent:Bogie-Fabricated-Left;
+                                                a cas-mech:MechanicalComponent;
+                                                rdfs:label "Aluminum Channel 3".
+cas-mech-mechanicalComponent:Aluminum-Channel-3-75 cas-mech:MechanicalComponent_madeOf_Material cas-mech-material:Aluminum-wrought-alloy-EN-AW-6060-EN-573-3;
+                                                   cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Bogie-Fabricated;
+                                                   a cas-mech:MechanicalComponent;
+                                                   rdfs:label "Aluminum Channel 3.75".
+cas-mech-mechanicalComponent:Aluminum-Channel-3-Modified cas-mech:MechanicalComponent_madeOf_Material cas-mech-material:Aluminum-wrought-alloy-EN-AW-6060-EN-573-3;
+                                                         cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Bogie-Fabricated;
+                                                         a cas-mech:MechanicalComponent;
+                                                         rdfs:label "Aluminum Channel 3 Modified".
+cas-mech-mechanicalComponent:Bogie-Fabricated cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Bogie-Fabricated-Left;
+                                              a cas-mech:MechanicalComponent;
+                                              rdfs:label "Bogie Fabricated".
+cas-mech-mechanicalComponent:Bogie-Fabricated-Left cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Bogie-Left;
+                                                   a cas-mech:MechanicalComponent;
+                                                   rdfs:label "Bogie Fabricated Left".
+cas-mech-mechanicalComponent:Bogie-Left a cas-mech:MechanicalComponent;
+                                        rdfs:label "Bogie Left".
+cas-mech-mechanicalComponent:Bogie-Machined-Left cas-mech:MechanicalComponent_madeOf_Material cas-mech-material:Aluminum-wrought-alloy-EN-AW-6061-T6-EN-573-3;
+                                                 cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Bogie-Left;
+                                                 a cas-mech:MechanicalComponent;
+                                                 rdfs:label "Bogie Machined Left".
+cas-mech-mechanicalComponent:Bogie-Skeleton-Left cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Bogie-Left;
+                                                 a cas-mech:MechanicalComponent;
+                                                 rdfs:label "Bogie Skeleton Left".
+cas-mech-mechanicalComponent:Bracket-Flat cas-mech:MechanicalComponent_madeOf_Material cas-mech-material:Aluminum-wrought-alloy-EN-AW-6060-EN-573-3;
+                                          cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Bogie-Fabricated;
+                                          a cas-mech:MechanicalComponent;
+                                          rdfs:label "Bracket Flat".
+cas-mech-mechanicalComponent:Channel-Connector cas-mech:MechanicalComponent_madeOf_Material cas-mech-material:Aluminum-wrought-alloy-EN-AW-2024-EN-573-3;
+                                               cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Channel-Connector-One-Sided;
+                                               a cas-mech:MechanicalComponent;
+                                               rdfs:label "Channel Connector".
+cas-mech-mechanicalComponent:Channel-Connector-One-Sided cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Channel-Connector-Two-Sided,
+                                                                                                        cas-mech-mechanicalComponent:Bogie-Fabricated;
+                                                         a cas-mech:MechanicalComponent;
+                                                         rdfs:label "Channel Connector One-Sided".
+cas-mech-mechanicalComponent:Channel-Connector-Skeleton cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Channel-Connector-Two-Sided,
+                                                                                                       cas-mech-mechanicalComponent:Channel-Connector-One-Sided;
+                                                        a cas-mech:MechanicalComponent;
+                                                        rdfs:label "Channel Connector Skeleton".
+cas-mech-mechanicalComponent:Channel-Connector-Two-Sided cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Bogie-Fabricated;
+                                                         a cas-mech:MechanicalComponent;
+                                                         rdfs:label "Channel Connector Two-Sided".
+cas-mech-mechanicalComponent:Clamping-Mount-25mm-Side-Tapped- cas-mech:MechanicalComponent_madeOf_Material cas-mech-material:Aluminum-wrought-alloy-EN-AW-6060-EN-573-3;
+                                                              cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Motor-Attachment;
+                                                              a cas-mech:MechanicalComponent;
+                                                              rdfs:label "Clamping Mount 25mm Side Tapped".
+cas-mech-mechanicalComponent:Hex-Nut-6-32 cas-mech:MechanicalComponent_madeOf_Material cas-mech-material:Steel-low-alloy-8-8-DIN-EN-ISO-898-1;
+                                          cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Triple-Spacer-Attachment-One-Sided,
+                                                                                         cas-mech-mechanicalComponent:Twin-Spacer-Attachment-One-Sided;
+                                          a cas-mech:MechanicalComponent;
+                                          rdfs:label "Hex Nut 6-32".
+cas-mech-mechanicalComponent:Motor-Attachment cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Bogie-Fabricated-Left;
+                                              a cas-mech:MechanicalComponent;
+                                              rdfs:label "Motor Attachment".
+cas-mech-mechanicalComponent:SHCS-6-32-x-0-25 cas-mech:MechanicalComponent_madeOf_Material cas-mech-material:Steel-low-alloy-8-8-DIN-EN-ISO-898-1;
+                                              cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Channel-Connector-One-Sided,
+                                                                                             cas-mech-mechanicalComponent:Motor-Attachment;
+                                              a cas-mech:MechanicalComponent;
+                                              rdfs:label "SHCS 6-32 x 0.25".
+cas-mech-mechanicalComponent:SHCS-6-32-x-0-5 cas-mech:MechanicalComponent_madeOf_Material cas-mech-material:Steel-low-alloy-8-8-DIN-EN-ISO-898-1;
+                                             cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Motor-Attachment;
+                                             a cas-mech:MechanicalComponent;
+                                             rdfs:label "SHCS 6-32 x 0.5".
+cas-mech-mechanicalComponent:SHCS-6-32-x-0-75 cas-mech:MechanicalComponent_madeOf_Material cas-mech-material:Steel-low-alloy-8-8-DIN-EN-ISO-898-1;
+                                              cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Triple-Spacer-Attachment-One-Sided,
+                                                                                             cas-mech-mechanicalComponent:Twin-Spacer-Attachment-One-Sided;
+                                              a cas-mech:MechanicalComponent;
+                                              rdfs:label "SHCS 6-32 x 0.75".
+cas-mech-mechanicalComponent:Spacer-6-32-L0-25 cas-mech:MechanicalComponent_madeOf_Material cas-mech-material:Polyamide-PA-6-6-DIN-EN-ISO-1043-1;
+                                               cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Triple-Spacer-Attachment-One-Sided,
+                                                                                              cas-mech-mechanicalComponent:Twin-Spacer-Attachment-One-Sided;
+                                               a cas-mech:MechanicalComponent;
+                                               rdfs:label "Spacer 6-32 L0 25".
+cas-mech-mechanicalComponent:Traverse-Attachment-Skeleton cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Triple-Spacer-Attachment-Two-Sided,
+                                                                                                         cas-mech-mechanicalComponent:Triple-Spacer-Attachment-One-Sided,
+                                                                                                         cas-mech-mechanicalComponent:Twin-Spacer-Attachment-Two-Sided,
+                                                                                                         cas-mech-mechanicalComponent:Twin-Spacer-Attachment-One-Sided;
+                                                          a cas-mech:MechanicalComponent;
+                                                          rdfs:label "Traverse Attachment Skeleton".
+cas-mech-mechanicalComponent:Triple-Spacer-Attachment-One-Sided cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Triple-Spacer-Attachment-Two-Sided;
+                                                                a cas-mech:MechanicalComponent;
+                                                                rdfs:label "Triple Spacer Attachment One-Sided".
+cas-mech-mechanicalComponent:Triple-Spacer-Attachment-Two-Sided cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Bogie-Fabricated;
+                                                                a cas-mech:MechanicalComponent;
+                                                                rdfs:label "Triple Spacer Attachment Two-Sided".
+cas-mech-mechanicalComponent:Twin-Spacer-Attachment-One-Sided cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Twin-Spacer-Attachment-Two-Sided;
+                                                              a cas-mech:MechanicalComponent;
+                                                              rdfs:label "Twin Spacer Attachment One-Sided".
+cas-mech-mechanicalComponent:Twin-Spacer-Attachment-Two-Sided cas-sys:SystemComponent_partOf_SystemComponent cas-mech-mechanicalComponent:Bogie-Fabricated;
+                                                              a cas-mech:MechanicalComponent;
+                                                              rdfs:label "Twin Spacer Attachment Two-Sided".
+cas-mech-modelAnnotation:Datum-Feature-1 dc:identifier "Bogie Machined Left_Datum Feature.1";
+                                         dc:title "Datum Feature.1";
+                                         cas-mech:ModelAnnotation_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                         cas-mech:ModelAnnotation_shownIn_ModelView cas-mech-modelView:Rocker-Connection,
+                                                                                    cas-mech-modelView:Overview,
+                                                                                    cas-mech-modelView:Datum-System;
+                                         :type "Datum Simple";
+                                         a cas-mech:ModelAnnotation;
+                                         rdfs:label "Datum Feature.1".
+cas-mech-modelAnnotation:Datum-Feature-4 dc:identifier "Bogie Machined Left_Datum Feature.4";
+                                         dc:title "Datum Feature.4";
+                                         cas-mech:ModelAnnotation_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                         cas-mech:ModelAnnotation_shownIn_ModelView cas-mech-modelView:Rocker-Connection,
+                                                                                    cas-mech-modelView:Overview,
+                                                                                    cas-mech-modelView:Datum-System;
+                                         :type "Datum Simple";
+                                         a cas-mech:ModelAnnotation;
+                                         rdfs:label "Datum Feature.4".
+cas-mech-modelAnnotation:Datum-Feature-5 dc:identifier "Bogie Machined Left_Datum Feature.5";
+                                         dc:title "Datum Feature.5";
+                                         cas-mech:ModelAnnotation_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                         cas-mech:ModelAnnotation_shownIn_ModelView cas-mech-modelView:Corner-wheel-connection,
+                                                                                    cas-mech-modelView:Overview,
+                                                                                    cas-mech-modelView:Datum-System;
+                                         :type "Datum Simple";
+                                         a cas-mech:ModelAnnotation;
+                                         rdfs:label "Datum Feature.5".
+cas-mech-modelAnnotation:Datum-Feature-6 dc:identifier "Bogie Machined Left_Datum Feature.6";
+                                         dc:title "Datum Feature.6";
+                                         cas-mech:ModelAnnotation_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                         cas-mech:ModelAnnotation_shownIn_ModelView cas-mech-modelView:Left-Wheel-Connection,
+                                                                                    cas-mech-modelView:Overview,
+                                                                                    cas-mech-modelView:Datum-System;
+                                         :type "Datum Simple";
+                                         a cas-mech:ModelAnnotation;
+                                         rdfs:label "Datum Feature.6".
+cas-mech-modelAnnotation:Datum-system-1 dc:identifier "Bogie Machined Left_Datum system.1";
+                                        dc:title "Datum system.1";
+                                        cas-mech:ModelAnnotation_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                        :type "Reference Frame";
+                                        a cas-mech:ModelAnnotation;
+                                        rdfs:label "Datum system.1".
+cas-mech-modelAnnotation:Datum-system-4 dc:identifier "Bogie Machined Left_Datum system.4";
+                                        dc:title "Datum system.4";
+                                        cas-mech:ModelAnnotation_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                        :type "Reference Frame";
+                                        a cas-mech:ModelAnnotation;
+                                        rdfs:label "Datum system.4".
+cas-mech-modelAnnotation:Datum-system-5 dc:identifier "Bogie Machined Left_Datum system.5";
+                                        dc:title "Datum system.5";
+                                        cas-mech:ModelAnnotation_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                        :type "Reference Frame";
+                                        a cas-mech:ModelAnnotation;
+                                        rdfs:label "Datum system.5".
+cas-mech-modelAnnotation:Datum-system-6 dc:identifier "Bogie Machined Left_Datum system.6";
+                                        dc:title "Datum system.6";
+                                        cas-mech:ModelAnnotation_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                        :type "Reference Frame";
+                                        a cas-mech:ModelAnnotation;
+                                        rdfs:label "Datum system.6".
+cas-mech-modelAnnotation:Linear-Size-1 dc:identifier "Bogie Machined Left_Linear Size.1";
+                                       dc:title "Linear Size.1";
+                                       cas-mech:ModelAnnotation_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                       cas-mech:ModelAnnotation_shownIn_ModelView cas-mech-modelView:Rocker-Connection,
+                                                                                  cas-mech-modelView:Overview,
+                                                                                  cas-mech-modelView:Datum-System;
+                                       :type "Linear Dimension";
+                                       a cas-mech:ModelAnnotation;
+                                       rdfs:label "Linear Size.1".
+cas-mech-modelAnnotation:Parallelism-1 dc:identifier "Bogie Machined Left_Parallelism.1";
+                                       dc:title "Parallelism.1";
+                                       cas-mech:ModelAnnotation_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                       cas-mech:ModelAnnotation_shownIn_ModelView cas-mech-modelView:Left-Wheel-Connection,
+                                                                                  cas-mech-modelView:Overview;
+                                       :type "Parallelism";
+                                       a cas-mech:ModelAnnotation;
+                                       rdfs:label "Parallelism.1".
+cas-mech-modelAnnotation:Perpendicularity-3 dc:identifier "Bogie Machined Left_Perpendicularity.3";
+                                            dc:title "Perpendicularity.3";
+                                            cas-mech:ModelAnnotation_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                            cas-mech:ModelAnnotation_shownIn_ModelView cas-mech-modelView:Rocker-Connection,
+                                                                                       cas-mech-modelView:Overview,
+                                                                                       cas-mech-modelView:Datum-System;
+                                            :type "Perpendicularity";
+                                            a cas-mech:ModelAnnotation;
+                                            rdfs:label "Perpendicularity.3".
+cas-mech-modelAnnotation:Perpendicularity-5 dc:identifier "Bogie Machined Left_Perpendicularity.5";
+                                            dc:title "Perpendicularity.5";
+                                            cas-mech:ModelAnnotation_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                            cas-mech:ModelAnnotation_shownIn_ModelView cas-mech-modelView:Corner-wheel-connection,
+                                                                                       cas-mech-modelView:Overview;
+                                            :type "Perpendicularity";
+                                            a cas-mech:ModelAnnotation;
+                                            rdfs:label "Perpendicularity.5".
+cas-mech-modelAnnotation:Position-1 dc:identifier "Bogie Machined Left_Position.1";
+                                    dc:title "Position.1";
+                                    cas-mech:ModelAnnotation_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                    cas-mech:ModelAnnotation_shownIn_ModelView cas-mech-modelView:Corner-wheel-connection,
+                                                                               cas-mech-modelView:Overview,
+                                                                               cas-mech-modelView:Datum-System;
+                                    :type "True Position";
+                                    a cas-mech:ModelAnnotation;
+                                    rdfs:label "Position.1".
+cas-mech-modelAnnotation:Position-2 dc:identifier "Bogie Machined Left_Position.2";
+                                    dc:title "Position.2";
+                                    cas-mech:ModelAnnotation_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                    cas-mech:ModelAnnotation_shownIn_ModelView cas-mech-modelView:Corner-wheel-connection,
+                                                                               cas-mech-modelView:Overview;
+                                    :type "True Position";
+                                    a cas-mech:ModelAnnotation;
+                                    rdfs:label "Position.2".
+cas-mech-modelAnnotation:Position-3 dc:identifier "Bogie Machined Left_Position.3";
+                                    dc:title "Position.3";
+                                    cas-mech:ModelAnnotation_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                    cas-mech:ModelAnnotation_shownIn_ModelView cas-mech-modelView:Corner-wheel-connection,
+                                                                               cas-mech-modelView:Overview;
+                                    :type "True Position";
+                                    a cas-mech:ModelAnnotation;
+                                    rdfs:label "Position.3".
+cas-mech-modelAnnotation:Position-4 dc:identifier "Bogie Machined Left_Position.4";
+                                    dc:title "Position.4";
+                                    cas-mech:ModelAnnotation_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                    cas-mech:ModelAnnotation_shownIn_ModelView cas-mech-modelView:Left-Wheel-Connection,
+                                                                               cas-mech-modelView:Overview,
+                                                                               cas-mech-modelView:Datum-System;
+                                    :type "True Position";
+                                    a cas-mech:ModelAnnotation;
+                                    rdfs:label "Position.4".
+cas-mech-modelAnnotation:Position-5 dc:identifier "Bogie Machined Left_Position.5";
+                                    dc:title "Position.5";
+                                    cas-mech:ModelAnnotation_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                    cas-mech:ModelAnnotation_shownIn_ModelView cas-mech-modelView:Left-Wheel-Connection,
+                                                                               cas-mech-modelView:Overview;
+                                    :type "True Position";
+                                    a cas-mech:ModelAnnotation;
+                                    rdfs:label "Position.5".
+cas-mech-modelView:Corner-wheel-connection dc:identifier "Corner wheel connection";
+                                           dc:title "Corner wheel connection";
+                                           cas-mech:ModelView_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                           a cas-mech:ModelView;
+                                           rdfs:label "Corner wheel connection".
+cas-mech-modelView:Datum-System dc:identifier "Datum System";
+                                dc:title "Datum System";
+                                cas-mech:ModelView_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                a cas-mech:ModelView;
+                                rdfs:label "Datum System".
+cas-mech-modelView:Left-Wheel-Connection dc:identifier "Left Wheel Connection";
+                                         dc:title "Left Wheel Connection";
+                                         cas-mech:ModelView_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                         a cas-mech:ModelView;
+                                         rdfs:label "Left Wheel Connection".
+cas-mech-modelView:Overview dc:identifier "Overview";
+                            dc:title "Overview";
+                            cas-mech:ModelView_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                            a cas-mech:ModelView;
+                            rdfs:label "Overview".
+cas-mech-modelView:Rocker-Connection dc:identifier "Rocker Connection";
+                                     dc:title "Rocker Connection";
+                                     cas-mech:ModelView_partOf_MechanicalComponent cas-mech-mechanicalComponent:Bogie-Machined-Left;
+                                     a cas-mech:ModelView;
+                                     rdfs:label "Rocker Connection".

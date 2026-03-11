@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<aas:env xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:aas="https://admin-shell.io/aas/3/0/">
+	<aas:assetAdministrationShells>
+		<aas:assetAdministrationShell>
+			<aas:id>ProductionDevelopment</aas:id>
+		</aas:assetAdministrationShell>
+	</aas:assetAdministrationShells>
+	<aas:submodels>
+		<aas:submodel/>
+	</aas:submodels>
+</aas:env>

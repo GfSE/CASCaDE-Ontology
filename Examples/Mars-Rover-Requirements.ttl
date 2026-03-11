@@ -1,0 +1,498 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix : <http://www.omg.org/spec/CASCaRA/ontology/>.
+@prefix cas-arch: <http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/>.
+@prefix cas-arch-requirement: <http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/Requirement/>.
+@prefix cas-mech: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/>.
+@prefix cas-mech-mechanicalComponent: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/MechanicalComponent/>.
+@prefix cas-org: <http://www.omg.org/spec/CASCaRA/ontology/Organization/>.
+@prefix cas-org-organizationUnit: <http://www.omg.org/spec/CASCaRA/ontology/Organization/OrganizationUnit/>.
+@prefix cas-org-person: <http://www.omg.org/spec/CASCaRA/ontology/Organization/Person/>.
+
+cas-org-organizationUnit:Dassault-Systemes dc:title "Dassault Systemes";
+                                           a cas-org:OrganizationUnit;
+                                           rdfs:label "Dassault Systemes".
+cas-org-person:Michael_Kirsch cas-org:firstname "Michael";
+                              cas-org:lastname "Kirsch";
+                              a cas-org:Person;
+                              rdfs:label "Michael Kirsch".
+cas-arch-requirement:2-1-1-1_Head-Position dc:description "The Head of the Mars Rover shall be higher mounted than body, suspension and traction unit.";
+                                           dc:identifier "_2021x_2_8d501e7_1710152799440_775076_5744";
+                                           dc:title "Head Position";
+                                           cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-1-1_Head;
+                                           :number "2.1.1.1";
+                                           a cas-arch:Requirement;
+                                           rdfs:label "2.1.1.1 Head Position".
+cas-arch-requirement:2-1-1-2_Head-Function dc:description "The Head of the Mars Rover shall carry sensors and a LED Display.";
+                                           dc:identifier "_2021x_2_8d501e7_1710153330085_930613_5754";
+                                           dc:title "Head Function";
+                                           cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-1-1_Head;
+                                           :number "2.1.1.2";
+                                           a cas-arch:Requirement;
+                                           rdfs:label "2.1.1.2 Head Function".
+cas-arch-requirement:2-1-1_Head dc:description "The Mars Rover shall have a head";
+                                dc:identifier "_17_0_3_1_60c0217_1554373947269_619833_17513";
+                                dc:title "Head";
+                                cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-1_Structure;
+                                :number "2.1.1";
+                                a cas-arch:Requirement;
+                                rdfs:label "2.1.1 Head".
+cas-arch-requirement:2-1-2_Body dc:description "The Mars Rover shall have a body";
+                                dc:identifier "_2021x_2_8d501e7_1710146462874_714909_5562";
+                                dc:title "Body";
+                                cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-1_Structure;
+                                :number "2.1.2";
+                                a cas-arch:Requirement;
+                                rdfs:label "2.1.2 Body".
+cas-arch-requirement:2-1-3_Suspension dc:description "The Mars Rover shall have a suspension suspending the traction unit";
+                                      dc:identifier "_2021x_2_8d501e7_1710146492047_939247_5565";
+                                      dc:title "Suspension";
+                                      cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-1_Structure;
+                                      :number "2.1.3";
+                                      a cas-arch:Requirement;
+                                      rdfs:label "2.1.3 Suspension".
+cas-arch-requirement:2-1-4_Traction-Unit dc:description "The Mars Rover shall have a traction unit providing traction to the ground";
+                                         dc:identifier "_2021x_2_8d501e7_1710146526694_117941_5568";
+                                         dc:title "Traction Unit";
+                                         cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-1_Structure;
+                                         :number "2.1.4";
+                                         a cas-arch:Requirement;
+                                         rdfs:label "2.1.4 Traction Unit".
+cas-arch-requirement:2-1_Structure dc:identifier "_17_0_3_1_60c0217_1554373894872_831523_16027";
+                                   dc:title "Structure";
+                                   cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2_Technical-requirements;
+                                   :number "2.1";
+                                   a cas-arch:Requirement;
+                                   rdfs:label "2.1 Structure".
+cas-arch-requirement:2-2-1_External-Power-Supply dc:description "The Mars Rover shall be operable with internal power supply only.";
+                                                 dc:identifier "_17_0_3_1_60c0217_1554373947269_334692_17515";
+                                                 dc:title "External Power Supply";
+                                                 cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-2_Power-Supply;
+                                                 :number "2.2.1";
+                                                 a cas-arch:Requirement;
+                                                 rdfs:label "2.2.1 External Power Supply".
+cas-arch-requirement:2-2-2-1_Energy-Storage dc:description "The Mars Rover shall have means to re-charde its energy storage system.";
+                                            dc:identifier "_17_0_3_1_60c0217_1554373992768_924005_18953";
+                                            dc:title "Energy Storage";
+                                            cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-2-2_Internal-Power-Supply;
+                                            :number "2.2.2.1";
+                                            a cas-arch:Requirement;
+                                            rdfs:label "2.2.2.1 Energy Storage".
+cas-arch-requirement:2-2-2-2_Available-Power dc:description "The Mars Rover shall be operable for 4h under all of the following conditions:* The energy storage is fully loaded at the beginning* The operation requires less than or equal to 60% of the max energy in peak load* the environmental conditions are mission normal";
+                                             dc:identifier "_17_0_3_1_60c0217_1554373992768_101922_18958";
+                                             dc:title "Available Power";
+                                             cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-2-2_Internal-Power-Supply;
+                                             :number "2.2.2.2";
+                                             a cas-arch:Requirement;
+                                             rdfs:label "2.2.2.2 Available Power".
+cas-arch-requirement:2-2-2_Internal-Power-Supply dc:description "The Mars Rover shall have a power supply fulfilling all of the following conditions:* it contains an energy storage system* it contains an energy management system* it contains a power distribution system";
+                                                 dc:identifier "_17_0_3_1_60c0217_1554373947269_839759_17516";
+                                                 dc:title "Internal Power Supply";
+                                                 cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-2_Power-Supply;
+                                                 :number "2.2.2";
+                                                 a cas-arch:Requirement;
+                                                 rdfs:label "2.2.2 Internal Power Supply".
+cas-arch-requirement:2-2-3_Energy-Re-Charging dc:description "The Mars Rover shall re-charge the energy storage from 10% to 80% in 4h under the following conditions:* re-charging at mission normal conditions* no energy consumption of the Mars Rover since the re-charging period";
+                                              dc:identifier "_17_0_3_1_60c0217_1554373947269_80329_17517";
+                                              dc:title "Energy Re-Charging";
+                                              cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-2_Power-Supply;
+                                              :number "2.2.3";
+                                              a cas-arch:Requirement;
+                                              rdfs:label "2.2.3 Energy Re-Charging".
+cas-arch-requirement:2-2-4_Energy-Management dc:description "The Mars Rover shall have an energy management fullfilling all of the following conditions:* distributing the energy to all systems* prioritizing the energy available for the different systems* limiting energy to individual systems to prioritize individual systems* managing energy that the Mars Rover can recharge by itself in a time period of less than 24 hours";
+                                             dc:identifier "_17_0_3_1_60c0217_1554373886850_551019_15911";
+                                             dc:title "Energy Management";
+                                             cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-2_Power-Supply;
+                                             :number "2.2.4";
+                                             a cas-arch:Requirement;
+                                             rdfs:label "2.2.4 Energy Management".
+cas-arch-requirement:2-2-5-1_Motor-Voltage dc:description "The Mars Rover shall have one main drive motor for each traction device fulfilling the following conditions:* using 12 V voltage* using not more than 30 A current";
+                                           dc:identifier "_17_0_3_1_60c0217_1555340930579_881851_34234";
+                                           dc:title "Motor Voltage";
+                                           cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-2-5_Electrical-Values;
+                                           :number "2.2.5.1";
+                                           a cas-arch:Requirement;
+                                           rdfs:label "2.2.5.1 Motor Voltage".
+cas-arch-requirement:2-2-5-2_Encoder-Voltage dc:description "The Mars Rover shall have an encoder powered by 5 V voltage.";
+                                             dc:identifier "_2022x_8a9027b_1707924576905_883240_5487";
+                                             dc:title "Encoder Voltage";
+                                             cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-2-5_Electrical-Values;
+                                             :number "2.2.5.2";
+                                             a cas-arch:Requirement;
+                                             rdfs:label "2.2.5.2 Encoder Voltage".
+cas-arch-requirement:2-2-5_Electrical-Values dc:description "The Mars Rover shall use 12 V DC voltage";
+                                             dc:identifier "_17_0_3_1_60c0217_1554373886850_739640_15912";
+                                             dc:title "Electrical Values";
+                                             cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-2_Power-Supply;
+                                             :number "2.2.5";
+                                             a cas-arch:Requirement;
+                                             rdfs:label "2.2.5 Electrical Values".
+cas-arch-requirement:2-2_Power-Supply dc:description "The Mars Rover shall have a power supply.";
+                                      dc:identifier "_17_0_3_1_60c0217_1554373894872_990229_16028";
+                                      dc:title "Power Supply";
+                                      cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2_Technical-requirements;
+                                      :number "2.2";
+                                      a cas-arch:Requirement;
+                                      rdfs:label "2.2 Power Supply".
+cas-arch-requirement:2-3-10_Hill-Holding dc:description "The Mars Rover shall maintain 0 m/s motion on all slopes it is able to move on.";
+                                         dc:identifier "_2021x_2_8d501e7_1710148366772_438416_5581";
+                                         dc:title "Hill Holding";
+                                         cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-3_Motion;
+                                         :number "2.3.10";
+                                         a cas-arch:Requirement;
+                                         rdfs:label "2.3.10 Hill Holding".
+cas-arch-requirement:2-3-11_Steering dc:description "The Mars Rover shall be able to change driving direction to the left and to the right.";
+                                     dc:identifier "_2021x_2_8d501e7_1710148561688_473742_5584";
+                                     dc:title "Steering";
+                                     cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-3_Motion;
+                                     :number "2.3.11";
+                                     a cas-arch:Requirement;
+                                     rdfs:label "2.3.11 Steering".
+cas-arch-requirement:2-3-12_Diving-Direction dc:description "The Mars Rover shall be able to drive forwards and backwards.";
+                                             dc:identifier "_2021x_2_8d501e7_1710148601847_750005_5587";
+                                             dc:title "Diving Direction";
+                                             cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-3_Motion;
+                                             :number "2.3.12";
+                                             a cas-arch:Requirement;
+                                             rdfs:label "2.3.12 Diving Direction".
+cas-arch-requirement:2-3-13-1_Detecting-Obstacles dc:description "The Mars Rover shall be able to identify obstacles by itself";
+                                                  dc:identifier "_2021x_2_8d501e7_1710148712446_394547_5593";
+                                                  dc:title "Detecting Obstacles";
+                                                  cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-3-13_Navigate;
+                                                  :number "2.3.13.1";
+                                                  a cas-arch:Requirement;
+                                                  rdfs:label "2.3.13.1 Detecting Obstacles".
+cas-arch-requirement:2-3-13-2_Map-Data dc:description "The Mars Rover shall have map data stored enabling it to calculate a route between its actual position and a target position";
+                                       dc:identifier "_2021x_2_8d501e7_1710148782585_264451_5596";
+                                       dc:title "Map Data";
+                                       cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-3-13_Navigate;
+                                       :number "2.3.13.2";
+                                       a cas-arch:Requirement;
+                                       rdfs:label "2.3.13.2 Map Data".
+cas-arch-requirement:2-3-13-3_Preventing-Obstacles dc:description "The Mars Rover shall prevent driving over obstacles if all of the following conditions are true:* the obstacle exceeds the measures of an acceptable obstacle as required in 1.1.3.2* a rout is available around the obstacle or rearwards to a position capable to reach the target without crossing the obstacle.";
+                                                   dc:identifier "_2021x_2_8d501e7_1710148844988_144183_5599";
+                                                   dc:title "Preventing Obstacles";
+                                                   cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-3-13_Navigate;
+                                                   :number "2.3.13.3";
+                                                   a cas-arch:Requirement;
+                                                   rdfs:label "2.3.13.3 Preventing Obstacles".
+cas-arch-requirement:2-3-13_Navigate dc:description "The Mars Rover shall be able to calculate a route between its actual position and a target position";
+                                     dc:identifier "_2021x_2_8d501e7_1710148650016_796202_5590";
+                                     dc:title "Navigate";
+                                     cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-3_Motion;
+                                     :number "2.3.13";
+                                     a cas-arch:Requirement;
+                                     rdfs:label "2.3.13 Navigate".
+cas-arch-requirement:2-3-1_Max-Motion-Speed dc:description "The Mars Rover shall be able to move by itself with a max. speed of 7 m/s.";
+                                            dc:identifier "_17_0_3_1_60c0217_1554373947253_22759_17417";
+                                            dc:title "Max Motion Speed";
+                                            cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-3_Motion;
+                                            :number "2.3.1";
+                                            a cas-arch:Requirement;
+                                            rdfs:label "2.3.1 Max Motion Speed".
+cas-arch-requirement:2-3-2-1_Deformation-of-the-bogie dc:description "The bogie of the suspension system shall not bend more than 5% since all motion events.";
+                                                      dc:identifier "_2022x_8a9027b_1708424764583_139395_5943";
+                                                      dc:title "Deformation of the bogie";
+                                                      cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-3-2_Motion-over-Obstacles;
+                                                      :number "2.3.2.1";
+                                                      a cas-arch:Requirement;
+                                                      rdfs:label "2.3.2.1 Deformation of the bogie".
+cas-arch-requirement:2-3-2-2_Plastic-deformation-of-the-bogie dc:description "The bogie of the suspension system shall not deform plastically for bending less than or equal to 7%.";
+                                                              dc:identifier "_2021x_2_8d501e7_1710147594026_511625_5572";
+                                                              dc:title "Plastic deformation of the bogie";
+                                                              cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-3-2_Motion-over-Obstacles;
+                                                              :number "2.3.2.2";
+                                                              a cas-arch:Requirement;
+                                                              rdfs:label "2.3.2.2 Plastic deformation of the bogie".
+cas-arch-requirement:2-3-2_Motion-over-Obstacles dc:description "The Mars Rover shall be able to move by itself over obstacles which fullfill one of the following condition:* the obstacle is max. 20 cm high* the slope angle uphil is max. 30 degree* the slope angle downhil is max. 30 degree* the roll angle of the Mars Rover since moving over the obstacle never exceeds an angle of 30 degree";
+                                                 dc:identifier "_17_0_3_1_60c0217_1554373947238_635549_17411";
+                                                 dc:title "Motion over Obstacles";
+                                                 cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-3_Motion;
+                                                 :number "2.3.2";
+                                                 a cas-arch:Requirement;
+                                                 rdfs:label "2.3.2 Motion over Obstacles".
+cas-arch-requirement:2-3-3_Motion-over-slopes dc:description "The Mars Rover shall be able to move on slopes which fullfill the following condition:* slope angle uphill max. 20 degree* slope angle downhill max. 30 degree* slope angle sidehill max 15 degree";
+                                              dc:identifier "_17_0_3_1_60c0217_1554373947253_787088_17420";
+                                              dc:title "Motion over slopes";
+                                              cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-3_Motion;
+                                              :number "2.3.3";
+                                              a cas-arch:Requirement;
+                                              rdfs:label "2.3.3 Motion over slopes".
+cas-arch-requirement:2-3-4_Motion-Ground-Contact dc:description "The Mars Rover shall produce a ground pressure of max. 20 kPa.";
+                                                 dc:identifier "_17_0_3_1_60c0217_1554373947238_606232_17414";
+                                                 dc:title "Motion Ground Contact";
+                                                 cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-3_Motion;
+                                                 :number "2.3.4";
+                                                 a cas-arch:Requirement;
+                                                 rdfs:label "2.3.4 Motion Ground Contact".
+cas-arch-requirement:2-3-5_Electric-Motion-Drive dc:description "The Mars Rover shall have one left and one right traction device both driven by one electrical motor each.";
+                                                 dc:identifier "_17_0_3_1_60c0217_1554373888774_76355_15935";
+                                                 dc:title "Electric Motion Drive";
+                                                 cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-3_Motion;
+                                                 :number "2.3.5";
+                                                 a cas-arch:Requirement;
+                                                 rdfs:label "2.3.5 Electric Motion Drive".
+cas-arch-requirement:2-3-6_Start-Driving dc:description "The Mars Rover shall start driving by itself on all slopes where it is able to move on.";
+                                         dc:identifier "_17_0_3_1_60c0217_1554373888774_941195_15936";
+                                         dc:title "Start Driving";
+                                         cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-3_Motion;
+                                         :number "2.3.6";
+                                         a cas-arch:Requirement;
+                                         rdfs:label "2.3.6 Start Driving".
+cas-arch-requirement:2-3-7_Min-Motion-Speed dc:description "The Mars Rover shall be able to move by itself with a min. speed of 1 m/min";
+                                            dc:identifier "_17_0_3_1_60c0217_1554373888774_923366_15937";
+                                            dc:title "Min Motion Speed";
+                                            cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-3_Motion;
+                                            :number "2.3.7";
+                                            a cas-arch:Requirement;
+                                            rdfs:label "2.3.7 Min Motion Speed".
+cas-arch-requirement:2-3-8_Motion-Distance dc:description "The Mars Rover shall be able to move at least 100m per day on all slopes where it is able to move on.";
+                                           dc:identifier "_17_0_3_1_60c0217_1554373888774_384276_15938";
+                                           dc:title "Motion Distance";
+                                           cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-3_Motion;
+                                           :number "2.3.8";
+                                           a cas-arch:Requirement;
+                                           rdfs:label "2.3.8 Motion Distance".
+cas-arch-requirement:2-3-9_Stopping dc:description "The Mars Rover shall be able to stop moving by itself down to 0 m/s speed.";
+                                    dc:identifier "_17_0_3_1_60c0217_1555336591336_85392_31015";
+                                    dc:title "Stopping";
+                                    cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-3_Motion;
+                                    :number "2.3.9";
+                                    a cas-arch:Requirement;
+                                    rdfs:label "2.3.9 Stopping".
+cas-arch-requirement:2-3_Motion dc:description "The Mars Rover shall be able to move by itself.";
+                                dc:identifier "_17_0_3_1_60c0217_1554373894872_489031_16029";
+                                dc:title "Motion";
+                                cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2_Technical-requirements;
+                                :number "2.3";
+                                a cas-arch:Requirement;
+                                rdfs:label "2.3 Motion".
+cas-arch-requirement:2-4-1_Remote-Speed-Control dc:description "The Mars Rover speed shall be controllable remote.";
+                                                dc:identifier "_17_0_3_1_60c0217_1554373888774_288492_15940";
+                                                dc:title "Remote Speed Control";
+                                                cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-4_Remote-Control;
+                                                :number "2.4.1";
+                                                a cas-arch:Requirement;
+                                                rdfs:label "2.4.1 Remote Speed Control".
+cas-arch-requirement:2-4-2_Remote-Steering dc:description "The Mars Rover steering direction shall be controllable remote.";
+                                           dc:identifier "_17_0_3_1_60c0217_1554373888790_510287_15941";
+                                           dc:title "Remote Steering";
+                                           cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-4_Remote-Control;
+                                           :number "2.4.2";
+                                           a cas-arch:Requirement;
+                                           rdfs:label "2.4.2 Remote Steering".
+cas-arch-requirement:2-4-3_Remote-Control-Priority dc:description "The Mars Rover remote control shall be able to overrule the auto navigation function.";
+                                                   dc:identifier "_2021x_2_8d501e7_1710149292477_668117_5602";
+                                                   dc:title "Remote Control Priority";
+                                                   cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-4_Remote-Control;
+                                                   :number "2.4.3";
+                                                   a cas-arch:Requirement;
+                                                   rdfs:label "2.4.3 Remote Control Priority".
+cas-arch-requirement:2-4_Remote-Control dc:description "The Mars Rover shall be controllable remote.";
+                                        dc:identifier "_17_0_3_1_60c0217_1554373894872_844710_16030";
+                                        dc:title "Remote Control";
+                                        cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2_Technical-requirements;
+                                        :number "2.4";
+                                        a cas-arch:Requirement;
+                                        rdfs:label "2.4 Remote Control".
+cas-arch-requirement:2-5-1_LED dc:description "The Mars Rover shall have a LED for optical information if it is operable or not.";
+                               dc:identifier "_17_0_3_1_60c0217_1554373890795_302548_15964";
+                               dc:title "LED";
+                               cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-5_Optical-Feedback;
+                               :number "2.5.1";
+                               a cas-arch:Requirement;
+                               rdfs:label "2.5.1 LED".
+cas-arch-requirement:2-5_Optical-Feedback dc:description "The Mars Rover shall provide optical information if it is operable or not.";
+                                          dc:identifier "_17_0_3_1_60c0217_1554373894872_183392_16031";
+                                          dc:title "Optical Feedback";
+                                          cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2_Technical-requirements;
+                                          :number "2.5";
+                                          a cas-arch:Requirement;
+                                          rdfs:label "2.5 Optical Feedback".
+cas-arch-requirement:2-6-1_Mars-Rover-Mass dc:description "The Mars Rover shall have a total mass of not more than 10 kg";
+                                           dc:identifier "_2021x_2_8d501e7_1710153834097_967050_5805";
+                                           dc:title "Mars Rover Mass";
+                                           cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-6_Max-Mass;
+                                           :number "2.6.1";
+                                           a cas-arch:Requirement;
+                                           rdfs:label "2.6.1 Mars Rover Mass".
+cas-arch-requirement:2-6-2_Payload dc:description "The Mars Rover shall have a payload of 2 kg.";
+                                   dc:identifier "_2021x_2_8d501e7_1710153885017_514661_5808";
+                                   dc:title "Payload";
+                                   cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-6_Max-Mass;
+                                   :number "2.6.2";
+                                   a cas-arch:Requirement;
+                                   rdfs:label "2.6.2 Payload".
+cas-arch-requirement:2-6_Max-Mass dc:description "The Mars Rover shall have a total mass of not more than 12 kg";
+                                  dc:identifier "_17_0_3_1_60c0217_1554373894872_124599_16032";
+                                  dc:title "Max Mass";
+                                  cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2_Technical-requirements;
+                                  :number "2.6";
+                                  a cas-arch:Requirement;
+                                  rdfs:label "2.6 Max Mass".
+cas-arch-requirement:2-7-1_Mars-Rover-Communication dc:description "The Mars Rover shall be able to communicate sampled information to the Mars station.";
+                                                    dc:identifier "_2021x_2_8d501e7_1710153615080_304380_5787";
+                                                    dc:title "Mars Rover Communication";
+                                                    cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-7_Mars-Rover-Capabilities;
+                                                    :number "2.7.1";
+                                                    a cas-arch:Requirement;
+                                                    rdfs:label "2.7.1 Mars Rover Communication".
+cas-arch-requirement:2-7-2_Information-Storage dc:description "The Mars Rover shall be capable to store information up to 2 TB";
+                                               dc:identifier "_2021x_2_8d501e7_1710153678770_496381_5792";
+                                               dc:title "Information Storage";
+                                               cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-7_Mars-Rover-Capabilities;
+                                               :number "2.7.2";
+                                               a cas-arch:Requirement;
+                                               rdfs:label "2.7.2 Information Storage".
+cas-arch-requirement:2-7-3_Sample-Storage dc:description "The Mars Rover shall be able to store probes up to 48 h long.";
+                                          dc:identifier "_2021x_2_8d501e7_1710153727491_409919_5797";
+                                          dc:title "Sample Storage";
+                                          cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-7_Mars-Rover-Capabilities;
+                                          :number "2.7.3";
+                                          a cas-arch:Requirement;
+                                          rdfs:label "2.7.3 Sample Storage".
+cas-arch-requirement:2-7-4_Unloading dc:description "The Mars Rover shall be able to unload stored probes into the Mars Station.";
+                                     dc:identifier "_2021x_2_8d501e7_1710153776399_96192_5800";
+                                     dc:title "Unloading";
+                                     cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-7_Mars-Rover-Capabilities;
+                                     :number "2.7.4";
+                                     a cas-arch:Requirement;
+                                     rdfs:label "2.7.4 Unloading".
+cas-arch-requirement:2-7_Mars-Rover-Capabilities dc:description "The Mars Rover shall be able to execute the following operations individually and not in combination:* Moving on Mars surface* Capturing optical information* Capturing video information* Capturing audio information* Sampling of Probes of solid material of individual diameter not bigger than 20 mm* Sampling of probes of fluid material in the range of ph-value 0 to 11* Sampling of probes of gas of not more than 50 mm³ volume and pressure between 1 hPa up to 3.000 hPa* Sampling of biological probes of not more than 50 mm³ volume and not more than 30 mm length in any direction";
+                                                 dc:identifier "_2021x_2_8d501e7_1710152920321_382759_5749";
+                                                 dc:title "Mars Rover Capabilities";
+                                                 cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2_Technical-requirements;
+                                                 :number "2.7";
+                                                 a cas-arch:Requirement;
+                                                 rdfs:label "2.7 Mars Rover Capabilities".
+cas-arch-requirement:2-8-1_Landing-Temperatures dc:description "The Mars Rover shall resist temperatures of not more than 100°C for not more than 7 minutes while staying full functional.";
+                                                dc:identifier "_2021x_2_8d501e7_1710150476050_13127_5658";
+                                                dc:title "Landing Temperatures";
+                                                cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-8_Landing-on-Mars;
+                                                :number "2.8.1";
+                                                a cas-arch:Requirement;
+                                                rdfs:label "2.8.1 Landing Temperatures".
+cas-arch-requirement:2-8-2_Landing-Deceleration dc:description "The Mars Rover shall be able to withstand landing deceleration as listed below:* Deceleration from 20.000 km/h at Mars atmosphere entry to 1.500 km/h in 4 minutes.* Deceleration from 1.500 km/s to 25 m/s in 3 minutes";
+                                                dc:identifier "_2021x_2_8d501e7_1710150561344_954069_5661";
+                                                dc:title "Landing Deceleration";
+                                                cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-8_Landing-on-Mars;
+                                                :number "2.8.2";
+                                                a cas-arch:Requirement;
+                                                rdfs:label "2.8.2 Landing Deceleration".
+cas-arch-requirement:2-8-3_Landing-speed dc:description "The Mars Rover shall be full operable after a landing on Mars with the following conditions beeing true:* The vertical speed at ground contact is not higher than 1 m/s* The horizontal speed at graund contact is not higher than 1 m/s";
+                                         dc:identifier "_2021x_2_8d501e7_1710150880576_958104_5666";
+                                         dc:title "Landing speed";
+                                         cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-8_Landing-on-Mars;
+                                         :number "2.8.3";
+                                         a cas-arch:Requirement;
+                                         rdfs:label "2.8.3 Landing speed".
+cas-arch-requirement:2-8-4_Landing-Orientation dc:description "The Mars Rover shall land on Mars with the traction units first contacting the ground.";
+                                               dc:identifier "_2021x_2_8d501e7_1710151377993_602525_5676";
+                                               dc:title "Landing Orientation";
+                                               cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-8_Landing-on-Mars;
+                                               :number "2.8.4";
+                                               a cas-arch:Requirement;
+                                               rdfs:label "2.8.4 Landing Orientation".
+cas-arch-requirement:2-8_Landing-on-Mars dc:description "The Mars Rover shall be able to land on planet Mars.";
+                                         dc:identifier "_2021x_2_8d501e7_1710150433825_282917_5653";
+                                         dc:title "Landing on Mars";
+                                         cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2_Technical-requirements;
+                                         :number "2.8";
+                                         a cas-arch:Requirement;
+                                         rdfs:label "2.8 Landing on Mars".
+cas-arch-requirement:2-9-1_Operating-Atmosphere dc:description "The Mars Rover shall be able to operate in Mars atmosphere for at least 25 years.";
+                                                dc:identifier "_2021x_2_8d501e7_1710151675649_994932_5700";
+                                                dc:title "Operating Atmosphere";
+                                                cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-9_Operating-on-Mars;
+                                                :number "2.9.1";
+                                                a cas-arch:Requirement;
+                                                rdfs:label "2.9.1 Operating Atmosphere".
+cas-arch-requirement:2-9-2_Mars-Gravity dc:description "The Mars Rover shall be able to operate under Mars gravity of 3.71 m/s².";
+                                        dc:identifier "_2021x_2_8d501e7_1710151718558_644987_5705";
+                                        dc:title "Mars Gravity";
+                                        cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-9_Operating-on-Mars;
+                                        :number "2.9.2";
+                                        a cas-arch:Requirement;
+                                        rdfs:label "2.9.2 Mars Gravity".
+cas-arch-requirement:2-9-3_Mars-Temperatures dc:description "The Mars Rover shall be able to operate in a temperature range from -80°C up to 80°C";
+                                             dc:identifier "_2021x_2_8d501e7_1710151896250_201297_5710";
+                                             dc:title "Mars Temperatures";
+                                             cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-9_Operating-on-Mars;
+                                             :number "2.9.3";
+                                             a cas-arch:Requirement;
+                                             rdfs:label "2.9.3 Mars Temperatures".
+cas-arch-requirement:2-9-4_Mars-Radiation dc:description "The Mars Rover shall be able to be fully operable under constant cosmic radiation of at least 250 mSv.";
+                                          dc:identifier "_2021x_2_8d501e7_1710152037892_253674_5713";
+                                          dc:title "Mars Radiation";
+                                          cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2-9_Operating-on-Mars;
+                                          :number "2.9.4";
+                                          a cas-arch:Requirement;
+                                          rdfs:label "2.9.4 Mars Radiation".
+cas-arch-requirement:2-9_Operating-on-Mars dc:description "The Mars Rover shall be able to operate on the planet Mars.";
+                                           dc:identifier "_2021x_2_8d501e7_1710151635216_154098_5695";
+                                           dc:title "Operating on Mars";
+                                           cas-arch:Requirement_partOf_Requirement cas-arch-requirement:2_Technical-requirements;
+                                           :number "2.9";
+                                           a cas-arch:Requirement;
+                                           rdfs:label "2.9 Operating on Mars".
+cas-arch-requirement:2_Technical-requirements dc:identifier "_17_0_3_1_60c0217_1554373833970_87496_14528";
+                                              dc:title "Technical requirements";
+                                              :number "2";
+                                              a cas-arch:Requirement;
+                                              rdfs:label "2 Technical requirements".
+cas-arch-requirement:Legal-ergonomy-requierments-manufacturing dc:identifier "_2021x_2_8d501e7_1710146360070_21059_5559";
+                                                               dc:title "Legal ergonomy requierments manufacturing";
+                                                               cas-arch:Requirement_partOf_Requirement cas-arch-requirement:Legal-requirements;
+                                                               a cas-arch:Requirement;
+                                                               rdfs:label "Legal ergonomy requierments manufacturing".
+cas-arch-requirement:Legal-requirements dc:identifier "_17_0_3_1_60c0217_1554373817716_227628_13935";
+                                        dc:title "Legal requirements";
+                                        a cas-arch:Requirement;
+                                        rdfs:label "Legal requirements".
+cas-arch-requirement:Legal-safety-requirement-testing dc:identifier "_2021x_2_8d501e7_1710146322885_948291_5555";
+                                                      dc:title "Legal safety requirement testing";
+                                                      cas-arch:Requirement_partOf_Requirement cas-arch-requirement:Legal-requirements;
+                                                      a cas-arch:Requirement;
+                                                      rdfs:label "Legal safety requirement testing".
+cas-arch-requirement:Legal-safety-requirements-manufacturing dc:identifier "_17_0_3_1_60c0217_1554373833970_540169_14529";
+                                                             dc:title "Legal safety requirements manufacturing";
+                                                             cas-arch:Requirement_partOf_Requirement cas-arch-requirement:Legal-requirements;
+                                                             a cas-arch:Requirement;
+                                                             rdfs:label "Legal safety requirements manufacturing".
+cas-mech-mechanicalComponent:1-5-Aluminum-Channel a cas-mech:MechanicalComponent;
+                                                  rdfs:label "1.5 Aluminum Channel".
+cas-mech-mechanicalComponent:3-75-Aluminum-Channel a cas-mech:MechanicalComponent;
+                                                   rdfs:label "3.75 Aluminum Channel".
+cas-mech-mechanicalComponent:3-Aluminum-Channel a cas-mech:MechanicalComponent;
+                                                rdfs:label "3 Aluminum Channel".
+cas-mech-mechanicalComponent:3-Aluminum-Channel-Mod a cas-mech:MechanicalComponent;
+                                                    rdfs:label "3 Aluminum Channel Mod".
+cas-mech-mechanicalComponent:6-32_L0_25-Spacer a cas-mech:MechanicalComponent;
+                                               rdfs:label "6-32_L0_25 Spacer".
+cas-mech-mechanicalComponent:6-32_SHCS-X-0-250 a cas-mech:MechanicalComponent;
+                                               rdfs:label "6-32_SHCS X 0.250".
+cas-mech-mechanicalComponent:6-32_SHCS-X-0-750 a cas-mech:MechanicalComponent;
+                                               rdfs:label "6-32_SHCS X 0.750".
+cas-mech-mechanicalComponent:Bogie a cas-mech:MechanicalComponent;
+                                   rdfs:label "Bogie".
+cas-mech-mechanicalComponent:Channel-Connector a cas-mech:MechanicalComponent;
+                                               rdfs:label "Channel Connector".
+cas-mech-mechanicalComponent:Channel-Connector-One-Sided a cas-mech:MechanicalComponent;
+                                                         rdfs:label "Channel Connector One-Sided".
+cas-mech-mechanicalComponent:Channel-Connector-Two-Sided a cas-mech:MechanicalComponent;
+                                                         rdfs:label "Channel Connector Two-Sided".
+cas-mech-mechanicalComponent:Pattern-F-Bracket a cas-mech:MechanicalComponent;
+                                               rdfs:label "Pattern F Bracket".
+cas-mech-mechanicalComponent:Triple-Spacer-Attachment-One-Sided a cas-mech:MechanicalComponent;
+                                                                rdfs:label "Triple Spacer Attachment One-Sided".
+cas-mech-mechanicalComponent:Triple-Spacer-Attachment-Two-Sided a cas-mech:MechanicalComponent;
+                                                                rdfs:label "Triple Spacer Attachment Two-Sided".
+cas-mech-mechanicalComponent:Twin-Spacer-Attachment-One-Sided a cas-mech:MechanicalComponent;
+                                                              rdfs:label "Twin Spacer Attachment One-Sided".
+cas-mech-mechanicalComponent:Twin-Spacer-Attachment-Two-Sided a cas-mech:MechanicalComponent;
+                                                              rdfs:label "Twin Spacer Attachment Two-Sided".
+cas-mech-mechanicalComponent:hex_nut_6-32 a cas-mech:MechanicalComponent;
+                                          rdfs:label "hex_nut_6-32".

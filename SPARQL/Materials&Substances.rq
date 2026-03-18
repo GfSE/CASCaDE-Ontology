@@ -3,7 +3,7 @@ PREFIX cas-mech-substance: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesi
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
-SELECT ?material ?identifier ?label
+SELECT DISTINCT ?material ?identifier ?label
 WHERE {
   ?material a cas-mech:Material ;
             cas-mech:Material_composedOf_Substance cas-mech-substance:Chromium .

@@ -1,0 +1,149 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix : <http://www.omg.org/spec/CASCaRA/ontology/>.
+@prefix cas-arch: <http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/>.
+@prefix cas-arch-function: <http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/Function/>.
+@prefix cas-mech: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/>.
+@prefix cas-mech-face: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/Face/>.
+@prefix cas-mech-material: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/Material/>.
+@prefix cas-mech-mechanicalComponent: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/MechanicalComponent/>.
+@prefix cas-mech-paintingCoating: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/PaintingCoating/>.
+@prefix cas-mech-substance: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/Substance/>.
+@prefix cas-org: <http://www.omg.org/spec/CASCaRA/ontology/Organization/>.
+@prefix cas-org-person: <http://www.omg.org/spec/CASCaRA/ontology/Organization/Person/>.
+
+cas-org-person:Michael_Kirsch cas-org:firstname "Michael";
+                              cas-org:lastname "Kirsch";
+                              a cas-org:Person;
+                              rdfs:label "Michael Kirsch".
+cas-arch-function:2-2-3_Reduct-friction dc:identifier "friction";
+                                        dc:title "Reduct friction";
+                                        :number "2.2.3";
+                                        a cas-arch:Function;
+                                        rdfs:label "2.2.3 Reduct friction".
+cas-mech-face:FunctionFace-Hinge-Attachment dc:identifier "FunctionFace.Hinge-Attachment";
+                                            :number "Hinge attachment";
+                                            a cas-mech:Face;
+                                            rdfs:label "FunctionFace.Hinge-Attachment".
+cas-mech-material: dc:identifier "Steel-100Cr6";
+                   dc:title "100Cr6 - 1.3505"@de;
+                   cas-mech:Material_composedOf_Substance cas-mech-substance:Iron,
+                                                          cas-mech-substance:Carbon,
+                                                          cas-mech-substance:Chromium,
+                                                          cas-mech-substance:Silicon,
+                                                          cas-mech-substance:Manganese;
+                   a cas-mech:Material;
+                   rdfs:label "100Cr6 - 1.3505"@de.
+cas-mech-material:1 dc:identifier "EN AW-6061-T6 - EN 573-3";
+                    dc:title "Aluminum wrought alloy - EN AW-6061-T6 - EN 573-3"@de;
+                    cas-mech:Material_composedOf_Substance cas-mech-substance:Aluminium,
+                                                           cas-mech-substance:Copper,
+                                                           cas-mech-substance:Magnesium,
+                                                           cas-mech-substance:Silicon,
+                                                           cas-mech-substance:Iron,
+                                                           cas-mech-substance:Zinc,
+                                                           cas-mech-substance:Titanium,
+                                                           cas-mech-substance:Chromium;
+                    a cas-mech:Material;
+                    rdfs:label "Aluminum wrought alloy - EN AW-6061-T6 - EN 573-3"@de.
+cas-mech-material:2 dc:identifier "PTFA";
+                    dc:title "Teflon - PTFA"@de;
+                    a cas-mech:Material;
+                    rdfs:label "Teflon - PTFA"@de.
+cas-mech-mechanicalComponent:Bogie-Machined-Left cas-mech:MechanicalComponent_madeOf_Material cas-mech-material:1;
+                                                 a cas-mech:MechanicalComponent;
+                                                 rdfs:label "Bogie Machined Left".
+cas-mech-mechanicalComponent:Bracket-Flat cas-mech:MechanicalComponent_madeOf_Material cas-mech-material:1;
+                                          a cas-mech:MechanicalComponent;
+                                          rdfs:label "Bracket Flat".
+cas-mech-mechanicalComponent:SHCS-6-32-x-0-75 cas-mech:MechanicalComponent_madeOf_Material cas-mech-material:;
+                                              a cas-mech:MechanicalComponent;
+                                              rdfs:label "SHCS 6-32 x 0.75".
+cas-mech-paintingCoating:PTFA-coating-contact-face dc:identifier "1";
+                                                   cas-mech:PaintingCoating_madeOf_Material cas-mech-material:2;
+                                                   :number "PTFA coating contact face";
+                                                   a cas-mech:PaintingCoating;
+                                                   rdfs:label "PTFA coating contact face".
+cas-mech-substance:Aluminium dc:identifier "Al";
+                             dc:title "Aluminium"@de,
+                                      "Aluminium"@en;
+                             :number "Al";
+                             a cas-mech:Substance;
+                             rdfs:label "Al",
+                                        "Aluminium"@de,
+                                        "Aluminium"@en.
+cas-mech-substance:Carbon dc:identifier "C";
+                          dc:title "Kohlenstoff"@de,
+                                   "Carbon"@en;
+                          :number "C";
+                          a cas-mech:Substance;
+                          rdfs:label "C",
+                                     "Kohlenstoff"@de,
+                                     "Carbon"@en.
+cas-mech-substance:Chromium dc:identifier "Cr";
+                            dc:title "Chrom"@de,
+                                     "Chromium"@en;
+                            :number "Cr";
+                            a cas-mech:Substance;
+                            rdfs:label "Cr",
+                                       "Chrom"@de,
+                                       "Chromium"@en.
+cas-mech-substance:Copper dc:identifier "Cu";
+                          dc:title "Kupfer"@de,
+                                   "Copper"@en;
+                          :number "Cu";
+                          a cas-mech:Substance;
+                          rdfs:label "Cu",
+                                     "Kupfer"@de,
+                                     "Copper"@en.
+cas-mech-substance:Iron dc:identifier "Fe";
+                        dc:title "Eisen"@de,
+                                 "Iron"@en;
+                        :number "Fe";
+                        a cas-mech:Substance;
+                        rdfs:label "Fe",
+                                   "Eisen"@de,
+                                   "Iron"@en.
+cas-mech-substance:Magnesium dc:identifier "Mg";
+                             dc:title "Magnesium"@de,
+                                      "Magnesium"@en;
+                             :number "Mg";
+                             a cas-mech:Substance;
+                             rdfs:label "Mg",
+                                        "Magnesium"@de,
+                                        "Magnesium"@en.
+cas-mech-substance:Manganese dc:identifier "Mn";
+                             dc:title "Mangan"@de,
+                                      "Manganese"@en;
+                             :number "Mn";
+                             a cas-mech:Substance;
+                             rdfs:label "Mn",
+                                        "Mangan"@de,
+                                        "Manganese"@en.
+cas-mech-substance:Silicon dc:identifier "Si";
+                           dc:title "Silizium"@de,
+                                    "Silicon"@en;
+                           :number "Si";
+                           a cas-mech:Substance;
+                           rdfs:label "Si",
+                                      "Silizium"@de,
+                                      "Silicon"@en.
+cas-mech-substance:Titanium dc:identifier "Ti";
+                            dc:title "Titan"@de,
+                                     "Titanium"@en;
+                            :number "Ti";
+                            a cas-mech:Substance;
+                            rdfs:label "Ti",
+                                       "Titan"@de,
+                                       "Titanium"@en.
+cas-mech-substance:Zinc dc:identifier "Zn";
+                        dc:title "Zink"@de,
+                                 "Zinc"@en;
+                        :number "Zn";
+                        a cas-mech:Substance;
+                        rdfs:label "Zn",
+                                   "Zink"@de,
+                                   "Zinc"@en.

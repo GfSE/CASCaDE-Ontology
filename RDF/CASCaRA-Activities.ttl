@@ -1,7 +1,5 @@
-# baseURI: http://www.omg.org/spec/CASCaRA/ontology/
 # imports: http://www.omg.org/spec/CASCaRA/metamodel/
 
-@base <http://www.omg.org/spec/CASCaRA/ontology/> .
 @prefix : <http://www.omg.org/spec/CASCaRA/ontology/> .
 @prefix arch: <http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/> .
 @prefix cas-meta: <http://www.omg.org/spec/CASCaRA/metamodel/> .
@@ -36,37 +34,37 @@
 	rdfs:label "Process Ontology" ;
 	dcterms:abstract "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice." ;
 	dcterms:contributor
-		"Andreas Mueller, Schaeffler Technologies AG & Co. KG" ,
-		"Atsushi Hashimoto, JAXA" ,
-		"Daniel Krems, AVL List" ,
-		"Dominik Schopper, Mercedes-Benz" ,
-		"Dr. Christian Grünwald, Volkswagen AG" ,
-		"Dr. Momme Stürken, Schaeffler Technologies AG & Co. KG" ,
-		"Dr. Oliver Klaar, ZF Friedrichshafen AG" ,
-		"Dr. Oskar von Dungern, enso managers" ,
-		"Elisa Kendall, Thematix Partners" ,
-		"James Martin, Anark" ,
-		"Joachim Engelhardt, Sodius Willert" ,
-		"Joe Marvin, PSG Prime Solutions Group" ,
-		"Johan Nielsen, Elysium" ,
-		"José Maria Alvarez Rodriguez, UC3 Madrid" ,
-		"Juan Carlos Mendo, The Boeing Corporation" ,
-		"Manfred Harms, Manfred Harms Consulting" ,
-		"Massimo Baleani, RTX Technologies" ,
-		"Michael Kirsch, :em engineering methods AG" ,
-		"Nico Meyer, Volkswagen AG" ,
-		"Pete Rivett, Federated Knowledge, LLC " ,
-		"René Bielert, Dr.-Ing. h.c. F. Porsche" ,
-		"Robert Klöppner, MTU Aero Engines AG" ,
-		"Sebastian Dörr, CONWEAVER GmbH" ,
-		"Serkan Arslan, INOMIC Solutions" ,
-		"Stefan Gliniorz, Bosch" ,
-		"Torsten Schmied, PROSTEP AG" ,
-		"Uwe Kaufmann, ModelAlchemy Consulting" ,
-		"William Beavin, The Boeing Corporation" ,
-		"Zirui Li, TU Ilmenau"
+		"Alvarez Rodriguez, José Maria, UC3 Madrid" ,
+		"Arslan, Serkan, INOMIC Solutions" ,
+		"Baleani, Massimo, RTX Technologies" ,
+		"Beavin, William, The Boeing Corporation" ,
+		"Bielert, René, Dr.-Ing. h.c. F. Porsche" ,
+		"Dörr, Sebastian, CONWEAVER GmbH" ,
+		"Engelhardt, Joachim, Sodius Willert" ,
+		"Gliniorz, Stefan, Bosch" ,
+		"Grünwald, Dr. Christian, Volkswagen AG" ,
+		"Harms, Manfred, Manfred Harms Consulting" ,
+		"Hashimoto, Atsushi, JAXA" ,
+		"Kaufmann, Uwe, ModelAlchemy Consulting" ,
+		"Kendall, Elisa, Thematix Partners" ,
+		"Kirsch, Michael, :em engineering methods AG" ,
+		"Klaar, Dr. Oliver, ZF Friedrichshafen AG" ,
+		"Klöppner, Robert, MTU Aero Engines AG" ,
+		"Krems, Daniel, AVL List" ,
+		"Li, Zirui, TU Ilmenau" ,
+		"Martin, James, Anark" ,
+		"Marvin, Joe, PSG Prime Solutions Group" ,
+		"Mendo, Juan Carlos, The Boeing Corporation" ,
+		"Meyer, Nico, Volkswagen AG" ,
+		"Mueller, Andreas, Schaeffler Technologies AG & Co. KG" ,
+		"Nielsen, Johan, Elysium" ,
+		"Rivett, Pete, Federated Knowledge, LLC " ,
+		"Schmied, Torsten, PROSTEP AG" ,
+		"Schopper, Dominik, Mercedes-Benz" ,
+		"Stürken, Dr. Momme, Schaeffler Technologies AG & Co. KG" ,
+		"von Dungern, Dr. Oskar, enso managers"
 		;
-	dcterms:created "01.04.2026 06:35:53" ;
+	dcterms:created "16.05.2026 20:38:09" ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 Aerospace Corp.
@@ -150,7 +148,6 @@ For the Digital Data Package, model-based methods and data for product conceptua
 	prov:used
 		proc:JoiningProcess ,
 		arch:Function ,
-		arch:FunctionFailure ,
 		arch:StakeholderRequirement ,
 		arch:SystemRequirement ,
 		mech:Body ,
@@ -163,6 +160,7 @@ For the Digital Data Package, model-based methods and data for product conceptua
 		sys:ComponentConnection ,
 		sys:ComponentInterface ,
 		sys:ComponentState ,
+		sys:Deviation ,
 		sys:SystemComponent ,
 		val:Displacement ,
 		val:ValidationResult ,
@@ -226,7 +224,7 @@ mnf:PartsManufacturing
 		mech:Material ,
 		mech:MechanicalComponent ,
 		mech:ModelView ,
-		mech:PaintingCoating ,
+		mech:PaintedCoatedArea ,
 		mech:SurfaceTexture ,
 		mech:Thread
 		;
@@ -317,7 +315,7 @@ Mechanical design is usually conducted using a mechanical CAD system."""@en ;
 		mech:MarkingLabeling ,
 		mech:Material ,
 		mech:MechanicalComponent ,
-		mech:PaintingCoating ,
+		mech:PaintedCoatedArea ,
 		mech:SurfaceTexture ,
 		mech:Thread
 		;
@@ -376,10 +374,10 @@ con:FunctionalSafety
 		;
 	prov:generated
 		arch:Function ,
-		arch:FunctionFailure ,
 		sys:ComponentConnection ,
 		sys:ComponentInterface ,
 		sys:ComponentState ,
+		sys:Deviation ,
 		sys:SystemComponent
 		;
 	prov:used
@@ -420,10 +418,10 @@ con:SystemsArchitecture
 	skos:definition "Systems architecture refers to the cross-domain definition of functions and logical structures at systems level, that will be pursued in detail by the individual domains mechanical design, electric/electronic design and software design."@en ;
 	prov:generated
 		arch:Function ,
-		arch:FunctionFailure ,
 		sys:ComponentConnection ,
 		sys:ComponentInterface ,
 		sys:ComponentState ,
+		sys:Deviation ,
 		sys:SystemComponent
 		;
 	prov:used
@@ -433,7 +431,7 @@ con:SystemsArchitecture
 		;
 	.
 
-<ProductDevelopment/ProductDesign/ElectricalElectronicalDesign>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/ProductDesign/ElectricalElectronicalDesign>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -462,7 +460,7 @@ Electrical/Electronic Design is usually performed using an electrical/electronic
 		;
 	.
 
-<ProductDevelopment/ProductDesign/ElectricalMechanicalDesignCollaboration>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/ProductDesign/ElectricalMechanicalDesignCollaboration>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -495,7 +493,7 @@ mec:DefineJoiningElements
 		;
 	.
 
-<ProductDevelopment/ProductDesign/SoftwareEngineering>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/ProductDesign/SoftwareEngineering>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -527,7 +525,7 @@ For configuration reasons it may be that software is treated a part to be consid
 		;
 	.
 
-<ProductDevelopment/VerificationValidationUsingSimulation/PerformAndDocumentSimulation>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/VerificationValidationUsingSimulation/PerformAndDocumentSimulation>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -552,7 +550,7 @@ For configuration reasons it may be that software is treated a part to be consid
 		;
 	.
 
-<ProductDevelopment/VerificationValidationUsingSimulation/PlanAndPrepareSimulation>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/VerificationValidationUsingSimulation/PlanAndPrepareSimulation>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -597,7 +595,7 @@ For configuration reasons it may be that software is treated a part to be consid
 		mech:MarkingLabeling ,
 		mech:Material ,
 		mech:MechanicalComponent ,
-		mech:PaintingCoating ,
+		mech:PaintedCoatedArea ,
 		mech:SurfaceTexture ,
 		mech:Thread ,
 		sw:SoftwareClass ,
@@ -606,7 +604,7 @@ For configuration reasons it may be that software is treated a part to be consid
 		;
 	.
 
-<ProductDevelopment/VerificationValidationUsingTest/PerformAndDocumentTesting>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/VerificationValidationUsingTest/PerformAndDocumentTesting>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -630,7 +628,7 @@ For configuration reasons it may be that software is treated a part to be consid
 		;
 	.
 
-<ProductDevelopment/VerificationValidationUsingTest/PrepareTesting>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/VerificationValidationUsingTest/PrepareTesting>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -671,7 +669,7 @@ For configuration reasons it may be that software is treated a part to be consid
 		mech:MarkingLabeling ,
 		mech:Material ,
 		mech:MechanicalComponent ,
-		mech:PaintingCoating ,
+		mech:PaintedCoatedArea ,
 		mech:SurfaceTexture ,
 		mech:Thread ,
 		sw:SoftwareClass ,
@@ -742,7 +740,7 @@ pro:DesignProductLine
 	skos:definition "Includes all phases and activities in the operation phase of a product."@en ;
 	.
 
-<ProductOperation/DisassemblyRecycling>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductOperation/DisassemblyRecycling>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -763,12 +761,12 @@ pro:DesignProductLine
 		mech:JoiningElement ,
 		mech:Material ,
 		mech:MechanicalComponent ,
-		mech:PaintingCoating ,
+		mech:PaintedCoatedArea ,
 		mech:Thread
 		;
 	.
 
-<ProductOperation/MaintenanceService>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductOperation/MaintenanceService>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -795,7 +793,7 @@ pro:DesignProductLine
 		;
 	.
 
-<ProductOperation/ProductUsage>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductOperation/ProductUsage>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -832,7 +830,7 @@ Manufacturing Engineering is based on core industrial engineering and mechanical
 Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 	.
 
-<ProductionDevelopment/CostCalculation>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductionDevelopment/CostCalculation>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -866,13 +864,13 @@ Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 		mech:Material ,
 		mech:MechanicalComponent ,
 		mech:ModelView ,
-		mech:PaintingCoating ,
+		mech:PaintedCoatedArea ,
 		mech:SurfaceTexture ,
 		mech:Thread
 		;
 	.
 
-<ProductionDevelopment/InspectionPlanning>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductionDevelopment/InspectionPlanning>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -886,7 +884,6 @@ Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 		ver:VerificationResource
 		;
 	prov:used
-		arch:FunctionFailure ,
 		ee:ElectricElectronicComponent ,
 		ee:ElectricElectronicConnection ,
 		ee:ElectricElectronicPort ,
@@ -906,13 +903,14 @@ Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 		mech:Material ,
 		mech:MechanicalComponent ,
 		mech:ModelView ,
-		mech:PaintingCoating ,
+		mech:PaintedCoatedArea ,
 		mech:SurfaceTexture ,
-		mech:Thread
+		mech:Thread ,
+		sys:Deviation
 		;
 	.
 
-<ProductionDevelopment/PlantLayout>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductionDevelopment/PlantLayout>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -939,7 +937,7 @@ Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 		;
 	.
 
-<ProductionDevelopment/ProcessPlanning>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductionDevelopment/ProcessPlanning>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -971,13 +969,13 @@ Source: https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume15/ambite01a-html/n
 		mech:Material ,
 		mech:MechanicalComponent ,
 		mech:ModelView ,
-		mech:PaintingCoating ,
+		mech:PaintedCoatedArea ,
 		mech:SurfaceTexture ,
 		mech:Thread
 		;
 	.
 
-<ProductionDevelopment/ToolsEquipmentDesign>
+<http://www.omg.org/spec/CASCaRA/ontology/ProductionDevelopment/ToolsEquipmentDesign>
 	a owl:Class ;
 	rdfs:subClassOf prov:Activity ;
 	rdfs:label
@@ -1006,7 +1004,7 @@ Source: https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume15/ambite01a-html/n
 		mech:Material ,
 		mech:MechanicalComponent ,
 		mech:ModelView ,
-		mech:PaintingCoating ,
+		mech:PaintedCoatedArea ,
 		mech:SurfaceTexture
 		;
 	.

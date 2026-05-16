@@ -1,92 +1,83 @@
-#################################################################
-# Project Metadata
-#################################################################
- 
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-@prefix owl: <http://www.w3.org/2002/07/owl#>.
-@prefix : <http://www.omg.org/spec/CASCaDE/ontology/>.
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dcterms: <http://purl.org/dc/terms/>.
-@prefix pig: <http://www.omg.org/spec/CASCaDE/metamodel/>.
-@prefix dim: <http://www.omg.org/spec/CASCaDE/ontology/Dimensions/>.
-@prefix org: <http://www.omg.org/spec/CASCaDE/ontology/Organization/>.
-@prefix arch: <http://www.omg.org/spec/CASCaDE/ontology/ProductArchitecture/>.
-@prefix sys: <http://www.omg.org/spec/CASCaDE/ontology/ProductDesign/SystemsDesign/>.
-@prefix mech: <http://www.omg.org/spec/CASCaDE/ontology/ProductDesign/MechanicalDesign/>.
-@prefix ee: <http://www.omg.org/spec/CASCaDE/ontology/ProductDesign/ElectricElectronicDesign/>.
-@prefix sw: <http://www.omg.org/spec/CASCaDE/ontology/ProductDesign/SoftwareDesign/>.
-@prefix fld: <http://www.omg.org/spec/CASCaDE/ontology/ProductDesign/Fluids/>.
-@prefix ver: <http://www.omg.org/spec/CASCaDE/ontology/ProductVerification/>.
-@prefix val: <http://www.omg.org/spec/CASCaDE/ontology/ProductValidation/>.
-@prefix mnf: <http://www.omg.org/spec/CASCaDE/ontology/ManufacturingSupplyChain/>.
-@prefix op: <http://www.omg.org/spec/CASCaDE/ontology/Operation/>.
-@prefix ctx: <http://www.omg.org/spec/CASCaDE/ontology/ContextElements/>.
- 
-:CascadeMetamodel rdf:type owl:Ontology ;
-	rdfs:label "Project 'Very Simple Model (FMC) with Requirements'" ;
-	owl:imports <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ,
-<http://www.w3.org/2000/01/rdf-schema#> ;
-	dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-	dcterms:createdAt "2025-09-23T17:04:20.888Z" .
+@prefix : <http://www.omg.org/spec/CASCaRA/metamodel/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dim: <http://www.omg.org/spec/CASCaRA/metamodel/Dimensions/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-#################################################################
-### META-ONTOLOGY = PIG Metamodel (pig:)
-#################################################################
+<http://www.omg.org/spec/CASCaRA/metamodel/>
+	a owl:Ontology ;
+	rdfs:label
+		"Metamodel" ,
+		"Metamodel Shapes Graph"
+		;
+	dcterms:abstract """The CASCaRA metamodel provides a definition of meta entities.
+Note that this version of the metamodel is in development and may be subject to modifications without notice.""" ;
+	dcterms:contributor
+		"Andreas Mueller, Schaeffler Technologies AG & Co. KG" ,
+		"Dr. Oskar von Dungern, enso managers" ,
+		"Massimo Baleani, RTX Technologies" ,
+		"Michael Kirsch, :em engineering methods AG" ,
+		"Torsten Schmied, PROSTEP AG" ,
+		"Uwe Kaufmann, ModelAlchemy Consulting" ,
+		"William Beavin, The Boeing Corporation"
+		;
+	dcterms:created "03.03.2026 16:25:20" ;
+	dcterms:license """Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+The software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
+https://opensource.org/licenses/MIT""" ;
+	dcterms:title
+		"CASCaRA Metamodel" ,
+		"CASCaRA Metamodel Shapes Graph"
+		;
+	owl:versionInfo "1.0" ;
+	.
 
-pig:Organizer
-	rdf:type owl:Class ;
-	rdfs:label "Organizer" ;
-	rdfs:comment "A PIG meta-model element used for organizing model-elements." .
+:Entity
+	a owl:Class ;
+	rdfs:label "Entity"@en ;
+	skos:definition "Represents a entity class in the CASCaRA ontology"@en ;
+	.
 
-pig:Entity
-	rdf:type owl:Class ;
-	rdfs:label "Entity" ;
-	rdfs:comment "A PIG meta-model element used for entities (aka resources or artifacts)." .
+:Entity_Shape
+	a <http://www.w3.org/ns/shacl#NodeShape> ;
+	<http://www.w3.org/ns/shacl#targetClass> :Entity ;
+	.
 
-pig:Relationship
-	rdf:type owl:Class ;
-	rdfs:label "Relationship" ;
-	rdfs:comment "A PIG meta-model element used for reified relationships (aka predicates)." .
+:Organizer
+	a owl:Class ;
+	rdfs:label "Organizer"@en ;
+	.
 
-pig:eligibleSource
-	rdf:type owl:ObjectProperty ;
-	rdfs:domain pig:Relationship ;
-	rdfs:range pig:Entity ;
-	rdfs:label "has source" ;
-	rdfs:comment "Connects the source of a reified relationship." .
+:Organizer_Shape
+	a <http://www.w3.org/ns/shacl#NodeShape> ;
+	<http://www.w3.org/ns/shacl#targetClass> :Organizer ;
+	.
 
-pig:eligibleTarget
-	rdf:type owl:ObjectProperty ;
-	rdfs:domain pig:Relationship ;
-	rdfs:range pig:Entity ;
-	rdfs:label "has target" ;
-	rdfs:comment "Connects the target of a reified relationship." .
+:Relationship
+	a owl:Class ;
+	rdfs:label "Relationship"@en ;
+	skos:definition "Represents a relationship between entities using re-ification"@en ;
+	.
 
-pig:eligibleElement
-	rdf:type owl:ObjectProperty ;
-	rdfs:domain pig:Organizer ;
-	rdfs:range [ owl:unionOf( pig:Entity pig:Relationship pig:Organizer )] ;
-	rdfs:label "has element" ;
-	rdfs:comment "References an entity, a relationship or a subordinated organizer." .
+:Relationship_Shape
+	a <http://www.w3.org/ns/shacl#NodeShape> ;
+	<http://www.w3.org/ns/shacl#targetClass> :Relationship ;
+	.
 
-pig:lists
-	rdfs:subPropertyOf pig:eligibleElement ;
-	rdfs:domain pig:Outline ;
-	rdfs:label "lists" ;
-	rdfs:comment "Lists (references) an entity, a relationship or a subordinated organizer." .
+:View
+	a owl:Class ;
+	rdfs:label "View"@en ;
+	skos:definition "Represents view of a model, using a certain notation, showing selected model entities."@en ;
+	.
 
-pig:shows
-	rdfs:subPropertyOf pig:eligibleElement ;
-	rdfs:domain pig:View ;
-	rdfs:range [ owl:unionOf( pig:Entity pig:Relationship )] ;
-	rdfs:label "shows" ;
-	rdfs:comment "Shows (references) an entity or a relationship." .
+:View_Shape
+	a <http://www.w3.org/ns/shacl#NodeShape> ;
+	<http://www.w3.org/ns/shacl#targetClass> :View ;
+	.
 
-pig:depicts
-	rdfs:subPropertyOf pig:eligibleElement ;
-	rdfs:domain pig:View ;
-	rdfs:range pig:Entity ;
-	rdfs:label "depicts" ;
-	rdfs:comment "Depicts an entity; inverse of uml:ownedDiagram." .

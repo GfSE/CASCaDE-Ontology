@@ -2,7 +2,7 @@
 
 @prefix : <http://www.omg.org/spec/CASCaRA/ontology/> .
 @prefix arch: <http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/> .
-@prefix cas-meta: <http://www.omg.org/spec/CASCaRA/metamodel/> .
+@prefix cas: <http://www.omg.org/spec/CASCaRA/metamodel/> .
 @prefix con: <http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/ConceptDefinition/> .
 @prefix ctx: <http://www.omg.org/spec/CASCaRA/ontology/ContextElements/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
@@ -64,7 +64,7 @@
 		"Stürken, Dr. Momme, Schaeffler Technologies AG & Co. KG" ,
 		"von Dungern, Dr. Oskar, enso managers"
 		;
-	dcterms:created "16.05.2026 20:38:09" ;
+	dcterms:created "20.05.2026 08:00:38" ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 Aerospace Corp.
@@ -125,7 +125,7 @@ https://opensource.org/licenses/MIT""" ;
 
 :ConceptDefinition
 	a owl:Class ;
-	rdfs:subClassOf cas-meta:Entity ;
+	rdfs:subClassOf cas:Entity ;
 	rdfs:label
 		"Concept definition"@en ,
 		"Konzeptdefinition"@de
@@ -172,7 +172,7 @@ For the Digital Data Package, model-based methods and data for product conceptua
 
 :ManufacturingSupplyChain
 	a owl:Class ;
-	rdfs:subClassOf cas-meta:Entity ;
+	rdfs:subClassOf cas:Entity ;
 	rdfs:label
 		"Manufacturing & Supply Chain"@en ,
 		"Produktion & Lieferkette"@de
@@ -278,7 +278,7 @@ mnf:QualityInspection
 
 :MechanicalDesign
 	a owl:Class ;
-	rdfs:subClassOf cas-meta:Entity ;
+	rdfs:subClassOf cas:Entity ;
 	rdfs:label
 		"Mechanical Design"@en ,
 		"Mechanische Konstruktion"@de
@@ -323,7 +323,7 @@ Mechanical design is usually conducted using a mechanical CAD system."""@en ;
 
 :ProductDesign
 	a owl:Class ;
-	rdfs:subClassOf cas-meta:Entity ;
+	rdfs:subClassOf cas:Entity ;
 	rdfs:label
 		"Product Design"@en ,
 		"Produktentwurf"@de
@@ -335,7 +335,7 @@ Product design comprises the domain-specific design processes of mechanical, ele
 
 :ProductDevelopment
 	a owl:Class ;
-	rdfs:subClassOf cas-meta:Entity ;
+	rdfs:subClassOf cas:Entity ;
 	rdfs:label
 		"Product Development"@en ,
 		"Produktentwicklung"@de
@@ -680,7 +680,7 @@ For configuration reasons it may be that software is treated a part to be consid
 
 :ProductLineEngineering
 	a owl:Class ;
-	rdfs:subClassOf cas-meta:Entity ;
+	rdfs:subClassOf cas:Entity ;
 	rdfs:label
 		"Product Line Engineering"@en ,
 		"Produktlinienentwicklung"@de
@@ -731,7 +731,7 @@ pro:DesignProductLine
 
 :ProductOperation
 	a owl:Class ;
-	rdfs:subClassOf cas-meta:Entity ;
+	rdfs:subClassOf cas:Entity ;
 	rdfs:label
 		"Product Operation"@en ,
 		"Produktbetrieb"@de
@@ -819,7 +819,7 @@ pro:DesignProductLine
 
 :ProductionDevelopment
 	a owl:Class ;
-	rdfs:subClassOf cas-meta:Entity ;
+	rdfs:subClassOf cas:Entity ;
 	rdfs:label
 		"Production Development"@en ,
 		"Produktionsentwicklung"@de
@@ -1011,7 +1011,7 @@ Source: https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume15/ambite01a-html/n
 
 :VerificationValidationUsingSimulation
 	a owl:Class ;
-	rdfs:subClassOf cas-meta:Entity ;
+	rdfs:subClassOf cas:Entity ;
 	rdfs:label
 		"Verification & Validation using Simulation"@en ,
 		"Verifikation & Validierung durch Simulation"@de
@@ -1026,7 +1026,7 @@ Description based on: https://en.wikipedia.org/wiki/Modeling_and_simulation, ISO
 
 :VerificationValidationUsingTest
 	a owl:Class ;
-	rdfs:subClassOf cas-meta:Entity ;
+	rdfs:subClassOf cas:Entity ;
 	rdfs:label
 		"Verification & Validation using Test"@en ,
 		"Verifikation & Validierung durch Test"@de

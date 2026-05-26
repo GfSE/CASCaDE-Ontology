@@ -1,83 +1,220 @@
-@prefix : <http://www.omg.org/spec/CASCaRA/metamodel/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dim: <http://www.omg.org/spec/CASCaRA/metamodel/Dimensions/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix prov: <http://www.w3.org/ns/prov/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix cas: <http://www.omg.org/spec/CASCaRA/metamodel/>.
+@prefix prov: <http://www.w3.org/ns/prov/>.
+@prefix dim: <http://www.omg.org/spec/CASCaRA/metamodel/Dimensions/>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
 
 <http://www.omg.org/spec/CASCaRA/metamodel/>
-	a owl:Ontology ;
-	rdfs:label
-		"Metamodel" ,
-		"Metamodel Shapes Graph"
-		;
-	dcterms:abstract """The CASCaRA metamodel provides a definition of meta entities.
-Note that this version of the metamodel is in development and may be subject to modifications without notice.""" ;
-	dcterms:contributor
-		"Andreas Mueller, Schaeffler Technologies AG & Co. KG" ,
-		"Dr. Oskar von Dungern, enso managers" ,
-		"Massimo Baleani, RTX Technologies" ,
-		"Michael Kirsch, :em engineering methods AG" ,
-		"Torsten Schmied, PROSTEP AG" ,
-		"Uwe Kaufmann, ModelAlchemy Consulting" ,
-		"William Beavin, The Boeing Corporation"
-		;
-	dcterms:created "03.03.2026 16:25:20" ;
-	dcterms:license """Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-The software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
-https://opensource.org/licenses/MIT""" ;
-	dcterms:title
-		"CASCaRA Metamodel" ,
-		"CASCaRA Metamodel Shapes Graph"
-		;
-	owl:versionInfo "1.0" ;
-	.
+     dcterms:abstract "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice.";
+     dcterms:contributor "von Dungern, Dr. Oskar, enso managers",
+                         "Kendall, Elisa, Thematix Partners",
+                         "Arslan, Serkan, INOMIC Solutions",
+                         "Marvin, Joe, PSG Prime Solutions Group",
+                         "Alvarez Rodriguez, José Maria, UC3 Madrid",
+                         "Harms, Manfred, Manfred Harms Consulting",
+                         "Kirsch, Michael, :em engineering methods AG",
+                         "Schmied, Torsten, PROSTEP AG",
+                         "Baleani, Massimo, RTX Technologies",
+                         "Mueller, Andreas, Schaeffler Technologies AG & Co. KG",
+                         "Beavin, William, The Boeing Corporation",
+                         "Rivett, Pete, Federated Knowledge, LLC ",
+                         "Kaufmann, Uwe, ModelAlchemy Consulting",
+                         "Li, Zirui, TU Ilmenau",
+                         "Martin, James, Anark",
+                         "Hashimoto, Atsushi, JAXA",
+                         "Krems, Daniel, AVL List",
+                         "Dörr, Sebastian, CONWEAVER GmbH",
+                         "Gliniorz, Stefan, Bosch",
+                         "Schopper, Dominik, Mercedes-Benz",
+                         "Grünwald, Dr. Christian, Volkswagen AG",
+                         "Klaar, Dr. Oliver, ZF Friedrichshafen AG",
+                         "Bielert, René, Dr.-Ing. h.c. F. Porsche",
+                         "Nielsen, Johan, Elysium",
+                         "Klöppner, Robert, MTU Aero Engines AG",
+                         "Meyer, Nico, Volkswagen AG",
+                         "Engelhardt, Joachim, Sodius Willert",
+                         "Stürken, Dr. Momme, Schaeffler Technologies AG & Co. KG",
+                         "Mendo, Juan Carlos, The Boeing Corporation";
+     dcterms:created "25.05.2026 07:16:55";
+     dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
+Copyright (c) 2024-2026 :em engineering methods AG
+Copyright (c) 2024-2026 Aerospace Corp.
+Copyright (c) 2024-2026 Airbus
+Copyright (c) 2024-2026 ATLAS Elektronik
+Copyright (c) 2024-2026 enso managers
+Copyright (c) 2024-2026 Federated Knowledge, LLC 
+Copyright (c) 2024-2026 HSU Helmut Schmidt University
+Copyright (c) 2024-2026 INOMIC Solutions
+Copyright (c) 2024-2026 Manfred Harms Consulting
+Copyright (c) 2024-2026 ModelAlchemy Consulting
+Copyright (c) 2024-2026 Modern Technology Solutions, Inc.
+Copyright (c) 2024-2026 oose
+Copyright (c) 2024-2026 PDES Inc.
+Copyright (c) 2024-2026 PROSTEP AG
+Copyright (c) 2024-2026 PSG Prime Solutions Group
+Copyright (c) 2024-2026 RPTU
+Copyright (c) 2024-2026 RTX Technologies
+Copyright (c) 2024-2026 Schaeffler Technologies AG & Co. KG
+Copyright (c) 2024-2026 The Boeing Corporation
+Copyright (c) 2024-2026 Thematix Partners
+Copyright (c) 2024-2026 TU Hamburg-Harburg
+Copyright (c) 2024-2026 TU Ilmenau
+Copyright (c) 2024-2026 UC3 Madrid
+Copyright (c) 2024-2026 VDA
 
-:Entity
+Digital Data Package Working Group: Defines use-cases and domain ontology as a foundation for CASCaRA
+Copyright (c) 2019-2026 :em engineering methods AG
+Copyright (c) 2019-2020 Airbus Operations GmbH
+Copyright (c) 2019-2026 Anark
+Copyright (c) 2019-2026 AVL List
+Copyright (c) 2022-2026 Bosch
+Copyright (c) 2019-2022 CONWEAVER GmbH
+Copyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche
+Copyright (c) 2019-2026 Elysium
+Copyright (c) 2019-2021 Fraunhofer IESE
+Copyright (c) 2025-2026 INOMIC Solutions
+Copyright (c) 2025-2026 JAXA
+Copyright (c) 2021-2024 John Deere
+Copyright (c) 2019-2021 Kromberg & Schubert
+Copyright (c) 2019-2026 Mercedes-Benz
+Copyright (c) 2024-2026 MTU Aero Engines AG
+Copyright (c) 2019-2026 PROSTEP AG
+Copyright (c) 2025-2026 RTX Technologies
+Copyright (c) 2019-2024 Schaeffler Technologies AG & Co. KG
+Copyright (c) 2025-2026 Sodius Willert
+Copyright (c) 2019-2020 SSC Services
+Copyright (c) 2022-2026 The Boeing Corporation
+Copyright (c) 2022-2026 Volkswagen AG
+Copyright (c) 2019-2026 ZF Friedrichshafen AG
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
+https://opensource.org/licenses/MIT""";
+     dcterms:title "CASCaRA Metamodel";
+     a owl:Ontology;
+     rdfs:label "Metamodel";
+     owl:versionInfo "1.0".
+
+cas:Entity
 	a owl:Class ;
 	rdfs:label "Entity"@en ;
-	skos:definition "Represents a entity class in the CASCaRA ontology"@en ;
-	.
+	skos:definition "A CASCaRA meta-model item used for entities."@en .
 
-:Entity_Shape
-	a <http://www.w3.org/ns/shacl#NodeShape> ;
-	<http://www.w3.org/ns/shacl#targetClass> :Entity ;
-	.
+cas:Entity_Shape
+	a sh:NodeShape ;
+	sh:targetClass cas:Entity ;
+	sh:property [ 
+			sh:path rdfs:label ;
+			sh:minCount 1
+		] ,
+		[ 
+			sh:path rdfs:comment ;
+			sh:minCount 1
+		] .
 
-:Organizer
+cas:Package
 	a owl:Class ;
-	rdfs:label "Organizer"@en ;
-	.
+	rdfs:subClassOf cas:Entity ;
+	rdfs:label "Package"@en ;
+	skos:definition "A CASCaRA meta-model item used for packages comprising entities, relationships and potentially nested packages."@en .
 
-:Organizer_Shape
-	a <http://www.w3.org/ns/shacl#NodeShape> ;
-	<http://www.w3.org/ns/shacl#targetClass> :Organizer ;
-	.
+cas:Package_Shape
+	a sh:NodeShape ;
+	sh:targetClass cas:Package ;
+	sh:property [ 
+			sh:path rdfs:label ;
+			sh:minCount 1
+		] ,
+		[ 
+			sh:path rdfs:comment ;
+			sh:minCount 1
+		] .
 
-:Relationship
+cas:Relationship
 	a owl:Class ;
 	rdfs:label "Relationship"@en ;
-	skos:definition "Represents a relationship between entities using re-ification"@en ;
-	.
+	skos:definition "A CASCaRA meta-model item used for reified relationships (aka predicates)."@en .
 
-:Relationship_Shape
-	a <http://www.w3.org/ns/shacl#NodeShape> ;
-	<http://www.w3.org/ns/shacl#targetClass> :Relationship ;
-	.
+cas:Relationship_Shape
+	a sh:NodeShape ;
+	sh:targetClass cas:Relationship ;
+	sh:property [ 
+			sh:path rdfs:label ;
+			sh:minCount 1
+		] ,
+        [
+            sh:path cas:linksSource ;
+            sh:node cas:linksSource_Shape
+        ] ,
+        [
+            sh:path cas:linksTarget ;
+            sh:node cas:linksTarget_Shape
+        ] .
 
-:View
-	a owl:Class ;
-	rdfs:label "View"@en ;
-	skos:definition "Represents view of a model, using a certain notation, showing selected model entities."@en ;
-	.
+cas:Property
+	a owl:DatatypeProperty ;
+	rdfs:label "Property"@en ;
+	skos:definition "A CASCaRA meta-model item used for properties (aka attributes)."@en .
 
-:View_Shape
-	a <http://www.w3.org/ns/shacl#NodeShape> ;
-	<http://www.w3.org/ns/shacl#targetClass> :View ;
-	.
+cas:Property_Shape
+	a sh:PropertyShape ;
+	sh:path cas:Property ;
+	sh:datatype xsd:anyType .
 
+cas:Link
+	a owl:ObjectProperty ;
+	rdfs:range [ owl:unionOf (
+			cas:Entity
+			cas:Relationship
+		)] ;
+	rdfs:label "linked with"@en ;
+	skos:definition "A PIG meta-model item connecting a reified relationship with its source or target. Also connects an organizer to a model element."@en .
+
+cas:Link_Shape
+	a sh:PropertyShape ;
+	sh:path cas:Link ;
+	sh:or (
+			[ sh:class cas:Entity ]
+			[ sh:class cas:Relationship ]
+		) .
+
+cas:linksSource
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf cas:Link ;
+	rdfs:range [ owl:unionOf (
+			cas:Entity
+			cas:Relationship
+		)] ;
+	rdfs:label "to source"@en ;
+	skos:definition "Connects the source of a reified relationship."@en .
+
+cas:linksSource_Shape
+	a sh:PropertyShape ;
+	sh:path cas:linksSource ;
+	sh:or (
+			[ sh:class cas:Entity ]
+			[ sh:class cas:Relationship ]
+		) .
+
+cas:linksTarget
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf cas:Link ;
+	rdfs:range [ owl:unionOf (
+			cas:Entity
+			cas:Relationship
+		)] ;
+	rdfs:label "to target"@en ;
+	skos:definition "Connects the target of a reified relationship or an organizer."@en .
+
+cas:linksTarget_Shape
+	a sh:PropertyShape ;
+	sh:path cas:linksTarget ;
+	sh:or (
+			[ sh:class cas:Entity ]
+			[ sh:class cas:Relationship ]
+		) .

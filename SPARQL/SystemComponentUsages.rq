@@ -1,0 +1,15 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX cas-sys: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/>
+PREFIX ex: <https://www.em.ag/e8a287e382164f999a6483d1/>
+
+SELECT ?usage ?title
+WHERE {
+    ?usage ?relation ex:SystemComponent_LED_RGB ;
+           dc:title ?title .
+
+    FILTER(?relation IN (
+        cas-sys:instanceOf,
+        cas-sys:typedBy,
+        cas-sys:classifier
+    ))
+}

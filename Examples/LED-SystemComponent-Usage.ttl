@@ -6,98 +6,127 @@
 @prefix : <http://www.omg.org/spec/CASCaRA/ontology/>.
 @prefix cas-org: <http://www.omg.org/spec/CASCaRA/ontology/Organization/>.
 @prefix cas-sys: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/>.
-@prefix e8a287e382164f999a6483d1: <https://www.em.ag/e8a287e382164f999a6483d1/>.
+@prefix afd241ba010d4126b883c188: <https://www.em.ag/afd241ba010d4126b883c188/>.
 
-e8a287e382164f999a6483d1:ComponentInterface_PortIn dc:identifier "EAID_2DC09618_0CFD_4ec4_9B31_1CEB28DC01C1";
-                                                   dc:title "PortIn";
-                                                   :dateTime ""^^xsd:dateTime;
-                                                   :type "uml:Port";
-                                                   a cas-sys:ComponentInterface.
-e8a287e382164f999a6483d1:ComponentInterface_PortOut dc:identifier "EAID_B7BEDAB9_34A8_40f4_A559_DC652A8B35AB";
-                                                    dc:title "PortOut";
-                                                    :dateTime ""^^xsd:dateTime;
-                                                    :type "uml:Port";
-                                                    a cas-sys:ComponentInterface.
-e8a287e382164f999a6483d1:ComponentInterface_alert dc:identifier "EAID_090B6192_51C9_4f40_A098_076B4AA4BE45";
-                                                  dc:title "alert";
-                                                  :dateTime ""^^xsd:dateTime;
-                                                  :type "uml:Port";
-                                                  a cas-sys:ComponentInterface.
-e8a287e382164f999a6483d1:ComponentInterface_config dc:identifier "EAID_12959C6C_1AE0_436a_B8D1_5F77B620A5C9";
-                                                   dc:title "config";
-                                                   :dateTime ""^^xsd:dateTime;
-                                                   :type "uml:Port";
-                                                   a cas-sys:ComponentInterface.
-e8a287e382164f999a6483d1:ComponentInterface_ctrl dc:identifier "EAID_C0B1BB80_E36E_4ab5_9AE4_1D6A7AE3E66C";
-                                                 dc:title "ctrl";
-                                                 :dateTime ""^^xsd:dateTime;
-                                                 :type "uml:Port";
-                                                 a cas-sys:ComponentInterface.
-e8a287e382164f999a6483d1:ComponentInterface_datain dc:identifier "EAID_8BC1A982_93AD_424e_8621_C5AD6B8A2068";
-                                                   dc:title "datain";
-                                                   :dateTime ""^^xsd:dateTime;
-                                                   :type "uml:Port";
-                                                   a cas-sys:ComponentInterface.
-e8a287e382164f999a6483d1:ComponentInterface_dataout dc:identifier "EAID_238AA8D3_C70A_4380_9E81_EBBED3F52BC2";
-                                                    dc:title "dataout";
-                                                    :dateTime ""^^xsd:dateTime;
-                                                    :type "uml:Port";
-                                                    a cas-sys:ComponentInterface.
-e8a287e382164f999a6483d1:ComponentInterface_error_notification dc:identifier "EAID_6A7F8E4B_9C3B_4ad8_908F_2556D24AEA35";
-                                                               dc:title "error_notification";
-                                                               :dateTime ""^^xsd:dateTime;
-                                                               :type "uml:Port";
-                                                               a cas-sys:ComponentInterface.
-e8a287e382164f999a6483d1:ComponentInterface_status dc:identifier "EAID_826A7ACD_EB84_481a_A0C2_B06AB39F904C";
-                                                   dc:title "status";
-                                                   :dateTime ""^^xsd:dateTime;
-                                                   :type "uml:Port";
-                                                   a cas-sys:ComponentInterface.
-e8a287e382164f999a6483d1:Person_Michael_Kirsch cas-org:firstname "Michael";
+afd241ba010d4126b883c188:ComponentInterface_LED_RGB_PortIn dc:identifier "EAID_2DC09618_0CFD_4ec4_9B31_1CEB28DC01C1";
+                                                           dc:title "PortIn";
+                                                           cas-sys:ComponentInterface_partOf_SystemComponent afd241ba010d4126b883c188:SystemComponent_LED_RGB;
+                                                           :dateTime ""^^xsd:dateTime;
+                                                           :parent "LED_RGB";
+                                                           :type "uml:Port";
+                                                           a cas-sys:ComponentInterface.
+afd241ba010d4126b883c188:ComponentInterface_LED_RGB_PortOut dc:identifier "EAID_B7BEDAB9_34A8_40f4_A559_DC652A8B35AB";
+                                                            dc:title "PortOut";
+                                                            cas-sys:ComponentInterface_partOf_SystemComponent afd241ba010d4126b883c188:SystemComponent_LED_RGB;
+                                                            :dateTime ""^^xsd:dateTime;
+                                                            :parent "LED_RGB";
+                                                            :type "uml:Port";
+                                                            a cas-sys:ComponentInterface.
+afd241ba010d4126b883c188:ComponentInterface_LED_RGB_alert dc:identifier "EAID_090B6192_51C9_4f40_A098_076B4AA4BE45";
+                                                          dc:title "alert";
+                                                          cas-sys:ComponentInterface_partOf_SystemComponent afd241ba010d4126b883c188:SystemComponent_LED_RGB;
+                                                          :dateTime ""^^xsd:dateTime;
+                                                          :parent "LED_RGB";
+                                                          :type "uml:Port";
+                                                          a cas-sys:ComponentInterface.
+afd241ba010d4126b883c188:ComponentInterface_LED_RGB_config dc:identifier "EAID_12959C6C_1AE0_436a_B8D1_5F77B620A5C9";
+                                                           dc:title "config";
+                                                           cas-sys:ComponentInterface_partOf_SystemComponent afd241ba010d4126b883c188:SystemComponent_LED_RGB;
+                                                           :dateTime ""^^xsd:dateTime;
+                                                           :parent "LED_RGB";
+                                                           :type "uml:Port";
+                                                           a cas-sys:ComponentInterface.
+afd241ba010d4126b883c188:ComponentInterface_LED_RGB_ctrl dc:identifier "EAID_C0B1BB80_E36E_4ab5_9AE4_1D6A7AE3E66C";
+                                                         dc:title "ctrl";
+                                                         cas-sys:ComponentInterface_partOf_SystemComponent afd241ba010d4126b883c188:SystemComponent_LED_RGB;
+                                                         :dateTime ""^^xsd:dateTime;
+                                                         :parent "LED_RGB";
+                                                         :type "uml:Port";
+                                                         a cas-sys:ComponentInterface.
+afd241ba010d4126b883c188:ComponentInterface_LED_RGB_datain dc:identifier "EAID_8BC1A982_93AD_424e_8621_C5AD6B8A2068";
+                                                           dc:title "datain";
+                                                           cas-sys:ComponentInterface_partOf_SystemComponent afd241ba010d4126b883c188:SystemComponent_LED_RGB;
+                                                           :dateTime ""^^xsd:dateTime;
+                                                           :parent "LED_RGB";
+                                                           :type "uml:Port";
+                                                           a cas-sys:ComponentInterface.
+afd241ba010d4126b883c188:ComponentInterface_LED_RGB_dataout dc:identifier "EAID_238AA8D3_C70A_4380_9E81_EBBED3F52BC2";
+                                                            dc:title "dataout";
+                                                            cas-sys:ComponentInterface_partOf_SystemComponent afd241ba010d4126b883c188:SystemComponent_LED_RGB;
+                                                            :dateTime ""^^xsd:dateTime;
+                                                            :parent "LED_RGB";
+                                                            :type "uml:Port";
+                                                            a cas-sys:ComponentInterface.
+afd241ba010d4126b883c188:ComponentInterface_LED_RGB_error_notification dc:identifier "EAID_6A7F8E4B_9C3B_4ad8_908F_2556D24AEA35";
+                                                                       dc:title "error_notification";
+                                                                       cas-sys:ComponentInterface_partOf_SystemComponent afd241ba010d4126b883c188:SystemComponent_LED_RGB;
+                                                                       :dateTime ""^^xsd:dateTime;
+                                                                       :parent "LED_RGB";
+                                                                       :type "uml:Port";
+                                                                       a cas-sys:ComponentInterface.
+afd241ba010d4126b883c188:ComponentInterface_LED_RGB_status dc:identifier "EAID_826A7ACD_EB84_481a_A0C2_B06AB39F904C";
+                                                           dc:title "status";
+                                                           cas-sys:ComponentInterface_partOf_SystemComponent afd241ba010d4126b883c188:SystemComponent_LED_RGB;
+                                                           :dateTime ""^^xsd:dateTime;
+                                                           :parent "LED_RGB";
+                                                           :type "uml:Port";
+                                                           a cas-sys:ComponentInterface.
+afd241ba010d4126b883c188:Person_Michael_Kirsch cas-org:firstname "Michael";
                                                cas-org:lastname "Kirsch";
                                                a cas-org:Person.
-e8a287e382164f999a6483d1:SystemComponent_CIC_Sample1 dc:identifier "EAPK_F330903D_B08B_47a4_9454_899CD7CE6F45";
+afd241ba010d4126b883c188:SystemComponent_CIC_Sample1 dc:identifier "EAPK_F330903D_B08B_47a4_9454_899CD7CE6F45";
                                                      dc:title "CIC_Sample1";
+                                                     cas-sys:SystemComponent_partOf_SystemComponent afd241ba010d4126b883c188:SystemComponent_EA_Model;
                                                      :dateTime ""^^xsd:dateTime;
                                                      :type "uml:Package";
                                                      a cas-sys:SystemComponent.
-e8a287e382164f999a6483d1:SystemComponent_EA_Model dc:identifier "06451904-bab3-4187-8cab-3cb4c0f2fbb1";
+afd241ba010d4126b883c188:SystemComponent_EA_Model dc:identifier "88c6b7e1-8e20-468a-be38-bedca82e82fc";
                                                   dc:title "EA_Model";
                                                   :dateTime ""^^xsd:dateTime;
                                                   :type "uml:Model";
                                                   a cas-sys:SystemComponent.
-e8a287e382164f999a6483d1:SystemComponent_ExternalComponents_LED_RGB dc:identifier "EAPK_54DF8CBD_F6CD_4636_A50C_8D2E2CD79188";
+afd241ba010d4126b883c188:SystemComponent_ExternalComponents_LED_RGB dc:identifier "EAPK_54DF8CBD_F6CD_4636_A50C_8D2E2CD79188";
                                                                     dc:title "ExternalComponents_LED_RGB";
+                                                                    cas-sys:SystemComponent_partOf_SystemComponent afd241ba010d4126b883c188:SystemComponent_LogicalArchitecture;
                                                                     :dateTime ""^^xsd:dateTime;
                                                                     :type "uml:Package";
                                                                     a cas-sys:SystemComponent.
-e8a287e382164f999a6483d1:SystemComponent_LED_RGB dc:identifier "EAID_38ABC41F_0760_47a8_94A0_0C96E6B2AF05";
+afd241ba010d4126b883c188:SystemComponent_LED_RGB dc:identifier "EAID_38ABC41F_0760_47a8_94A0_0C96E6B2AF05";
                                                  dc:title "LED_RGB";
+                                                 cas-sys:SystemComponent_partOf_SystemComponent afd241ba010d4126b883c188:SystemComponent_ExternalComponents_LED_RGB;
                                                  :dateTime ""^^xsd:dateTime;
                                                  :type "uml:Class";
                                                  a cas-sys:SystemComponent.
-e8a287e382164f999a6483d1:SystemComponent_LED_RGB0 dc:identifier "EAID_E179BD00_1FF1_4e37_B29B_C121A797FB2D";
+afd241ba010d4126b883c188:SystemComponent_LED_RGB0 dc:identifier "EAID_E179BD00_1FF1_4e37_B29B_C121A797FB2D";
                                                   dc:title "LED_RGB(0)";
+                                                  cas-sys:SystemComponent_partOf_SystemComponent afd241ba010d4126b883c188:SystemComponent_Static-RGB-light-module;
+                                                  cas-sys:SystemComponent_usedIn_SystemComponent afd241ba010d4126b883c188:SystemComponent_LED_RGB;
                                                   :dateTime ""^^xsd:dateTime;
                                                   :type "uml:Property";
                                                   a cas-sys:SystemComponent.
-e8a287e382164f999a6483d1:SystemComponent_LED_RGB1 dc:identifier "EAID_CDB5948B_75A8_438b_B638_5F87E23FD33B";
+afd241ba010d4126b883c188:SystemComponent_LED_RGB1 dc:identifier "EAID_CDB5948B_75A8_438b_B638_5F87E23FD33B";
                                                   dc:title "LED_RGB(1)";
+                                                  cas-sys:SystemComponent_partOf_SystemComponent afd241ba010d4126b883c188:SystemComponent_Static-RGB-light-module;
+                                                  cas-sys:SystemComponent_usedIn_SystemComponent afd241ba010d4126b883c188:SystemComponent_LED_RGB;
                                                   :dateTime ""^^xsd:dateTime;
                                                   :type "uml:Property";
                                                   a cas-sys:SystemComponent.
-e8a287e382164f999a6483d1:SystemComponent_LED_RGB2 dc:identifier "EAID_FCF22181_22B4_427a_ABD3_09BBC8BC732C";
+afd241ba010d4126b883c188:SystemComponent_LED_RGB2 dc:identifier "EAID_FCF22181_22B4_427a_ABD3_09BBC8BC732C";
                                                   dc:title "LED_RGB(2)";
+                                                  cas-sys:SystemComponent_partOf_SystemComponent afd241ba010d4126b883c188:SystemComponent_Static-RGB-light-module;
+                                                  cas-sys:SystemComponent_usedIn_SystemComponent afd241ba010d4126b883c188:SystemComponent_LED_RGB;
                                                   :dateTime ""^^xsd:dateTime;
                                                   :type "uml:Property";
                                                   a cas-sys:SystemComponent.
-e8a287e382164f999a6483d1:SystemComponent_LogicalArchitecture dc:identifier "EAPK_69557E16_A042_4c9b_BDD1_D94E981E3B55";
+afd241ba010d4126b883c188:SystemComponent_LogicalArchitecture dc:identifier "EAPK_69557E16_A042_4c9b_BDD1_D94E981E3B55";
                                                              dc:title "LogicalArchitecture";
+                                                             cas-sys:SystemComponent_partOf_SystemComponent afd241ba010d4126b883c188:SystemComponent_CIC_Sample1;
                                                              :dateTime ""^^xsd:dateTime;
                                                              :type "uml:Package";
                                                              a cas-sys:SystemComponent.
-e8a287e382164f999a6483d1:SystemComponent_Static-RGB-light-module dc:identifier "EAID_D1EAD058_886E_4dc7_8D7B_94D3BD1BD271";
+afd241ba010d4126b883c188:SystemComponent_Static-RGB-light-module dc:identifier "EAID_D1EAD058_886E_4dc7_8D7B_94D3BD1BD271";
                                                                  dc:title "Static RGB light module";
+                                                                 cas-sys:SystemComponent_partOf_SystemComponent afd241ba010d4126b883c188:SystemComponent_LogicalArchitecture;
                                                                  :dateTime ""^^xsd:dateTime;
                                                                  :type "uml:Class";
                                                                  a cas-sys:SystemComponent.

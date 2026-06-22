@@ -61,7 +61,7 @@
 		"Stürken, Dr. Momme, Schaeffler Technologies AG & Co. KG" ,
 		"von Dungern, Dr. Oskar, enso managers"
 		;
-	dcterms:created "26.05.2026 06:45:59" ;
+	dcterms:created "09.06.2026 02:57:04" ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 Aerospace Corp.
@@ -148,7 +148,7 @@ dc:identifier
 		"Identifier"@en ,
 		"Identifikator"@de
 		;
-	dcterms:modified "2026-05-12T13:07:09Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-07T09:14:35Z"^^xsd:dateTime ;
 	rdfs:range xsd:string ;
 	skos:definition
 		"Eindeutiger Identifikator des Elements"@de ,
@@ -169,7 +169,7 @@ dc:title
 		"Titel"@de ,
 		"Title"@en
 		;
-	dcterms:modified "2026-04-01T20:28:12Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-07T09:14:38Z"^^xsd:dateTime ;
 	rdfs:range xsd:string ;
 	skos:definition
 		"Titel des Elements"@de ,
@@ -242,7 +242,7 @@ cas-ctx:Change_affects_BendingSpecification_Source_Shape
 	.
 
 cas-ctx:Change_affects_BendingSpecification_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_BendingSpecification ;
 	rdfs:range cas-mech:BendingSpecification ;
 	.
@@ -283,7 +283,7 @@ cas-ctx:Change_affects_Body_Source_Shape
 	.
 
 cas-ctx:Change_affects_Body_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_Body ;
 	rdfs:range cas-mech:Body ;
 	.
@@ -324,7 +324,7 @@ cas-ctx:Change_affects_Cleanliness_Source_Shape
 	.
 
 cas-ctx:Change_affects_Cleanliness_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_Cleanliness ;
 	rdfs:range cas-mech:Cleanliness ;
 	.
@@ -365,7 +365,7 @@ cas-ctx:Change_affects_ComponentConnection_Source_Shape
 	.
 
 cas-ctx:Change_affects_ComponentConnection_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_ComponentConnection ;
 	rdfs:range cas-sys:ComponentConnection ;
 	.
@@ -406,7 +406,7 @@ cas-ctx:Change_affects_Deviation_Source_Shape
 	.
 
 cas-ctx:Change_affects_Deviation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_Deviation ;
 	rdfs:range cas-sys:Deviation ;
 	.
@@ -447,7 +447,7 @@ cas-ctx:Change_affects_Function_Source_Shape
 	.
 
 cas-ctx:Change_affects_Function_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_Function ;
 	rdfs:range cas-arch:Function ;
 	.
@@ -488,7 +488,7 @@ cas-ctx:Change_affects_Gearing_Source_Shape
 	.
 
 cas-ctx:Change_affects_Gearing_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_Gearing ;
 	rdfs:range cas-mech:Gearing ;
 	.
@@ -529,7 +529,7 @@ cas-ctx:Change_affects_HeatTreatedArea_Source_Shape
 	.
 
 cas-ctx:Change_affects_HeatTreatedArea_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_HeatTreatedArea ;
 	rdfs:range cas-mech:HeatTreatedArea ;
 	.
@@ -570,7 +570,7 @@ cas-ctx:Change_affects_Hole_Source_Shape
 	.
 
 cas-ctx:Change_affects_Hole_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_Hole ;
 	rdfs:range cas-mech:Hole ;
 	.
@@ -611,7 +611,7 @@ cas-ctx:Change_affects_JoiningElement_Source_Shape
 	.
 
 cas-ctx:Change_affects_JoiningElement_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_JoiningElement ;
 	rdfs:range cas-mech:JoiningElement ;
 	.
@@ -652,7 +652,7 @@ cas-ctx:Change_affects_KinematicJoint_Source_Shape
 	.
 
 cas-ctx:Change_affects_KinematicJoint_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_KinematicJoint ;
 	rdfs:range cas-mech:KinematicJoint ;
 	.
@@ -693,7 +693,7 @@ cas-ctx:Change_affects_ManufacturingOperation_Source_Shape
 	.
 
 cas-ctx:Change_affects_ManufacturingOperation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_ManufacturingOperation ;
 	rdfs:range cas-proc:ManufacturingOperation ;
 	.
@@ -734,7 +734,7 @@ cas-ctx:Change_affects_MarkingLabeling_Source_Shape
 	.
 
 cas-ctx:Change_affects_MarkingLabeling_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_MarkingLabeling ;
 	rdfs:range cas-mech:MarkingLabeling ;
 	.
@@ -775,7 +775,7 @@ cas-ctx:Change_affects_Material_Source_Shape
 	.
 
 cas-ctx:Change_affects_Material_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_Material ;
 	rdfs:range cas-mech:Material ;
 	.
@@ -816,7 +816,7 @@ cas-ctx:Change_affects_ModelAnnotation_Source_Shape
 	.
 
 cas-ctx:Change_affects_ModelAnnotation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_ModelAnnotation ;
 	rdfs:range cas-mech:ModelAnnotation ;
 	.
@@ -857,7 +857,7 @@ cas-ctx:Change_affects_ModelView_Source_Shape
 	.
 
 cas-ctx:Change_affects_ModelView_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_ModelView ;
 	rdfs:range cas-mech:ModelView ;
 	.
@@ -898,7 +898,7 @@ cas-ctx:Change_affects_PaintedCoatedArea_Source_Shape
 	.
 
 cas-ctx:Change_affects_PaintedCoatedArea_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_PaintedCoatedArea ;
 	rdfs:range cas-mech:PaintedCoatedArea ;
 	.
@@ -939,7 +939,7 @@ cas-ctx:Change_affects_Product_Source_Shape
 	.
 
 cas-ctx:Change_affects_Product_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_Product ;
 	rdfs:range cas-op:Product ;
 	.
@@ -980,7 +980,7 @@ cas-ctx:Change_affects_Requirement_Source_Shape
 	.
 
 cas-ctx:Change_affects_Requirement_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_Requirement ;
 	rdfs:range cas-arch:Requirement ;
 	.
@@ -1021,7 +1021,7 @@ cas-ctx:Change_affects_SystemComponent_Source_Shape
 	.
 
 cas-ctx:Change_affects_SystemComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_SystemComponent ;
 	rdfs:range cas-sys:SystemComponent ;
 	.
@@ -1062,7 +1062,7 @@ cas-ctx:Change_affects_UseCase_Source_Shape
 	.
 
 cas-ctx:Change_affects_UseCase_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_affects_UseCase ;
 	rdfs:range cas-arch:UseCase ;
 	.
@@ -1103,7 +1103,7 @@ cas-ctx:Change_createdBy_Person_Source_Shape
 	.
 
 cas-ctx:Change_createdBy_Person_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_createdBy_Person ;
 	rdfs:range cas-org:Person ;
 	.
@@ -1144,7 +1144,7 @@ cas-ctx:Change_ownedBy_Role_Source_Shape
 	.
 
 cas-ctx:Change_ownedBy_Role_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_ownedBy_Role ;
 	rdfs:range cas-org:Role ;
 	.
@@ -1185,7 +1185,7 @@ cas-ctx:Change_partOf_Change_Source_Shape
 	.
 
 cas-ctx:Change_partOf_Change_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Change_partOf_Change ;
 	rdfs:range cas-ctx:Change ;
 	.
@@ -1255,7 +1255,7 @@ cas-ctx:Configuration_includes_BendingSpecification_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_BendingSpecification_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_BendingSpecification ;
 	rdfs:range cas-mech:BendingSpecification ;
 	.
@@ -1296,7 +1296,7 @@ cas-ctx:Configuration_includes_Body_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_Body_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_Body ;
 	rdfs:range cas-mech:Body ;
 	.
@@ -1337,7 +1337,7 @@ cas-ctx:Configuration_includes_Cleanliness_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_Cleanliness_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_Cleanliness ;
 	rdfs:range cas-mech:Cleanliness ;
 	.
@@ -1378,7 +1378,7 @@ cas-ctx:Configuration_includes_ComponentConnection_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_ComponentConnection_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_ComponentConnection ;
 	rdfs:range cas-sys:ComponentConnection ;
 	.
@@ -1419,7 +1419,7 @@ cas-ctx:Configuration_includes_Deviation_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_Deviation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_Deviation ;
 	rdfs:range cas-sys:Deviation ;
 	.
@@ -1460,7 +1460,7 @@ cas-ctx:Configuration_includes_Function_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_Function_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_Function ;
 	rdfs:range cas-arch:Function ;
 	.
@@ -1501,7 +1501,7 @@ cas-ctx:Configuration_includes_Gearing_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_Gearing_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_Gearing ;
 	rdfs:range cas-mech:Gearing ;
 	.
@@ -1542,7 +1542,7 @@ cas-ctx:Configuration_includes_HeatTreatedArea_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_HeatTreatedArea_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_HeatTreatedArea ;
 	rdfs:range cas-mech:HeatTreatedArea ;
 	.
@@ -1583,7 +1583,7 @@ cas-ctx:Configuration_includes_Hole_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_Hole_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_Hole ;
 	rdfs:range cas-mech:Hole ;
 	.
@@ -1624,7 +1624,7 @@ cas-ctx:Configuration_includes_JoiningElement_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_JoiningElement_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_JoiningElement ;
 	rdfs:range cas-mech:JoiningElement ;
 	.
@@ -1665,7 +1665,7 @@ cas-ctx:Configuration_includes_KinematicJoint_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_KinematicJoint_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_KinematicJoint ;
 	rdfs:range cas-mech:KinematicJoint ;
 	.
@@ -1706,7 +1706,7 @@ cas-ctx:Configuration_includes_ManufacturingOperation_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_ManufacturingOperation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_ManufacturingOperation ;
 	rdfs:range cas-proc:ManufacturingOperation ;
 	.
@@ -1747,7 +1747,7 @@ cas-ctx:Configuration_includes_MarkingLabeling_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_MarkingLabeling_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_MarkingLabeling ;
 	rdfs:range cas-mech:MarkingLabeling ;
 	.
@@ -1788,7 +1788,7 @@ cas-ctx:Configuration_includes_Material_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_Material_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_Material ;
 	rdfs:range cas-mech:Material ;
 	.
@@ -1829,7 +1829,7 @@ cas-ctx:Configuration_includes_ModelAnnotation_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_ModelAnnotation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_ModelAnnotation ;
 	rdfs:range cas-mech:ModelAnnotation ;
 	.
@@ -1870,7 +1870,7 @@ cas-ctx:Configuration_includes_ModelView_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_ModelView_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_ModelView ;
 	rdfs:range cas-mech:ModelView ;
 	.
@@ -1911,7 +1911,7 @@ cas-ctx:Configuration_includes_PaintedCoatedArea_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_PaintedCoatedArea_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_PaintedCoatedArea ;
 	rdfs:range cas-mech:PaintedCoatedArea ;
 	.
@@ -1952,7 +1952,7 @@ cas-ctx:Configuration_includes_Product_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_Product_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_Product ;
 	rdfs:range cas-op:Product ;
 	.
@@ -1993,7 +1993,7 @@ cas-ctx:Configuration_includes_Requirement_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_Requirement_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_Requirement ;
 	rdfs:range cas-arch:Requirement ;
 	.
@@ -2034,7 +2034,7 @@ cas-ctx:Configuration_includes_SystemComponent_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_SystemComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_SystemComponent ;
 	rdfs:range cas-sys:SystemComponent ;
 	.
@@ -2075,7 +2075,7 @@ cas-ctx:Configuration_includes_UseCase_Source_Shape
 	.
 
 cas-ctx:Configuration_includes_UseCase_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_includes_UseCase ;
 	rdfs:range cas-arch:UseCase ;
 	.
@@ -2116,7 +2116,7 @@ cas-ctx:Configuration_partOf_Configuration_Source_Shape
 	.
 
 cas-ctx:Configuration_partOf_Configuration_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_partOf_Configuration ;
 	rdfs:range cas-ctx:Configuration ;
 	.
@@ -2157,7 +2157,7 @@ cas-ctx:Configuration_specialismOf_Configuration_Source_Shape
 	.
 
 cas-ctx:Configuration_specialismOf_Configuration_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Configuration_specialismOf_Configuration ;
 	rdfs:range cas-ctx:Configuration ;
 	.
@@ -2226,7 +2226,7 @@ cas-ctx:Reference_partOf_Reference_Source_Shape
 	.
 
 cas-ctx:Reference_partOf_Reference_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Reference_partOf_Reference ;
 	rdfs:range cas-ctx:Reference ;
 	.
@@ -2267,7 +2267,7 @@ cas-ctx:Reference_specialismOf_Reference_Source_Shape
 	.
 
 cas-ctx:Reference_specialismOf_Reference_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Reference_specialismOf_Reference ;
 	rdfs:range cas-ctx:Reference ;
 	.
@@ -2335,7 +2335,7 @@ cas-ctx:Variant_includes_BendingSpecification_Source_Shape
 	.
 
 cas-ctx:Variant_includes_BendingSpecification_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_BendingSpecification ;
 	rdfs:range cas-mech:BendingSpecification ;
 	.
@@ -2376,7 +2376,7 @@ cas-ctx:Variant_includes_Body_Source_Shape
 	.
 
 cas-ctx:Variant_includes_Body_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_Body ;
 	rdfs:range cas-mech:Body ;
 	.
@@ -2417,7 +2417,7 @@ cas-ctx:Variant_includes_Cleanliness_Source_Shape
 	.
 
 cas-ctx:Variant_includes_Cleanliness_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_Cleanliness ;
 	rdfs:range cas-mech:Cleanliness ;
 	.
@@ -2458,7 +2458,7 @@ cas-ctx:Variant_includes_ComponentConnection_Source_Shape
 	.
 
 cas-ctx:Variant_includes_ComponentConnection_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_ComponentConnection ;
 	rdfs:range cas-sys:ComponentConnection ;
 	.
@@ -2499,7 +2499,7 @@ cas-ctx:Variant_includes_Deviation_Source_Shape
 	.
 
 cas-ctx:Variant_includes_Deviation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_Deviation ;
 	rdfs:range cas-sys:Deviation ;
 	.
@@ -2540,7 +2540,7 @@ cas-ctx:Variant_includes_Function_Source_Shape
 	.
 
 cas-ctx:Variant_includes_Function_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_Function ;
 	rdfs:range cas-arch:Function ;
 	.
@@ -2581,7 +2581,7 @@ cas-ctx:Variant_includes_Gearing_Source_Shape
 	.
 
 cas-ctx:Variant_includes_Gearing_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_Gearing ;
 	rdfs:range cas-mech:Gearing ;
 	.
@@ -2622,7 +2622,7 @@ cas-ctx:Variant_includes_HeatTreatedArea_Source_Shape
 	.
 
 cas-ctx:Variant_includes_HeatTreatedArea_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_HeatTreatedArea ;
 	rdfs:range cas-mech:HeatTreatedArea ;
 	.
@@ -2663,7 +2663,7 @@ cas-ctx:Variant_includes_Hole_Source_Shape
 	.
 
 cas-ctx:Variant_includes_Hole_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_Hole ;
 	rdfs:range cas-mech:Hole ;
 	.
@@ -2704,7 +2704,7 @@ cas-ctx:Variant_includes_JoiningElement_Source_Shape
 	.
 
 cas-ctx:Variant_includes_JoiningElement_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_JoiningElement ;
 	rdfs:range cas-mech:JoiningElement ;
 	.
@@ -2745,7 +2745,7 @@ cas-ctx:Variant_includes_KinematicJoint_Source_Shape
 	.
 
 cas-ctx:Variant_includes_KinematicJoint_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_KinematicJoint ;
 	rdfs:range cas-mech:KinematicJoint ;
 	.
@@ -2786,7 +2786,7 @@ cas-ctx:Variant_includes_ManufacturingOperation_Source_Shape
 	.
 
 cas-ctx:Variant_includes_ManufacturingOperation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_ManufacturingOperation ;
 	rdfs:range cas-proc:ManufacturingOperation ;
 	.
@@ -2827,7 +2827,7 @@ cas-ctx:Variant_includes_MarkingLabeling_Source_Shape
 	.
 
 cas-ctx:Variant_includes_MarkingLabeling_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_MarkingLabeling ;
 	rdfs:range cas-mech:MarkingLabeling ;
 	.
@@ -2868,7 +2868,7 @@ cas-ctx:Variant_includes_Material_Source_Shape
 	.
 
 cas-ctx:Variant_includes_Material_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_Material ;
 	rdfs:range cas-mech:Material ;
 	.
@@ -2909,7 +2909,7 @@ cas-ctx:Variant_includes_ModelAnnotation_Source_Shape
 	.
 
 cas-ctx:Variant_includes_ModelAnnotation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_ModelAnnotation ;
 	rdfs:range cas-mech:ModelAnnotation ;
 	.
@@ -2950,7 +2950,7 @@ cas-ctx:Variant_includes_ModelView_Source_Shape
 	.
 
 cas-ctx:Variant_includes_ModelView_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_ModelView ;
 	rdfs:range cas-mech:ModelView ;
 	.
@@ -2991,7 +2991,7 @@ cas-ctx:Variant_includes_PaintedCoatedArea_Source_Shape
 	.
 
 cas-ctx:Variant_includes_PaintedCoatedArea_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_PaintedCoatedArea ;
 	rdfs:range cas-mech:PaintedCoatedArea ;
 	.
@@ -3032,7 +3032,7 @@ cas-ctx:Variant_includes_Product_Source_Shape
 	.
 
 cas-ctx:Variant_includes_Product_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_Product ;
 	rdfs:range cas-op:Product ;
 	.
@@ -3073,7 +3073,7 @@ cas-ctx:Variant_includes_Requirement_Source_Shape
 	.
 
 cas-ctx:Variant_includes_Requirement_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_Requirement ;
 	rdfs:range cas-arch:Requirement ;
 	.
@@ -3114,7 +3114,7 @@ cas-ctx:Variant_includes_SystemComponent_Source_Shape
 	.
 
 cas-ctx:Variant_includes_SystemComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_SystemComponent ;
 	rdfs:range cas-sys:SystemComponent ;
 	.
@@ -3155,7 +3155,7 @@ cas-ctx:Variant_includes_UseCase_Source_Shape
 	.
 
 cas-ctx:Variant_includes_UseCase_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_includes_UseCase ;
 	rdfs:range cas-arch:UseCase ;
 	.
@@ -3196,7 +3196,7 @@ cas-ctx:Variant_partOf_Variant_Source_Shape
 	.
 
 cas-ctx:Variant_partOf_Variant_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_partOf_Variant ;
 	rdfs:range cas-ctx:Variant ;
 	.
@@ -3237,7 +3237,7 @@ cas-ctx:Variant_specialismOf_Variant_Source_Shape
 	.
 
 cas-ctx:Variant_specialismOf_Variant_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ctx:Variant_specialismOf_Variant ;
 	rdfs:range cas-ctx:Variant ;
 	.
@@ -3406,7 +3406,7 @@ cas-proc:AssemblyOperation_adds_MechanicalComponent_Source_Shape
 	.
 
 cas-proc:AssemblyOperation_adds_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-proc:AssemblyOperation_adds_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -3518,7 +3518,7 @@ cas-proc:ManufacturingOperation_appliesTo_MechanicalComponent_Source_Shape
 	.
 
 cas-proc:ManufacturingOperation_appliesTo_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-proc:ManufacturingOperation_appliesTo_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -3559,7 +3559,7 @@ cas-proc:ManufacturingOperation_createdBy_Person_Source_Shape
 	.
 
 cas-proc:ManufacturingOperation_createdBy_Person_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-proc:ManufacturingOperation_createdBy_Person ;
 	rdfs:range cas-org:Person ;
 	.
@@ -3600,7 +3600,7 @@ cas-proc:ManufacturingOperation_follows_ManufacturingOperation_Source_Shape
 	.
 
 cas-proc:ManufacturingOperation_follows_ManufacturingOperation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-proc:ManufacturingOperation_follows_ManufacturingOperation ;
 	rdfs:range cas-proc:ManufacturingOperation ;
 	.
@@ -3641,7 +3641,7 @@ cas-proc:ManufacturingOperation_ownedBy_Plant_Source_Shape
 	.
 
 cas-proc:ManufacturingOperation_ownedBy_Plant_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-proc:ManufacturingOperation_ownedBy_Plant ;
 	rdfs:range cas-org:Plant ;
 	.
@@ -3682,7 +3682,7 @@ cas-proc:ManufacturingOperation_ownedBy_Role_Source_Shape
 	.
 
 cas-proc:ManufacturingOperation_ownedBy_Role_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-proc:ManufacturingOperation_ownedBy_Role ;
 	rdfs:range cas-org:Role ;
 	.
@@ -3723,7 +3723,7 @@ cas-proc:ManufacturingOperation_partOf_ManufacturingOperation_Source_Shape
 	.
 
 cas-proc:ManufacturingOperation_partOf_ManufacturingOperation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-proc:ManufacturingOperation_partOf_ManufacturingOperation ;
 	rdfs:range cas-proc:ManufacturingOperation ;
 	.
@@ -3764,7 +3764,7 @@ cas-proc:ManufacturingOperation_specialismOf_ManufacturingOperation_Source_Shape
 	.
 
 cas-proc:ManufacturingOperation_specialismOf_ManufacturingOperation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-proc:ManufacturingOperation_specialismOf_ManufacturingOperation ;
 	rdfs:range cas-proc:ManufacturingOperation ;
 	.
@@ -3805,7 +3805,7 @@ cas-proc:ManufacturingOperation_specifiedBy_Reference_Source_Shape
 	.
 
 cas-proc:ManufacturingOperation_specifiedBy_Reference_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-proc:ManufacturingOperation_specifiedBy_Reference ;
 	rdfs:range cas-ctx:Reference ;
 	.
@@ -3846,7 +3846,7 @@ cas-proc:ManufacturingOperation_usedIn_ManufacturingOperation_Source_Shape
 	.
 
 cas-proc:ManufacturingOperation_usedIn_ManufacturingOperation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-proc:ManufacturingOperation_usedIn_ManufacturingOperation ;
 	rdfs:range cas-proc:ManufacturingOperation ;
 	.
@@ -3887,7 +3887,7 @@ cas-proc:ManufacturingOperation_uses_ManufacturingEquipmentComponent_Source_Shap
 	.
 
 cas-proc:ManufacturingOperation_uses_ManufacturingEquipmentComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-proc:ManufacturingOperation_uses_ManufacturingEquipmentComponent ;
 	rdfs:range cas-mnf:ManufacturingEquipmentComponent ;
 	.
@@ -3993,7 +3993,7 @@ cas-op:OperationIncident_createdBy_Person_Source_Shape
 	.
 
 cas-op:OperationIncident_createdBy_Person_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-op:OperationIncident_createdBy_Person ;
 	rdfs:range cas-org:Person ;
 	.
@@ -4034,7 +4034,7 @@ cas-op:OperationIncident_ownedBy_Actor_Source_Shape
 	.
 
 cas-op:OperationIncident_ownedBy_Actor_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-op:OperationIncident_ownedBy_Actor ;
 	rdfs:range cas-org:Actor ;
 	.
@@ -4104,7 +4104,7 @@ cas-op:Product_createdBy_Person_Source_Shape
 	.
 
 cas-op:Product_createdBy_Person_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-op:Product_createdBy_Person ;
 	rdfs:range cas-org:Person ;
 	.
@@ -4145,7 +4145,7 @@ cas-op:Product_ownedBy_Actor_Source_Shape
 	.
 
 cas-op:Product_ownedBy_Actor_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-op:Product_ownedBy_Actor ;
 	rdfs:range cas-org:Actor ;
 	.
@@ -4186,7 +4186,7 @@ cas-op:Product_partOf_Product_Source_Shape
 	.
 
 cas-op:Product_partOf_Product_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-op:Product_partOf_Product ;
 	rdfs:range cas-op:Product ;
 	.
@@ -4227,7 +4227,7 @@ cas-op:Product_specialismOf_Product_Source_Shape
 	.
 
 cas-op:Product_specialismOf_Product_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-op:Product_specialismOf_Product ;
 	rdfs:range cas-op:Product ;
 	.
@@ -4268,7 +4268,7 @@ cas-op:Product_usedIn_Product_Source_Shape
 	.
 
 cas-op:Product_usedIn_Product_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-op:Product_usedIn_Product ;
 	rdfs:range cas-op:Product ;
 	.
@@ -4329,7 +4329,7 @@ cas-org:Actor_locatedIn_Place_Source_Shape
 	.
 
 cas-org:Actor_locatedIn_Place_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-org:Actor_locatedIn_Place ;
 	rdfs:range cas-org:Place ;
 	.
@@ -4346,7 +4346,7 @@ cas-org:Event
 		"Ereignis"@de ,
 		"Event"@en
 		;
-	dcterms:modified "2026-03-20T11:29:13Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-06T18:40:03Z"^^xsd:dateTime ;
 	.
 
 cas-org:Event_Shape
@@ -4389,7 +4389,7 @@ cas-org:Event_locatedIn_Place_Source_Shape
 	.
 
 cas-org:Event_locatedIn_Place_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-org:Event_locatedIn_Place ;
 	rdfs:range cas-org:Place ;
 	.
@@ -4430,7 +4430,7 @@ cas-org:Event_ownedBy_Actor_Source_Shape
 	.
 
 cas-org:Event_ownedBy_Actor_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-org:Event_ownedBy_Actor ;
 	rdfs:range cas-org:Actor ;
 	.
@@ -4471,7 +4471,7 @@ cas-org:Event_partOf_Event_Source_Shape
 	.
 
 cas-org:Event_partOf_Event_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-org:Event_partOf_Event ;
 	rdfs:range cas-org:Event ;
 	.
@@ -4539,7 +4539,7 @@ cas-org:OrganizationUnit_partOf_OrganizationUnit_Source_Shape
 	.
 
 cas-org:OrganizationUnit_partOf_OrganizationUnit_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-org:OrganizationUnit_partOf_OrganizationUnit ;
 	rdfs:range cas-org:OrganizationUnit ;
 	.
@@ -4559,11 +4559,10 @@ cas-org:Person
 		"Person"@de ,
 		"Person"@en
 		;
-	dcterms:modified "2025-12-13T15:12:19Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-07T07:24:09Z"^^xsd:dateTime ;
 	skos:definition
-		"Represents a real person, but may also be a system user that appears in source data. The FOAF (Friend of a Friend) Ontology has been considered, but is not used as it does not provide a structured representation for firstname, lastname and title of a person."@en ,
-		"""Repräsentiert eine natürliche Person, kann aber auch einen System-User repräsentieren, der in Quelldaten erscheint.
-Die FOAF-Ontologie (Friend of a Friend) wurde geprüft, wird aber nicht verwendet, da sie keine strukturierte Darstellung von Vorname, Nachname und Titel einer Person ermöglicht."""@de
+		"Represents a real person, but may also be a system user that appears in source data."@en ,
+		"Repräsentiert eine natürliche Person, kann aber auch einen System-User repräsentieren, der in Quelldaten erscheint."@de
 		;
 	.
 
@@ -4610,7 +4609,7 @@ cas-org:Person_memberOf_OrganizationUnit_Source_Shape
 	.
 
 cas-org:Person_memberOf_OrganizationUnit_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-org:Person_memberOf_OrganizationUnit ;
 	rdfs:range cas-org:OrganizationUnit ;
 	.
@@ -4675,7 +4674,7 @@ cas-org:Place_partOf_Place_Source_Shape
 	.
 
 cas-org:Place_partOf_Place_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-org:Place_partOf_Place ;
 	rdfs:range cas-org:Place ;
 	.
@@ -4788,7 +4787,7 @@ cas-org:Role_partOf_Role_Source_Shape
 	.
 
 cas-org:Role_partOf_Role_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-org:Role_partOf_Role ;
 	rdfs:range cas-org:Role ;
 	.
@@ -4829,7 +4828,7 @@ cas-org:Role_specialismOf_Role_Source_Shape
 	.
 
 cas-org:Role_specialismOf_Role_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-org:Role_specialismOf_Role ;
 	rdfs:range cas-org:Role ;
 	.
@@ -4870,7 +4869,7 @@ cas-org:Role_usedIn_Role_Source_Shape
 	.
 
 cas-org:Role_usedIn_Role_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-org:Role_usedIn_Role ;
 	rdfs:range cas-org:Role ;
 	.
@@ -4890,7 +4889,7 @@ cas-org:Task
 		"Aufgabe"@de ,
 		"Task"@en
 		;
-	dcterms:modified "2026-04-13T11:37:38Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-06T18:40:24Z"^^xsd:dateTime ;
 	skos:definition
 		"A task is a definite piece of work assigned to a person or organisation"@en ,
 		"Eine Aufgabe ist eine definierte Handlung, die einer Person oder Organisation zugewiesen wird."@de
@@ -4933,7 +4932,7 @@ cas-org:Task_createdBy_Person_Source_Shape
 	.
 
 cas-org:Task_createdBy_Person_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-org:Task_createdBy_Person ;
 	rdfs:range cas-org:Person ;
 	.
@@ -5013,7 +5012,7 @@ cas-org:firstname
 		"Firstname"@en ,
 		"Vorname"@de
 		;
-	dcterms:modified "2024-08-05T03:07:35Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-07T21:41:46Z"^^xsd:dateTime ;
 	rdfs:range xsd:string ;
 	skos:definition
 		"First name of the person"@en ,
@@ -5034,7 +5033,7 @@ cas-org:lastname
 		"Lastname"@en ,
 		"Nachname"@de
 		;
-	dcterms:modified "2024-08-05T03:08:41Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-07T21:41:55Z"^^xsd:dateTime ;
 	rdfs:range xsd:string ;
 	skos:definition
 		"Last name of the person"@en ,
@@ -5055,7 +5054,7 @@ cas-org:mail
 		"E-Mail"@de ,
 		"Mail"@en
 		;
-	dcterms:modified "2024-08-03T13:47:12Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-07T21:42:16Z"^^xsd:dateTime ;
 	rdfs:range xsd:string ;
 	skos:definition
 		"E-Mail-Addresse des Akteurs"@de ,
@@ -5076,7 +5075,7 @@ cas-org:phone
 		"Phone"@en ,
 		"Telefon"@de
 		;
-	dcterms:modified "2024-08-03T13:47:42Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-07T21:42:21Z"^^xsd:dateTime ;
 	rdfs:range xsd:string ;
 	skos:definition
 		"Phone number of the actor"@en ,
@@ -5118,7 +5117,7 @@ cas-org:title
 		"Titel"@de ,
 		"Title"@en
 		;
-	dcterms:modified "2024-11-18T06:33:32Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-07T21:42:00Z"^^xsd:dateTime ;
 	rdfs:range xsd:string ;
 	skos:definition
 		"Titel oder akademischer Grad der Person"@de ,
@@ -5216,7 +5215,7 @@ cas-arch:Function_follows_Function_Source_Shape
 	.
 
 cas-arch:Function_follows_Function_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:Function_follows_Function ;
 	rdfs:range cas-arch:Function ;
 	.
@@ -5257,7 +5256,7 @@ cas-arch:Function_ownedBy_Role_Source_Shape
 	.
 
 cas-arch:Function_ownedBy_Role_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:Function_ownedBy_Role ;
 	rdfs:range cas-org:Role ;
 	.
@@ -5294,7 +5293,7 @@ cas-arch:Function_ownedBy_UseCase_Source_Shape
 	.
 
 cas-arch:Function_ownedBy_UseCase_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:Function_ownedBy_UseCase ;
 	rdfs:range cas-arch:UseCase ;
 	.
@@ -5335,7 +5334,7 @@ cas-arch:Function_partOf_Function_Source_Shape
 	.
 
 cas-arch:Function_partOf_Function_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:Function_partOf_Function ;
 	rdfs:range cas-arch:Function ;
 	.
@@ -5376,7 +5375,7 @@ cas-arch:Function_realizes_UseCase_Source_Shape
 	.
 
 cas-arch:Function_realizes_UseCase_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:Function_realizes_UseCase ;
 	rdfs:range cas-arch:UseCase ;
 	.
@@ -5417,7 +5416,7 @@ cas-arch:Function_satisfies_Requirement_Source_Shape
 	.
 
 cas-arch:Function_satisfies_Requirement_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:Function_satisfies_Requirement ;
 	rdfs:range cas-arch:Requirement ;
 	.
@@ -5458,7 +5457,7 @@ cas-arch:Function_specialismOf_Function_Source_Shape
 	.
 
 cas-arch:Function_specialismOf_Function_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:Function_specialismOf_Function ;
 	rdfs:range cas-arch:Function ;
 	.
@@ -5499,7 +5498,7 @@ cas-arch:Function_usedIn_Function_Source_Shape
 	.
 
 cas-arch:Function_usedIn_Function_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:Function_usedIn_Function ;
 	rdfs:range cas-arch:Function ;
 	.
@@ -5540,7 +5539,7 @@ cas-arch:Function_uses_Function_Source_Shape
 	.
 
 cas-arch:Function_uses_Function_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:Function_uses_Function ;
 	rdfs:range cas-arch:Function ;
 	.
@@ -5623,7 +5622,7 @@ cas-arch:Requirement_createdBy_Person_Source_Shape
 	.
 
 cas-arch:Requirement_createdBy_Person_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:Requirement_createdBy_Person ;
 	rdfs:range cas-org:Person ;
 	.
@@ -5660,7 +5659,7 @@ cas-arch:Requirement_derivedFrom_Requirement_Source_Shape
 	.
 
 cas-arch:Requirement_derivedFrom_Requirement_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:Requirement_derivedFrom_Requirement ;
 	rdfs:range cas-arch:Requirement ;
 	.
@@ -5701,7 +5700,7 @@ cas-arch:Requirement_ownedBy_Role_Source_Shape
 	.
 
 cas-arch:Requirement_ownedBy_Role_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:Requirement_ownedBy_Role ;
 	rdfs:range cas-org:Role ;
 	.
@@ -5742,7 +5741,7 @@ cas-arch:Requirement_partOf_Requirement_Source_Shape
 	.
 
 cas-arch:Requirement_partOf_Requirement_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:Requirement_partOf_Requirement ;
 	rdfs:range cas-arch:Requirement ;
 	.
@@ -5783,7 +5782,7 @@ cas-arch:Requirement_relatedTo_SystemComponent_Source_Shape
 	.
 
 cas-arch:Requirement_relatedTo_SystemComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:Requirement_relatedTo_SystemComponent ;
 	rdfs:range cas-sys:SystemComponent ;
 	.
@@ -5824,7 +5823,7 @@ cas-arch:Requirement_satisfies_Requirement_Source_Shape
 	.
 
 cas-arch:Requirement_satisfies_Requirement_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:Requirement_satisfies_Requirement ;
 	rdfs:range cas-arch:Requirement ;
 	.
@@ -5865,7 +5864,7 @@ cas-arch:Requirement_specialismOf_Requirement_Source_Shape
 	.
 
 cas-arch:Requirement_specialismOf_Requirement_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:Requirement_specialismOf_Requirement ;
 	rdfs:range cas-arch:Requirement ;
 	.
@@ -5950,7 +5949,7 @@ cas-arch:SystemBehavior_partOf_SystemBehavior_Source_Shape
 	.
 
 cas-arch:SystemBehavior_partOf_SystemBehavior_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:SystemBehavior_partOf_SystemBehavior ;
 	rdfs:range cas-arch:SystemBehavior ;
 	.
@@ -5991,7 +5990,7 @@ cas-arch:SystemBehavior_usedIn_SystemBehavior_Source_Shape
 	.
 
 cas-arch:SystemBehavior_usedIn_SystemBehavior_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:SystemBehavior_usedIn_SystemBehavior ;
 	rdfs:range cas-arch:SystemBehavior ;
 	.
@@ -6081,7 +6080,7 @@ cas-arch:UseCase_createdBy_Person_Source_Shape
 	.
 
 cas-arch:UseCase_createdBy_Person_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:UseCase_createdBy_Person ;
 	rdfs:range cas-org:Person ;
 	.
@@ -6118,7 +6117,7 @@ cas-arch:UseCase_derivedFrom_UseCase_Source_Shape
 	.
 
 cas-arch:UseCase_derivedFrom_UseCase_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:UseCase_derivedFrom_UseCase ;
 	rdfs:range cas-arch:UseCase ;
 	.
@@ -6159,7 +6158,7 @@ cas-arch:UseCase_ownedBy_Role_Source_Shape
 	.
 
 cas-arch:UseCase_ownedBy_Role_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:UseCase_ownedBy_Role ;
 	rdfs:range cas-org:Role ;
 	.
@@ -6200,7 +6199,7 @@ cas-arch:UseCase_partOf_UseCase_Source_Shape
 	.
 
 cas-arch:UseCase_partOf_UseCase_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:UseCase_partOf_UseCase ;
 	rdfs:range cas-arch:UseCase ;
 	.
@@ -6237,7 +6236,7 @@ cas-arch:UseCase_requires_UseCase_Source_Shape
 	.
 
 cas-arch:UseCase_requires_UseCase_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:UseCase_requires_UseCase ;
 	rdfs:range cas-arch:UseCase ;
 	.
@@ -6278,7 +6277,7 @@ cas-arch:UseCase_specialismOf_UseCase_Source_Shape
 	.
 
 cas-arch:UseCase_specialismOf_UseCase_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-arch:UseCase_specialismOf_UseCase ;
 	rdfs:range cas-arch:UseCase ;
 	.
@@ -6341,7 +6340,7 @@ cas-ee:ElectricElectronicComponent_relatesTo_MechanicalComponent_Source_Shape
 	.
 
 cas-ee:ElectricElectronicComponent_relatesTo_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ee:ElectricElectronicComponent_relatesTo_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -6382,7 +6381,7 @@ cas-ee:ElectricElectronicComponent_usedAtLocationIn_MechanicalComponent_Source_S
 	.
 
 cas-ee:ElectricElectronicComponent_usedAtLocationIn_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ee:ElectricElectronicComponent_usedAtLocationIn_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -6445,7 +6444,7 @@ cas-ee:ElectricElectronicConnection_connects_ElectricElectronicComponent_Source_
 	.
 
 cas-ee:ElectricElectronicConnection_connects_ElectricElectronicComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ee:ElectricElectronicConnection_connects_ElectricElectronicComponent ;
 	rdfs:range cas-ee:ElectricElectronicComponent ;
 	.
@@ -6508,7 +6507,7 @@ cas-ee:ElectricElectronicPort_usedAtLocationIn_MechanicalComponent_Source_Shape
 	.
 
 cas-ee:ElectricElectronicPort_usedAtLocationIn_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ee:ElectricElectronicPort_usedAtLocationIn_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -6571,7 +6570,7 @@ cas-fld:HydraulicPneumaticConnection_connects_MechanicalComponent_Source_Shape
 	.
 
 cas-fld:HydraulicPneumaticConnection_connects_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-fld:HydraulicPneumaticConnection_connects_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -6634,7 +6633,7 @@ cas-fld:HydraulicPneumaticPort_usedAtLocationIn_MechanicalComponent_Source_Shape
 	.
 
 cas-fld:HydraulicPneumaticPort_usedAtLocationIn_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-fld:HydraulicPneumaticPort_usedAtLocationIn_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -6700,7 +6699,7 @@ cas-mech:BendingSpecification_specifiedBy_Reference_Source_Shape
 	.
 
 cas-mech:BendingSpecification_specifiedBy_Reference_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:BendingSpecification_specifiedBy_Reference ;
 	rdfs:range cas-ctx:Reference ;
 	.
@@ -6767,7 +6766,7 @@ cas-mech:Body_dependsOn_Body_Source_Shape
 	.
 
 cas-mech:Body_dependsOn_Body_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Body_dependsOn_Body ;
 	rdfs:range cas-mech:Body ;
 	.
@@ -6808,7 +6807,7 @@ cas-mech:Body_madeOf_Material_Source_Shape
 	.
 
 cas-mech:Body_madeOf_Material_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Body_madeOf_Material ;
 	rdfs:range cas-mech:Material ;
 	.
@@ -6849,7 +6848,7 @@ cas-mech:Body_partOf_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:Body_partOf_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Body_partOf_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -6880,6 +6879,8 @@ cas-mech:Cleanliness_Shape
 		dc:description_Shape ,
 		dc:identifier_Shape ,
 		dc:title_Shape ,
+		cas-mech:particleDensity_Shape ,
+		cas-mech:particleSize_Shape ,
 		:number_Shape ,
 		:type_Shape
 		;
@@ -6913,7 +6914,7 @@ cas-mech:Cleanliness_appliesTo_Body_Source_Shape
 	.
 
 cas-mech:Cleanliness_appliesTo_Body_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Cleanliness_appliesTo_Body ;
 	rdfs:range cas-mech:Body ;
 	.
@@ -6950,7 +6951,7 @@ cas-mech:Cleanliness_appliesTo_Edge_Source_Shape
 	.
 
 cas-mech:Cleanliness_appliesTo_Edge_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Cleanliness_appliesTo_Edge ;
 	rdfs:range cas-mech:Edge ;
 	.
@@ -6987,7 +6988,7 @@ cas-mech:Cleanliness_appliesTo_Face_Source_Shape
 	.
 
 cas-mech:Cleanliness_appliesTo_Face_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Cleanliness_appliesTo_Face ;
 	rdfs:range cas-mech:Face ;
 	.
@@ -7024,7 +7025,7 @@ cas-mech:Cleanliness_appliesTo_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:Cleanliness_appliesTo_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Cleanliness_appliesTo_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -7065,7 +7066,7 @@ cas-mech:Cleanliness_specifiedBy_Reference_Source_Shape
 	.
 
 cas-mech:Cleanliness_specifiedBy_Reference_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Cleanliness_specifiedBy_Reference ;
 	rdfs:range cas-ctx:Reference ;
 	.
@@ -7160,7 +7161,7 @@ cas-mech:Edge_partOf_Body
 		"Edge part of Body"@en ,
 		"Kante Bestandteil von Körper"@de
 		;
-	dcterms:modified "2026-05-12T13:05:54Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-07T09:14:33Z"^^xsd:dateTime ;
 	skos:definition
 		"Parent body"@en ,
 		"Übergeordneter Körper"@de
@@ -7184,7 +7185,7 @@ cas-mech:Edge_partOf_Body_Source_Shape
 	.
 
 cas-mech:Edge_partOf_Body_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Edge_partOf_Body ;
 	rdfs:range cas-mech:Body ;
 	.
@@ -7226,7 +7227,7 @@ cas-mech:Face_partOf_Body
 		"Face part of Body"@en ,
 		"Teilfläche Bestandteil von Körper"@de
 		;
-	dcterms:modified "2026-05-12T13:05:54Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-07T09:14:33Z"^^xsd:dateTime ;
 	skos:definition
 		"Parent body"@en ,
 		"Übergeordneter Körper"@de
@@ -7250,7 +7251,7 @@ cas-mech:Face_partOf_Body_Source_Shape
 	.
 
 cas-mech:Face_partOf_Body_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Face_partOf_Body ;
 	rdfs:range cas-mech:Body ;
 	.
@@ -7314,7 +7315,7 @@ cas-mech:Gearing_appliesTo_Body_Source_Shape
 	.
 
 cas-mech:Gearing_appliesTo_Body_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Gearing_appliesTo_Body ;
 	rdfs:range cas-mech:Body ;
 	.
@@ -7351,7 +7352,7 @@ cas-mech:Gearing_appliesTo_Edge_Source_Shape
 	.
 
 cas-mech:Gearing_appliesTo_Edge_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Gearing_appliesTo_Edge ;
 	rdfs:range cas-mech:Edge ;
 	.
@@ -7388,7 +7389,7 @@ cas-mech:Gearing_appliesTo_Face_Source_Shape
 	.
 
 cas-mech:Gearing_appliesTo_Face_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Gearing_appliesTo_Face ;
 	rdfs:range cas-mech:Face ;
 	.
@@ -7425,7 +7426,7 @@ cas-mech:Gearing_appliesTo_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:Gearing_appliesTo_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Gearing_appliesTo_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -7466,7 +7467,7 @@ cas-mech:Gearing_specifiedBy_Reference_Source_Shape
 	.
 
 cas-mech:Gearing_specifiedBy_Reference_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Gearing_specifiedBy_Reference ;
 	rdfs:range cas-ctx:Reference ;
 	.
@@ -7507,7 +7508,7 @@ cas-mech:Gearing_usedAtLocationIn_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:Gearing_usedAtLocationIn_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Gearing_usedAtLocationIn_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -7574,7 +7575,7 @@ cas-mech:GeometricInterference_interferesWith_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:GeometricInterference_interferesWith_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:GeometricInterference_interferesWith_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -7615,7 +7616,7 @@ cas-mech:GeometricInterference_partOf_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:GeometricInterference_partOf_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:GeometricInterference_partOf_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -7680,7 +7681,7 @@ cas-mech:GeometricTolerance_relatesTo_Datum_Source_Shape
 	.
 
 cas-mech:GeometricTolerance_relatesTo_Datum_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:GeometricTolerance_relatesTo_Datum ;
 	rdfs:range cas-mech:Datum ;
 	.
@@ -7745,7 +7746,7 @@ cas-mech:HeatTreatedArea_appliesTo_Body_Source_Shape
 	.
 
 cas-mech:HeatTreatedArea_appliesTo_Body_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:HeatTreatedArea_appliesTo_Body ;
 	rdfs:range cas-mech:Body ;
 	.
@@ -7782,7 +7783,7 @@ cas-mech:HeatTreatedArea_appliesTo_Edge_Source_Shape
 	.
 
 cas-mech:HeatTreatedArea_appliesTo_Edge_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:HeatTreatedArea_appliesTo_Edge ;
 	rdfs:range cas-mech:Edge ;
 	.
@@ -7819,7 +7820,7 @@ cas-mech:HeatTreatedArea_appliesTo_Face_Source_Shape
 	.
 
 cas-mech:HeatTreatedArea_appliesTo_Face_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:HeatTreatedArea_appliesTo_Face ;
 	rdfs:range cas-mech:Face ;
 	.
@@ -7856,7 +7857,7 @@ cas-mech:HeatTreatedArea_appliesTo_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:HeatTreatedArea_appliesTo_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:HeatTreatedArea_appliesTo_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -7897,7 +7898,7 @@ cas-mech:HeatTreatedArea_applies_HeatTreatment_Source_Shape
 	.
 
 cas-mech:HeatTreatedArea_applies_HeatTreatment_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:HeatTreatedArea_applies_HeatTreatment ;
 	rdfs:range cas-proc:HeatTreatment ;
 	.
@@ -7938,7 +7939,7 @@ cas-mech:HeatTreatedArea_implements_Function_Source_Shape
 	.
 
 cas-mech:HeatTreatedArea_implements_Function_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:HeatTreatedArea_implements_Function ;
 	rdfs:range cas-arch:Function ;
 	.
@@ -7979,7 +7980,7 @@ cas-mech:HeatTreatedArea_specifiedBy_Reference_Source_Shape
 	.
 
 cas-mech:HeatTreatedArea_specifiedBy_Reference_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:HeatTreatedArea_specifiedBy_Reference ;
 	rdfs:range cas-ctx:Reference ;
 	.
@@ -8020,7 +8021,7 @@ cas-mech:HeatTreatedArea_usedIn_HeatTreatedArea_Source_Shape
 	.
 
 cas-mech:HeatTreatedArea_usedIn_HeatTreatedArea_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:HeatTreatedArea_usedIn_HeatTreatedArea ;
 	rdfs:range cas-mech:HeatTreatedArea ;
 	.
@@ -8050,8 +8051,8 @@ cas-mech:Hole_Shape
 	sh:property
 		dc:identifier_Shape ,
 		dc:title_Shape ,
-		cas-mech:diameter_Shape ,
-		cas-mech:length_Shape ,
+		:diameter_Shape ,
+		:length_Shape ,
 		:number_Shape ,
 		:type_Shape
 		;
@@ -8089,7 +8090,7 @@ cas-mech:Hole_implements_Function_Source_Shape
 	.
 
 cas-mech:Hole_implements_Function_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Hole_implements_Function ;
 	rdfs:range cas-arch:Function ;
 	.
@@ -8106,7 +8107,7 @@ cas-mech:Hole_partOf_Body
 		"Bohrung Bestandteil von Körper"@de ,
 		"Hole part of Body"@en
 		;
-	dcterms:modified "2026-05-12T13:05:54Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-07T09:14:33Z"^^xsd:dateTime ;
 	skos:definition
 		"Parent body"@en ,
 		"Übergeordneter Körper"@de
@@ -8130,7 +8131,7 @@ cas-mech:Hole_partOf_Body_Source_Shape
 	.
 
 cas-mech:Hole_partOf_Body_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Hole_partOf_Body ;
 	rdfs:range cas-mech:Body ;
 	.
@@ -8171,7 +8172,7 @@ cas-mech:Hole_specifiedBy_Reference_Source_Shape
 	.
 
 cas-mech:Hole_specifiedBy_Reference_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Hole_specifiedBy_Reference ;
 	rdfs:range cas-ctx:Reference ;
 	.
@@ -8212,7 +8213,7 @@ cas-mech:Hole_usedAtLocationIn_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:Hole_usedAtLocationIn_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Hole_usedAtLocationIn_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -8272,7 +8273,7 @@ cas-mech:JoiningElement_appliesTo_Body_Source_Shape
 	.
 
 cas-mech:JoiningElement_appliesTo_Body_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:JoiningElement_appliesTo_Body ;
 	rdfs:range cas-mech:Body ;
 	.
@@ -8309,7 +8310,7 @@ cas-mech:JoiningElement_appliesTo_Edge_Source_Shape
 	.
 
 cas-mech:JoiningElement_appliesTo_Edge_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:JoiningElement_appliesTo_Edge ;
 	rdfs:range cas-mech:Edge ;
 	.
@@ -8346,7 +8347,7 @@ cas-mech:JoiningElement_appliesTo_Face_Source_Shape
 	.
 
 cas-mech:JoiningElement_appliesTo_Face_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:JoiningElement_appliesTo_Face ;
 	rdfs:range cas-mech:Face ;
 	.
@@ -8383,7 +8384,7 @@ cas-mech:JoiningElement_appliesTo_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:JoiningElement_appliesTo_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:JoiningElement_appliesTo_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -8424,7 +8425,7 @@ cas-mech:JoiningElement_applies_JoiningProcess_Source_Shape
 	.
 
 cas-mech:JoiningElement_applies_JoiningProcess_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:JoiningElement_applies_JoiningProcess ;
 	rdfs:range cas-proc:JoiningProcess ;
 	.
@@ -8465,7 +8466,7 @@ cas-mech:JoiningElement_connects_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:JoiningElement_connects_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:JoiningElement_connects_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -8506,7 +8507,7 @@ cas-mech:JoiningElement_implements_Function_Source_Shape
 	.
 
 cas-mech:JoiningElement_implements_Function_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:JoiningElement_implements_Function ;
 	rdfs:range cas-arch:Function ;
 	.
@@ -8547,7 +8548,7 @@ cas-mech:JoiningElement_madeOf_Material_Source_Shape
 	.
 
 cas-mech:JoiningElement_madeOf_Material_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:JoiningElement_madeOf_Material ;
 	rdfs:range cas-mech:Material ;
 	.
@@ -8588,7 +8589,7 @@ cas-mech:JoiningElement_partOf_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:JoiningElement_partOf_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:JoiningElement_partOf_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -8629,7 +8630,7 @@ cas-mech:JoiningElement_specifiedBy_Reference_Source_Shape
 	.
 
 cas-mech:JoiningElement_specifiedBy_Reference_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:JoiningElement_specifiedBy_Reference ;
 	rdfs:range cas-ctx:Reference ;
 	.
@@ -8670,7 +8671,7 @@ cas-mech:JoiningElement_usedAtLocationIn_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:JoiningElement_usedAtLocationIn_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:JoiningElement_usedAtLocationIn_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -8729,7 +8730,7 @@ cas-mech:KinematicJoint_appliesTo_Body_Source_Shape
 	.
 
 cas-mech:KinematicJoint_appliesTo_Body_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:KinematicJoint_appliesTo_Body ;
 	rdfs:range cas-mech:Body ;
 	.
@@ -8766,7 +8767,7 @@ cas-mech:KinematicJoint_appliesTo_Edge_Source_Shape
 	.
 
 cas-mech:KinematicJoint_appliesTo_Edge_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:KinematicJoint_appliesTo_Edge ;
 	rdfs:range cas-mech:Edge ;
 	.
@@ -8803,7 +8804,7 @@ cas-mech:KinematicJoint_appliesTo_Face_Source_Shape
 	.
 
 cas-mech:KinematicJoint_appliesTo_Face_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:KinematicJoint_appliesTo_Face ;
 	rdfs:range cas-mech:Face ;
 	.
@@ -8840,7 +8841,7 @@ cas-mech:KinematicJoint_appliesTo_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:KinematicJoint_appliesTo_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:KinematicJoint_appliesTo_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -8881,7 +8882,7 @@ cas-mech:KinematicJoint_connects_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:KinematicJoint_connects_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:KinematicJoint_connects_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -8922,7 +8923,7 @@ cas-mech:KinematicJoint_implements_Function_Source_Shape
 	.
 
 cas-mech:KinematicJoint_implements_Function_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:KinematicJoint_implements_Function ;
 	rdfs:range cas-arch:Function ;
 	.
@@ -8963,7 +8964,7 @@ cas-mech:KinematicJoint_partOf_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:KinematicJoint_partOf_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:KinematicJoint_partOf_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -9004,7 +9005,7 @@ cas-mech:KinematicJoint_usedAtLocationIn_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:KinematicJoint_usedAtLocationIn_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:KinematicJoint_usedAtLocationIn_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -9069,7 +9070,7 @@ cas-mech:KinematicMechanism_partOf_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:KinematicMechanism_partOf_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:KinematicMechanism_partOf_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -9135,7 +9136,7 @@ cas-mech:KinematicMotion_involves_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:KinematicMotion_involves_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:KinematicMotion_involves_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -9176,7 +9177,7 @@ cas-mech:KinematicMotion_partOf_KinematicMechanism_Source_Shape
 	.
 
 cas-mech:KinematicMotion_partOf_KinematicMechanism_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:KinematicMotion_partOf_KinematicMechanism ;
 	rdfs:range cas-mech:KinematicMechanism ;
 	.
@@ -9243,7 +9244,7 @@ cas-mech:KinematicSensor_observes_KinematicJoint_Source_Shape
 	.
 
 cas-mech:KinematicSensor_observes_KinematicJoint_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:KinematicSensor_observes_KinematicJoint ;
 	rdfs:range cas-mech:KinematicJoint ;
 	.
@@ -9284,7 +9285,7 @@ cas-mech:KinematicSensor_partOf_KinematicMechanism_Source_Shape
 	.
 
 cas-mech:KinematicSensor_partOf_KinematicMechanism_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:KinematicSensor_partOf_KinematicMechanism ;
 	rdfs:range cas-mech:KinematicMechanism ;
 	.
@@ -9325,7 +9326,7 @@ cas-mech:KinematicSensor_usedAtLocationIn_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:KinematicSensor_usedAtLocationIn_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:KinematicSensor_usedAtLocationIn_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -9384,7 +9385,7 @@ cas-mech:MarkingLabeling_appliesTo_Body_Source_Shape
 	.
 
 cas-mech:MarkingLabeling_appliesTo_Body_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:MarkingLabeling_appliesTo_Body ;
 	rdfs:range cas-mech:Body ;
 	.
@@ -9421,7 +9422,7 @@ cas-mech:MarkingLabeling_appliesTo_Edge_Source_Shape
 	.
 
 cas-mech:MarkingLabeling_appliesTo_Edge_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:MarkingLabeling_appliesTo_Edge ;
 	rdfs:range cas-mech:Edge ;
 	.
@@ -9458,7 +9459,7 @@ cas-mech:MarkingLabeling_appliesTo_Face_Source_Shape
 	.
 
 cas-mech:MarkingLabeling_appliesTo_Face_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:MarkingLabeling_appliesTo_Face ;
 	rdfs:range cas-mech:Face ;
 	.
@@ -9495,7 +9496,7 @@ cas-mech:MarkingLabeling_appliesTo_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:MarkingLabeling_appliesTo_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:MarkingLabeling_appliesTo_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -9536,7 +9537,7 @@ cas-mech:MarkingLabeling_specifiedBy_Reference_Source_Shape
 	.
 
 cas-mech:MarkingLabeling_specifiedBy_Reference_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:MarkingLabeling_specifiedBy_Reference ;
 	rdfs:range cas-ctx:Reference ;
 	.
@@ -9577,7 +9578,7 @@ cas-mech:MarkingLabeling_usedIn_MarkingLabeling_Source_Shape
 	.
 
 cas-mech:MarkingLabeling_usedIn_MarkingLabeling_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:MarkingLabeling_usedIn_MarkingLabeling ;
 	rdfs:range cas-mech:MarkingLabeling ;
 	.
@@ -9654,7 +9655,7 @@ cas-mech:Material_composedOf_Substance_Source_Shape
 	.
 
 cas-mech:Material_composedOf_Substance_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Material_composedOf_Substance ;
 	rdfs:range cas-mech:Substance ;
 	.
@@ -9695,7 +9696,7 @@ cas-mech:Material_specialismOf_Material_Source_Shape
 	.
 
 cas-mech:Material_specialismOf_Material_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Material_specialismOf_Material ;
 	rdfs:range cas-mech:Material ;
 	.
@@ -9736,7 +9737,7 @@ cas-mech:Material_specifiedBy_Reference_Source_Shape
 	.
 
 cas-mech:Material_specifiedBy_Reference_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Material_specifiedBy_Reference ;
 	rdfs:range cas-ctx:Reference ;
 	.
@@ -9800,7 +9801,7 @@ cas-mech:MechanicalComponent_madeOf_Material_Source_Shape
 	.
 
 cas-mech:MechanicalComponent_madeOf_Material_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:MechanicalComponent_madeOf_Material ;
 	rdfs:range cas-mech:Material ;
 	.
@@ -9841,7 +9842,7 @@ cas-mech:MechanicalComponent_usedAtLocationIn_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:MechanicalComponent_usedAtLocationIn_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:MechanicalComponent_usedAtLocationIn_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -9858,7 +9859,7 @@ cas-mech:ModelAnnotation
 		"Model Annotation"@en ,
 		"Modell-Annotation"@de
 		;
-	dcterms:modified "2026-01-28T01:46:44Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-09T00:17:26Z"^^xsd:dateTime ;
 	skos:definition
 		"A text annotation, dimension, tolerance, surface specification, etc. with relation to product geometry"@en ,
 		"Eine Textannotation, Dimension, Toleranz, Oberflächenangabe, etc. mit Bezug zur Produktgeometrie"@de
@@ -9873,6 +9874,7 @@ cas-mech:ModelAnnotation_Shape
 		dc:title_Shape ,
 		cas-mech:classification_Shape ,
 		:number_Shape ,
+		:parent_Shape ,
 		:type_Shape
 		;
 	sh:targetClass cas-mech:ModelAnnotation ;
@@ -9905,7 +9907,7 @@ cas-mech:ModelAnnotation_appliesTo_Body_Source_Shape
 	.
 
 cas-mech:ModelAnnotation_appliesTo_Body_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:ModelAnnotation_appliesTo_Body ;
 	rdfs:range cas-mech:Body ;
 	.
@@ -9942,7 +9944,7 @@ cas-mech:ModelAnnotation_appliesTo_Edge_Source_Shape
 	.
 
 cas-mech:ModelAnnotation_appliesTo_Edge_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:ModelAnnotation_appliesTo_Edge ;
 	rdfs:range cas-mech:Edge ;
 	.
@@ -9979,7 +9981,7 @@ cas-mech:ModelAnnotation_appliesTo_Face_Source_Shape
 	.
 
 cas-mech:ModelAnnotation_appliesTo_Face_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:ModelAnnotation_appliesTo_Face ;
 	rdfs:range cas-mech:Face ;
 	.
@@ -10016,7 +10018,7 @@ cas-mech:ModelAnnotation_appliesTo_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:ModelAnnotation_appliesTo_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:ModelAnnotation_appliesTo_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -10057,7 +10059,7 @@ cas-mech:ModelAnnotation_implements_Function_Source_Shape
 	.
 
 cas-mech:ModelAnnotation_implements_Function_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:ModelAnnotation_implements_Function ;
 	rdfs:range cas-arch:Function ;
 	.
@@ -10098,7 +10100,7 @@ cas-mech:ModelAnnotation_partOf_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:ModelAnnotation_partOf_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:ModelAnnotation_partOf_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -10139,7 +10141,7 @@ cas-mech:ModelAnnotation_relatesTo_ModelAnnotation_Source_Shape
 	.
 
 cas-mech:ModelAnnotation_relatesTo_ModelAnnotation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:ModelAnnotation_relatesTo_ModelAnnotation ;
 	rdfs:range cas-mech:ModelAnnotation ;
 	.
@@ -10180,7 +10182,7 @@ cas-mech:ModelAnnotation_shownIn_ModelView_Source_Shape
 	.
 
 cas-mech:ModelAnnotation_shownIn_ModelView_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:ModelAnnotation_shownIn_ModelView ;
 	rdfs:range cas-mech:ModelView ;
 	.
@@ -10247,7 +10249,7 @@ cas-mech:ModelView_partOf_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:ModelView_partOf_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:ModelView_partOf_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -10311,7 +10313,7 @@ cas-mech:PaintedCoatedArea_appliesTo_Body_Source_Shape
 	.
 
 cas-mech:PaintedCoatedArea_appliesTo_Body_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:PaintedCoatedArea_appliesTo_Body ;
 	rdfs:range cas-mech:Body ;
 	.
@@ -10348,7 +10350,7 @@ cas-mech:PaintedCoatedArea_appliesTo_Edge_Source_Shape
 	.
 
 cas-mech:PaintedCoatedArea_appliesTo_Edge_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:PaintedCoatedArea_appliesTo_Edge ;
 	rdfs:range cas-mech:Edge ;
 	.
@@ -10385,7 +10387,7 @@ cas-mech:PaintedCoatedArea_appliesTo_Face_Source_Shape
 	.
 
 cas-mech:PaintedCoatedArea_appliesTo_Face_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:PaintedCoatedArea_appliesTo_Face ;
 	rdfs:range cas-mech:Face ;
 	.
@@ -10422,7 +10424,7 @@ cas-mech:PaintedCoatedArea_appliesTo_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:PaintedCoatedArea_appliesTo_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:PaintedCoatedArea_appliesTo_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -10463,7 +10465,7 @@ cas-mech:PaintedCoatedArea_implements_Function_Source_Shape
 	.
 
 cas-mech:PaintedCoatedArea_implements_Function_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:PaintedCoatedArea_implements_Function ;
 	rdfs:range cas-arch:Function ;
 	.
@@ -10504,7 +10506,7 @@ cas-mech:PaintedCoatedArea_madeOf_Material_Source_Shape
 	.
 
 cas-mech:PaintedCoatedArea_madeOf_Material_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:PaintedCoatedArea_madeOf_Material ;
 	rdfs:range cas-mech:Material ;
 	.
@@ -10545,7 +10547,7 @@ cas-mech:PaintedCoatedArea_specifiedBy_Reference_Source_Shape
 	.
 
 cas-mech:PaintedCoatedArea_specifiedBy_Reference_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:PaintedCoatedArea_specifiedBy_Reference ;
 	rdfs:range cas-ctx:Reference ;
 	.
@@ -10586,7 +10588,7 @@ cas-mech:PaintedCoatedArea_usedIn_PaintedCoatedArea_Source_Shape
 	.
 
 cas-mech:PaintedCoatedArea_usedIn_PaintedCoatedArea_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:PaintedCoatedArea_usedIn_PaintedCoatedArea ;
 	rdfs:range cas-mech:PaintedCoatedArea ;
 	.
@@ -10661,6 +10663,14 @@ cas-mech:Thread
 
 cas-mech:Thread_Shape
 	a sh:NodeShape ;
+	sh:property
+		dc:identifier_Shape ,
+		dc:title_Shape ,
+		:diameter_Shape ,
+		:length_Shape ,
+		:number_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-mech:Thread ;
 	.
 
@@ -10691,7 +10701,7 @@ cas-mech:Thread_appliesTo_Body_Source_Shape
 	.
 
 cas-mech:Thread_appliesTo_Body_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Thread_appliesTo_Body ;
 	rdfs:range cas-mech:Body ;
 	.
@@ -10728,7 +10738,7 @@ cas-mech:Thread_appliesTo_Edge_Source_Shape
 	.
 
 cas-mech:Thread_appliesTo_Edge_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Thread_appliesTo_Edge ;
 	rdfs:range cas-mech:Edge ;
 	.
@@ -10765,7 +10775,7 @@ cas-mech:Thread_appliesTo_Face_Source_Shape
 	.
 
 cas-mech:Thread_appliesTo_Face_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Thread_appliesTo_Face ;
 	rdfs:range cas-mech:Face ;
 	.
@@ -10802,7 +10812,7 @@ cas-mech:Thread_appliesTo_MechanicalComponent_Source_Shape
 	.
 
 cas-mech:Thread_appliesTo_MechanicalComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Thread_appliesTo_MechanicalComponent ;
 	rdfs:range cas-mech:MechanicalComponent ;
 	.
@@ -10810,6 +10820,47 @@ cas-mech:Thread_appliesTo_MechanicalComponent_Target
 cas-mech:Thread_appliesTo_MechanicalComponent_Target_Shape
 	sh:path cas-mech:Thread_appliesTo_MechanicalComponent ;
 	sh:property cas-mech:Thread_appliesTo_MechanicalComponent_Target_Shape ;
+	.
+
+cas-mech:Thread_partOf_Body
+	a owl:Class ;
+	rdfs:subClassOf cas:Relationship ;
+	rdfs:label
+		"Gewinde Bestandteil von Körper"@de ,
+		"Thread part of Body"@en
+		;
+	dcterms:modified "2026-06-07T09:14:33Z"^^xsd:dateTime ;
+	skos:definition
+		"Parent body"@en ,
+		"Übergeordneter Körper"@de
+		;
+	.
+
+cas-mech:Thread_partOf_Body_Shape
+	a sh:PropertyShape ;
+	sh:path cas-mech:Thread_partOf_Body ;
+	.
+
+cas-mech:Thread_partOf_Body_Source
+	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:domain cas-mech:Thread_partOf_Body ;
+	rdfs:range cas-mech:Thread ;
+	.
+
+cas-mech:Thread_partOf_Body_Source_Shape
+	sh:path cas-mech:Thread_partOf_Body ;
+	sh:property cas-mech:Thread_partOf_Body_Source ;
+	.
+
+cas-mech:Thread_partOf_Body_Target
+	rdfs:subPropertyOf cas:linksTarget ;
+	rdfs:domain cas-mech:Thread_partOf_Body ;
+	rdfs:range cas-mech:Body ;
+	.
+
+cas-mech:Thread_partOf_Body_Target_Shape
+	sh:path cas-mech:Thread_partOf_Body ;
+	sh:property cas-mech:Thread_partOf_Body_Target_Shape ;
 	.
 
 cas-mech:Thread_specifiedBy_Reference
@@ -10843,7 +10894,7 @@ cas-mech:Thread_specifiedBy_Reference_Source_Shape
 	.
 
 cas-mech:Thread_specifiedBy_Reference_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-mech:Thread_specifiedBy_Reference ;
 	rdfs:range cas-ctx:Reference ;
 	.
@@ -10910,27 +10961,6 @@ cas-mech:density_Shape
 	a sh:PropertyShape ;
 	sh:datatype dim:Density ;
 	sh:path cas-mech:density ;
-	.
-
-cas-mech:diameter
-	a owl:Class ;
-	rdfs:subClassOf cas:Property ;
-	rdfs:label
-		"Diameter"@en ,
-		"Durchmesser"@de
-		;
-	dcterms:modified "2026-02-25T02:47:37Z"^^xsd:dateTime ;
-	rdfs:range dim:Length ;
-	skos:definition
-		"Diameter of the hole"@en ,
-		"Durchmesser der Bohrung"@de
-		;
-	.
-
-cas-mech:diameter_Shape
-	a sh:PropertyShape ;
-	sh:datatype dim:Length ;
-	sh:path cas-mech:diameter ;
 	.
 
 cas-mech:elasticLimit
@@ -11013,27 +11043,6 @@ cas-mech:hardness_Shape
 	sh:path cas-mech:hardness ;
 	.
 
-cas-mech:length
-	a owl:Class ;
-	rdfs:subClassOf cas:Property ;
-	rdfs:label
-		"Length"@en ,
-		"Länge"@de
-		;
-	dcterms:modified "2026-02-25T02:47:20Z"^^xsd:dateTime ;
-	rdfs:range dim:Length ;
-	skos:definition
-		"Length of the hole"@en ,
-		"Länge der Bohrung"@de
-		;
-	.
-
-cas-mech:length_Shape
-	a sh:PropertyShape ;
-	sh:datatype dim:Length ;
-	sh:path cas-mech:length ;
-	.
-
 cas-mech:lowerTolerance
 	a owl:Class ;
 	rdfs:subClassOf cas:Property ;
@@ -11095,6 +11104,48 @@ cas-mech:nominalValue_Shape
 	a sh:PropertyShape ;
 	sh:datatype dim:Length ;
 	sh:path cas-mech:nominalValue ;
+	.
+
+cas-mech:particleDensity
+	a owl:Class ;
+	rdfs:subClassOf cas:Property ;
+	rdfs:label
+		"Particle Density"@en ,
+		"Partikeldichte"@de
+		;
+	dcterms:modified "2026-03-30T09:19:41Z"^^xsd:dateTime ;
+	rdfs:range xsd:integer ;
+	skos:definition
+		"Anzahl von Partikeln pro Fläche"@de ,
+		"Density of particles per area"@en
+		;
+	.
+
+cas-mech:particleDensity_Shape
+	a sh:PropertyShape ;
+	sh:datatype xsd:integer ;
+	sh:path cas-mech:particleDensity ;
+	.
+
+cas-mech:particleSize
+	a owl:Class ;
+	rdfs:subClassOf cas:Property ;
+	rdfs:label
+		"Particle Size"@en ,
+		"Partikelgröße"@de
+		;
+	dcterms:modified "2026-03-30T09:15:39Z"^^xsd:dateTime ;
+	rdfs:range dim:Length ;
+	skos:definition
+		"Größe der zulässigen Partikel"@de ,
+		"Size of the permissible particle"@en
+		;
+	.
+
+cas-mech:particleSize_Shape
+	a sh:PropertyShape ;
+	sh:datatype dim:Length ;
+	sh:path cas-mech:particleSize ;
 	.
 
 cas-mech:pitch
@@ -11376,7 +11427,7 @@ cas-sw:SoftwareInterface_partOf_SoftwareComponent_Source_Shape
 	.
 
 cas-sw:SoftwareInterface_partOf_SoftwareComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sw:SoftwareInterface_partOf_SoftwareComponent ;
 	rdfs:range cas-sw:SoftwareComponent ;
 	.
@@ -11393,7 +11444,7 @@ cas-sys:ComponentConnection
 		"Component Connection"@en ,
 		"Komponenten-Verbindung"@de
 		;
-	dcterms:modified "2026-04-01T23:16:37Z"^^xsd:dateTime ;
+	dcterms:modified "2026-05-31T07:58:37Z"^^xsd:dateTime ;
 	rdfs:definedBy <cas-ref:ISO-IEC-20246> ;
 	skos:definition
 		"Represents a connection between two components through interfaces"@en ,
@@ -11445,7 +11496,7 @@ cas-sys:ComponentConnection_connects_ComponentInterface_Source_Shape
 	.
 
 cas-sys:ComponentConnection_connects_ComponentInterface_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:ComponentConnection_connects_ComponentInterface ;
 	rdfs:range cas-sys:ComponentInterface ;
 	.
@@ -11486,7 +11537,7 @@ cas-sys:ComponentConnection_connects_SystemComponent_Source_Shape
 	.
 
 cas-sys:ComponentConnection_connects_SystemComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:ComponentConnection_connects_SystemComponent ;
 	rdfs:range cas-sys:SystemComponent ;
 	.
@@ -11527,7 +11578,7 @@ cas-sys:ComponentConnection_partOf_SystemComponent_Source_Shape
 	.
 
 cas-sys:ComponentConnection_partOf_SystemComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:ComponentConnection_partOf_SystemComponent ;
 	rdfs:range cas-sys:SystemComponent ;
 	.
@@ -11564,7 +11615,7 @@ cas-sys:ComponentConnection_provides_ComponentInterface_Source_Shape
 	.
 
 cas-sys:ComponentConnection_provides_ComponentInterface_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:ComponentConnection_provides_ComponentInterface ;
 	rdfs:range cas-sys:ComponentInterface ;
 	.
@@ -11605,7 +11656,7 @@ cas-sys:ComponentConnection_specialismOf_ComponentConnection_Source_Shape
 	.
 
 cas-sys:ComponentConnection_specialismOf_ComponentConnection_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:ComponentConnection_specialismOf_ComponentConnection ;
 	rdfs:range cas-sys:ComponentConnection ;
 	.
@@ -11646,7 +11697,7 @@ cas-sys:ComponentConnection_usedIn_SystemComponent_Source_Shape
 	.
 
 cas-sys:ComponentConnection_usedIn_SystemComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:ComponentConnection_usedIn_SystemComponent ;
 	rdfs:range cas-sys:SystemComponent ;
 	.
@@ -11663,7 +11714,7 @@ cas-sys:ComponentInterface
 		"Component Interface"@en ,
 		"Komponenten-Schnittstelle"@de
 		;
-	dcterms:modified "2026-04-01T23:16:42Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-09T00:15:41Z"^^xsd:dateTime ;
 	rdfs:definedBy <cas-ref:ISO-IEC-20246> ;
 	skos:definition
 		"Represents a generic interface of a system component"@en ,
@@ -11679,6 +11730,7 @@ cas-sys:ComponentInterface_Shape
 		dc:title_Shape ,
 		:dateTime_Shape ,
 		:number_Shape ,
+		:parent_Shape ,
 		:type_Shape
 		;
 	sh:targetClass cas-sys:ComponentInterface ;
@@ -11715,7 +11767,7 @@ cas-sys:ComponentInterface_operatedBy_Role_Source_Shape
 	.
 
 cas-sys:ComponentInterface_operatedBy_Role_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:ComponentInterface_operatedBy_Role ;
 	rdfs:range cas-org:Role ;
 	.
@@ -11756,7 +11808,7 @@ cas-sys:ComponentInterface_partOf_ComponentInterface_Source_Shape
 	.
 
 cas-sys:ComponentInterface_partOf_ComponentInterface_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:ComponentInterface_partOf_ComponentInterface ;
 	rdfs:range cas-sys:ComponentInterface ;
 	.
@@ -11797,7 +11849,7 @@ cas-sys:ComponentInterface_partOf_SystemComponent_Source_Shape
 	.
 
 cas-sys:ComponentInterface_partOf_SystemComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:ComponentInterface_partOf_SystemComponent ;
 	rdfs:range cas-sys:SystemComponent ;
 	.
@@ -11838,7 +11890,7 @@ cas-sys:ComponentInterface_specialismOf_ComponentInterface_Source_Shape
 	.
 
 cas-sys:ComponentInterface_specialismOf_ComponentInterface_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:ComponentInterface_specialismOf_ComponentInterface ;
 	rdfs:range cas-sys:ComponentInterface ;
 	.
@@ -11875,7 +11927,7 @@ cas-sys:ComponentInterface_typeOf_ComponentConnection_Source_Shape
 	.
 
 cas-sys:ComponentInterface_typeOf_ComponentConnection_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:ComponentInterface_typeOf_ComponentConnection ;
 	rdfs:range cas-sys:ComponentConnection ;
 	.
@@ -11916,7 +11968,7 @@ cas-sys:ComponentInterface_usedIn_SystemComponent_Source_Shape
 	.
 
 cas-sys:ComponentInterface_usedIn_SystemComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:ComponentInterface_usedIn_SystemComponent ;
 	rdfs:range cas-sys:SystemComponent ;
 	.
@@ -11933,7 +11985,7 @@ cas-sys:ComponentState
 		"Component State"@en ,
 		"Komponenten-Zustand"@de
 		;
-	dcterms:modified "2025-11-27T18:03:59Z"^^xsd:dateTime ;
+	dcterms:modified "2026-05-31T07:58:53Z"^^xsd:dateTime ;
 	rdfs:definedBy <cas-ref:ISO-IEC-20246> ;
 	skos:definition
 		"Represents the condition of a system component. Can be it a value, a condition, an information storage or a physical shape."@en ,
@@ -11985,7 +12037,7 @@ cas-sys:ComponentState_changesTo_ComponentState_Source_Shape
 	.
 
 cas-sys:ComponentState_changesTo_ComponentState_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:ComponentState_changesTo_ComponentState ;
 	rdfs:range cas-sys:ComponentState ;
 	.
@@ -12026,7 +12078,7 @@ cas-sys:ComponentState_partOf_ComponentState_Source_Shape
 	.
 
 cas-sys:ComponentState_partOf_ComponentState_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:ComponentState_partOf_ComponentState ;
 	rdfs:range cas-sys:ComponentState ;
 	.
@@ -12067,7 +12119,7 @@ cas-sys:ComponentState_partOf_SystemComponent_Source_Shape
 	.
 
 cas-sys:ComponentState_partOf_SystemComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:ComponentState_partOf_SystemComponent ;
 	rdfs:range cas-sys:SystemComponent ;
 	.
@@ -12108,7 +12160,7 @@ cas-sys:ComponentState_usedIn_SystemComponent_Source_Shape
 	.
 
 cas-sys:ComponentState_usedIn_SystemComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:ComponentState_usedIn_SystemComponent ;
 	rdfs:range cas-sys:SystemComponent ;
 	.
@@ -12128,7 +12180,7 @@ cas-sys:DesignElement
 		"Design Element"@en ,
 		"Gestaltelement"@de
 		;
-	dcterms:modified "2025-09-28T14:06:12Z"^^xsd:dateTime ;
+	dcterms:modified "2026-05-31T07:58:45Z"^^xsd:dateTime ;
 	.
 
 cas-sys:DesignElement_Shape
@@ -12163,7 +12215,7 @@ cas-sys:DesignElement_implements_FunctionalElement_Source_Shape
 	.
 
 cas-sys:DesignElement_implements_FunctionalElement_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:DesignElement_implements_FunctionalElement ;
 	rdfs:range cas-sys:FunctionalElement ;
 	.
@@ -12200,7 +12252,7 @@ cas-sys:DesignElement_specialismOf_ComponentConnection_Source_Shape
 	.
 
 cas-sys:DesignElement_specialismOf_ComponentConnection_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:DesignElement_specialismOf_ComponentConnection ;
 	rdfs:range cas-sys:ComponentConnection ;
 	.
@@ -12217,7 +12269,7 @@ cas-sys:Deviation
 		"Abweichung"@de ,
 		"Deviation"@en
 		;
-	dcterms:modified "2026-05-16T06:15:22Z"^^xsd:dateTime ;
+	dcterms:modified "2026-05-31T07:59:01Z"^^xsd:dateTime ;
 	rdfs:definedBy
 		<cas-ref:ARP4754B> ,
 		<cas-ref:ARP4761A> ,
@@ -12279,7 +12331,7 @@ cas-sys:Deviation_affects_Function_Source_Shape
 	.
 
 cas-sys:Deviation_affects_Function_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_affects_Function ;
 	rdfs:range cas-arch:Function ;
 	.
@@ -12316,7 +12368,7 @@ cas-sys:Deviation_appliesTo_BendingSpecification_Source_Shape
 	.
 
 cas-sys:Deviation_appliesTo_BendingSpecification_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_appliesTo_BendingSpecification ;
 	rdfs:range cas-mech:BendingSpecification ;
 	.
@@ -12353,7 +12405,7 @@ cas-sys:Deviation_appliesTo_Cleanliness_Source_Shape
 	.
 
 cas-sys:Deviation_appliesTo_Cleanliness_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_appliesTo_Cleanliness ;
 	rdfs:range cas-mech:Cleanliness ;
 	.
@@ -12390,7 +12442,7 @@ cas-sys:Deviation_appliesTo_Gearing_Source_Shape
 	.
 
 cas-sys:Deviation_appliesTo_Gearing_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_appliesTo_Gearing ;
 	rdfs:range cas-mech:Gearing ;
 	.
@@ -12427,7 +12479,7 @@ cas-sys:Deviation_appliesTo_HeatTreatedArea_Source_Shape
 	.
 
 cas-sys:Deviation_appliesTo_HeatTreatedArea_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_appliesTo_HeatTreatedArea ;
 	rdfs:range cas-mech:HeatTreatedArea ;
 	.
@@ -12464,7 +12516,7 @@ cas-sys:Deviation_appliesTo_Hole_Source_Shape
 	.
 
 cas-sys:Deviation_appliesTo_Hole_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_appliesTo_Hole ;
 	rdfs:range cas-mech:Hole ;
 	.
@@ -12501,7 +12553,7 @@ cas-sys:Deviation_appliesTo_JoiningElement_Source_Shape
 	.
 
 cas-sys:Deviation_appliesTo_JoiningElement_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_appliesTo_JoiningElement ;
 	rdfs:range cas-mech:JoiningElement ;
 	.
@@ -12538,7 +12590,7 @@ cas-sys:Deviation_appliesTo_KinematicJoint_Source_Shape
 	.
 
 cas-sys:Deviation_appliesTo_KinematicJoint_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_appliesTo_KinematicJoint ;
 	rdfs:range cas-mech:KinematicJoint ;
 	.
@@ -12575,7 +12627,7 @@ cas-sys:Deviation_appliesTo_MarkingLabeling_Source_Shape
 	.
 
 cas-sys:Deviation_appliesTo_MarkingLabeling_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_appliesTo_MarkingLabeling ;
 	rdfs:range cas-mech:MarkingLabeling ;
 	.
@@ -12612,7 +12664,7 @@ cas-sys:Deviation_appliesTo_ModelAnnotation_Source_Shape
 	.
 
 cas-sys:Deviation_appliesTo_ModelAnnotation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_appliesTo_ModelAnnotation ;
 	rdfs:range cas-mech:ModelAnnotation ;
 	.
@@ -12649,7 +12701,7 @@ cas-sys:Deviation_appliesTo_PaintedCoatedArea_Source_Shape
 	.
 
 cas-sys:Deviation_appliesTo_PaintedCoatedArea_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_appliesTo_PaintedCoatedArea ;
 	rdfs:range cas-mech:PaintedCoatedArea ;
 	.
@@ -12686,7 +12738,7 @@ cas-sys:Deviation_appliesTo_SystemComponent_Source_Shape
 	.
 
 cas-sys:Deviation_appliesTo_SystemComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_appliesTo_SystemComponent ;
 	rdfs:range cas-sys:SystemComponent ;
 	.
@@ -12723,7 +12775,7 @@ cas-sys:Deviation_appliesTo_Thread_Source_Shape
 	.
 
 cas-sys:Deviation_appliesTo_Thread_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_appliesTo_Thread ;
 	rdfs:range cas-mech:Thread ;
 	.
@@ -12764,7 +12816,7 @@ cas-sys:Deviation_causedBy_Event_Source_Shape
 	.
 
 cas-sys:Deviation_causedBy_Event_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_causedBy_Event ;
 	rdfs:range cas-org:Event ;
 	.
@@ -12805,7 +12857,7 @@ cas-sys:Deviation_causes_Deviation_Source_Shape
 	.
 
 cas-sys:Deviation_causes_Deviation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_causes_Deviation ;
 	rdfs:range cas-sys:Deviation ;
 	.
@@ -12846,7 +12898,7 @@ cas-sys:Deviation_detectedBy_Task_Source_Shape
 	.
 
 cas-sys:Deviation_detectedBy_Task_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_detectedBy_Task ;
 	rdfs:range cas-org:Task ;
 	.
@@ -12887,7 +12939,7 @@ cas-sys:Deviation_partOf_Deviation_Source_Shape
 	.
 
 cas-sys:Deviation_partOf_Deviation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_partOf_Deviation ;
 	rdfs:range cas-sys:Deviation ;
 	.
@@ -12928,7 +12980,7 @@ cas-sys:Deviation_preventedBy_Task_Source_Shape
 	.
 
 cas-sys:Deviation_preventedBy_Task_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_preventedBy_Task ;
 	rdfs:range cas-org:Task ;
 	.
@@ -12969,7 +13021,7 @@ cas-sys:Deviation_specialismOf_Deviation_Source_Shape
 	.
 
 cas-sys:Deviation_specialismOf_Deviation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_specialismOf_Deviation ;
 	rdfs:range cas-sys:Deviation ;
 	.
@@ -13010,7 +13062,7 @@ cas-sys:Deviation_usedIn_Deviation_Source_Shape
 	.
 
 cas-sys:Deviation_usedIn_Deviation_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:Deviation_usedIn_Deviation ;
 	rdfs:range cas-sys:Deviation ;
 	.
@@ -13030,7 +13082,7 @@ cas-sys:FunctionalElement
 		"Functional Element"@en ,
 		"Funktionselement"@de
 		;
-	dcterms:modified "2025-09-28T14:02:51Z"^^xsd:dateTime ;
+	dcterms:modified "2026-05-31T07:58:29Z"^^xsd:dateTime ;
 	.
 
 cas-sys:FunctionalElement_Shape
@@ -13045,7 +13097,7 @@ cas-sys:SystemComponent
 		"System Component"@en ,
 		"Systemkomponente"@de
 		;
-	dcterms:modified "2026-04-09T11:21:13Z"^^xsd:dateTime ;
+	dcterms:modified "2026-05-31T07:58:06Z"^^xsd:dateTime ;
 	rdfs:definedBy
 		<cas-ref:CSA-ISO-IEC-IEEE-15288> ,
 		<cas-ref:ISO-IEC-20246> ,
@@ -13102,7 +13154,7 @@ cas-sys:SystemComponent_fulfils_Requirement_Source_Shape
 	.
 
 cas-sys:SystemComponent_fulfils_Requirement_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:SystemComponent_fulfils_Requirement ;
 	rdfs:range cas-arch:Requirement ;
 	.
@@ -13143,7 +13195,7 @@ cas-sys:SystemComponent_implements_Function_Source_Shape
 	.
 
 cas-sys:SystemComponent_implements_Function_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:SystemComponent_implements_Function ;
 	rdfs:range cas-arch:Function ;
 	.
@@ -13184,7 +13236,7 @@ cas-sys:SystemComponent_ownedBy_Actor_Source_Shape
 	.
 
 cas-sys:SystemComponent_ownedBy_Actor_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:SystemComponent_ownedBy_Actor ;
 	rdfs:range cas-org:Actor ;
 	.
@@ -13225,7 +13277,7 @@ cas-sys:SystemComponent_partOf_SystemComponent_Source_Shape
 	.
 
 cas-sys:SystemComponent_partOf_SystemComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:SystemComponent_partOf_SystemComponent ;
 	rdfs:range cas-sys:SystemComponent ;
 	.
@@ -13262,7 +13314,7 @@ cas-sys:SystemComponent_provides_ComponentInterface_Source_Shape
 	.
 
 cas-sys:SystemComponent_provides_ComponentInterface_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:SystemComponent_provides_ComponentInterface ;
 	rdfs:range cas-sys:ComponentInterface ;
 	.
@@ -13303,7 +13355,7 @@ cas-sys:SystemComponent_specialismOf_SystemComponent_Source_Shape
 	.
 
 cas-sys:SystemComponent_specialismOf_SystemComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:SystemComponent_specialismOf_SystemComponent ;
 	rdfs:range cas-sys:SystemComponent ;
 	.
@@ -13344,7 +13396,7 @@ cas-sys:SystemComponent_usedIn_SystemComponent_Source_Shape
 	.
 
 cas-sys:SystemComponent_usedIn_SystemComponent_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-sys:SystemComponent_usedIn_SystemComponent ;
 	rdfs:range cas-sys:SystemComponent ;
 	.
@@ -13524,7 +13576,7 @@ cas-val:ValidationCriterium_specifiedBy_Reference_Source_Shape
 	.
 
 cas-val:ValidationCriterium_specifiedBy_Reference_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-val:ValidationCriterium_specifiedBy_Reference ;
 	rdfs:range cas-ctx:Reference ;
 	.
@@ -13565,7 +13617,7 @@ cas-val:ValidationCriterium_validates_Requirement_Source_Shape
 	.
 
 cas-val:ValidationCriterium_validates_Requirement_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-val:ValidationCriterium_validates_Requirement ;
 	rdfs:range cas-arch:Requirement ;
 	.
@@ -13686,7 +13738,7 @@ cas-val:ValidationRun_executes_ValidationPlan_Source_Shape
 	.
 
 cas-val:ValidationRun_executes_ValidationPlan_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-val:ValidationRun_executes_ValidationPlan ;
 	rdfs:range cas-val:ValidationPlan ;
 	.
@@ -13727,7 +13779,7 @@ cas-val:ValidationRun_ownedBy_Actor_Source_Shape
 	.
 
 cas-val:ValidationRun_ownedBy_Actor_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-val:ValidationRun_ownedBy_Actor ;
 	rdfs:range cas-org:Actor ;
 	.
@@ -13799,7 +13851,7 @@ cas-ver:VerificationCharacteristic_partOf_VerificationPlan_Source_Shape
 	.
 
 cas-ver:VerificationCharacteristic_partOf_VerificationPlan_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ver:VerificationCharacteristic_partOf_VerificationPlan ;
 	rdfs:range cas-ver:VerificationPlan ;
 	.
@@ -13840,7 +13892,7 @@ cas-ver:VerificationCharacteristic_specifiedBy_Reference_Source_Shape
 	.
 
 cas-ver:VerificationCharacteristic_specifiedBy_Reference_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ver:VerificationCharacteristic_specifiedBy_Reference ;
 	rdfs:range cas-ctx:Reference ;
 	.
@@ -13881,7 +13933,7 @@ cas-ver:VerificationCharacteristic_usedIn_VerificationCharacteristic_Source_Shap
 	.
 
 cas-ver:VerificationCharacteristic_usedIn_VerificationCharacteristic_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ver:VerificationCharacteristic_usedIn_VerificationCharacteristic ;
 	rdfs:range cas-ver:VerificationCharacteristic ;
 	.
@@ -13918,7 +13970,7 @@ cas-ver:VerificationCharacteristic_uses_VerificationResource_Source_Shape
 	.
 
 cas-ver:VerificationCharacteristic_uses_VerificationResource_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ver:VerificationCharacteristic_uses_VerificationResource ;
 	rdfs:range cas-ver:VerificationResource ;
 	.
@@ -13959,7 +14011,7 @@ cas-ver:VerificationCharacteristic_verifies_Function_Source_Shape
 	.
 
 cas-ver:VerificationCharacteristic_verifies_Function_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ver:VerificationCharacteristic_verifies_Function ;
 	rdfs:range cas-arch:Function ;
 	.
@@ -14031,7 +14083,7 @@ cas-ver:VerificationPlan_partOf_VerificationPlan_Source_Shape
 	.
 
 cas-ver:VerificationPlan_partOf_VerificationPlan_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ver:VerificationPlan_partOf_VerificationPlan ;
 	rdfs:range cas-ver:VerificationPlan ;
 	.
@@ -14072,7 +14124,7 @@ cas-ver:VerificationPlan_usedIn_ControlPlan_Source_Shape
 	.
 
 cas-ver:VerificationPlan_usedIn_ControlPlan_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ver:VerificationPlan_usedIn_ControlPlan ;
 	rdfs:range cas-mnf:ControlPlan ;
 	.
@@ -14113,7 +14165,7 @@ cas-ver:VerificationPlan_usedIn_VerificationPlan_Source_Shape
 	.
 
 cas-ver:VerificationPlan_usedIn_VerificationPlan_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ver:VerificationPlan_usedIn_VerificationPlan ;
 	rdfs:range cas-ver:VerificationPlan ;
 	.
@@ -14177,7 +14229,7 @@ cas-ver:VerificationResource_specifiedBy_Reference_Source_Shape
 	.
 
 cas-ver:VerificationResource_specifiedBy_Reference_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ver:VerificationResource_specifiedBy_Reference ;
 	rdfs:range cas-ctx:Reference ;
 	.
@@ -14250,7 +14302,7 @@ cas-ver:VerificationResult_partOf_VerificationRun_Source_Shape
 	.
 
 cas-ver:VerificationResult_partOf_VerificationRun_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ver:VerificationResult_partOf_VerificationRun ;
 	rdfs:range cas-ver:VerificationRun ;
 	.
@@ -14318,7 +14370,7 @@ cas-ver:VerificationRun_executes_VerificationPlan_Source_Shape
 	.
 
 cas-ver:VerificationRun_executes_VerificationPlan_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ver:VerificationRun_executes_VerificationPlan ;
 	rdfs:range cas-ver:VerificationPlan ;
 	.
@@ -14359,7 +14411,7 @@ cas-ver:VerificationRun_ownedBy_Actor_Source_Shape
 	.
 
 cas-ver:VerificationRun_ownedBy_Actor_Target
-	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ver:VerificationRun_ownedBy_Actor ;
 	rdfs:range cas-org:Actor ;
 	.
@@ -14411,6 +14463,27 @@ cas-ver:deviation_Shape
 	sh:path :dateTime ;
 	.
 
+:diameter
+	a owl:Class ;
+	rdfs:subClassOf cas:Property ;
+	rdfs:label
+		"Diameter"@en ,
+		"Durchmesser"@de
+		;
+	dcterms:modified "2026-06-07T09:14:42Z"^^xsd:dateTime ;
+	rdfs:range dim:Length ;
+	skos:definition
+		"Diameter of the hole"@en ,
+		"Durchmesser der Bohrung"@de
+		;
+	.
+
+:diameter_Shape
+	a sh:PropertyShape ;
+	sh:datatype dim:Length ;
+	sh:path :diameter ;
+	.
+
 :endDateTime
 	a owl:Class ;
 	rdfs:subClassOf cas:Property ;
@@ -14432,6 +14505,27 @@ cas-ver:deviation_Shape
 	sh:path :endDateTime ;
 	.
 
+:length
+	a owl:Class ;
+	rdfs:subClassOf cas:Property ;
+	rdfs:label
+		"Length"@en ,
+		"Länge"@de
+		;
+	dcterms:modified "2026-06-07T09:14:43Z"^^xsd:dateTime ;
+	rdfs:range dim:Length ;
+	skos:definition
+		"Length of the hole"@en ,
+		"Länge der Bohrung"@de
+		;
+	.
+
+:length_Shape
+	a sh:PropertyShape ;
+	sh:datatype dim:Length ;
+	sh:path :length ;
+	.
+
 :number
 	a owl:Class ;
 	rdfs:subClassOf cas:Property ;
@@ -14439,7 +14533,7 @@ cas-ver:deviation_Shape
 		"Number"@en ,
 		"Nummer"@de
 		;
-	dcterms:modified "2026-05-12T13:07:13Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-07T09:14:36Z"^^xsd:dateTime ;
 	rdfs:range xsd:string ;
 	skos:definition
 		"Legible number or name of the element, i. e. part number"@en ,
@@ -14451,6 +14545,23 @@ cas-ver:deviation_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path :number ;
+	.
+
+:parent
+	a owl:Class ;
+	rdfs:subClassOf cas:Property ;
+	rdfs:label
+		"Parent"@en ,
+		"Übergeordnetes Element"@de
+		;
+	dcterms:modified "2026-06-09T00:17:07Z"^^xsd:dateTime ;
+	rdfs:range xsd:string ;
+	.
+
+:parent_Shape
+	a sh:PropertyShape ;
+	sh:datatype xsd:string ;
+	sh:path :parent ;
 	.
 
 :revision
@@ -14502,7 +14613,7 @@ cas-ver:deviation_Shape
 		"Typ"@de ,
 		"Type"@en
 		;
-	dcterms:modified "2026-05-12T13:07:16Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-07T09:14:40Z"^^xsd:dateTime ;
 	rdfs:range xsd:string ;
 	skos:definition
 		"Typ eines Elements"@de ,

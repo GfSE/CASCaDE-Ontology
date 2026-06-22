@@ -1,0 +1,631 @@
+@prefix : <http://www.omg.org/spec/CASCaRA/ontology/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas-ref: <http://www.omg.org/spec/CASCaRA/ontology/references/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dim: <http://www.omg.org/spec/CASCaRA/ontology/Dimensions/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.omg.org/spec/CASCaRA/ontology/>
+	a owl:Ontology ;
+	rdfs:label "Resources Ontology" ;
+	dcterms:abstract "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice." ;
+	dcterms:contributor
+		"Alvarez Rodriguez, José Maria, UC3 Madrid" ,
+		"Arslan, Serkan, INOMIC Solutions" ,
+		"Baleani, Massimo, RTX Technologies" ,
+		"Beavin, William, The Boeing Corporation" ,
+		"Bielert, René, Dr.-Ing. h.c. F. Porsche" ,
+		"Dörr, Sebastian, CONWEAVER GmbH" ,
+		"Engelhardt, Joachim, Sodius Willert" ,
+		"Gliniorz, Stefan, Bosch" ,
+		"Grünwald, Dr. Christian, Volkswagen AG" ,
+		"Harms, Manfred, Manfred Harms Consulting" ,
+		"Hashimoto, Atsushi, JAXA" ,
+		"Kaufmann, Uwe, ModelAlchemy Consulting" ,
+		"Kendall, Elisa, Thematix Partners" ,
+		"Kirsch, Michael, :em engineering methods AG" ,
+		"Klaar, Dr. Oliver, ZF Friedrichshafen AG" ,
+		"Klöppner, Robert, MTU Aero Engines AG" ,
+		"Krems, Daniel, AVL List" ,
+		"Li, Zirui, TU Ilmenau" ,
+		"Martin, James, Anark" ,
+		"Marvin, Joe, PSG Prime Solutions Group" ,
+		"Mendo, Juan Carlos, The Boeing Corporation" ,
+		"Meyer, Nico, Volkswagen AG" ,
+		"Mueller, Andreas, Schaeffler Technologies AG & Co. KG" ,
+		"Nielsen, Johan, Elysium" ,
+		"Rivett, Pete, Federated Knowledge, LLC " ,
+		"Schmied, Torsten, PROSTEP AG" ,
+		"Schopper, Dominik, Mercedes-Benz" ,
+		"Stürken, Dr. Momme, Schaeffler Technologies AG & Co. KG" ,
+		"von Dungern, Dr. Oskar, enso managers"
+		;
+	dcterms:created "09.06.2026 02:57:10" ;
+	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
+Copyright (c) 2024-2026 :em engineering methods AG
+Copyright (c) 2024-2026 Aerospace Corp.
+Copyright (c) 2024-2026 Airbus
+Copyright (c) 2024-2026 ATLAS Elektronik
+Copyright (c) 2024-2026 enso managers
+Copyright (c) 2024-2026 Federated Knowledge, LLC 
+Copyright (c) 2024-2026 HSU Helmut Schmidt University
+Copyright (c) 2024-2026 INOMIC Solutions
+Copyright (c) 2024-2026 Manfred Harms Consulting
+Copyright (c) 2024-2026 ModelAlchemy Consulting
+Copyright (c) 2024-2026 Modern Technology Solutions, Inc.
+Copyright (c) 2024-2026 oose
+Copyright (c) 2024-2026 PDES Inc.
+Copyright (c) 2024-2026 PROSTEP AG
+Copyright (c) 2024-2026 PSG Prime Solutions Group
+Copyright (c) 2024-2026 RPTU
+Copyright (c) 2024-2026 RTX Technologies
+Copyright (c) 2024-2026 Schaeffler Technologies AG & Co. KG
+Copyright (c) 2024-2026 The Boeing Corporation
+Copyright (c) 2024-2026 Thematix Partners
+Copyright (c) 2024-2026 TU Hamburg-Harburg
+Copyright (c) 2024-2026 TU Ilmenau
+Copyright (c) 2024-2026 UC3 Madrid
+Copyright (c) 2024-2026 VDA
+
+Digital Data Package Working Group: Defines use-cases and domain ontology as a foundation for CASCaRA
+Copyright (c) 2019-2026 :em engineering methods AG
+Copyright (c) 2019-2020 Airbus Operations GmbH
+Copyright (c) 2019-2026 Anark
+Copyright (c) 2019-2026 AVL List
+Copyright (c) 2022-2026 Bosch
+Copyright (c) 2019-2022 CONWEAVER GmbH
+Copyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche
+Copyright (c) 2019-2026 Elysium
+Copyright (c) 2019-2021 Fraunhofer IESE
+Copyright (c) 2025-2026 INOMIC Solutions
+Copyright (c) 2025-2026 JAXA
+Copyright (c) 2021-2024 John Deere
+Copyright (c) 2019-2021 Kromberg & Schubert
+Copyright (c) 2019-2026 Mercedes-Benz
+Copyright (c) 2024-2026 MTU Aero Engines AG
+Copyright (c) 2019-2026 PROSTEP AG
+Copyright (c) 2025-2026 RTX Technologies
+Copyright (c) 2019-2024 Schaeffler Technologies AG & Co. KG
+Copyright (c) 2025-2026 Sodius Willert
+Copyright (c) 2019-2020 SSC Services
+Copyright (c) 2022-2026 The Boeing Corporation
+Copyright (c) 2022-2026 Volkswagen AG
+Copyright (c) 2019-2026 ZF Friedrichshafen AG
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
+https://opensource.org/licenses/MIT""" ;
+	dcterms:title "CASCaRA Resources Ontology" ;
+	owl:versionInfo "1.0" ;
+	.
+
+<http://www.omg.org/spec/CASCaRA/ontology/references/3D-Measurement-Data-Management-with-I++-DMS>
+	a fabio:Standard ;
+	dc:title "3D Measurement Data Management with I++ DMS"@en ;
+	dcterms:source <https://www.prostep.org/fileadmin/downloads/PSI_17_VDA_Recom_3DMDM_06_020_03.pdf> ;
+	.
+
+cas-ref:3MF-Format-Specification
+	a fabio:Standard ;
+	dc:title "3MF Format Specification"@en ;
+	dcterms:source <https://3mf.io/specification/> ;
+	.
+
+cas-ref:ARP4754B
+	a fabio:Standard ;
+	dc:title "Guidelines for Development of Civil Aircraft and Systems"@en ;
+	dcterms:source <https://www.sae.org/standards/arp4754b-guidelines-development-civil-aircraft-systems> ;
+	.
+
+cas-ref:ARP4761A
+	a fabio:Standard ;
+	dc:title "Guidelines for Conducting the Safety Assessment Process on Civil Aircraft, Systems, and Equipment"@en ;
+	dcterms:source <https://www.sae.org/standards/arp4761a-guidelines-conducting-safety-assessment-process-civil-aircraft-systems-equipment> ;
+	.
+
+cas-ref:AutomationML-Website
+	a fabio:Standard ;
+	dc:title "AutomationML-Website"@en ;
+	dcterms:source <https://www.automationml.org/about-automationml/specifications/> ;
+	.
+
+cas-ref:CSA-ISO-IEC-IEEE-15288
+	a fabio:Standard ;
+	dc:title
+		"System life cycle processes"@en ,
+		"System life cycle processes (Adopted ISO/IEC/IEEE 15288:2015, first edition, 2015-05-15)"@de
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/can-csa-iso-iec-ieee-15288/269743351> ;
+	bibo:edition "2016-12-0" ;
+	.
+
+cas-ref:DIN-23601
+	a fabio:Standard ;
+	dc:title
+		"Verification - Requirements for measurements to determine the characteristics for size, form, orientation, location and run-out"@en ,
+		"Verifikation - Anforderungen an Messungen zur Bestimmung der Kenngrößen für Größenmaße, Form, Richtung, Ort und Lauf"@de
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm-entwurf/din-23601/384600863> ;
+	bibo:edition "2024-11" ;
+	.
+
+cas-ref:DIN-8580
+	a fabio:Standard ;
+	dc:title
+		"Begriffe, Einteilung"@en ,
+		"Terms and definitions, division"@de
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/din-8580/65031153> ;
+	bibo:edition "2003-09" ;
+	.
+
+cas-ref:DIN-EN-61508-1
+	a fabio:Standard ;
+	dc:title
+		"Part 1: General requirements"@en ,
+		"Teil 1: Allgemeine Anforderungen"@de
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/din-en-61508-1/135302584> ;
+	bibo:edition "2011-02" ;
+	.
+
+cas-ref:DIN-EN-IEC-62714-1
+	a fabio:Standard ;
+	dc:title
+		"Deutsche Fassung EN IEC 62714-1:2018"@en ,
+		"German version EN IEC 62714-1:2018"@de
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/din-en-iec-62714-1/297556170> ;
+	bibo:edition "2019-02" ;
+	.
+
+cas-ref:DIN-EN-ISO-1101
+	a fabio:Standard ;
+	dc:title
+		"Tolerances of form, orientation, location and run-out"@de ,
+		"Tolerierung von Form, Richtung, Ort und Lauf (URL-Dublette!)"@en
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/din-en-iso-1101/258479779> ;
+	bibo:edition "2017-09" ;
+	.
+
+cas-ref:DIN-EN-ISO-14405-1
+	a fabio:Standard ;
+	dc:title
+		"Part 1: Linear sizes"@de ,
+		"Teil 1: Lineare Größenmaße"@en
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/din-en-iso-14405-1/395356021> ;
+	bibo:edition "2026-05" ;
+	.
+
+cas-ref:DIN-EN-ISO-14405-2
+	a fabio:Standard ;
+	dc:title
+		"Part 2: Dimensions other than linear or angular sizes"@de ,
+		"Teil 2: Andere als lineare oder Winkelgrößenmaße"@en
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/din-en-iso-14405-2/300588108> ;
+	bibo:edition "2019-06" ;
+	.
+
+cas-ref:DIN-EN-ISO-14405-3
+	a fabio:Standard ;
+	dc:title
+		"Part 3: Angular sizes"@de ,
+		"Teil 3: Winkelgrößenmaße"@en
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/din-en-iso-14405-3/255107240> ;
+	bibo:edition "2017-07" ;
+	.
+
+cas-ref:DIN-EN-ISO-21920
+	a fabio:Standard ;
+	dc:title
+		"Part 2: Terms, definitions and surface texture parameters (ISO 21920-2:2021, Corrected version 2022-06)"@de ,
+		"Teil 2: Begriffe und Kenngrößen für die Oberflächenbeschaffenheit (ISO 21920-2:2021, korrigierte Fassung 2022-06)"@en
+		;
+	.
+
+cas-ref:DIN-EN-ISO-21920-1
+	a fabio:Standard ;
+	dc:title
+		"Part 1: Indication of surface texture (ISO 21920-1:2021)"@de ,
+		"Teil 1: Angabe der Oberflächenbeschaffenheit (ISO 21920-1:2021)"@en
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/din-en-iso-21920-1/344762052> ;
+	bibo:edition "2022-12" ;
+	.
+
+cas-ref:DIN-EN-ISO-21920-3
+	a fabio:Standard ;
+	dc:title
+		"Part 3: Specification operators (ISO 21920-3:2021)"@de ,
+		"Teil 3: Spezifikationsoperatoren (ISO 21920-3:2021)"@en
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/din-en-iso-21920-3/344762552> ;
+	bibo:edition "2022-12" ;
+	.
+
+cas-ref:DIN-EN-ISO-4885
+	a fabio:Standard ;
+	dc:title
+		"Eisenwerkstoffe - Wärmebehandlung - Begriffe"@en ,
+		"Ferrous materials - Heat treatments - Vocabulary"@de
+		;
+	dcterms:source <https://www.dinmedia.de/en/standard/din-en-iso-4885/289121134> ;
+	bibo:edition "2018-07" ;
+	.
+
+cas-ref:DIN-ISO-15786
+	a fabio:Standard ;
+	dc:title
+		"Simplified representation and dimensioning of holes (ISO 15786:2008)"@de ,
+		"Vereinfachte Darstellung und Bemaßung von Löchern (ISO 15786:2008)"@en
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/din-iso-15786/223068266> ;
+	bibo:edition "2014-12" ;
+	.
+
+cas-ref:DO-297
+	a fabio:Standard ;
+	dc:title "Integrated Modular Avionics (IMA) Development Guidance and Certification Considerations"@en ;
+	dcterms:source <https://my.rtca.org/productdetails?id=a1B36000001IchGEAS> ;
+	.
+
+cas-ref:FAT-286
+	a fabio:Standard ;
+	dc:title "xMCF A Standard for Describing Connections and Joints in the Automotive Industry"@en ;
+	dcterms:source <https://www.vda.de/dam/vda/publications/2016/FAT/FAT-Schriftenreihe_286.pdf> ;
+	.
+
+cas-ref:FMI
+	a fabio:Standard ;
+	dc:title "Functional Mockup Interface"@en ;
+	dcterms:source <https://fmi-standard.org/> ;
+	.
+
+cas-ref:IGES
+	a fabio:Standard ;
+	dc:title "Initial Graphics Exchange Specification"@en ;
+	dcterms:source <https://web.archive.org/web/20120821190122/http://www.uspro.org/documents/IGES5-3_forDownload.pdf> ;
+	bibo:edition "5.3, 1996" ;
+	.
+
+cas-ref:IPC-2581
+	a fabio:Standard ;
+	dc:title "Digital Product Model Exchange"@en ;
+	dcterms:source <http://www.ipc2581.com/> ;
+	.
+
+cas-ref:ISO-10303-21
+	a fabio:Standard ;
+	dc:title
+		"Part 21: Implementation methods: Clear text encoding of the exchange structure"@de ,
+		"Teil 21: Implementierungsmethoden: Klartext-Kodierung der Austauschstruktur"@en
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/iso-10303-21/251313784> ;
+	bibo:edition "2016-03" ;
+	.
+
+cas-ref:ISO-10303-28
+	a fabio:Standard ;
+	dc:title
+		"Part 28: Implementation methods: XML representations of EXPRESS schemas and data, using XML schemas"@de ,
+		"Teil 28: Implementierungsmethoden: XML Darsellungen von EXPRESS Schemata und Daten unter Verwendung von XML Schemata"@en
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/iso-10303-28/103737461> ;
+	bibo:edition "2007-10" ;
+	.
+
+cas-ref:ISO-14306
+	a fabio:Standard ;
+	dc:title "JT file format specification for 3D visualization"@en ;
+	.
+
+cas-ref:ISO-14739-1
+	a fabio:Standard ;
+	dc:title
+		"Part 1: PRC 10001"@de ,
+		"Teil 1: PRC 10001"@en
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/iso-14739-1/228879952> ;
+	bibo:edition "2014-12" ;
+	.
+
+cas-ref:ISO-16232
+	a fabio:Standard ;
+	dc:title
+		"Cleanliness of components and systems"@en ,
+		"Sauberkeit von Komponenten für Fluidsysteme"@de
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/iso-16232/300157067> ;
+	bibo:edition "2018-12" ;
+	.
+
+cas-ref:ISO-20170
+	a fabio:Standard ;
+	dc:title
+		"Decomposition of geometrical characteristics for manufacturing control"@en ,
+		"Zerlegung von geometrischen Merkmalen für die Fertigungskontrolle"@de
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/din-en-iso-20170/298742961> ;
+	bibo:edition "2019-11" ;
+	.
+
+cas-ref:ISO-21448
+	a fabio:Standard ;
+	dc:title
+		"Safety of the intended functionality"@en ,
+		"Sicherheit der beabsichtigten Funktionalität"@de
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/iso-21448/356927331> ;
+	bibo:edition "2022-06" ;
+	.
+
+cas-ref:ISO-22514-2
+	a fabio:Standard ;
+	dc:title
+		"Part 2: Process capability and performance of time-dependent process models"@en ,
+		"Teil 2: Prozessleistungs- und Prozessfähigkeitskenngrößen von zeitabhängigen Prozessmodellen"@de
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/iso-22514-2/270082896> ;
+	bibo:edition "2017-02" ;
+	.
+
+cas-ref:ISO-22514-6
+	a fabio:Standard ;
+	dc:title
+		"Part 6: Process capability statistics for characteristics following a multivariate normal distribution"@en ,
+		"Teil 6: Prozessfähigkeitskennwerte für mehrdimensional normalverteilte Merkmale"@de
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/iso-22514-6/180368162> ;
+	bibo:edition "2013-02" ;
+	.
+
+cas-ref:ISO-22514-7
+	a fabio:Standard ;
+	dc:title
+		"Part 7: Capability of measurement processes"@en ,
+		"Teil 7 : Fähigkeit von Messprozessen"@de
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/iso-22514-7/345140722> ;
+	bibo:edition "2021-08" ;
+	.
+
+cas-ref:ISO-26262-1
+	a fabio:Standard ;
+	dc:title
+		"Part 1: Vocabulary"@de ,
+		"Teil 1: Vokabular"@en
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/iso-26262-1/300423910> ;
+	bibo:edition "2018-12" ;
+	.
+
+cas-ref:ISO-26580
+	a fabio:Standard ;
+	dc:title
+		"Software and systems engineering - Methods and tools for the feature-based approach to software and systems product line engineering"@en ,
+		"Software- und System-Engineering - Methoden und Werkzeuge für den merkmalbasierten Ansatz zur Entwicklung von Software- und Systemproduktlinien"@de
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/iso-iec-26580/340248389> ;
+	bibo:edition "2021-04" ;
+	.
+
+cas-ref:ISO-7499
+	a fabio:Standard ;
+	dc:title
+		"Eindeutige Identifikation integraler Geometrieelemente"@de ,
+		"Unique integral feature identification (UIFI)"@en
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/iso-7499/386871932> ;
+	bibo:edition "2024-11" ;
+	.
+
+cas-ref:ISO-7533
+	a fabio:Standard ;
+	dc:title
+		"Identification of specifications in the technical product documentation (TPD)"@en ,
+		"Identifikation von Spezifikationen in der technischen Produktdokumentation (TPD)"@de
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/din-en-iso-7533/387125251> ;
+	bibo:edition "2025-04" ;
+	.
+
+cas-ref:ISO-IEC-19513
+	a fabio:Standard ;
+	dc:title
+		"Information technology - Object Management Group Unified Profile for DoDAF and MODAF (UPDM)"@en ,
+		"Informationstechnologie - Objektmanagement Gruppen einheitliche Profile für DoDAF und MODAF (UPDM)"@de
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/iso-iec-19513/282481275> ;
+	bibo:edition "2017-10" ;
+	.
+
+cas-ref:ISO-IEC-19514
+	a fabio:Standard ;
+	dc:title "Object management group systems modeling language (OMG SysML)"@en ;
+	dcterms:source <https://www.iso.org/standard/65231.html> ;
+	.
+
+cas-ref:ISO-IEC-20246
+	a fabio:Standard ;
+	dc:title
+		"Bewertungen von Arbeitsergebnissen"@en ,
+		"Work product reviews"@de
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/iso-iec-20246/271358565> ;
+	bibo:edition "2017-02" ;
+	.
+
+cas-ref:ISO-IEC-IEEE-29119-1
+	a fabio:Standard ;
+	dc:title
+		"Software and systems engineering - Software testing - Part 1: General concepts"@en ,
+		"Software- und Systemengineering - Software-Test - Teil 1: Allgemeine Konzepte"@de
+		;
+	dcterms:source <https://www.dinmedia.de/en/standard/iso-iec-ieee-29119-1/351489600> ;
+	bibo:edition "2022-01" ;
+	.
+
+cas-ref:ISO-IEC-IEEE-29148
+	a fabio:Standard ;
+	dc:title
+		"Requirements Engineering"@en ,
+		"Requirements engineering"@de
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/iso-iec-ieee-29148/299567544> ;
+	bibo:edition "2018-11" ;
+	.
+
+cas-ref:ISO-IEC-IEEE-42010
+	a fabio:Standard ;
+	dc:title
+		"Software, Systeme und Unternehmen - Architekturbeschreibung"@de ,
+		"Software, systems and enterprise - Architecture description"@en
+		;
+	dcterms:source <https://www.dinmedia.de/de/norm/iso-iec-ieee-42010/361506868> ;
+	bibo:edition "2022-11" ;
+	.
+
+cas-ref:MechML
+	a fabio:Standard ;
+	dc:title "Mechanics Modeling Language"@en ;
+	dcterms:source <http://fasform.de/content/?ddownload=1431> ;
+	bibo:edition "1" ;
+	.
+
+cas-ref:Modelica-Language
+	a fabio:Standard ;
+	dc:title "Modelica Language"@en ;
+	.
+
+cas-ref:PLMXML-Documentation
+	a fabio:Standard ;
+	dc:title "PLMXML Documentation"@en ;
+	dcterms:source <http://media.plm.automation.siemens.com/open/plm-xml/docs/v7.0.3/documentation/plmxml.htm> ;
+	.
+
+cas-ref:QIF
+	a fabio:Standard ;
+	dc:title "Quality Information Framework "@en ;
+	dcterms:source <https://qifstandards.org/> ;
+	.
+
+cas-ref:QIFDocument
+	a fabio:Standard ;
+	dc:title "QIFDocument"@en ;
+	.
+
+<http://www.omg.org/spec/CASCaRA/ontology/references/Recommended-Practices-for-STEP-AP242-Business-Object-Model-XML-Product-&-Assembly-Structure>
+	a fabio:Standard ;
+	dc:title "Recommended Practices for STEP AP242 Business Object Model XML Product & Assembly Structure"@en ;
+	dcterms:source <https://www.cax-if.org/documents/rec_prac_ap242xml_assy_struct_v1.10.pdf> ;
+	bibo:edition "Release 1.1, May 20, 2016" ;
+	.
+
+cas-ref:ReqIF
+	a fabio:Standard ;
+	dc:title "Requirements Interchange Format"@en ;
+	dcterms:source <https://www.omg.org/reqif/> ;
+	.
+
+cas-ref:ReqIF-Implementation-Guide
+	a fabio:Standard ;
+	dc:title "ReqIF Implementation Guide"@en ;
+	bibo:edition "Version 1.4.3, 17 November 2014" ;
+	.
+
+cas-ref:SpecIF
+	a fabio:Standard ;
+	dc:title "Specification Integration Facility"@en ;
+	dcterms:source <https://specif.de/en/> ;
+	.
+
+cas-ref:SpecIF-Vocabulary-v1.1
+	a fabio:Standard ;
+	dc:title "SpecIF Vocabulary v1.1"@en ;
+	dcterms:source <https://github.com/GfSE/SpecIF/blob/master/documentation/04_SpecIF_Domain_Classes_Github.md> ;
+	.
+
+cas-ref:SysML
+	a fabio:Standard ;
+	dc:title "Systems Modeling Language"@en ;
+	dcterms:source <http://www.omgsysml.org/index.htm> ;
+	.
+
+cas-ref:VDA-231-106
+	a fabio:Standard ;
+	dc:title
+		"Material classification in motor vehicle construction: Structure and nomenclature"@de ,
+		"Werkstoff-Klassifizierung im Kraftfahrzeugbau: Aufbau und Nomenklatur"@en
+		;
+	dcterms:source <https://webshop.vda.de/VDA/de/vda-231-106-102021> ;
+	bibo:edition "01.10.2021 00:00:00" ;
+	.
+
+cas-ref:VDA-231-200
+	a fabio:Standard ;
+	dc:title
+		"Material record - Specification of materials and finishes in IT systems"@de ,
+		"Werkstoffdatensatz - Spezifikation von Werkstoffen und Oberflächen in IT-Systemen"@en
+		;
+	dcterms:source <https://webshop.vda.de/VDA/de/vda-231-200-09-2010> ;
+	.
+
+cas-ref:VDA-231-300
+	a fabio:Standard ;
+	dc:title
+		"Digital data exchange in material sampling taking into account 3D data"@de ,
+		"Digitaler Datenaustausch in der werkstofflichen Bemusterung unter Berücksichtigung der 3D-Daten"@en
+		;
+	dcterms:source <https://webshop.vda.de/VDA/de/vda-231-300-072022> ;
+	bibo:edition "01.07.2022 00:00:00" ;
+	.
+
+cas-ref:VDA-4951
+	a fabio:Standard ;
+	dc:title
+		"Datenfernübertragung von CAD/CAM Daten"@en ,
+		"The non-binding VDA Recommendation 4951 describes agreements regarding procedures, formats and contents of files, which standardize the exchange of CAD/CAM data and the associated administrative information and thus make it reliable and secure.  Due to the large number of topics in the field of CAD/CAM data exchange, the recommendation is divided into individual sub-documents, each of which is dedicated to one topic, but some of which also refer to or build on each other.  The numbering of the sub-documents does not indicate any context or a priority, it is simply historical."@de
+		;
+	.
+
+cas-ref:VDA-4964
+	a fabio:Standard ;
+	dc:title "Harness Description List (KBL)"@en ;
+	dcterms:source <https://www.vda.de/de/services/Publikationen/Publikation.~1312~.html> ;
+	bibo:edition "V2" ;
+	.
+
+cas-ref:VDA-4968
+	a fabio:Standard ;
+	dc:title "Vehicle Electric Container (VEC)"@en ;
+	dcterms:source <https://www.vda.de/de/services/Publikationen/vehicle-electric-container-vec.html> ;
+	bibo:edition "VDA-Empfehlungen, 01. Juli 2014" ;
+	.
+
+cas-ref:VDA-5550
+	a fabio:Standard ;
+	dc:title "Funktionsdatenaustausch"@en ;
+	dcterms:source <http://www.vda.de/dam/vda/publications/2018/Logistik/VDA_5550_T1_DE_V1_0_2018-03/VDA_5550_Funktionsdatenaustausch_T1_V1_0_2018-03.pdf> ;
+	bibo:edition "2018-03" ;
+	.
+
+cas-ref:VDI-2519-Blatt-1
+	a fabio:Standard ;
+	dc:title
+		"Procedures for the compilation of tender and performance specifications"@de ,
+		"Vorgehensweise bei der Erstellung von Lasten-/Pflichtenheften"@en
+		;
+	dcterms:source <https://www.vdi.de/richtlinien/details/vdi-2519-blatt-1-vorgehensweise-bei-der-erstellung-von-lasten-pflichtenheften> ;
+	bibo:edition "2001-12" ;
+	.
+

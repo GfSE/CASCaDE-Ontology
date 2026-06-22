@@ -47,7 +47,7 @@
 		"Stürken, Dr. Momme, Schaeffler Technologies AG & Co. KG" ,
 		"von Dungern, Dr. Oskar, enso managers"
 		;
-	dcterms:created "26.05.2026 06:45:59" ;
+	dcterms:created "09.06.2026 02:57:04" ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 Aerospace Corp.

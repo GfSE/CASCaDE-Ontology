@@ -1,0 +1,110 @@
+@prefix cas-arch: <http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/> .
+@prefix cas-ctx:  <http://www.omg.org/spec/CASCaRA/ontology/ContextElements/> .
+@prefix cas-ee:   <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/> .
+@prefix cas-fld:  <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/> .
+@prefix cas-mech: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/> .
+@prefix cas-mnf:  <http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/> .
+@prefix cas-op:   <http://www.omg.org/spec/CASCaRA/ontology/Operation/> .
+@prefix cas-org:  <http://www.omg.org/spec/CASCaRA/ontology/Organization/> .
+@prefix cas-proc:<http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/> .
+@prefix cas-sw:   <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/> .
+@prefix cas-sys:  <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/> .
+@prefix cas-val:  <http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/> .
+@prefix cas-ver:  <http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/> .
+
+@prefix bfo:  <http://purl.obolibrary.org/obo/BFO_> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.omg.org/spec/CASCaRA/bfo/>
+	a owl:Ontology ;
+	rdfs:label "CASCaRA Mapping to Basic Formal Ontology" ;
+	dcterms:abstract "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice." ;
+	dcterms:contributor
+		"Tonelli, Cecilia, Collins Aerospace,
+		"Kirsch, Michael, :em engineering methods AG"
+		;
+	dcterms:created "09.06.2026 02:57:04" ;
+	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
+Copyright (c) 2024-2026 :em engineering methods AG
+Copyright (c) 2024-2026 Aerospace Corp.
+Copyright (c) 2024-2026 Airbus
+Copyright (c) 2024-2026 ATLAS Elektronik
+Copyright (c) 2024-2026 enso managers
+Copyright (c) 2024-2026 Federated Knowledge, LLC 
+Copyright (c) 2024-2026 HSU Helmut Schmidt University
+Copyright (c) 2024-2026 INOMIC Solutions
+Copyright (c) 2024-2026 Manfred Harms Consulting
+Copyright (c) 2024-2026 ModelAlchemy Consulting
+Copyright (c) 2024-2026 Modern Technology Solutions, Inc.
+Copyright (c) 2024-2026 oose
+Copyright (c) 2024-2026 PDES Inc.
+Copyright (c) 2024-2026 PROSTEP AG
+Copyright (c) 2024-2026 PSG Prime Solutions Group
+Copyright (c) 2024-2026 RPTU
+Copyright (c) 2024-2026 RTX Technologies
+Copyright (c) 2024-2026 Schaeffler Technologies AG & Co. KG
+Copyright (c) 2024-2026 The Boeing Corporation
+Copyright (c) 2024-2026 Thematix Partners
+Copyright (c) 2024-2026 TU Hamburg-Harburg
+Copyright (c) 2024-2026 TU Ilmenau
+Copyright (c) 2024-2026 UC3 Madrid
+Copyright (c) 2024-2026 VDA
+
+Digital Data Package Working Group: Defines use-cases and domain ontology as a foundation for CASCaRA
+Copyright (c) 2019-2026 :em engineering methods AG
+Copyright (c) 2019-2020 Airbus Operations GmbH
+Copyright (c) 2019-2026 Anark
+Copyright (c) 2019-2026 AVL List
+Copyright (c) 2022-2026 Bosch
+Copyright (c) 2019-2022 CONWEAVER GmbH
+Copyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche
+Copyright (c) 2019-2026 Elysium
+Copyright (c) 2019-2021 Fraunhofer IESE
+Copyright (c) 2025-2026 INOMIC Solutions
+Copyright (c) 2025-2026 JAXA
+Copyright (c) 2021-2024 John Deere
+Copyright (c) 2019-2021 Kromberg & Schubert
+Copyright (c) 2019-2026 Mercedes-Benz
+Copyright (c) 2024-2026 MTU Aero Engines AG
+Copyright (c) 2019-2026 PROSTEP AG
+Copyright (c) 2025-2026 RTX Technologies
+Copyright (c) 2019-2024 Schaeffler Technologies AG & Co. KG
+Copyright (c) 2025-2026 Sodius Willert
+Copyright (c) 2019-2020 SSC Services
+Copyright (c) 2022-2026 The Boeing Corporation
+Copyright (c) 2022-2026 Volkswagen AG
+Copyright (c) 2019-2026 ZF Friedrichshafen AG
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
+https://opensource.org/licenses/MIT""" ;
+	dcterms:title "CASCaRA Mapping to Basic Formal Ontology" ;
+	owl:imports <http://www.omg.org/spec/CASCaRA/ontology/> ;
+	owl:versionInfo "1.0" ;
+
+cas-sys:ComponentState rdfs:subClassOf bfo:DescriptiveInformationContentEntity .
+cas-sys:SystemComponent rdfs:subClassOf bfo:RepresentationalInformationContentEntity .
+cas-org:Role rdfs:subClassOf bfo:role .
+cas-val:ValidationPlan rdfs:subClassOf bfo:Plan .
+cas-val:ValidationCriterium rdfs:subClassOf bfo:QualitySpecification .
+cas-mech:KinematicMotion rdfs:subClassOf bfo:DescriptiveInformationContentEntity .
+cas-val:ValidationRun rdfs:subClassOf bfo:INDUSTRIALPROCESS .
+cas-arch:Requirement rdfs:subClassOf bfo:PrescriptiveInformationContentEntity .
+cas-mech:Gearing rdfs:subClassOf bfo:QualitySpecification .
+cas-ver:VerificationCharacteristic rdfs:subClassOf bfo:QualitySpecification .
+cas-arch:Function rdfs:subClassOf bfo:function .
+cas-mech:MarkingLabeling rdfs:subClassOf bfo:DescriptiveInformationContentEntity .
+cas-mech:GeometricInterference rdfs:subClassOf bfo:DescriptiveInformationContentEntity .
+cas-mech:Cleanliness rdfs:subClassOf bfo:QualitySpecification .
+cas-sys:ComponentInterface rdfs:subClassOf bfo:RepresentationalInformationContentEntity .
+cas-mech:Heat-treatedArea rdfs:subClassOf bfo:RepresentationalInformationContentEntity .
+cas-mech:Hole rdfs:subClassOf bfo:site .
+cas-val:Displacement rdfs:subClassOf bfo:SpatialRegionIdentifier .
+cas-ctx:Change rdfs:subClassOf bfo:INDUSTRIALPROCESS .
+cas-mnf:ManufacturingOperation rdfs:subClassOf bfo:INDUSTRIALPROCESS .
+cas-op:Product rdfs:subClassOf bfo:RepresentationalInformationContentEntity .
+cas-mech:BendingSpecification rdfs:subClassOf bfo:QualitySpecification .
+cas-sys:ComponentConnection rdfs:subClassOf bfo:RepresentationalInformationContentEntity .
+cas-ctx:Reference rdfs:subClassOf bfo:Non-NameIdentifier .
+cas-mech:Material rdfs:subClassOf bfo:materialentity .
+cas-mech:Body rdfs:subClassOf bfo:RepresentationalInformationContentEntity .
+

@@ -1,12 +1,11 @@
 @prefix : <http://www.omg.org/spec/CASCaRA/ontology/> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cas-dim: <http://www.omg.org/spec/CASCaRA/ontology/dimensions/> .
 @prefix cas-ref: <http://www.omg.org/spec/CASCaRA/ontology/references/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dim: <http://www.omg.org/spec/CASCaRA/ontology/Dimensions/> .
 @prefix fabio: <http://purl.org/spar/fabio/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix prov: <http://www.w3.org/ns/prov/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -18,86 +17,121 @@
 	dcterms:abstract "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice." ;
 	dcterms:contributor
 		"Alvarez Rodriguez, José Maria, UC3 Madrid" ,
-		"Arslan, Serkan, INOMIC Solutions" ,
-		"Baleani, Massimo, RTX Technologies" ,
-		"Beavin, William, The Boeing Corporation" ,
-		"Bielert, René, Dr.-Ing. h.c. F. Porsche" ,
+		"Arslan, Serkan, INOMIC Solutions GmbH" ,
+		"Balandi, Oguzhan, T-Systems International GmbH" ,
+		"Baleani, Massimo" ,
+		"Bassam, Hamza, oose eG" ,
+		"Beavin, William, The Boeing Company" ,
+		"Bielert, René, Dr.-Ing. h.c. F. Porsche AG" ,
+		"Bleisinger, Oliver, Fraunhofer IESE" ,
+		"Bosse, Rolf, Mercedes-Benz AG" ,
+		"Burkhart, Roger, Thematix Partners" ,
+		"Delpeuch, Ghislain, SSC Services GmbH" ,
 		"Dörr, Sebastian, CONWEAVER GmbH" ,
 		"Engelhardt, Joachim, Sodius Willert" ,
-		"Gliniorz, Stefan, Bosch" ,
+		"Esquerra, Fredwilliam, The Boeing Company" ,
+		"Giese, Sarah, PROSTEP AG" ,
+		"Gliniorz, Stefan, Robert Bosch GmbH" ,
+		"Grimm, Prof. Dr. Christoph, Division of Design of Cyber-Physical Systems" ,
 		"Grünwald, Dr. Christian, Volkswagen AG" ,
+		"Haarer, Alexander, ATLAS Elektronik" ,
+		"Hahn, Hank, The Boeing Company" ,
+		"Hall, Kyle, Airbus Operations GmbH" ,
 		"Harms, Manfred, Manfred Harms Consulting" ,
-		"Hashimoto, Atsushi, JAXA" ,
+		"Hashimoto, Atsushi, JAXA Japan Aerospace Exploration Agency" ,
+		"Husung, Dr.-Ing. Stephan, Product and Systems Engineering Group" ,
 		"Kaufmann, Uwe, ModelAlchemy Consulting" ,
 		"Kendall, Elisa, Thematix Partners" ,
+		"Kiehlmann, Karsten, Aumovio SE" ,
 		"Kirsch, Michael, :em engineering methods AG" ,
-		"Klaar, Dr. Oliver, ZF Friedrichshafen AG" ,
+		"Klaar, Dr. Oliver, ZF Friedrichshafen" ,
+		"Kleiner, Dr.-Ing. Sven, :em engineering methods AG" ,
 		"Klöppner, Robert, MTU Aero Engines AG" ,
-		"Krems, Daniel, AVL List" ,
-		"Li, Zirui, TU Ilmenau" ,
-		"Martin, James, Anark" ,
+		"Koch, Dr. Walter, GfSE Gesellschaft für Systems Engineering" ,
+		"Koethe, Manfred, 88solutions" ,
+		"Krems, Daniel" ,
+		"Li, Zirui, Product and Systems Engineering Group" ,
+		"Martin, James, Anark Corporation Inc." ,
 		"Marvin, Joe, PSG Prime Solutions Group" ,
-		"Mendo, Juan Carlos, The Boeing Corporation" ,
+		"Mendo, Juan Carlos, The Boeing Company" ,
 		"Meyer, Nico, Volkswagen AG" ,
-		"Mueller, Andreas, Schaeffler Technologies AG & Co. KG" ,
-		"Nielsen, Johan, Elysium" ,
-		"Rivett, Pete, Federated Knowledge, LLC " ,
+		"Mogo Nem, Dr.-Ing. Fabrice, Schaeffler Technologies AG & Co. KG" ,
+		"Moreland, Clarence Moe, Modern Technology Solutions, Inc." ,
+		"Mueller, Andreas" ,
+		"Nielsen, Johan, ELYSIUM Inc." ,
+		"Noguchi, Ryan, Aerospace Corp." ,
+		"Psota, Thomas, Fraunhofer IESE" ,
+		"Rieger, Dr. Viola, Infineon Technologies AG" ,
+		"Rivett, Pete, Intuitive AI" ,
+		"Sauvage, Michel, Airbus Operations GmbH" ,
 		"Schmied, Torsten, PROSTEP AG" ,
-		"Schopper, Dominik, Mercedes-Benz" ,
+		"Schopper, Dominik, Mercedes-Benz AG" ,
+		"Spreier, Phil, ELYSIUM Inc." ,
+		"Stoib, Martin, Kromberg & Schubert Automotive GmbH & Co. KG" ,
 		"Stürken, Dr. Momme, Schaeffler Technologies AG & Co. KG" ,
-		"von Dungern, Dr. Oskar, enso managers"
+		"Tazir, Nora, prostep ivip Association" ,
+		"Tonelli, Cecilia" ,
+		"Weilkiens, Tim, oose eG" ,
+		"Weimer, Henrik, Airbus Operations GmbH" ,
+		"von Dungern, Dr. Oskar, enso managers GmbH" ,
+		"von Holst, Dr.-Ing. Christian, John Deere GmbH & Co KG"
 		;
-	dcterms:created "09.06.2026 02:57:04" ;
+	dcterms:created "28.06.2026 20:31:04" ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
+Copyright (c) 2024-2026 88solutions
 Copyright (c) 2024-2026 Aerospace Corp.
-Copyright (c) 2024-2026 Airbus
+Copyright (c) 2024-2026 Airbus Operations GmbH
 Copyright (c) 2024-2026 ATLAS Elektronik
-Copyright (c) 2024-2026 enso managers
-Copyright (c) 2024-2026 Federated Knowledge, LLC 
-Copyright (c) 2024-2026 HSU Helmut Schmidt University
-Copyright (c) 2024-2026 INOMIC Solutions
+Copyright (c) 2024-2026 The Boeing Company
+Copyright (c) 2024-2026 enso managers GmbH
+Copyright (c) 2024-2026 GfSE Gesellschaft für Systems Engineering
+Copyright (c) 2024-2026 INOMIC Solutions GmbH
+Copyright (c) 2024-2026 Intuitive AI
 Copyright (c) 2024-2026 Manfred Harms Consulting
 Copyright (c) 2024-2026 ModelAlchemy Consulting
 Copyright (c) 2024-2026 Modern Technology Solutions, Inc.
-Copyright (c) 2024-2026 oose
-Copyright (c) 2024-2026 PDES Inc.
-Copyright (c) 2024-2026 PROSTEP AG
+Copyright (c) 2024-2026 oose eG
+Copyright (c) 2024-2025 PDES, Inc.
+Copyright (c) 2024-2026 PROSTEP
+Copyright (c) 2024-2026 prostep ivip Association
 Copyright (c) 2024-2026 PSG Prime Solutions Group
-Copyright (c) 2024-2026 RPTU
-Copyright (c) 2024-2026 RTX Technologies
-Copyright (c) 2024-2026 Schaeffler Technologies AG & Co. KG
-Copyright (c) 2024-2026 The Boeing Corporation
+Copyright (c) 2024-2026 Division of Design of Cyber-Physical Systems
+Copyright (c) 2024-2026 RTX
+Copyright (c) 2024-2026 Schaeffler
 Copyright (c) 2024-2026 Thematix Partners
 Copyright (c) 2024-2026 TU Hamburg-Harburg
-Copyright (c) 2024-2026 TU Ilmenau
+Copyright (c) 2024-2026 Product and Systems Engineering Group
 Copyright (c) 2024-2026 UC3 Madrid
-Copyright (c) 2024-2026 VDA
+Copyright (c) 2024-2026 VDA Verband der deutschen Automobilindustrie
 
 Digital Data Package Working Group: Defines use-cases and domain ontology as a foundation for CASCaRA
 Copyright (c) 2019-2026 :em engineering methods AG
 Copyright (c) 2019-2020 Airbus Operations GmbH
-Copyright (c) 2019-2026 Anark
+Copyright (c) 2019-2026 Anark Corporation Inc.
+Copyright (c) 2026-2026 Aumovio SE
 Copyright (c) 2019-2026 AVL List
-Copyright (c) 2022-2026 Bosch
+Copyright (c) 2022-2026 Boeing
+Copyright (c) 2022-2026 Robert Bosch GmbH
 Copyright (c) 2019-2022 CONWEAVER GmbH
-Copyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche
-Copyright (c) 2019-2026 Elysium
+Copyright (c) 2019-2026 ELYSIUM Inc.
 Copyright (c) 2019-2021 Fraunhofer IESE
-Copyright (c) 2025-2026 INOMIC Solutions
-Copyright (c) 2025-2026 JAXA
-Copyright (c) 2021-2024 John Deere
-Copyright (c) 2019-2021 Kromberg & Schubert
-Copyright (c) 2019-2026 Mercedes-Benz
+Copyright (c) 2026-2026 Infineon Technologies AG
+Copyright (c) 2025-2026 INOMIC Solutions GmbH
+Copyright (c) 2025-2026 JAXA Japan Aerospace Exploration Agency
+Copyright (c) 2021-2024 John Deere GmbH & Co KG
+Copyright (c) 2019-2021 Kromberg & Schubert Automotive GmbH & Co. KG
+Copyright (c) 2019-2026 Mercedes-Benz AG
 Copyright (c) 2024-2026 MTU Aero Engines AG
+Copyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche AG
 Copyright (c) 2019-2026 PROSTEP AG
-Copyright (c) 2025-2026 RTX Technologies
+Copyright (c) 2025-2026 RTX
 Copyright (c) 2019-2024 Schaeffler Technologies AG & Co. KG
 Copyright (c) 2025-2026 Sodius Willert
-Copyright (c) 2019-2020 SSC Services
-Copyright (c) 2022-2026 The Boeing Corporation
+Copyright (c) 2019-2020 SSC Services GmbH
+Copyright (c) 2026-2026 T-Systems International GmbH
 Copyright (c) 2022-2026 Volkswagen AG
-Copyright (c) 2019-2026 ZF Friedrichshafen AG
+Copyright (c) 2019-2026 ZF Friedrichshafen
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
 https://opensource.org/licenses/MIT""" ;

@@ -3,7 +3,6 @@
 @prefix : <http://www.omg.org/spec/CASCaRA/ontology/> .
 @prefix arch: <http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/> .
 @prefix cas: <http://www.omg.org/spec/CASCaRA/metamodel/> .
-@prefix cas-dim: <http://www.omg.org/spec/CASCaRA/ontology/dimensions/> .
 @prefix cas-ref: <http://www.omg.org/spec/CASCaRA/ontology/references/> .
 @prefix con: <http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/ConceptDefinition/> .
 @prefix ctx: <http://www.omg.org/spec/CASCaRA/ontology/ContextElements/> .
@@ -20,11 +19,14 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pro: <http://www.omg.org/spec/CASCaRA/ontology/ProductLineEngineering/> .
 @prefix proc: <http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix sw: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/> .
 @prefix sys: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix val: <http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/> .
 @prefix ver: <http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -94,7 +96,7 @@
 		"von Dungern, Dr. Oskar, enso managers GmbH" ,
 		"von Holst, Dr.-Ing. Christian, John Deere GmbH & Co KG"
 		;
-	dcterms:created "28.06.2026 20:31:19" ;
+	dcterms:created "28.06.2026 22:45:36" ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 88solutions

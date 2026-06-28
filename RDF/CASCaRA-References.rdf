@@ -1,14 +1,16 @@
 @prefix : <http://www.omg.org/spec/CASCaRA/ontology/> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix cas-dim: <http://www.omg.org/spec/CASCaRA/ontology/dimensions/> .
 @prefix cas-ref: <http://www.omg.org/spec/CASCaRA/ontology/references/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix fabio: <http://purl.org/spar/fabio/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.omg.org/spec/CASCaRA/ontology/>
@@ -76,7 +78,7 @@
 		"von Dungern, Dr. Oskar, enso managers GmbH" ,
 		"von Holst, Dr.-Ing. Christian, John Deere GmbH & Co KG"
 		;
-	dcterms:created "28.06.2026 20:31:19" ;
+	dcterms:created "28.06.2026 22:45:36" ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 88solutions

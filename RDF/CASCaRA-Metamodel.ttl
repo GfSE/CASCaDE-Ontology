@@ -45,7 +45,7 @@
 		"Stürken, Dr. Momme, Schaeffler Technologies AG & Co. KG" ,
 		"von Dungern, Dr. Oskar, enso managers"
 		;
-	dcterms:created "25.05.2026 07:16:55" ;
+	dcterms:created "09.06.2026 02:57:04" ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 Aerospace Corp.
@@ -104,233 +104,127 @@ https://opensource.org/licenses/MIT""" ;
 	.
 
 cas:Entity
-	a owl:Class ;
-	rdfs:label "Entity"@en ;
-	skos:definition "A CASCaRA meta-model item used for entities."@en ;
-	.
+  a owl:Class ;
+  rdfs:label "Entity"@en ;
+  skos:definition "A CASCaRA meta-model item used for entities."@en .
 
 cas:Entity_Shape
-	a sh:NodeShape ;
-	sh:property
-		_:blank22 ,
-		_:blank24
-		;
-	sh:targetClass cas:Entity ;
-	.
-
-cas:Link
-	a owl:ObjectProperty ;
-	rdfs:label "linked with"@en ;
-	rdfs:range _:blank15 ;
-	skos:definition "A PIG meta-model item connecting a reified relationship with its source or target. Also connects an organizer to a model element."@en ;
-	.
-
-cas:Link_Shape
-	a sh:PropertyShape ;
-	sh:or _:blank07 ;
-	sh:path cas:Link ;
-	.
-
+  a sh:NodeShape ;
+  sh:targetClass cas:Entity ;
+  sh:property [
+    sh:path rdfs:comment ;
+    sh:minCount 1
+  ] ;
+  sh:property [
+    sh:path rdfs:label ;
+    sh:minCount 1
+  ] .
+  
 cas:Package
-	a owl:Class ;
-	rdfs:subClassOf cas:Entity ;
-	rdfs:label "Package"@en ;
-	skos:definition "A CASCaRA meta-model item used for packages comprising entities, relationships and potentially nested packages."@en ;
-	.
+  a owl:Class ;
+  rdfs:subClassOf cas:Entity ;
+  rdfs:label "Package"@en ;
+  skos:definition "A CASCaRA meta-model item used for packages comprising entities, relationships and potentially nested packages."@en .
 
 cas:Package_Shape
-	a sh:NodeShape ;
-	sh:property
-		_:blank23 ,
-		_:blank25
-		;
-	sh:targetClass cas:Package ;
-	.
-
+  a sh:NodeShape ;
+  sh:targetClass cas:Package ;
+  sh:property [
+    sh:path rdfs:comment ;
+    sh:minCount 1
+  ] ;
+  sh:property [
+    sh:path rdfs:label ;
+    sh:minCount 1
+  ] .
+  
 cas:Property
-	a owl:DatatypeProperty ;
-	rdfs:label "Property"@en ;
-	skos:definition "A CASCaRA meta-model item used for properties (aka attributes)."@en ;
-	.
+  a owl:DatatypeProperty ;
+  rdfs:label "Property"@en ;
+  skos:definition "A CASCaRA meta-model item used for properties (aka attributes)."@en .
 
 cas:Property_Shape
-	a sh:PropertyShape ;
-	sh:datatype xsd:anyType ;
-	sh:path cas:Property ;
-	.
-
+  a sh:PropertyShape ;
+  sh:path cas:Property ;
+  sh:datatype xsd:anyType .
+  
 cas:Relationship
-	a owl:Class ;
-	rdfs:label "Relationship"@en ;
-	skos:definition "A CASCaRA meta-model item used for reified relationships (aka predicates)."@en ;
-	.
+  a owl:Class ;
+  rdfs:label "Relationship"@en ;
+  skos:definition "A CASCaRA meta-model item used for reified relationships (aka predicates)."@en .
 
 cas:Relationship_Shape
-	a sh:NodeShape ;
-	sh:property
-		_:blank26 ,
-		_:blank27 ,
-		_:blank28
-		;
-	sh:targetClass cas:Relationship ;
-	.
+  a sh:NodeShape ;
+  sh:targetClass cas:Relationship ;
+  sh:property [
+    sh:path rdfs:label ;
+    sh:minCount 1
+  ] ;
+  sh:property [
+    sh:path cas:linksSource ;
+    sh:node cas:linksSource_Shape
+  ] ;
+  sh:property [
+    sh:path cas:linksTarget ;
+    sh:node cas:linksTarget_Shape
+  ] .
+
+cas:Link
+  a owl:ObjectProperty ;
+  rdfs:label "linked with"@en ;
+  skos:definition "A PIG meta-model item connecting a reified relationship with its source or target. Also connects an organizer to a model element."@en ;
+  rdfs:range [
+    owl:unionOf (
+      cas:Entity
+      cas:Relationship
+    )
+  ] .
 
 cas:linksSource
-	a owl:ObjectProperty ;
-	rdfs:subPropertyOf cas:Link ;
-	rdfs:label "to source"@en ;
-	rdfs:range _:blank13 ;
-	skos:definition "Connects the source of a reified relationship."@en ;
-	.
-
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf cas:Link ;
+  rdfs:label "to source"@en ;
+  skos:definition "Connects the source of a reified relationship."@en ;
+  rdfs:range [
+    owl:unionOf (
+      cas:Entity
+      cas:Relationship
+    )
+  ] .
+  
 cas:linksSource_Shape
-	a sh:PropertyShape ;
-	sh:or _:blank08 ;
-	sh:path cas:linksSource ;
-	.
+  a sh:PropertyShape ;
+  sh:path cas:linksSource ;
+  sh:or (
+    [ sh:class cas:Entity ]
+    [ sh:class cas:Relationship ]
+  ) .´
 
 cas:linksTarget
-	a owl:ObjectProperty ;
-	rdfs:subPropertyOf cas:Link ;
-	rdfs:label "to target"@en ;
-	rdfs:range _:blank14 ;
-	skos:definition "Connects the target of a reified relationship or an organizer."@en ;
-	.
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf cas:Link ;
+  rdfs:label "to target"@en ;
+  skos:definition "Connects the target of a reified relationship or an organizer."@en ;
+  rdfs:range [
+    owl:unionOf (
+      cas:Entity
+      cas:Relationship
+    )
+  ] .
 
 cas:linksTarget_Shape
-	a sh:PropertyShape ;
-	sh:or _:blank09 ;
-	sh:path cas:linksTarget ;
-	.
+  a sh:PropertyShape ;
+  sh:path cas:linksTarget ;
+  sh:or (
+    [ sh:class cas:Entity ]
+    [ sh:class cas:Relationship ]
+  ) .
 
-_:blank01
-	rdf:first cas:Entity ;
-	rdf:rest _:blank05 ;
-	.
 
-_:blank02
-	rdf:first cas:Entity ;
-	rdf:rest _:blank06 ;
-	.
-
-_:blank03
-	rdf:first cas:Entity ;
-	rdf:rest _:blank04 ;
-	.
-
-_:blank04
-	rdf:first cas:Relationship ;
-	rdf:rest rdf:nil ;
-	.
-
-_:blank05
-	rdf:first cas:Relationship ;
-	rdf:rest rdf:nil ;
-	.
-
-_:blank06
-	rdf:first cas:Relationship ;
-	rdf:rest rdf:nil ;
-	.
-
-_:blank07
-	rdf:first _:blank16 ;
-	rdf:rest _:blank10 ;
-	.
-
-_:blank08
-	rdf:first _:blank17 ;
-	rdf:rest _:blank11 ;
-	.
-
-_:blank09
-	rdf:first _:blank18 ;
-	rdf:rest _:blank12 ;
-	.
-
-_:blank10
-	rdf:first _:blank19 ;
-	rdf:rest rdf:nil ;
-	.
-
-_:blank11
-	rdf:first _:blank20 ;
-	rdf:rest rdf:nil ;
-	.
-
-_:blank12
-	rdf:first _:blank21 ;
-	rdf:rest rdf:nil ;
-	.
-
-_:blank13
-	owl:unionOf _:blank01 ;
-	.
-
-_:blank14
-	owl:unionOf _:blank02 ;
-	.
-
-_:blank15
-	owl:unionOf _:blank03 ;
-	.
-
-_:blank16
-	sh:class cas:Entity ;
-	.
-
-_:blank17
-	sh:class cas:Entity ;
-	.
-
-_:blank18
-	sh:class cas:Entity ;
-	.
-
-_:blank19
-	sh:class cas:Relationship ;
-	.
-
-_:blank20
-	sh:class cas:Relationship ;
-	.
-
-_:blank21
-	sh:class cas:Relationship ;
-	.
-
-_:blank22
-	sh:minCount "1"^^xsd:integer ;
-	sh:path rdfs:comment ;
-	.
-
-_:blank23
-	sh:minCount "1"^^xsd:integer ;
-	sh:path rdfs:comment ;
-	.
-
-_:blank24
-	sh:minCount "1"^^xsd:integer ;
-	sh:path rdfs:label ;
-	.
-
-_:blank25
-	sh:minCount "1"^^xsd:integer ;
-	sh:path rdfs:label ;
-	.
-
-_:blank26
-	sh:minCount "1"^^xsd:integer ;
-	sh:path rdfs:label ;
-	.
-
-_:blank27
-	sh:node cas:linksSource_Shape ;
-	sh:path cas:linksSource ;
-	.
-
-_:blank28
-	sh:node cas:linksTarget_Shape ;
-	sh:path cas:linksTarget ;
-	.
-
+cas:Link_Shape
+  a sh:PropertyShape ;
+  sh:path cas:Link ;
+  sh:or (
+    [ sh:class cas:Entity ]
+    [ sh:class cas:Relationship ]
+  ) .

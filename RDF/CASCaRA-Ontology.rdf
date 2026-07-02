@@ -280,6 +280,7 @@
 @prefix ns331: <owl:> .
 @prefix ns332: <owl:> .
 @prefix ns333: <owl:> .
+@prefix ns334: <owl:> .
 @prefix ns34: <owl:> .
 @prefix ns35: <owl:> .
 @prefix ns36: <owl:> .
@@ -370,13 +371,14 @@
 		"Alvarez Rodriguez, José Maria, UC3 Madrid" ,
 		"Arslan, Serkan, INOMIC Solutions GmbH" ,
 		"Balandi, Oguzhan, T-Systems International GmbH" ,
-		"Baleani, Massimo" ,
+		"Baleani, Massimo, Collins Aerospace" ,
 		"Bassam, Hamza, oose eG" ,
 		"Beavin, William, The Boeing Company" ,
 		"Bielert, René, Dr.-Ing. h.c. F. Porsche AG" ,
 		"Bleisinger, Oliver, Fraunhofer IESE" ,
 		"Bosse, Rolf, Mercedes-Benz AG" ,
 		"Burkhart, Roger, Thematix Partners" ,
+		"Christmann, Simon, :em engineering methods AG" ,
 		"Delpeuch, Ghislain, SSC Services GmbH" ,
 		"Dörr, Sebastian, CONWEAVER GmbH" ,
 		"Engelhardt, Joachim, Sodius Willert" ,
@@ -400,7 +402,8 @@
 		"Klöppner, Robert, MTU Aero Engines AG" ,
 		"Koch, Dr. Walter, GfSE Gesellschaft für Systems Engineering" ,
 		"Koethe, Manfred, 88solutions" ,
-		"Krems, Daniel" ,
+		"Krems, Daniel, AVL List" ,
+		"Lehnen, Johannes, :em engineering methods AG" ,
 		"Li, Zirui, Product and Systems Engineering Group" ,
 		"Martin, James, Anark Corporation Inc." ,
 		"Marvin, Joe, PSG Prime Solutions Group" ,
@@ -408,7 +411,7 @@
 		"Meyer, Nico, Volkswagen AG" ,
 		"Mogo Nem, Dr.-Ing. Fabrice, Schaeffler Technologies AG & Co. KG" ,
 		"Moreland, Clarence Moe, Modern Technology Solutions, Inc." ,
-		"Mueller, Andreas" ,
+		"Mueller, Andreas, Schaeffler Technologies AG & Co. KG" ,
 		"Nielsen, Johan, ELYSIUM Inc." ,
 		"Noguchi, Ryan, Aerospace Corp." ,
 		"Psota, Thomas, Fraunhofer IESE" ,
@@ -421,13 +424,14 @@
 		"Stoib, Martin, Kromberg & Schubert Automotive GmbH & Co. KG" ,
 		"Stürken, Dr. Momme, Schaeffler Technologies AG & Co. KG" ,
 		"Tazir, Nora, prostep ivip Association" ,
-		"Tonelli, Cecilia" ,
+		"Tonelli, Cecilia, Collins Aerospace" ,
 		"Weilkiens, Tim, oose eG" ,
 		"Weimer, Henrik, Airbus Operations GmbH" ,
+		"Williams, Mark" ,
 		"von Dungern, Dr. Oskar, enso managers GmbH" ,
 		"von Holst, Dr.-Ing. Christian, John Deere GmbH & Co KG"
 		;
-	dcterms:created "28.06.2026 22:45:36" ;
+	dcterms:created "02.07.2026 06:30:54" ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 88solutions
@@ -437,6 +441,7 @@ Copyright (c) 2024-2026 ATLAS Elektronik
 Copyright (c) 2024-2026 The Boeing Company
 Copyright (c) 2024-2026 enso managers GmbH
 Copyright (c) 2024-2026 GfSE Gesellschaft für Systems Engineering
+Copyright (c) 2024 INCOSE
 Copyright (c) 2024-2026 INOMIC Solutions GmbH
 Copyright (c) 2024-2026 Intuitive AI
 Copyright (c) 2024-2026 Manfred Harms Consulting
@@ -444,12 +449,12 @@ Copyright (c) 2024-2026 ModelAlchemy Consulting
 Copyright (c) 2024-2026 Modern Technology Solutions, Inc.
 Copyright (c) 2024-2026 oose eG
 Copyright (c) 2024-2025 PDES, Inc.
-Copyright (c) 2024-2026 PROSTEP
+Copyright (c) 2024-2026 PROSTEP AG
 Copyright (c) 2024-2026 prostep ivip Association
 Copyright (c) 2024-2026 PSG Prime Solutions Group
 Copyright (c) 2024-2026 Division of Design of Cyber-Physical Systems
-Copyright (c) 2024-2026 RTX
-Copyright (c) 2024-2026 Schaeffler
+Copyright (c) 2024-2026 Collins Aerospace
+Copyright (c) 2024-2026 Schaeffler Technologies AG & Co. KG
 Copyright (c) 2024-2026 Thematix Partners
 Copyright (c) 2024-2026 TU Hamburg-Harburg
 Copyright (c) 2024-2026 Product and Systems Engineering Group
@@ -462,7 +467,7 @@ Copyright (c) 2019-2020 Airbus Operations GmbH
 Copyright (c) 2019-2026 Anark Corporation Inc.
 Copyright (c) 2026-2026 Aumovio SE
 Copyright (c) 2019-2026 AVL List
-Copyright (c) 2022-2026 Boeing
+Copyright (c) 2022-2026 The Boeing Company
 Copyright (c) 2022-2026 Robert Bosch GmbH
 Copyright (c) 2019-2022 CONWEAVER GmbH
 Copyright (c) 2019-2026 ELYSIUM Inc.
@@ -476,7 +481,7 @@ Copyright (c) 2019-2026 Mercedes-Benz AG
 Copyright (c) 2024-2026 MTU Aero Engines AG
 Copyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche AG
 Copyright (c) 2019-2026 PROSTEP AG
-Copyright (c) 2025-2026 RTX
+Copyright (c) 2025-2026 Collins Aerospace
 Copyright (c) 2019-2024 Schaeffler Technologies AG & Co. KG
 Copyright (c) 2025-2026 Sodius Willert
 Copyright (c) 2019-2020 SSC Services GmbH
@@ -493,12 +498,12 @@ https://opensource.org/licenses/MIT""" ;
 
 dc:description
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Beschreibung"@de ,
 		"Description"@en
 		;
-	dcterms:modified "2026-04-01T20:28:14Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-30T00:23:38Z"^^xsd:dateTime ;
 	rdfs:range xsd:string ;
 	skos:definition
 		"Beschreibung des Elements"@de ,
@@ -514,12 +519,12 @@ dc:description_Shape
 
 dc:identifier
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Identifier"@en ,
 		"Identifikator"@de
 		;
-	dcterms:modified "2026-06-07T09:14:35Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-30T00:23:33Z"^^xsd:dateTime ;
 	rdfs:range xsd:string ;
 	skos:definition
 		"Eindeutiger Identifikator des Elements"@de ,
@@ -535,12 +540,12 @@ dc:identifier_Shape
 
 dc:title
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Titel"@de ,
 		"Title"@en
 		;
-	dcterms:modified "2026-06-07T09:14:38Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-30T00:23:36Z"^^xsd:dateTime ;
 	rdfs:range xsd:string ;
 	skos:definition
 		"Titel des Elements"@de ,
@@ -584,7 +589,7 @@ cas-ctx:Change_Shape
 
 cas-ctx:Change_affects_BendingSpecification
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Bending Specification"@en ,
 		"Änderung betrifft Biegespezifikation"@de
@@ -625,7 +630,7 @@ cas-ctx:Change_affects_BendingSpecification_Target_Shape
 
 cas-ctx:Change_affects_Body
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Body"@en ,
 		"Änderung betrifft Körper"@de
@@ -666,7 +671,7 @@ cas-ctx:Change_affects_Body_Target_Shape
 
 cas-ctx:Change_affects_Cleanliness
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Cleanliness"@en ,
 		"Änderung betrifft Sauberkeit"@de
@@ -707,7 +712,7 @@ cas-ctx:Change_affects_Cleanliness_Target_Shape
 
 cas-ctx:Change_affects_ComponentConnection
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Component Connection"@en ,
 		"Änderung betrifft Komponenten-Verbindung"@de
@@ -748,7 +753,7 @@ cas-ctx:Change_affects_ComponentConnection_Target_Shape
 
 cas-ctx:Change_affects_Deviation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Deviation"@en ,
 		"Änderung betrifft Abweichung"@de
@@ -789,7 +794,7 @@ cas-ctx:Change_affects_Deviation_Target_Shape
 
 cas-ctx:Change_affects_Function
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Function"@en ,
 		"Änderung betrifft Funktion"@de
@@ -830,7 +835,7 @@ cas-ctx:Change_affects_Function_Target_Shape
 
 cas-ctx:Change_affects_Gearing
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Gearing"@en ,
 		"Änderung betrifft Verzahnung"@de
@@ -871,7 +876,7 @@ cas-ctx:Change_affects_Gearing_Target_Shape
 
 cas-ctx:Change_affects_HeatTreatedArea
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Heat-treated Area"@en ,
 		"Änderung betrifft Wärmebehandelter Bereich"@de
@@ -912,7 +917,7 @@ cas-ctx:Change_affects_HeatTreatedArea_Target_Shape
 
 cas-ctx:Change_affects_Hole
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Hole"@en ,
 		"Änderung betrifft Bohrung"@de
@@ -953,7 +958,7 @@ cas-ctx:Change_affects_Hole_Target_Shape
 
 cas-ctx:Change_affects_JoiningElement
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Joining Element"@en ,
 		"Änderung betrifft Fügeverbindung"@de
@@ -994,7 +999,7 @@ cas-ctx:Change_affects_JoiningElement_Target_Shape
 
 cas-ctx:Change_affects_KinematicJoint
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Kinematic Joint"@en ,
 		"Änderung betrifft Kinematisches Gelenk"@de
@@ -1035,7 +1040,7 @@ cas-ctx:Change_affects_KinematicJoint_Target_Shape
 
 cas-ctx:Change_affects_ManufacturingOperation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Manufacturing Operation"@en ,
 		"Änderung betrifft Fertigungsvorgang"@de
@@ -1076,7 +1081,7 @@ cas-ctx:Change_affects_ManufacturingOperation_Target_Shape
 
 cas-ctx:Change_affects_MarkingLabeling
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Marking & Labeling"@en ,
 		"Änderung betrifft Markierung & Beschriftung"@de
@@ -1117,7 +1122,7 @@ cas-ctx:Change_affects_MarkingLabeling_Target_Shape
 
 cas-ctx:Change_affects_Material
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Material"@en ,
 		"Änderung betrifft Werkstoff"@de
@@ -1158,7 +1163,7 @@ cas-ctx:Change_affects_Material_Target_Shape
 
 cas-ctx:Change_affects_ModelAnnotation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Model Annotation"@en ,
 		"Änderung betrifft Modell-Annotation"@de
@@ -1199,7 +1204,7 @@ cas-ctx:Change_affects_ModelAnnotation_Target_Shape
 
 cas-ctx:Change_affects_ModelView
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Model View"@en ,
 		"Änderung betrifft Modellansicht"@de
@@ -1240,7 +1245,7 @@ cas-ctx:Change_affects_ModelView_Target_Shape
 
 cas-ctx:Change_affects_PaintedCoatedArea
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Painted & Coated Area"@en ,
 		"Änderung betrifft Lackierter & Beschichteter Bereich"@de
@@ -1281,7 +1286,7 @@ cas-ctx:Change_affects_PaintedCoatedArea_Target_Shape
 
 cas-ctx:Change_affects_Product
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Product"@en ,
 		"Änderung betrifft Produkt"@de
@@ -1322,7 +1327,7 @@ cas-ctx:Change_affects_Product_Target_Shape
 
 cas-ctx:Change_affects_Requirement
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Requirement"@en ,
 		"Änderung betrifft Anforderung"@de
@@ -1363,7 +1368,7 @@ cas-ctx:Change_affects_Requirement_Target_Shape
 
 cas-ctx:Change_affects_SystemComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects System Component"@en ,
 		"Änderung betrifft Systemkomponente"@de
@@ -1404,7 +1409,7 @@ cas-ctx:Change_affects_SystemComponent_Target_Shape
 
 cas-ctx:Change_affects_UseCase
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change affects Use Case"@en ,
 		"Änderung betrifft Anwendungsfall"@de
@@ -1445,7 +1450,7 @@ cas-ctx:Change_affects_UseCase_Target_Shape
 
 cas-ctx:Change_createdBy_Person
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change created by Person"@en ,
 		"Änderung erstellt von Person"@de
@@ -1486,7 +1491,7 @@ cas-ctx:Change_createdBy_Person_Target_Shape
 
 cas-ctx:Change_ownedBy_Role
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change owned by Role"@en ,
 		"Änderung gehört Rolle"@de
@@ -1527,7 +1532,7 @@ cas-ctx:Change_ownedBy_Role_Target_Shape
 
 cas-ctx:Change_partOf_Change
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Change part of Change"@en ,
 		"Änderung Bestandteil von Änderung"@de
@@ -1597,7 +1602,7 @@ cas-ctx:Configuration_Shape
 
 cas-ctx:Configuration_includes_BendingSpecification
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Bending Specification"@en ,
 		"Konfiguration umfasst Biegespezifikation"@de
@@ -1638,7 +1643,7 @@ cas-ctx:Configuration_includes_BendingSpecification_Target_Shape
 
 cas-ctx:Configuration_includes_Body
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Body"@en ,
 		"Konfiguration umfasst Körper"@de
@@ -1679,7 +1684,7 @@ cas-ctx:Configuration_includes_Body_Target_Shape
 
 cas-ctx:Configuration_includes_Cleanliness
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Cleanliness"@en ,
 		"Konfiguration umfasst Sauberkeit"@de
@@ -1720,7 +1725,7 @@ cas-ctx:Configuration_includes_Cleanliness_Target_Shape
 
 cas-ctx:Configuration_includes_ComponentConnection
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Component Connection"@en ,
 		"Konfiguration umfasst Komponenten-Verbindung"@de
@@ -1761,7 +1766,7 @@ cas-ctx:Configuration_includes_ComponentConnection_Target_Shape
 
 cas-ctx:Configuration_includes_Deviation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Deviation"@en ,
 		"Konfiguration umfasst Abweichung"@de
@@ -1802,7 +1807,7 @@ cas-ctx:Configuration_includes_Deviation_Target_Shape
 
 cas-ctx:Configuration_includes_Function
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Function"@en ,
 		"Konfiguration umfasst Funktion"@de
@@ -1843,7 +1848,7 @@ cas-ctx:Configuration_includes_Function_Target_Shape
 
 cas-ctx:Configuration_includes_Gearing
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Gearing"@en ,
 		"Konfiguration umfasst Verzahnung"@de
@@ -1884,7 +1889,7 @@ cas-ctx:Configuration_includes_Gearing_Target_Shape
 
 cas-ctx:Configuration_includes_HeatTreatedArea
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Heat-treated Area"@en ,
 		"Konfiguration umfasst Wärmebehandelter Bereich"@de
@@ -1925,7 +1930,7 @@ cas-ctx:Configuration_includes_HeatTreatedArea_Target_Shape
 
 cas-ctx:Configuration_includes_Hole
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Hole"@en ,
 		"Konfiguration umfasst Bohrung"@de
@@ -1966,7 +1971,7 @@ cas-ctx:Configuration_includes_Hole_Target_Shape
 
 cas-ctx:Configuration_includes_JoiningElement
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Joining Element"@en ,
 		"Konfiguration umfasst Fügeverbindung"@de
@@ -2007,7 +2012,7 @@ cas-ctx:Configuration_includes_JoiningElement_Target_Shape
 
 cas-ctx:Configuration_includes_KinematicJoint
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Kinematic Joint"@en ,
 		"Konfiguration umfasst Kinematisches Gelenk"@de
@@ -2048,7 +2053,7 @@ cas-ctx:Configuration_includes_KinematicJoint_Target_Shape
 
 cas-ctx:Configuration_includes_ManufacturingOperation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Manufacturing Operation"@en ,
 		"Konfiguration umfasst Fertigungsvorgang"@de
@@ -2089,7 +2094,7 @@ cas-ctx:Configuration_includes_ManufacturingOperation_Target_Shape
 
 cas-ctx:Configuration_includes_MarkingLabeling
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Marking & Labeling"@en ,
 		"Konfiguration umfasst Markierung & Beschriftung"@de
@@ -2130,7 +2135,7 @@ cas-ctx:Configuration_includes_MarkingLabeling_Target_Shape
 
 cas-ctx:Configuration_includes_Material
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Material"@en ,
 		"Konfiguration umfasst Werkstoff"@de
@@ -2171,7 +2176,7 @@ cas-ctx:Configuration_includes_Material_Target_Shape
 
 cas-ctx:Configuration_includes_ModelAnnotation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Model Annotation"@en ,
 		"Konfiguration umfasst Modell-Annotation"@de
@@ -2212,7 +2217,7 @@ cas-ctx:Configuration_includes_ModelAnnotation_Target_Shape
 
 cas-ctx:Configuration_includes_ModelView
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Model View"@en ,
 		"Konfiguration umfasst Modellansicht"@de
@@ -2253,7 +2258,7 @@ cas-ctx:Configuration_includes_ModelView_Target_Shape
 
 cas-ctx:Configuration_includes_PaintedCoatedArea
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Painted & Coated Area"@en ,
 		"Konfiguration umfasst Lackierter & Beschichteter Bereich"@de
@@ -2294,7 +2299,7 @@ cas-ctx:Configuration_includes_PaintedCoatedArea_Target_Shape
 
 cas-ctx:Configuration_includes_Product
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Product"@en ,
 		"Konfiguration umfasst Produkt"@de
@@ -2335,7 +2340,7 @@ cas-ctx:Configuration_includes_Product_Target_Shape
 
 cas-ctx:Configuration_includes_Requirement
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Requirement"@en ,
 		"Konfiguration umfasst Anforderung"@de
@@ -2376,7 +2381,7 @@ cas-ctx:Configuration_includes_Requirement_Target_Shape
 
 cas-ctx:Configuration_includes_SystemComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes System Component"@en ,
 		"Konfiguration umfasst Systemkomponente"@de
@@ -2417,7 +2422,7 @@ cas-ctx:Configuration_includes_SystemComponent_Target_Shape
 
 cas-ctx:Configuration_includes_UseCase
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration includes Use Case"@en ,
 		"Konfiguration umfasst Anwendungsfall"@de
@@ -2458,7 +2463,7 @@ cas-ctx:Configuration_includes_UseCase_Target_Shape
 
 cas-ctx:Configuration_partOf_Configuration
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Configuration part of Configuration"@en ,
 		"Konfiguration Bestandteil von Konfiguration"@de
@@ -2497,12 +2502,12 @@ cas-ctx:Configuration_partOf_Configuration_Target_Shape
 	sh:property cas-ctx:Configuration_partOf_Configuration_Target_Shape ;
 	.
 
-cas-ctx:Configuration_specialismOf_Configuration
+cas-ctx:Configuration_specializes_Configuration
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
-		"Configuration specialism of Configuration"@en ,
-		"Konfiguration Spezialisierung von Konfiguration"@de
+		"Configuration specializes Configuration"@en ,
+		"Konfiguration spezialisiert Konfiguration"@de
 		;
 	dcterms:modified "2025-11-27T18:15:10Z"^^xsd:dateTime ;
 	skos:definition
@@ -2511,31 +2516,31 @@ cas-ctx:Configuration_specialismOf_Configuration
 		;
 	.
 
-cas-ctx:Configuration_specialismOf_Configuration_Shape
+cas-ctx:Configuration_specializes_Configuration_Shape
 	a sh:PropertyShape ;
-	sh:path cas-ctx:Configuration_specialismOf_Configuration ;
+	sh:path cas-ctx:Configuration_specializes_Configuration ;
 	.
 
-cas-ctx:Configuration_specialismOf_Configuration_Source
+cas-ctx:Configuration_specializes_Configuration_Source
 	rdfs:subPropertyOf cas:linksSource ;
-	rdfs:domain cas-ctx:Configuration_specialismOf_Configuration ;
+	rdfs:domain cas-ctx:Configuration_specializes_Configuration ;
 	rdfs:range cas-ctx:Configuration ;
 	.
 
-cas-ctx:Configuration_specialismOf_Configuration_Source_Shape
-	sh:path cas-ctx:Configuration_specialismOf_Configuration ;
-	sh:property cas-ctx:Configuration_specialismOf_Configuration_Source ;
+cas-ctx:Configuration_specializes_Configuration_Source_Shape
+	sh:path cas-ctx:Configuration_specializes_Configuration ;
+	sh:property cas-ctx:Configuration_specializes_Configuration_Source ;
 	.
 
-cas-ctx:Configuration_specialismOf_Configuration_Target
+cas-ctx:Configuration_specializes_Configuration_Target
 	rdfs:subPropertyOf cas:linksTarget ;
-	rdfs:domain cas-ctx:Configuration_specialismOf_Configuration ;
+	rdfs:domain cas-ctx:Configuration_specializes_Configuration ;
 	rdfs:range cas-ctx:Configuration ;
 	.
 
-cas-ctx:Configuration_specialismOf_Configuration_Target_Shape
-	sh:path cas-ctx:Configuration_specialismOf_Configuration ;
-	sh:property cas-ctx:Configuration_specialismOf_Configuration_Target_Shape ;
+cas-ctx:Configuration_specializes_Configuration_Target_Shape
+	sh:path cas-ctx:Configuration_specializes_Configuration ;
+	sh:property cas-ctx:Configuration_specializes_Configuration_Target_Shape ;
 	.
 
 cas-ctx:Reference
@@ -2568,7 +2573,7 @@ cas-ctx:Reference_Shape
 
 cas-ctx:Reference_partOf_Reference
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Reference part of Reference"@en ,
 		"Referenz Bestandteil von Referenz"@de
@@ -2607,12 +2612,12 @@ cas-ctx:Reference_partOf_Reference_Target_Shape
 	sh:property cas-ctx:Reference_partOf_Reference_Target_Shape ;
 	.
 
-cas-ctx:Reference_specialismOf_Reference
+cas-ctx:Reference_specializes_Reference
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
-		"Reference specialism of Reference"@en ,
-		"Referenz Spezialisierung von Referenz"@de
+		"Reference specializes Reference"@en ,
+		"Referenz spezialisiert Referenz"@de
 		;
 	dcterms:modified "2025-11-27T18:15:10Z"^^xsd:dateTime ;
 	skos:definition
@@ -2621,31 +2626,31 @@ cas-ctx:Reference_specialismOf_Reference
 		;
 	.
 
-cas-ctx:Reference_specialismOf_Reference_Shape
+cas-ctx:Reference_specializes_Reference_Shape
 	a sh:PropertyShape ;
-	sh:path cas-ctx:Reference_specialismOf_Reference ;
+	sh:path cas-ctx:Reference_specializes_Reference ;
 	.
 
-cas-ctx:Reference_specialismOf_Reference_Source
+cas-ctx:Reference_specializes_Reference_Source
 	rdfs:subPropertyOf cas:linksSource ;
-	rdfs:domain cas-ctx:Reference_specialismOf_Reference ;
+	rdfs:domain cas-ctx:Reference_specializes_Reference ;
 	rdfs:range cas-ctx:Reference ;
 	.
 
-cas-ctx:Reference_specialismOf_Reference_Source_Shape
-	sh:path cas-ctx:Reference_specialismOf_Reference ;
-	sh:property cas-ctx:Reference_specialismOf_Reference_Source ;
+cas-ctx:Reference_specializes_Reference_Source_Shape
+	sh:path cas-ctx:Reference_specializes_Reference ;
+	sh:property cas-ctx:Reference_specializes_Reference_Source ;
 	.
 
-cas-ctx:Reference_specialismOf_Reference_Target
+cas-ctx:Reference_specializes_Reference_Target
 	rdfs:subPropertyOf cas:linksTarget ;
-	rdfs:domain cas-ctx:Reference_specialismOf_Reference ;
+	rdfs:domain cas-ctx:Reference_specializes_Reference ;
 	rdfs:range cas-ctx:Reference ;
 	.
 
-cas-ctx:Reference_specialismOf_Reference_Target_Shape
-	sh:path cas-ctx:Reference_specialismOf_Reference ;
-	sh:property cas-ctx:Reference_specialismOf_Reference_Target_Shape ;
+cas-ctx:Reference_specializes_Reference_Target_Shape
+	sh:path cas-ctx:Reference_specializes_Reference ;
+	sh:property cas-ctx:Reference_specializes_Reference_Target_Shape ;
 	.
 
 cas-ctx:Variant
@@ -2677,7 +2682,7 @@ cas-ctx:Variant_Shape
 
 cas-ctx:Variant_includes_BendingSpecification
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Bending Specification"@en ,
 		"Variante umfasst Biegespezifikation"@de
@@ -2718,7 +2723,7 @@ cas-ctx:Variant_includes_BendingSpecification_Target_Shape
 
 cas-ctx:Variant_includes_Body
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Body"@en ,
 		"Variante umfasst Körper"@de
@@ -2759,7 +2764,7 @@ cas-ctx:Variant_includes_Body_Target_Shape
 
 cas-ctx:Variant_includes_Cleanliness
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Cleanliness"@en ,
 		"Variante umfasst Sauberkeit"@de
@@ -2800,7 +2805,7 @@ cas-ctx:Variant_includes_Cleanliness_Target_Shape
 
 cas-ctx:Variant_includes_ComponentConnection
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Component Connection"@en ,
 		"Variante umfasst Komponenten-Verbindung"@de
@@ -2841,7 +2846,7 @@ cas-ctx:Variant_includes_ComponentConnection_Target_Shape
 
 cas-ctx:Variant_includes_Deviation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Deviation"@en ,
 		"Variante umfasst Abweichung"@de
@@ -2882,7 +2887,7 @@ cas-ctx:Variant_includes_Deviation_Target_Shape
 
 cas-ctx:Variant_includes_Function
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Function"@en ,
 		"Variante umfasst Funktion"@de
@@ -2923,7 +2928,7 @@ cas-ctx:Variant_includes_Function_Target_Shape
 
 cas-ctx:Variant_includes_Gearing
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Gearing"@en ,
 		"Variante umfasst Verzahnung"@de
@@ -2964,7 +2969,7 @@ cas-ctx:Variant_includes_Gearing_Target_Shape
 
 cas-ctx:Variant_includes_HeatTreatedArea
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Heat-treated Area"@en ,
 		"Variante umfasst Wärmebehandelter Bereich"@de
@@ -3005,7 +3010,7 @@ cas-ctx:Variant_includes_HeatTreatedArea_Target_Shape
 
 cas-ctx:Variant_includes_Hole
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Hole"@en ,
 		"Variante umfasst Bohrung"@de
@@ -3046,7 +3051,7 @@ cas-ctx:Variant_includes_Hole_Target_Shape
 
 cas-ctx:Variant_includes_JoiningElement
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Joining Element"@en ,
 		"Variante umfasst Fügeverbindung"@de
@@ -3087,7 +3092,7 @@ cas-ctx:Variant_includes_JoiningElement_Target_Shape
 
 cas-ctx:Variant_includes_KinematicJoint
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Kinematic Joint"@en ,
 		"Variante umfasst Kinematisches Gelenk"@de
@@ -3128,7 +3133,7 @@ cas-ctx:Variant_includes_KinematicJoint_Target_Shape
 
 cas-ctx:Variant_includes_ManufacturingOperation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Manufacturing Operation"@en ,
 		"Variante umfasst Fertigungsvorgang"@de
@@ -3169,7 +3174,7 @@ cas-ctx:Variant_includes_ManufacturingOperation_Target_Shape
 
 cas-ctx:Variant_includes_MarkingLabeling
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Marking & Labeling"@en ,
 		"Variante umfasst Markierung & Beschriftung"@de
@@ -3210,7 +3215,7 @@ cas-ctx:Variant_includes_MarkingLabeling_Target_Shape
 
 cas-ctx:Variant_includes_Material
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Material"@en ,
 		"Variante umfasst Werkstoff"@de
@@ -3251,7 +3256,7 @@ cas-ctx:Variant_includes_Material_Target_Shape
 
 cas-ctx:Variant_includes_ModelAnnotation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Model Annotation"@en ,
 		"Variante umfasst Modell-Annotation"@de
@@ -3292,7 +3297,7 @@ cas-ctx:Variant_includes_ModelAnnotation_Target_Shape
 
 cas-ctx:Variant_includes_ModelView
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Model View"@en ,
 		"Variante umfasst Modellansicht"@de
@@ -3333,7 +3338,7 @@ cas-ctx:Variant_includes_ModelView_Target_Shape
 
 cas-ctx:Variant_includes_PaintedCoatedArea
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Painted & Coated Area"@en ,
 		"Variante umfasst Lackierter & Beschichteter Bereich"@de
@@ -3374,7 +3379,7 @@ cas-ctx:Variant_includes_PaintedCoatedArea_Target_Shape
 
 cas-ctx:Variant_includes_Product
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Product"@en ,
 		"Variante umfasst Produkt"@de
@@ -3415,7 +3420,7 @@ cas-ctx:Variant_includes_Product_Target_Shape
 
 cas-ctx:Variant_includes_Requirement
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Requirement"@en ,
 		"Variante umfasst Anforderung"@de
@@ -3456,7 +3461,7 @@ cas-ctx:Variant_includes_Requirement_Target_Shape
 
 cas-ctx:Variant_includes_SystemComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes System Component"@en ,
 		"Variante umfasst Systemkomponente"@de
@@ -3497,7 +3502,7 @@ cas-ctx:Variant_includes_SystemComponent_Target_Shape
 
 cas-ctx:Variant_includes_UseCase
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant includes Use Case"@en ,
 		"Variante umfasst Anwendungsfall"@de
@@ -3538,7 +3543,7 @@ cas-ctx:Variant_includes_UseCase_Target_Shape
 
 cas-ctx:Variant_partOf_Variant
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Variant part of Variant"@en ,
 		"Variante Bestandteil von Variante"@de
@@ -3577,12 +3582,12 @@ cas-ctx:Variant_partOf_Variant_Target_Shape
 	sh:property cas-ctx:Variant_partOf_Variant_Target_Shape ;
 	.
 
-cas-ctx:Variant_specialismOf_Variant
+cas-ctx:Variant_specializes_Variant
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
-		"Variant specialism of Variant"@en ,
-		"Variante Spezialisierung von Variante"@de
+		"Variant specializes Variant"@en ,
+		"Variante spezialisiert Variante"@de
 		;
 	dcterms:modified "2025-11-27T18:15:10Z"^^xsd:dateTime ;
 	skos:definition
@@ -3591,31 +3596,31 @@ cas-ctx:Variant_specialismOf_Variant
 		;
 	.
 
-cas-ctx:Variant_specialismOf_Variant_Shape
+cas-ctx:Variant_specializes_Variant_Shape
 	a sh:PropertyShape ;
-	sh:path cas-ctx:Variant_specialismOf_Variant ;
+	sh:path cas-ctx:Variant_specializes_Variant ;
 	.
 
-cas-ctx:Variant_specialismOf_Variant_Source
+cas-ctx:Variant_specializes_Variant_Source
 	rdfs:subPropertyOf cas:linksSource ;
-	rdfs:domain cas-ctx:Variant_specialismOf_Variant ;
+	rdfs:domain cas-ctx:Variant_specializes_Variant ;
 	rdfs:range cas-ctx:Variant ;
 	.
 
-cas-ctx:Variant_specialismOf_Variant_Source_Shape
-	sh:path cas-ctx:Variant_specialismOf_Variant ;
-	sh:property cas-ctx:Variant_specialismOf_Variant_Source ;
+cas-ctx:Variant_specializes_Variant_Source_Shape
+	sh:path cas-ctx:Variant_specializes_Variant ;
+	sh:property cas-ctx:Variant_specializes_Variant_Source ;
 	.
 
-cas-ctx:Variant_specialismOf_Variant_Target
+cas-ctx:Variant_specializes_Variant_Target
 	rdfs:subPropertyOf cas:linksTarget ;
-	rdfs:domain cas-ctx:Variant_specialismOf_Variant ;
+	rdfs:domain cas-ctx:Variant_specializes_Variant ;
 	rdfs:range cas-ctx:Variant ;
 	.
 
-cas-ctx:Variant_specialismOf_Variant_Target_Shape
-	sh:path cas-ctx:Variant_specialismOf_Variant ;
-	sh:property cas-ctx:Variant_specialismOf_Variant_Target_Shape ;
+cas-ctx:Variant_specializes_Variant_Target_Shape
+	sh:path cas-ctx:Variant_specializes_Variant ;
+	sh:property cas-ctx:Variant_specializes_Variant_Target_Shape ;
 	.
 
 cas-mnf:ControlPlan
@@ -3647,10 +3652,7 @@ cas-mnf:ControlPlan_Shape
 
 cas-mnf:ManufacturingEquipmentComponent
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-mech:MechanicalComponent
-		;
+	rdfs:subClassOf cas-mech:MechanicalComponent ;
 	rdfs:label
 		"Manufacturing Equipment Component"@en ,
 		"Produktionsmittel-Komponente"@de
@@ -3669,10 +3671,7 @@ cas-mnf:ManufacturingEquipmentComponent_Shape
 
 cas-proc:AssemblyOperation
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-proc:ManufacturingOperation
-		;
+	rdfs:subClassOf cas-proc:ManufacturingOperation ;
 	rdfs:label
 		"Assembly Operation"@en ,
 		"Montagevorgang"@de
@@ -3691,7 +3690,7 @@ cas-proc:AssemblyOperation_Shape
 
 cas-proc:AssemblyOperation_adds_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Assembly Operation adds Mechanical Component"@en ,
 		"Montagevorgang fügt hinzu Mechanische Komponente"@de
@@ -3732,10 +3731,7 @@ cas-proc:AssemblyOperation_adds_MechanicalComponent_Target_Shape
 
 cas-proc:HeatTreatment
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-proc:ManufacturingOperation
-		;
+	rdfs:subClassOf cas-proc:ManufacturingOperation ;
 	rdfs:label
 		"Heat Treatment"@en ,
 		"Wärmebehandlung"@de
@@ -3755,10 +3751,7 @@ cas-proc:HeatTreatment_Shape
 
 cas-proc:JoiningProcess
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-proc:ManufacturingOperation
-		;
+	rdfs:subClassOf cas-proc:ManufacturingOperation ;
 	rdfs:label
 		"Fügeverfahren"@de ,
 		"Joining Process"@en
@@ -3803,7 +3796,7 @@ cas-proc:ManufacturingOperation_Shape
 
 cas-proc:ManufacturingOperation_appliesTo_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fertigungsvorgang anwendbar auf Mechanische Komponente"@de ,
 		"Manufacturing Operation applies to Mechanical Component"@en
@@ -3844,7 +3837,7 @@ cas-proc:ManufacturingOperation_appliesTo_MechanicalComponent_Target_Shape
 
 cas-proc:ManufacturingOperation_createdBy_Person
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fertigungsvorgang erstellt von Person"@de ,
 		"Manufacturing Operation created by Person"@en
@@ -3885,7 +3878,7 @@ cas-proc:ManufacturingOperation_createdBy_Person_Target_Shape
 
 cas-proc:ManufacturingOperation_follows_ManufacturingOperation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fertigungsvorgang folgt Fertigungsvorgang"@de ,
 		"Manufacturing Operation follows Manufacturing Operation"@en
@@ -3926,7 +3919,7 @@ cas-proc:ManufacturingOperation_follows_ManufacturingOperation_Target_Shape
 
 cas-proc:ManufacturingOperation_ownedBy_Plant
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fertigungsvorgang gehört Werk"@de ,
 		"Manufacturing Operation owned by Plant"@en
@@ -3967,7 +3960,7 @@ cas-proc:ManufacturingOperation_ownedBy_Plant_Target_Shape
 
 cas-proc:ManufacturingOperation_ownedBy_Role
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fertigungsvorgang gehört Rolle"@de ,
 		"Manufacturing Operation owned by Role"@en
@@ -4008,7 +4001,7 @@ cas-proc:ManufacturingOperation_ownedBy_Role_Target_Shape
 
 cas-proc:ManufacturingOperation_partOf_ManufacturingOperation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fertigungsvorgang Bestandteil von Fertigungsvorgang"@de ,
 		"Manufacturing Operation part of Manufacturing Operation"@en
@@ -4047,12 +4040,12 @@ cas-proc:ManufacturingOperation_partOf_ManufacturingOperation_Target_Shape
 	sh:property cas-proc:ManufacturingOperation_partOf_ManufacturingOperation_Target_Shape ;
 	.
 
-cas-proc:ManufacturingOperation_specialismOf_ManufacturingOperation
+cas-proc:ManufacturingOperation_specializes_ManufacturingOperation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
-		"Fertigungsvorgang Spezialisierung von Fertigungsvorgang"@de ,
-		"Manufacturing Operation specialism of Manufacturing Operation"@en
+		"Fertigungsvorgang spezialisiert Fertigungsvorgang"@de ,
+		"Manufacturing Operation specializes Manufacturing Operation"@en
 		;
 	dcterms:modified "2025-11-27T18:15:10Z"^^xsd:dateTime ;
 	skos:definition
@@ -4061,36 +4054,36 @@ cas-proc:ManufacturingOperation_specialismOf_ManufacturingOperation
 		;
 	.
 
-cas-proc:ManufacturingOperation_specialismOf_ManufacturingOperation_Shape
+cas-proc:ManufacturingOperation_specializes_ManufacturingOperation_Shape
 	a sh:PropertyShape ;
-	sh:path cas-proc:ManufacturingOperation_specialismOf_ManufacturingOperation ;
+	sh:path cas-proc:ManufacturingOperation_specializes_ManufacturingOperation ;
 	.
 
-cas-proc:ManufacturingOperation_specialismOf_ManufacturingOperation_Source
+cas-proc:ManufacturingOperation_specializes_ManufacturingOperation_Source
 	rdfs:subPropertyOf cas:linksSource ;
-	rdfs:domain cas-proc:ManufacturingOperation_specialismOf_ManufacturingOperation ;
+	rdfs:domain cas-proc:ManufacturingOperation_specializes_ManufacturingOperation ;
 	rdfs:range cas-proc:ManufacturingOperation ;
 	.
 
-cas-proc:ManufacturingOperation_specialismOf_ManufacturingOperation_Source_Shape
-	sh:path cas-proc:ManufacturingOperation_specialismOf_ManufacturingOperation ;
-	sh:property cas-proc:ManufacturingOperation_specialismOf_ManufacturingOperation_Source ;
+cas-proc:ManufacturingOperation_specializes_ManufacturingOperation_Source_Shape
+	sh:path cas-proc:ManufacturingOperation_specializes_ManufacturingOperation ;
+	sh:property cas-proc:ManufacturingOperation_specializes_ManufacturingOperation_Source ;
 	.
 
-cas-proc:ManufacturingOperation_specialismOf_ManufacturingOperation_Target
+cas-proc:ManufacturingOperation_specializes_ManufacturingOperation_Target
 	rdfs:subPropertyOf cas:linksTarget ;
-	rdfs:domain cas-proc:ManufacturingOperation_specialismOf_ManufacturingOperation ;
+	rdfs:domain cas-proc:ManufacturingOperation_specializes_ManufacturingOperation ;
 	rdfs:range cas-proc:ManufacturingOperation ;
 	.
 
-cas-proc:ManufacturingOperation_specialismOf_ManufacturingOperation_Target_Shape
-	sh:path cas-proc:ManufacturingOperation_specialismOf_ManufacturingOperation ;
-	sh:property cas-proc:ManufacturingOperation_specialismOf_ManufacturingOperation_Target_Shape ;
+cas-proc:ManufacturingOperation_specializes_ManufacturingOperation_Target_Shape
+	sh:path cas-proc:ManufacturingOperation_specializes_ManufacturingOperation ;
+	sh:property cas-proc:ManufacturingOperation_specializes_ManufacturingOperation_Target_Shape ;
 	.
 
 cas-proc:ManufacturingOperation_specifiedBy_Reference
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fertigungsvorgang spezifiziert durch Referenz"@de ,
 		"Manufacturing Operation specified by Reference"@en
@@ -4131,7 +4124,7 @@ cas-proc:ManufacturingOperation_specifiedBy_Reference_Target_Shape
 
 cas-proc:ManufacturingOperation_usedIn_ManufacturingOperation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fertigungsvorgang verwendet in Fertigungsvorgang"@de ,
 		"Manufacturing Operation used in Manufacturing Operation"@en
@@ -4172,7 +4165,7 @@ cas-proc:ManufacturingOperation_usedIn_ManufacturingOperation_Target_Shape
 
 cas-proc:ManufacturingOperation_uses_ManufacturingEquipmentComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fertigungsvorgang verwendet Produktionsmittel-Komponente"@de ,
 		"Manufacturing Operation uses Manufacturing Equipment Component"@en
@@ -4213,7 +4206,7 @@ cas-proc:ManufacturingOperation_uses_ManufacturingEquipmentComponent_Target_Shap
 
 cas-proc:duration
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Dauer"@de ,
 		"Duration"@en
@@ -4234,7 +4227,7 @@ cas-proc:duration_Shape
 
 cas-proc:temperature
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Temperatur"@de ,
 		"Temperature"@en
@@ -4278,7 +4271,7 @@ cas-op:OperationIncident_Shape
 
 cas-op:OperationIncident_createdBy_Person
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Betriebsvorfall erstellt von Person"@de ,
 		"Operation Incident created by Person"@en
@@ -4319,7 +4312,7 @@ cas-op:OperationIncident_createdBy_Person_Target_Shape
 
 cas-op:OperationIncident_ownedBy_Actor
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Betriebsvorfall gehört Akteur"@de ,
 		"Operation Incident owned by Actor"@en
@@ -4389,7 +4382,7 @@ cas-op:Product_Shape
 
 cas-op:Product_createdBy_Person
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Product created by Person"@en ,
 		"Produkt erstellt von Person"@de
@@ -4430,7 +4423,7 @@ cas-op:Product_createdBy_Person_Target_Shape
 
 cas-op:Product_ownedBy_Actor
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Product owned by Actor"@en ,
 		"Produkt gehört Akteur"@de
@@ -4471,7 +4464,7 @@ cas-op:Product_ownedBy_Actor_Target_Shape
 
 cas-op:Product_partOf_Product
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Product part of Product"@en ,
 		"Produkt Bestandteil von Produkt"@de
@@ -4510,12 +4503,12 @@ cas-op:Product_partOf_Product_Target_Shape
 	sh:property cas-op:Product_partOf_Product_Target_Shape ;
 	.
 
-cas-op:Product_specialismOf_Product
+cas-op:Product_specializes_Product
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
-		"Product specialism of Product"@en ,
-		"Produkt Spezialisierung von Produkt"@de
+		"Product specializes Product"@en ,
+		"Produkt spezialisiert Produkt"@de
 		;
 	dcterms:modified "2025-11-27T18:15:10Z"^^xsd:dateTime ;
 	skos:definition
@@ -4524,36 +4517,36 @@ cas-op:Product_specialismOf_Product
 		;
 	.
 
-cas-op:Product_specialismOf_Product_Shape
+cas-op:Product_specializes_Product_Shape
 	a sh:PropertyShape ;
-	sh:path cas-op:Product_specialismOf_Product ;
+	sh:path cas-op:Product_specializes_Product ;
 	.
 
-cas-op:Product_specialismOf_Product_Source
+cas-op:Product_specializes_Product_Source
 	rdfs:subPropertyOf cas:linksSource ;
-	rdfs:domain cas-op:Product_specialismOf_Product ;
+	rdfs:domain cas-op:Product_specializes_Product ;
 	rdfs:range cas-op:Product ;
 	.
 
-cas-op:Product_specialismOf_Product_Source_Shape
-	sh:path cas-op:Product_specialismOf_Product ;
-	sh:property cas-op:Product_specialismOf_Product_Source ;
+cas-op:Product_specializes_Product_Source_Shape
+	sh:path cas-op:Product_specializes_Product ;
+	sh:property cas-op:Product_specializes_Product_Source ;
 	.
 
-cas-op:Product_specialismOf_Product_Target
+cas-op:Product_specializes_Product_Target
 	rdfs:subPropertyOf cas:linksTarget ;
-	rdfs:domain cas-op:Product_specialismOf_Product ;
+	rdfs:domain cas-op:Product_specializes_Product ;
 	rdfs:range cas-op:Product ;
 	.
 
-cas-op:Product_specialismOf_Product_Target_Shape
-	sh:path cas-op:Product_specialismOf_Product ;
-	sh:property cas-op:Product_specialismOf_Product_Target_Shape ;
+cas-op:Product_specializes_Product_Target_Shape
+	sh:path cas-op:Product_specializes_Product ;
+	sh:property cas-op:Product_specializes_Product_Target_Shape ;
 	.
 
 cas-op:Product_usedIn_Product
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Product used in Product"@en ,
 		"Produkt verwendet in Produkt"@de
@@ -4618,7 +4611,7 @@ cas-org:Actor_Shape
 
 cas-org:Actor_locatedIn_Place
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Actor located in Place"@en ,
 		"Akteur befindet sich in Ort"@de
@@ -4678,7 +4671,7 @@ cas-org:Event_Shape
 
 cas-org:Event_locatedIn_Place
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Ereignis befindet sich in Ort"@de ,
 		"Event located in Place"@en
@@ -4715,7 +4708,7 @@ cas-org:Event_locatedIn_Place_Target_Shape
 
 cas-org:Event_ownedBy_Actor
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Ereignis gehört Akteur"@de ,
 		"Event owned by Actor"@en
@@ -4756,7 +4749,7 @@ cas-org:Event_ownedBy_Actor_Target_Shape
 
 cas-org:Event_partOf_Event
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Ereignis Bestandteil von Ereignis"@de ,
 		"Event part of Event"@en
@@ -4797,10 +4790,7 @@ cas-org:Event_partOf_Event_Target_Shape
 
 cas-org:OrganizationUnit
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-org:Actor
-		;
+	rdfs:subClassOf cas-org:Actor ;
 	rdfs:label
 		"Organisationseinheit"@de ,
 		"Organization Unit"@en
@@ -4824,7 +4814,7 @@ cas-org:OrganizationUnit_Shape
 
 cas-org:OrganizationUnit_partOf_OrganizationUnit
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Organisationseinheit Bestandteil von Organisationseinheit"@de ,
 		"Organization Unit part of Organization Unit"@en
@@ -4865,10 +4855,7 @@ cas-org:OrganizationUnit_partOf_OrganizationUnit_Target_Shape
 
 cas-org:Person
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-org:Actor
-		;
+	rdfs:subClassOf cas-org:Actor ;
 	rdfs:label
 		"Person"@de ,
 		"Person"@en
@@ -4894,7 +4881,7 @@ cas-org:Person_Shape
 
 cas-org:Person_memberOf_OrganizationUnit
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Person member of Organization Unit"@en ,
 		"Person zugeordnet zu Organisationseinheit"@de
@@ -4959,7 +4946,7 @@ cas-org:Place_Shape
 
 cas-org:Place_partOf_Place
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Ort Bestandteil von Ort"@de ,
 		"Place part of Place"@en
@@ -5000,10 +4987,7 @@ cas-org:Place_partOf_Place_Target_Shape
 
 cas-org:Plant
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-org:OrganizationUnit
-		;
+	rdfs:subClassOf cas-org:OrganizationUnit ;
 	rdfs:label
 		"Plant"@en ,
 		"Werk"@de
@@ -5022,10 +5006,7 @@ cas-org:Plant_Shape
 
 cas-org:Project
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-org:Task
-		;
+	rdfs:subClassOf cas-org:Task ;
 	rdfs:label
 		"Project"@en ,
 		"Projekt"@de
@@ -5072,7 +5053,7 @@ cas-org:Role_Shape
 
 cas-org:Role_partOf_Role
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Role part of Role"@en ,
 		"Rolle Bestandteil von Rolle"@de
@@ -5111,12 +5092,12 @@ cas-org:Role_partOf_Role_Target_Shape
 	sh:property cas-org:Role_partOf_Role_Target_Shape ;
 	.
 
-cas-org:Role_specialismOf_Role
+cas-org:Role_specializes_Role
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
-		"Role specialism of Role"@en ,
-		"Rolle Spezialisierung von Rolle"@de
+		"Role specializes Role"@en ,
+		"Rolle spezialisiert Rolle"@de
 		;
 	dcterms:modified "2025-11-27T18:15:10Z"^^xsd:dateTime ;
 	skos:definition
@@ -5125,36 +5106,36 @@ cas-org:Role_specialismOf_Role
 		;
 	.
 
-cas-org:Role_specialismOf_Role_Shape
+cas-org:Role_specializes_Role_Shape
 	a sh:PropertyShape ;
-	sh:path cas-org:Role_specialismOf_Role ;
+	sh:path cas-org:Role_specializes_Role ;
 	.
 
-cas-org:Role_specialismOf_Role_Source
+cas-org:Role_specializes_Role_Source
 	rdfs:subPropertyOf cas:linksSource ;
-	rdfs:domain cas-org:Role_specialismOf_Role ;
+	rdfs:domain cas-org:Role_specializes_Role ;
 	rdfs:range cas-org:Role ;
 	.
 
-cas-org:Role_specialismOf_Role_Source_Shape
-	sh:path cas-org:Role_specialismOf_Role ;
-	sh:property cas-org:Role_specialismOf_Role_Source ;
+cas-org:Role_specializes_Role_Source_Shape
+	sh:path cas-org:Role_specializes_Role ;
+	sh:property cas-org:Role_specializes_Role_Source ;
 	.
 
-cas-org:Role_specialismOf_Role_Target
+cas-org:Role_specializes_Role_Target
 	rdfs:subPropertyOf cas:linksTarget ;
-	rdfs:domain cas-org:Role_specialismOf_Role ;
+	rdfs:domain cas-org:Role_specializes_Role ;
 	rdfs:range cas-org:Role ;
 	.
 
-cas-org:Role_specialismOf_Role_Target_Shape
-	sh:path cas-org:Role_specialismOf_Role ;
-	sh:property cas-org:Role_specialismOf_Role_Target_Shape ;
+cas-org:Role_specializes_Role_Target_Shape
+	sh:path cas-org:Role_specializes_Role ;
+	sh:property cas-org:Role_specializes_Role_Target_Shape ;
 	.
 
 cas-org:Role_usedIn_Role
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Role used in Role"@en ,
 		"Rolle verwendet in Rolle"@de
@@ -5195,10 +5176,7 @@ cas-org:Role_usedIn_Role_Target_Shape
 
 cas-org:Task
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-org:Event
-		;
+	rdfs:subClassOf cas-org:Event ;
 	rdfs:label
 		"Aufgabe"@de ,
 		"Task"@en
@@ -5217,7 +5195,7 @@ cas-org:Task_Shape
 
 cas-org:Task_createdBy_Person
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Aufgabe erstellt von Person"@de ,
 		"Task created by Person"@en
@@ -5258,7 +5236,7 @@ cas-org:Task_createdBy_Person_Target_Shape
 
 cas-org:city
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"City"@en ,
 		"Ort"@de
@@ -5279,7 +5257,7 @@ cas-org:city_Shape
 
 cas-org:costCenter
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Cost center"@en ,
 		"Kostenstelle"@de
@@ -5300,7 +5278,7 @@ cas-org:costCenter_Shape
 
 cas-org:country
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Country"@en ,
 		"Land"@de
@@ -5321,7 +5299,7 @@ cas-org:country_Shape
 
 cas-org:firstname
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Firstname"@en ,
 		"Vorname"@de
@@ -5342,7 +5320,7 @@ cas-org:firstname_Shape
 
 cas-org:lastname
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Lastname"@en ,
 		"Nachname"@de
@@ -5363,7 +5341,7 @@ cas-org:lastname_Shape
 
 cas-org:mail
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"E-Mail"@de ,
 		"Mail"@en
@@ -5384,7 +5362,7 @@ cas-org:mail_Shape
 
 cas-org:phone
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Phone"@en ,
 		"Telefon"@de
@@ -5405,7 +5383,7 @@ cas-org:phone_Shape
 
 cas-org:street
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Straße"@de ,
 		"Street"@en
@@ -5426,7 +5404,7 @@ cas-org:street_Shape
 
 cas-org:title
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Titel"@de ,
 		"Title"@en
@@ -5447,7 +5425,7 @@ cas-org:title_Shape
 
 cas-org:zipCode
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Postleitzahl"@de ,
 		"ZIP Code"@en
@@ -5466,6 +5444,25 @@ cas-org:zipCode_Shape
 	sh:path cas-org:zipCode ;
 	.
 
+cas-arch:EnergyFlow
+	a owl:Class ;
+	rdfs:subClassOf cas-arch:FunctionFlow ;
+	rdfs:label
+		"Energiefluss"@de ,
+		"Energy Flow"@en
+		;
+	dcterms:modified "2026-06-30T00:19:58Z"^^xsd:dateTime ;
+	skos:definition
+		"Represents the transfer of energy between functions."@en ,
+		"Repräsentiert einen Energieaustausch zwischen Funktionen."@de
+		;
+	.
+
+cas-arch:EnergyFlow_Shape
+	a sh:NodeShape ;
+	sh:targetClass cas-arch:EnergyFlow ;
+	.
+
 cas-arch:Function
 	a owl:Class ;
 	rdfs:subClassOf cas:Entity ;
@@ -5473,7 +5470,7 @@ cas-arch:Function
 		"Function"@en ,
 		"Funktion"@de
 		;
-	dcterms:modified "2026-04-01T23:15:16Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-29T23:32:07Z"^^xsd:dateTime ;
 	rdfs:definedBy
 		cas-ref:CSA-ISO-IEC-IEEE-15288 ,
 		cas-ref:ISO-IEC-20246 ,
@@ -5483,6 +5480,32 @@ cas-arch:Function
 		"A system, product or component function describes the way a system works or performs a specific task."@en ,
 		"Eine System-, Produkt- oder Komponentenfunktion beschreibt die Art und Weise, wie ein System arbeitet oder eine bestimmte Aufgabe ausführt."@de
 		;
+	.
+
+cas-arch:FunctionFlow
+	a owl:Class ;
+	rdfs:subClassOf cas:Entity ;
+	rdfs:label
+		"Function Flow"@en ,
+		"Funktionsfluss"@de
+		;
+	dcterms:modified "2026-06-30T00:17:06Z"^^xsd:dateTime ;
+	skos:definition
+		"Beschreibt, wie eine Funktion Eingaben transformiert und an andere Funktionen oder Systemelemente weitergibt."@de ,
+		"Represents how a function transforms and passes inputs to other functions or system elements."@en
+		;
+	.
+
+cas-arch:FunctionFlow_Shape
+	a sh:NodeShape ;
+	sh:property
+		dc:description_Shape ,
+		dc:identifier_Shape ,
+		dc:title_Shape ,
+		:number_Shape ,
+		:type_Shape
+		;
+	sh:targetClass cas-arch:FunctionFlow ;
 	.
 
 cas-arch:Function_Shape
@@ -5500,7 +5523,7 @@ cas-arch:Function_Shape
 
 cas-arch:Function_follows_Function
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Function follows Function"@en ,
 		"Funktion folgt nach Funktion"@de
@@ -5541,7 +5564,7 @@ cas-arch:Function_follows_Function_Target_Shape
 
 cas-arch:Function_ownedBy_Role
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Function owned by Role"@en ,
 		"Funktion gehört Rolle"@de
@@ -5582,7 +5605,7 @@ cas-arch:Function_ownedBy_Role_Target_Shape
 
 cas-arch:Function_ownedBy_UseCase
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Function owned by Use Case"@en ,
 		"Funktion gehört Anwendungsfall"@de
@@ -5619,7 +5642,7 @@ cas-arch:Function_ownedBy_UseCase_Target_Shape
 
 cas-arch:Function_partOf_Function
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Function part of Function"@en ,
 		"Funktion Bestandteil von Funktion"@de
@@ -5660,7 +5683,7 @@ cas-arch:Function_partOf_Function_Target_Shape
 
 cas-arch:Function_realizes_UseCase
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Function realizes Use Case"@en ,
 		"Funktion realisiert Anwendungsfall"@de
@@ -5701,7 +5724,7 @@ cas-arch:Function_realizes_UseCase_Target_Shape
 
 cas-arch:Function_satisfies_Requirement
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Function satisfies Requirement"@en ,
 		"Funktion erfüllt Anforderung"@de
@@ -5740,12 +5763,12 @@ cas-arch:Function_satisfies_Requirement_Target_Shape
 	sh:property cas-arch:Function_satisfies_Requirement_Target_Shape ;
 	.
 
-cas-arch:Function_specialismOf_Function
+cas-arch:Function_specializes_Function
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
-		"Function specialism of Function"@en ,
-		"Funktion Spezialisierung von Funktion"@de
+		"Function specializes Function"@en ,
+		"Funktion spezialisiert Funktion"@de
 		;
 	dcterms:modified "2025-11-27T18:15:10Z"^^xsd:dateTime ;
 	skos:definition
@@ -5754,36 +5777,36 @@ cas-arch:Function_specialismOf_Function
 		;
 	.
 
-cas-arch:Function_specialismOf_Function_Shape
+cas-arch:Function_specializes_Function_Shape
 	a sh:PropertyShape ;
-	sh:path cas-arch:Function_specialismOf_Function ;
+	sh:path cas-arch:Function_specializes_Function ;
 	.
 
-cas-arch:Function_specialismOf_Function_Source
+cas-arch:Function_specializes_Function_Source
 	rdfs:subPropertyOf cas:linksSource ;
-	rdfs:domain cas-arch:Function_specialismOf_Function ;
+	rdfs:domain cas-arch:Function_specializes_Function ;
 	rdfs:range cas-arch:Function ;
 	.
 
-cas-arch:Function_specialismOf_Function_Source_Shape
-	sh:path cas-arch:Function_specialismOf_Function ;
-	sh:property cas-arch:Function_specialismOf_Function_Source ;
+cas-arch:Function_specializes_Function_Source_Shape
+	sh:path cas-arch:Function_specializes_Function ;
+	sh:property cas-arch:Function_specializes_Function_Source ;
 	.
 
-cas-arch:Function_specialismOf_Function_Target
+cas-arch:Function_specializes_Function_Target
 	rdfs:subPropertyOf cas:linksTarget ;
-	rdfs:domain cas-arch:Function_specialismOf_Function ;
+	rdfs:domain cas-arch:Function_specializes_Function ;
 	rdfs:range cas-arch:Function ;
 	.
 
-cas-arch:Function_specialismOf_Function_Target_Shape
-	sh:path cas-arch:Function_specialismOf_Function ;
-	sh:property cas-arch:Function_specialismOf_Function_Target_Shape ;
+cas-arch:Function_specializes_Function_Target_Shape
+	sh:path cas-arch:Function_specializes_Function ;
+	sh:property cas-arch:Function_specializes_Function_Target_Shape ;
 	.
 
 cas-arch:Function_usedIn_Function
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Function used in Function"@en ,
 		"Funktion verwendet in Funktion"@de
@@ -5824,7 +5847,7 @@ cas-arch:Function_usedIn_Function_Target_Shape
 
 cas-arch:Function_uses_Function
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Function uses Function"@en ,
 		"Funktion verwendet Funktion"@de
@@ -5863,6 +5886,200 @@ cas-arch:Function_uses_Function_Target_Shape
 	sh:property cas-arch:Function_uses_Function_Target_Shape ;
 	.
 
+cas-arch:FunctionalInterface
+	a owl:Class ;
+	rdfs:subClassOf cas:Entity ;
+	rdfs:label
+		"Functional Interface"@en ,
+		"Funktionsschnittstelle"@de
+		;
+	dcterms:modified "2026-07-02T00:06:01Z"^^xsd:dateTime ;
+	skos:definition
+		"Represents an interface between functions that interact by exchanging flows of material, energy, or information."@en ,
+		"Repräsentiert eine schnittstelle zwischen Funktionen, die Material-, Energie- oder Informationen austauschen."@de
+		;
+	.
+
+cas-arch:FunctionalInterface_Shape
+	a sh:NodeShape ;
+	sh:property
+		dc:description_Shape ,
+		dc:identifier_Shape ,
+		dc:title_Shape ,
+		:number_Shape ,
+		:type_Shape
+		;
+	sh:targetClass cas-arch:FunctionalInterface ;
+	.
+
+cas-arch:FunctionalInterface_partOf_Function
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf cas:Relationship ;
+	rdfs:label
+		"Functional Interface part of Function"@en ,
+		"Funktionsschnittstelle Bestandteil von Funktion"@de
+		;
+	dcterms:modified "2026-06-30T00:27:26Z"^^xsd:dateTime ;
+	skos:definition
+		"Parent system component"@en ,
+		"Übergeordnete Systemkomponente"@de
+		;
+	.
+
+cas-arch:FunctionalInterface_partOf_Function_Shape
+	a sh:PropertyShape ;
+	sh:path cas-arch:FunctionalInterface_partOf_Function ;
+	.
+
+cas-arch:FunctionalInterface_partOf_Function_Source
+	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:domain cas-arch:FunctionalInterface_partOf_Function ;
+	rdfs:range cas-arch:FunctionalInterface ;
+	.
+
+cas-arch:FunctionalInterface_partOf_Function_Source_Shape
+	sh:path cas-arch:FunctionalInterface_partOf_Function ;
+	sh:property cas-arch:FunctionalInterface_partOf_Function_Source ;
+	.
+
+cas-arch:FunctionalInterface_partOf_Function_Target
+	rdfs:subPropertyOf cas:linksTarget ;
+	rdfs:domain cas-arch:FunctionalInterface_partOf_Function ;
+	rdfs:range cas-arch:Function ;
+	.
+
+cas-arch:FunctionalInterface_partOf_Function_Target_Shape
+	sh:path cas-arch:FunctionalInterface_partOf_Function ;
+	sh:property cas-arch:FunctionalInterface_partOf_Function_Target_Shape ;
+	.
+
+cas-arch:InformationFlow
+	a owl:Class ;
+	rdfs:subClassOf cas-arch:FunctionFlow ;
+	rdfs:label
+		"Information Flow"@en ,
+		"Informationsfluss"@de
+		;
+	dcterms:modified "2026-06-30T00:18:57Z"^^xsd:dateTime ;
+	skos:definition
+		"Represents the exchange of data or signals between functions."@en ,
+		"Repräsentiert einen Austausch von Daten oder Signalen zwischen Funktionen."@de
+		;
+	.
+
+cas-arch:InformationFlow_Shape
+	a sh:NodeShape ;
+	sh:targetClass cas-arch:InformationFlow ;
+	.
+
+cas-arch:InformationFlow_flowsFrom_InformationFlow
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf cas:Relationship ;
+	rdfs:label
+		"Information Flow flows from Information Flow"@en ,
+		"Informationsfluss fließt von Informationsfluss"@de
+		;
+	dcterms:modified "2026-07-02T00:10:17Z"^^xsd:dateTime ;
+	skos:definition
+		"Functional interface from which this function flow originates"@en ,
+		"Funktionsschnittstelle, von der aus diese Funktion ausgeht"@de
+		;
+	.
+
+cas-arch:InformationFlow_flowsFrom_InformationFlow_Shape
+	a sh:PropertyShape ;
+	sh:path cas-arch:InformationFlow_flowsFrom_InformationFlow ;
+	.
+
+cas-arch:InformationFlow_flowsFrom_InformationFlow_Source
+	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:domain cas-arch:InformationFlow_flowsFrom_InformationFlow ;
+	rdfs:range cas-arch:InformationFlow ;
+	.
+
+cas-arch:InformationFlow_flowsFrom_InformationFlow_Source_Shape
+	sh:path cas-arch:InformationFlow_flowsFrom_InformationFlow ;
+	sh:property cas-arch:InformationFlow_flowsFrom_InformationFlow_Source ;
+	.
+
+cas-arch:InformationFlow_flowsFrom_InformationFlow_Target
+	rdfs:subPropertyOf cas:linksTarget ;
+	rdfs:domain cas-arch:InformationFlow_flowsFrom_InformationFlow ;
+	rdfs:range cas-arch:InformationFlow ;
+	.
+
+cas-arch:InformationFlow_flowsFrom_InformationFlow_Target_Shape
+	sh:path cas-arch:InformationFlow_flowsFrom_InformationFlow ;
+	sh:property cas-arch:InformationFlow_flowsFrom_InformationFlow_Target_Shape ;
+	.
+
+cas-arch:InformationFlow_flowsTo_InformationFlow
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf cas:Relationship ;
+	rdfs:label
+		"Information Flow flows to Information Flow"@en ,
+		"Informationsfluss fließt nach Informationsfluss"@de
+		;
+	dcterms:modified "2026-07-02T00:09:56Z"^^xsd:dateTime ;
+	skos:definition
+		"Function interface to which this function flows"@de ,
+		"Funktionsschnittstelle, zu der diese Funktion fließt"@en
+		;
+	.
+
+cas-arch:InformationFlow_flowsTo_InformationFlow_Shape
+	a sh:PropertyShape ;
+	sh:path cas-arch:InformationFlow_flowsTo_InformationFlow ;
+	.
+
+cas-arch:InformationFlow_flowsTo_InformationFlow_Source
+	rdfs:subPropertyOf cas:linksSource ;
+	rdfs:domain cas-arch:InformationFlow_flowsTo_InformationFlow ;
+	rdfs:range cas-arch:InformationFlow ;
+	.
+
+cas-arch:InformationFlow_flowsTo_InformationFlow_Source_Shape
+	sh:path cas-arch:InformationFlow_flowsTo_InformationFlow ;
+	sh:property cas-arch:InformationFlow_flowsTo_InformationFlow_Source ;
+	.
+
+cas-arch:InformationFlow_flowsTo_InformationFlow_Target
+	rdfs:subPropertyOf cas:linksTarget ;
+	rdfs:domain cas-arch:InformationFlow_flowsTo_InformationFlow ;
+	rdfs:range cas-arch:InformationFlow ;
+	.
+
+cas-arch:InformationFlow_flowsTo_InformationFlow_Target_Shape
+	sh:path cas-arch:InformationFlow_flowsTo_InformationFlow ;
+	sh:property cas-arch:InformationFlow_flowsTo_InformationFlow_Target_Shape ;
+	.
+
+cas-arch:MaterialFlow
+	a owl:Class ;
+	rdfs:subClassOf cas-arch:FunctionFlow ;
+	rdfs:label
+		"Material Flow"@en ,
+		"Materialfluss"@de
+		;
+	dcterms:modified "2026-06-30T00:21:18Z"^^xsd:dateTime ;
+	skos:definition
+		"Represents the transfer or movement of material between functions."@en ,
+		"Repräsentiert einen Transfer von Material zwischen Funktionen."@de
+		;
+	.
+
+cas-arch:MaterialFlow_Shape
+	a sh:NodeShape ;
+	sh:property
+		dc:description_Shape ,
+		dc:identifier_Shape ,
+		dc:title_Shape ,
+		:number_Shape ,
+		:type_Shape
+		;
+	sh:targetClass cas-arch:MaterialFlow ;
+	.
+
 cas-arch:Requirement
 	a owl:Class ;
 	rdfs:subClassOf cas:Entity ;
@@ -5870,7 +6087,7 @@ cas-arch:Requirement
 		"Anforderung"@de ,
 		"Requirement"@en
 		;
-	dcterms:modified "2025-09-28T11:35:09Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-29T23:31:48Z"^^xsd:dateTime ;
 	rdfs:definedBy
 		cas-ref:CSA-ISO-IEC-IEEE-15288 ,
 		cas-ref:ISO-IEC-IEEE-29148 ,
@@ -5907,7 +6124,7 @@ cas-arch:Requirement_Shape
 
 cas-arch:Requirement_createdBy_Person
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Anforderung erstellt von Person"@de ,
 		"Requirement created by Person"@en
@@ -5948,7 +6165,7 @@ cas-arch:Requirement_createdBy_Person_Target_Shape
 
 cas-arch:Requirement_derivedFrom_Requirement
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Anforderung abgeleitet von Anforderung"@de ,
 		"Requirement derived from Requirement"@en
@@ -5985,7 +6202,7 @@ cas-arch:Requirement_derivedFrom_Requirement_Target_Shape
 
 cas-arch:Requirement_ownedBy_Role
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Anforderung gehört Rolle"@de ,
 		"Requirement owned by Role"@en
@@ -6026,7 +6243,7 @@ cas-arch:Requirement_ownedBy_Role_Target_Shape
 
 cas-arch:Requirement_partOf_Requirement
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Anforderung Bestandteil von Anforderung"@de ,
 		"Requirement part of Requirement"@en
@@ -6067,7 +6284,7 @@ cas-arch:Requirement_partOf_Requirement_Target_Shape
 
 cas-arch:Requirement_relatedTo_Requirement
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Anforderung bezieht sich auf Anforderung"@de ,
 		"Requirement related to Requirement"@en
@@ -6108,7 +6325,7 @@ cas-arch:Requirement_relatedTo_Requirement_Target_Shape
 
 cas-arch:Requirement_relatedTo_SystemComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Anforderung bezieht sich auf Systemkomponente"@de ,
 		"Requirement related to System Component"@en
@@ -6149,7 +6366,7 @@ cas-arch:Requirement_relatedTo_SystemComponent_Target_Shape
 
 cas-arch:Requirement_satisfies_Requirement
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Anforderung erfüllt Anforderung"@de ,
 		"Requirement satisfies Requirement"@en
@@ -6188,12 +6405,12 @@ cas-arch:Requirement_satisfies_Requirement_Target_Shape
 	sh:property cas-arch:Requirement_satisfies_Requirement_Target_Shape ;
 	.
 
-cas-arch:Requirement_specialismOf_Requirement
+cas-arch:Requirement_specializes_Requirement
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
-		"Anforderung Spezialisierung von Anforderung"@de ,
-		"Requirement specialism of Requirement"@en
+		"Anforderung spezialisiert Anforderung"@de ,
+		"Requirement specializes Requirement"@en
 		;
 	dcterms:modified "2025-11-27T18:15:10Z"^^xsd:dateTime ;
 	skos:definition
@@ -6202,44 +6419,41 @@ cas-arch:Requirement_specialismOf_Requirement
 		;
 	.
 
-cas-arch:Requirement_specialismOf_Requirement_Shape
+cas-arch:Requirement_specializes_Requirement_Shape
 	a sh:PropertyShape ;
-	sh:path cas-arch:Requirement_specialismOf_Requirement ;
+	sh:path cas-arch:Requirement_specializes_Requirement ;
 	.
 
-cas-arch:Requirement_specialismOf_Requirement_Source
+cas-arch:Requirement_specializes_Requirement_Source
 	rdfs:subPropertyOf cas:linksSource ;
-	rdfs:domain cas-arch:Requirement_specialismOf_Requirement ;
+	rdfs:domain cas-arch:Requirement_specializes_Requirement ;
 	rdfs:range cas-arch:Requirement ;
 	.
 
-cas-arch:Requirement_specialismOf_Requirement_Source_Shape
-	sh:path cas-arch:Requirement_specialismOf_Requirement ;
-	sh:property cas-arch:Requirement_specialismOf_Requirement_Source ;
+cas-arch:Requirement_specializes_Requirement_Source_Shape
+	sh:path cas-arch:Requirement_specializes_Requirement ;
+	sh:property cas-arch:Requirement_specializes_Requirement_Source ;
 	.
 
-cas-arch:Requirement_specialismOf_Requirement_Target
+cas-arch:Requirement_specializes_Requirement_Target
 	rdfs:subPropertyOf cas:linksTarget ;
-	rdfs:domain cas-arch:Requirement_specialismOf_Requirement ;
+	rdfs:domain cas-arch:Requirement_specializes_Requirement ;
 	rdfs:range cas-arch:Requirement ;
 	.
 
-cas-arch:Requirement_specialismOf_Requirement_Target_Shape
-	sh:path cas-arch:Requirement_specialismOf_Requirement ;
-	sh:property cas-arch:Requirement_specialismOf_Requirement_Target_Shape ;
+cas-arch:Requirement_specializes_Requirement_Target_Shape
+	sh:path cas-arch:Requirement_specializes_Requirement ;
+	sh:property cas-arch:Requirement_specializes_Requirement_Target_Shape ;
 	.
 
 cas-arch:StakeholderRequirement
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-arch:Requirement
-		;
+	rdfs:subClassOf cas-arch:Requirement ;
 	rdfs:label
 		"Stakeholder Requirement"@en ,
 		"Stakeholder-Anforderung"@de
 		;
-	dcterms:modified "2025-08-02T18:36:03Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-29T23:31:55Z"^^xsd:dateTime ;
 	rdfs:definedBy cas-ref:CSA-ISO-IEC-IEEE-15288 ;
 	.
 
@@ -6255,7 +6469,7 @@ cas-arch:SystemBehavior
 		"System Behavior"@en ,
 		"Systemverhalten"@de
 		;
-	dcterms:modified "2026-04-01T20:26:58Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-29T23:32:15Z"^^xsd:dateTime ;
 	skos:definition
 		"Behavior of a system, correlating an output parameter to an input parameter"@en ,
 		"Verhalten eines Systems, bei dem ein Ausgangsparameter mit einem Eingangsparameter in Zusammenhang steht"@de
@@ -6275,7 +6489,7 @@ cas-arch:SystemBehavior_Shape
 
 cas-arch:SystemBehavior_partOf_SystemBehavior
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"System Behavior part of System Behavior"@en ,
 		"Systemverhalten Bestandteil von Systemverhalten"@de
@@ -6316,7 +6530,7 @@ cas-arch:SystemBehavior_partOf_SystemBehavior_Target_Shape
 
 cas-arch:SystemBehavior_usedIn_SystemBehavior
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"System Behavior used in System Behavior"@en ,
 		"Systemverhalten verwendet in Systemverhalten"@de
@@ -6357,15 +6571,12 @@ cas-arch:SystemBehavior_usedIn_SystemBehavior_Target_Shape
 
 cas-arch:SystemRequirement
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-arch:Requirement
-		;
+	rdfs:subClassOf cas-arch:Requirement ;
 	rdfs:label
 		"System Requirement"@en ,
 		"Systemanforderung"@de
 		;
-	dcterms:modified "2025-11-27T18:03:51Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-29T23:32:01Z"^^xsd:dateTime ;
 	rdfs:definedBy
 		cas-ref:CSA-ISO-IEC-IEEE-15288 ,
 		cas-ref:ISO-IEC-20246
@@ -6384,7 +6595,7 @@ cas-arch:UseCase
 		"Anwendungsfall"@de ,
 		"Use Case"@en
 		;
-	dcterms:modified "2026-02-17T16:43:44Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-29T23:31:32Z"^^xsd:dateTime ;
 	rdfs:definedBy cas-ref:VDI-2519-Blatt-1 ;
 	skos:definition
 		"Legt fest, was der Nutzer eines Produkts tut, um ein Ziel zu erreichen"@de ,
@@ -6406,7 +6617,7 @@ cas-arch:UseCase_Shape
 
 cas-arch:UseCase_createdBy_Person
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Anwendungsfall erstellt von Person"@de ,
 		"Use Case created by Person"@en
@@ -6447,7 +6658,7 @@ cas-arch:UseCase_createdBy_Person_Target_Shape
 
 cas-arch:UseCase_derivedFrom_UseCase
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Anwendungsfall abgeleitet von Anwendungsfall"@de ,
 		"Use Case derived from Use Case"@en
@@ -6484,7 +6695,7 @@ cas-arch:UseCase_derivedFrom_UseCase_Target_Shape
 
 cas-arch:UseCase_ownedBy_Role
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Anwendungsfall gehört Rolle"@de ,
 		"Use Case owned by Role"@en
@@ -6525,7 +6736,7 @@ cas-arch:UseCase_ownedBy_Role_Target_Shape
 
 cas-arch:UseCase_partOf_UseCase
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Anwendungsfall Bestandteil von Anwendungsfall"@de ,
 		"Use Case part of Use Case"@en
@@ -6566,7 +6777,7 @@ cas-arch:UseCase_partOf_UseCase_Target_Shape
 
 cas-arch:UseCase_requires_UseCase
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Anwendungsfall erfordert Anwendungsfall"@de ,
 		"Use Case requires Use Case"@en
@@ -6601,12 +6812,12 @@ cas-arch:UseCase_requires_UseCase_Target_Shape
 	sh:property cas-arch:UseCase_requires_UseCase_Target_Shape ;
 	.
 
-cas-arch:UseCase_specialismOf_UseCase
+cas-arch:UseCase_specializes_UseCase
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
-		"Anwendungsfall Spezialisierung von Anwendungsfall"@de ,
-		"Use Case specialism of Use Case"@en
+		"Anwendungsfall spezialisiert Anwendungsfall"@de ,
+		"Use Case specializes Use Case"@en
 		;
 	dcterms:modified "2025-11-27T18:15:10Z"^^xsd:dateTime ;
 	skos:definition
@@ -6615,39 +6826,36 @@ cas-arch:UseCase_specialismOf_UseCase
 		;
 	.
 
-cas-arch:UseCase_specialismOf_UseCase_Shape
+cas-arch:UseCase_specializes_UseCase_Shape
 	a sh:PropertyShape ;
-	sh:path cas-arch:UseCase_specialismOf_UseCase ;
+	sh:path cas-arch:UseCase_specializes_UseCase ;
 	.
 
-cas-arch:UseCase_specialismOf_UseCase_Source
+cas-arch:UseCase_specializes_UseCase_Source
 	rdfs:subPropertyOf cas:linksSource ;
-	rdfs:domain cas-arch:UseCase_specialismOf_UseCase ;
+	rdfs:domain cas-arch:UseCase_specializes_UseCase ;
 	rdfs:range cas-arch:UseCase ;
 	.
 
-cas-arch:UseCase_specialismOf_UseCase_Source_Shape
-	sh:path cas-arch:UseCase_specialismOf_UseCase ;
-	sh:property cas-arch:UseCase_specialismOf_UseCase_Source ;
+cas-arch:UseCase_specializes_UseCase_Source_Shape
+	sh:path cas-arch:UseCase_specializes_UseCase ;
+	sh:property cas-arch:UseCase_specializes_UseCase_Source ;
 	.
 
-cas-arch:UseCase_specialismOf_UseCase_Target
+cas-arch:UseCase_specializes_UseCase_Target
 	rdfs:subPropertyOf cas:linksTarget ;
-	rdfs:domain cas-arch:UseCase_specialismOf_UseCase ;
+	rdfs:domain cas-arch:UseCase_specializes_UseCase ;
 	rdfs:range cas-arch:UseCase ;
 	.
 
-cas-arch:UseCase_specialismOf_UseCase_Target_Shape
-	sh:path cas-arch:UseCase_specialismOf_UseCase ;
-	sh:property cas-arch:UseCase_specialismOf_UseCase_Target_Shape ;
+cas-arch:UseCase_specializes_UseCase_Target_Shape
+	sh:path cas-arch:UseCase_specializes_UseCase ;
+	sh:property cas-arch:UseCase_specializes_UseCase_Target_Shape ;
 	.
 
 cas-ee:ElectricElectronicComponent
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-sys:SystemComponent
-		;
+	rdfs:subClassOf cas-sys:SystemComponent ;
 	rdfs:label
 		"Electric/Electronic Component"@en ,
 		"Elektrische/Elektronische Komponente"@de
@@ -6666,7 +6874,7 @@ cas-ee:ElectricElectronicComponent_Shape
 
 cas-ee:ElectricElectronicComponent_relatesTo_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Electric/Electronic Component relates to Mechanical Component"@en ,
 		"Elektrische/Elektronische Komponente bezieht sich auf Mechanische Komponente"@de
@@ -6707,7 +6915,7 @@ cas-ee:ElectricElectronicComponent_relatesTo_MechanicalComponent_Target_Shape
 
 cas-ee:ElectricElectronicComponent_usedAtLocationIn_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Electric/Electronic Component used at location in Mechanical Component"@en ,
 		"Elektrische/Elektronische Komponente verwendet an Position in Mechanische Komponente"@de
@@ -6748,10 +6956,7 @@ cas-ee:ElectricElectronicComponent_usedAtLocationIn_MechanicalComponent_Target_S
 
 cas-ee:ElectricElectronicConnection
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-sys:ComponentConnection
-		;
+	rdfs:subClassOf cas-sys:ComponentConnection ;
 	rdfs:label
 		"Electric/Electronic Connection"@en ,
 		"Elektrische/Elektronische Verbindung"@de
@@ -6770,7 +6975,7 @@ cas-ee:ElectricElectronicConnection_Shape
 
 cas-ee:ElectricElectronicConnection_connects_ElectricElectronicComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Electric/Electronic Connection connects Electric/Electronic Component"@en ,
 		"Elektrische/Elektronische Verbindung verbindet Elektrische/Elektronische Komponente"@de
@@ -6811,10 +7016,7 @@ cas-ee:ElectricElectronicConnection_connects_ElectricElectronicComponent_Target_
 
 cas-ee:ElectricElectronicPort
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-sys:ComponentInterface
-		;
+	rdfs:subClassOf cas-sys:ComponentInterface ;
 	rdfs:label
 		"Electric/Electronic Port"@en ,
 		"Elektrischer/Elektronischer Anschluss"@de
@@ -6833,7 +7035,7 @@ cas-ee:ElectricElectronicPort_Shape
 
 cas-ee:ElectricElectronicPort_usedAtLocationIn_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Electric/Electronic Port used at location in Mechanical Component"@en ,
 		"Elektrischer/Elektronischer Anschluss verwendet an Position in Mechanische Komponente"@de
@@ -6874,10 +7076,7 @@ cas-ee:ElectricElectronicPort_usedAtLocationIn_MechanicalComponent_Target_Shape
 
 cas-fld:HydraulicPneumaticConnection
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-sys:ComponentConnection
-		;
+	rdfs:subClassOf cas-sys:ComponentConnection ;
 	rdfs:label
 		"Hydraulic/Pneumatic Connection"@en ,
 		"Hydraulische/Pneumatische Verbindung"@de
@@ -6896,7 +7095,7 @@ cas-fld:HydraulicPneumaticConnection_Shape
 
 cas-fld:HydraulicPneumaticConnection_connects_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Hydraulic/Pneumatic Connection connects Mechanical Component"@en ,
 		"Hydraulische/Pneumatische Verbindung verbindet Mechanische Komponente"@de
@@ -6937,10 +7136,7 @@ cas-fld:HydraulicPneumaticConnection_connects_MechanicalComponent_Target_Shape
 
 cas-fld:HydraulicPneumaticPort
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-sys:ComponentInterface
-		;
+	rdfs:subClassOf cas-sys:ComponentInterface ;
 	rdfs:label
 		"Hydraulic/Pneumatic Port"@en ,
 		"Hydraulischer/Pneumatischer Anschluss"@de
@@ -6959,7 +7155,7 @@ cas-fld:HydraulicPneumaticPort_Shape
 
 cas-fld:HydraulicPneumaticPort_usedAtLocationIn_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Hydraulic/Pneumatic Port used at location in Mechanical Component"@en ,
 		"Hydraulischer/Pneumatischer Anschluss verwendet an Position in Mechanische Komponente"@de
@@ -7025,7 +7221,7 @@ cas-mech:BendingSpecification_Shape
 
 cas-mech:BendingSpecification_specifiedBy_Reference
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Bending Specification specified by Reference"@en ,
 		"Biegespezifikation spezifiziert durch Referenz"@de
@@ -7092,7 +7288,7 @@ cas-mech:Body_Shape
 
 cas-mech:Body_dependsOn_Body
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Body depends on Body"@en ,
 		"Körper basiert auf Körper"@de
@@ -7133,7 +7329,7 @@ cas-mech:Body_dependsOn_Body_Target_Shape
 
 cas-mech:Body_madeOf_Material
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Body made of Material"@en ,
 		"Körper hergestellt aus Werkstoff"@de
@@ -7174,7 +7370,7 @@ cas-mech:Body_madeOf_Material_Target_Shape
 
 cas-mech:Body_partOf_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Body part of Mechanical Component"@en ,
 		"Körper Bestandteil von Mechanische Komponente"@de
@@ -7244,7 +7440,7 @@ cas-mech:Cleanliness_Shape
 
 cas-mech:Cleanliness_appliesTo_Body
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Cleanliness applies to Body"@en ,
 		"Sauberkeit anwendbar auf Körper"@de
@@ -7281,7 +7477,7 @@ cas-mech:Cleanliness_appliesTo_Body_Target_Shape
 
 cas-mech:Cleanliness_appliesTo_Edge
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Cleanliness applies to Edge"@en ,
 		"Sauberkeit anwendbar auf Kante"@de
@@ -7318,7 +7514,7 @@ cas-mech:Cleanliness_appliesTo_Edge_Target_Shape
 
 cas-mech:Cleanliness_appliesTo_Face
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Cleanliness applies to Face"@en ,
 		"Sauberkeit anwendbar auf Teilfläche"@de
@@ -7355,7 +7551,7 @@ cas-mech:Cleanliness_appliesTo_Face_Target_Shape
 
 cas-mech:Cleanliness_appliesTo_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Cleanliness applies to Mechanical Component"@en ,
 		"Sauberkeit anwendbar auf Mechanische Komponente"@de
@@ -7392,7 +7588,7 @@ cas-mech:Cleanliness_appliesTo_MechanicalComponent_Target_Shape
 
 cas-mech:Cleanliness_specifiedBy_Reference
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Cleanliness specified by Reference"@en ,
 		"Sauberkeit spezifiziert durch Referenz"@de
@@ -7433,10 +7629,7 @@ cas-mech:Cleanliness_specifiedBy_Reference_Target_Shape
 
 cas-mech:Datum
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-mech:ModelAnnotation
-		;
+	rdfs:subClassOf cas-mech:ModelAnnotation ;
 	rdfs:label
 		"Bezug"@de ,
 		"Datum"@en
@@ -7455,10 +7648,7 @@ cas-mech:Datum_Shape
 
 cas-mech:DimensionalSize
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-mech:ModelAnnotation
-		;
+	rdfs:subClassOf cas-mech:ModelAnnotation ;
 	rdfs:label
 		"Dimensional Size"@en ,
 		"Größenmaß"@de
@@ -7511,7 +7701,7 @@ cas-mech:Edge_Shape
 
 cas-mech:Edge_partOf_Body
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Edge part of Body"@en ,
 		"Kante Bestandteil von Körper"@de
@@ -7577,7 +7767,7 @@ cas-mech:Face_Shape
 
 cas-mech:Face_partOf_Body
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Face part of Body"@en ,
 		"Teilfläche Bestandteil von Körper"@de
@@ -7645,7 +7835,7 @@ cas-mech:Gearing_Shape
 
 cas-mech:Gearing_appliesTo_Body
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Gearing applies to Body"@en ,
 		"Verzahnung anwendbar auf Körper"@de
@@ -7682,7 +7872,7 @@ cas-mech:Gearing_appliesTo_Body_Target_Shape
 
 cas-mech:Gearing_appliesTo_Edge
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Gearing applies to Edge"@en ,
 		"Verzahnung anwendbar auf Kante"@de
@@ -7719,7 +7909,7 @@ cas-mech:Gearing_appliesTo_Edge_Target_Shape
 
 cas-mech:Gearing_appliesTo_Face
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Gearing applies to Face"@en ,
 		"Verzahnung anwendbar auf Teilfläche"@de
@@ -7756,7 +7946,7 @@ cas-mech:Gearing_appliesTo_Face_Target_Shape
 
 cas-mech:Gearing_appliesTo_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Gearing applies to Mechanical Component"@en ,
 		"Verzahnung anwendbar auf Mechanische Komponente"@de
@@ -7793,7 +7983,7 @@ cas-mech:Gearing_appliesTo_MechanicalComponent_Target_Shape
 
 cas-mech:Gearing_specifiedBy_Reference
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Gearing specified by Reference"@en ,
 		"Verzahnung spezifiziert durch Referenz"@de
@@ -7834,7 +8024,7 @@ cas-mech:Gearing_specifiedBy_Reference_Target_Shape
 
 cas-mech:Gearing_usedAtLocationIn_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Gearing used at location in Mechanical Component"@en ,
 		"Verzahnung verwendet an Position in Mechanische Komponente"@de
@@ -7901,7 +8091,7 @@ cas-mech:GeometricInterference_Shape
 
 cas-mech:GeometricInterference_interferesWith_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Geometric Interference interferes with Mechanical Component"@en ,
 		"Geometrische Überschneidung überschneidet sich mit Mechanische Komponente"@de
@@ -7942,7 +8132,7 @@ cas-mech:GeometricInterference_interferesWith_MechanicalComponent_Target_Shape
 
 cas-mech:GeometricInterference_partOf_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Geometric Interference part of Mechanical Component"@en ,
 		"Geometrische Überschneidung Bestandteil von Mechanische Komponente"@de
@@ -7983,10 +8173,7 @@ cas-mech:GeometricInterference_partOf_MechanicalComponent_Target_Shape
 
 cas-mech:GeometricTolerance
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-mech:ModelAnnotation
-		;
+	rdfs:subClassOf cas-mech:ModelAnnotation ;
 	rdfs:label
 		"Geometric Tolerance"@en ,
 		"Geometrische Toleranz"@de
@@ -8007,7 +8194,7 @@ cas-mech:GeometricTolerance_Shape
 
 cas-mech:GeometricTolerance_relatesTo_Datum
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Geometric Tolerance relates to Datum"@en ,
 		"Geometrische Toleranz bezieht sich auf Bezug"@de
@@ -8076,7 +8263,7 @@ cas-mech:HeatTreatedArea_Shape
 
 cas-mech:HeatTreatedArea_appliesTo_Body
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Heat-treated Area applies to Body"@en ,
 		"Wärmebehandelter Bereich anwendbar auf Körper"@de
@@ -8113,7 +8300,7 @@ cas-mech:HeatTreatedArea_appliesTo_Body_Target_Shape
 
 cas-mech:HeatTreatedArea_appliesTo_Edge
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Heat-treated Area applies to Edge"@en ,
 		"Wärmebehandelter Bereich anwendbar auf Kante"@de
@@ -8150,7 +8337,7 @@ cas-mech:HeatTreatedArea_appliesTo_Edge_Target_Shape
 
 cas-mech:HeatTreatedArea_appliesTo_Face
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Heat-treated Area applies to Face"@en ,
 		"Wärmebehandelter Bereich anwendbar auf Teilfläche"@de
@@ -8187,7 +8374,7 @@ cas-mech:HeatTreatedArea_appliesTo_Face_Target_Shape
 
 cas-mech:HeatTreatedArea_appliesTo_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Heat-treated Area applies to Mechanical Component"@en ,
 		"Wärmebehandelter Bereich anwendbar auf Mechanische Komponente"@de
@@ -8224,7 +8411,7 @@ cas-mech:HeatTreatedArea_appliesTo_MechanicalComponent_Target_Shape
 
 cas-mech:HeatTreatedArea_applies_HeatTreatment
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Heat-treated Area applies Heat Treatment"@en ,
 		"Wärmebehandelter Bereich wendet an Wärmebehandlung"@de
@@ -8265,7 +8452,7 @@ cas-mech:HeatTreatedArea_applies_HeatTreatment_Target_Shape
 
 cas-mech:HeatTreatedArea_implements_Function
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Heat-treated Area implements Function"@en ,
 		"Wärmebehandelter Bereich implementiert Funktion"@de
@@ -8306,7 +8493,7 @@ cas-mech:HeatTreatedArea_implements_Function_Target_Shape
 
 cas-mech:HeatTreatedArea_specifiedBy_Reference
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Heat-treated Area specified by Reference"@en ,
 		"Wärmebehandelter Bereich spezifiziert durch Referenz"@de
@@ -8347,7 +8534,7 @@ cas-mech:HeatTreatedArea_specifiedBy_Reference_Target_Shape
 
 cas-mech:HeatTreatedArea_usedIn_HeatTreatedArea
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Heat-treated Area used in Heat-treated Area"@en ,
 		"Wärmebehandelter Bereich verwendet in Wärmebehandelter Bereich"@de
@@ -8416,7 +8603,7 @@ cas-mech:Hole_Shape
 
 cas-mech:Hole_implements_Function
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Bohrung implementiert Funktion"@de ,
 		"Hole implements Function"@en
@@ -8457,7 +8644,7 @@ cas-mech:Hole_implements_Function_Target_Shape
 
 cas-mech:Hole_partOf_Body
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Bohrung Bestandteil von Körper"@de ,
 		"Hole part of Body"@en
@@ -8498,7 +8685,7 @@ cas-mech:Hole_partOf_Body_Target_Shape
 
 cas-mech:Hole_specifiedBy_Reference
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Bohrung spezifiziert durch Referenz"@de ,
 		"Hole specified by Reference"@en
@@ -8539,7 +8726,7 @@ cas-mech:Hole_specifiedBy_Reference_Target_Shape
 
 cas-mech:Hole_usedAtLocationIn_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Bohrung verwendet an Position in Mechanische Komponente"@de ,
 		"Hole used at location in Mechanical Component"@en
@@ -8580,10 +8767,7 @@ cas-mech:Hole_usedAtLocationIn_MechanicalComponent_Target_Shape
 
 cas-mech:JoiningElement
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-sys:ComponentConnection
-		;
+	rdfs:subClassOf cas-sys:ComponentConnection ;
 	rdfs:label
 		"Fügeverbindung"@de ,
 		"Joining Element"@en
@@ -8603,7 +8787,7 @@ cas-mech:JoiningElement_Shape
 
 cas-mech:JoiningElement_appliesTo_Body
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fügeverbindung anwendbar auf Körper"@de ,
 		"Joining Element applies to Body"@en
@@ -8640,7 +8824,7 @@ cas-mech:JoiningElement_appliesTo_Body_Target_Shape
 
 cas-mech:JoiningElement_appliesTo_Edge
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fügeverbindung anwendbar auf Kante"@de ,
 		"Joining Element applies to Edge"@en
@@ -8677,7 +8861,7 @@ cas-mech:JoiningElement_appliesTo_Edge_Target_Shape
 
 cas-mech:JoiningElement_appliesTo_Face
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fügeverbindung anwendbar auf Teilfläche"@de ,
 		"Joining Element applies to Face"@en
@@ -8714,7 +8898,7 @@ cas-mech:JoiningElement_appliesTo_Face_Target_Shape
 
 cas-mech:JoiningElement_appliesTo_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fügeverbindung anwendbar auf Mechanische Komponente"@de ,
 		"Joining Element applies to Mechanical Component"@en
@@ -8751,7 +8935,7 @@ cas-mech:JoiningElement_appliesTo_MechanicalComponent_Target_Shape
 
 cas-mech:JoiningElement_applies_JoiningProcess
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fügeverbindung wendet an Fügeverfahren"@de ,
 		"Joining Element applies Joining Process"@en
@@ -8792,7 +8976,7 @@ cas-mech:JoiningElement_applies_JoiningProcess_Target_Shape
 
 cas-mech:JoiningElement_connects_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fügeverbindung verbindet Mechanische Komponente"@de ,
 		"Joining Element connects Mechanical Component"@en
@@ -8833,7 +9017,7 @@ cas-mech:JoiningElement_connects_MechanicalComponent_Target_Shape
 
 cas-mech:JoiningElement_implements_Function
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fügeverbindung implementiert Funktion"@de ,
 		"Joining Element implements Function"@en
@@ -8874,7 +9058,7 @@ cas-mech:JoiningElement_implements_Function_Target_Shape
 
 cas-mech:JoiningElement_madeOf_Material
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fügeverbindung hergestellt aus Werkstoff"@de ,
 		"Joining Element made of Material"@en
@@ -8915,7 +9099,7 @@ cas-mech:JoiningElement_madeOf_Material_Target_Shape
 
 cas-mech:JoiningElement_partOf_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fügeverbindung Bestandteil von Mechanische Komponente"@de ,
 		"Joining Element part of Mechanical Component"@en
@@ -8956,7 +9140,7 @@ cas-mech:JoiningElement_partOf_MechanicalComponent_Target_Shape
 
 cas-mech:JoiningElement_specifiedBy_Reference
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fügeverbindung spezifiziert durch Referenz"@de ,
 		"Joining Element specified by Reference"@en
@@ -8997,7 +9181,7 @@ cas-mech:JoiningElement_specifiedBy_Reference_Target_Shape
 
 cas-mech:JoiningElement_usedAtLocationIn_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Fügeverbindung verwendet an Position in Mechanische Komponente"@de ,
 		"Joining Element used at location in Mechanical Component"@en
@@ -9038,10 +9222,7 @@ cas-mech:JoiningElement_usedAtLocationIn_MechanicalComponent_Target_Shape
 
 cas-mech:KinematicJoint
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-sys:ComponentConnection
-		;
+	rdfs:subClassOf cas-sys:ComponentConnection ;
 	rdfs:label
 		"Kinematic Joint"@en ,
 		"Kinematisches Gelenk"@de
@@ -9060,7 +9241,7 @@ cas-mech:KinematicJoint_Shape
 
 cas-mech:KinematicJoint_appliesTo_Body
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Kinematic Joint applies to Body"@en ,
 		"Kinematisches Gelenk anwendbar auf Körper"@de
@@ -9097,7 +9278,7 @@ cas-mech:KinematicJoint_appliesTo_Body_Target_Shape
 
 cas-mech:KinematicJoint_appliesTo_Edge
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Kinematic Joint applies to Edge"@en ,
 		"Kinematisches Gelenk anwendbar auf Kante"@de
@@ -9134,7 +9315,7 @@ cas-mech:KinematicJoint_appliesTo_Edge_Target_Shape
 
 cas-mech:KinematicJoint_appliesTo_Face
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Kinematic Joint applies to Face"@en ,
 		"Kinematisches Gelenk anwendbar auf Teilfläche"@de
@@ -9171,7 +9352,7 @@ cas-mech:KinematicJoint_appliesTo_Face_Target_Shape
 
 cas-mech:KinematicJoint_appliesTo_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Kinematic Joint applies to Mechanical Component"@en ,
 		"Kinematisches Gelenk anwendbar auf Mechanische Komponente"@de
@@ -9208,7 +9389,7 @@ cas-mech:KinematicJoint_appliesTo_MechanicalComponent_Target_Shape
 
 cas-mech:KinematicJoint_connects_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Kinematic Joint connects Mechanical Component"@en ,
 		"Kinematisches Gelenk verbindet Mechanische Komponente"@de
@@ -9249,7 +9430,7 @@ cas-mech:KinematicJoint_connects_MechanicalComponent_Target_Shape
 
 cas-mech:KinematicJoint_implements_Function
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Kinematic Joint implements Function"@en ,
 		"Kinematisches Gelenk implementiert Funktion"@de
@@ -9290,7 +9471,7 @@ cas-mech:KinematicJoint_implements_Function_Target_Shape
 
 cas-mech:KinematicJoint_partOf_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Kinematic Joint part of Mechanical Component"@en ,
 		"Kinematisches Gelenk Bestandteil von Mechanische Komponente"@de
@@ -9331,7 +9512,7 @@ cas-mech:KinematicJoint_partOf_MechanicalComponent_Target_Shape
 
 cas-mech:KinematicJoint_usedAtLocationIn_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Kinematic Joint used at location in Mechanical Component"@en ,
 		"Kinematisches Gelenk verwendet an Position in Mechanische Komponente"@de
@@ -9396,7 +9577,7 @@ cas-mech:KinematicMechanism_Shape
 
 cas-mech:KinematicMechanism_partOf_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Kinematic Mechanism part of Mechanical Component"@en ,
 		"Kinematischer Mechanismus Bestandteil von Mechanische Komponente"@de
@@ -9462,7 +9643,7 @@ cas-mech:KinematicMotion_Shape
 
 cas-mech:KinematicMotion_involves_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Kinematic Motion involves Mechanical Component"@en ,
 		"Kinematische Bewegung umfasst Mechanische Komponente"@de
@@ -9503,7 +9684,7 @@ cas-mech:KinematicMotion_involves_MechanicalComponent_Target_Shape
 
 cas-mech:KinematicMotion_partOf_KinematicMechanism
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Kinematic Motion part of Kinematic Mechanism"@en ,
 		"Kinematische Bewegung Bestandteil von Kinematischer Mechanismus"@de
@@ -9570,7 +9751,7 @@ cas-mech:KinematicSensor_Shape
 
 cas-mech:KinematicSensor_observes_KinematicJoint
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Kinematic Sensor observes Kinematic Joint"@en ,
 		"Kinematischer Sensor überwacht Kinematisches Gelenk"@de
@@ -9611,7 +9792,7 @@ cas-mech:KinematicSensor_observes_KinematicJoint_Target_Shape
 
 cas-mech:KinematicSensor_partOf_KinematicMechanism
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Kinematic Sensor part of Kinematic Mechanism"@en ,
 		"Kinematischer Sensor Bestandteil von Kinematischer Mechanismus"@de
@@ -9652,7 +9833,7 @@ cas-mech:KinematicSensor_partOf_KinematicMechanism_Target_Shape
 
 cas-mech:KinematicSensor_usedAtLocationIn_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Kinematic Sensor used at location in Mechanical Component"@en ,
 		"Kinematischer Sensor verwendet an Position in Mechanische Komponente"@de
@@ -9715,7 +9896,7 @@ cas-mech:MarkingLabeling_Shape
 
 cas-mech:MarkingLabeling_appliesTo_Body
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Markierung & Beschriftung anwendbar auf Körper"@de ,
 		"Marking & Labeling applies to Body"@en
@@ -9752,7 +9933,7 @@ cas-mech:MarkingLabeling_appliesTo_Body_Target_Shape
 
 cas-mech:MarkingLabeling_appliesTo_Edge
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Markierung & Beschriftung anwendbar auf Kante"@de ,
 		"Marking & Labeling applies to Edge"@en
@@ -9789,7 +9970,7 @@ cas-mech:MarkingLabeling_appliesTo_Edge_Target_Shape
 
 cas-mech:MarkingLabeling_appliesTo_Face
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Markierung & Beschriftung anwendbar auf Teilfläche"@de ,
 		"Marking & Labeling applies to Face"@en
@@ -9826,7 +10007,7 @@ cas-mech:MarkingLabeling_appliesTo_Face_Target_Shape
 
 cas-mech:MarkingLabeling_appliesTo_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Markierung & Beschriftung anwendbar auf Mechanische Komponente"@de ,
 		"Marking & Labeling applies to Mechanical Component"@en
@@ -9863,7 +10044,7 @@ cas-mech:MarkingLabeling_appliesTo_MechanicalComponent_Target_Shape
 
 cas-mech:MarkingLabeling_specifiedBy_Reference
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Markierung & Beschriftung spezifiziert durch Referenz"@de ,
 		"Marking & Labeling specified by Reference"@en
@@ -9904,7 +10085,7 @@ cas-mech:MarkingLabeling_specifiedBy_Reference_Target_Shape
 
 cas-mech:MarkingLabeling_usedIn_MarkingLabeling
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Markierung & Beschriftung verwendet in Markierung & Beschriftung"@de ,
 		"Marking & Labeling used in Marking & Labeling"@en
@@ -9981,7 +10162,7 @@ cas-mech:Material_Shape
 
 cas-mech:Material_composedOf_Substance
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Material composed of Substance"@en ,
 		"Werkstoff zusammengesetzt aus Substanz"@de
@@ -10020,12 +10201,12 @@ cas-mech:Material_composedOf_Substance_Target_Shape
 	sh:property cas-mech:Material_composedOf_Substance_Target_Shape ;
 	.
 
-cas-mech:Material_specialismOf_Material
+cas-mech:Material_specializes_Material
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
-		"Material specialism of Material"@en ,
-		"Werkstoff Spezialisierung von Werkstoff"@de
+		"Material specializes Material"@en ,
+		"Werkstoff spezialisiert Werkstoff"@de
 		;
 	dcterms:modified "2025-11-27T18:15:10Z"^^xsd:dateTime ;
 	skos:definition
@@ -10034,36 +10215,36 @@ cas-mech:Material_specialismOf_Material
 		;
 	.
 
-cas-mech:Material_specialismOf_Material_Shape
+cas-mech:Material_specializes_Material_Shape
 	a sh:PropertyShape ;
-	sh:path cas-mech:Material_specialismOf_Material ;
+	sh:path cas-mech:Material_specializes_Material ;
 	.
 
-cas-mech:Material_specialismOf_Material_Source
+cas-mech:Material_specializes_Material_Source
 	rdfs:subPropertyOf cas:linksSource ;
-	rdfs:domain cas-mech:Material_specialismOf_Material ;
+	rdfs:domain cas-mech:Material_specializes_Material ;
 	rdfs:range cas-mech:Material ;
 	.
 
-cas-mech:Material_specialismOf_Material_Source_Shape
-	sh:path cas-mech:Material_specialismOf_Material ;
-	sh:property cas-mech:Material_specialismOf_Material_Source ;
+cas-mech:Material_specializes_Material_Source_Shape
+	sh:path cas-mech:Material_specializes_Material ;
+	sh:property cas-mech:Material_specializes_Material_Source ;
 	.
 
-cas-mech:Material_specialismOf_Material_Target
+cas-mech:Material_specializes_Material_Target
 	rdfs:subPropertyOf cas:linksTarget ;
-	rdfs:domain cas-mech:Material_specialismOf_Material ;
+	rdfs:domain cas-mech:Material_specializes_Material ;
 	rdfs:range cas-mech:Material ;
 	.
 
-cas-mech:Material_specialismOf_Material_Target_Shape
-	sh:path cas-mech:Material_specialismOf_Material ;
-	sh:property cas-mech:Material_specialismOf_Material_Target_Shape ;
+cas-mech:Material_specializes_Material_Target_Shape
+	sh:path cas-mech:Material_specializes_Material ;
+	sh:property cas-mech:Material_specializes_Material_Target_Shape ;
 	.
 
 cas-mech:Material_specifiedBy_Reference
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Material specified by Reference"@en ,
 		"Werkstoff spezifiziert durch Referenz"@de
@@ -10104,10 +10285,7 @@ cas-mech:Material_specifiedBy_Reference_Target_Shape
 
 cas-mech:MechanicalComponent
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-sys:SystemComponent
-		;
+	rdfs:subClassOf cas-sys:SystemComponent ;
 	rdfs:label
 		"Mechanical Component"@en ,
 		"Mechanische Komponente"@de
@@ -10127,7 +10305,7 @@ cas-mech:MechanicalComponent_Shape
 
 cas-mech:MechanicalComponent_madeOf_Material
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Mechanical Component made of Material"@en ,
 		"Mechanische Komponente hergestellt aus Werkstoff"@de
@@ -10168,7 +10346,7 @@ cas-mech:MechanicalComponent_madeOf_Material_Target_Shape
 
 cas-mech:MechanicalComponent_usedAtLocationIn_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Mechanical Component used at location in Mechanical Component"@en ,
 		"Mechanische Komponente verwendet an Position in Mechanische Komponente"@de
@@ -10237,7 +10415,7 @@ cas-mech:ModelAnnotation_Shape
 
 cas-mech:ModelAnnotation_appliesTo_Body
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Model Annotation applies to Body"@en ,
 		"Modell-Annotation anwendbar auf Körper"@de
@@ -10274,7 +10452,7 @@ cas-mech:ModelAnnotation_appliesTo_Body_Target_Shape
 
 cas-mech:ModelAnnotation_appliesTo_Edge
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Model Annotation applies to Edge"@en ,
 		"Modell-Annotation anwendbar auf Kante"@de
@@ -10311,7 +10489,7 @@ cas-mech:ModelAnnotation_appliesTo_Edge_Target_Shape
 
 cas-mech:ModelAnnotation_appliesTo_Face
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Model Annotation applies to Face"@en ,
 		"Modell-Annotation anwendbar auf Teilfläche"@de
@@ -10348,7 +10526,7 @@ cas-mech:ModelAnnotation_appliesTo_Face_Target_Shape
 
 cas-mech:ModelAnnotation_appliesTo_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Model Annotation applies to Mechanical Component"@en ,
 		"Modell-Annotation anwendbar auf Mechanische Komponente"@de
@@ -10385,7 +10563,7 @@ cas-mech:ModelAnnotation_appliesTo_MechanicalComponent_Target_Shape
 
 cas-mech:ModelAnnotation_implements_Function
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Model Annotation implements Function"@en ,
 		"Modell-Annotation implementiert Funktion"@de
@@ -10426,7 +10604,7 @@ cas-mech:ModelAnnotation_implements_Function_Target_Shape
 
 cas-mech:ModelAnnotation_partOf_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Model Annotation part of Mechanical Component"@en ,
 		"Modell-Annotation Bestandteil von Mechanische Komponente"@de
@@ -10467,7 +10645,7 @@ cas-mech:ModelAnnotation_partOf_MechanicalComponent_Target_Shape
 
 cas-mech:ModelAnnotation_relatesTo_ModelAnnotation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Model Annotation relates to Model Annotation"@en ,
 		"Modell-Annotation bezieht sich auf Modell-Annotation"@de
@@ -10508,7 +10686,7 @@ cas-mech:ModelAnnotation_relatesTo_ModelAnnotation_Target_Shape
 
 cas-mech:ModelAnnotation_shownIn_ModelView
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Model Annotation shown in Model View"@en ,
 		"Modell-Annotation dargestellt in Modellansicht"@de
@@ -10575,7 +10753,7 @@ cas-mech:ModelView_Shape
 
 cas-mech:ModelView_partOf_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Model View part of Mechanical Component"@en ,
 		"Modellansicht Bestandteil von Mechanische Komponente"@de
@@ -10643,7 +10821,7 @@ cas-mech:PaintedCoatedArea_Shape
 
 cas-mech:PaintedCoatedArea_appliesTo_Body
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Lackierter & Beschichteter Bereich anwendbar auf Körper"@de ,
 		"Painted & Coated Area applies to Body"@en
@@ -10680,7 +10858,7 @@ cas-mech:PaintedCoatedArea_appliesTo_Body_Target_Shape
 
 cas-mech:PaintedCoatedArea_appliesTo_Edge
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Lackierter & Beschichteter Bereich anwendbar auf Kante"@de ,
 		"Painted & Coated Area applies to Edge"@en
@@ -10717,7 +10895,7 @@ cas-mech:PaintedCoatedArea_appliesTo_Edge_Target_Shape
 
 cas-mech:PaintedCoatedArea_appliesTo_Face
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Lackierter & Beschichteter Bereich anwendbar auf Teilfläche"@de ,
 		"Painted & Coated Area applies to Face"@en
@@ -10754,7 +10932,7 @@ cas-mech:PaintedCoatedArea_appliesTo_Face_Target_Shape
 
 cas-mech:PaintedCoatedArea_appliesTo_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Lackierter & Beschichteter Bereich anwendbar auf Mechanische Komponente"@de ,
 		"Painted & Coated Area applies to Mechanical Component"@en
@@ -10791,7 +10969,7 @@ cas-mech:PaintedCoatedArea_appliesTo_MechanicalComponent_Target_Shape
 
 cas-mech:PaintedCoatedArea_implements_Function
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Lackierter & Beschichteter Bereich implementiert Funktion"@de ,
 		"Painted & Coated Area implements Function"@en
@@ -10832,7 +11010,7 @@ cas-mech:PaintedCoatedArea_implements_Function_Target_Shape
 
 cas-mech:PaintedCoatedArea_madeOf_Material
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Lackierter & Beschichteter Bereich hergestellt aus Werkstoff"@de ,
 		"Painted & Coated Area made of Material"@en
@@ -10873,7 +11051,7 @@ cas-mech:PaintedCoatedArea_madeOf_Material_Target_Shape
 
 cas-mech:PaintedCoatedArea_specifiedBy_Reference
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Lackierter & Beschichteter Bereich spezifiziert durch Referenz"@de ,
 		"Painted & Coated Area specified by Reference"@en
@@ -10914,7 +11092,7 @@ cas-mech:PaintedCoatedArea_specifiedBy_Reference_Target_Shape
 
 cas-mech:PaintedCoatedArea_usedIn_PaintedCoatedArea
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Lackierter & Beschichteter Bereich verwendet in Lackierter & Beschichteter Bereich"@de ,
 		"Painted & Coated Area used in Painted & Coated Area"@en
@@ -10980,10 +11158,7 @@ cas-mech:Substance_Shape
 
 cas-mech:SurfaceTexture
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-mech:ModelAnnotation
-		;
+	rdfs:subClassOf cas-mech:ModelAnnotation ;
 	rdfs:label
 		"Oberflächenbeschaffenheit"@de ,
 		"Surface Texture"@en
@@ -11035,7 +11210,7 @@ cas-mech:Thread_Shape
 
 cas-mech:Thread_appliesTo_Body
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Gewinde anwendbar auf Körper"@de ,
 		"Thread applies to Body"@en
@@ -11072,7 +11247,7 @@ cas-mech:Thread_appliesTo_Body_Target_Shape
 
 cas-mech:Thread_appliesTo_Edge
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Gewinde anwendbar auf Kante"@de ,
 		"Thread applies to Edge"@en
@@ -11109,7 +11284,7 @@ cas-mech:Thread_appliesTo_Edge_Target_Shape
 
 cas-mech:Thread_appliesTo_Face
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Gewinde anwendbar auf Teilfläche"@de ,
 		"Thread applies to Face"@en
@@ -11146,7 +11321,7 @@ cas-mech:Thread_appliesTo_Face_Target_Shape
 
 cas-mech:Thread_appliesTo_MechanicalComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Gewinde anwendbar auf Mechanische Komponente"@de ,
 		"Thread applies to Mechanical Component"@en
@@ -11183,7 +11358,7 @@ cas-mech:Thread_appliesTo_MechanicalComponent_Target_Shape
 
 cas-mech:Thread_partOf_Body
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Gewinde Bestandteil von Körper"@de ,
 		"Thread part of Body"@en
@@ -11224,7 +11399,7 @@ cas-mech:Thread_partOf_Body_Target_Shape
 
 cas-mech:Thread_specifiedBy_Reference
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Gewinde spezifiziert durch Referenz"@de ,
 		"Thread specified by Reference"@en
@@ -11265,7 +11440,7 @@ cas-mech:Thread_specifiedBy_Reference_Target_Shape
 
 cas-mech:angle
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Angle"@en ,
 		"Biegewinkel"@de
@@ -11282,7 +11457,7 @@ cas-mech:angle_Shape
 
 cas-mech:classification
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Classification"@en ,
 		"Klassifikation"@de
@@ -11303,7 +11478,7 @@ cas-mech:classification_Shape
 
 cas-mech:density
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Density"@en ,
 		"Dichte"@de
@@ -11324,7 +11499,7 @@ cas-mech:density_Shape
 
 cas-mech:elasticLimit
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Elastic Limit"@en ,
 		"Elastitizitätsgrenze"@de
@@ -11345,7 +11520,7 @@ cas-mech:elasticLimit_Shape
 
 cas-mech:elongationAtBreak
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Bruchdehnung"@de ,
 		"Elongation at Break"@en
@@ -11366,7 +11541,7 @@ cas-mech:elongationAtBreak_Shape
 
 cas-mech:flammability
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Entflammbarkeit"@de ,
 		"Flammability"@en
@@ -11387,7 +11562,7 @@ cas-mech:flammability_Shape
 
 cas-mech:hardness
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Hardness"@en ,
 		"Härte"@de
@@ -11404,7 +11579,7 @@ cas-mech:hardness_Shape
 
 cas-mech:lowerTolerance
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Lower Tolerance"@en ,
 		"Untere Toleranz"@de
@@ -11425,7 +11600,7 @@ cas-mech:lowerTolerance_Shape
 
 cas-mech:mass
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Gewicht"@de ,
 		"Mass"@en
@@ -11446,7 +11621,7 @@ cas-mech:mass_Shape
 
 cas-mech:nominalValue
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Nominal Value"@en ,
 		"Nominalwert"@de
@@ -11467,7 +11642,7 @@ cas-mech:nominalValue_Shape
 
 cas-mech:particleDensity
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Particle Density"@en ,
 		"Partikeldichte"@de
@@ -11488,7 +11663,7 @@ cas-mech:particleDensity_Shape
 
 cas-mech:particleSize
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Particle Size"@en ,
 		"Partikelgröße"@de
@@ -11509,7 +11684,7 @@ cas-mech:particleSize_Shape
 
 cas-mech:pitch
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Pitch"@en ,
 		"Teilung"@de
@@ -11530,7 +11705,7 @@ cas-mech:pitch_Shape
 
 cas-mech:side
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Seite"@de ,
 		"Side"@en
@@ -11551,7 +11726,7 @@ cas-mech:side_Shape
 
 cas-mech:tensileStrength
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Tensile Strength"@en ,
 		"Zugfestigkeit"@de
@@ -11572,7 +11747,7 @@ cas-mech:tensileStrength_Shape
 
 cas-mech:thermalExpansion
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Thermal Expansion"@en ,
 		"Thermische Ausdehnung"@de
@@ -11593,7 +11768,7 @@ cas-mech:thermalExpansion_Shape
 
 cas-mech:thickness
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Dicke"@de ,
 		"Thickness"@en
@@ -11614,7 +11789,7 @@ cas-mech:thickness_Shape
 
 cas-mech:toleranceValue
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Tolerance Value"@en ,
 		"Toleranzwert"@de
@@ -11635,7 +11810,7 @@ cas-mech:toleranceValue_Shape
 
 cas-mech:upperTolerance
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Obere Toleranz"@de ,
 		"Upper Tolerance"@en
@@ -11656,7 +11831,7 @@ cas-mech:upperTolerance_Shape
 
 cas-mech:volume
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Volume"@en ,
 		"Volumen"@de
@@ -11677,10 +11852,7 @@ cas-mech:volume_Shape
 
 cas-sw:SoftwareClass
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-sys:SystemComponent
-		;
+	rdfs:subClassOf cas-sys:SystemComponent ;
 	rdfs:label
 		"Software Class"@en ,
 		"Software-Klasse"@de
@@ -11703,10 +11875,7 @@ cas-sw:SoftwareClass_Shape
 
 cas-sw:SoftwareComponent
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-sys:SystemComponent
-		;
+	rdfs:subClassOf cas-sys:SystemComponent ;
 	rdfs:label
 		"Software Component"@en ,
 		"Softwarekomponente"@de
@@ -11730,10 +11899,7 @@ cas-sw:SoftwareComponent_Shape
 
 cas-sw:SoftwareInterface
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-sys:ComponentInterface
-		;
+	rdfs:subClassOf cas-sys:ComponentInterface ;
 	rdfs:label
 		"Software Interface"@en ,
 		"Software-Schnittstelle"@de
@@ -11757,7 +11923,7 @@ cas-sw:SoftwareInterface_Shape
 
 cas-sw:SoftwareInterface_partOf_SoftwareComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Software Interface part of Software Component"@en ,
 		"Software-Schnittstelle Bestandteil von Softwarekomponente"@de
@@ -11826,7 +11992,7 @@ cas-sys:ComponentConnection_Shape
 
 cas-sys:ComponentConnection_connects_ComponentInterface
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Component Connection connects Component Interface"@en ,
 		"Komponenten-Verbindung verbindet Komponenten-Schnittstelle"@de
@@ -11867,7 +12033,7 @@ cas-sys:ComponentConnection_connects_ComponentInterface_Target_Shape
 
 cas-sys:ComponentConnection_connects_SystemComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Component Connection connects System Component"@en ,
 		"Komponenten-Verbindung verbindet Systemkomponente"@de
@@ -11908,12 +12074,12 @@ cas-sys:ComponentConnection_connects_SystemComponent_Target_Shape
 
 cas-sys:ComponentConnection_partOf_SystemComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Component Connection part of System Component"@en ,
 		"Komponenten-Verbindung Bestandteil von Systemkomponente"@de
 		;
-	dcterms:modified "2024-10-05T01:56:11Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-30T00:25:44Z"^^xsd:dateTime ;
 	skos:definition
 		"Parent system component"@en ,
 		"Übergeordnete Systemkomponente"@de
@@ -11949,7 +12115,7 @@ cas-sys:ComponentConnection_partOf_SystemComponent_Target_Shape
 
 cas-sys:ComponentConnection_provides_ComponentInterface
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Component Connection provides Component Interface"@en ,
 		"Komponenten-Verbindung stellt bereit Komponenten-Schnittstelle"@de
@@ -11984,12 +12150,12 @@ cas-sys:ComponentConnection_provides_ComponentInterface_Target_Shape
 	sh:property cas-sys:ComponentConnection_provides_ComponentInterface_Target_Shape ;
 	.
 
-cas-sys:ComponentConnection_specialismOf_ComponentConnection
+cas-sys:ComponentConnection_specializes_ComponentConnection
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
-		"Component Connection specialism of Component Connection"@en ,
-		"Komponenten-Verbindung Spezialisierung von Komponenten-Verbindung"@de
+		"Component Connection specializes Component Connection"@en ,
+		"Komponenten-Verbindung spezialisiert Komponenten-Verbindung"@de
 		;
 	dcterms:modified "2025-11-27T18:15:10Z"^^xsd:dateTime ;
 	skos:definition
@@ -11998,36 +12164,36 @@ cas-sys:ComponentConnection_specialismOf_ComponentConnection
 		;
 	.
 
-cas-sys:ComponentConnection_specialismOf_ComponentConnection_Shape
+cas-sys:ComponentConnection_specializes_ComponentConnection_Shape
 	a sh:PropertyShape ;
-	sh:path cas-sys:ComponentConnection_specialismOf_ComponentConnection ;
+	sh:path cas-sys:ComponentConnection_specializes_ComponentConnection ;
 	.
 
-cas-sys:ComponentConnection_specialismOf_ComponentConnection_Source
+cas-sys:ComponentConnection_specializes_ComponentConnection_Source
 	rdfs:subPropertyOf cas:linksSource ;
-	rdfs:domain cas-sys:ComponentConnection_specialismOf_ComponentConnection ;
+	rdfs:domain cas-sys:ComponentConnection_specializes_ComponentConnection ;
 	rdfs:range cas-sys:ComponentConnection ;
 	.
 
-cas-sys:ComponentConnection_specialismOf_ComponentConnection_Source_Shape
-	sh:path cas-sys:ComponentConnection_specialismOf_ComponentConnection ;
-	sh:property cas-sys:ComponentConnection_specialismOf_ComponentConnection_Source ;
+cas-sys:ComponentConnection_specializes_ComponentConnection_Source_Shape
+	sh:path cas-sys:ComponentConnection_specializes_ComponentConnection ;
+	sh:property cas-sys:ComponentConnection_specializes_ComponentConnection_Source ;
 	.
 
-cas-sys:ComponentConnection_specialismOf_ComponentConnection_Target
+cas-sys:ComponentConnection_specializes_ComponentConnection_Target
 	rdfs:subPropertyOf cas:linksTarget ;
-	rdfs:domain cas-sys:ComponentConnection_specialismOf_ComponentConnection ;
+	rdfs:domain cas-sys:ComponentConnection_specializes_ComponentConnection ;
 	rdfs:range cas-sys:ComponentConnection ;
 	.
 
-cas-sys:ComponentConnection_specialismOf_ComponentConnection_Target_Shape
-	sh:path cas-sys:ComponentConnection_specialismOf_ComponentConnection ;
-	sh:property cas-sys:ComponentConnection_specialismOf_ComponentConnection_Target_Shape ;
+cas-sys:ComponentConnection_specializes_ComponentConnection_Target_Shape
+	sh:path cas-sys:ComponentConnection_specializes_ComponentConnection ;
+	sh:property cas-sys:ComponentConnection_specializes_ComponentConnection_Target_Shape ;
 	.
 
 cas-sys:ComponentConnection_usedIn_SystemComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Component Connection used in System Component"@en ,
 		"Komponenten-Verbindung verwendet in Systemkomponente"@de
@@ -12097,7 +12263,7 @@ cas-sys:ComponentInterface_Shape
 
 cas-sys:ComponentInterface_operatedBy_Role
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Component Interface operated by Role"@en ,
 		"Komponenten-Schnittstelle bedient durch Rolle"@de
@@ -12138,7 +12304,7 @@ cas-sys:ComponentInterface_operatedBy_Role_Target_Shape
 
 cas-sys:ComponentInterface_partOf_ComponentInterface
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Component Interface part of Component Interface"@en ,
 		"Komponenten-Schnittstelle Bestandteil von Komponenten-Schnittstelle"@de
@@ -12179,12 +12345,12 @@ cas-sys:ComponentInterface_partOf_ComponentInterface_Target_Shape
 
 cas-sys:ComponentInterface_partOf_SystemComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Component Interface part of System Component"@en ,
 		"Komponenten-Schnittstelle Bestandteil von Systemkomponente"@de
 		;
-	dcterms:modified "2024-10-05T01:56:11Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-30T00:25:44Z"^^xsd:dateTime ;
 	skos:definition
 		"Parent system component"@en ,
 		"Übergeordnete Systemkomponente"@de
@@ -12218,12 +12384,12 @@ cas-sys:ComponentInterface_partOf_SystemComponent_Target_Shape
 	sh:property cas-sys:ComponentInterface_partOf_SystemComponent_Target_Shape ;
 	.
 
-cas-sys:ComponentInterface_specialismOf_ComponentInterface
+cas-sys:ComponentInterface_specializes_ComponentInterface
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
-		"Component Interface specialism of Component Interface"@en ,
-		"Komponenten-Schnittstelle Spezialisierung von Komponenten-Schnittstelle"@de
+		"Component Interface specializes Component Interface"@en ,
+		"Komponenten-Schnittstelle spezialisiert Komponenten-Schnittstelle"@de
 		;
 	dcterms:modified "2025-11-27T18:15:10Z"^^xsd:dateTime ;
 	skos:definition
@@ -12232,36 +12398,36 @@ cas-sys:ComponentInterface_specialismOf_ComponentInterface
 		;
 	.
 
-cas-sys:ComponentInterface_specialismOf_ComponentInterface_Shape
+cas-sys:ComponentInterface_specializes_ComponentInterface_Shape
 	a sh:PropertyShape ;
-	sh:path cas-sys:ComponentInterface_specialismOf_ComponentInterface ;
+	sh:path cas-sys:ComponentInterface_specializes_ComponentInterface ;
 	.
 
-cas-sys:ComponentInterface_specialismOf_ComponentInterface_Source
+cas-sys:ComponentInterface_specializes_ComponentInterface_Source
 	rdfs:subPropertyOf cas:linksSource ;
-	rdfs:domain cas-sys:ComponentInterface_specialismOf_ComponentInterface ;
+	rdfs:domain cas-sys:ComponentInterface_specializes_ComponentInterface ;
 	rdfs:range cas-sys:ComponentInterface ;
 	.
 
-cas-sys:ComponentInterface_specialismOf_ComponentInterface_Source_Shape
-	sh:path cas-sys:ComponentInterface_specialismOf_ComponentInterface ;
-	sh:property cas-sys:ComponentInterface_specialismOf_ComponentInterface_Source ;
+cas-sys:ComponentInterface_specializes_ComponentInterface_Source_Shape
+	sh:path cas-sys:ComponentInterface_specializes_ComponentInterface ;
+	sh:property cas-sys:ComponentInterface_specializes_ComponentInterface_Source ;
 	.
 
-cas-sys:ComponentInterface_specialismOf_ComponentInterface_Target
+cas-sys:ComponentInterface_specializes_ComponentInterface_Target
 	rdfs:subPropertyOf cas:linksTarget ;
-	rdfs:domain cas-sys:ComponentInterface_specialismOf_ComponentInterface ;
+	rdfs:domain cas-sys:ComponentInterface_specializes_ComponentInterface ;
 	rdfs:range cas-sys:ComponentInterface ;
 	.
 
-cas-sys:ComponentInterface_specialismOf_ComponentInterface_Target_Shape
-	sh:path cas-sys:ComponentInterface_specialismOf_ComponentInterface ;
-	sh:property cas-sys:ComponentInterface_specialismOf_ComponentInterface_Target_Shape ;
+cas-sys:ComponentInterface_specializes_ComponentInterface_Target_Shape
+	sh:path cas-sys:ComponentInterface_specializes_ComponentInterface ;
+	sh:property cas-sys:ComponentInterface_specializes_ComponentInterface_Target_Shape ;
 	.
 
 cas-sys:ComponentInterface_typeOf_ComponentConnection
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Component Interface type of Component Connection"@en ,
 		"Komponenten-Schnittstelle ist Typ Komponenten-Verbindung"@de
@@ -12298,7 +12464,7 @@ cas-sys:ComponentInterface_typeOf_ComponentConnection_Target_Shape
 
 cas-sys:ComponentInterface_usedIn_SystemComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Component Interface used in System Component"@en ,
 		"Komponenten-Schnittstelle verwendet in Systemkomponente"@de
@@ -12367,7 +12533,7 @@ cas-sys:ComponentState_Shape
 
 cas-sys:ComponentState_changesTo_ComponentState
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Component State changes to Component State"@en ,
 		"Komponenten-Zustand ändert sich in Komponenten-Zustand"@de
@@ -12408,7 +12574,7 @@ cas-sys:ComponentState_changesTo_ComponentState_Target_Shape
 
 cas-sys:ComponentState_partOf_ComponentState
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Component State part of Component State"@en ,
 		"Komponenten-Zustand Bestandteil von Komponenten-Zustand"@de
@@ -12449,12 +12615,12 @@ cas-sys:ComponentState_partOf_ComponentState_Target_Shape
 
 cas-sys:ComponentState_partOf_SystemComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Component State part of System Component"@en ,
 		"Komponenten-Zustand Bestandteil von Systemkomponente"@de
 		;
-	dcterms:modified "2024-10-05T01:56:11Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-30T00:25:44Z"^^xsd:dateTime ;
 	skos:definition
 		"Parent system component"@en ,
 		"Übergeordnete Systemkomponente"@de
@@ -12490,7 +12656,7 @@ cas-sys:ComponentState_partOf_SystemComponent_Target_Shape
 
 cas-sys:ComponentState_usedIn_SystemComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Component State used in System Component"@en ,
 		"Komponenten-Zustand verwendet in Systemkomponente"@de
@@ -12527,98 +12693,6 @@ cas-sys:ComponentState_usedIn_SystemComponent_Target
 cas-sys:ComponentState_usedIn_SystemComponent_Target_Shape
 	sh:path cas-sys:ComponentState_usedIn_SystemComponent ;
 	sh:property cas-sys:ComponentState_usedIn_SystemComponent_Target_Shape ;
-	.
-
-cas-sys:DesignElement
-	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-sys:ComponentConnection
-		;
-	rdfs:label
-		"Design Element"@en ,
-		"Gestaltelement"@de
-		;
-	dcterms:modified "2026-05-31T07:58:45Z"^^xsd:dateTime ;
-	.
-
-cas-sys:DesignElement_Shape
-	a sh:NodeShape ;
-	sh:targetClass cas-sys:DesignElement ;
-	.
-
-cas-sys:DesignElement_implements_FunctionalElement
-	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
-	rdfs:label
-		"Design Element implements Functional Element"@en ,
-		"Gestaltelement implementiert Funktionselement"@de
-		;
-	dcterms:modified "2024-10-05T02:17:28Z"^^xsd:dateTime ;
-	.
-
-cas-sys:DesignElement_implements_FunctionalElement_Shape
-	a sh:PropertyShape ;
-	sh:path cas-sys:DesignElement_implements_FunctionalElement ;
-	.
-
-cas-sys:DesignElement_implements_FunctionalElement_Source
-	rdfs:subPropertyOf cas:linksSource ;
-	rdfs:domain cas-sys:DesignElement_implements_FunctionalElement ;
-	rdfs:range cas-sys:DesignElement ;
-	.
-
-cas-sys:DesignElement_implements_FunctionalElement_Source_Shape
-	sh:path cas-sys:DesignElement_implements_FunctionalElement ;
-	sh:property cas-sys:DesignElement_implements_FunctionalElement_Source ;
-	.
-
-cas-sys:DesignElement_implements_FunctionalElement_Target
-	rdfs:subPropertyOf cas:linksTarget ;
-	rdfs:domain cas-sys:DesignElement_implements_FunctionalElement ;
-	rdfs:range cas-sys:FunctionalElement ;
-	.
-
-cas-sys:DesignElement_implements_FunctionalElement_Target_Shape
-	sh:path cas-sys:DesignElement_implements_FunctionalElement ;
-	sh:property cas-sys:DesignElement_implements_FunctionalElement_Target_Shape ;
-	.
-
-cas-sys:DesignElement_specialismOf_ComponentConnection
-	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
-	rdfs:label
-		"Design Element specialism of Component Connection"@en ,
-		"Gestaltelement Spezialisierung von Komponenten-Verbindung"@de
-		;
-	dcterms:modified "2024-10-06T08:24:32Z"^^xsd:dateTime ;
-	.
-
-cas-sys:DesignElement_specialismOf_ComponentConnection_Shape
-	a sh:PropertyShape ;
-	sh:path cas-sys:DesignElement_specialismOf_ComponentConnection ;
-	.
-
-cas-sys:DesignElement_specialismOf_ComponentConnection_Source
-	rdfs:subPropertyOf cas:linksSource ;
-	rdfs:domain cas-sys:DesignElement_specialismOf_ComponentConnection ;
-	rdfs:range cas-sys:DesignElement ;
-	.
-
-cas-sys:DesignElement_specialismOf_ComponentConnection_Source_Shape
-	sh:path cas-sys:DesignElement_specialismOf_ComponentConnection ;
-	sh:property cas-sys:DesignElement_specialismOf_ComponentConnection_Source ;
-	.
-
-cas-sys:DesignElement_specialismOf_ComponentConnection_Target
-	rdfs:subPropertyOf cas:linksTarget ;
-	rdfs:domain cas-sys:DesignElement_specialismOf_ComponentConnection ;
-	rdfs:range cas-sys:ComponentConnection ;
-	.
-
-cas-sys:DesignElement_specialismOf_ComponentConnection_Target_Shape
-	sh:path cas-sys:DesignElement_specialismOf_ComponentConnection ;
-	sh:property cas-sys:DesignElement_specialismOf_ComponentConnection_Target_Shape ;
 	.
 
 cas-sys:Deviation
@@ -12661,7 +12735,7 @@ cas-sys:Deviation_Shape
 
 cas-sys:Deviation_affects_Function
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung beeinträchtigt Funktion"@de ,
 		"Deviation affects Function"@en
@@ -12702,7 +12776,7 @@ cas-sys:Deviation_affects_Function_Target_Shape
 
 cas-sys:Deviation_appliesTo_BendingSpecification
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung betrifft Biegespezifikation"@de ,
 		"Deviation applies to Bending Specification"@en
@@ -12739,7 +12813,7 @@ cas-sys:Deviation_appliesTo_BendingSpecification_Target_Shape
 
 cas-sys:Deviation_appliesTo_Cleanliness
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung betrifft Sauberkeit"@de ,
 		"Deviation applies to Cleanliness"@en
@@ -12776,7 +12850,7 @@ cas-sys:Deviation_appliesTo_Cleanliness_Target_Shape
 
 cas-sys:Deviation_appliesTo_Gearing
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung betrifft Verzahnung"@de ,
 		"Deviation applies to Gearing"@en
@@ -12813,7 +12887,7 @@ cas-sys:Deviation_appliesTo_Gearing_Target_Shape
 
 cas-sys:Deviation_appliesTo_HeatTreatedArea
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung betrifft Wärmebehandelter Bereich"@de ,
 		"Deviation applies to Heat-treated Area"@en
@@ -12850,7 +12924,7 @@ cas-sys:Deviation_appliesTo_HeatTreatedArea_Target_Shape
 
 cas-sys:Deviation_appliesTo_Hole
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung betrifft Bohrung"@de ,
 		"Deviation applies to Hole"@en
@@ -12887,7 +12961,7 @@ cas-sys:Deviation_appliesTo_Hole_Target_Shape
 
 cas-sys:Deviation_appliesTo_JoiningElement
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung betrifft Fügeverbindung"@de ,
 		"Deviation applies to Joining Element"@en
@@ -12924,7 +12998,7 @@ cas-sys:Deviation_appliesTo_JoiningElement_Target_Shape
 
 cas-sys:Deviation_appliesTo_KinematicJoint
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung betrifft Kinematisches Gelenk"@de ,
 		"Deviation applies to Kinematic Joint"@en
@@ -12961,7 +13035,7 @@ cas-sys:Deviation_appliesTo_KinematicJoint_Target_Shape
 
 cas-sys:Deviation_appliesTo_MarkingLabeling
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung betrifft Markierung & Beschriftung"@de ,
 		"Deviation applies to Marking & Labeling"@en
@@ -12998,7 +13072,7 @@ cas-sys:Deviation_appliesTo_MarkingLabeling_Target_Shape
 
 cas-sys:Deviation_appliesTo_ModelAnnotation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung betrifft Modell-Annotation"@de ,
 		"Deviation applies to Model Annotation"@en
@@ -13035,7 +13109,7 @@ cas-sys:Deviation_appliesTo_ModelAnnotation_Target_Shape
 
 cas-sys:Deviation_appliesTo_PaintedCoatedArea
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung betrifft Lackierter & Beschichteter Bereich"@de ,
 		"Deviation applies to Painted & Coated Area"@en
@@ -13072,7 +13146,7 @@ cas-sys:Deviation_appliesTo_PaintedCoatedArea_Target_Shape
 
 cas-sys:Deviation_appliesTo_SystemComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung betrifft Systemkomponente"@de ,
 		"Deviation applies to System Component"@en
@@ -13109,7 +13183,7 @@ cas-sys:Deviation_appliesTo_SystemComponent_Target_Shape
 
 cas-sys:Deviation_appliesTo_Thread
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung betrifft Gewinde"@de ,
 		"Deviation applies to Thread"@en
@@ -13146,7 +13220,7 @@ cas-sys:Deviation_appliesTo_Thread_Target_Shape
 
 cas-sys:Deviation_causedBy_Event
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung hervorgerufen von Ereignis"@de ,
 		"Deviation caused by Event"@en
@@ -13187,7 +13261,7 @@ cas-sys:Deviation_causedBy_Event_Target_Shape
 
 cas-sys:Deviation_causes_Deviation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung ruft hervor Abweichung"@de ,
 		"Deviation causes Deviation"@en
@@ -13228,7 +13302,7 @@ cas-sys:Deviation_causes_Deviation_Target_Shape
 
 cas-sys:Deviation_detectedBy_Task
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung erkannt durch Aufgabe"@de ,
 		"Deviation detected by Task"@en
@@ -13269,7 +13343,7 @@ cas-sys:Deviation_detectedBy_Task_Target_Shape
 
 cas-sys:Deviation_partOf_Deviation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung Bestandteil von Abweichung"@de ,
 		"Deviation part of Deviation"@en
@@ -13310,7 +13384,7 @@ cas-sys:Deviation_partOf_Deviation_Target_Shape
 
 cas-sys:Deviation_preventedBy_Task
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung vermieden durch Aufgabe"@de ,
 		"Deviation prevented by Task"@en
@@ -13349,12 +13423,12 @@ cas-sys:Deviation_preventedBy_Task_Target_Shape
 	sh:property cas-sys:Deviation_preventedBy_Task_Target_Shape ;
 	.
 
-cas-sys:Deviation_specialismOf_Deviation
+cas-sys:Deviation_specializes_Deviation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
-		"Abweichung Spezialisierung von Abweichung"@de ,
-		"Deviation specialism of Deviation"@en
+		"Abweichung spezialisiert Abweichung"@de ,
+		"Deviation specializes Deviation"@en
 		;
 	dcterms:modified "2025-11-27T18:15:10Z"^^xsd:dateTime ;
 	skos:definition
@@ -13363,36 +13437,36 @@ cas-sys:Deviation_specialismOf_Deviation
 		;
 	.
 
-cas-sys:Deviation_specialismOf_Deviation_Shape
+cas-sys:Deviation_specializes_Deviation_Shape
 	a sh:PropertyShape ;
-	sh:path cas-sys:Deviation_specialismOf_Deviation ;
+	sh:path cas-sys:Deviation_specializes_Deviation ;
 	.
 
-cas-sys:Deviation_specialismOf_Deviation_Source
+cas-sys:Deviation_specializes_Deviation_Source
 	rdfs:subPropertyOf cas:linksSource ;
-	rdfs:domain cas-sys:Deviation_specialismOf_Deviation ;
+	rdfs:domain cas-sys:Deviation_specializes_Deviation ;
 	rdfs:range cas-sys:Deviation ;
 	.
 
-cas-sys:Deviation_specialismOf_Deviation_Source_Shape
-	sh:path cas-sys:Deviation_specialismOf_Deviation ;
-	sh:property cas-sys:Deviation_specialismOf_Deviation_Source ;
+cas-sys:Deviation_specializes_Deviation_Source_Shape
+	sh:path cas-sys:Deviation_specializes_Deviation ;
+	sh:property cas-sys:Deviation_specializes_Deviation_Source ;
 	.
 
-cas-sys:Deviation_specialismOf_Deviation_Target
+cas-sys:Deviation_specializes_Deviation_Target
 	rdfs:subPropertyOf cas:linksTarget ;
-	rdfs:domain cas-sys:Deviation_specialismOf_Deviation ;
+	rdfs:domain cas-sys:Deviation_specializes_Deviation ;
 	rdfs:range cas-sys:Deviation ;
 	.
 
-cas-sys:Deviation_specialismOf_Deviation_Target_Shape
-	sh:path cas-sys:Deviation_specialismOf_Deviation ;
-	sh:property cas-sys:Deviation_specialismOf_Deviation_Target_Shape ;
+cas-sys:Deviation_specializes_Deviation_Target_Shape
+	sh:path cas-sys:Deviation_specializes_Deviation ;
+	sh:property cas-sys:Deviation_specializes_Deviation_Target_Shape ;
 	.
 
 cas-sys:Deviation_usedIn_Deviation
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Abweichung verwendet in Abweichung"@de ,
 		"Deviation used in Deviation"@en
@@ -13431,24 +13505,6 @@ cas-sys:Deviation_usedIn_Deviation_Target_Shape
 	sh:property cas-sys:Deviation_usedIn_Deviation_Target_Shape ;
 	.
 
-cas-sys:FunctionalElement
-	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-sys:ComponentInterface
-		;
-	rdfs:label
-		"Functional Element"@en ,
-		"Funktionselement"@de
-		;
-	dcterms:modified "2026-05-31T07:58:29Z"^^xsd:dateTime ;
-	.
-
-cas-sys:FunctionalElement_Shape
-	a sh:NodeShape ;
-	sh:targetClass cas-sys:FunctionalElement ;
-	.
-
 cas-sys:SystemComponent
 	a owl:Class ;
 	rdfs:subClassOf cas:Entity ;
@@ -13484,7 +13540,7 @@ cas-sys:SystemComponent_Shape
 
 cas-sys:SystemComponent_fulfils_Requirement
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"System Component fulfils Requirement"@en ,
 		"Systemkomponente erfüllt Anforderung"@de
@@ -13525,7 +13581,7 @@ cas-sys:SystemComponent_fulfils_Requirement_Target_Shape
 
 cas-sys:SystemComponent_implements_Function
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"System Component implements Function"@en ,
 		"Systemkomponente implementiert Funktion"@de
@@ -13566,7 +13622,7 @@ cas-sys:SystemComponent_implements_Function_Target_Shape
 
 cas-sys:SystemComponent_ownedBy_Actor
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"System Component owned by Actor"@en ,
 		"Systemkomponente gehört Akteur"@de
@@ -13607,7 +13663,7 @@ cas-sys:SystemComponent_ownedBy_Actor_Target_Shape
 
 cas-sys:SystemComponent_partOf_SystemComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"System Component part of System Component"@en ,
 		"Systemkomponente Bestandteil von Systemkomponente"@de
@@ -13648,7 +13704,7 @@ cas-sys:SystemComponent_partOf_SystemComponent_Target_Shape
 
 cas-sys:SystemComponent_provides_ComponentInterface
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"System Component provides Component Interface"@en ,
 		"Systemkomponente stellt bereit Komponenten-Schnittstelle"@de
@@ -13683,12 +13739,12 @@ cas-sys:SystemComponent_provides_ComponentInterface_Target_Shape
 	sh:property cas-sys:SystemComponent_provides_ComponentInterface_Target_Shape ;
 	.
 
-cas-sys:SystemComponent_specialismOf_SystemComponent
+cas-sys:SystemComponent_specializes_SystemComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
-		"System Component specialism of System Component"@en ,
-		"Systemkomponente Spezialisierung von Systemkomponente"@de
+		"System Component specializes System Component"@en ,
+		"Systemkomponente spezialisiert Systemkomponente"@de
 		;
 	dcterms:modified "2025-11-27T18:15:10Z"^^xsd:dateTime ;
 	skos:definition
@@ -13697,36 +13753,36 @@ cas-sys:SystemComponent_specialismOf_SystemComponent
 		;
 	.
 
-cas-sys:SystemComponent_specialismOf_SystemComponent_Shape
+cas-sys:SystemComponent_specializes_SystemComponent_Shape
 	a sh:PropertyShape ;
-	sh:path cas-sys:SystemComponent_specialismOf_SystemComponent ;
+	sh:path cas-sys:SystemComponent_specializes_SystemComponent ;
 	.
 
-cas-sys:SystemComponent_specialismOf_SystemComponent_Source
+cas-sys:SystemComponent_specializes_SystemComponent_Source
 	rdfs:subPropertyOf cas:linksSource ;
-	rdfs:domain cas-sys:SystemComponent_specialismOf_SystemComponent ;
+	rdfs:domain cas-sys:SystemComponent_specializes_SystemComponent ;
 	rdfs:range cas-sys:SystemComponent ;
 	.
 
-cas-sys:SystemComponent_specialismOf_SystemComponent_Source_Shape
-	sh:path cas-sys:SystemComponent_specialismOf_SystemComponent ;
-	sh:property cas-sys:SystemComponent_specialismOf_SystemComponent_Source ;
+cas-sys:SystemComponent_specializes_SystemComponent_Source_Shape
+	sh:path cas-sys:SystemComponent_specializes_SystemComponent ;
+	sh:property cas-sys:SystemComponent_specializes_SystemComponent_Source ;
 	.
 
-cas-sys:SystemComponent_specialismOf_SystemComponent_Target
+cas-sys:SystemComponent_specializes_SystemComponent_Target
 	rdfs:subPropertyOf cas:linksTarget ;
-	rdfs:domain cas-sys:SystemComponent_specialismOf_SystemComponent ;
+	rdfs:domain cas-sys:SystemComponent_specializes_SystemComponent ;
 	rdfs:range cas-sys:SystemComponent ;
 	.
 
-cas-sys:SystemComponent_specialismOf_SystemComponent_Target_Shape
-	sh:path cas-sys:SystemComponent_specialismOf_SystemComponent ;
-	sh:property cas-sys:SystemComponent_specialismOf_SystemComponent_Target_Shape ;
+cas-sys:SystemComponent_specializes_SystemComponent_Target_Shape
+	sh:path cas-sys:SystemComponent_specializes_SystemComponent ;
+	sh:property cas-sys:SystemComponent_specializes_SystemComponent_Target_Shape ;
 	.
 
 cas-sys:SystemComponent_usedIn_SystemComponent
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"System Component used in System Component"@en ,
 		"Systemkomponente verwendet in Systemkomponente"@de
@@ -13767,7 +13823,7 @@ cas-sys:SystemComponent_usedIn_SystemComponent_Target_Shape
 
 cas-sys:detection
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Detection"@en ,
 		"Entdeckung"@de
@@ -13788,7 +13844,7 @@ cas-sys:detection_Shape
 
 cas-sys:occurrence
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Auftreten"@de ,
 		"Occurrence"@en
@@ -13809,7 +13865,7 @@ cas-sys:occurrence_Shape
 
 cas-sys:severity
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Schwere"@de ,
 		"Severity"@en
@@ -13906,7 +13962,7 @@ cas-val:ValidationCriterium_Shape
 
 cas-val:ValidationCriterium_specifiedBy_Reference
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Validation Criterium specified by Reference"@en ,
 		"Validierungskriterium spezifiziert durch Referenz"@de
@@ -13947,7 +14003,7 @@ cas-val:ValidationCriterium_specifiedBy_Reference_Target_Shape
 
 cas-val:ValidationCriterium_validates_Requirement
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Validation Criterium validates Requirement"@en ,
 		"Validierungskriterium validiert Anforderung"@de
@@ -14068,7 +14124,7 @@ cas-val:ValidationRun_Shape
 
 cas-val:ValidationRun_executes_ValidationPlan
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Validation Run executes Validation Plan"@en ,
 		"Validierungslauf führt aus Validierungsplan"@de
@@ -14109,7 +14165,7 @@ cas-val:ValidationRun_executes_ValidationPlan_Target_Shape
 
 cas-val:ValidationRun_ownedBy_Actor
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Validation Run owned by Actor"@en ,
 		"Validierungslauf gehört Akteur"@de
@@ -14181,7 +14237,7 @@ cas-ver:VerificationCharacteristic_Shape
 
 cas-ver:VerificationCharacteristic_partOf_VerificationPlan
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Verification Characteristic part of Verification Plan"@en ,
 		"Verifikationsmerkmal Bestandteil von Verifikationsplan"@de
@@ -14222,7 +14278,7 @@ cas-ver:VerificationCharacteristic_partOf_VerificationPlan_Target_Shape
 
 cas-ver:VerificationCharacteristic_specifiedBy_Reference
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Verification Characteristic specified by Reference"@en ,
 		"Verifikationsmerkmal spezifiziert durch Referenz"@de
@@ -14263,7 +14319,7 @@ cas-ver:VerificationCharacteristic_specifiedBy_Reference_Target_Shape
 
 cas-ver:VerificationCharacteristic_usedIn_VerificationCharacteristic
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Verification Characteristic used in Verification Characteristic"@en ,
 		"Verifikationsmerkmal verwendet in Verifikationsmerkmal"@de
@@ -14304,7 +14360,7 @@ cas-ver:VerificationCharacteristic_usedIn_VerificationCharacteristic_Target_Shap
 
 cas-ver:VerificationCharacteristic_uses_VerificationResource
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Verification Characteristic uses Verification Resource"@en ,
 		"Verifikationsmerkmal verwendet Verifikationsmittel"@de
@@ -14341,7 +14397,7 @@ cas-ver:VerificationCharacteristic_uses_VerificationResource_Target_Shape
 
 cas-ver:VerificationCharacteristic_verifies_Function
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Verification Characteristic verifies Function"@en ,
 		"Verifikationsmerkmal verifiziert Funktion"@de
@@ -14413,7 +14469,7 @@ cas-ver:VerificationPlan_Shape
 
 cas-ver:VerificationPlan_partOf_VerificationPlan
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Verification Plan part of Verification Plan"@en ,
 		"Verifikationsplan Bestandteil von Verifikationsplan"@de
@@ -14454,7 +14510,7 @@ cas-ver:VerificationPlan_partOf_VerificationPlan_Target_Shape
 
 cas-ver:VerificationPlan_usedIn_ControlPlan
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Verification Plan used in Control Plan"@en ,
 		"Verifikationsplan verwendet in Kontrollplan"@de
@@ -14495,7 +14551,7 @@ cas-ver:VerificationPlan_usedIn_ControlPlan_Target_Shape
 
 cas-ver:VerificationPlan_usedIn_VerificationPlan
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Verification Plan used in Verification Plan"@en ,
 		"Verifikationsplan verwendet in Verifikationsplan"@de
@@ -14536,10 +14592,7 @@ cas-ver:VerificationPlan_usedIn_VerificationPlan_Target_Shape
 
 cas-ver:VerificationResource
 	a owl:Class ;
-	rdfs:subClassOf
-		cas:Entity ,
-		cas-mech:MechanicalComponent
-		;
+	rdfs:subClassOf cas-mech:MechanicalComponent ;
 	rdfs:label
 		"Verification Resource"@en ,
 		"Verifikationsmittel"@de
@@ -14559,7 +14612,7 @@ cas-ver:VerificationResource_Shape
 
 cas-ver:VerificationResource_specifiedBy_Reference
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Verification Resource specified by Reference"@en ,
 		"Verifikationsmittel spezifiziert durch Referenz"@de
@@ -14632,7 +14685,7 @@ cas-ver:VerificationResult_Shape
 
 cas-ver:VerificationResult_partOf_VerificationRun
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Verification Result part of Verification Run"@en ,
 		"Verifikationsergebnis Bestandteil von Verifikationslauf"@de
@@ -14700,7 +14753,7 @@ cas-ver:VerificationRun_Shape
 
 cas-ver:VerificationRun_executes_VerificationPlan
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Verification Run executes Verification Plan"@en ,
 		"Verifikationslauf führt aus Verifikationsplan"@de
@@ -14741,7 +14794,7 @@ cas-ver:VerificationRun_executes_VerificationPlan_Target_Shape
 
 cas-ver:VerificationRun_ownedBy_Actor
 	a owl:ObjectProperty ;
-	rdfs:subClassOf cas:Relationship ;
+	rdfs:subPropertyOf cas:Relationship ;
 	rdfs:label
 		"Verification Run owned by Actor"@en ,
 		"Verifikationslauf gehört Akteur"@de
@@ -14782,7 +14835,7 @@ cas-ver:VerificationRun_ownedBy_Actor_Target_Shape
 
 cas-ver:deviation
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Abweichung"@de ,
 		"Deviation"@en
@@ -14803,7 +14856,7 @@ cas-ver:deviation_Shape
 
 :dateTime
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"DateTime"@en ,
 		"Datum und Zeit"@de
@@ -14824,7 +14877,7 @@ cas-ver:deviation_Shape
 
 :diameter
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Diameter"@en ,
 		"Durchmesser"@de
@@ -14845,7 +14898,7 @@ cas-ver:deviation_Shape
 
 :endDateTime
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"EndDateTime"@en ,
 		"Enddatum und -zeit"@de
@@ -14866,7 +14919,7 @@ cas-ver:deviation_Shape
 
 :length
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Length"@en ,
 		"Länge"@de
@@ -14887,12 +14940,12 @@ cas-ver:deviation_Shape
 
 :number
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Number"@en ,
 		"Nummer"@de
 		;
-	dcterms:modified "2026-06-07T09:14:36Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-30T00:23:34Z"^^xsd:dateTime ;
 	rdfs:range xsd:string ;
 	skos:definition
 		"Legible number or name of the element, i. e. part number"@en ,
@@ -14908,7 +14961,7 @@ cas-ver:deviation_Shape
 
 :parent
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Parent"@en ,
 		"Übergeordnetes Element"@de
@@ -14925,7 +14978,7 @@ cas-ver:deviation_Shape
 
 :revision
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Revision"@de ,
 		"Revision"@en
@@ -14946,7 +14999,7 @@ cas-ver:deviation_Shape
 
 :startDateTime
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"StartDateTime"@en ,
 		"Startdatum und -zeit"@de
@@ -14967,12 +15020,12 @@ cas-ver:deviation_Shape
 
 :type
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"Typ"@de ,
 		"Type"@en
 		;
-	dcterms:modified "2026-06-07T09:14:40Z"^^xsd:dateTime ;
+	dcterms:modified "2026-06-30T00:23:39Z"^^xsd:dateTime ;
 	rdfs:range xsd:string ;
 	skos:definition
 		"Typ eines Elements"@de ,
@@ -14988,7 +15041,7 @@ cas-ver:deviation_Shape
 
 :url
 	a owl:DatatypeProperty ;
-	rdfs:subClassOf cas:Property ;
+	rdfs:subPropertyOf cas:Property ;
 	rdfs:label
 		"URL"@de ,
 		"URL"@en

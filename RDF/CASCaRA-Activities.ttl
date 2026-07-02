@@ -2,22 +2,24 @@
 
 @prefix : <http://www.omg.org/spec/CASCaRA/ontology/> .
 @prefix arch: <http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/> .
-@prefix cas: <http://www.omg.org/spec/CASCaRA/metamodel/> .
+@prefix cas: <http://www.omg.org/spec/CASCaRA/ontology/CasCara/> .
 @prefix cas-ref: <http://www.omg.org/spec/CASCaRA/ontology/references/> .
-@prefix con: <http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/ConceptDefinition/> .
+@prefix col: <http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/> .
+@prefix con: <http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ConceptDefinition/> .
 @prefix ctx: <http://www.omg.org/spec/CASCaRA/ontology/ContextElements/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dig: <http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/> .
 @prefix ee: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/> .
 @prefix fld: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/> .
-@prefix man: <http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/> .
-@prefix mec: <http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/ProductDesign/MechanicalDesign/> .
+@prefix man: <http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ManufacturingSupplyChain/> .
+@prefix mec: <http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ProductDesign/MechanicalDesign/> .
 @prefix mech: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/> .
 @prefix mnf: <http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/> .
 @prefix op: <http://www.omg.org/spec/CASCaRA/ontology/Operation/> .
 @prefix org: <http://www.omg.org/spec/CASCaRA/ontology/Organization/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix pro: <http://www.omg.org/spec/CASCaRA/ontology/ProductLineEngineering/> .
+@prefix pro: <http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductLineEngineering/> .
 @prefix proc: <http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/> .
 @prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
@@ -39,13 +41,14 @@
 		"Alvarez Rodriguez, José Maria, UC3 Madrid" ,
 		"Arslan, Serkan, INOMIC Solutions GmbH" ,
 		"Balandi, Oguzhan, T-Systems International GmbH" ,
-		"Baleani, Massimo" ,
+		"Baleani, Massimo, Collins Aerospace" ,
 		"Bassam, Hamza, oose eG" ,
 		"Beavin, William, The Boeing Company" ,
 		"Bielert, René, Dr.-Ing. h.c. F. Porsche AG" ,
 		"Bleisinger, Oliver, Fraunhofer IESE" ,
 		"Bosse, Rolf, Mercedes-Benz AG" ,
 		"Burkhart, Roger, Thematix Partners" ,
+		"Christmann, Simon, :em engineering methods AG" ,
 		"Delpeuch, Ghislain, SSC Services GmbH" ,
 		"Dörr, Sebastian, CONWEAVER GmbH" ,
 		"Engelhardt, Joachim, Sodius Willert" ,
@@ -69,7 +72,8 @@
 		"Klöppner, Robert, MTU Aero Engines AG" ,
 		"Koch, Dr. Walter, GfSE Gesellschaft für Systems Engineering" ,
 		"Koethe, Manfred, 88solutions" ,
-		"Krems, Daniel" ,
+		"Krems, Daniel, AVL List" ,
+		"Lehnen, Johannes, :em engineering methods AG" ,
 		"Li, Zirui, Product and Systems Engineering Group" ,
 		"Martin, James, Anark Corporation Inc." ,
 		"Marvin, Joe, PSG Prime Solutions Group" ,
@@ -77,7 +81,7 @@
 		"Meyer, Nico, Volkswagen AG" ,
 		"Mogo Nem, Dr.-Ing. Fabrice, Schaeffler Technologies AG & Co. KG" ,
 		"Moreland, Clarence Moe, Modern Technology Solutions, Inc." ,
-		"Mueller, Andreas" ,
+		"Mueller, Andreas, Schaeffler Technologies AG & Co. KG" ,
 		"Nielsen, Johan, ELYSIUM Inc." ,
 		"Noguchi, Ryan, Aerospace Corp." ,
 		"Psota, Thomas, Fraunhofer IESE" ,
@@ -90,13 +94,14 @@
 		"Stoib, Martin, Kromberg & Schubert Automotive GmbH & Co. KG" ,
 		"Stürken, Dr. Momme, Schaeffler Technologies AG & Co. KG" ,
 		"Tazir, Nora, prostep ivip Association" ,
-		"Tonelli, Cecilia" ,
+		"Tonelli, Cecilia, Collins Aerospace" ,
 		"Weilkiens, Tim, oose eG" ,
 		"Weimer, Henrik, Airbus Operations GmbH" ,
+		"Williams, Mark" ,
 		"von Dungern, Dr. Oskar, enso managers GmbH" ,
 		"von Holst, Dr.-Ing. Christian, John Deere GmbH & Co KG"
 		;
-	dcterms:created "28.06.2026 22:41:51" ;
+	dcterms:created "02.07.2026 06:30:48" ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 88solutions
@@ -106,6 +111,7 @@ Copyright (c) 2024-2026 ATLAS Elektronik
 Copyright (c) 2024-2026 The Boeing Company
 Copyright (c) 2024-2026 enso managers GmbH
 Copyright (c) 2024-2026 GfSE Gesellschaft für Systems Engineering
+Copyright (c) 2024 INCOSE
 Copyright (c) 2024-2026 INOMIC Solutions GmbH
 Copyright (c) 2024-2026 Intuitive AI
 Copyright (c) 2024-2026 Manfred Harms Consulting
@@ -113,12 +119,12 @@ Copyright (c) 2024-2026 ModelAlchemy Consulting
 Copyright (c) 2024-2026 Modern Technology Solutions, Inc.
 Copyright (c) 2024-2026 oose eG
 Copyright (c) 2024-2025 PDES, Inc.
-Copyright (c) 2024-2026 PROSTEP
+Copyright (c) 2024-2026 PROSTEP AG
 Copyright (c) 2024-2026 prostep ivip Association
 Copyright (c) 2024-2026 PSG Prime Solutions Group
 Copyright (c) 2024-2026 Division of Design of Cyber-Physical Systems
-Copyright (c) 2024-2026 RTX
-Copyright (c) 2024-2026 Schaeffler
+Copyright (c) 2024-2026 Collins Aerospace
+Copyright (c) 2024-2026 Schaeffler Technologies AG & Co. KG
 Copyright (c) 2024-2026 Thematix Partners
 Copyright (c) 2024-2026 TU Hamburg-Harburg
 Copyright (c) 2024-2026 Product and Systems Engineering Group
@@ -131,7 +137,7 @@ Copyright (c) 2019-2020 Airbus Operations GmbH
 Copyright (c) 2019-2026 Anark Corporation Inc.
 Copyright (c) 2026-2026 Aumovio SE
 Copyright (c) 2019-2026 AVL List
-Copyright (c) 2022-2026 Boeing
+Copyright (c) 2022-2026 The Boeing Company
 Copyright (c) 2022-2026 Robert Bosch GmbH
 Copyright (c) 2019-2022 CONWEAVER GmbH
 Copyright (c) 2019-2026 ELYSIUM Inc.
@@ -145,7 +151,7 @@ Copyright (c) 2019-2026 Mercedes-Benz AG
 Copyright (c) 2024-2026 MTU Aero Engines AG
 Copyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche AG
 Copyright (c) 2019-2026 PROSTEP AG
-Copyright (c) 2025-2026 RTX
+Copyright (c) 2025-2026 Collins Aerospace
 Copyright (c) 2019-2024 Schaeffler Technologies AG & Co. KG
 Copyright (c) 2025-2026 Sodius Willert
 Copyright (c) 2019-2020 SSC Services GmbH
@@ -160,9 +166,118 @@ https://opensource.org/licenses/MIT""" ;
 	owl:versionInfo "1.0" ;
 	.
 
+:CasCara
+	a owl:Class ;
+	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
+	rdfs:label "CASCaRA"@en ;
+	dcterms:modified "2025-08-02T18:06:47Z"^^xsd:dateTime ;
+	skos:definition "Collaborative Artifact, Specification, Context and Resource Access"@en ;
+	.
+
+cas:CoSimulationEarlyRequirementsVV
+	a owl:Class ;
+	rdfs:subClassOf cas:Activity ;
+	rdfs:label
+		"Co-Simulation & early Requirements V&V"@en ,
+		"Software Engineer V&V/Simulation Egineer"@de
+		;
+	skos:definition "Establish method and tool to Co-simulate systems, assembling suppliers' sub-systems into a systems integration model, used to perform early design and requirements Verification & Validation. Incorporate Supplier inputs into Safety analysis."@en ;
+	.
+
+cas:Collaborative3dMbdElectricalAndSoftwareDesignCoDevelopment
+	a owl:Class ;
+	rdfs:subClassOf cas:Activity ;
+	rdfs:label
+		"Collaborative 3D MBD, Electrical and Software Design Co-Development"@en ,
+		"Mechanical Design Engineer"@de
+		;
+	skos:definition "Establish method and tool to collaboratively develop and manage 3D MBD and E-BOM connected to the Requirements, Functional and Logical Archtecture (L-BOM)"@en ;
+	.
+
+cas:CollaborativeArchitectureDesignCoDevelopment
+	a owl:Class ;
+	rdfs:subClassOf cas:Activity ;
+	rdfs:label
+		"Collaborative Architecture Design Co-Development "@en ,
+		"Systems Engineer. Design Engineer. "@de
+		;
+	cas:Provided
+		arch:Function ,
+		arch:SystemRequirement ,
+		sys:ComponentConnection ,
+		sys:ComponentInterface ,
+		sys:ComponentState ,
+		sys:Deviation ,
+		sys:SystemComponent
+		;
+	skos:definition "Establish and maintain a method and tool to collaboratively define a system and sub-system architecture & interfaces where supplier provided work products are integrated. Including mission, operational architecture, functional architecture, logical architecture and interface (ICD) definition."@en ;
+	.
+
+cas:CollaborativeDigitalProductQualityManagementApqp
+	a owl:Class ;
+	rdfs:subClassOf cas:Activity ;
+	rdfs:label
+		"Collaborative Digital Product Quality Management (APQP)"@en ,
+		"QA Engineer, Production Engineer "@de
+		;
+	skos:definition "Establish process and tool for the  creation, definition, retention of APQP (Advanced Product Quality Planning ) and PPAP (Production part approval process) elements, following indutsry standards such as AS9145."@en ;
+	.
+
+cas:CollaborativeManufacturingEngineering
+	a owl:Class ;
+	rdfs:subClassOf cas:Activity ;
+	rdfs:label
+		"Collaborative Manufacturing Engineering"@en ,
+		"Industrial Engineer. Production Engineer"@de
+		;
+	skos:definition "Establish process and tool for Collabrative Manufacturing MBD: M-BOM, manufacturing process planning and model based work instruction MBI, connected to the 3D MBD"@en ;
+	.
+
+cas:CollaborativeProductRequirementsManagement
+	a owl:Class ;
+	rdfs:subClassOf cas:Activity ;
+	rdfs:label "Collaborative Product Requirements Management"@en ;
+	cas:Provided
+		arch:Requirement ,
+		arch:StakeholderRequirement
+		;
+	cas:Used
+		org:Role ,
+		arch:UseCase
+		;
+	skos:definition 'Establish and maintain a requirements management process in common with the supplier. Approve requirements specifications ("model based SCD") , get change alerts, manage change requests & releases between OEM and supplier'@en ;
+	.
+
+cas:LotarLongTermArchivingAndRetrieval
+	a owl:Class ;
+	rdfs:subClassOf cas:Activity ;
+	rdfs:label
+		"Engineer, future program"@de ,
+		"LOTAR Long-term Archiving and Retrieval"@en
+		;
+	skos:definition "I want to preserve a baseline of system informationt for later retrieval and reuse. Reference: https://lotar-international.org/"@en ;
+	.
+
+cas:ModelBasedAcquisition
+	a owl:Class ;
+	rdfs:subClassOf cas:Activity ;
+	rdfs:label
+		"Defense acquirer Defense contratctor"@de ,
+		"Model-based Acquisition"@en
+		;
+	skos:definition "Reference: https://www.omg.org/communities/model-based-acquisition-user-community.htm"@en ;
+	.
+
+:CollaborationUseCases
+	a owl:Class ;
+	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
+	rdfs:label "Collaboration Use-Cases"@en ;
+	dcterms:modified "2023-10-22T08:44:10Z"^^xsd:dateTime ;
+	.
+
 :ConceptDefinition
 	a owl:Class ;
-	rdfs:subClassOf cas:Entity ;
+	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
 	rdfs:label
 		"Concept definition"@en ,
 		"Konzeptdefinition"@de
@@ -174,7 +289,14 @@ Conceptual design is usually performed at a high abstraction level and low level
 For the Digital Data Package, model-based methods and data for product conceptual design are assumed."""@en ;
 	.
 
-:LongTermArchiving
+:DigitalDataPackage
+	a owl:Class ;
+	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
+	rdfs:label "Digital Data Package"@en ;
+	dcterms:modified "2022-03-23T05:20:38Z"^^xsd:dateTime ;
+	.
+
+col:LongTermArchiving
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -207,18 +329,7 @@ For the Digital Data Package, model-based methods and data for product conceptua
 	skos:definition "For long-term archiving, all product information must be configured and stored in a retrievable way. Product information includes domain-specifc models, relations between models and model entities, and meta-data about the documents and models."@en ;
 	.
 
-:ManufacturingSupplyChain
-	a owl:Class ;
-	rdfs:subClassOf cas:Entity ;
-	rdfs:label
-		"Manufacturing & Supply Chain"@en ,
-		"Produktion & Lieferkette"@de
-		;
-	dcterms:modified "2021-11-24T10:35:16Z"^^xsd:dateTime ;
-	skos:definition "Includes all activities related to source and manufacture a product in different companies, plants, or locations."@en ;
-	.
-
-mnf:PackagingLogistics
+man:PackagingLogistics
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -237,7 +348,7 @@ mnf:PackagingLogistics
 	skos:definition "Includes the definition of all kinds of packaging and transport equipment to ensure a product or its components will be supplied to their destination safely."@en ;
 	.
 
-mnf:PartsManufacturing
+man:PartsManufacturing
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -267,7 +378,7 @@ mnf:PartsManufacturing
 	skos:definition "Manufacturing of single parts using a variety of production processes and methods, each with specific sets of data, such as CNC programs, bending specification, holes specifications, joining features, etc."@en ;
 	.
 
-mnf:ProductAssembly
+man:ProductAssembly
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -293,7 +404,7 @@ mnf:ProductAssembly
 	skos:definition "Assembly of components or products from single parts or sub-components according to a production plan, using all kinds of joinig and bonding."@en ;
 	.
 
-mnf:QualityInspection
+man:QualityInspection
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -313,20 +424,7 @@ mnf:QualityInspection
 	skos:definition "Includes the inspection of single parts, components or products during or after the manufacturing process, as well as the documentation of inspection results."@en ;
 	.
 
-:MechanicalDesign
-	a owl:Class ;
-	rdfs:subClassOf cas:Entity ;
-	rdfs:label
-		"Mechanical Design"@en ,
-		"Mechanische Konstruktion"@de
-		;
-	dcterms:modified "2023-10-22T15:48:39Z"^^xsd:dateTime ;
-	skos:definition """In Mechanical Design, physical product structure, product geometry, as well as all specifications are defined.
-This includes shape, dimensioning and tolerancing, material (including semi-finished parts and treatment), surface and edge specifications.
-Mechanical design is usually conducted using a mechanical CAD system."""@en ;
-	.
-
-:Procurement
+col:Procurement
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -356,31 +454,6 @@ Mechanical design is usually conducted using a mechanical CAD system."""@en ;
 		mech:Thread
 		;
 	skos:definition "Communication between procurement and suppliers in the bidding and iquiry phase. Supports the OMG Model-Based Aqcuisition initiative."@en ;
-	.
-
-:ProductDesign
-	a owl:Class ;
-	rdfs:subClassOf cas:Entity ;
-	rdfs:label
-		"Product Design"@en ,
-		"Produktentwurf"@de
-		;
-	dcterms:modified "2021-11-29T12:59:20Z"^^xsd:dateTime ;
-	skos:definition """Product Design is the specific synthesis, implentation and documentation of design solutions suggested by systems engineering.
-Product design comprises the domain-specific design processes of mechanical, electrical/electronical design, and software engineering."""@en ;
-	.
-
-:ProductDevelopment
-	a owl:Class ;
-	rdfs:subClassOf cas:Entity ;
-	rdfs:label
-		"Product Development"@en ,
-		"Produktentwicklung"@de
-		;
-	dcterms:modified "2022-02-18T11:15:52Z"^^xsd:dateTime ;
-	skos:definition """Product development is the creation of products with new or modified characteristics that offer new or additional benefits to the customer, or comply with new or changed standards, rules and regulations.
-Product development may involve modification of an existing product or its presentation or formulation of an entirely new product that satisfies a newly-defined or changed customer need or market segment.
-Description based on: https://cio-wiki.org/wiki/Product_Development"""@en ;
 	.
 
 con:BusinessOrMissionAnalysis
@@ -468,7 +541,7 @@ con:SystemsArchitecture
 	skos:definition "Systems architecture refers to the cross-domain definition of functions and logical structures at systems level, that will be pursued in detail by the individual domains mechanical design, electric/electronic design and software design."@en ;
 	.
 
-<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/ProductDesign/ElectricalElectronicalDesign>
+<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ProductDesign/ElectricalElectronicalDesign>
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -497,7 +570,7 @@ con:SystemsArchitecture
 Electrical/Electronic Design is usually performed using an electrical/electronic CAD system."""@en ;
 	.
 
-<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/ProductDesign/ElectricalMechanicalDesignCollaboration>
+<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ProductDesign/ElectricalMechanicalDesignCollaboration>
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -530,7 +603,7 @@ mec:DefineJoiningElements
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/ProductDesign/SoftwareEngineering>
+<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ProductDesign/SoftwareEngineering>
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -562,7 +635,7 @@ mec:DefineJoiningElements
 For configuration reasons it may be that software is treated a part to be considered in Bills of Material of products or systems and to be configured related to mechanical or electronic configurations of a system."""@en ;
 	.
 
-<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/VerificationValidationUsingSimulation/PerformAndDocumentSimulation>
+<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/VerificationValidationUsingSimulation/PerformAndDocumentSimulation>
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -587,7 +660,7 @@ For configuration reasons it may be that software is treated a part to be consid
 	skos:definition "Simulation execution includes performing the simulation as well as documenting and summarizing the simulation results."@en ;
 	.
 
-<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/VerificationValidationUsingSimulation/PlanAndPrepareSimulation>
+<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/VerificationValidationUsingSimulation/PlanAndPrepareSimulation>
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -641,7 +714,7 @@ For configuration reasons it may be that software is treated a part to be consid
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/VerificationValidationUsingTest/PerformAndDocumentTesting>
+<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/VerificationValidationUsingTest/PerformAndDocumentTesting>
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -665,7 +738,7 @@ For configuration reasons it may be that software is treated a part to be consid
 	skos:definition "Testing execution includes scheduling tests, allocating the test rig, executing and documenting the test."@en ;
 	.
 
-<http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment/VerificationValidationUsingTest/PrepareTesting>
+<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/VerificationValidationUsingTest/PrepareTesting>
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -715,16 +788,6 @@ For configuration reasons it may be that software is treated a part to be consid
 	skos:definition "Testing preparation includes the definition of product requirements and functions to be validated, the specification, design and manufacturing of samples, prototypes and test rigs."@en ;
 	.
 
-:ProductLineEngineering
-	a owl:Class ;
-	rdfs:subClassOf cas:Entity ;
-	rdfs:label
-		"Product Line Engineering"@en ,
-		"Produktlinienentwicklung"@de
-		;
-	dcterms:modified "2025-10-02T20:45:35Z"^^xsd:dateTime ;
-	.
-
 pro:DefinitionProductAssetInstanceConfigurabilitySpace
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
@@ -766,18 +829,7 @@ pro:DesignProductLine
 	skos:definition "Definition of the “shared asset supersets” and feature catalog: this is a collaborative effort typically involving the CU architect, customer product owner and possibly supplier tech marketing team. The goal is eventually to define the product family i.e. to identify all the assets and their potential variations that can be used to provide a solution to any given problem within the target problem domain, rather than building for each problem an ad-hoc solution. The problem domain is specified by the customer/product owner, but can be typically expanded by the tech marketing team who captures requirements from other customers and push for alignment with strategic objectives. In defining the product line the CU architect is driven by objectives as costs, reuse, IPs while the product owner wants the product family to allow for a problem solution as close as possible to an “optimal” ad-hoc architecture."@en ;
 	.
 
-:ProductOperation
-	a owl:Class ;
-	rdfs:subClassOf cas:Entity ;
-	rdfs:label
-		"Product Operation"@en ,
-		"Produktbetrieb"@de
-		;
-	dcterms:modified "2021-11-24T10:30:35Z"^^xsd:dateTime ;
-	skos:definition "Includes all phases and activities in the operation phase of a product."@en ;
-	.
-
-<http://www.omg.org/spec/CASCaRA/ontology/ProductOperation/DisassemblyRecycling>
+<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductOperation/DisassemblyRecycling>
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -803,7 +855,7 @@ pro:DesignProductLine
 	skos:definition "Includes all end-of-life activities required to putting a product or its component to recycling."@en ;
 	.
 
-<http://www.omg.org/spec/CASCaRA/ontology/ProductOperation/MaintenanceService>
+<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductOperation/MaintenanceService>
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -830,7 +882,7 @@ pro:DesignProductLine
 	skos:definition "Includes all activities performed in order to maintain a product in operation."@en ;
 	.
 
-<http://www.omg.org/spec/CASCaRA/ontology/ProductOperation/ProductUsage>
+<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductOperation/ProductUsage>
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -854,20 +906,7 @@ pro:DesignProductLine
 	skos:definition "Usage of a product according to the designated purpose and function."@en ;
 	.
 
-:ProductionDevelopment
-	a owl:Class ;
-	rdfs:subClassOf cas:Entity ;
-	rdfs:label
-		"Production Development"@en ,
-		"Produktionsentwicklung"@de
-		;
-	dcterms:modified "2020-10-29T12:15:18Z"^^xsd:dateTime ;
-	skos:definition """The manufacturing or production engineer's primary focus is to turn raw material into an updated or new product in the most effective, efficient & economic way possible.
-Manufacturing Engineering is based on core industrial engineering and mechanical engineering skills, adding important elements from mechatronics, commerce, economics and business management.
-Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
-	.
-
-<http://www.omg.org/spec/CASCaRA/ontology/ProductionDevelopment/CostCalculation>
+<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductionDevelopment/CostCalculation>
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -907,7 +946,7 @@ Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 	skos:definition "Includes the calculation of product cost using relevant information from product and production specifications, including dimensions, material, mass, geometric & topological complexity, surface finish including paint or coatings."@en ;
 	.
 
-<http://www.omg.org/spec/CASCaRA/ontology/ProductionDevelopment/InspectionPlanning>
+<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductionDevelopment/InspectionPlanning>
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -947,7 +986,7 @@ Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 	skos:definition "Includes the selection of relevant inspection criteria from product and production specifications, identification and assignment of appropriate inspection methods and equipment, as well as the allocation of appropriate inspection criteria per inspection event (first-article inspection, re-qualification, inspection in production, etc.)"@en ;
 	.
 
-<http://www.omg.org/spec/CASCaRA/ontology/ProductionDevelopment/PlantLayout>
+<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductionDevelopment/PlantLayout>
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -974,7 +1013,7 @@ Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 	skos:definition "Defines the logical and physical layout of a production line in a plant or buiding using information from product and production specifications, including production steps, material handling, as well as the physical dimensions of product components, tools, fixtures and equipment within the  topology and systems of the manufacturing site or building."@en ;
 	.
 
-<http://www.omg.org/spec/CASCaRA/ontology/ProductionDevelopment/ProcessPlanning>
+<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductionDevelopment/ProcessPlanning>
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -1012,7 +1051,7 @@ Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 Source: https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume15/ambite01a-html/node23.html"""@en ;
 	.
 
-<http://www.omg.org/spec/CASCaRA/ontology/ProductionDevelopment/ToolsEquipmentDesign>
+<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductionDevelopment/ToolsEquipmentDesign>
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
@@ -1046,9 +1085,92 @@ Source: https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume15/ambite01a-html/n
 	skos:definition "The design of tools and equipment aligned with product design, the manufacturing process plan and plant layout."@en ;
 	.
 
+:ManufacturingSupplyChain
+	a owl:Class ;
+	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
+	rdfs:label
+		"Manufacturing & Supply Chain"@en ,
+		"Produktion & Lieferkette"@de
+		;
+	dcterms:modified "2021-11-24T10:35:16Z"^^xsd:dateTime ;
+	skos:definition "Includes all activities related to source and manufacture a product in different companies, plants, or locations."@en ;
+	.
+
+:MechanicalDesign
+	a owl:Class ;
+	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
+	rdfs:label
+		"Mechanical Design"@en ,
+		"Mechanische Konstruktion"@de
+		;
+	dcterms:modified "2023-10-22T15:48:39Z"^^xsd:dateTime ;
+	skos:definition """In Mechanical Design, physical product structure, product geometry, as well as all specifications are defined.
+This includes shape, dimensioning and tolerancing, material (including semi-finished parts and treatment), surface and edge specifications.
+Mechanical design is usually conducted using a mechanical CAD system."""@en ;
+	.
+
+:ProductDesign
+	a owl:Class ;
+	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
+	rdfs:label
+		"Product Design"@en ,
+		"Produktentwurf"@de
+		;
+	dcterms:modified "2021-11-29T12:59:20Z"^^xsd:dateTime ;
+	skos:definition """Product Design is the specific synthesis, implentation and documentation of design solutions suggested by systems engineering.
+Product design comprises the domain-specific design processes of mechanical, electrical/electronical design, and software engineering."""@en ;
+	.
+
+:ProductDevelopment
+	a owl:Class ;
+	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
+	rdfs:label
+		"Product Development"@en ,
+		"Produktentwicklung"@de
+		;
+	dcterms:modified "2022-02-18T11:15:52Z"^^xsd:dateTime ;
+	skos:definition """Product development is the creation of products with new or modified characteristics that offer new or additional benefits to the customer, or comply with new or changed standards, rules and regulations.
+Product development may involve modification of an existing product or its presentation or formulation of an entirely new product that satisfies a newly-defined or changed customer need or market segment.
+Description based on: https://cio-wiki.org/wiki/Product_Development"""@en ;
+	.
+
+:ProductLineEngineering
+	a owl:Class ;
+	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
+	rdfs:label
+		"Product Line Engineering"@en ,
+		"Produktlinienentwicklung"@de
+		;
+	dcterms:modified "2025-10-02T20:45:35Z"^^xsd:dateTime ;
+	.
+
+:ProductOperation
+	a owl:Class ;
+	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
+	rdfs:label
+		"Product Operation"@en ,
+		"Produktbetrieb"@de
+		;
+	dcterms:modified "2021-11-24T10:30:35Z"^^xsd:dateTime ;
+	skos:definition "Includes all phases and activities in the operation phase of a product."@en ;
+	.
+
+:ProductionDevelopment
+	a owl:Class ;
+	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
+	rdfs:label
+		"Production Development"@en ,
+		"Produktionsentwicklung"@de
+		;
+	dcterms:modified "2020-10-29T12:15:18Z"^^xsd:dateTime ;
+	skos:definition """The manufacturing or production engineer's primary focus is to turn raw material into an updated or new product in the most effective, efficient & economic way possible.
+Manufacturing Engineering is based on core industrial engineering and mechanical engineering skills, adding important elements from mechatronics, commerce, economics and business management.
+Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
+	.
+
 :VerificationValidationUsingSimulation
 	a owl:Class ;
-	rdfs:subClassOf cas:Entity ;
+	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
 	rdfs:label
 		"Verification & Validation using Simulation"@en ,
 		"Verifikation & Validierung durch Simulation"@de
@@ -1063,7 +1185,7 @@ Description based on: https://en.wikipedia.org/wiki/Modeling_and_simulation, ISO
 
 :VerificationValidationUsingTest
 	a owl:Class ;
-	rdfs:subClassOf cas:Entity ;
+	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
 	rdfs:label
 		"Verification & Validation using Test"@en ,
 		"Verifikation & Validierung durch Test"@de

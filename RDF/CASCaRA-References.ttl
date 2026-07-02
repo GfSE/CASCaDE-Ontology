@@ -21,13 +21,14 @@
 		"Alvarez Rodriguez, José Maria, UC3 Madrid" ,
 		"Arslan, Serkan, INOMIC Solutions GmbH" ,
 		"Balandi, Oguzhan, T-Systems International GmbH" ,
-		"Baleani, Massimo" ,
+		"Baleani, Massimo, Collins Aerospace" ,
 		"Bassam, Hamza, oose eG" ,
 		"Beavin, William, The Boeing Company" ,
 		"Bielert, René, Dr.-Ing. h.c. F. Porsche AG" ,
 		"Bleisinger, Oliver, Fraunhofer IESE" ,
 		"Bosse, Rolf, Mercedes-Benz AG" ,
 		"Burkhart, Roger, Thematix Partners" ,
+		"Christmann, Simon, :em engineering methods AG" ,
 		"Delpeuch, Ghislain, SSC Services GmbH" ,
 		"Dörr, Sebastian, CONWEAVER GmbH" ,
 		"Engelhardt, Joachim, Sodius Willert" ,
@@ -51,7 +52,8 @@
 		"Klöppner, Robert, MTU Aero Engines AG" ,
 		"Koch, Dr. Walter, GfSE Gesellschaft für Systems Engineering" ,
 		"Koethe, Manfred, 88solutions" ,
-		"Krems, Daniel" ,
+		"Krems, Daniel, AVL List" ,
+		"Lehnen, Johannes, :em engineering methods AG" ,
 		"Li, Zirui, Product and Systems Engineering Group" ,
 		"Martin, James, Anark Corporation Inc." ,
 		"Marvin, Joe, PSG Prime Solutions Group" ,
@@ -59,7 +61,7 @@
 		"Meyer, Nico, Volkswagen AG" ,
 		"Mogo Nem, Dr.-Ing. Fabrice, Schaeffler Technologies AG & Co. KG" ,
 		"Moreland, Clarence Moe, Modern Technology Solutions, Inc." ,
-		"Mueller, Andreas" ,
+		"Mueller, Andreas, Schaeffler Technologies AG & Co. KG" ,
 		"Nielsen, Johan, ELYSIUM Inc." ,
 		"Noguchi, Ryan, Aerospace Corp." ,
 		"Psota, Thomas, Fraunhofer IESE" ,
@@ -72,13 +74,14 @@
 		"Stoib, Martin, Kromberg & Schubert Automotive GmbH & Co. KG" ,
 		"Stürken, Dr. Momme, Schaeffler Technologies AG & Co. KG" ,
 		"Tazir, Nora, prostep ivip Association" ,
-		"Tonelli, Cecilia" ,
+		"Tonelli, Cecilia, Collins Aerospace" ,
 		"Weilkiens, Tim, oose eG" ,
 		"Weimer, Henrik, Airbus Operations GmbH" ,
+		"Williams, Mark" ,
 		"von Dungern, Dr. Oskar, enso managers GmbH" ,
 		"von Holst, Dr.-Ing. Christian, John Deere GmbH & Co KG"
 		;
-	dcterms:created "28.06.2026 22:41:51" ;
+	dcterms:created "02.07.2026 06:30:48" ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 88solutions
@@ -88,6 +91,7 @@ Copyright (c) 2024-2026 ATLAS Elektronik
 Copyright (c) 2024-2026 The Boeing Company
 Copyright (c) 2024-2026 enso managers GmbH
 Copyright (c) 2024-2026 GfSE Gesellschaft für Systems Engineering
+Copyright (c) 2024 INCOSE
 Copyright (c) 2024-2026 INOMIC Solutions GmbH
 Copyright (c) 2024-2026 Intuitive AI
 Copyright (c) 2024-2026 Manfred Harms Consulting
@@ -95,12 +99,12 @@ Copyright (c) 2024-2026 ModelAlchemy Consulting
 Copyright (c) 2024-2026 Modern Technology Solutions, Inc.
 Copyright (c) 2024-2026 oose eG
 Copyright (c) 2024-2025 PDES, Inc.
-Copyright (c) 2024-2026 PROSTEP
+Copyright (c) 2024-2026 PROSTEP AG
 Copyright (c) 2024-2026 prostep ivip Association
 Copyright (c) 2024-2026 PSG Prime Solutions Group
 Copyright (c) 2024-2026 Division of Design of Cyber-Physical Systems
-Copyright (c) 2024-2026 RTX
-Copyright (c) 2024-2026 Schaeffler
+Copyright (c) 2024-2026 Collins Aerospace
+Copyright (c) 2024-2026 Schaeffler Technologies AG & Co. KG
 Copyright (c) 2024-2026 Thematix Partners
 Copyright (c) 2024-2026 TU Hamburg-Harburg
 Copyright (c) 2024-2026 Product and Systems Engineering Group
@@ -113,7 +117,7 @@ Copyright (c) 2019-2020 Airbus Operations GmbH
 Copyright (c) 2019-2026 Anark Corporation Inc.
 Copyright (c) 2026-2026 Aumovio SE
 Copyright (c) 2019-2026 AVL List
-Copyright (c) 2022-2026 Boeing
+Copyright (c) 2022-2026 The Boeing Company
 Copyright (c) 2022-2026 Robert Bosch GmbH
 Copyright (c) 2019-2022 CONWEAVER GmbH
 Copyright (c) 2019-2026 ELYSIUM Inc.
@@ -127,7 +131,7 @@ Copyright (c) 2019-2026 Mercedes-Benz AG
 Copyright (c) 2024-2026 MTU Aero Engines AG
 Copyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche AG
 Copyright (c) 2019-2026 PROSTEP AG
-Copyright (c) 2025-2026 RTX
+Copyright (c) 2025-2026 Collins Aerospace
 Copyright (c) 2019-2024 Schaeffler Technologies AG & Co. KG
 Copyright (c) 2025-2026 Sodius Willert
 Copyright (c) 2019-2020 SSC Services GmbH

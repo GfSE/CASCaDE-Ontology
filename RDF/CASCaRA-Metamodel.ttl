@@ -124,6 +124,7 @@ cas:Package
   a owl:Class ;
   rdfs:subClassOf cas:Entity ;
   rdfs:label "Package"@en ;
+  rdfs:label "Paket"@de ;
   skos:definition "A CASCaRA meta-model item used for packages comprising entities, relationships and potentially nested packages."@en .
 
 cas:Package_Shape
@@ -137,6 +138,40 @@ cas:Package_Shape
     sh:path rdfs:label ;
     sh:minCount 1
   ] .
+  
+cas:Activity
+  a owl:Class ;
+  rdfs:label "Activity"@en;
+  rdfs:label "Prozessschritt"@de;
+  skos:definition "A CASCaRA activity that relates to data entities delivered or required by this use-case."@en ;
+  skos:definition "Ein CASCaRA-Prozess, der sich auf Entities bezieht, die im Rahmen dieses Anwendungsfalls bereitgestellt oder benötigt werden."@de .
+  
+cas:Activity_Shape
+  a sh:NodeShape ;
+  sh:targetClass cas:Activity ;
+  sh:property [
+    sh:path cas:Provided ;
+    sh:class cas:Entity ;
+  ] ;
+
+  sh:property [
+    sh:path cas:Used ;
+    sh:class cas:Entity ;
+  ] .
+  
+cas:Provided
+  a owl:ObjectProperty ;
+  rdfs:domain cas:Activity ;
+  rdfs:range cas:Entity ;
+  rdfs:label "Provided"@en ;
+  rdfs:label "Bereitgestellt"@de .
+
+cas:Used
+  a owl:ObjectProperty ;
+  rdfs:domain cas:Activity ;
+  rdfs:range cas:Entity ;
+  rdfs:label "Used"@en ;
+  rdfs:label "Verwendet"@de .
   
 cas:Property
   a owl:DatatypeProperty ;

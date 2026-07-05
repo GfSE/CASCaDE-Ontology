@@ -11,6 +11,9 @@
 @prefix cas-sys:  <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/> .
 @prefix cas-val:  <http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/> .
 @prefix cas-ver:  <http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 @prefix bfo:  <http://purl.obolibrary.org/obo/BFO_> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -20,8 +23,9 @@
 	rdfs:label "CASCaRA Mapping to Basic Formal Ontology" ;
 	dcterms:abstract "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice." ;
 	dcterms:contributor
-		"Tonelli, Cecilia, Collins Aerospace,
-		"Kirsch, Michael, :em engineering methods AG"
+		"Tonelli, Cecilia, Collins Aerospace",
+		"Kirsch, Michael, :em engineering methods AG",
+		"von Dungern, Dr. Oskar, enso managers GmbH"
 		;
 	dcterms:created "09.06.2026 02:57:04" ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
@@ -79,8 +83,9 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 https://opensource.org/licenses/MIT""" ;
 	dcterms:title "CASCaRA Mapping to Basic Formal Ontology" ;
 	owl:imports <http://www.omg.org/spec/CASCaRA/ontology/> ;
+	owl:imports <http://purl.obolibrary.org/obo/BFO_> ;
 	owl:versionInfo "1.0" ;
-
+.
 cas-sys:ComponentState rdfs:subClassOf bfo:DescriptiveInformationContentEntity .
 cas-sys:SystemComponent rdfs:subClassOf bfo:RepresentationalInformationContentEntity .
 cas-org:Role rdfs:subClassOf bfo:role .

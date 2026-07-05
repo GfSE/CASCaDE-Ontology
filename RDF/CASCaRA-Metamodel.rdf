@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+	xmlns:cas="http://www.omg.org/spec/CASCaRA/metamodel/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dim="http://www.omg.org/spec/CASCaRA/metamodel/Dimensions/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:prov="http://www.w3.org/ns/prov/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sh="http://www.w3.org/ns/shacl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	
+	<owl:Ontology rdf:about="http://www.omg.org/spec/CASCaRA/metamodel/">
+		<rdfs:label>Metamodel</rdfs:label>
+		<dcterms:abstract>The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\nNote that this version of the ontology is in development and may be subject to modifications without notice.</dcterms:abstract>
+		<dcterms:contributor>Alvarez Rodriguez, José Maria, UC3 Madrid</dcterms:contributor>
+		<dcterms:contributor>Arslan, Serkan, INOMIC Solutions GmbH</dcterms:contributor>
+		<dcterms:contributor>Balandi, Oguzhan, T-Systems International GmbH</dcterms:contributor>
+		<dcterms:contributor>Baleani, Massimo, Collins Aerospace</dcterms:contributor>
+		<dcterms:contributor>Bassam, Hamza, oose eG</dcterms:contributor>
+		<dcterms:contributor>Beavin, William, The Boeing Company</dcterms:contributor>
+		<dcterms:contributor>Bielert, René, Dr.-Ing. h.c. F. Porsche AG</dcterms:contributor>
+		<dcterms:contributor>Bleisinger, Oliver, Fraunhofer IESE</dcterms:contributor>
+		<dcterms:contributor>Bosse, Rolf, Mercedes-Benz AG</dcterms:contributor>
+		<dcterms:contributor>Burkhart, Roger, Thematix Partners</dcterms:contributor>
+		<dcterms:contributor>Christmann, Simon, :em engineering methods AG</dcterms:contributor>
+		<dcterms:contributor>Delpeuch, Ghislain, SSC Services GmbH</dcterms:contributor>
+		<dcterms:contributor>Dörr, Sebastian, CONWEAVER GmbH</dcterms:contributor>
+		<dcterms:contributor>Engelhardt, Joachim, Sodius Willert</dcterms:contributor>
+		<dcterms:contributor>Esquerra, Fredwilliam, The Boeing Company</dcterms:contributor>
+		<dcterms:contributor>Giese, Sarah, PROSTEP AG</dcterms:contributor>
+		<dcterms:contributor>Gliniorz, Stefan, Robert Bosch GmbH</dcterms:contributor>
+		<dcterms:contributor>Grimm, Prof. Dr. Christoph, Division of Design of Cyber-Physical Systems</dcterms:contributor>
+		<dcterms:contributor>Grünwald, Dr. Christian, Volkswagen AG</dcterms:contributor>
+		<dcterms:contributor>Haarer, Alexander, ATLAS Elektronik</dcterms:contributor>
+		<dcterms:contributor>Hahn, Hank, The Boeing Company</dcterms:contributor>
+		<dcterms:contributor>Hall, Kyle, Airbus Operations GmbH</dcterms:contributor>
+		<dcterms:contributor>Harms, Manfred, Manfred Harms Consulting</dcterms:contributor>
+		<dcterms:contributor>Hashimoto, Atsushi, JAXA Japan Aerospace Exploration Agency</dcterms:contributor>
+		<dcterms:contributor>Husung, Dr.-Ing. Stephan, Product and Systems Engineering Group</dcterms:contributor>
+		<dcterms:contributor>Kaufmann, Uwe, ModelAlchemy Consulting</dcterms:contributor>
+		<dcterms:contributor>Kendall, Elisa, Thematix Partners</dcterms:contributor>
+		<dcterms:contributor>Kiehlmann, Karsten, Aumovio SE</dcterms:contributor>
+		<dcterms:contributor>Kirsch, Michael, :em engineering methods AG</dcterms:contributor>
+		<dcterms:contributor>Klaar, Dr. Oliver, ZF Friedrichshafen</dcterms:contributor>
+		<dcterms:contributor>Kleiner, Dr.-Ing. Sven, :em engineering methods AG</dcterms:contributor>
+		<dcterms:contributor>Klöppner, Robert, MTU Aero Engines AG</dcterms:contributor>
+		<dcterms:contributor>Koch, Dr. Walter, GfSE Gesellschaft für Systems Engineering</dcterms:contributor>
+		<dcterms:contributor>Koethe, Manfred, 88solutions</dcterms:contributor>
+		<dcterms:contributor>Krems, Daniel, AVL List</dcterms:contributor>
+		<dcterms:contributor>Lehnen, Johannes, :em engineering methods AG</dcterms:contributor>
+		<dcterms:contributor>Li, Zirui, Product and Systems Engineering Group</dcterms:contributor>
+		<dcterms:contributor>Martin, James, Anark Corporation Inc.</dcterms:contributor>
+		<dcterms:contributor>Marvin, Joe, PSG Prime Solutions Group</dcterms:contributor>
+		<dcterms:contributor>Mendo, Juan Carlos, The Boeing Company</dcterms:contributor>
+		<dcterms:contributor>Meyer, Nico, Volkswagen AG</dcterms:contributor>
+		<dcterms:contributor>Mogo Nem, Dr. Fabrice, :em engineering methods AG</dcterms:contributor>
+		<dcterms:contributor>Mogo Nem, Dr.-Ing. Fabrice, Schaeffler Technologies AG &amp; Co. KG</dcterms:contributor>
+		<dcterms:contributor>Moreland, Clarence Moe, Modern Technology Solutions, Inc.</dcterms:contributor>
+		<dcterms:contributor>Mueller, Andreas, Schaeffler Technologies AG &amp; Co. KG</dcterms:contributor>
+		<dcterms:contributor>Nielsen, Johan, ELYSIUM Inc.</dcterms:contributor>
+		<dcterms:contributor>Noguchi, Ryan, Aerospace Corp.</dcterms:contributor>
+		<dcterms:contributor>Psota, Thomas, Fraunhofer IESE</dcterms:contributor>
+		<dcterms:contributor>Rieger, Dr. Viola, Infineon Technologies AG</dcterms:contributor>
+		<dcterms:contributor>Rivett, Pete, Intuitive AI</dcterms:contributor>
+		<dcterms:contributor>Sauvage, Michel, Airbus Operations GmbH</dcterms:contributor>
+		<dcterms:contributor>Schmied, Torsten, PROSTEP AG</dcterms:contributor>
+		<dcterms:contributor>Schopper, Dominik, Mercedes-Benz AG</dcterms:contributor>
+		<dcterms:contributor>Spreier, Phil, ELYSIUM Inc.</dcterms:contributor>
+		<dcterms:contributor>Stoib, Martin, Kromberg &amp; Schubert Automotive GmbH &amp; Co. KG</dcterms:contributor>
+		<dcterms:contributor>Stürken, Dr. Momme, Schaeffler Technologies AG &amp; Co. KG</dcterms:contributor>
+		<dcterms:contributor>Tazir, Nora, prostep ivip Association</dcterms:contributor>
+		<dcterms:contributor>Tonelli, Cecilia, Collins Aerospace</dcterms:contributor>
+		<dcterms:contributor>Weilkiens, Tim, oose eG</dcterms:contributor>
+		<dcterms:contributor>Weimer, Henrik, Airbus Operations GmbH</dcterms:contributor>
+		<dcterms:contributor>Williams, Mark, INCOSE</dcterms:contributor>
+		<dcterms:contributor>von Dungern, Dr. Oskar, enso managers GmbH</dcterms:contributor>
+		<dcterms:contributor>von Holst, Dr.-Ing. Christian, John Deere GmbH &amp; Co KG</dcterms:contributor>
+		<dcterms:created>03.07.2026 07:49:32</dcterms:created>
+		<dcterms:license>CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
+Copyright (c) 2024-2026 :em engineering methods AG
+Copyright (c) 2024-2026 88solutions
+Copyright (c) 2024-2026 Aerospace Corp.
+Copyright (c) 2024-2026 Airbus Operations GmbH
+Copyright (c) 2024-2026 ATLAS Elektronik
+Copyright (c) 2024-2026 The Boeing Company
+Copyright (c) 2024-2026 enso managers GmbH
+Copyright (c) 2024-2026 GfSE Gesellschaft für Systems Engineering
+Copyright (c) 2024 INCOSE
+Copyright (c) 2024-2026 INOMIC Solutions GmbH
+Copyright (c) 2024-2026 Intuitive AI
+Copyright (c) 2024-2026 Manfred Harms Consulting
+Copyright (c) 2024-2026 ModelAlchemy Consulting
+Copyright (c) 2024-2026 Modern Technology Solutions, Inc.
+Copyright (c) 2024-2026 oose eG
+Copyright (c) 2024-2025 PDES, Inc.
+Copyright (c) 2024-2026 PROSTEP AG
+Copyright (c) 2024-2026 prostep ivip Association
+Copyright (c) 2024-2026 PSG Prime Solutions Group
+Copyright (c) 2024-2026 Division of Design of Cyber-Physical Systems
+Copyright (c) 2024-2026 Collins Aerospace
+Copyright (c) 2024-2026 Schaeffler Technologies AG &amp; Co. KG
+Copyright (c) 2024-2026 Thematix Partners
+Copyright (c) 2024-2026 TU Hamburg-Harburg
+Copyright (c) 2024-2026 Product and Systems Engineering Group
+Copyright (c) 2024-2026 UC3 Madrid
+Copyright (c) 2024-2026 VDA Verband der deutschen Automobilindustrie
+
+Digital Data Package Working Group: Defines use-cases and domain ontology as a foundation for CASCaRA
+Copyright (c) 2019-2026 :em engineering methods AG
+Copyright (c) 2019-2020 Airbus Operations GmbH
+Copyright (c) 2019-2026 Anark Corporation Inc.
+Copyright (c) 2026-2026 Aumovio SE
+Copyright (c) 2019-2026 AVL List
+Copyright (c) 2022-2026 The Boeing Company
+Copyright (c) 2022-2026 Robert Bosch GmbH
+Copyright (c) 2019-2022 CONWEAVER GmbH
+Copyright (c) 2019-2026 ELYSIUM Inc.
+Copyright (c) 2019-2021 Fraunhofer IESE
+Copyright (c) 2026-2026 Infineon Technologies AG
+Copyright (c) 2025-2026 INOMIC Solutions GmbH
+Copyright (c) 2025-2026 JAXA Japan Aerospace Exploration Agency
+Copyright (c) 2021-2024 John Deere GmbH &amp; Co KG
+Copyright (c) 2019-2021 Kromberg &amp; Schubert Automotive GmbH &amp; Co. KG
+Copyright (c) 2019-2026 Mercedes-Benz AG
+Copyright (c) 2024-2026 MTU Aero Engines AG
+Copyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche AG
+Copyright (c) 2019-2026 PROSTEP AG
+Copyright (c) 2025-2026 Collins Aerospace
+Copyright (c) 2019-2024 Schaeffler Technologies AG &amp; Co. KG
+Copyright (c) 2025-2026 Sodius Willert
+Copyright (c) 2019-2020 SSC Services GmbH
+Copyright (c) 2026-2026 T-Systems International GmbH
+Copyright (c) 2022-2026 Volkswagen AG
+Copyright (c) 2019-2026 ZF Friedrichshafen
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &apos;Software&apos;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nThe software is provided &apos;as is&apos;, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
+https://opensource.org/licenses/MIT</dcterms:license>
+		<dcterms:title>CASCaRA Metamodel</dcterms:title>
+		<owl:versionInfo>1.0</owl:versionInfo>
+	</owl:Ontology>
+	
+	<owl:Class rdf:about="&cas;Activity">
+		<rdfs:label xml:lang="en">Activity</rdfs:label>
+		<rdfs:label xml:lang="de">Prozessschritt</rdfs:label>
+		<skos:definition xml:lang="en">A CASCaRA activity that relates to data entities delivered or required by this use-case.</skos:definition>
+		<skos:definition xml:lang="de">Ein CASCaRA-Prozess, der sich auf Entities bezieht, die im Rahmen dieses Anwendungsfalls bereitgestellt oder benötigt werden.</skos:definition>
+	</owl:Class>
+	
+	<sh:NodeShape rdf:about="&cas;Activity_Shape">
+		<sh:property rdf:nodeID="blank19"/>
+		<sh:property rdf:nodeID="blank20"/>
+		<sh:targetClass rdf:resource="&cas;Activity"/>
+	</sh:NodeShape>
+	
+	<owl:Class rdf:about="&cas;Entity">
+		<rdfs:label xml:lang="en">Entity</rdfs:label>
+		<skos:definition xml:lang="en">A CASCaRA meta-model item used for entities.</skos:definition>
+	</owl:Class>
+	
+	<sh:NodeShape rdf:about="&cas;Entity_Shape">
+		<sh:property rdf:nodeID="blank24"/>
+		<sh:property rdf:nodeID="blank26"/>
+		<sh:targetClass rdf:resource="&cas;Entity"/>
+	</sh:NodeShape>
+	
+	<owl:ObjectProperty rdf:about="&cas;Link">
+		<rdfs:label xml:lang="en">linked with</rdfs:label>
+		<rdfs:range rdf:nodeID="blank13"/>
+		<skos:definition xml:lang="en">A PIG meta-model item connecting a reified relationship with its source or target. Also connects an organizer to a model element.</skos:definition>
+	</owl:ObjectProperty>
+	
+	<sh:PropertyShape rdf:about="&cas;Link_Shape">
+		<sh:or rdf:nodeID="blank09"/>
+		<sh:path rdf:resource="&cas;Link"/>
+	</sh:PropertyShape>
+	
+	<owl:Class rdf:about="&cas;Package">
+		<rdfs:subClassOf rdf:resource="&cas;Entity"/>
+		<rdfs:label xml:lang="en">Package</rdfs:label>
+		<rdfs:label xml:lang="de">Paket</rdfs:label>
+		<skos:definition xml:lang="en">A CASCaRA meta-model item used for packages comprising entities, relationships and potentially nested packages.</skos:definition>
+	</owl:Class>
+	
+	<sh:NodeShape rdf:about="&cas;Package_Shape">
+		<sh:property rdf:nodeID="blank25"/>
+		<sh:property rdf:nodeID="blank27"/>
+		<sh:targetClass rdf:resource="&cas;Package"/>
+	</sh:NodeShape>
+	
+	<owl:DatatypeProperty rdf:about="&cas;Property">
+		<rdfs:label xml:lang="en">Property</rdfs:label>
+		<skos:definition xml:lang="en">A CASCaRA meta-model item used for properties (aka attributes).</skos:definition>
+	</owl:DatatypeProperty>
+	
+	<sh:PropertyShape rdf:about="&cas;Property_Shape">
+		<sh:datatype rdf:resource="&xsd;anyType"/>
+		<sh:path rdf:resource="&cas;Property"/>
+	</sh:PropertyShape>
+	
+	<owl:ObjectProperty rdf:about="&cas;Provided">
+		<rdfs:label xml:lang="de">Bereitgestellt</rdfs:label>
+		<rdfs:label xml:lang="en">Provided</rdfs:label>
+		<rdfs:domain rdf:resource="&cas;Activity"/>
+		<rdfs:range rdf:resource="&cas;Entity"/>
+	</owl:ObjectProperty>
+	
+	<owl:Class rdf:about="&cas;Relationship">
+		<rdfs:label xml:lang="en">Relationship</rdfs:label>
+		<skos:definition xml:lang="en">A CASCaRA meta-model item used for reified relationships (aka predicates).</skos:definition>
+	</owl:Class>
+	
+	<sh:NodeShape rdf:about="&cas;Relationship_Shape">
+		<sh:property rdf:nodeID="blank28"/>
+		<sh:property rdf:nodeID="blank29"/>
+		<sh:property rdf:nodeID="blank30"/>
+		<sh:targetClass rdf:resource="&cas;Relationship"/>
+	</sh:NodeShape>
+	
+	<owl:ObjectProperty rdf:about="&cas;Used">
+		<rdfs:label xml:lang="en">Used</rdfs:label>
+		<rdfs:label xml:lang="de">Verwendet</rdfs:label>
+		<rdfs:domain rdf:resource="&cas;Activity"/>
+		<rdfs:range rdf:resource="&cas;Entity"/>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&cas;linksSource">
+		<rdfs:subPropertyOf rdf:resource="&cas;Link"/>
+		<rdfs:label xml:lang="en">to source</rdfs:label>
+		<rdfs:range rdf:nodeID="blank14"/>
+		<skos:definition xml:lang="en">Connects the source of a reified relationship.</skos:definition>
+	</owl:ObjectProperty>
+	
+	<sh:PropertyShape rdf:about="&cas;linksSource_Shape">
+		<sh:or rdf:nodeID="blank07"/>
+		<sh:path rdf:resource="&cas;linksSource"/>
+	</sh:PropertyShape>
+	
+	<owl:ObjectProperty rdf:about="&cas;linksTarget">
+		<rdfs:subPropertyOf rdf:resource="&cas;Link"/>
+		<rdfs:label xml:lang="en">to target</rdfs:label>
+		<rdfs:range rdf:nodeID="blank15"/>
+		<skos:definition xml:lang="en">Connects the target of a reified relationship or an organizer.</skos:definition>
+	</owl:ObjectProperty>
+	
+	<sh:PropertyShape rdf:about="&cas;linksTarget_Shape">
+		<sh:or rdf:nodeID="blank08"/>
+		<sh:path rdf:resource="&cas;linksTarget"/>
+	</sh:PropertyShape>
+	
+	<rdf:Description rdf:nodeID="blank01">
+		<rdf:first rdf:resource="&cas;Entity"/>
+		<rdf:rest rdf:nodeID="blank04"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank02">
+		<rdf:first rdf:resource="&cas;Entity"/>
+		<rdf:rest rdf:nodeID="blank05"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank03">
+		<rdf:first rdf:resource="&cas;Entity"/>
+		<rdf:rest rdf:nodeID="blank06"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank04">
+		<rdf:first rdf:resource="&cas;Relationship"/>
+		<rdf:rest rdf:resource="&rdf;nil"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank05">
+		<rdf:first rdf:resource="&cas;Relationship"/>
+		<rdf:rest rdf:resource="&rdf;nil"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank06">
+		<rdf:first rdf:resource="&cas;Relationship"/>
+		<rdf:rest rdf:resource="&rdf;nil"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank07">
+		<rdf:first rdf:nodeID="blank16"/>
+		<rdf:rest rdf:nodeID="blank10"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank08">
+		<rdf:first rdf:nodeID="blank17"/>
+		<rdf:rest rdf:nodeID="blank11"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank09">
+		<rdf:first rdf:nodeID="blank18"/>
+		<rdf:rest rdf:nodeID="blank12"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank10">
+		<rdf:first rdf:nodeID="blank21"/>
+		<rdf:rest rdf:resource="&rdf;nil"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank11">
+		<rdf:first rdf:nodeID="blank22"/>
+		<rdf:rest rdf:resource="&rdf;nil"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank12">
+		<rdf:first rdf:nodeID="blank23"/>
+		<rdf:rest rdf:resource="&rdf;nil"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank13">
+		<owl:unionOf rdf:nodeID="blank01"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank14">
+		<owl:unionOf rdf:nodeID="blank02"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank15">
+		<owl:unionOf rdf:nodeID="blank03"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank16">
+		<sh:class rdf:resource="&cas;Entity"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank17">
+		<sh:class rdf:resource="&cas;Entity"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank18">
+		<sh:class rdf:resource="&cas;Entity"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank19">
+		<sh:class rdf:resource="&cas;Entity"/>
+		<sh:path rdf:resource="&cas;Provided"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank20">
+		<sh:class rdf:resource="&cas;Entity"/>
+		<sh:path rdf:resource="&cas;Used"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank21">
+		<sh:class rdf:resource="&cas;Relationship"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank22">
+		<sh:class rdf:resource="&cas;Relationship"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank23">
+		<sh:class rdf:resource="&cas;Relationship"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank24">
+		<sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+		<sh:path rdf:resource="&rdfs;comment"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank25">
+		<sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+		<sh:path rdf:resource="&rdfs;comment"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank26">
+		<sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+		<sh:path rdf:resource="&rdfs;label"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank27">
+		<sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+		<sh:path rdf:resource="&rdfs;label"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank28">
+		<sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+		<sh:path rdf:resource="&rdfs;label"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank29">
+		<sh:node rdf:resource="&cas;linksSource_Shape"/>
+		<sh:path rdf:resource="&cas;linksSource"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="blank30">
+		<sh:node rdf:resource="&cas;linksTarget_Shape"/>
+		<sh:path rdf:resource="&cas;linksTarget"/>
+	</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,821 @@
+[
+	{
+		"@id" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+		"@type" : "owl:Ontology",
+		"rdfs:label" : {
+			"@value" : "Metamodel"
+		},
+		"dcterms:abstract" : {
+			"@value" : "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice."
+		},
+		"dcterms:contributor" : [
+			{
+				"@value" : "Alvarez Rodriguez, José Maria, UC3 Madrid"
+			},
+			{
+				"@value" : "Arslan, Serkan, INOMIC Solutions GmbH"
+			},
+			{
+				"@value" : "Balandi, Oguzhan, T-Systems International GmbH"
+			},
+			{
+				"@value" : "Baleani, Massimo, Collins Aerospace"
+			},
+			{
+				"@value" : "Bassam, Hamza, oose eG"
+			},
+			{
+				"@value" : "Beavin, William, The Boeing Company"
+			},
+			{
+				"@value" : "Bielert, René, Dr.-Ing. h.c. F. Porsche AG"
+			},
+			{
+				"@value" : "Bleisinger, Oliver, Fraunhofer IESE"
+			},
+			{
+				"@value" : "Bosse, Rolf, Mercedes-Benz AG"
+			},
+			{
+				"@value" : "Burkhart, Roger, Thematix Partners"
+			},
+			{
+				"@value" : "Christmann, Simon, :em engineering methods AG"
+			},
+			{
+				"@value" : "Delpeuch, Ghislain, SSC Services GmbH"
+			},
+			{
+				"@value" : "Dörr, Sebastian, CONWEAVER GmbH"
+			},
+			{
+				"@value" : "Engelhardt, Joachim, Sodius Willert"
+			},
+			{
+				"@value" : "Esquerra, Fredwilliam, The Boeing Company"
+			},
+			{
+				"@value" : "Giese, Sarah, PROSTEP AG"
+			},
+			{
+				"@value" : "Gliniorz, Stefan, Robert Bosch GmbH"
+			},
+			{
+				"@value" : "Grimm, Prof. Dr. Christoph, Division of Design of Cyber-Physical Systems"
+			},
+			{
+				"@value" : "Grünwald, Dr. Christian, Volkswagen AG"
+			},
+			{
+				"@value" : "Haarer, Alexander, ATLAS Elektronik"
+			},
+			{
+				"@value" : "Hahn, Hank, The Boeing Company"
+			},
+			{
+				"@value" : "Hall, Kyle, Airbus Operations GmbH"
+			},
+			{
+				"@value" : "Harms, Manfred, Manfred Harms Consulting"
+			},
+			{
+				"@value" : "Hashimoto, Atsushi, JAXA Japan Aerospace Exploration Agency"
+			},
+			{
+				"@value" : "Husung, Dr.-Ing. Stephan, Product and Systems Engineering Group"
+			},
+			{
+				"@value" : "Kaufmann, Uwe, ModelAlchemy Consulting"
+			},
+			{
+				"@value" : "Kendall, Elisa, Thematix Partners"
+			},
+			{
+				"@value" : "Kiehlmann, Karsten, Aumovio SE"
+			},
+			{
+				"@value" : "Kirsch, Michael, :em engineering methods AG"
+			},
+			{
+				"@value" : "Klaar, Dr. Oliver, ZF Friedrichshafen"
+			},
+			{
+				"@value" : "Kleiner, Dr.-Ing. Sven, :em engineering methods AG"
+			},
+			{
+				"@value" : "Klöppner, Robert, MTU Aero Engines AG"
+			},
+			{
+				"@value" : "Koch, Dr. Walter, GfSE Gesellschaft für Systems Engineering"
+			},
+			{
+				"@value" : "Koethe, Manfred, 88solutions"
+			},
+			{
+				"@value" : "Krems, Daniel, AVL List"
+			},
+			{
+				"@value" : "Lehnen, Johannes, :em engineering methods AG"
+			},
+			{
+				"@value" : "Li, Zirui, Product and Systems Engineering Group"
+			},
+			{
+				"@value" : "Martin, James, Anark Corporation Inc."
+			},
+			{
+				"@value" : "Marvin, Joe, PSG Prime Solutions Group"
+			},
+			{
+				"@value" : "Mendo, Juan Carlos, The Boeing Company"
+			},
+			{
+				"@value" : "Meyer, Nico, Volkswagen AG"
+			},
+			{
+				"@value" : "Mogo Nem, Dr. Fabrice, :em engineering methods AG"
+			},
+			{
+				"@value" : "Mogo Nem, Dr.-Ing. Fabrice, Schaeffler Technologies AG & Co. KG"
+			},
+			{
+				"@value" : "Moreland, Clarence Moe, Modern Technology Solutions, Inc."
+			},
+			{
+				"@value" : "Mueller, Andreas, Schaeffler Technologies AG & Co. KG"
+			},
+			{
+				"@value" : "Nielsen, Johan, ELYSIUM Inc."
+			},
+			{
+				"@value" : "Noguchi, Ryan, Aerospace Corp."
+			},
+			{
+				"@value" : "Psota, Thomas, Fraunhofer IESE"
+			},
+			{
+				"@value" : "Rieger, Dr. Viola, Infineon Technologies AG"
+			},
+			{
+				"@value" : "Rivett, Pete, Intuitive AI"
+			},
+			{
+				"@value" : "Sauvage, Michel, Airbus Operations GmbH"
+			},
+			{
+				"@value" : "Schmied, Torsten, PROSTEP AG"
+			},
+			{
+				"@value" : "Schopper, Dominik, Mercedes-Benz AG"
+			},
+			{
+				"@value" : "Spreier, Phil, ELYSIUM Inc."
+			},
+			{
+				"@value" : "Stoib, Martin, Kromberg & Schubert Automotive GmbH & Co. KG"
+			},
+			{
+				"@value" : "Stürken, Dr. Momme, Schaeffler Technologies AG & Co. KG"
+			},
+			{
+				"@value" : "Tazir, Nora, prostep ivip Association"
+			},
+			{
+				"@value" : "Tonelli, Cecilia, Collins Aerospace"
+			},
+			{
+				"@value" : "Weilkiens, Tim, oose eG"
+			},
+			{
+				"@value" : "Weimer, Henrik, Airbus Operations GmbH"
+			},
+			{
+				"@value" : "Williams, Mark, INCOSE"
+			},
+			{
+				"@value" : "von Dungern, Dr. Oskar, enso managers GmbH"
+			},
+			{
+				"@value" : "von Holst, Dr.-Ing. Christian, John Deere GmbH & Co KG"
+			}
+			
+		],
+		"dcterms:created" : {
+			"@value" : "03.07.2026 07:49:32"
+		},
+		"dcterms:license" : {
+			"@value" : "CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA\u000aCopyright (c) 2024-2026 :em engineering methods AG\u000aCopyright (c) 2024-2026 88solutions\u000aCopyright (c) 2024-2026 Aerospace Corp.\u000aCopyright (c) 2024-2026 Airbus Operations GmbH\u000aCopyright (c) 2024-2026 ATLAS Elektronik\u000aCopyright (c) 2024-2026 The Boeing Company\u000aCopyright (c) 2024-2026 enso managers GmbH\u000aCopyright (c) 2024-2026 GfSE Gesellschaft für Systems Engineering\u000aCopyright (c) 2024 INCOSE\u000aCopyright (c) 2024-2026 INOMIC Solutions GmbH\u000aCopyright (c) 2024-2026 Intuitive AI\u000aCopyright (c) 2024-2026 Manfred Harms Consulting\u000aCopyright (c) 2024-2026 ModelAlchemy Consulting\u000aCopyright (c) 2024-2026 Modern Technology Solutions, Inc.\u000aCopyright (c) 2024-2026 oose eG\u000aCopyright (c) 2024-2025 PDES, Inc.\u000aCopyright (c) 2024-2026 PROSTEP AG\u000aCopyright (c) 2024-2026 prostep ivip Association\u000aCopyright (c) 2024-2026 PSG Prime Solutions Group\u000aCopyright (c) 2024-2026 Division of Design of Cyber-Physical Systems\u000aCopyright (c) 2024-2026 Collins Aerospace\u000aCopyright (c) 2024-2026 Schaeffler Technologies AG & Co. KG\u000aCopyright (c) 2024-2026 Thematix Partners\u000aCopyright (c) 2024-2026 TU Hamburg-Harburg\u000aCopyright (c) 2024-2026 Product and Systems Engineering Group\u000aCopyright (c) 2024-2026 UC3 Madrid\u000aCopyright (c) 2024-2026 VDA Verband der deutschen Automobilindustrie\u000a\u000aDigital Data Package Working Group: Defines use-cases and domain ontology as a foundation for CASCaRA\u000aCopyright (c) 2019-2026 :em engineering methods AG\u000aCopyright (c) 2019-2020 Airbus Operations GmbH\u000aCopyright (c) 2019-2026 Anark Corporation Inc.\u000aCopyright (c) 2026-2026 Aumovio SE\u000aCopyright (c) 2019-2026 AVL List\u000aCopyright (c) 2022-2026 The Boeing Company\u000aCopyright (c) 2022-2026 Robert Bosch GmbH\u000aCopyright (c) 2019-2022 CONWEAVER GmbH\u000aCopyright (c) 2019-2026 ELYSIUM Inc.\u000aCopyright (c) 2019-2021 Fraunhofer IESE\u000aCopyright (c) 2026-2026 Infineon Technologies AG\u000aCopyright (c) 2025-2026 INOMIC Solutions GmbH\u000aCopyright (c) 2025-2026 JAXA Japan Aerospace Exploration Agency\u000aCopyright (c) 2021-2024 John Deere GmbH & Co KG\u000aCopyright (c) 2019-2021 Kromberg & Schubert Automotive GmbH & Co. KG\u000aCopyright (c) 2019-2026 Mercedes-Benz AG\u000aCopyright (c) 2024-2026 MTU Aero Engines AG\u000aCopyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche AG\u000aCopyright (c) 2019-2026 PROSTEP AG\u000aCopyright (c) 2025-2026 Collins Aerospace\u000aCopyright (c) 2019-2024 Schaeffler Technologies AG & Co. KG\u000aCopyright (c) 2025-2026 Sodius Willert\u000aCopyright (c) 2019-2020 SSC Services GmbH\u000aCopyright (c) 2026-2026 T-Systems International GmbH\u000aCopyright (c) 2022-2026 Volkswagen AG\u000aCopyright (c) 2019-2026 ZF Friedrichshafen\u000a\u000aPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.\u000ahttps://opensource.org/licenses/MIT"
+		},
+		"dcterms:title" : {
+			"@value" : "CASCaRA Metamodel"
+		},
+		"owl:versionInfo" : {
+			"@value" : "1.0"
+		},
+		"@context" : {
+			
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"owl" : "http://www.w3.org/2002/07/owl#",
+			"dcterms" : "http://purl.org/dc/terms/",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : "cas:Activity",
+		"@type" : "owl:Class",
+		"rdfs:label" : [
+			{
+				"@language" : "en",
+				"@value" : "Activity"
+			},
+			{
+				"@language" : "de",
+				"@value" : "Prozessschritt"
+			}
+			
+		],
+		"skos:definition" : [
+			{
+				"@language" : "en",
+				"@value" : "A CASCaRA activity that relates to data entities delivered or required by this use-case."
+			},
+			{
+				"@language" : "de",
+				"@value" : "Ein CASCaRA-Prozess, der sich auf Entities bezieht, die im Rahmen dieses Anwendungsfalls bereitgestellt oder benötigt werden."
+			}
+			
+		],
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"owl" : "http://www.w3.org/2002/07/owl#",
+			"skos" : "http://www.w3.org/2004/02/skos/core#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : "cas:Activity_Shape",
+		"@type" : "sh:NodeShape",
+		"sh:property" : [
+			{ "@id" : "_:blank19" },
+			{ "@id" : "_:blank20" }
+			
+		],
+		"sh:targetClass" : { "@id" : "cas:Activity" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"sh" : "http://www.w3.org/ns/shacl#"
+		}
+	},
+	{
+		"@id" : "cas:Entity",
+		"@type" : "owl:Class",
+		"rdfs:label" : {
+			"@language" : "en",
+			"@value" : "Entity"
+		},
+		"skos:definition" : {
+			"@language" : "en",
+			"@value" : "A CASCaRA meta-model item used for entities."
+		},
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"owl" : "http://www.w3.org/2002/07/owl#",
+			"skos" : "http://www.w3.org/2004/02/skos/core#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : "cas:Entity_Shape",
+		"@type" : "sh:NodeShape",
+		"sh:property" : [
+			{ "@id" : "_:blank24" },
+			{ "@id" : "_:blank26" }
+			
+		],
+		"sh:targetClass" : { "@id" : "cas:Entity" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"sh" : "http://www.w3.org/ns/shacl#"
+		}
+	},
+	{
+		"@id" : "cas:Link",
+		"@type" : "owl:ObjectProperty",
+		"rdfs:label" : {
+			"@language" : "en",
+			"@value" : "linked with"
+		},
+		"rdfs:range" : { "@id" : "_:blank13" },
+		"skos:definition" : {
+			"@language" : "en",
+			"@value" : "A PIG meta-model item connecting a reified relationship with its source or target. Also connects an organizer to a model element."
+		},
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"owl" : "http://www.w3.org/2002/07/owl#",
+			"skos" : "http://www.w3.org/2004/02/skos/core#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : "cas:Link_Shape",
+		"@type" : "sh:PropertyShape",
+		"sh:or" : { "@id" : "_:blank09" },
+		"sh:path" : { "@id" : "cas:Link" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"sh" : "http://www.w3.org/ns/shacl#"
+		}
+	},
+	{
+		"@id" : "cas:Package",
+		"@type" : "owl:Class",
+		"rdfs:subClassOf" : { "@id" : "cas:Entity" },
+		"rdfs:label" : [
+			{
+				"@language" : "en",
+				"@value" : "Package"
+			},
+			{
+				"@language" : "de",
+				"@value" : "Paket"
+			}
+			
+		],
+		"skos:definition" : {
+			"@language" : "en",
+			"@value" : "A CASCaRA meta-model item used for packages comprising entities, relationships and potentially nested packages."
+		},
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"owl" : "http://www.w3.org/2002/07/owl#",
+			"skos" : "http://www.w3.org/2004/02/skos/core#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : "cas:Package_Shape",
+		"@type" : "sh:NodeShape",
+		"sh:property" : [
+			{ "@id" : "_:blank25" },
+			{ "@id" : "_:blank27" }
+			
+		],
+		"sh:targetClass" : { "@id" : "cas:Package" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"sh" : "http://www.w3.org/ns/shacl#"
+		}
+	},
+	{
+		"@id" : "cas:Property",
+		"@type" : "owl:DatatypeProperty",
+		"rdfs:label" : {
+			"@language" : "en",
+			"@value" : "Property"
+		},
+		"skos:definition" : {
+			"@language" : "en",
+			"@value" : "A CASCaRA meta-model item used for properties (aka attributes)."
+		},
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"owl" : "http://www.w3.org/2002/07/owl#",
+			"skos" : "http://www.w3.org/2004/02/skos/core#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : "cas:Property_Shape",
+		"@type" : "sh:PropertyShape",
+		"sh:datatype" : { "@id" : "xsd:anyType" },
+		"sh:path" : { "@id" : "cas:Property" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"sh" : "http://www.w3.org/ns/shacl#",
+			"xsd" : "http://www.w3.org/2001/XMLSchema#"
+		}
+	},
+	{
+		"@id" : "cas:Provided",
+		"@type" : "owl:ObjectProperty",
+		"rdfs:label" : [
+			{
+				"@language" : "de",
+				"@value" : "Bereitgestellt"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Provided"
+			}
+			
+		],
+		"rdfs:domain" : { "@id" : "cas:Activity" },
+		"rdfs:range" : { "@id" : "cas:Entity" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"owl" : "http://www.w3.org/2002/07/owl#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : "cas:Relationship",
+		"@type" : "owl:Class",
+		"rdfs:label" : {
+			"@language" : "en",
+			"@value" : "Relationship"
+		},
+		"skos:definition" : {
+			"@language" : "en",
+			"@value" : "A CASCaRA meta-model item used for reified relationships (aka predicates)."
+		},
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"owl" : "http://www.w3.org/2002/07/owl#",
+			"skos" : "http://www.w3.org/2004/02/skos/core#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : "cas:Relationship_Shape",
+		"@type" : "sh:NodeShape",
+		"sh:property" : [
+			{ "@id" : "_:blank28" },
+			{ "@id" : "_:blank29" },
+			{ "@id" : "_:blank30" }
+			
+		],
+		"sh:targetClass" : { "@id" : "cas:Relationship" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"sh" : "http://www.w3.org/ns/shacl#"
+		}
+	},
+	{
+		"@id" : "cas:Used",
+		"@type" : "owl:ObjectProperty",
+		"rdfs:label" : [
+			{
+				"@language" : "en",
+				"@value" : "Used"
+			},
+			{
+				"@language" : "de",
+				"@value" : "Verwendet"
+			}
+			
+		],
+		"rdfs:domain" : { "@id" : "cas:Activity" },
+		"rdfs:range" : { "@id" : "cas:Entity" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"owl" : "http://www.w3.org/2002/07/owl#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : "cas:linksSource",
+		"@type" : "owl:ObjectProperty",
+		"rdfs:subPropertyOf" : { "@id" : "cas:Link" },
+		"rdfs:label" : {
+			"@language" : "en",
+			"@value" : "to source"
+		},
+		"rdfs:range" : { "@id" : "_:blank14" },
+		"skos:definition" : {
+			"@language" : "en",
+			"@value" : "Connects the source of a reified relationship."
+		},
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"owl" : "http://www.w3.org/2002/07/owl#",
+			"skos" : "http://www.w3.org/2004/02/skos/core#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : "cas:linksSource_Shape",
+		"@type" : "sh:PropertyShape",
+		"sh:or" : { "@id" : "_:blank07" },
+		"sh:path" : { "@id" : "cas:linksSource" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"sh" : "http://www.w3.org/ns/shacl#"
+		}
+	},
+	{
+		"@id" : "cas:linksTarget",
+		"@type" : "owl:ObjectProperty",
+		"rdfs:subPropertyOf" : { "@id" : "cas:Link" },
+		"rdfs:label" : {
+			"@language" : "en",
+			"@value" : "to target"
+		},
+		"rdfs:range" : { "@id" : "_:blank15" },
+		"skos:definition" : {
+			"@language" : "en",
+			"@value" : "Connects the target of a reified relationship or an organizer."
+		},
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"owl" : "http://www.w3.org/2002/07/owl#",
+			"skos" : "http://www.w3.org/2004/02/skos/core#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : "cas:linksTarget_Shape",
+		"@type" : "sh:PropertyShape",
+		"sh:or" : { "@id" : "_:blank08" },
+		"sh:path" : { "@id" : "cas:linksTarget" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"sh" : "http://www.w3.org/ns/shacl#"
+		}
+	},
+	{
+		"@id" : "_:blank01",
+		"rdf:first" : { "@id" : "cas:Entity" },
+		"rdf:rest" : { "@id" : "_:blank04" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		}
+	},
+	{
+		"@id" : "_:blank02",
+		"rdf:first" : { "@id" : "cas:Entity" },
+		"rdf:rest" : { "@id" : "_:blank05" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		}
+	},
+	{
+		"@id" : "_:blank03",
+		"rdf:first" : { "@id" : "cas:Entity" },
+		"rdf:rest" : { "@id" : "_:blank06" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		}
+	},
+	{
+		"@id" : "_:blank04",
+		"rdf:first" : { "@id" : "cas:Relationship" },
+		"rdf:rest" : { "@id" : "rdf:nil" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		}
+	},
+	{
+		"@id" : "_:blank05",
+		"rdf:first" : { "@id" : "cas:Relationship" },
+		"rdf:rest" : { "@id" : "rdf:nil" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		}
+	},
+	{
+		"@id" : "_:blank06",
+		"rdf:first" : { "@id" : "cas:Relationship" },
+		"rdf:rest" : { "@id" : "rdf:nil" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		}
+	},
+	{
+		"@id" : "_:blank07",
+		"rdf:first" : { "@id" : "_:blank16" },
+		"rdf:rest" : { "@id" : "_:blank10" },
+		"@context" : {
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		}
+	},
+	{
+		"@id" : "_:blank08",
+		"rdf:first" : { "@id" : "_:blank17" },
+		"rdf:rest" : { "@id" : "_:blank11" },
+		"@context" : {
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		}
+	},
+	{
+		"@id" : "_:blank09",
+		"rdf:first" : { "@id" : "_:blank18" },
+		"rdf:rest" : { "@id" : "_:blank12" },
+		"@context" : {
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		}
+	},
+	{
+		"@id" : "_:blank10",
+		"rdf:first" : { "@id" : "_:blank21" },
+		"rdf:rest" : { "@id" : "rdf:nil" },
+		"@context" : {
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		}
+	},
+	{
+		"@id" : "_:blank11",
+		"rdf:first" : { "@id" : "_:blank22" },
+		"rdf:rest" : { "@id" : "rdf:nil" },
+		"@context" : {
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		}
+	},
+	{
+		"@id" : "_:blank12",
+		"rdf:first" : { "@id" : "_:blank23" },
+		"rdf:rest" : { "@id" : "rdf:nil" },
+		"@context" : {
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		}
+	},
+	{
+		"@id" : "_:blank13",
+		"owl:unionOf" : { "@id" : "_:blank01" },
+		"@context" : {
+			"owl" : "http://www.w3.org/2002/07/owl#"
+		}
+	},
+	{
+		"@id" : "_:blank14",
+		"owl:unionOf" : { "@id" : "_:blank02" },
+		"@context" : {
+			"owl" : "http://www.w3.org/2002/07/owl#"
+		}
+	},
+	{
+		"@id" : "_:blank15",
+		"owl:unionOf" : { "@id" : "_:blank03" },
+		"@context" : {
+			"owl" : "http://www.w3.org/2002/07/owl#"
+		}
+	},
+	{
+		"@id" : "_:blank16",
+		"sh:class" : { "@id" : "cas:Entity" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"sh" : "http://www.w3.org/ns/shacl#"
+		}
+	},
+	{
+		"@id" : "_:blank17",
+		"sh:class" : { "@id" : "cas:Entity" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"sh" : "http://www.w3.org/ns/shacl#"
+		}
+	},
+	{
+		"@id" : "_:blank18",
+		"sh:class" : { "@id" : "cas:Entity" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"sh" : "http://www.w3.org/ns/shacl#"
+		}
+	},
+	{
+		"@id" : "_:blank19",
+		"sh:class" : { "@id" : "cas:Entity" },
+		"sh:path" : { "@id" : "cas:Provided" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"sh" : "http://www.w3.org/ns/shacl#"
+		}
+	},
+	{
+		"@id" : "_:blank20",
+		"sh:class" : { "@id" : "cas:Entity" },
+		"sh:path" : { "@id" : "cas:Used" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"sh" : "http://www.w3.org/ns/shacl#"
+		}
+	},
+	{
+		"@id" : "_:blank21",
+		"sh:class" : { "@id" : "cas:Relationship" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"sh" : "http://www.w3.org/ns/shacl#"
+		}
+	},
+	{
+		"@id" : "_:blank22",
+		"sh:class" : { "@id" : "cas:Relationship" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"sh" : "http://www.w3.org/ns/shacl#"
+		}
+	},
+	{
+		"@id" : "_:blank23",
+		"sh:class" : { "@id" : "cas:Relationship" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"sh" : "http://www.w3.org/ns/shacl#"
+		}
+	},
+	{
+		"@id" : "_:blank24",
+		"sh:minCount" : {
+			"@type" : "xsd:integer",
+			"@value" : "1"
+		},
+		"sh:path" : { "@id" : "rdfs:comment" },
+		"@context" : {
+			"sh" : "http://www.w3.org/ns/shacl#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : "_:blank25",
+		"sh:minCount" : {
+			"@type" : "xsd:integer",
+			"@value" : "1"
+		},
+		"sh:path" : { "@id" : "rdfs:comment" },
+		"@context" : {
+			"sh" : "http://www.w3.org/ns/shacl#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : "_:blank26",
+		"sh:minCount" : {
+			"@type" : "xsd:integer",
+			"@value" : "1"
+		},
+		"sh:path" : { "@id" : "rdfs:label" },
+		"@context" : {
+			"sh" : "http://www.w3.org/ns/shacl#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : "_:blank27",
+		"sh:minCount" : {
+			"@type" : "xsd:integer",
+			"@value" : "1"
+		},
+		"sh:path" : { "@id" : "rdfs:label" },
+		"@context" : {
+			"sh" : "http://www.w3.org/ns/shacl#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : "_:blank28",
+		"sh:minCount" : {
+			"@type" : "xsd:integer",
+			"@value" : "1"
+		},
+		"sh:path" : { "@id" : "rdfs:label" },
+		"@context" : {
+			"sh" : "http://www.w3.org/ns/shacl#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : "_:blank29",
+		"sh:node" : { "@id" : "cas:linksSource_Shape" },
+		"sh:path" : { "@id" : "cas:linksSource" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"sh" : "http://www.w3.org/ns/shacl#"
+		}
+	},
+	{
+		"@id" : "_:blank30",
+		"sh:node" : { "@id" : "cas:linksTarget_Shape" },
+		"sh:path" : { "@id" : "cas:linksTarget" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"sh" : "http://www.w3.org/ns/shacl#"
+		}
+	}
+]

@@ -21,11 +21,11 @@
 		"Alvarez Rodriguez, José Maria, UC3 Madrid" ,
 		"Arslan, Serkan, INOMIC Solutions GmbH" ,
 		"Balandi, Oguzhan, T-Systems International GmbH" ,
-		"Baleani, Massimo, Collins Aerospace" ,
+		"Baleani, Massimo, RTX Technologies, Collins Aerospace" ,
 		"Bassam, Hamza, oose eG" ,
 		"Beavin, William, The Boeing Company" ,
 		"Bielert, René, Dr.-Ing. h.c. F. Porsche AG" ,
-		"Bleisinger, Oliver, Fraunhofer IESE" ,
+		"Bleisinger, Oliver, Fraunhofer Gesellschaft, Fraunhofer IESE" ,
 		"Bosse, Rolf, Mercedes-Benz AG" ,
 		"Burkhart, Roger, Thematix Partners" ,
 		"Christmann, Simon, :em engineering methods AG" ,
@@ -35,36 +35,37 @@
 		"Esquerra, Fredwilliam, The Boeing Company" ,
 		"Giese, Sarah, PROSTEP AG" ,
 		"Gliniorz, Stefan, Robert Bosch GmbH" ,
-		"Grimm, Prof. Dr. Christoph, Division of Design of Cyber-Physical Systems" ,
+		"Grimm, Prof. Dr. Christoph, RPTU Rheinland-Pfälzische Technische Universität, Department of Computer Science in Kaiserslautern, Division of Design of Cyber-Physical Systems" ,
 		"Grünwald, Dr. Christian, Volkswagen AG" ,
-		"Haarer, Alexander, ATLAS Elektronik" ,
+		"Haarer, Alexander, TKMS Group, ATLAS Elektronik" ,
 		"Hahn, Hank, The Boeing Company" ,
 		"Hall, Kyle, Airbus Operations GmbH" ,
 		"Harms, Manfred, Manfred Harms Consulting" ,
 		"Hashimoto, Atsushi, JAXA Japan Aerospace Exploration Agency" ,
-		"Husung, Dr.-Ing. Stephan, Product and Systems Engineering Group" ,
+		"Husung, Dr.-Ing. Stephan, TU Ilmenau, Department of Mechanical Engineering, Product and Systems Engineering Group" ,
 		"Kaufmann, Uwe, ModelAlchemy Consulting" ,
 		"Kendall, Elisa, Thematix Partners" ,
 		"Kiehlmann, Karsten, Aumovio SE" ,
 		"Kirsch, Michael, :em engineering methods AG" ,
-		"Klaar, Dr. Oliver, ZF Friedrichshafen" ,
+		"Klaar, Dr. Oliver, ZF Group, ZF Friedrichshafen" ,
 		"Kleiner, Dr.-Ing. Sven, :em engineering methods AG" ,
 		"Klöppner, Robert, MTU Aero Engines AG" ,
 		"Koch, Dr. Walter, GfSE Gesellschaft für Systems Engineering" ,
 		"Koethe, Manfred, 88solutions" ,
 		"Krems, Daniel, AVL List" ,
 		"Lehnen, Johannes, :em engineering methods AG" ,
-		"Li, Zirui, Product and Systems Engineering Group" ,
+		"Li, Zirui, TU Ilmenau, Department of Mechanical Engineering, Product and Systems Engineering Group" ,
 		"Martin, James, Anark Corporation Inc." ,
 		"Marvin, Joe, PSG Prime Solutions Group" ,
 		"Mendo, Juan Carlos, The Boeing Company" ,
 		"Meyer, Nico, Volkswagen AG" ,
-		"Mogo Nem, Dr.-Ing. Fabrice, Schaeffler Technologies AG & Co. KG" ,
+		"Mogo Nem, Dr. Fabrice, :em engineering methods AG" ,
+		"Mogo Nem, Dr. Fabrice, Schaeffler AG, Schaeffler Technologies AG & Co. KG" ,
 		"Moreland, Clarence Moe, Modern Technology Solutions, Inc." ,
-		"Mueller, Andreas, Schaeffler Technologies AG & Co. KG" ,
+		"Mueller, Andreas, Schaeffler AG, Schaeffler Technologies AG & Co. KG" ,
 		"Nielsen, Johan, ELYSIUM Inc." ,
 		"Noguchi, Ryan, Aerospace Corp." ,
-		"Psota, Thomas, Fraunhofer IESE" ,
+		"Psota, Thomas, Fraunhofer Gesellschaft, Fraunhofer IESE" ,
 		"Rieger, Dr. Viola, Infineon Technologies AG" ,
 		"Rivett, Pete, Intuitive AI" ,
 		"Sauvage, Michel, Airbus Operations GmbH" ,
@@ -72,16 +73,16 @@
 		"Schopper, Dominik, Mercedes-Benz AG" ,
 		"Spreier, Phil, ELYSIUM Inc." ,
 		"Stoib, Martin, Kromberg & Schubert Automotive GmbH & Co. KG" ,
-		"Stürken, Dr. Momme, Schaeffler Technologies AG & Co. KG" ,
+		"Stürken, Dr. Momme, Schaeffler AG, Schaeffler Technologies AG & Co. KG" ,
 		"Tazir, Nora, prostep ivip Association" ,
-		"Tonelli, Cecilia, Collins Aerospace" ,
+		"Tonelli, Cecilia, RTX Technologies, Collins Aerospace" ,
 		"Weilkiens, Tim, oose eG" ,
 		"Weimer, Henrik, Airbus Operations GmbH" ,
-		"Williams, Mark" ,
+		"Williams, Mark, INCOSE" ,
 		"von Dungern, Dr. Oskar, enso managers GmbH" ,
 		"von Holst, Dr.-Ing. Christian, John Deere GmbH & Co KG"
 		;
-	dcterms:created "02.07.2026 06:30:48" ;
+	dcterms:created "05.07.2026 20:56:56" ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 88solutions
@@ -91,7 +92,7 @@ Copyright (c) 2024-2026 ATLAS Elektronik
 Copyright (c) 2024-2026 The Boeing Company
 Copyright (c) 2024-2026 enso managers GmbH
 Copyright (c) 2024-2026 GfSE Gesellschaft für Systems Engineering
-Copyright (c) 2024 INCOSE
+Copyright (c) 2024-2026 INCOSE
 Copyright (c) 2024-2026 INOMIC Solutions GmbH
 Copyright (c) 2024-2026 Intuitive AI
 Copyright (c) 2024-2026 Manfred Harms Consulting

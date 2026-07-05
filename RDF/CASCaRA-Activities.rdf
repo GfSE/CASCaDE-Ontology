@@ -1,108 +1,106 @@
-# imports: http://www.omg.org/spec/CASCaRA/metamodel/
+<?xml version="1.0" encoding="UTF-8"?>
 
-@prefix : <http://www.omg.org/spec/CASCaRA/ontology/> .
-@prefix arch: <http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/> .
-@prefix cas: <http://www.omg.org/spec/CASCaRA/ontology/CasCara/> .
-@prefix cas-ref: <http://www.omg.org/spec/CASCaRA/ontology/references/> .
-@prefix col: <http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/> .
-@prefix con: <http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ConceptDefinition/> .
-@prefix ctx: <http://www.omg.org/spec/CASCaRA/ontology/ContextElements/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dig: <http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/> .
-@prefix ee: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/> .
-@prefix fld: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/> .
-@prefix man: <http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ManufacturingSupplyChain/> .
-@prefix mec: <http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ProductDesign/MechanicalDesign/> .
-@prefix mech: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/> .
-@prefix mnf: <http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/> .
-@prefix op: <http://www.omg.org/spec/CASCaRA/ontology/Operation/> .
-@prefix org: <http://www.omg.org/spec/CASCaRA/ontology/Organization/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix pro: <http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductLineEngineering/> .
-@prefix proc: <http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/> .
-@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
-@prefix qudt: <http://qudt.org/schema/qudt/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix sw: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/> .
-@prefix sys: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/> .
-@prefix unit: <http://qudt.org/vocab/unit/> .
-@prefix val: <http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/> .
-@prefix ver: <http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<http://www.omg.org/spec/CASCaRA/ontology/>
-	a owl:Ontology ;
-	rdfs:label "Process Ontology" ;
-	dcterms:abstract "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice." ;
-	dcterms:contributor
-		"Alvarez Rodriguez, José Maria, UC3 Madrid" ,
-		"Arslan, Serkan, INOMIC Solutions GmbH" ,
-		"Balandi, Oguzhan, T-Systems International GmbH" ,
-		"Baleani, Massimo, Collins Aerospace" ,
-		"Bassam, Hamza, oose eG" ,
-		"Beavin, William, The Boeing Company" ,
-		"Bielert, René, Dr.-Ing. h.c. F. Porsche AG" ,
-		"Bleisinger, Oliver, Fraunhofer IESE" ,
-		"Bosse, Rolf, Mercedes-Benz AG" ,
-		"Burkhart, Roger, Thematix Partners" ,
-		"Christmann, Simon, :em engineering methods AG" ,
-		"Delpeuch, Ghislain, SSC Services GmbH" ,
-		"Dörr, Sebastian, CONWEAVER GmbH" ,
-		"Engelhardt, Joachim, Sodius Willert" ,
-		"Esquerra, Fredwilliam, The Boeing Company" ,
-		"Giese, Sarah, PROSTEP AG" ,
-		"Gliniorz, Stefan, Robert Bosch GmbH" ,
-		"Grimm, Prof. Dr. Christoph, Division of Design of Cyber-Physical Systems" ,
-		"Grünwald, Dr. Christian, Volkswagen AG" ,
-		"Haarer, Alexander, ATLAS Elektronik" ,
-		"Hahn, Hank, The Boeing Company" ,
-		"Hall, Kyle, Airbus Operations GmbH" ,
-		"Harms, Manfred, Manfred Harms Consulting" ,
-		"Hashimoto, Atsushi, JAXA Japan Aerospace Exploration Agency" ,
-		"Husung, Dr.-Ing. Stephan, Product and Systems Engineering Group" ,
-		"Kaufmann, Uwe, ModelAlchemy Consulting" ,
-		"Kendall, Elisa, Thematix Partners" ,
-		"Kiehlmann, Karsten, Aumovio SE" ,
-		"Kirsch, Michael, :em engineering methods AG" ,
-		"Klaar, Dr. Oliver, ZF Friedrichshafen" ,
-		"Kleiner, Dr.-Ing. Sven, :em engineering methods AG" ,
-		"Klöppner, Robert, MTU Aero Engines AG" ,
-		"Koch, Dr. Walter, GfSE Gesellschaft für Systems Engineering" ,
-		"Koethe, Manfred, 88solutions" ,
-		"Krems, Daniel, AVL List" ,
-		"Lehnen, Johannes, :em engineering methods AG" ,
-		"Li, Zirui, Product and Systems Engineering Group" ,
-		"Martin, James, Anark Corporation Inc." ,
-		"Marvin, Joe, PSG Prime Solutions Group" ,
-		"Mendo, Juan Carlos, The Boeing Company" ,
-		"Meyer, Nico, Volkswagen AG" ,
-		"Mogo Nem, Dr.-Ing. Fabrice, Schaeffler Technologies AG & Co. KG" ,
-		"Moreland, Clarence Moe, Modern Technology Solutions, Inc." ,
-		"Mueller, Andreas, Schaeffler Technologies AG & Co. KG" ,
-		"Nielsen, Johan, ELYSIUM Inc." ,
-		"Noguchi, Ryan, Aerospace Corp." ,
-		"Psota, Thomas, Fraunhofer IESE" ,
-		"Rieger, Dr. Viola, Infineon Technologies AG" ,
-		"Rivett, Pete, Intuitive AI" ,
-		"Sauvage, Michel, Airbus Operations GmbH" ,
-		"Schmied, Torsten, PROSTEP AG" ,
-		"Schopper, Dominik, Mercedes-Benz AG" ,
-		"Spreier, Phil, ELYSIUM Inc." ,
-		"Stoib, Martin, Kromberg & Schubert Automotive GmbH & Co. KG" ,
-		"Stürken, Dr. Momme, Schaeffler Technologies AG & Co. KG" ,
-		"Tazir, Nora, prostep ivip Association" ,
-		"Tonelli, Cecilia, Collins Aerospace" ,
-		"Weilkiens, Tim, oose eG" ,
-		"Weimer, Henrik, Airbus Operations GmbH" ,
-		"Williams, Mark" ,
-		"von Dungern, Dr. Oskar, enso managers GmbH" ,
-		"von Holst, Dr.-Ing. Christian, John Deere GmbH & Co KG"
-		;
-	dcterms:created "02.07.2026 06:30:54" ;
-	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
+<rdf:RDF
+	xmlns="http://www.omg.org/spec/CASCaRA/ontology/"
+	xmlns:arch="http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/"
+	xmlns:cas="http://www.omg.org/spec/CASCaRA/ontology/CasCara/"
+	xmlns:cas-ref="http://www.omg.org/spec/CASCaRA/ontology/references/"
+	xmlns:col="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/"
+	xmlns:con="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ConceptDefinition/"
+	xmlns:ctx="http://www.omg.org/spec/CASCaRA/ontology/ContextElements/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dig="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/"
+	xmlns:ee="http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/"
+	xmlns:fld="http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
+	xmlns:man="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ManufacturingSupplyChain/"
+	xmlns:mech="http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
+	xmlns:mnf="http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/"
+	xmlns:op="http://www.omg.org/spec/CASCaRA/ontology/Operation/"
+	xmlns:org="http://www.omg.org/spec/CASCaRA/ontology/Organization/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:pro="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductLineEngineering/"
+	xmlns:proc="http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/"
+	xmlns:quantitykind="http://qudt.org/vocab/quantitykind/"
+	xmlns:qudt="http://qudt.org/schema/qudt/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:sw="http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/"
+	xmlns:sys="http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/"
+	xmlns:unit="http://qudt.org/vocab/unit/"
+	xmlns:val="http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/"
+	xmlns:ver="http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	
+	<owl:Ontology rdf:about="http://www.omg.org/spec/CASCaRA/ontology/">
+		<rdfs:label>Process Ontology</rdfs:label>
+		<dcterms:abstract>The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\nNote that this version of the ontology is in development and may be subject to modifications without notice.</dcterms:abstract>
+		<dcterms:contributor>Alvarez Rodriguez, José Maria, UC3 Madrid</dcterms:contributor>
+		<dcterms:contributor>Arslan, Serkan, INOMIC Solutions GmbH</dcterms:contributor>
+		<dcterms:contributor>Balandi, Oguzhan, T-Systems International GmbH</dcterms:contributor>
+		<dcterms:contributor>Baleani, Massimo, RTX Technologies, Collins Aerospace</dcterms:contributor>
+		<dcterms:contributor>Bassam, Hamza, oose eG</dcterms:contributor>
+		<dcterms:contributor>Beavin, William, The Boeing Company</dcterms:contributor>
+		<dcterms:contributor>Bielert, René, Dr.-Ing. h.c. F. Porsche AG</dcterms:contributor>
+		<dcterms:contributor>Bleisinger, Oliver, Fraunhofer Gesellschaft, Fraunhofer IESE</dcterms:contributor>
+		<dcterms:contributor>Bosse, Rolf, Mercedes-Benz AG</dcterms:contributor>
+		<dcterms:contributor>Burkhart, Roger, Thematix Partners</dcterms:contributor>
+		<dcterms:contributor>Christmann, Simon, :em engineering methods AG</dcterms:contributor>
+		<dcterms:contributor>Delpeuch, Ghislain, SSC Services GmbH</dcterms:contributor>
+		<dcterms:contributor>Dörr, Sebastian, CONWEAVER GmbH</dcterms:contributor>
+		<dcterms:contributor>Engelhardt, Joachim, Sodius Willert</dcterms:contributor>
+		<dcterms:contributor>Esquerra, Fredwilliam, The Boeing Company</dcterms:contributor>
+		<dcterms:contributor>Giese, Sarah, PROSTEP AG</dcterms:contributor>
+		<dcterms:contributor>Gliniorz, Stefan, Robert Bosch GmbH</dcterms:contributor>
+		<dcterms:contributor>Grimm, Prof. Dr. Christoph, RPTU Rheinland-Pfälzische Technische Universität, Department of Computer Science in Kaiserslautern, Division of Design of Cyber-Physical Systems</dcterms:contributor>
+		<dcterms:contributor>Grünwald, Dr. Christian, Volkswagen AG</dcterms:contributor>
+		<dcterms:contributor>Haarer, Alexander, TKMS Group, ATLAS Elektronik</dcterms:contributor>
+		<dcterms:contributor>Hahn, Hank, The Boeing Company</dcterms:contributor>
+		<dcterms:contributor>Hall, Kyle, Airbus Operations GmbH</dcterms:contributor>
+		<dcterms:contributor>Harms, Manfred, Manfred Harms Consulting</dcterms:contributor>
+		<dcterms:contributor>Hashimoto, Atsushi, JAXA Japan Aerospace Exploration Agency</dcterms:contributor>
+		<dcterms:contributor>Husung, Dr.-Ing. Stephan, TU Ilmenau, Department of Mechanical Engineering, Product and Systems Engineering Group</dcterms:contributor>
+		<dcterms:contributor>Kaufmann, Uwe, ModelAlchemy Consulting</dcterms:contributor>
+		<dcterms:contributor>Kendall, Elisa, Thematix Partners</dcterms:contributor>
+		<dcterms:contributor>Kiehlmann, Karsten, Aumovio SE</dcterms:contributor>
+		<dcterms:contributor>Kirsch, Michael, :em engineering methods AG</dcterms:contributor>
+		<dcterms:contributor>Klaar, Dr. Oliver, ZF Group, ZF Friedrichshafen</dcterms:contributor>
+		<dcterms:contributor>Kleiner, Dr.-Ing. Sven, :em engineering methods AG</dcterms:contributor>
+		<dcterms:contributor>Klöppner, Robert, MTU Aero Engines AG</dcterms:contributor>
+		<dcterms:contributor>Koch, Dr. Walter, GfSE Gesellschaft für Systems Engineering</dcterms:contributor>
+		<dcterms:contributor>Koethe, Manfred, 88solutions</dcterms:contributor>
+		<dcterms:contributor>Krems, Daniel, AVL List</dcterms:contributor>
+		<dcterms:contributor>Lehnen, Johannes, :em engineering methods AG</dcterms:contributor>
+		<dcterms:contributor>Li, Zirui, TU Ilmenau, Department of Mechanical Engineering, Product and Systems Engineering Group</dcterms:contributor>
+		<dcterms:contributor>Martin, James, Anark Corporation Inc.</dcterms:contributor>
+		<dcterms:contributor>Marvin, Joe, PSG Prime Solutions Group</dcterms:contributor>
+		<dcterms:contributor>Mendo, Juan Carlos, The Boeing Company</dcterms:contributor>
+		<dcterms:contributor>Meyer, Nico, Volkswagen AG</dcterms:contributor>
+		<dcterms:contributor>Mogo Nem, Dr. Fabrice, :em engineering methods AG</dcterms:contributor>
+		<dcterms:contributor>Mogo Nem, Dr. Fabrice, Schaeffler AG, Schaeffler Technologies AG &amp; Co. KG</dcterms:contributor>
+		<dcterms:contributor>Moreland, Clarence Moe, Modern Technology Solutions, Inc.</dcterms:contributor>
+		<dcterms:contributor>Mueller, Andreas, Schaeffler AG, Schaeffler Technologies AG &amp; Co. KG</dcterms:contributor>
+		<dcterms:contributor>Nielsen, Johan, ELYSIUM Inc.</dcterms:contributor>
+		<dcterms:contributor>Noguchi, Ryan, Aerospace Corp.</dcterms:contributor>
+		<dcterms:contributor>Psota, Thomas, Fraunhofer Gesellschaft, Fraunhofer IESE</dcterms:contributor>
+		<dcterms:contributor>Rieger, Dr. Viola, Infineon Technologies AG</dcterms:contributor>
+		<dcterms:contributor>Rivett, Pete, Intuitive AI</dcterms:contributor>
+		<dcterms:contributor>Sauvage, Michel, Airbus Operations GmbH</dcterms:contributor>
+		<dcterms:contributor>Schmied, Torsten, PROSTEP AG</dcterms:contributor>
+		<dcterms:contributor>Schopper, Dominik, Mercedes-Benz AG</dcterms:contributor>
+		<dcterms:contributor>Spreier, Phil, ELYSIUM Inc.</dcterms:contributor>
+		<dcterms:contributor>Stoib, Martin, Kromberg &amp; Schubert Automotive GmbH &amp; Co. KG</dcterms:contributor>
+		<dcterms:contributor>Stürken, Dr. Momme, Schaeffler AG, Schaeffler Technologies AG &amp; Co. KG</dcterms:contributor>
+		<dcterms:contributor>Tazir, Nora, prostep ivip Association</dcterms:contributor>
+		<dcterms:contributor>Tonelli, Cecilia, RTX Technologies, Collins Aerospace</dcterms:contributor>
+		<dcterms:contributor>Weilkiens, Tim, oose eG</dcterms:contributor>
+		<dcterms:contributor>Weimer, Henrik, Airbus Operations GmbH</dcterms:contributor>
+		<dcterms:contributor>Williams, Mark, INCOSE</dcterms:contributor>
+		<dcterms:contributor>von Dungern, Dr. Oskar, enso managers GmbH</dcterms:contributor>
+		<dcterms:contributor>von Holst, Dr.-Ing. Christian, John Deere GmbH &amp; Co KG</dcterms:contributor>
+		<dcterms:created>05.07.2026 20:56:56</dcterms:created>
+		<dcterms:license>CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 88solutions
 Copyright (c) 2024-2026 Aerospace Corp.
@@ -111,7 +109,7 @@ Copyright (c) 2024-2026 ATLAS Elektronik
 Copyright (c) 2024-2026 The Boeing Company
 Copyright (c) 2024-2026 enso managers GmbH
 Copyright (c) 2024-2026 GfSE Gesellschaft für Systems Engineering
-Copyright (c) 2024 INCOSE
+Copyright (c) 2024-2026 INCOSE
 Copyright (c) 2024-2026 INOMIC Solutions GmbH
 Copyright (c) 2024-2026 Intuitive AI
 Copyright (c) 2024-2026 Manfred Harms Consulting
@@ -124,7 +122,7 @@ Copyright (c) 2024-2026 prostep ivip Association
 Copyright (c) 2024-2026 PSG Prime Solutions Group
 Copyright (c) 2024-2026 Division of Design of Cyber-Physical Systems
 Copyright (c) 2024-2026 Collins Aerospace
-Copyright (c) 2024-2026 Schaeffler Technologies AG & Co. KG
+Copyright (c) 2024-2026 Schaeffler Technologies AG &amp; Co. KG
 Copyright (c) 2024-2026 Thematix Partners
 Copyright (c) 2024-2026 TU Hamburg-Harburg
 Copyright (c) 2024-2026 Product and Systems Engineering Group
@@ -145,1054 +143,858 @@ Copyright (c) 2019-2021 Fraunhofer IESE
 Copyright (c) 2026-2026 Infineon Technologies AG
 Copyright (c) 2025-2026 INOMIC Solutions GmbH
 Copyright (c) 2025-2026 JAXA Japan Aerospace Exploration Agency
-Copyright (c) 2021-2024 John Deere GmbH & Co KG
-Copyright (c) 2019-2021 Kromberg & Schubert Automotive GmbH & Co. KG
+Copyright (c) 2021-2024 John Deere GmbH &amp; Co KG
+Copyright (c) 2019-2021 Kromberg &amp; Schubert Automotive GmbH &amp; Co. KG
 Copyright (c) 2019-2026 Mercedes-Benz AG
 Copyright (c) 2024-2026 MTU Aero Engines AG
 Copyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche AG
 Copyright (c) 2019-2026 PROSTEP AG
 Copyright (c) 2025-2026 Collins Aerospace
-Copyright (c) 2019-2024 Schaeffler Technologies AG & Co. KG
+Copyright (c) 2019-2024 Schaeffler Technologies AG &amp; Co. KG
 Copyright (c) 2025-2026 Sodius Willert
 Copyright (c) 2019-2020 SSC Services GmbH
 Copyright (c) 2026-2026 T-Systems International GmbH
 Copyright (c) 2022-2026 Volkswagen AG
 Copyright (c) 2019-2026 ZF Friedrichshafen
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
-https://opensource.org/licenses/MIT""" ;
-	dcterms:title "CASCaRA Process Ontology" ;
-	owl:imports <http://www.omg.org/spec/CASCaRA/metamodel/> ;
-	owl:versionInfo "1.0" ;
-	.
-
-:CasCara
-	a owl:Class ;
-	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
-	rdfs:label "CASCaRA"@en ;
-	dcterms:modified "2025-08-02T18:06:47Z"^^xsd:dateTime ;
-	skos:definition "Collaborative Artifact, Specification, Context and Resource Access"@en ;
-	.
-
-cas:CoSimulationEarlyRequirementsVV
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Co-Simulation & early Requirements V&V"@en ,
-		"Software Engineer V&V/Simulation Egineer"@de
-		;
-	skos:definition "Establish method and tool to Co-simulate systems, assembling suppliers' sub-systems into a systems integration model, used to perform early design and requirements Verification & Validation. Incorporate Supplier inputs into Safety analysis."@en ;
-	.
-
-cas:Collaborative3dMbdElectricalAndSoftwareDesignCoDevelopment
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Collaborative 3D MBD, Electrical and Software Design Co-Development"@en ,
-		"Mechanical Design Engineer"@de
-		;
-	skos:definition "Establish method and tool to collaboratively develop and manage 3D MBD and E-BOM connected to the Requirements, Functional and Logical Archtecture (L-BOM)"@en ;
-	.
-
-cas:CollaborativeArchitectureDesignCoDevelopment
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Collaborative Architecture Design Co-Development "@en ,
-		"Systems Engineer. Design Engineer. "@de
-		;
-	cas:Provided
-		arch:Function ,
-		arch:SystemRequirement ,
-		sys:ComponentConnection ,
-		sys:ComponentInterface ,
-		sys:ComponentState ,
-		sys:Deviation ,
-		sys:SystemComponent
-		;
-	skos:definition "Establish and maintain a method and tool to collaboratively define a system and sub-system architecture & interfaces where supplier provided work products are integrated. Including mission, operational architecture, functional architecture, logical architecture and interface (ICD) definition."@en ;
-	.
-
-cas:CollaborativeDigitalProductQualityManagementApqp
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Collaborative Digital Product Quality Management (APQP)"@en ,
-		"QA Engineer, Production Engineer "@de
-		;
-	skos:definition "Establish process and tool for the  creation, definition, retention of APQP (Advanced Product Quality Planning ) and PPAP (Production part approval process) elements, following indutsry standards such as AS9145."@en ;
-	.
-
-cas:CollaborativeManufacturingEngineering
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Collaborative Manufacturing Engineering"@en ,
-		"Industrial Engineer. Production Engineer"@de
-		;
-	skos:definition "Establish process and tool for Collabrative Manufacturing MBD: M-BOM, manufacturing process planning and model based work instruction MBI, connected to the 3D MBD"@en ;
-	.
-
-cas:CollaborativeProductRequirementsManagement
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label "Collaborative Product Requirements Management"@en ;
-	cas:Provided
-		arch:Requirement ,
-		arch:StakeholderRequirement
-		;
-	cas:Used
-		org:Role ,
-		arch:UseCase
-		;
-	skos:definition 'Establish and maintain a requirements management process in common with the supplier. Approve requirements specifications ("model based SCD") , get change alerts, manage change requests & releases between OEM and supplier'@en ;
-	.
-
-cas:LotarLongTermArchivingAndRetrieval
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Engineer, future program"@de ,
-		"LOTAR Long-term Archiving and Retrieval"@en
-		;
-	skos:definition "I want to preserve a baseline of system informationt for later retrieval and reuse. Reference: https://lotar-international.org/"@en ;
-	.
-
-cas:ModelBasedAcquisition
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Defense acquirer Defense contratctor"@de ,
-		"Model-based Acquisition"@en
-		;
-	skos:definition "Reference: https://www.omg.org/communities/model-based-acquisition-user-community.htm"@en ;
-	.
-
-:CollaborationUseCases
-	a owl:Class ;
-	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
-	rdfs:label "Collaboration Use-Cases"@en ;
-	dcterms:modified "2023-10-22T08:44:10Z"^^xsd:dateTime ;
-	.
-
-:ConceptDefinition
-	a owl:Class ;
-	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
-	rdfs:label
-		"Concept definition"@en ,
-		"Konzeptdefinition"@de
-		;
-	dcterms:modified "2022-02-18T11:17:54Z"^^xsd:dateTime ;
-	skos:definition """In conceptual design, new products or systems are defined through requirements and specified through a functional structure in mechanical, electrics/electronics, and software domains. A logical structure specifies the future product architecture in order to implement the specified functions.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &apos;Software&apos;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nThe software is provided &apos;as is&apos;, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
+https://opensource.org/licenses/MIT</dcterms:license>
+		<dcterms:title>CASCaRA Process Ontology</dcterms:title>
+		<owl:imports rdf:resource="http://www.omg.org/spec/CASCaRA/metamodel/"/>
+		<owl:versionInfo>1.0</owl:versionInfo>
+	</owl:Ontology>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/CasCara">
+		<rdfs:subClassOf rdf:resource="http://www.omg.org/spec/CASCaRA/metamodel/Entity"/>
+		<rdfs:label xml:lang="en">CASCaRA</rdfs:label>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2025-08-02T18:06:47Z</dcterms:modified>
+		<skos:definition xml:lang="en">Collaborative Artifact, Specification, Context and Resource Access</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&cas;CoSimulationEarlyRequirementsVV">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Co-Simulation &amp; early Requirements V&amp;V</rdfs:label>
+		<rdfs:label xml:lang="de">Software Engineer V&amp;V/Simulation Egineer</rdfs:label>
+		<skos:definition xml:lang="en">Establish method and tool to Co-simulate systems, assembling suppliers&apos; sub-systems into a systems integration model, used to perform early design and requirements Verification &amp; Validation. Incorporate Supplier inputs into Safety analysis.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&cas;Collaborative3dMbdElectricalAndSoftwareDesignCoDevelopment">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Collaborative 3D MBD, Electrical and Software Design Co-Development</rdfs:label>
+		<rdfs:label xml:lang="de">Mechanical Design Engineer</rdfs:label>
+		<skos:definition xml:lang="en">Establish method and tool to collaboratively develop and manage 3D MBD and E-BOM connected to the Requirements, Functional and Logical Archtecture (L-BOM)</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&cas;CollaborativeArchitectureDesignCoDevelopment">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Collaborative Architecture Design Co-Development</rdfs:label>
+		<rdfs:label xml:lang="de">Systems Engineer. Design Engineer.</rdfs:label>
+		<cas:provides rdf:resource="&arch;Function"/>
+		<cas:provides rdf:resource="&arch;SystemRequirement"/>
+		<cas:provides rdf:resource="&sys;ComponentConnection"/>
+		<cas:provides rdf:resource="&sys;ComponentInterface"/>
+		<cas:provides rdf:resource="&sys;ComponentState"/>
+		<cas:provides rdf:resource="&sys;Deviation"/>
+		<cas:provides rdf:resource="&sys;SystemComponent"/>
+		<skos:definition xml:lang="en">Establish and maintain a method and tool to collaboratively define a system and sub-system architecture &amp; interfaces where supplier provided work products are integrated. Including mission, operational architecture, functional architecture, logical architecture and interface (ICD) definition.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&cas;CollaborativeDigitalProductQualityManagementApqp">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Collaborative Digital Product Quality Management (APQP)</rdfs:label>
+		<rdfs:label xml:lang="de">QA Engineer, Production Engineer</rdfs:label>
+		<skos:definition xml:lang="en">Establish process and tool for the  creation, definition, retention of APQP (Advanced Product Quality Planning ) and PPAP (Production part approval process) elements, following indutsry standards such as AS9145.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&cas;CollaborativeManufacturingEngineering">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Collaborative Manufacturing Engineering</rdfs:label>
+		<rdfs:label xml:lang="de">Industrial Engineer. Production Engineer</rdfs:label>
+		<skos:definition xml:lang="en">Establish process and tool for Collabrative Manufacturing MBD: M-BOM, manufacturing process planning and model based work instruction MBI, connected to the 3D MBD</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&cas;CollaborativeProductRequirementsManagement">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Collaborative Product Requirements Management</rdfs:label>
+		<cas:provides rdf:resource="&arch;Requirement"/>
+		<cas:provides rdf:resource="&arch;StakeholderRequirement"/>
+		<cas:uses rdf:resource="&org;Role"/>
+		<cas:uses rdf:resource="&arch;UseCase"/>
+		<skos:definition xml:lang="en">Establish and maintain a requirements management process in common with the supplier. Approve requirements specifications (&quot;model based SCD&quot;) , get change alerts, manage change requests &amp; releases between OEM and supplier</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&cas;LotarLongTermArchivingAndRetrieval">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="de">Engineer, future program</rdfs:label>
+		<rdfs:label xml:lang="en">LOTAR Long-term Archiving and Retrieval</rdfs:label>
+		<skos:definition xml:lang="en">I want to preserve a baseline of system informationt for later retrieval and reuse. Reference: https://lotar-international.org/</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&cas;ModelBasedAcquisition">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="de">Defense acquirer Defense contratctor</rdfs:label>
+		<rdfs:label xml:lang="en">Model-based Acquisition</rdfs:label>
+		<skos:definition xml:lang="en">Reference: https://www.omg.org/communities/model-based-acquisition-user-community.htm</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/CollaborationUseCases">
+		<rdfs:subClassOf rdf:resource="http://www.omg.org/spec/CASCaRA/metamodel/Entity"/>
+		<rdfs:label xml:lang="en">Collaboration Use-Cases</rdfs:label>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2023-10-22T08:44:10Z</dcterms:modified>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/ConceptDefinition">
+		<rdfs:subClassOf rdf:resource="http://www.omg.org/spec/CASCaRA/metamodel/Entity"/>
+		<rdfs:label xml:lang="en">Concept definition</rdfs:label>
+		<rdfs:label xml:lang="de">Konzeptdefinition</rdfs:label>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2022-02-18T11:17:54Z</dcterms:modified>
+		<skos:definition xml:lang="en">In conceptual design, new products or systems are defined through requirements and specified through a functional structure in mechanical, electrics/electronics, and software domains. A logical structure specifies the future product architecture in order to implement the specified functions.
 Besides new products, existing products may be changed or modified significantly to better comply with customer needs, or to attract new customers. Eventually, the product may be changed or adopted to comply to new standards, regulations or laws.
 Conceptual design is usually performed at a high abstraction level and low level of detail, using parameter studies, system models, and rough geometry, if any.
-For the Digital Data Package, model-based methods and data for product conceptual design are assumed."""@en ;
-	.
-
-:DigitalDataPackage
-	a owl:Class ;
-	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
-	rdfs:label "Digital Data Package"@en ;
-	dcterms:modified "2022-03-23T05:20:38Z"^^xsd:dateTime ;
-	.
-
-col:LongTermArchiving
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Langzeitarchivierung"@de ,
-		"Long-Term Archiving"@en
-		;
-	cas:Used
-		proc:JoiningProcess ,
-		arch:Function ,
-		arch:StakeholderRequirement ,
-		arch:SystemRequirement ,
-		mech:Body ,
-		mech:JoiningElement ,
-		mech:KinematicJoint ,
-		mech:KinematicMechanism ,
-		mech:Material ,
-		mech:MechanicalComponent ,
-		mech:ModelAnnotation ,
-		sys:ComponentConnection ,
-		sys:ComponentInterface ,
-		sys:ComponentState ,
-		sys:Deviation ,
-		sys:SystemComponent ,
-		val:Displacement ,
-		val:ValidationResult ,
-		val:ValidationRun ,
-		ver:VerificationResult ,
-		ver:VerificationRun
-		;
-	skos:definition "For long-term archiving, all product information must be configured and stored in a retrievable way. Product information includes domain-specifc models, relations between models and model entities, and meta-data about the documents and models."@en ;
-	.
-
-man:PackagingLogistics
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Packaging & Logistics"@en ,
-		"Verpackung & Logistik"@de
-		;
-	cas:Used
-		proc:JoiningProcess ,
-		fld:HydraulicPneumaticConnection ,
-		fld:HydraulicPneumaticPort ,
-		mech:Body ,
-		mech:JoiningElement ,
-		mech:Material ,
-		mech:MechanicalComponent
-		;
-	skos:definition "Includes the definition of all kinds of packaging and transport equipment to ensure a product or its components will be supplied to their destination safely."@en ;
-	.
-
-man:PartsManufacturing
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Parts Manufacturing"@en ,
-		"Teilefertigung"@de
-		;
-	cas:Used
-		mnf:ManufacturingEquipmentComponent ,
-		proc:ManufacturingOperation ,
-		mech:BendingSpecification ,
-		mech:Body ,
-		mech:Cleanliness ,
-		mech:Datum ,
-		mech:DimensionalSize ,
-		mech:Gearing ,
-		mech:GeometricTolerance ,
-		mech:HeatTreatedArea ,
-		mech:Hole ,
-		mech:MarkingLabeling ,
-		mech:Material ,
-		mech:MechanicalComponent ,
-		mech:ModelView ,
-		mech:PaintedCoatedArea ,
-		mech:SurfaceTexture ,
-		mech:Thread
-		;
-	skos:definition "Manufacturing of single parts using a variety of production processes and methods, each with specific sets of data, such as CNC programs, bending specification, holes specifications, joining features, etc."@en ;
-	.
-
-man:ProductAssembly
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Montage"@de ,
-		"Product Assembly"@en
-		;
-	cas:Used
-		mnf:ManufacturingEquipmentComponent ,
-		proc:JoiningProcess ,
-		proc:ManufacturingOperation ,
-		mech:Body ,
-		mech:Datum ,
-		mech:DimensionalSize ,
-		mech:GeometricTolerance ,
-		mech:JoiningElement ,
-		mech:KinematicJoint ,
-		mech:KinematicMechanism ,
-		mech:Material ,
-		mech:MechanicalComponent ,
-		mech:ModelView ,
-		mech:SurfaceTexture
-		;
-	skos:definition "Assembly of components or products from single parts or sub-components according to a production plan, using all kinds of joinig and bonding."@en ;
-	.
-
-man:QualityInspection
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Quality Inspection"@en ,
-		"Qualitätskontrolle"@de
-		;
-	cas:Used
-		mnf:ControlPlan ,
-		proc:JoiningProcess ,
-		mech:Body ,
-		mech:JoiningElement ,
-		mech:MechanicalComponent ,
-		ver:VerificationCharacteristic ,
-		ver:VerificationPlan ,
-		ver:VerificationResource
-		;
-	skos:definition "Includes the inspection of single parts, components or products during or after the manufacturing process, as well as the documentation of inspection results."@en ;
-	.
-
-col:Procurement
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Beschaffung"@de ,
-		"Procurement"@en
-		;
-	cas:Used
-		proc:JoiningProcess ,
-		ee:ElectricElectronicComponent ,
-		ee:ElectricElectronicConnection ,
-		ee:ElectricElectronicPort ,
-		mech:BendingSpecification ,
-		mech:Body ,
-		mech:Cleanliness ,
-		mech:Datum ,
-		mech:DimensionalSize ,
-		mech:Gearing ,
-		mech:GeometricTolerance ,
-		mech:HeatTreatedArea ,
-		mech:Hole ,
-		mech:JoiningElement ,
-		mech:MarkingLabeling ,
-		mech:Material ,
-		mech:MechanicalComponent ,
-		mech:PaintedCoatedArea ,
-		mech:SurfaceTexture ,
-		mech:Thread
-		;
-	skos:definition "Communication between procurement and suppliers in the bidding and iquiry phase. Supports the OMG Model-Based Aqcuisition initiative."@en ;
-	.
-
-con:BusinessOrMissionAnalysis
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Business or Mission Analysis"@en ,
-		"Geschäfts- oder Einsatzanalyse"@de
-		;
-	cas:Provided
-		org:Role ,
-		arch:UseCase
-		;
-	skos:definition """Product Planning is the ongoing process of identifying and articulating market requirements that define a product's feature set. Product planning serves as the basis for decisions about price, distribution and promotion.
+For the Digital Data Package, model-based methods and data for product conceptual design are assumed.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage">
+		<rdfs:subClassOf rdf:resource="http://www.omg.org/spec/CASCaRA/metamodel/Entity"/>
+		<rdfs:label xml:lang="en">Digital Data Package</rdfs:label>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2022-03-23T05:20:38Z</dcterms:modified>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&col;LongTermArchiving">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="de">Langzeitarchivierung</rdfs:label>
+		<rdfs:label xml:lang="en">Long-Term Archiving</rdfs:label>
+		<cas:uses rdf:resource="&proc;JoiningProcess"/>
+		<cas:uses rdf:resource="&arch;Function"/>
+		<cas:uses rdf:resource="&arch;StakeholderRequirement"/>
+		<cas:uses rdf:resource="&arch;SystemRequirement"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;JoiningElement"/>
+		<cas:uses rdf:resource="&mech;KinematicJoint"/>
+		<cas:uses rdf:resource="&mech;KinematicMechanism"/>
+		<cas:uses rdf:resource="&mech;Material"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&mech;ModelAnnotation"/>
+		<cas:uses rdf:resource="&sys;ComponentConnection"/>
+		<cas:uses rdf:resource="&sys;ComponentInterface"/>
+		<cas:uses rdf:resource="&sys;ComponentState"/>
+		<cas:uses rdf:resource="&sys;Deviation"/>
+		<cas:uses rdf:resource="&sys;SystemComponent"/>
+		<cas:uses rdf:resource="&val;Displacement"/>
+		<cas:uses rdf:resource="&val;ValidationResult"/>
+		<cas:uses rdf:resource="&val;ValidationRun"/>
+		<cas:uses rdf:resource="&ver;VerificationResult"/>
+		<cas:uses rdf:resource="&ver;VerificationRun"/>
+		<skos:definition xml:lang="en">For long-term archiving, all product information must be configured and stored in a retrievable way. Product information includes domain-specifc models, relations between models and model entities, and meta-data about the documents and models.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&man;PackagingLogistics">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Packaging &amp; Logistics</rdfs:label>
+		<rdfs:label xml:lang="de">Verpackung &amp; Logistik</rdfs:label>
+		<cas:uses rdf:resource="&proc;JoiningProcess"/>
+		<cas:uses rdf:resource="&fld;HydraulicPneumaticConnection"/>
+		<cas:uses rdf:resource="&fld;HydraulicPneumaticPort"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;JoiningElement"/>
+		<cas:uses rdf:resource="&mech;Material"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<skos:definition xml:lang="en">Includes the definition of all kinds of packaging and transport equipment to ensure a product or its components will be supplied to their destination safely.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&man;PartsManufacturing">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Parts Manufacturing</rdfs:label>
+		<rdfs:label xml:lang="de">Teilefertigung</rdfs:label>
+		<cas:uses rdf:resource="&mnf;ManufacturingEquipmentComponent"/>
+		<cas:uses rdf:resource="&proc;ManufacturingOperation"/>
+		<cas:uses rdf:resource="&mech;BendingSpecification"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;Cleanliness"/>
+		<cas:uses rdf:resource="&mech;Datum"/>
+		<cas:uses rdf:resource="&mech;DimensionalSize"/>
+		<cas:uses rdf:resource="&mech;Gearing"/>
+		<cas:uses rdf:resource="&mech;GeometricTolerance"/>
+		<cas:uses rdf:resource="&mech;HeatTreatedArea"/>
+		<cas:uses rdf:resource="&mech;Hole"/>
+		<cas:uses rdf:resource="&mech;MarkingLabeling"/>
+		<cas:uses rdf:resource="&mech;Material"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&mech;ModelView"/>
+		<cas:uses rdf:resource="&mech;PaintedCoatedArea"/>
+		<cas:uses rdf:resource="&mech;SurfaceTexture"/>
+		<cas:uses rdf:resource="&mech;Thread"/>
+		<skos:definition xml:lang="en">Manufacturing of single parts using a variety of production processes and methods, each with specific sets of data, such as CNC programs, bending specification, holes specifications, joining features, etc.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&man;ProductAssembly">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="de">Montage</rdfs:label>
+		<rdfs:label xml:lang="en">Product Assembly</rdfs:label>
+		<cas:uses rdf:resource="&mnf;ManufacturingEquipmentComponent"/>
+		<cas:uses rdf:resource="&proc;JoiningProcess"/>
+		<cas:uses rdf:resource="&proc;ManufacturingOperation"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;Datum"/>
+		<cas:uses rdf:resource="&mech;DimensionalSize"/>
+		<cas:uses rdf:resource="&mech;GeometricTolerance"/>
+		<cas:uses rdf:resource="&mech;JoiningElement"/>
+		<cas:uses rdf:resource="&mech;KinematicJoint"/>
+		<cas:uses rdf:resource="&mech;KinematicMechanism"/>
+		<cas:uses rdf:resource="&mech;Material"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&mech;ModelView"/>
+		<cas:uses rdf:resource="&mech;SurfaceTexture"/>
+		<skos:definition xml:lang="en">Assembly of components or products from single parts or sub-components according to a production plan, using all kinds of joinig and bonding.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&man;QualityInspection">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Quality Inspection</rdfs:label>
+		<rdfs:label xml:lang="de">Qualitätskontrolle</rdfs:label>
+		<cas:uses rdf:resource="&mnf;ControlPlan"/>
+		<cas:uses rdf:resource="&proc;JoiningProcess"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;JoiningElement"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&ver;VerificationCharacteristic"/>
+		<cas:uses rdf:resource="&ver;VerificationPlan"/>
+		<cas:uses rdf:resource="&ver;VerificationResource"/>
+		<skos:definition xml:lang="en">Includes the inspection of single parts, components or products during or after the manufacturing process, as well as the documentation of inspection results.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&col;Procurement">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="de">Beschaffung</rdfs:label>
+		<rdfs:label xml:lang="en">Procurement</rdfs:label>
+		<cas:uses rdf:resource="&proc;JoiningProcess"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicComponent"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicConnection"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicPort"/>
+		<cas:uses rdf:resource="&mech;BendingSpecification"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;Cleanliness"/>
+		<cas:uses rdf:resource="&mech;Datum"/>
+		<cas:uses rdf:resource="&mech;DimensionalSize"/>
+		<cas:uses rdf:resource="&mech;Gearing"/>
+		<cas:uses rdf:resource="&mech;GeometricTolerance"/>
+		<cas:uses rdf:resource="&mech;HeatTreatedArea"/>
+		<cas:uses rdf:resource="&mech;Hole"/>
+		<cas:uses rdf:resource="&mech;JoiningElement"/>
+		<cas:uses rdf:resource="&mech;MarkingLabeling"/>
+		<cas:uses rdf:resource="&mech;Material"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&mech;PaintedCoatedArea"/>
+		<cas:uses rdf:resource="&mech;SurfaceTexture"/>
+		<cas:uses rdf:resource="&mech;Thread"/>
+		<skos:definition xml:lang="en">Communication between procurement and suppliers in the bidding and iquiry phase. Supports the OMG Model-Based Aqcuisition initiative.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&con;AnalyzeDesignFailureModesAndEffectsDFmea">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Analyze design failure modes and effects (D-FMEA)</rdfs:label>
+		<rdfs:label xml:lang="de">Fehlermöglichkeiten und -einfluss analysieren (D-FMEA)</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&con;AssessFunctionalSafety">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Assess functional safety</rdfs:label>
+		<rdfs:label xml:lang="de">Funktionale Sicherheit bewerten</rdfs:label>
+		<cas:provides rdf:resource="&arch;Function"/>
+		<cas:provides rdf:resource="&sys;ComponentConnection"/>
+		<cas:provides rdf:resource="&sys;ComponentInterface"/>
+		<cas:provides rdf:resource="&sys;ComponentState"/>
+		<cas:provides rdf:resource="&sys;Deviation"/>
+		<cas:provides rdf:resource="&sys;SystemComponent"/>
+		<cas:uses rdf:resource="&org;Role"/>
+		<cas:uses rdf:resource="&arch;Function"/>
+		<cas:uses rdf:resource="&arch;SystemRequirement"/>
+		<cas:uses rdf:resource="&arch;UseCase"/>
+		<cas:uses rdf:resource="&sys;ComponentConnection"/>
+		<cas:uses rdf:resource="&sys;ComponentInterface"/>
+		<cas:uses rdf:resource="&sys;ComponentState"/>
+		<cas:uses rdf:resource="&sys;SystemComponent"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&con;BusinessOrMissionAnalysis">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Business or Mission Analysis</rdfs:label>
+		<rdfs:label xml:lang="de">Geschäfts- oder Einsatzanalyse</rdfs:label>
+		<cas:provides rdf:resource="&org;Role"/>
+		<cas:provides rdf:resource="&arch;UseCase"/>
+		<skos:definition xml:lang="en">Product Planning is the ongoing process of identifying and articulating market requirements that define a product&apos;s feature set. Product planning serves as the basis for decisions about price, distribution and promotion.
 Product planning is the process of creating a product idea and following through on it until the product is introduced to the market. Additionally, a small company must have an exit strategy for its product in case the product does not sell.
 Product planning entails managing the product throughout its life using various marketing strategies, including product extensions or improvements, increased distribution, price changes and promotions.
 
 Also includes the identification of relevant legal requirements as well as customs and tax regulations applicable to the product and the respective target markets.
-Description based on: https://en.wikipedia.org/wiki/Product_planning"""@en ;
-	.
-
-con:FunctionalSafety
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Functional Safety"@en ,
-		"Funktionale Sicherheit"@de
-		;
-	cas:Provided
-		arch:Function ,
-		sys:ComponentConnection ,
-		sys:ComponentInterface ,
-		sys:ComponentState ,
-		sys:Deviation ,
-		sys:SystemComponent
-		;
-	cas:Used
-		org:Role ,
-		arch:Function ,
-		arch:SystemRequirement ,
-		arch:UseCase ,
-		sys:ComponentConnection ,
-		sys:ComponentInterface ,
-		sys:ComponentState ,
-		sys:SystemComponent
-		;
-	.
-
-con:RequirementsEngineering
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Anforderungsmanagement"@de ,
-		"Requirements Engineering"@en
-		;
-	cas:Provided arch:Requirement ;
-	cas:Used
-		org:Role ,
-		arch:UseCase
-		;
-	skos:definition """Requirements engineering is the process of defining, eliciting, documenting, and maintaining requirements in the engineering design process.
-Description based on: https://en.wikipedia.org/wiki/Requirements_engineering"""@en ;
-	.
-
-con:SystemsArchitecture
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Systemarchitektur"@de ,
-		"Systems Architecture"@en
-		;
-	cas:Provided
-		arch:Function ,
-		sys:ComponentConnection ,
-		sys:ComponentInterface ,
-		sys:ComponentState ,
-		sys:Deviation ,
-		sys:SystemComponent
-		;
-	cas:Used
-		org:Role ,
-		arch:StakeholderRequirement ,
-		arch:UseCase
-		;
-	skos:definition "Systems architecture refers to the cross-domain definition of functions and logical structures at systems level, that will be pursued in detail by the individual domains mechanical design, electric/electronic design and software design."@en ;
-	.
-
-<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ProductDesign/ElectricalElectronicalDesign>
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Electrical/Electronical Design"@en ,
-		"Elektrik-/Elektronikentwicklung"@de
-		;
-	cas:Provided
-		ctx:Configuration ,
-		ctx:Reference ,
-		ctx:Variant ,
-		ee:ElectricElectronicComponent ,
-		ee:ElectricElectronicConnection ,
-		ee:ElectricElectronicPort
-		;
-	cas:Used
-		arch:Function ,
-		arch:SystemRequirement ,
-		mech:Body ,
-		mech:MechanicalComponent ,
-		sys:ComponentConnection ,
-		sys:ComponentInterface ,
-		sys:ComponentState ,
-		sys:SystemComponent
-		;
-	skos:definition """In Electrical/Electronic Design, all electrical and electronic products functions will be implemented through electrical and electonic components selection and allocation, circuit board design, and wire and harness routing.
-Electrical/Electronic Design is usually performed using an electrical/electronic CAD system."""@en ;
-	.
-
-<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ProductDesign/ElectricalMechanicalDesignCollaboration>
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Electrical/Mechanical Design Collaboration"@en ,
-		"Zusammenarbeit Elektrik/Mechanik-Konstruktion"@de
-		;
-	cas:Used
-		ee:ElectricElectronicComponent ,
-		ee:ElectricElectronicConnection ,
-		ee:ElectricElectronicPort ,
-		mech:Body ,
-		mech:MechanicalComponent
-		;
-	skos:definition "In Electrical/Mechanical Design Collaboration, both design disciplines involved will collaborate in a common 3D space in order to adjust and coordinate allocation, dimensioning and positioning of components."@en ;
-	.
-
-mec:DefineJoiningElements
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Define Joining Elements"@en ,
-		"Fügeverbindungen definieren"@de
-		;
-	cas:Provided mech:JoiningElement ;
-	cas:Used
-		arch:SystemRequirement ,
-		mech:Face ,
-		mech:Material ,
-		mech:MechanicalComponent
-		;
-	.
-
-<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ProductDesign/SoftwareEngineering>
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Software Engineering"@en ,
-		"Softwareentwicklung"@de
-		;
-	cas:Provided
-		ctx:Configuration ,
-		ctx:Reference ,
-		ctx:Variant ,
-		sw:SoftwareClass ,
-		sw:SoftwareComponent ,
-		sw:SoftwareInterface
-		;
-	cas:Used
-		arch:Function ,
-		arch:SystemRequirement ,
-		ee:ElectricElectronicComponent ,
-		ee:ElectricElectronicConnection ,
-		ee:ElectricElectronicPort ,
-		mech:Body ,
-		mech:MechanicalComponent ,
-		sys:ComponentConnection ,
-		sys:ComponentInterface ,
-		sys:ComponentState ,
-		sys:SystemComponent
-		;
-	skos:definition """In Software Engineering, embedded software is developed that will connect the product to the user, as well as to other products and systems.
-For configuration reasons it may be that software is treated a part to be considered in Bills of Material of products or systems and to be configured related to mechanical or electronic configurations of a system."""@en ;
-	.
-
-<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/VerificationValidationUsingSimulation/PerformAndDocumentSimulation>
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Perform and document Simulation"@en ,
-		"Simulation durchführen und dokumentieren"@de
-		;
-	cas:Provided
-		val:ValidationResult ,
-		val:ValidationRun ,
-		ver:VerificationResult ,
-		ver:VerificationRun
-		;
-	cas:Used
-		mech:Body ,
-		mech:Material ,
-		mech:MechanicalComponent ,
-		val:ValidationBoundaryCondition ,
-		val:ValidationCriterium ,
-		val:ValidationPlan ,
-		val:ValidationRun
-		;
-	skos:definition "Simulation execution includes performing the simulation as well as documenting and summarizing the simulation results."@en ;
-	.
-
-<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/VerificationValidationUsingSimulation/PlanAndPrepareSimulation>
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Plan and prepare Simulation"@en ,
-		"Simulation planen und vorbereiten"@de
-		;
-	cas:Provided
-		val:ValidationBoundaryCondition ,
-		val:ValidationCriterium ,
-		val:ValidationPlan ,
-		ver:VerificationCharacteristic ,
-		ver:VerificationPlan ,
-		ver:VerificationResource
-		;
-	cas:Used
-		arch:Function ,
-		arch:SystemRequirement ,
-		ee:ElectricElectronicComponent ,
-		ee:ElectricElectronicConnection ,
-		ee:ElectricElectronicPort ,
-		fld:HydraulicPneumaticConnection ,
-		fld:HydraulicPneumaticPort ,
-		mech:BendingSpecification ,
-		mech:Body ,
-		mech:Cleanliness ,
-		mech:Datum ,
-		mech:DimensionalSize ,
-		mech:Gearing ,
-		mech:GeometricInterference ,
-		mech:GeometricTolerance ,
-		mech:HeatTreatedArea ,
-		mech:Hole ,
-		mech:JoiningElement ,
-		mech:KinematicJoint ,
-		mech:KinematicMechanism ,
-		mech:KinematicMotion ,
-		mech:KinematicSensor ,
-		mech:MarkingLabeling ,
-		mech:Material ,
-		mech:MechanicalComponent ,
-		mech:PaintedCoatedArea ,
-		mech:SurfaceTexture ,
-		mech:Thread ,
-		sw:SoftwareClass ,
-		sw:SoftwareComponent ,
-		sw:SoftwareInterface
-		;
-	skos:definition
-		"Die Planung und Vorbereitung einer Simulation umfasst die Spezifikation der Simulationsziele auf der Grundlage der Produktanforderungen und -funktionen. Es folgt die Definition der Simulationsrandbedingungen und die Erstellung von Simulationsmodellen entsprechend den Simulationszielen."@de ,
-		"Planning and preparation of a simulation includes the specification of the simulation objectives based on product requirements and functions. This is followed by the definition of the simulation boundary conditions and the createion of simulation models according to simulation objectives."@en
-		;
-	.
-
-<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/VerificationValidationUsingTest/PerformAndDocumentTesting>
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Perform and document Testing"@en ,
-		"Versuch durchführen und dokumentieren"@de
-		;
-	cas:Provided
-		val:ValidationResult ,
-		val:ValidationRun ,
-		ver:VerificationResult ,
-		ver:VerificationRun
-		;
-	cas:Used
-		mech:Material ,
-		mech:MechanicalComponent ,
-		val:ValidationBoundaryCondition ,
-		val:ValidationCriterium ,
-		val:ValidationPlan ,
-		val:ValidationRun
-		;
-	skos:definition "Testing execution includes scheduling tests, allocating the test rig, executing and documenting the test."@en ;
-	.
-
-<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/VerificationValidationUsingTest/PrepareTesting>
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Prepare Testing"@en ,
-		"Versuch vorbereiten"@de
-		;
-	cas:Provided
-		val:ValidationBoundaryCondition ,
-		val:ValidationCriterium ,
-		val:ValidationPlan ,
-		ver:VerificationCharacteristic ,
-		ver:VerificationPlan ,
-		ver:VerificationResource
-		;
-	cas:Used
-		arch:Function ,
-		arch:SystemRequirement ,
-		ee:ElectricElectronicComponent ,
-		ee:ElectricElectronicConnection ,
-		ee:ElectricElectronicPort ,
-		fld:HydraulicPneumaticConnection ,
-		fld:HydraulicPneumaticPort ,
-		mech:BendingSpecification ,
-		mech:Body ,
-		mech:Cleanliness ,
-		mech:Datum ,
-		mech:DimensionalSize ,
-		mech:Gearing ,
-		mech:GeometricTolerance ,
-		mech:HeatTreatedArea ,
-		mech:Hole ,
-		mech:JoiningElement ,
-		mech:KinematicJoint ,
-		mech:KinematicMechanism ,
-		mech:KinematicMotion ,
-		mech:KinematicSensor ,
-		mech:MarkingLabeling ,
-		mech:Material ,
-		mech:MechanicalComponent ,
-		mech:PaintedCoatedArea ,
-		mech:SurfaceTexture ,
-		mech:Thread ,
-		sw:SoftwareClass ,
-		sw:SoftwareComponent ,
-		sw:SoftwareInterface
-		;
-	skos:definition "Testing preparation includes the definition of product requirements and functions to be validated, the specification, design and manufacturing of samples, prototypes and test rigs."@en ;
-	.
-
-pro:DefinitionProductAssetInstanceConfigurabilitySpace
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label "Definition product asset instance configurability space"@en ;
-	cas:Used
-		sys:ComponentConnection ,
-		sys:ComponentInterface ,
-		sys:ComponentState ,
-		sys:SystemComponent
-		;
-	skos:definition "Definition of the CU product asset instance configurability space: the objective is to define the set of configuration options that will be made available to the CU end user for each CU instance. Typical options available for CU include clock selection, clock speed, caching and cache policy, protocol for external bus interfaces, general purpose I/O configuration (direction, active etc.) as well as dedicated options for peripherals and co-processors. A key aspect is also the definition of the configuration mechanisms that will be made available to the user including configuration protection features to prevent undesired/unauthorized changes. This is a collaborative efforts involving the same actors as Use Case 1, though driven by different criteria. The CU architect must balance the flexibility provided by configurability options with the added complexity it typically brings in terms of hardware design as well as verification effort. The product owner must balance programming complexity, potential higher cost and lower efficiency, with the capability of having their single CU instance capable of covering a broader problem space."@en ;
-	.
-
-pro:DesignProductAssetInstance
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label "Design product asset instance"@en ;
-	cas:Used
-		sys:ComponentConnection ,
-		sys:ComponentInterface ,
-		sys:ComponentState ,
-		sys:SystemComponent
-		;
-	skos:definition "Design of the CU product asset instance, implying the definition of the bill of features: the ultimate goal of this collaboration use case is the specification of the features, selected from the feature catalogue, that define the solution to the specific customer problem within the solution/family portfolio. The bill of feature is basically the set of actual values assigned to the variation point, which fully determine a single specific family instance. Collaboration still happens between product and CU architects, with the former specifying requirements and high level architecture for a specific problem (within their problem domain) and the latter providing a set of potential solutions, all belonging to the same CU family."@en ;
-	.
-
-pro:DesignProductLine
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label "Design product line"@en ;
-	cas:Used
-		arch:Function ,
-		arch:SystemRequirement ,
-		sys:ComponentConnection ,
-		sys:ComponentInterface ,
-		sys:ComponentState ,
-		sys:SystemComponent
-		;
-	skos:definition "Definition of the “shared asset supersets” and feature catalog: this is a collaborative effort typically involving the CU architect, customer product owner and possibly supplier tech marketing team. The goal is eventually to define the product family i.e. to identify all the assets and their potential variations that can be used to provide a solution to any given problem within the target problem domain, rather than building for each problem an ad-hoc solution. The problem domain is specified by the customer/product owner, but can be typically expanded by the tech marketing team who captures requirements from other customers and push for alignment with strategic objectives. In defining the product line the CU architect is driven by objectives as costs, reuse, IPs while the product owner wants the product family to allow for a problem solution as close as possible to an “optimal” ad-hoc architecture."@en ;
-	.
-
-<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductOperation/DisassemblyRecycling>
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Disassembly & Recycling"@en ,
-		"Zerlegung & Recycling"@de
-		;
-	cas:Used
-		proc:JoiningProcess ,
-		arch:Function ,
-		ee:ElectricElectronicComponent ,
-		ee:ElectricElectronicConnection ,
-		ee:ElectricElectronicPort ,
-		fld:HydraulicPneumaticConnection ,
-		fld:HydraulicPneumaticPort ,
-		mech:Body ,
-		mech:Hole ,
-		mech:JoiningElement ,
-		mech:Material ,
-		mech:MechanicalComponent ,
-		mech:PaintedCoatedArea ,
-		mech:Thread
-		;
-	skos:definition "Includes all end-of-life activities required to putting a product or its component to recycling."@en ;
-	.
-
-<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductOperation/MaintenanceService>
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Maintenance & Service"@en ,
-		"Wartung & Instandhaltung"@de
-		;
-	cas:Used
-		proc:JoiningProcess ,
-		arch:Function ,
-		arch:UseCase ,
-		ee:ElectricElectronicComponent ,
-		ee:ElectricElectronicConnection ,
-		ee:ElectricElectronicPort ,
-		fld:HydraulicPneumaticConnection ,
-		fld:HydraulicPneumaticPort ,
-		mech:Body ,
-		mech:JoiningElement ,
-		mech:Material ,
-		mech:MechanicalComponent ,
-		sw:SoftwareClass ,
-		sw:SoftwareComponent ,
-		sw:SoftwareInterface
-		;
-	skos:definition "Includes all activities performed in order to maintain a product in operation."@en ;
-	.
-
-<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductOperation/ProductUsage>
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Product Usage"@en ,
-		"Produktnutzung"@de
-		;
-	cas:Provided op:OperationIncident ;
-	cas:Used
-		arch:Function ,
-		arch:UseCase ,
-		ee:ElectricElectronicComponent ,
-		ee:ElectricElectronicConnection ,
-		ee:ElectricElectronicPort ,
-		fld:HydraulicPneumaticConnection ,
-		fld:HydraulicPneumaticPort ,
-		mech:Material ,
-		mech:MechanicalComponent ,
-		sw:SoftwareComponent ,
-		sw:SoftwareInterface
-		;
-	skos:definition "Usage of a product according to the designated purpose and function."@en ;
-	.
-
-<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductionDevelopment/CostCalculation>
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Cost Calculation"@en ,
-		"Kostenkalkulation"@de
-		;
-	cas:Used
-		mnf:ControlPlan ,
-		mnf:ManufacturingEquipmentComponent ,
-		proc:AssemblyOperation ,
-		proc:HeatTreatment ,
-		proc:JoiningProcess ,
-		proc:ManufacturingOperation ,
-		ee:ElectricElectronicComponent ,
-		ee:ElectricElectronicConnection ,
-		ee:ElectricElectronicPort ,
-		mech:BendingSpecification ,
-		mech:Body ,
-		mech:Cleanliness ,
-		mech:Datum ,
-		mech:DimensionalSize ,
-		mech:Gearing ,
-		mech:GeometricTolerance ,
-		mech:HeatTreatedArea ,
-		mech:Hole ,
-		mech:JoiningElement ,
-		mech:KinematicJoint ,
-		mech:KinematicMechanism ,
-		mech:MarkingLabeling ,
-		mech:Material ,
-		mech:MechanicalComponent ,
-		mech:ModelView ,
-		mech:PaintedCoatedArea ,
-		mech:SurfaceTexture ,
-		mech:Thread
-		;
-	skos:definition "Includes the calculation of product cost using relevant information from product and production specifications, including dimensions, material, mass, geometric & topological complexity, surface finish including paint or coatings."@en ;
-	.
-
-<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductionDevelopment/InspectionPlanning>
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Inspection Planning"@en ,
-		"Prüfplanung"@de
-		;
-	cas:Provided
-		ver:VerificationCharacteristic ,
-		ver:VerificationPlan ,
-		ver:VerificationResource
-		;
-	cas:Used
-		ee:ElectricElectronicComponent ,
-		ee:ElectricElectronicConnection ,
-		ee:ElectricElectronicPort ,
-		mech:BendingSpecification ,
-		mech:Body ,
-		mech:Cleanliness ,
-		mech:Datum ,
-		mech:DimensionalSize ,
-		mech:Gearing ,
-		mech:GeometricTolerance ,
-		mech:HeatTreatedArea ,
-		mech:Hole ,
-		mech:JoiningElement ,
-		mech:KinematicJoint ,
-		mech:KinematicMechanism ,
-		mech:MarkingLabeling ,
-		mech:Material ,
-		mech:MechanicalComponent ,
-		mech:ModelView ,
-		mech:PaintedCoatedArea ,
-		mech:SurfaceTexture ,
-		mech:Thread ,
-		sys:Deviation
-		;
-	skos:definition "Includes the selection of relevant inspection criteria from product and production specifications, identification and assignment of appropriate inspection methods and equipment, as well as the allocation of appropriate inspection criteria per inspection event (first-article inspection, re-qualification, inspection in production, etc.)"@en ;
-	.
-
-<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductionDevelopment/PlantLayout>
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Fabriklayout"@de ,
-		"Plant Layout"@en
-		;
-	cas:Provided mnf:ManufacturingEquipmentComponent ;
-	cas:Used
-		proc:AssemblyOperation ,
-		proc:HeatTreatment ,
-		proc:JoiningProcess ,
-		proc:ManufacturingOperation ,
-		ee:ElectricElectronicComponent ,
-		ee:ElectricElectronicConnection ,
-		ee:ElectricElectronicPort ,
-		mech:Body ,
-		mech:Datum ,
-		mech:DimensionalSize ,
-		mech:GeometricTolerance ,
-		mech:MechanicalComponent ,
-		mech:ModelView ,
-		mech:SurfaceTexture
-		;
-	skos:definition "Defines the logical and physical layout of a production line in a plant or buiding using information from product and production specifications, including production steps, material handling, as well as the physical dimensions of product components, tools, fixtures and equipment within the  topology and systems of the manufacturing site or building."@en ;
-	.
-
-<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductionDevelopment/ProcessPlanning>
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Process Planning"@en ,
-		"Prozessplanung"@de
-		;
-	cas:Provided proc:ManufacturingOperation ;
-	cas:Used
-		ee:ElectricElectronicComponent ,
-		ee:ElectricElectronicConnection ,
-		ee:ElectricElectronicPort ,
-		fld:HydraulicPneumaticConnection ,
-		fld:HydraulicPneumaticPort ,
-		mech:BendingSpecification ,
-		mech:Body ,
-		mech:Cleanliness ,
-		mech:Datum ,
-		mech:DimensionalSize ,
-		mech:Gearing ,
-		mech:GeometricTolerance ,
-		mech:HeatTreatedArea ,
-		mech:Hole ,
-		mech:JoiningElement ,
-		mech:KinematicJoint ,
-		mech:KinematicMechanism ,
-		mech:MarkingLabeling ,
-		mech:Material ,
-		mech:MechanicalComponent ,
-		mech:ModelView ,
-		mech:PaintedCoatedArea ,
-		mech:SurfaceTexture ,
-		mech:Thread
-		;
-	skos:definition """The task in the manufacturing process planning domain is to find a plan to manufacture a set of parts.
-Source: https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume15/ambite01a-html/node23.html"""@en ;
-	.
-
-<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductionDevelopment/ToolsEquipmentDesign>
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label
-		"Tools & Equipment Design"@en ,
-		"Werkzeug- & Vorrichtungsbau"@de
-		;
-	cas:Provided mnf:ManufacturingEquipmentComponent ;
-	cas:Used
-		proc:AssemblyOperation ,
-		proc:HeatTreatment ,
-		proc:JoiningProcess ,
-		proc:ManufacturingOperation ,
-		ee:ElectricElectronicComponent ,
-		ee:ElectricElectronicConnection ,
-		ee:ElectricElectronicPort ,
-		mech:BendingSpecification ,
-		mech:Body ,
-		mech:Cleanliness ,
-		mech:Datum ,
-		mech:DimensionalSize ,
-		mech:GeometricTolerance ,
-		mech:HeatTreatedArea ,
-		mech:JoiningElement ,
-		mech:MarkingLabeling ,
-		mech:Material ,
-		mech:MechanicalComponent ,
-		mech:ModelView ,
-		mech:PaintedCoatedArea ,
-		mech:SurfaceTexture
-		;
-	skos:definition "The design of tools and equipment aligned with product design, the manufacturing process plan and plant layout."@en ;
-	.
-
-:ManufacturingSupplyChain
-	a owl:Class ;
-	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
-	rdfs:label
-		"Manufacturing & Supply Chain"@en ,
-		"Produktion & Lieferkette"@de
-		;
-	dcterms:modified "2021-11-24T10:35:16Z"^^xsd:dateTime ;
-	skos:definition "Includes all activities related to source and manufacture a product in different companies, plants, or locations."@en ;
-	.
-
-:MechanicalDesign
-	a owl:Class ;
-	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
-	rdfs:label
-		"Mechanical Design"@en ,
-		"Mechanische Konstruktion"@de
-		;
-	dcterms:modified "2023-10-22T15:48:39Z"^^xsd:dateTime ;
-	skos:definition """In Mechanical Design, physical product structure, product geometry, as well as all specifications are defined.
+Description based on: https://en.wikipedia.org/wiki/Product_planning</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&con;DefineSystemsArchitecture">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Define systems Architecture</rdfs:label>
+		<rdfs:label xml:lang="de">Systemarchitektur definieren</rdfs:label>
+		<cas:provides rdf:resource="&arch;Function"/>
+		<cas:provides rdf:resource="&sys;ComponentConnection"/>
+		<cas:provides rdf:resource="&sys;ComponentInterface"/>
+		<cas:provides rdf:resource="&sys;ComponentState"/>
+		<cas:provides rdf:resource="&sys;Deviation"/>
+		<cas:provides rdf:resource="&sys;SystemComponent"/>
+		<cas:uses rdf:resource="&org;Role"/>
+		<cas:uses rdf:resource="&arch;StakeholderRequirement"/>
+		<cas:uses rdf:resource="&arch;UseCase"/>
+		<skos:definition xml:lang="en">Systems architecture refers to the cross-domain definition of functions and logical structures at systems level, that will be pursued in detail by the individual domains mechanical design, electric/electronic design and software design.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&con;RequirementsEngineering">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="de">Anforderungsmanagement</rdfs:label>
+		<rdfs:label xml:lang="en">Requirements Engineering</rdfs:label>
+		<cas:provides rdf:resource="&arch;Requirement"/>
+		<cas:uses rdf:resource="&org;Role"/>
+		<cas:uses rdf:resource="&arch;UseCase"/>
+		<skos:definition xml:lang="en">Requirements engineering is the process of defining, eliciting, documenting, and maintaining requirements in the engineering design process.
+Description based on: https://en.wikipedia.org/wiki/Requirements_engineering</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ProductDesign/ElectricalElectronicalDesign">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Electrical/Electronical Design</rdfs:label>
+		<rdfs:label xml:lang="de">Elektrik-/Elektronikentwicklung</rdfs:label>
+		<cas:provides rdf:resource="&ctx;Configuration"/>
+		<cas:provides rdf:resource="&ctx;Reference"/>
+		<cas:provides rdf:resource="&ctx;Variant"/>
+		<cas:provides rdf:resource="&ee;ElectricElectronicComponent"/>
+		<cas:provides rdf:resource="&ee;ElectricElectronicConnection"/>
+		<cas:provides rdf:resource="&ee;ElectricElectronicPort"/>
+		<cas:uses rdf:resource="&arch;Function"/>
+		<cas:uses rdf:resource="&arch;SystemRequirement"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&sys;ComponentConnection"/>
+		<cas:uses rdf:resource="&sys;ComponentInterface"/>
+		<cas:uses rdf:resource="&sys;ComponentState"/>
+		<cas:uses rdf:resource="&sys;SystemComponent"/>
+		<skos:definition xml:lang="en">In Electrical/Electronic Design, all electrical and electronic products functions will be implemented through electrical and electonic components selection and allocation, circuit board design, and wire and harness routing.
+Electrical/Electronic Design is usually performed using an electrical/electronic CAD system.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ProductDesign/ElectricalMechanicalDesignCollaboration">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Electrical/Mechanical Design Collaboration</rdfs:label>
+		<rdfs:label xml:lang="de">Zusammenarbeit Elektrik/Mechanik-Konstruktion</rdfs:label>
+		<cas:uses rdf:resource="&ee;ElectricElectronicComponent"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicConnection"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicPort"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<skos:definition xml:lang="en">In Electrical/Mechanical Design Collaboration, both design disciplines involved will collaborate in a common 3D space in order to adjust and coordinate allocation, dimensioning and positioning of components.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ProductDesign/MechanicalDesign">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Mechanical Design</rdfs:label>
+		<rdfs:label xml:lang="de">Mechanische Konstruktion</rdfs:label>
+		<cas:provides rdf:resource="&ctx;Configuration"/>
+		<cas:provides rdf:resource="&ctx;Reference"/>
+		<cas:provides rdf:resource="&ctx;Variant"/>
+		<cas:provides rdf:resource="&proc;JoiningProcess"/>
+		<cas:provides rdf:resource="&fld;HydraulicPneumaticConnection"/>
+		<cas:provides rdf:resource="&fld;HydraulicPneumaticPort"/>
+		<cas:provides rdf:resource="&mech;Body"/>
+		<cas:provides rdf:resource="&mech;GeometricInterference"/>
+		<cas:provides rdf:resource="&mech;JoiningElement"/>
+		<cas:provides rdf:resource="&mech;KinematicJoint"/>
+		<cas:provides rdf:resource="&mech;KinematicMechanism"/>
+		<cas:provides rdf:resource="&mech;KinematicMotion"/>
+		<cas:provides rdf:resource="&mech;KinematicSensor"/>
+		<cas:provides rdf:resource="&mech;Material"/>
+		<cas:provides rdf:resource="&mech;MechanicalComponent"/>
+		<cas:provides rdf:resource="&mech;ModelAnnotation"/>
+		<cas:provides rdf:resource="&mech;ModelView"/>
+		<cas:uses rdf:resource="&arch;Function"/>
+		<cas:uses rdf:resource="&arch;SystemRequirement"/>
+		<cas:uses rdf:resource="&sys;ComponentConnection"/>
+		<cas:uses rdf:resource="&sys;ComponentInterface"/>
+		<cas:uses rdf:resource="&sys;ComponentState"/>
+		<cas:uses rdf:resource="&sys;SystemComponent"/>
+		<skos:definition xml:lang="en">In Mechanical Design, physical product structure, product geometry, as well as all specifications are defined.
 This includes shape, dimensioning and tolerancing, material (including semi-finished parts and treatment), surface and edge specifications.
-Mechanical design is usually conducted using a mechanical CAD system."""@en ;
-	.
-
-:ProductDesign
-	a owl:Class ;
-	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
-	rdfs:label
-		"Product Design"@en ,
-		"Produktentwurf"@de
-		;
-	dcterms:modified "2021-11-29T12:59:20Z"^^xsd:dateTime ;
-	skos:definition """Product Design is the specific synthesis, implentation and documentation of design solutions suggested by systems engineering.
-Product design comprises the domain-specific design processes of mechanical, electrical/electronical design, and software engineering."""@en ;
-	.
-
-:ProductDevelopment
-	a owl:Class ;
-	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
-	rdfs:label
-		"Product Development"@en ,
-		"Produktentwicklung"@de
-		;
-	dcterms:modified "2022-02-18T11:15:52Z"^^xsd:dateTime ;
-	skos:definition """Product development is the creation of products with new or modified characteristics that offer new or additional benefits to the customer, or comply with new or changed standards, rules and regulations.
+Mechanical design is usually conducted using a mechanical CAD system.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ProductDesign/SoftwareEngineering">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Software Engineering</rdfs:label>
+		<rdfs:label xml:lang="de">Softwareentwicklung</rdfs:label>
+		<cas:provides rdf:resource="&ctx;Configuration"/>
+		<cas:provides rdf:resource="&ctx;Reference"/>
+		<cas:provides rdf:resource="&ctx;Variant"/>
+		<cas:provides rdf:resource="&sw;SoftwareClass"/>
+		<cas:provides rdf:resource="&sw;SoftwareComponent"/>
+		<cas:provides rdf:resource="&sw;SoftwareInterface"/>
+		<cas:uses rdf:resource="&arch;Function"/>
+		<cas:uses rdf:resource="&arch;SystemRequirement"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicComponent"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicConnection"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicPort"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&sys;ComponentConnection"/>
+		<cas:uses rdf:resource="&sys;ComponentInterface"/>
+		<cas:uses rdf:resource="&sys;ComponentState"/>
+		<cas:uses rdf:resource="&sys;SystemComponent"/>
+		<skos:definition xml:lang="en">In Software Engineering, embedded software is developed that will connect the product to the user, as well as to other products and systems.
+For configuration reasons it may be that software is treated a part to be considered in Bills of Material of products or systems and to be configured related to mechanical or electronic configurations of a system.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/VerificationValidationUsingSimulation/PerformAndDocumentSimulation">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Perform and document Simulation</rdfs:label>
+		<rdfs:label xml:lang="de">Simulation durchführen und dokumentieren</rdfs:label>
+		<cas:provides rdf:resource="&val;ValidationResult"/>
+		<cas:provides rdf:resource="&val;ValidationRun"/>
+		<cas:provides rdf:resource="&ver;VerificationResult"/>
+		<cas:provides rdf:resource="&ver;VerificationRun"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;Material"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&val;ValidationBoundaryCondition"/>
+		<cas:uses rdf:resource="&val;ValidationCriterium"/>
+		<cas:uses rdf:resource="&val;ValidationPlan"/>
+		<cas:uses rdf:resource="&val;ValidationRun"/>
+		<skos:definition xml:lang="en">Simulation execution includes performing the simulation as well as documenting and summarizing the simulation results.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/VerificationValidationUsingSimulation/PlanAndPrepareSimulation">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Plan and prepare Simulation</rdfs:label>
+		<rdfs:label xml:lang="de">Simulation planen und vorbereiten</rdfs:label>
+		<cas:provides rdf:resource="&val;ValidationBoundaryCondition"/>
+		<cas:provides rdf:resource="&val;ValidationCriterium"/>
+		<cas:provides rdf:resource="&val;ValidationPlan"/>
+		<cas:provides rdf:resource="&ver;VerificationCharacteristic"/>
+		<cas:provides rdf:resource="&ver;VerificationPlan"/>
+		<cas:provides rdf:resource="&ver;VerificationResource"/>
+		<cas:uses rdf:resource="&arch;Function"/>
+		<cas:uses rdf:resource="&arch;SystemRequirement"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicComponent"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicConnection"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicPort"/>
+		<cas:uses rdf:resource="&fld;HydraulicPneumaticConnection"/>
+		<cas:uses rdf:resource="&fld;HydraulicPneumaticPort"/>
+		<cas:uses rdf:resource="&mech;BendingSpecification"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;Cleanliness"/>
+		<cas:uses rdf:resource="&mech;Datum"/>
+		<cas:uses rdf:resource="&mech;DimensionalSize"/>
+		<cas:uses rdf:resource="&mech;Gearing"/>
+		<cas:uses rdf:resource="&mech;GeometricInterference"/>
+		<cas:uses rdf:resource="&mech;GeometricTolerance"/>
+		<cas:uses rdf:resource="&mech;HeatTreatedArea"/>
+		<cas:uses rdf:resource="&mech;Hole"/>
+		<cas:uses rdf:resource="&mech;JoiningElement"/>
+		<cas:uses rdf:resource="&mech;KinematicJoint"/>
+		<cas:uses rdf:resource="&mech;KinematicMechanism"/>
+		<cas:uses rdf:resource="&mech;KinematicMotion"/>
+		<cas:uses rdf:resource="&mech;KinematicSensor"/>
+		<cas:uses rdf:resource="&mech;MarkingLabeling"/>
+		<cas:uses rdf:resource="&mech;Material"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&mech;PaintedCoatedArea"/>
+		<cas:uses rdf:resource="&mech;SurfaceTexture"/>
+		<cas:uses rdf:resource="&mech;Thread"/>
+		<cas:uses rdf:resource="&sw;SoftwareClass"/>
+		<cas:uses rdf:resource="&sw;SoftwareComponent"/>
+		<cas:uses rdf:resource="&sw;SoftwareInterface"/>
+		<skos:definition xml:lang="de">Die Planung und Vorbereitung einer Simulation umfasst die Spezifikation der Simulationsziele auf der Grundlage der Produktanforderungen und -funktionen. Es folgt die Definition der Simulationsrandbedingungen und die Erstellung von Simulationsmodellen entsprechend den Simulationszielen.</skos:definition>
+		<skos:definition xml:lang="en">Planning and preparation of a simulation includes the specification of the simulation objectives based on product requirements and functions. This is followed by the definition of the simulation boundary conditions and the createion of simulation models according to simulation objectives.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/VerificationValidationUsingTest/PerformAndDocumentTesting">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Perform and document Testing</rdfs:label>
+		<rdfs:label xml:lang="de">Versuch durchführen und dokumentieren</rdfs:label>
+		<cas:provides rdf:resource="&val;ValidationResult"/>
+		<cas:provides rdf:resource="&val;ValidationRun"/>
+		<cas:provides rdf:resource="&ver;VerificationResult"/>
+		<cas:provides rdf:resource="&ver;VerificationRun"/>
+		<cas:uses rdf:resource="&mech;Material"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&val;ValidationBoundaryCondition"/>
+		<cas:uses rdf:resource="&val;ValidationCriterium"/>
+		<cas:uses rdf:resource="&val;ValidationPlan"/>
+		<cas:uses rdf:resource="&val;ValidationRun"/>
+		<skos:definition xml:lang="en">Testing execution includes scheduling tests, allocating the test rig, executing and documenting the test.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/VerificationValidationUsingTest/PrepareTesting">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Prepare Testing</rdfs:label>
+		<rdfs:label xml:lang="de">Versuch vorbereiten</rdfs:label>
+		<cas:provides rdf:resource="&val;ValidationBoundaryCondition"/>
+		<cas:provides rdf:resource="&val;ValidationCriterium"/>
+		<cas:provides rdf:resource="&val;ValidationPlan"/>
+		<cas:provides rdf:resource="&ver;VerificationCharacteristic"/>
+		<cas:provides rdf:resource="&ver;VerificationPlan"/>
+		<cas:provides rdf:resource="&ver;VerificationResource"/>
+		<cas:uses rdf:resource="&arch;Function"/>
+		<cas:uses rdf:resource="&arch;SystemRequirement"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicComponent"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicConnection"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicPort"/>
+		<cas:uses rdf:resource="&fld;HydraulicPneumaticConnection"/>
+		<cas:uses rdf:resource="&fld;HydraulicPneumaticPort"/>
+		<cas:uses rdf:resource="&mech;BendingSpecification"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;Cleanliness"/>
+		<cas:uses rdf:resource="&mech;Datum"/>
+		<cas:uses rdf:resource="&mech;DimensionalSize"/>
+		<cas:uses rdf:resource="&mech;Gearing"/>
+		<cas:uses rdf:resource="&mech;GeometricTolerance"/>
+		<cas:uses rdf:resource="&mech;HeatTreatedArea"/>
+		<cas:uses rdf:resource="&mech;Hole"/>
+		<cas:uses rdf:resource="&mech;JoiningElement"/>
+		<cas:uses rdf:resource="&mech;KinematicJoint"/>
+		<cas:uses rdf:resource="&mech;KinematicMechanism"/>
+		<cas:uses rdf:resource="&mech;KinematicMotion"/>
+		<cas:uses rdf:resource="&mech;KinematicSensor"/>
+		<cas:uses rdf:resource="&mech;MarkingLabeling"/>
+		<cas:uses rdf:resource="&mech;Material"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&mech;PaintedCoatedArea"/>
+		<cas:uses rdf:resource="&mech;SurfaceTexture"/>
+		<cas:uses rdf:resource="&mech;Thread"/>
+		<cas:uses rdf:resource="&sw;SoftwareClass"/>
+		<cas:uses rdf:resource="&sw;SoftwareComponent"/>
+		<cas:uses rdf:resource="&sw;SoftwareInterface"/>
+		<skos:definition xml:lang="en">Testing preparation includes the definition of product requirements and functions to be validated, the specification, design and manufacturing of samples, prototypes and test rigs.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&pro;DefinitionProductAssetInstanceConfigurabilitySpace">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Definition product asset instance configurability space</rdfs:label>
+		<cas:uses rdf:resource="&sys;ComponentConnection"/>
+		<cas:uses rdf:resource="&sys;ComponentInterface"/>
+		<cas:uses rdf:resource="&sys;ComponentState"/>
+		<cas:uses rdf:resource="&sys;SystemComponent"/>
+		<skos:definition xml:lang="en">Definition of the CU product asset instance configurability space: the objective is to define the set of configuration options that will be made available to the CU end user for each CU instance. Typical options available for CU include clock selection, clock speed, caching and cache policy, protocol for external bus interfaces, general purpose I/O configuration (direction, active etc.) as well as dedicated options for peripherals and co-processors. A key aspect is also the definition of the configuration mechanisms that will be made available to the user including configuration protection features to prevent undesired/unauthorized changes. This is a collaborative efforts involving the same actors as Use Case 1, though driven by different criteria. The CU architect must balance the flexibility provided by configurability options with the added complexity it typically brings in terms of hardware design as well as verification effort. The product owner must balance programming complexity, potential higher cost and lower efficiency, with the capability of having their single CU instance capable of covering a broader problem space.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&pro;DesignProductAssetInstance">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Design product asset instance</rdfs:label>
+		<cas:uses rdf:resource="&sys;ComponentConnection"/>
+		<cas:uses rdf:resource="&sys;ComponentInterface"/>
+		<cas:uses rdf:resource="&sys;ComponentState"/>
+		<cas:uses rdf:resource="&sys;SystemComponent"/>
+		<skos:definition xml:lang="en">Design of the CU product asset instance, implying the definition of the bill of features: the ultimate goal of this collaboration use case is the specification of the features, selected from the feature catalogue, that define the solution to the specific customer problem within the solution/family portfolio. The bill of feature is basically the set of actual values assigned to the variation point, which fully determine a single specific family instance. Collaboration still happens between product and CU architects, with the former specifying requirements and high level architecture for a specific problem (within their problem domain) and the latter providing a set of potential solutions, all belonging to the same CU family.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&pro;DesignProductLine">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Design product line</rdfs:label>
+		<cas:uses rdf:resource="&arch;Function"/>
+		<cas:uses rdf:resource="&arch;SystemRequirement"/>
+		<cas:uses rdf:resource="&sys;ComponentConnection"/>
+		<cas:uses rdf:resource="&sys;ComponentInterface"/>
+		<cas:uses rdf:resource="&sys;ComponentState"/>
+		<cas:uses rdf:resource="&sys;SystemComponent"/>
+		<skos:definition xml:lang="en">Definition of the “shared asset supersets” and feature catalog: this is a collaborative effort typically involving the CU architect, customer product owner and possibly supplier tech marketing team. The goal is eventually to define the product family i.e. to identify all the assets and their potential variations that can be used to provide a solution to any given problem within the target problem domain, rather than building for each problem an ad-hoc solution. The problem domain is specified by the customer/product owner, but can be typically expanded by the tech marketing team who captures requirements from other customers and push for alignment with strategic objectives. In defining the product line the CU architect is driven by objectives as costs, reuse, IPs while the product owner wants the product family to allow for a problem solution as close as possible to an “optimal” ad-hoc architecture.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductOperation/DisassemblyRecycling">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Disassembly &amp; Recycling</rdfs:label>
+		<rdfs:label xml:lang="de">Zerlegung &amp; Recycling</rdfs:label>
+		<cas:uses rdf:resource="&proc;JoiningProcess"/>
+		<cas:uses rdf:resource="&arch;Function"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicComponent"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicConnection"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicPort"/>
+		<cas:uses rdf:resource="&fld;HydraulicPneumaticConnection"/>
+		<cas:uses rdf:resource="&fld;HydraulicPneumaticPort"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;Hole"/>
+		<cas:uses rdf:resource="&mech;JoiningElement"/>
+		<cas:uses rdf:resource="&mech;Material"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&mech;PaintedCoatedArea"/>
+		<cas:uses rdf:resource="&mech;Thread"/>
+		<skos:definition xml:lang="en">Includes all end-of-life activities required to putting a product or its component to recycling.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductOperation/MaintenanceService">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Maintenance &amp; Service</rdfs:label>
+		<rdfs:label xml:lang="de">Wartung &amp; Instandhaltung</rdfs:label>
+		<cas:uses rdf:resource="&proc;JoiningProcess"/>
+		<cas:uses rdf:resource="&arch;Function"/>
+		<cas:uses rdf:resource="&arch;UseCase"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicComponent"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicConnection"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicPort"/>
+		<cas:uses rdf:resource="&fld;HydraulicPneumaticConnection"/>
+		<cas:uses rdf:resource="&fld;HydraulicPneumaticPort"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;JoiningElement"/>
+		<cas:uses rdf:resource="&mech;Material"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&sw;SoftwareClass"/>
+		<cas:uses rdf:resource="&sw;SoftwareComponent"/>
+		<cas:uses rdf:resource="&sw;SoftwareInterface"/>
+		<skos:definition xml:lang="en">Includes all activities performed in order to maintain a product in operation.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductOperation/ProductUsage">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Product Usage</rdfs:label>
+		<rdfs:label xml:lang="de">Produktnutzung</rdfs:label>
+		<cas:provides rdf:resource="&op;OperationIncident"/>
+		<cas:uses rdf:resource="&arch;Function"/>
+		<cas:uses rdf:resource="&arch;UseCase"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicComponent"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicConnection"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicPort"/>
+		<cas:uses rdf:resource="&fld;HydraulicPneumaticConnection"/>
+		<cas:uses rdf:resource="&fld;HydraulicPneumaticPort"/>
+		<cas:uses rdf:resource="&mech;Material"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&sw;SoftwareComponent"/>
+		<cas:uses rdf:resource="&sw;SoftwareInterface"/>
+		<skos:definition xml:lang="en">Usage of a product according to the designated purpose and function.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductionDevelopment/CostCalculation">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Cost Calculation</rdfs:label>
+		<rdfs:label xml:lang="de">Kostenkalkulation</rdfs:label>
+		<cas:uses rdf:resource="&mnf;ControlPlan"/>
+		<cas:uses rdf:resource="&mnf;ManufacturingEquipmentComponent"/>
+		<cas:uses rdf:resource="&proc;AssemblyOperation"/>
+		<cas:uses rdf:resource="&proc;HeatTreatment"/>
+		<cas:uses rdf:resource="&proc;JoiningProcess"/>
+		<cas:uses rdf:resource="&proc;ManufacturingOperation"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicComponent"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicConnection"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicPort"/>
+		<cas:uses rdf:resource="&mech;BendingSpecification"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;Cleanliness"/>
+		<cas:uses rdf:resource="&mech;Datum"/>
+		<cas:uses rdf:resource="&mech;DimensionalSize"/>
+		<cas:uses rdf:resource="&mech;Gearing"/>
+		<cas:uses rdf:resource="&mech;GeometricTolerance"/>
+		<cas:uses rdf:resource="&mech;HeatTreatedArea"/>
+		<cas:uses rdf:resource="&mech;Hole"/>
+		<cas:uses rdf:resource="&mech;JoiningElement"/>
+		<cas:uses rdf:resource="&mech;KinematicJoint"/>
+		<cas:uses rdf:resource="&mech;KinematicMechanism"/>
+		<cas:uses rdf:resource="&mech;MarkingLabeling"/>
+		<cas:uses rdf:resource="&mech;Material"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&mech;ModelView"/>
+		<cas:uses rdf:resource="&mech;PaintedCoatedArea"/>
+		<cas:uses rdf:resource="&mech;SurfaceTexture"/>
+		<cas:uses rdf:resource="&mech;Thread"/>
+		<skos:definition xml:lang="en">Includes the calculation of product cost using relevant information from product and production specifications, including dimensions, material, mass, geometric &amp; topological complexity, surface finish including paint or coatings.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductionDevelopment/InspectionPlanning">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Inspection Planning</rdfs:label>
+		<rdfs:label xml:lang="de">Prüfplanung</rdfs:label>
+		<cas:provides rdf:resource="&ver;VerificationCharacteristic"/>
+		<cas:provides rdf:resource="&ver;VerificationPlan"/>
+		<cas:provides rdf:resource="&ver;VerificationResource"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicComponent"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicConnection"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicPort"/>
+		<cas:uses rdf:resource="&mech;BendingSpecification"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;Cleanliness"/>
+		<cas:uses rdf:resource="&mech;Datum"/>
+		<cas:uses rdf:resource="&mech;DimensionalSize"/>
+		<cas:uses rdf:resource="&mech;Gearing"/>
+		<cas:uses rdf:resource="&mech;GeometricTolerance"/>
+		<cas:uses rdf:resource="&mech;HeatTreatedArea"/>
+		<cas:uses rdf:resource="&mech;Hole"/>
+		<cas:uses rdf:resource="&mech;JoiningElement"/>
+		<cas:uses rdf:resource="&mech;KinematicJoint"/>
+		<cas:uses rdf:resource="&mech;KinematicMechanism"/>
+		<cas:uses rdf:resource="&mech;MarkingLabeling"/>
+		<cas:uses rdf:resource="&mech;Material"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&mech;ModelView"/>
+		<cas:uses rdf:resource="&mech;PaintedCoatedArea"/>
+		<cas:uses rdf:resource="&mech;SurfaceTexture"/>
+		<cas:uses rdf:resource="&mech;Thread"/>
+		<cas:uses rdf:resource="&sys;Deviation"/>
+		<skos:definition xml:lang="en">Includes the selection of relevant inspection criteria from product and production specifications, identification and assignment of appropriate inspection methods and equipment, as well as the allocation of appropriate inspection criteria per inspection event (first-article inspection, re-qualification, inspection in production, etc.)</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductionDevelopment/PerformProductionFailureModesAndEffectsPFmea">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Perform production failure modes and effects (P-FMEA)</rdfs:label>
+		<rdfs:label xml:lang="de">Produktions-Fehlermöglichkeits- und Einflussanalyse durchführen (P-FMEA)</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductionDevelopment/PlantLayout">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="de">Fabriklayout</rdfs:label>
+		<rdfs:label xml:lang="en">Plant Layout</rdfs:label>
+		<cas:provides rdf:resource="&mnf;ManufacturingEquipmentComponent"/>
+		<cas:uses rdf:resource="&proc;AssemblyOperation"/>
+		<cas:uses rdf:resource="&proc;HeatTreatment"/>
+		<cas:uses rdf:resource="&proc;JoiningProcess"/>
+		<cas:uses rdf:resource="&proc;ManufacturingOperation"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicComponent"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicConnection"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicPort"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;Datum"/>
+		<cas:uses rdf:resource="&mech;DimensionalSize"/>
+		<cas:uses rdf:resource="&mech;GeometricTolerance"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&mech;ModelView"/>
+		<cas:uses rdf:resource="&mech;SurfaceTexture"/>
+		<skos:definition xml:lang="en">Defines the logical and physical layout of a production line in a plant or buiding using information from product and production specifications, including production steps, material handling, as well as the physical dimensions of product components, tools, fixtures and equipment within the  topology and systems of the manufacturing site or building.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductionDevelopment/ProcessPlanning">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Process Planning</rdfs:label>
+		<rdfs:label xml:lang="de">Prozessplanung</rdfs:label>
+		<cas:provides rdf:resource="&proc;ManufacturingOperation"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicComponent"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicConnection"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicPort"/>
+		<cas:uses rdf:resource="&fld;HydraulicPneumaticConnection"/>
+		<cas:uses rdf:resource="&fld;HydraulicPneumaticPort"/>
+		<cas:uses rdf:resource="&mech;BendingSpecification"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;Cleanliness"/>
+		<cas:uses rdf:resource="&mech;Datum"/>
+		<cas:uses rdf:resource="&mech;DimensionalSize"/>
+		<cas:uses rdf:resource="&mech;Gearing"/>
+		<cas:uses rdf:resource="&mech;GeometricTolerance"/>
+		<cas:uses rdf:resource="&mech;HeatTreatedArea"/>
+		<cas:uses rdf:resource="&mech;Hole"/>
+		<cas:uses rdf:resource="&mech;JoiningElement"/>
+		<cas:uses rdf:resource="&mech;KinematicJoint"/>
+		<cas:uses rdf:resource="&mech;KinematicMechanism"/>
+		<cas:uses rdf:resource="&mech;MarkingLabeling"/>
+		<cas:uses rdf:resource="&mech;Material"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&mech;ModelView"/>
+		<cas:uses rdf:resource="&mech;PaintedCoatedArea"/>
+		<cas:uses rdf:resource="&mech;SurfaceTexture"/>
+		<cas:uses rdf:resource="&mech;Thread"/>
+		<skos:definition xml:lang="en">The task in the manufacturing process planning domain is to find a plan to manufacture a set of parts.
+Source: https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume15/ambite01a-html/node23.html</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductionDevelopment/ToolsEquipmentDesign">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Tools &amp; Equipment Design</rdfs:label>
+		<rdfs:label xml:lang="de">Werkzeug- &amp; Vorrichtungsbau</rdfs:label>
+		<cas:provides rdf:resource="&mnf;ManufacturingEquipmentComponent"/>
+		<cas:uses rdf:resource="&proc;AssemblyOperation"/>
+		<cas:uses rdf:resource="&proc;HeatTreatment"/>
+		<cas:uses rdf:resource="&proc;JoiningProcess"/>
+		<cas:uses rdf:resource="&proc;ManufacturingOperation"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicComponent"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicConnection"/>
+		<cas:uses rdf:resource="&ee;ElectricElectronicPort"/>
+		<cas:uses rdf:resource="&mech;BendingSpecification"/>
+		<cas:uses rdf:resource="&mech;Body"/>
+		<cas:uses rdf:resource="&mech;Cleanliness"/>
+		<cas:uses rdf:resource="&mech;Datum"/>
+		<cas:uses rdf:resource="&mech;DimensionalSize"/>
+		<cas:uses rdf:resource="&mech;GeometricTolerance"/>
+		<cas:uses rdf:resource="&mech;HeatTreatedArea"/>
+		<cas:uses rdf:resource="&mech;JoiningElement"/>
+		<cas:uses rdf:resource="&mech;MarkingLabeling"/>
+		<cas:uses rdf:resource="&mech;Material"/>
+		<cas:uses rdf:resource="&mech;MechanicalComponent"/>
+		<cas:uses rdf:resource="&mech;ModelView"/>
+		<cas:uses rdf:resource="&mech;PaintedCoatedArea"/>
+		<cas:uses rdf:resource="&mech;SurfaceTexture"/>
+		<skos:definition xml:lang="en">The design of tools and equipment aligned with product design, the manufacturing process plan and plant layout.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain">
+		<rdfs:subClassOf rdf:resource="http://www.omg.org/spec/CASCaRA/metamodel/Entity"/>
+		<rdfs:label xml:lang="en">Manufacturing &amp; Supply Chain</rdfs:label>
+		<rdfs:label xml:lang="de">Produktion &amp; Lieferkette</rdfs:label>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2021-11-24T10:35:16Z</dcterms:modified>
+		<skos:definition xml:lang="en">Includes all activities related to source and manufacture a product in different companies, plants, or locations.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/ProductDesign">
+		<rdfs:subClassOf rdf:resource="http://www.omg.org/spec/CASCaRA/metamodel/Entity"/>
+		<rdfs:label xml:lang="en">Product Design</rdfs:label>
+		<rdfs:label xml:lang="de">Produktentwurf</rdfs:label>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2021-11-29T12:59:20Z</dcterms:modified>
+		<skos:definition xml:lang="en">Product Design is the specific synthesis, implentation and documentation of design solutions suggested by systems engineering.
+Product design comprises the domain-specific design processes of mechanical, electrical/electronical design, and software engineering.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/ProductDevelopment">
+		<rdfs:subClassOf rdf:resource="http://www.omg.org/spec/CASCaRA/metamodel/Entity"/>
+		<rdfs:label xml:lang="en">Product Development</rdfs:label>
+		<rdfs:label xml:lang="de">Produktentwicklung</rdfs:label>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2022-02-18T11:15:52Z</dcterms:modified>
+		<skos:definition xml:lang="en">Product development is the creation of products with new or modified characteristics that offer new or additional benefits to the customer, or comply with new or changed standards, rules and regulations.
 Product development may involve modification of an existing product or its presentation or formulation of an entirely new product that satisfies a newly-defined or changed customer need or market segment.
-Description based on: https://cio-wiki.org/wiki/Product_Development"""@en ;
-	.
-
-:ProductLineEngineering
-	a owl:Class ;
-	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
-	rdfs:label
-		"Product Line Engineering"@en ,
-		"Produktlinienentwicklung"@de
-		;
-	dcterms:modified "2025-10-02T20:45:35Z"^^xsd:dateTime ;
-	.
-
-:ProductOperation
-	a owl:Class ;
-	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
-	rdfs:label
-		"Product Operation"@en ,
-		"Produktbetrieb"@de
-		;
-	dcterms:modified "2021-11-24T10:30:35Z"^^xsd:dateTime ;
-	skos:definition "Includes all phases and activities in the operation phase of a product."@en ;
-	.
-
-:ProductionDevelopment
-	a owl:Class ;
-	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
-	rdfs:label
-		"Production Development"@en ,
-		"Produktionsentwicklung"@de
-		;
-	dcterms:modified "2020-10-29T12:15:18Z"^^xsd:dateTime ;
-	skos:definition """The manufacturing or production engineer's primary focus is to turn raw material into an updated or new product in the most effective, efficient & economic way possible.
+Description based on: https://cio-wiki.org/wiki/Product_Development</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/ProductLineEngineering">
+		<rdfs:subClassOf rdf:resource="http://www.omg.org/spec/CASCaRA/metamodel/Entity"/>
+		<rdfs:label xml:lang="en">Product Line Engineering</rdfs:label>
+		<rdfs:label xml:lang="de">Produktlinienentwicklung</rdfs:label>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2025-10-02T20:45:35Z</dcterms:modified>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/ProductOperation">
+		<rdfs:subClassOf rdf:resource="http://www.omg.org/spec/CASCaRA/metamodel/Entity"/>
+		<rdfs:label xml:lang="en">Product Operation</rdfs:label>
+		<rdfs:label xml:lang="de">Produktbetrieb</rdfs:label>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2021-11-24T10:30:35Z</dcterms:modified>
+		<skos:definition xml:lang="en">Includes all phases and activities in the operation phase of a product.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/ProductionDevelopment">
+		<rdfs:subClassOf rdf:resource="http://www.omg.org/spec/CASCaRA/metamodel/Entity"/>
+		<rdfs:label xml:lang="en">Production Development</rdfs:label>
+		<rdfs:label xml:lang="de">Produktionsentwicklung</rdfs:label>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2020-10-29T12:15:18Z</dcterms:modified>
+		<skos:definition xml:lang="en">The manufacturing or production engineer&apos;s primary focus is to turn raw material into an updated or new product in the most effective, efficient &amp; economic way possible.
 Manufacturing Engineering is based on core industrial engineering and mechanical engineering skills, adding important elements from mechatronics, commerce, economics and business management.
-Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
-	.
-
-:VerificationValidationUsingSimulation
-	a owl:Class ;
-	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
-	rdfs:label
-		"Verification & Validation using Simulation"@en ,
-		"Verifikation & Validierung durch Simulation"@de
-		;
-	dcterms:modified "2023-03-10T07:09:37Z"^^xsd:dateTime ;
-	skos:definition """Modeling and simulation (M&S) is the domain-specific use of models (e.g., physical, mathematical, or logical representation of a system, entity, phenomenon, or process) as a basis for simulations to develop data utilized for management or technical decision making.
+Source: https://en.wikipedia.org/wiki/Manufacturing_engineering</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/VerificationValidationUsingSimulation">
+		<rdfs:subClassOf rdf:resource="http://www.omg.org/spec/CASCaRA/metamodel/Entity"/>
+		<rdfs:label xml:lang="en">Verification &amp; Validation using Simulation</rdfs:label>
+		<rdfs:label xml:lang="de">Verifikation &amp; Validierung durch Simulation</rdfs:label>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2023-03-10T07:09:37Z</dcterms:modified>
+		<skos:definition xml:lang="en">Modeling and simulation (M&amp;S) is the domain-specific use of models (e.g., physical, mathematical, or logical representation of a system, entity, phenomenon, or process) as a basis for simulations to develop data utilized for management or technical decision making.
 Simulation may include finite elements analysis, fluid analysis, DMU simulation, kinematics simulation, as well as simulation based on software prototypes. It also includes X-in-the-Loop (XiL), using integrated design and simulation models and capabilities.
 Verification aims at the demonstration of product compliance to the specified design requirements.
 Validation aims at the demonstration of conformance to stakeholder requirements.
-Description based on: https://en.wikipedia.org/wiki/Modeling_and_simulation, ISO 29148, ISO 15288"""@en ;
-	.
-
-:VerificationValidationUsingTest
-	a owl:Class ;
-	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
-	rdfs:label
-		"Verification & Validation using Test"@en ,
-		"Verifikation & Validierung durch Test"@de
-		;
-	dcterms:modified "2023-03-10T07:29:10Z"^^xsd:dateTime ;
-	skos:definition """While simulation is based on virtual models, testing is based on prototypes and samples.
+Description based on: https://en.wikipedia.org/wiki/Modeling_and_simulation, ISO 29148, ISO 15288</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/VerificationValidationUsingTest">
+		<rdfs:subClassOf rdf:resource="http://www.omg.org/spec/CASCaRA/metamodel/Entity"/>
+		<rdfs:label xml:lang="en">Verification &amp; Validation using Test</rdfs:label>
+		<rdfs:label xml:lang="de">Verifikation &amp; Validierung durch Test</rdfs:label>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2023-03-10T07:29:10Z</dcterms:modified>
+		<skos:definition xml:lang="en">While simulation is based on virtual models, testing is based on prototypes and samples.
 Verification is to demonstrate product compliance to the specified design requirements. Validation is to demonstrate conformance to stakeholder requirements.
-Description based on ISO 29148, resp. ISO 15288"""@en ;
-	.
+Description based on ISO 29148, resp. ISO 15288</skos:definition>
+	</owl:Class>
 
+</rdf:RDF>

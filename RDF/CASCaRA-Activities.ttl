@@ -13,7 +13,6 @@
 @prefix ee: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/> .
 @prefix fld: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/> .
 @prefix man: <http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ManufacturingSupplyChain/> .
-@prefix mec: <http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ProductDesign/MechanicalDesign/> .
 @prefix mech: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/> .
 @prefix mnf: <http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/> .
 @prefix op: <http://www.omg.org/spec/CASCaRA/ontology/Operation/> .
@@ -41,11 +40,11 @@
 		"Alvarez Rodriguez, José Maria, UC3 Madrid" ,
 		"Arslan, Serkan, INOMIC Solutions GmbH" ,
 		"Balandi, Oguzhan, T-Systems International GmbH" ,
-		"Baleani, Massimo, Collins Aerospace" ,
+		"Baleani, Massimo, RTX Technologies, Collins Aerospace" ,
 		"Bassam, Hamza, oose eG" ,
 		"Beavin, William, The Boeing Company" ,
 		"Bielert, René, Dr.-Ing. h.c. F. Porsche AG" ,
-		"Bleisinger, Oliver, Fraunhofer IESE" ,
+		"Bleisinger, Oliver, Fraunhofer Gesellschaft, Fraunhofer IESE" ,
 		"Bosse, Rolf, Mercedes-Benz AG" ,
 		"Burkhart, Roger, Thematix Partners" ,
 		"Christmann, Simon, :em engineering methods AG" ,
@@ -55,36 +54,37 @@
 		"Esquerra, Fredwilliam, The Boeing Company" ,
 		"Giese, Sarah, PROSTEP AG" ,
 		"Gliniorz, Stefan, Robert Bosch GmbH" ,
-		"Grimm, Prof. Dr. Christoph, Division of Design of Cyber-Physical Systems" ,
+		"Grimm, Prof. Dr. Christoph, RPTU Rheinland-Pfälzische Technische Universität, Department of Computer Science in Kaiserslautern, Division of Design of Cyber-Physical Systems" ,
 		"Grünwald, Dr. Christian, Volkswagen AG" ,
-		"Haarer, Alexander, ATLAS Elektronik" ,
+		"Haarer, Alexander, TKMS Group, ATLAS Elektronik" ,
 		"Hahn, Hank, The Boeing Company" ,
 		"Hall, Kyle, Airbus Operations GmbH" ,
 		"Harms, Manfred, Manfred Harms Consulting" ,
 		"Hashimoto, Atsushi, JAXA Japan Aerospace Exploration Agency" ,
-		"Husung, Dr.-Ing. Stephan, Product and Systems Engineering Group" ,
+		"Husung, Dr.-Ing. Stephan, TU Ilmenau, Department of Mechanical Engineering, Product and Systems Engineering Group" ,
 		"Kaufmann, Uwe, ModelAlchemy Consulting" ,
 		"Kendall, Elisa, Thematix Partners" ,
 		"Kiehlmann, Karsten, Aumovio SE" ,
 		"Kirsch, Michael, :em engineering methods AG" ,
-		"Klaar, Dr. Oliver, ZF Friedrichshafen" ,
+		"Klaar, Dr. Oliver, ZF Group, ZF Friedrichshafen" ,
 		"Kleiner, Dr.-Ing. Sven, :em engineering methods AG" ,
 		"Klöppner, Robert, MTU Aero Engines AG" ,
 		"Koch, Dr. Walter, GfSE Gesellschaft für Systems Engineering" ,
 		"Koethe, Manfred, 88solutions" ,
 		"Krems, Daniel, AVL List" ,
 		"Lehnen, Johannes, :em engineering methods AG" ,
-		"Li, Zirui, Product and Systems Engineering Group" ,
+		"Li, Zirui, TU Ilmenau, Department of Mechanical Engineering, Product and Systems Engineering Group" ,
 		"Martin, James, Anark Corporation Inc." ,
 		"Marvin, Joe, PSG Prime Solutions Group" ,
 		"Mendo, Juan Carlos, The Boeing Company" ,
 		"Meyer, Nico, Volkswagen AG" ,
-		"Mogo Nem, Dr.-Ing. Fabrice, Schaeffler Technologies AG & Co. KG" ,
+		"Mogo Nem, Dr. Fabrice, :em engineering methods AG" ,
+		"Mogo Nem, Dr. Fabrice, Schaeffler AG, Schaeffler Technologies AG & Co. KG" ,
 		"Moreland, Clarence Moe, Modern Technology Solutions, Inc." ,
-		"Mueller, Andreas, Schaeffler Technologies AG & Co. KG" ,
+		"Mueller, Andreas, Schaeffler AG, Schaeffler Technologies AG & Co. KG" ,
 		"Nielsen, Johan, ELYSIUM Inc." ,
 		"Noguchi, Ryan, Aerospace Corp." ,
-		"Psota, Thomas, Fraunhofer IESE" ,
+		"Psota, Thomas, Fraunhofer Gesellschaft, Fraunhofer IESE" ,
 		"Rieger, Dr. Viola, Infineon Technologies AG" ,
 		"Rivett, Pete, Intuitive AI" ,
 		"Sauvage, Michel, Airbus Operations GmbH" ,
@@ -92,16 +92,16 @@
 		"Schopper, Dominik, Mercedes-Benz AG" ,
 		"Spreier, Phil, ELYSIUM Inc." ,
 		"Stoib, Martin, Kromberg & Schubert Automotive GmbH & Co. KG" ,
-		"Stürken, Dr. Momme, Schaeffler Technologies AG & Co. KG" ,
+		"Stürken, Dr. Momme, Schaeffler AG, Schaeffler Technologies AG & Co. KG" ,
 		"Tazir, Nora, prostep ivip Association" ,
-		"Tonelli, Cecilia, Collins Aerospace" ,
+		"Tonelli, Cecilia, RTX Technologies, Collins Aerospace" ,
 		"Weilkiens, Tim, oose eG" ,
 		"Weimer, Henrik, Airbus Operations GmbH" ,
-		"Williams, Mark" ,
+		"Williams, Mark, INCOSE" ,
 		"von Dungern, Dr. Oskar, enso managers GmbH" ,
 		"von Holst, Dr.-Ing. Christian, John Deere GmbH & Co KG"
 		;
-	dcterms:created "02.07.2026 06:30:48" ;
+	dcterms:created "05.07.2026 20:56:56" ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 88solutions
@@ -111,7 +111,7 @@ Copyright (c) 2024-2026 ATLAS Elektronik
 Copyright (c) 2024-2026 The Boeing Company
 Copyright (c) 2024-2026 enso managers GmbH
 Copyright (c) 2024-2026 GfSE Gesellschaft für Systems Engineering
-Copyright (c) 2024 INCOSE
+Copyright (c) 2024-2026 INCOSE
 Copyright (c) 2024-2026 INOMIC Solutions GmbH
 Copyright (c) 2024-2026 Intuitive AI
 Copyright (c) 2024-2026 Manfred Harms Consulting
@@ -201,7 +201,7 @@ cas:CollaborativeArchitectureDesignCoDevelopment
 		"Collaborative Architecture Design Co-Development "@en ,
 		"Systems Engineer. Design Engineer. "@de
 		;
-	cas:Provided
+	cas:provides
 		arch:Function ,
 		arch:SystemRequirement ,
 		sys:ComponentConnection ,
@@ -237,11 +237,11 @@ cas:CollaborativeProductRequirementsManagement
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label "Collaborative Product Requirements Management"@en ;
-	cas:Provided
+	cas:provides
 		arch:Requirement ,
 		arch:StakeholderRequirement
 		;
-	cas:Used
+	cas:uses
 		org:Role ,
 		arch:UseCase
 		;
@@ -303,7 +303,7 @@ col:LongTermArchiving
 		"Langzeitarchivierung"@de ,
 		"Long-Term Archiving"@en
 		;
-	cas:Used
+	cas:uses
 		proc:JoiningProcess ,
 		arch:Function ,
 		arch:StakeholderRequirement ,
@@ -336,7 +336,7 @@ man:PackagingLogistics
 		"Packaging & Logistics"@en ,
 		"Verpackung & Logistik"@de
 		;
-	cas:Used
+	cas:uses
 		proc:JoiningProcess ,
 		fld:HydraulicPneumaticConnection ,
 		fld:HydraulicPneumaticPort ,
@@ -355,7 +355,7 @@ man:PartsManufacturing
 		"Parts Manufacturing"@en ,
 		"Teilefertigung"@de
 		;
-	cas:Used
+	cas:uses
 		mnf:ManufacturingEquipmentComponent ,
 		proc:ManufacturingOperation ,
 		mech:BendingSpecification ,
@@ -385,7 +385,7 @@ man:ProductAssembly
 		"Montage"@de ,
 		"Product Assembly"@en
 		;
-	cas:Used
+	cas:uses
 		mnf:ManufacturingEquipmentComponent ,
 		proc:JoiningProcess ,
 		proc:ManufacturingOperation ,
@@ -411,7 +411,7 @@ man:QualityInspection
 		"Quality Inspection"@en ,
 		"Qualitätskontrolle"@de
 		;
-	cas:Used
+	cas:uses
 		mnf:ControlPlan ,
 		proc:JoiningProcess ,
 		mech:Body ,
@@ -431,7 +431,7 @@ col:Procurement
 		"Beschaffung"@de ,
 		"Procurement"@en
 		;
-	cas:Used
+	cas:uses
 		proc:JoiningProcess ,
 		ee:ElectricElectronicComponent ,
 		ee:ElectricElectronicConnection ,
@@ -456,33 +456,23 @@ col:Procurement
 	skos:definition "Communication between procurement and suppliers in the bidding and iquiry phase. Supports the OMG Model-Based Aqcuisition initiative."@en ;
 	.
 
-con:BusinessOrMissionAnalysis
+con:AnalyzeDesignFailureModesAndEffectsDFmea
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
-		"Business or Mission Analysis"@en ,
-		"Geschäfts- oder Einsatzanalyse"@de
+		"Analyze design failure modes and effects (D-FMEA)"@en ,
+		"Fehlermöglichkeiten und -einfluss analysieren (D-FMEA)"@de
 		;
-	cas:Provided
-		org:Role ,
-		arch:UseCase
-		;
-	skos:definition """Product Planning is the ongoing process of identifying and articulating market requirements that define a product's feature set. Product planning serves as the basis for decisions about price, distribution and promotion.
-Product planning is the process of creating a product idea and following through on it until the product is introduced to the market. Additionally, a small company must have an exit strategy for its product in case the product does not sell.
-Product planning entails managing the product throughout its life using various marketing strategies, including product extensions or improvements, increased distribution, price changes and promotions.
-
-Also includes the identification of relevant legal requirements as well as customs and tax regulations applicable to the product and the respective target markets.
-Description based on: https://en.wikipedia.org/wiki/Product_planning"""@en ;
 	.
 
-con:FunctionalSafety
+con:AssessFunctionalSafety
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
-		"Functional Safety"@en ,
-		"Funktionale Sicherheit"@de
+		"Assess functional safety"@en ,
+		"Funktionale Sicherheit bewerten"@de
 		;
-	cas:Provided
+	cas:provides
 		arch:Function ,
 		sys:ComponentConnection ,
 		sys:ComponentInterface ,
@@ -490,7 +480,7 @@ con:FunctionalSafety
 		sys:Deviation ,
 		sys:SystemComponent
 		;
-	cas:Used
+	cas:uses
 		org:Role ,
 		arch:Function ,
 		arch:SystemRequirement ,
@@ -502,30 +492,33 @@ con:FunctionalSafety
 		;
 	.
 
-con:RequirementsEngineering
+con:BusinessOrMissionAnalysis
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
-		"Anforderungsmanagement"@de ,
-		"Requirements Engineering"@en
+		"Business or Mission Analysis"@en ,
+		"Geschäfts- oder Einsatzanalyse"@de
 		;
-	cas:Provided arch:Requirement ;
-	cas:Used
+	cas:provides
 		org:Role ,
 		arch:UseCase
 		;
-	skos:definition """Requirements engineering is the process of defining, eliciting, documenting, and maintaining requirements in the engineering design process.
-Description based on: https://en.wikipedia.org/wiki/Requirements_engineering"""@en ;
+	skos:definition """Product Planning is the ongoing process of identifying and articulating market requirements that define a product's feature set. Product planning serves as the basis for decisions about price, distribution and promotion.
+Product planning is the process of creating a product idea and following through on it until the product is introduced to the market. Additionally, a small company must have an exit strategy for its product in case the product does not sell.
+Product planning entails managing the product throughout its life using various marketing strategies, including product extensions or improvements, increased distribution, price changes and promotions.
+
+Also includes the identification of relevant legal requirements as well as customs and tax regulations applicable to the product and the respective target markets.
+Description based on: https://en.wikipedia.org/wiki/Product_planning"""@en ;
 	.
 
-con:SystemsArchitecture
+con:DefineSystemsArchitecture
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
-		"Systemarchitektur"@de ,
-		"Systems Architecture"@en
+		"Define systems Architecture"@en ,
+		"Systemarchitektur definieren"@de
 		;
-	cas:Provided
+	cas:provides
 		arch:Function ,
 		sys:ComponentConnection ,
 		sys:ComponentInterface ,
@@ -533,12 +526,28 @@ con:SystemsArchitecture
 		sys:Deviation ,
 		sys:SystemComponent
 		;
-	cas:Used
+	cas:uses
 		org:Role ,
 		arch:StakeholderRequirement ,
 		arch:UseCase
 		;
 	skos:definition "Systems architecture refers to the cross-domain definition of functions and logical structures at systems level, that will be pursued in detail by the individual domains mechanical design, electric/electronic design and software design."@en ;
+	.
+
+con:RequirementsEngineering
+	a owl:Class ;
+	rdfs:subClassOf cas:Activity ;
+	rdfs:label
+		"Anforderungsmanagement"@de ,
+		"Requirements Engineering"@en
+		;
+	cas:provides arch:Requirement ;
+	cas:uses
+		org:Role ,
+		arch:UseCase
+		;
+	skos:definition """Requirements engineering is the process of defining, eliciting, documenting, and maintaining requirements in the engineering design process.
+Description based on: https://en.wikipedia.org/wiki/Requirements_engineering"""@en ;
 	.
 
 <http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ProductDesign/ElectricalElectronicalDesign>
@@ -548,7 +557,7 @@ con:SystemsArchitecture
 		"Electrical/Electronical Design"@en ,
 		"Elektrik-/Elektronikentwicklung"@de
 		;
-	cas:Provided
+	cas:provides
 		ctx:Configuration ,
 		ctx:Reference ,
 		ctx:Variant ,
@@ -556,7 +565,7 @@ con:SystemsArchitecture
 		ee:ElectricElectronicConnection ,
 		ee:ElectricElectronicPort
 		;
-	cas:Used
+	cas:uses
 		arch:Function ,
 		arch:SystemRequirement ,
 		mech:Body ,
@@ -577,7 +586,7 @@ Electrical/Electronic Design is usually performed using an electrical/electronic
 		"Electrical/Mechanical Design Collaboration"@en ,
 		"Zusammenarbeit Elektrik/Mechanik-Konstruktion"@de
 		;
-	cas:Used
+	cas:uses
 		ee:ElectricElectronicComponent ,
 		ee:ElectricElectronicConnection ,
 		ee:ElectricElectronicPort ,
@@ -587,20 +596,43 @@ Electrical/Electronic Design is usually performed using an electrical/electronic
 	skos:definition "In Electrical/Mechanical Design Collaboration, both design disciplines involved will collaborate in a common 3D space in order to adjust and coordinate allocation, dimensioning and positioning of components."@en ;
 	.
 
-mec:DefineJoiningElements
+<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ProductDesign/MechanicalDesign>
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label
-		"Define Joining Elements"@en ,
-		"Fügeverbindungen definieren"@de
+		"Mechanical Design"@en ,
+		"Mechanische Konstruktion"@de
 		;
-	cas:Provided mech:JoiningElement ;
-	cas:Used
-		arch:SystemRequirement ,
-		mech:Face ,
+	cas:provides
+		ctx:Configuration ,
+		ctx:Reference ,
+		ctx:Variant ,
+		proc:JoiningProcess ,
+		fld:HydraulicPneumaticConnection ,
+		fld:HydraulicPneumaticPort ,
+		mech:Body ,
+		mech:GeometricInterference ,
+		mech:JoiningElement ,
+		mech:KinematicJoint ,
+		mech:KinematicMechanism ,
+		mech:KinematicMotion ,
+		mech:KinematicSensor ,
 		mech:Material ,
-		mech:MechanicalComponent
+		mech:MechanicalComponent ,
+		mech:ModelAnnotation ,
+		mech:ModelView
 		;
+	cas:uses
+		arch:Function ,
+		arch:SystemRequirement ,
+		sys:ComponentConnection ,
+		sys:ComponentInterface ,
+		sys:ComponentState ,
+		sys:SystemComponent
+		;
+	skos:definition """In Mechanical Design, physical product structure, product geometry, as well as all specifications are defined.
+This includes shape, dimensioning and tolerancing, material (including semi-finished parts and treatment), surface and edge specifications.
+Mechanical design is usually conducted using a mechanical CAD system."""@en ;
 	.
 
 <http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductDevelopment/ProductDesign/SoftwareEngineering>
@@ -610,7 +642,7 @@ mec:DefineJoiningElements
 		"Software Engineering"@en ,
 		"Softwareentwicklung"@de
 		;
-	cas:Provided
+	cas:provides
 		ctx:Configuration ,
 		ctx:Reference ,
 		ctx:Variant ,
@@ -618,7 +650,7 @@ mec:DefineJoiningElements
 		sw:SoftwareComponent ,
 		sw:SoftwareInterface
 		;
-	cas:Used
+	cas:uses
 		arch:Function ,
 		arch:SystemRequirement ,
 		ee:ElectricElectronicComponent ,
@@ -642,13 +674,13 @@ For configuration reasons it may be that software is treated a part to be consid
 		"Perform and document Simulation"@en ,
 		"Simulation durchführen und dokumentieren"@de
 		;
-	cas:Provided
+	cas:provides
 		val:ValidationResult ,
 		val:ValidationRun ,
 		ver:VerificationResult ,
 		ver:VerificationRun
 		;
-	cas:Used
+	cas:uses
 		mech:Body ,
 		mech:Material ,
 		mech:MechanicalComponent ,
@@ -667,7 +699,7 @@ For configuration reasons it may be that software is treated a part to be consid
 		"Plan and prepare Simulation"@en ,
 		"Simulation planen und vorbereiten"@de
 		;
-	cas:Provided
+	cas:provides
 		val:ValidationBoundaryCondition ,
 		val:ValidationCriterium ,
 		val:ValidationPlan ,
@@ -675,7 +707,7 @@ For configuration reasons it may be that software is treated a part to be consid
 		ver:VerificationPlan ,
 		ver:VerificationResource
 		;
-	cas:Used
+	cas:uses
 		arch:Function ,
 		arch:SystemRequirement ,
 		ee:ElectricElectronicComponent ,
@@ -721,13 +753,13 @@ For configuration reasons it may be that software is treated a part to be consid
 		"Perform and document Testing"@en ,
 		"Versuch durchführen und dokumentieren"@de
 		;
-	cas:Provided
+	cas:provides
 		val:ValidationResult ,
 		val:ValidationRun ,
 		ver:VerificationResult ,
 		ver:VerificationRun
 		;
-	cas:Used
+	cas:uses
 		mech:Material ,
 		mech:MechanicalComponent ,
 		val:ValidationBoundaryCondition ,
@@ -745,7 +777,7 @@ For configuration reasons it may be that software is treated a part to be consid
 		"Prepare Testing"@en ,
 		"Versuch vorbereiten"@de
 		;
-	cas:Provided
+	cas:provides
 		val:ValidationBoundaryCondition ,
 		val:ValidationCriterium ,
 		val:ValidationPlan ,
@@ -753,7 +785,7 @@ For configuration reasons it may be that software is treated a part to be consid
 		ver:VerificationPlan ,
 		ver:VerificationResource
 		;
-	cas:Used
+	cas:uses
 		arch:Function ,
 		arch:SystemRequirement ,
 		ee:ElectricElectronicComponent ,
@@ -792,7 +824,7 @@ pro:DefinitionProductAssetInstanceConfigurabilitySpace
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label "Definition product asset instance configurability space"@en ;
-	cas:Used
+	cas:uses
 		sys:ComponentConnection ,
 		sys:ComponentInterface ,
 		sys:ComponentState ,
@@ -805,7 +837,7 @@ pro:DesignProductAssetInstance
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label "Design product asset instance"@en ;
-	cas:Used
+	cas:uses
 		sys:ComponentConnection ,
 		sys:ComponentInterface ,
 		sys:ComponentState ,
@@ -818,7 +850,7 @@ pro:DesignProductLine
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
 	rdfs:label "Design product line"@en ;
-	cas:Used
+	cas:uses
 		arch:Function ,
 		arch:SystemRequirement ,
 		sys:ComponentConnection ,
@@ -836,7 +868,7 @@ pro:DesignProductLine
 		"Disassembly & Recycling"@en ,
 		"Zerlegung & Recycling"@de
 		;
-	cas:Used
+	cas:uses
 		proc:JoiningProcess ,
 		arch:Function ,
 		ee:ElectricElectronicComponent ,
@@ -862,7 +894,7 @@ pro:DesignProductLine
 		"Maintenance & Service"@en ,
 		"Wartung & Instandhaltung"@de
 		;
-	cas:Used
+	cas:uses
 		proc:JoiningProcess ,
 		arch:Function ,
 		arch:UseCase ,
@@ -889,8 +921,8 @@ pro:DesignProductLine
 		"Product Usage"@en ,
 		"Produktnutzung"@de
 		;
-	cas:Provided op:OperationIncident ;
-	cas:Used
+	cas:provides op:OperationIncident ;
+	cas:uses
 		arch:Function ,
 		arch:UseCase ,
 		ee:ElectricElectronicComponent ,
@@ -913,7 +945,7 @@ pro:DesignProductLine
 		"Cost Calculation"@en ,
 		"Kostenkalkulation"@de
 		;
-	cas:Used
+	cas:uses
 		mnf:ControlPlan ,
 		mnf:ManufacturingEquipmentComponent ,
 		proc:AssemblyOperation ,
@@ -953,12 +985,12 @@ pro:DesignProductLine
 		"Inspection Planning"@en ,
 		"Prüfplanung"@de
 		;
-	cas:Provided
+	cas:provides
 		ver:VerificationCharacteristic ,
 		ver:VerificationPlan ,
 		ver:VerificationResource
 		;
-	cas:Used
+	cas:uses
 		ee:ElectricElectronicComponent ,
 		ee:ElectricElectronicConnection ,
 		ee:ElectricElectronicPort ,
@@ -986,6 +1018,15 @@ pro:DesignProductLine
 	skos:definition "Includes the selection of relevant inspection criteria from product and production specifications, identification and assignment of appropriate inspection methods and equipment, as well as the allocation of appropriate inspection criteria per inspection event (first-article inspection, re-qualification, inspection in production, etc.)"@en ;
 	.
 
+<http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductionDevelopment/PerformProductionFailureModesAndEffectsPFmea>
+	a owl:Class ;
+	rdfs:subClassOf cas:Activity ;
+	rdfs:label
+		"Perform production failure modes and effects (P-FMEA)"@en ,
+		"Produktions-Fehlermöglichkeits- und Einflussanalyse durchführen (P-FMEA)"@de
+		;
+	.
+
 <http://www.omg.org/spec/CASCaRA/ontology/DigitalDataPackage/CollaborationUseCases/ProductionDevelopment/PlantLayout>
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
@@ -993,8 +1034,8 @@ pro:DesignProductLine
 		"Fabriklayout"@de ,
 		"Plant Layout"@en
 		;
-	cas:Provided mnf:ManufacturingEquipmentComponent ;
-	cas:Used
+	cas:provides mnf:ManufacturingEquipmentComponent ;
+	cas:uses
 		proc:AssemblyOperation ,
 		proc:HeatTreatment ,
 		proc:JoiningProcess ,
@@ -1020,8 +1061,8 @@ pro:DesignProductLine
 		"Process Planning"@en ,
 		"Prozessplanung"@de
 		;
-	cas:Provided proc:ManufacturingOperation ;
-	cas:Used
+	cas:provides proc:ManufacturingOperation ;
+	cas:uses
 		ee:ElectricElectronicComponent ,
 		ee:ElectricElectronicConnection ,
 		ee:ElectricElectronicPort ,
@@ -1058,8 +1099,8 @@ Source: https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume15/ambite01a-html/n
 		"Tools & Equipment Design"@en ,
 		"Werkzeug- & Vorrichtungsbau"@de
 		;
-	cas:Provided mnf:ManufacturingEquipmentComponent ;
-	cas:Used
+	cas:provides mnf:ManufacturingEquipmentComponent ;
+	cas:uses
 		proc:AssemblyOperation ,
 		proc:HeatTreatment ,
 		proc:JoiningProcess ,
@@ -1094,19 +1135,6 @@ Source: https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume15/ambite01a-html/n
 		;
 	dcterms:modified "2021-11-24T10:35:16Z"^^xsd:dateTime ;
 	skos:definition "Includes all activities related to source and manufacture a product in different companies, plants, or locations."@en ;
-	.
-
-:MechanicalDesign
-	a owl:Class ;
-	rdfs:subClassOf <http://www.omg.org/spec/CASCaRA/metamodel/Entity> ;
-	rdfs:label
-		"Mechanical Design"@en ,
-		"Mechanische Konstruktion"@de
-		;
-	dcterms:modified "2023-10-22T15:48:39Z"^^xsd:dateTime ;
-	skos:definition """In Mechanical Design, physical product structure, product geometry, as well as all specifications are defined.
-This includes shape, dimensioning and tolerancing, material (including semi-finished parts and treatment), surface and edge specifications.
-Mechanical design is usually conducted using a mechanical CAD system."""@en ;
 	.
 
 :ProductDesign

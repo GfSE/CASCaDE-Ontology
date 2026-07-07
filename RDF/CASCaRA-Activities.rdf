@@ -99,7 +99,7 @@
 		<dcterms:contributor>Williams, Mark, INCOSE</dcterms:contributor>
 		<dcterms:contributor>von Dungern, Dr. Oskar, enso managers GmbH</dcterms:contributor>
 		<dcterms:contributor>von Holst, Dr.-Ing. Christian, John Deere GmbH &amp; Co KG</dcterms:contributor>
-		<dcterms:created>05.07.2026 20:56:56</dcterms:created>
+		<dcterms:created>07.07.2026 09:20:25</dcterms:created>
 		<dcterms:license>CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 88solutions
@@ -671,19 +671,10 @@ For configuration reasons it may be that software is treated a part to be consid
 		<skos:definition xml:lang="en">Testing preparation includes the definition of product requirements and functions to be validated, the specification, design and manufacturing of samples, prototypes and test rigs.</skos:definition>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&pro;DefinitionProductAssetInstanceConfigurabilitySpace">
+	<owl:Class rdf:about="&pro;DefineProductAssetInstance">
 		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
-		<rdfs:label xml:lang="en">Definition product asset instance configurability space</rdfs:label>
-		<cas:uses rdf:resource="&sys;ComponentConnection"/>
-		<cas:uses rdf:resource="&sys;ComponentInterface"/>
-		<cas:uses rdf:resource="&sys;ComponentState"/>
-		<cas:uses rdf:resource="&sys;SystemComponent"/>
-		<skos:definition xml:lang="en">Definition of the CU product asset instance configurability space: the objective is to define the set of configuration options that will be made available to the CU end user for each CU instance. Typical options available for CU include clock selection, clock speed, caching and cache policy, protocol for external bus interfaces, general purpose I/O configuration (direction, active etc.) as well as dedicated options for peripherals and co-processors. A key aspect is also the definition of the configuration mechanisms that will be made available to the user including configuration protection features to prevent undesired/unauthorized changes. This is a collaborative efforts involving the same actors as Use Case 1, though driven by different criteria. The CU architect must balance the flexibility provided by configurability options with the added complexity it typically brings in terms of hardware design as well as verification effort. The product owner must balance programming complexity, potential higher cost and lower efficiency, with the capability of having their single CU instance capable of covering a broader problem space.</skos:definition>
-	</owl:Class>
-	
-	<owl:Class rdf:about="&pro;DesignProductAssetInstance">
-		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
-		<rdfs:label xml:lang="en">Design product asset instance</rdfs:label>
+		<rdfs:label xml:lang="en">Define product asset instance</rdfs:label>
+		<rdfs:label xml:lang="de">Produktausprägung definieren</rdfs:label>
 		<cas:uses rdf:resource="&sys;ComponentConnection"/>
 		<cas:uses rdf:resource="&sys;ComponentInterface"/>
 		<cas:uses rdf:resource="&sys;ComponentState"/>
@@ -691,9 +682,21 @@ For configuration reasons it may be that software is treated a part to be consid
 		<skos:definition xml:lang="en">Design of the CU product asset instance, implying the definition of the bill of features: the ultimate goal of this collaboration use case is the specification of the features, selected from the feature catalogue, that define the solution to the specific customer problem within the solution/family portfolio. The bill of feature is basically the set of actual values assigned to the variation point, which fully determine a single specific family instance. Collaboration still happens between product and CU architects, with the former specifying requirements and high level architecture for a specific problem (within their problem domain) and the latter providing a set of potential solutions, all belonging to the same CU family.</skos:definition>
 	</owl:Class>
 	
-	<owl:Class rdf:about="&pro;DesignProductLine">
+	<owl:Class rdf:about="&pro;DefineProductAssetInstanceConfigurabilitySpace">
 		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
-		<rdfs:label xml:lang="en">Design product line</rdfs:label>
+		<rdfs:label xml:lang="en">Define product asset instance configurability space</rdfs:label>
+		<rdfs:label xml:lang="de">Konfigurationsraum der Produktinstanz definieren</rdfs:label>
+		<cas:uses rdf:resource="&sys;ComponentConnection"/>
+		<cas:uses rdf:resource="&sys;ComponentInterface"/>
+		<cas:uses rdf:resource="&sys;ComponentState"/>
+		<cas:uses rdf:resource="&sys;SystemComponent"/>
+		<skos:definition xml:lang="en">Definition of the CU product asset instance configurability space: the objective is to define the set of configuration options that will be made available to the CU end user for each CU instance. Typical options available for CU include clock selection, clock speed, caching and cache policy, protocol for external bus interfaces, general purpose I/O configuration (direction, active etc.) as well as dedicated options for peripherals and co-processors. A key aspect is also the definition of the configuration mechanisms that will be made available to the user including configuration protection features to prevent undesired/unauthorized changes. This is a collaborative efforts involving the same actors as Use Case 1, though driven by different criteria. The CU architect must balance the flexibility provided by configurability options with the added complexity it typically brings in terms of hardware design as well as verification effort. The product owner must balance programming complexity, potential higher cost and lower efficiency, with the capability of having their single CU instance capable of covering a broader problem space.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&pro;DefineProductLine">
+		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
+		<rdfs:label xml:lang="en">Define product line</rdfs:label>
+		<rdfs:label xml:lang="de">Produktlinie definieren</rdfs:label>
 		<cas:uses rdf:resource="&arch;Function"/>
 		<cas:uses rdf:resource="&arch;SystemRequirement"/>
 		<cas:uses rdf:resource="&sys;ComponentConnection"/>

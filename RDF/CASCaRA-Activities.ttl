@@ -101,7 +101,7 @@
 		"von Dungern, Dr. Oskar, enso managers GmbH" ,
 		"von Holst, Dr.-Ing. Christian, John Deere GmbH & Co KG"
 		;
-	dcterms:created "05.07.2026 20:56:56" ;
+	dcterms:created "07.07.2026 09:20:25" ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 88solutions
@@ -820,23 +820,13 @@ For configuration reasons it may be that software is treated a part to be consid
 	skos:definition "Testing preparation includes the definition of product requirements and functions to be validated, the specification, design and manufacturing of samples, prototypes and test rigs."@en ;
 	.
 
-pro:DefinitionProductAssetInstanceConfigurabilitySpace
+pro:DefineProductAssetInstance
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
-	rdfs:label "Definition product asset instance configurability space"@en ;
-	cas:uses
-		sys:ComponentConnection ,
-		sys:ComponentInterface ,
-		sys:ComponentState ,
-		sys:SystemComponent
+	rdfs:label
+		"Define product asset instance"@en ,
+		"Produktausprägung definieren"@de
 		;
-	skos:definition "Definition of the CU product asset instance configurability space: the objective is to define the set of configuration options that will be made available to the CU end user for each CU instance. Typical options available for CU include clock selection, clock speed, caching and cache policy, protocol for external bus interfaces, general purpose I/O configuration (direction, active etc.) as well as dedicated options for peripherals and co-processors. A key aspect is also the definition of the configuration mechanisms that will be made available to the user including configuration protection features to prevent undesired/unauthorized changes. This is a collaborative efforts involving the same actors as Use Case 1, though driven by different criteria. The CU architect must balance the flexibility provided by configurability options with the added complexity it typically brings in terms of hardware design as well as verification effort. The product owner must balance programming complexity, potential higher cost and lower efficiency, with the capability of having their single CU instance capable of covering a broader problem space."@en ;
-	.
-
-pro:DesignProductAssetInstance
-	a owl:Class ;
-	rdfs:subClassOf cas:Activity ;
-	rdfs:label "Design product asset instance"@en ;
 	cas:uses
 		sys:ComponentConnection ,
 		sys:ComponentInterface ,
@@ -846,10 +836,29 @@ pro:DesignProductAssetInstance
 	skos:definition "Design of the CU product asset instance, implying the definition of the bill of features: the ultimate goal of this collaboration use case is the specification of the features, selected from the feature catalogue, that define the solution to the specific customer problem within the solution/family portfolio. The bill of feature is basically the set of actual values assigned to the variation point, which fully determine a single specific family instance. Collaboration still happens between product and CU architects, with the former specifying requirements and high level architecture for a specific problem (within their problem domain) and the latter providing a set of potential solutions, all belonging to the same CU family."@en ;
 	.
 
-pro:DesignProductLine
+pro:DefineProductAssetInstanceConfigurabilitySpace
 	a owl:Class ;
 	rdfs:subClassOf cas:Activity ;
-	rdfs:label "Design product line"@en ;
+	rdfs:label
+		"Define product asset instance configurability space"@en ,
+		"Konfigurationsraum der Produktinstanz definieren"@de
+		;
+	cas:uses
+		sys:ComponentConnection ,
+		sys:ComponentInterface ,
+		sys:ComponentState ,
+		sys:SystemComponent
+		;
+	skos:definition "Definition of the CU product asset instance configurability space: the objective is to define the set of configuration options that will be made available to the CU end user for each CU instance. Typical options available for CU include clock selection, clock speed, caching and cache policy, protocol for external bus interfaces, general purpose I/O configuration (direction, active etc.) as well as dedicated options for peripherals and co-processors. A key aspect is also the definition of the configuration mechanisms that will be made available to the user including configuration protection features to prevent undesired/unauthorized changes. This is a collaborative efforts involving the same actors as Use Case 1, though driven by different criteria. The CU architect must balance the flexibility provided by configurability options with the added complexity it typically brings in terms of hardware design as well as verification effort. The product owner must balance programming complexity, potential higher cost and lower efficiency, with the capability of having their single CU instance capable of covering a broader problem space."@en ;
+	.
+
+pro:DefineProductLine
+	a owl:Class ;
+	rdfs:subClassOf cas:Activity ;
+	rdfs:label
+		"Define product line"@en ,
+		"Produktlinie definieren"@de
+		;
 	cas:uses
 		arch:Function ,
 		arch:SystemRequirement ,

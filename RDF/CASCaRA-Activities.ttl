@@ -101,7 +101,7 @@
 		"von Dungern, Dr. Oskar, enso managers GmbH" ,
 		"von Holst, Dr.-Ing. Christian, John Deere GmbH & Co KG"
 		;
-	dcterms:created "07.07.2026 09:20:25" ;
+	dcterms:created "07.07.2026 16:13:27" ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 88solutions
@@ -463,6 +463,7 @@ con:AnalyzeDesignFailureModesAndEffectsDFmea
 		"Analyze design failure modes and effects (D-FMEA)"@en ,
 		"Fehlermöglichkeiten und -einfluss analysieren (D-FMEA)"@de
 		;
+	skos:definition "Design Failure Modes and Effects Analysis (D-FMEA) is performed to systematically identify and evaluate potential failure modes in a product design before implementation. It assesses the impact, causes, and likelihood of failures, enabling teams to prioritize risks and define corrective actions early in the development process. This proactive approach improves product reliability, safety, and overall design quality while reducing development costs and rework."@en ;
 	.
 
 con:AssessFunctionalSafety
@@ -490,6 +491,7 @@ con:AssessFunctionalSafety
 		sys:ComponentState ,
 		sys:SystemComponent
 		;
+	skos:definition "A Functional Safety Assessment (FSA) is conducted to independently evaluate whether a product, system, or process complies with applicable functional safety standards and safety requirements throughout its lifecycle. The assessment verifies the effectiveness of safety activities, identifies potential gaps, and provides evidence that safety objectives have been achieved before release or operation. It supports risk reduction and strengthens confidence in the safety integrity of the overall system."@en ;
 	.
 
 con:BusinessOrMissionAnalysis
@@ -1178,7 +1180,8 @@ Description based on: https://cio-wiki.org/wiki/Product_Development"""@en ;
 		"Product Line Engineering"@en ,
 		"Produktlinienentwicklung"@de
 		;
-	dcterms:modified "2025-10-02T20:45:35Z"^^xsd:dateTime ;
+	dcterms:modified "2026-07-07T16:05:14Z"^^xsd:dateTime ;
+	skos:definition "Product Line Engineering (PLE) enables the systematic development and management of a family of related products by leveraging shared assets, architectures, and requirements. It helps organizations efficiently handle product variability and customization while maintaining consistency, quality, and compliance across product variants. This approach reduces development effort, accelerates time-to-market, and improves reuse throughout the product lifecycle."@en ;
 	.
 
 :ProductOperation

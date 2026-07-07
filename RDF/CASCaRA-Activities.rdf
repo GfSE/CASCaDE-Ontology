@@ -99,7 +99,7 @@
 		<dcterms:contributor>Williams, Mark, INCOSE</dcterms:contributor>
 		<dcterms:contributor>von Dungern, Dr. Oskar, enso managers GmbH</dcterms:contributor>
 		<dcterms:contributor>von Holst, Dr.-Ing. Christian, John Deere GmbH &amp; Co KG</dcterms:contributor>
-		<dcterms:created>07.07.2026 09:20:25</dcterms:created>
+		<dcterms:created>07.07.2026 16:13:27</dcterms:created>
 		<dcterms:license>CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 88solutions
@@ -394,6 +394,7 @@ For the Digital Data Package, model-based methods and data for product conceptua
 		<rdfs:subClassOf rdf:resource="&cas;Activity"/>
 		<rdfs:label xml:lang="en">Analyze design failure modes and effects (D-FMEA)</rdfs:label>
 		<rdfs:label xml:lang="de">Fehlermöglichkeiten und -einfluss analysieren (D-FMEA)</rdfs:label>
+		<skos:definition xml:lang="en">Design Failure Modes and Effects Analysis (D-FMEA) is performed to systematically identify and evaluate potential failure modes in a product design before implementation. It assesses the impact, causes, and likelihood of failures, enabling teams to prioritize risks and define corrective actions early in the development process. This proactive approach improves product reliability, safety, and overall design quality while reducing development costs and rework.</skos:definition>
 	</owl:Class>
 	
 	<owl:Class rdf:about="&con;AssessFunctionalSafety">
@@ -414,6 +415,7 @@ For the Digital Data Package, model-based methods and data for product conceptua
 		<cas:uses rdf:resource="&sys;ComponentInterface"/>
 		<cas:uses rdf:resource="&sys;ComponentState"/>
 		<cas:uses rdf:resource="&sys;SystemComponent"/>
+		<skos:definition xml:lang="en">A Functional Safety Assessment (FSA) is conducted to independently evaluate whether a product, system, or process complies with applicable functional safety standards and safety requirements throughout its lifecycle. The assessment verifies the effectiveness of safety activities, identifies potential gaps, and provides evidence that safety objectives have been achieved before release or operation. It supports risk reduction and strengthens confidence in the safety integrity of the overall system.</skos:definition>
 	</owl:Class>
 	
 	<owl:Class rdf:about="&con;BusinessOrMissionAnalysis">
@@ -957,7 +959,8 @@ Description based on: https://cio-wiki.org/wiki/Product_Development</skos:defini
 		<rdfs:subClassOf rdf:resource="http://www.omg.org/spec/CASCaRA/metamodel/Entity"/>
 		<rdfs:label xml:lang="en">Product Line Engineering</rdfs:label>
 		<rdfs:label xml:lang="de">Produktlinienentwicklung</rdfs:label>
-		<dcterms:modified rdf:datatype="&xsd;dateTime">2025-10-02T20:45:35Z</dcterms:modified>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-07-07T16:05:14Z</dcterms:modified>
+		<skos:definition xml:lang="en">Product Line Engineering (PLE) enables the systematic development and management of a family of related products by leveraging shared assets, architectures, and requirements. It helps organizations efficiently handle product variability and customization while maintaining consistency, quality, and compliance across product variants. This approach reduces development effort, accelerates time-to-market, and improves reuse throughout the product lifecycle.</skos:definition>
 	</owl:Class>
 	
 	<owl:Class rdf:about="http://www.omg.org/spec/CASCaRA/ontology/ProductOperation">

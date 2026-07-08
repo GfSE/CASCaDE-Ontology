@@ -12,7 +12,7 @@
 
 <http://www.omg.org/spec/CASCaRA/metamodel/>
 	a owl:Ontology ;
-	rdfs:label "Metamodel" ;
+	rdfs:label "Metamodel & Semantic Infrastructure" ;
 	dcterms:abstract "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice." ;
 	dcterms:contributor
 		"Alvarez Rodriguez, José Maria, UC3 Madrid" ,
@@ -139,57 +139,105 @@ Copyright (c) 2019-2026 ZF Friedrichshafen
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
 https://opensource.org/licenses/MIT""" ;
-	dcterms:title "CASCaRA Metamodel" ;
+	dcterms:title "CASCaRA Metamodel & Semantic Infrastructure" ;
 	owl:versionInfo "1.0" ;
 	.
 
 cas:Activity
 	a owl:Class ;
+	rdfs:subClassOf cas:Entity ;
 	rdfs:label
 		"Activity"@en ,
 		"Prozessschritt"@de
 		;
 	skos:definition
-		"A CASCaRA activity that relates to data entities delivered or required by this use-case."@en ,
-		"Ein CASCaRA-Prozess, der sich auf Entities bezieht, die im Rahmen dieses Anwendungsfalls bereitgestellt oder benötigt werden."@de
+		"A CASCaRA activity that uses CASCaRA entities and provides CASCaRA entities as result."@en ,
+		"Ein CASCaRA-Prozessschritt, der CASCaRA-Entities verwendet und CASCaRA-Entities als Ergebnis bereitstellt."@de
 		;
 	.
 
 cas:Activity_Shape
 	a sh:NodeShape ;
 	sh:property
-		_:blank19 ,
-		_:blank20
+		cas:provides_Shape ,
+		cas:uses_Shape
 		;
 	sh:targetClass cas:Activity ;
 	.
 
 cas:Entity
 	a owl:Class ;
-	rdfs:label "Entity"@en ;
-	skos:definition "A CASCaRA meta-model item used for entities."@en ;
+	rdfs:label
+		"Element"@de ,
+		"Entity"@en
+		;
+	skos:definition
+		"Represents an entity as part of the CASCaRA semantic infrastructure."@en ,
+		"Repräsentiert ein Element als Bestandteil der CASCaRA semantischen Infrastruktur."@de
+		;
 	.
 
 cas:Entity_Shape
 	a sh:NodeShape ;
-	sh:property
-		_:blank24 ,
-		_:blank26
-		;
 	sh:targetClass cas:Entity ;
 	.
 
 cas:Link
 	a owl:ObjectProperty ;
-	rdfs:label "linked with"@en ;
-	rdfs:range _:blank13 ;
-	skos:definition "A PIG meta-model item connecting a reified relationship with its source or target. Also connects an organizer to a model element."@en ;
+	rdfs:label
+		"linked to"@en ,
+		"verknüpft mit"@de
+		;
+	rdfs:domain cas:Relationship ;
+	rdfs:range cas:Entity ;
+	skos:definition
+		"Represents a link as part of the CASCaRA semantic infrastructure."@en ,
+		"Repräsentiert eine Verknüpfung als Bestandteil der CASCaRA semantischen Infrastuktur."@de
+		;
 	.
 
 cas:Link_Shape
 	a sh:PropertyShape ;
-	sh:or _:blank09 ;
 	sh:path cas:Link ;
+	.
+
+cas:Organizer
+	a owl:Class ;
+	rdfs:subClassOf cas:Entity ;
+	rdfs:label
+		"Hierarchieelement"@de ,
+		"Organizer"@en
+		;
+	skos:definition
+		"An element organizing model elements. An example is a list of requirements or a diagram using a certain notation."@en ,
+		"Ein Element, das andere Elemente organisiert. Beispielsweise eine Liste von Anforderungen oder ein Diagramm mit einer bestimmten Notation."@de
+		;
+	.
+
+cas:Organizer_Shape
+	a sh:NodeShape ;
+	sh:or _:blank3 ;
+	sh:property cas:Category_Shape ;
+	sh:targetClass cas:Organizer ;
+	.
+
+cas:Outline
+	a owl:Class ;
+	rdfs:subClassOf cas:Organizer ;
+	rdfs:label
+		"Gliederung"@de ,
+		"Outline"@en
+		;
+	skos:definition
+		"A subclass of CASCaRA organizer comprising all information items of a human-readable document. As usual, the outline is hierarchically organized."@en ,
+		"Eine Subklasse des CASCaRA-Organizers, die alle Informationselemente eines menschenlesbaren Dokuments zusammenfasst."@de
+		;
+	.
+
+cas:Outline_Shape
+	a sh:NodeShape ;
+	sh:or _:blank4 ;
+	sh:targetClass cas:Outline ;
 	.
 
 cas:Package
@@ -199,22 +247,24 @@ cas:Package
 		"Package"@en ,
 		"Paket"@de
 		;
-	skos:definition "A CASCaRA meta-model item used for packages comprising entities, relationships and potentially nested packages."@en ;
+	skos:definition
+		"A CASCaRA package that includes all CASCaRA entities and relationships selected for a defined purpose."@en ,
+		"Ein CASCaRA-Paket, das alle CASCaRA-Entities und -Relationen für einen bestimmten Zweck umfasst."@de
+		;
 	.
 
 cas:Package_Shape
 	a sh:NodeShape ;
-	sh:property
-		_:blank25 ,
-		_:blank27
-		;
 	sh:targetClass cas:Package ;
 	.
 
 cas:Property
 	a owl:DatatypeProperty ;
 	rdfs:label "Property"@en ;
-	skos:definition "A CASCaRA meta-model item used for properties (aka attributes)."@en ;
+	skos:definition
+		"A CASCaRA meta-model item used for properties (aka attributes)."@en ,
+		"Repräsentiert."@de
+		;
 	.
 
 cas:Property_Shape
@@ -223,208 +273,144 @@ cas:Property_Shape
 	sh:path cas:Property ;
 	.
 
-cas:Provided
-	a owl:ObjectProperty ;
-	rdfs:label
-		"Bereitgestellt"@de ,
-		"Provided"@en
-		;
-	rdfs:domain cas:Activity ;
-	rdfs:range cas:Entity ;
-	.
-
 cas:Relationship
 	a owl:Class ;
-	rdfs:label "Relationship"@en ;
-	skos:definition "A CASCaRA meta-model item used for reified relationships (aka predicates)."@en ;
+	rdfs:label
+		"Relation"@de ,
+		"Relationship"@en
+		;
+	skos:definition
+		"Represents a Relationship between two Entities as part of the CASCaRA semantic infrastructure."@en ,
+		"Repräsentiert eine Relation zwischen zwei Entitäten als Bestandteil der CASCaRA semantischen Infrastruktur."@de
+		;
 	.
 
 cas:Relationship_Shape
 	a sh:NodeShape ;
 	sh:property
-		_:blank28 ,
-		_:blank29 ,
-		_:blank30
+		cas:linksSource_Shape ,
+		cas:linksTarget_Shape
 		;
 	sh:targetClass cas:Relationship ;
-	.
-
-cas:Used
-	a owl:ObjectProperty ;
-	rdfs:label
-		"Used"@en ,
-		"Verwendet"@de
-		;
-	rdfs:domain cas:Activity ;
-	rdfs:range cas:Entity ;
 	.
 
 cas:linksSource
 	a owl:ObjectProperty ;
 	rdfs:subPropertyOf cas:Link ;
-	rdfs:label "to source"@en ;
-	rdfs:range _:blank14 ;
-	skos:definition "Connects the source of a reified relationship."@en ;
+	rdfs:label
+		"to source"@en ,
+		"zu Quelle"@de
+		;
+	rdfs:domain cas:Relationship ;
+	rdfs:range cas:Entity ;
+	skos:definition
+		"Connects the source entity of a reified relationship."@en ,
+		"Verbindet das Quellobjekt einer reifizierten Relation."@de
+		;
 	.
 
 cas:linksSource_Shape
 	a sh:PropertyShape ;
-	sh:or _:blank07 ;
+	sh:class cas:Entity ;
 	sh:path cas:linksSource ;
 	.
 
 cas:linksTarget
 	a owl:ObjectProperty ;
 	rdfs:subPropertyOf cas:Link ;
-	rdfs:label "to target"@en ;
-	rdfs:range _:blank15 ;
-	skos:definition "Connects the target of a reified relationship or an organizer."@en ;
+	rdfs:label
+		"to target"@en ,
+		"zu Ziel"@de
+		;
+	rdfs:domain cas:Relationship ;
+	rdfs:range cas:Entity ;
+	skos:definition
+		"Connects the target entity of a reified relationship."@en ,
+		"Verbindet das Zielobjekt einer reifizierten Relation."@de
+		;
 	.
 
 cas:linksTarget_Shape
 	a sh:PropertyShape ;
-	sh:or _:blank08 ;
+	sh:class cas:Entity ;
 	sh:path cas:linksTarget ;
 	.
 
-_:blank01
-	rdf:first cas:Entity ;
-	rdf:rest _:blank04 ;
+cas:provides
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf cas:Link ;
+	rdfs:label
+		"provides"@en ,
+		"stellt bereit"@de
+		;
+	skos:definition
+		"A CASCaRA Link that relates to CASCaRA entities provided by this activity."@en ,
+		"CASCaRA-Link, der auf CASCaRA-Entities verweist, welche von diesem Prozessschritt bereitgestellt werden."@de
+		;
 	.
 
-_:blank02
-	rdf:first cas:Entity ;
-	rdf:rest _:blank05 ;
-	.
-
-_:blank03
-	rdf:first cas:Entity ;
-	rdf:rest _:blank06 ;
-	.
-
-_:blank04
-	rdf:first cas:Relationship ;
-	rdf:rest rdf:nil ;
-	.
-
-_:blank05
-	rdf:first cas:Relationship ;
-	rdf:rest rdf:nil ;
-	.
-
-_:blank06
-	rdf:first cas:Relationship ;
-	rdf:rest rdf:nil ;
-	.
-
-_:blank07
-	rdf:first _:blank16 ;
-	rdf:rest _:blank10 ;
-	.
-
-_:blank08
-	rdf:first _:blank17 ;
-	rdf:rest _:blank11 ;
-	.
-
-_:blank09
-	rdf:first _:blank18 ;
-	rdf:rest _:blank12 ;
-	.
-
-_:blank10
-	rdf:first _:blank21 ;
-	rdf:rest rdf:nil ;
-	.
-
-_:blank11
-	rdf:first _:blank22 ;
-	rdf:rest rdf:nil ;
-	.
-
-_:blank12
-	rdf:first _:blank23 ;
-	rdf:rest rdf:nil ;
-	.
-
-_:blank13
-	owl:unionOf _:blank01 ;
-	.
-
-_:blank14
-	owl:unionOf _:blank02 ;
-	.
-
-_:blank15
-	owl:unionOf _:blank03 ;
-	.
-
-_:blank16
+cas:provides_Shape
+	a sh:PropertyShape ;
 	sh:class cas:Entity ;
+	sh:path cas:provides ;
 	.
 
-_:blank17
+cas:uses
+	a owl:ObjectProperty ;
+	rdfs:subPropertyOf cas:Link ;
+	rdfs:label
+		"uses"@en ,
+		"verwendet"@de
+		;
+	skos:definition
+		"A CASCaRA Link that relates to CASCaRA entities used by this activity."@en ,
+		"CASCaRA-Link, der auf CASCaRA-Entities verweist, welche in diesem Prozessschritt verwendet werden."@de
+		;
+	.
+
+cas:uses_Shape
+	a sh:PropertyShape ;
 	sh:class cas:Entity ;
+	sh:path cas:uses ;
 	.
 
-_:blank18
-	sh:class cas:Entity ;
+_:blank1
+	rdf:first _:blank5 ;
+	rdf:rest rdf:nil ;
 	.
 
-_:blank19
-	sh:class cas:Entity ;
-	sh:path cas:Provided ;
+_:blank2
+	rdf:first _:blank6 ;
+	rdf:rest rdf:nil ;
 	.
 
-_:blank20
-	sh:class cas:Entity ;
-	sh:path cas:Used ;
+_:blank3
+	rdf:first _:blank7 ;
+	rdf:rest _:blank1 ;
 	.
 
-_:blank21
-	sh:class cas:Relationship ;
+_:blank4
+	rdf:first _:blank8 ;
+	rdf:rest _:blank2 ;
 	.
 
-_:blank22
-	sh:class cas:Relationship ;
-	.
-
-_:blank23
-	sh:class cas:Relationship ;
-	.
-
-_:blank24
+_:blank5
 	sh:minCount "1"^^xsd:integer ;
 	sh:path rdfs:comment ;
 	.
 
-_:blank25
+_:blank6
 	sh:minCount "1"^^xsd:integer ;
 	sh:path rdfs:comment ;
 	.
 
-_:blank26
+_:blank7
 	sh:minCount "1"^^xsd:integer ;
 	sh:path rdfs:label ;
 	.
 
-_:blank27
+_:blank8
 	sh:minCount "1"^^xsd:integer ;
 	sh:path rdfs:label ;
-	.
-
-_:blank28
-	sh:minCount "1"^^xsd:integer ;
-	sh:path rdfs:label ;
-	.
-
-_:blank29
-	sh:node cas:linksSource_Shape ;
-	sh:path cas:linksSource ;
-	.
-
-_:blank30
-	sh:node cas:linksTarget_Shape ;
-	sh:path cas:linksTarget ;
 	.
 

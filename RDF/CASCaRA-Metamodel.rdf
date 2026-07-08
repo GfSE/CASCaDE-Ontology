@@ -14,7 +14,7 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	
 	<owl:Ontology rdf:about="http://www.omg.org/spec/CASCaRA/metamodel/">
-		<rdfs:label>Metamodel</rdfs:label>
+		<rdfs:label>Metamodel &amp; Semantic Infrastructure</rdfs:label>
 		<dcterms:abstract>The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\nNote that this version of the ontology is in development and may be subject to modifications without notice.</dcterms:abstract>
 		<dcterms:contributor>Alvarez Rodriguez, José Maria, UC3 Madrid</dcterms:contributor>
 		<dcterms:contributor>Arslan, Serkan, INOMIC Solutions GmbH</dcterms:contributor>
@@ -139,61 +139,91 @@ Copyright (c) 2019-2026 ZF Friedrichshafen
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &apos;Software&apos;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nThe software is provided &apos;as is&apos;, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
 https://opensource.org/licenses/MIT</dcterms:license>
-		<dcterms:title>CASCaRA Metamodel</dcterms:title>
+		<dcterms:title>CASCaRA Metamodel &amp; Semantic Infrastructure</dcterms:title>
 		<owl:versionInfo>1.0</owl:versionInfo>
 	</owl:Ontology>
 	
 	<owl:Class rdf:about="&cas;Activity">
+		<rdfs:subClassOf rdf:resource="&cas;Entity"/>
 		<rdfs:label xml:lang="en">Activity</rdfs:label>
 		<rdfs:label xml:lang="de">Prozessschritt</rdfs:label>
-		<skos:definition xml:lang="en">A CASCaRA activity that relates to data entities delivered or required by this use-case.</skos:definition>
-		<skos:definition xml:lang="de">Ein CASCaRA-Prozess, der sich auf Entities bezieht, die im Rahmen dieses Anwendungsfalls bereitgestellt oder benötigt werden.</skos:definition>
+		<skos:definition xml:lang="en">A CASCaRA activity that uses CASCaRA entities and provides CASCaRA entities as result.</skos:definition>
+		<skos:definition xml:lang="de">Ein CASCaRA-Prozessschritt, der CASCaRA-Entities verwendet und CASCaRA-Entities als Ergebnis bereitstellt.</skos:definition>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas;Activity_Shape">
-		<sh:property rdf:nodeID="blank19"/>
-		<sh:property rdf:nodeID="blank20"/>
+		<sh:property rdf:resource="&cas;provides_Shape"/>
+		<sh:property rdf:resource="&cas;uses_Shape"/>
 		<sh:targetClass rdf:resource="&cas;Activity"/>
 	</sh:NodeShape>
 	
 	<owl:Class rdf:about="&cas;Entity">
+		<rdfs:label xml:lang="de">Element</rdfs:label>
 		<rdfs:label xml:lang="en">Entity</rdfs:label>
-		<skos:definition xml:lang="en">A CASCaRA meta-model item used for entities.</skos:definition>
+		<skos:definition xml:lang="en">Represents an entity as part of the CASCaRA semantic infrastructure.</skos:definition>
+		<skos:definition xml:lang="de">Repräsentiert ein Element als Bestandteil der CASCaRA semantischen Infrastruktur.</skos:definition>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas;Entity_Shape">
-		<sh:property rdf:nodeID="blank24"/>
-		<sh:property rdf:nodeID="blank26"/>
 		<sh:targetClass rdf:resource="&cas;Entity"/>
 	</sh:NodeShape>
 	
 	<owl:ObjectProperty rdf:about="&cas;Link">
-		<rdfs:label xml:lang="en">linked with</rdfs:label>
-		<rdfs:range rdf:nodeID="blank13"/>
-		<skos:definition xml:lang="en">A PIG meta-model item connecting a reified relationship with its source or target. Also connects an organizer to a model element.</skos:definition>
+		<rdfs:label xml:lang="en">linked to</rdfs:label>
+		<rdfs:label xml:lang="de">verknüpft mit</rdfs:label>
+		<rdfs:domain rdf:resource="&cas;Relationship"/>
+		<rdfs:range rdf:resource="&cas;Entity"/>
+		<skos:definition xml:lang="en">Represents a link as part of the CASCaRA semantic infrastructure.</skos:definition>
+		<skos:definition xml:lang="de">Repräsentiert eine Verknüpfung als Bestandteil der CASCaRA semantischen Infrastuktur.</skos:definition>
 	</owl:ObjectProperty>
 	
 	<sh:PropertyShape rdf:about="&cas;Link_Shape">
-		<sh:or rdf:nodeID="blank09"/>
 		<sh:path rdf:resource="&cas;Link"/>
 	</sh:PropertyShape>
+	
+	<owl:Class rdf:about="&cas;Organizer">
+		<rdfs:subClassOf rdf:resource="&cas;Entity"/>
+		<rdfs:label xml:lang="de">Hierarchieelement</rdfs:label>
+		<rdfs:label xml:lang="en">Organizer</rdfs:label>
+		<skos:definition xml:lang="en">An element organizing model elements. An example is a list of requirements or a diagram using a certain notation.</skos:definition>
+		<skos:definition xml:lang="de">Ein Element, das andere Elemente organisiert. Beispielsweise eine Liste von Anforderungen oder ein Diagramm mit einer bestimmten Notation.</skos:definition>
+	</owl:Class>
+	
+	<sh:NodeShape rdf:about="&cas;Organizer_Shape">
+		<sh:or rdf:nodeID="blank3"/>
+		<sh:property rdf:resource="&cas;Category_Shape"/>
+		<sh:targetClass rdf:resource="&cas;Organizer"/>
+	</sh:NodeShape>
+	
+	<owl:Class rdf:about="&cas;Outline">
+		<rdfs:subClassOf rdf:resource="&cas;Organizer"/>
+		<rdfs:label xml:lang="de">Gliederung</rdfs:label>
+		<rdfs:label xml:lang="en">Outline</rdfs:label>
+		<skos:definition xml:lang="en">A subclass of CASCaRA organizer comprising all information items of a human-readable document. As usual, the outline is hierarchically organized.</skos:definition>
+		<skos:definition xml:lang="de">Eine Subklasse des CASCaRA-Organizers, die alle Informationselemente eines menschenlesbaren Dokuments zusammenfasst.</skos:definition>
+	</owl:Class>
+	
+	<sh:NodeShape rdf:about="&cas;Outline_Shape">
+		<sh:or rdf:nodeID="blank4"/>
+		<sh:targetClass rdf:resource="&cas;Outline"/>
+	</sh:NodeShape>
 	
 	<owl:Class rdf:about="&cas;Package">
 		<rdfs:subClassOf rdf:resource="&cas;Entity"/>
 		<rdfs:label xml:lang="en">Package</rdfs:label>
 		<rdfs:label xml:lang="de">Paket</rdfs:label>
-		<skos:definition xml:lang="en">A CASCaRA meta-model item used for packages comprising entities, relationships and potentially nested packages.</skos:definition>
+		<skos:definition xml:lang="en">A CASCaRA package that includes all CASCaRA entities and relationships selected for a defined purpose.</skos:definition>
+		<skos:definition xml:lang="de">Ein CASCaRA-Paket, das alle CASCaRA-Entities und -Relationen für einen bestimmten Zweck umfasst.</skos:definition>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas;Package_Shape">
-		<sh:property rdf:nodeID="blank25"/>
-		<sh:property rdf:nodeID="blank27"/>
 		<sh:targetClass rdf:resource="&cas;Package"/>
 	</sh:NodeShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas;Property">
 		<rdfs:label xml:lang="en">Property</rdfs:label>
 		<skos:definition xml:lang="en">A CASCaRA meta-model item used for properties (aka attributes).</skos:definition>
+		<skos:definition xml:lang="de">Repräsentiert.</skos:definition>
 	</owl:DatatypeProperty>
 	
 	<sh:PropertyShape rdf:about="&cas;Property_Shape">
@@ -201,195 +231,113 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<sh:path rdf:resource="&cas;Property"/>
 	</sh:PropertyShape>
 	
-	<owl:ObjectProperty rdf:about="&cas;Provided">
-		<rdfs:label xml:lang="de">Bereitgestellt</rdfs:label>
-		<rdfs:label xml:lang="en">Provided</rdfs:label>
-		<rdfs:domain rdf:resource="&cas;Activity"/>
-		<rdfs:range rdf:resource="&cas;Entity"/>
-	</owl:ObjectProperty>
-	
 	<owl:Class rdf:about="&cas;Relationship">
+		<rdfs:label xml:lang="de">Relation</rdfs:label>
 		<rdfs:label xml:lang="en">Relationship</rdfs:label>
-		<skos:definition xml:lang="en">A CASCaRA meta-model item used for reified relationships (aka predicates).</skos:definition>
+		<skos:definition xml:lang="en">Represents a Relationship between two Entities as part of the CASCaRA semantic infrastructure.</skos:definition>
+		<skos:definition xml:lang="de">Repräsentiert eine Relation zwischen zwei Entitäten als Bestandteil der CASCaRA semantischen Infrastruktur.</skos:definition>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas;Relationship_Shape">
-		<sh:property rdf:nodeID="blank28"/>
-		<sh:property rdf:nodeID="blank29"/>
-		<sh:property rdf:nodeID="blank30"/>
+		<sh:property rdf:resource="&cas;linksSource_Shape"/>
+		<sh:property rdf:resource="&cas;linksTarget_Shape"/>
 		<sh:targetClass rdf:resource="&cas;Relationship"/>
 	</sh:NodeShape>
-	
-	<owl:ObjectProperty rdf:about="&cas;Used">
-		<rdfs:label xml:lang="en">Used</rdfs:label>
-		<rdfs:label xml:lang="de">Verwendet</rdfs:label>
-		<rdfs:domain rdf:resource="&cas;Activity"/>
-		<rdfs:range rdf:resource="&cas;Entity"/>
-	</owl:ObjectProperty>
 	
 	<owl:ObjectProperty rdf:about="&cas;linksSource">
 		<rdfs:subPropertyOf rdf:resource="&cas;Link"/>
 		<rdfs:label xml:lang="en">to source</rdfs:label>
-		<rdfs:range rdf:nodeID="blank14"/>
-		<skos:definition xml:lang="en">Connects the source of a reified relationship.</skos:definition>
+		<rdfs:label xml:lang="de">zu Quelle</rdfs:label>
+		<rdfs:domain rdf:resource="&cas;Relationship"/>
+		<rdfs:range rdf:resource="&cas;Entity"/>
+		<skos:definition xml:lang="en">Connects the source entity of a reified relationship.</skos:definition>
+		<skos:definition xml:lang="de">Verbindet das Quellobjekt einer reifizierten Relation.</skos:definition>
 	</owl:ObjectProperty>
 	
 	<sh:PropertyShape rdf:about="&cas;linksSource_Shape">
-		<sh:or rdf:nodeID="blank07"/>
+		<sh:class rdf:resource="&cas;Entity"/>
 		<sh:path rdf:resource="&cas;linksSource"/>
 	</sh:PropertyShape>
 	
 	<owl:ObjectProperty rdf:about="&cas;linksTarget">
 		<rdfs:subPropertyOf rdf:resource="&cas;Link"/>
 		<rdfs:label xml:lang="en">to target</rdfs:label>
-		<rdfs:range rdf:nodeID="blank15"/>
-		<skos:definition xml:lang="en">Connects the target of a reified relationship or an organizer.</skos:definition>
+		<rdfs:label xml:lang="de">zu Ziel</rdfs:label>
+		<rdfs:domain rdf:resource="&cas;Relationship"/>
+		<rdfs:range rdf:resource="&cas;Entity"/>
+		<skos:definition xml:lang="en">Connects the target entity of a reified relationship.</skos:definition>
+		<skos:definition xml:lang="de">Verbindet das Zielobjekt einer reifizierten Relation.</skos:definition>
 	</owl:ObjectProperty>
 	
 	<sh:PropertyShape rdf:about="&cas;linksTarget_Shape">
-		<sh:or rdf:nodeID="blank08"/>
+		<sh:class rdf:resource="&cas;Entity"/>
 		<sh:path rdf:resource="&cas;linksTarget"/>
 	</sh:PropertyShape>
 	
-	<rdf:Description rdf:nodeID="blank01">
-		<rdf:first rdf:resource="&cas;Entity"/>
-		<rdf:rest rdf:nodeID="blank04"/>
-	</rdf:Description>
+	<owl:ObjectProperty rdf:about="&cas;provides">
+		<rdfs:subPropertyOf rdf:resource="&cas;Link"/>
+		<rdfs:label xml:lang="en">provides</rdfs:label>
+		<rdfs:label xml:lang="de">stellt bereit</rdfs:label>
+		<skos:definition xml:lang="en">A CASCaRA Link that relates to CASCaRA entities provided by this activity.</skos:definition>
+		<skos:definition xml:lang="de">CASCaRA-Link, der auf CASCaRA-Entities verweist, welche von diesem Prozessschritt bereitgestellt werden.</skos:definition>
+	</owl:ObjectProperty>
 	
-	<rdf:Description rdf:nodeID="blank02">
-		<rdf:first rdf:resource="&cas;Entity"/>
-		<rdf:rest rdf:nodeID="blank05"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank03">
-		<rdf:first rdf:resource="&cas;Entity"/>
-		<rdf:rest rdf:nodeID="blank06"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank04">
-		<rdf:first rdf:resource="&cas;Relationship"/>
-		<rdf:rest rdf:resource="&rdf;nil"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank05">
-		<rdf:first rdf:resource="&cas;Relationship"/>
-		<rdf:rest rdf:resource="&rdf;nil"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank06">
-		<rdf:first rdf:resource="&cas;Relationship"/>
-		<rdf:rest rdf:resource="&rdf;nil"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank07">
-		<rdf:first rdf:nodeID="blank16"/>
-		<rdf:rest rdf:nodeID="blank10"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank08">
-		<rdf:first rdf:nodeID="blank17"/>
-		<rdf:rest rdf:nodeID="blank11"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank09">
-		<rdf:first rdf:nodeID="blank18"/>
-		<rdf:rest rdf:nodeID="blank12"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank10">
-		<rdf:first rdf:nodeID="blank21"/>
-		<rdf:rest rdf:resource="&rdf;nil"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank11">
-		<rdf:first rdf:nodeID="blank22"/>
-		<rdf:rest rdf:resource="&rdf;nil"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank12">
-		<rdf:first rdf:nodeID="blank23"/>
-		<rdf:rest rdf:resource="&rdf;nil"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank13">
-		<owl:unionOf rdf:nodeID="blank01"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank14">
-		<owl:unionOf rdf:nodeID="blank02"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank15">
-		<owl:unionOf rdf:nodeID="blank03"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank16">
+	<sh:PropertyShape rdf:about="&cas;provides_Shape">
 		<sh:class rdf:resource="&cas;Entity"/>
-	</rdf:Description>
+		<sh:path rdf:resource="&cas;provides"/>
+	</sh:PropertyShape>
 	
-	<rdf:Description rdf:nodeID="blank17">
+	<owl:ObjectProperty rdf:about="&cas;uses">
+		<rdfs:subPropertyOf rdf:resource="&cas;Link"/>
+		<rdfs:label xml:lang="en">uses</rdfs:label>
+		<rdfs:label xml:lang="de">verwendet</rdfs:label>
+		<skos:definition xml:lang="en">A CASCaRA Link that relates to CASCaRA entities used by this activity.</skos:definition>
+		<skos:definition xml:lang="de">CASCaRA-Link, der auf CASCaRA-Entities verweist, welche in diesem Prozessschritt verwendet werden.</skos:definition>
+	</owl:ObjectProperty>
+	
+	<sh:PropertyShape rdf:about="&cas;uses_Shape">
 		<sh:class rdf:resource="&cas;Entity"/>
+		<sh:path rdf:resource="&cas;uses"/>
+	</sh:PropertyShape>
+	
+	<rdf:Description rdf:nodeID="blank1">
+		<rdf:first rdf:nodeID="blank5"/>
+		<rdf:rest rdf:resource="&rdf;nil"/>
 	</rdf:Description>
 	
-	<rdf:Description rdf:nodeID="blank18">
-		<sh:class rdf:resource="&cas;Entity"/>
+	<rdf:Description rdf:nodeID="blank2">
+		<rdf:first rdf:nodeID="blank6"/>
+		<rdf:rest rdf:resource="&rdf;nil"/>
 	</rdf:Description>
 	
-	<rdf:Description rdf:nodeID="blank19">
-		<sh:class rdf:resource="&cas;Entity"/>
-		<sh:path rdf:resource="&cas;Provided"/>
+	<rdf:Description rdf:nodeID="blank3">
+		<rdf:first rdf:nodeID="blank7"/>
+		<rdf:rest rdf:nodeID="blank1"/>
 	</rdf:Description>
 	
-	<rdf:Description rdf:nodeID="blank20">
-		<sh:class rdf:resource="&cas;Entity"/>
-		<sh:path rdf:resource="&cas;Used"/>
+	<rdf:Description rdf:nodeID="blank4">
+		<rdf:first rdf:nodeID="blank8"/>
+		<rdf:rest rdf:nodeID="blank2"/>
 	</rdf:Description>
 	
-	<rdf:Description rdf:nodeID="blank21">
-		<sh:class rdf:resource="&cas;Relationship"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank22">
-		<sh:class rdf:resource="&cas;Relationship"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank23">
-		<sh:class rdf:resource="&cas;Relationship"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank24">
+	<rdf:Description rdf:nodeID="blank5">
 		<sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
 		<sh:path rdf:resource="&rdfs;comment"/>
 	</rdf:Description>
 	
-	<rdf:Description rdf:nodeID="blank25">
+	<rdf:Description rdf:nodeID="blank6">
 		<sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
 		<sh:path rdf:resource="&rdfs;comment"/>
 	</rdf:Description>
 	
-	<rdf:Description rdf:nodeID="blank26">
+	<rdf:Description rdf:nodeID="blank7">
 		<sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
 		<sh:path rdf:resource="&rdfs;label"/>
 	</rdf:Description>
 	
-	<rdf:Description rdf:nodeID="blank27">
+	<rdf:Description rdf:nodeID="blank8">
 		<sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
 		<sh:path rdf:resource="&rdfs;label"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank28">
-		<sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
-		<sh:path rdf:resource="&rdfs;label"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank29">
-		<sh:node rdf:resource="&cas;linksSource_Shape"/>
-		<sh:path rdf:resource="&cas;linksSource"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:nodeID="blank30">
-		<sh:node rdf:resource="&cas;linksTarget_Shape"/>
-		<sh:path rdf:resource="&cas;linksTarget"/>
 	</rdf:Description>
 
 </rdf:RDF>

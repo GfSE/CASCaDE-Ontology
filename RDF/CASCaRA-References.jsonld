@@ -1,10 +1,7 @@
 [
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/ontology/",
+		"@id" : "http://www.omg.org/spec/CASCaRA/references/",
 		"@type" : "owl:Ontology",
-		"rdfs:label" : {
-			"@value" : "Resources Ontology"
-		},
 		"dcterms:abstract" : {
 			"@value" : "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice."
 		},
@@ -201,7 +198,8 @@
 			
 		],
 		"dcterms:created" : {
-			"@value" : "07.07.2026 16:13:27"
+			"@type" : "xsd:dateTime",
+			"@value" : "12.07.2026 17:19:41"
 		},
 		"dcterms:license" : {
 			"@value" : "CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA\u000aCopyright (c) 2024-2026 :em engineering methods AG\u000aCopyright (c) 2024-2026 88solutions\u000aCopyright (c) 2024-2026 Aerospace Corp.\u000aCopyright (c) 2024-2026 Airbus Operations GmbH\u000aCopyright (c) 2024-2026 ATLAS Elektronik\u000aCopyright (c) 2024-2026 The Boeing Company\u000aCopyright (c) 2024-2026 enso managers GmbH\u000aCopyright (c) 2024-2026 GfSE Gesellschaft für Systems Engineering\u000aCopyright (c) 2024-2026 INCOSE\u000aCopyright (c) 2024-2026 INOMIC Solutions GmbH\u000aCopyright (c) 2024-2026 Intuitive AI\u000aCopyright (c) 2024-2026 Manfred Harms Consulting\u000aCopyright (c) 2024-2026 ModelAlchemy Consulting\u000aCopyright (c) 2024-2026 Modern Technology Solutions, Inc.\u000aCopyright (c) 2024-2026 oose eG\u000aCopyright (c) 2024-2025 PDES, Inc.\u000aCopyright (c) 2024-2026 PROSTEP AG\u000aCopyright (c) 2024-2026 prostep ivip Association\u000aCopyright (c) 2024-2026 PSG Prime Solutions Group\u000aCopyright (c) 2024-2026 Division of Design of Cyber-Physical Systems\u000aCopyright (c) 2024-2026 Collins Aerospace\u000aCopyright (c) 2024-2026 Schaeffler Technologies AG & Co. KG\u000aCopyright (c) 2024-2026 Thematix Partners\u000aCopyright (c) 2024-2026 TU Hamburg-Harburg\u000aCopyright (c) 2024-2026 Product and Systems Engineering Group\u000aCopyright (c) 2024-2026 UC3 Madrid\u000aCopyright (c) 2024-2026 VDA Verband der deutschen Automobilindustrie\u000a\u000aDigital Data Package Working Group: Defines use-cases and domain ontology as a foundation for CASCaRA\u000aCopyright (c) 2019-2026 :em engineering methods AG\u000aCopyright (c) 2019-2020 Airbus Operations GmbH\u000aCopyright (c) 2019-2026 Anark Corporation Inc.\u000aCopyright (c) 2026-2026 Aumovio SE\u000aCopyright (c) 2019-2026 AVL List\u000aCopyright (c) 2022-2026 The Boeing Company\u000aCopyright (c) 2022-2026 Robert Bosch GmbH\u000aCopyright (c) 2019-2022 CONWEAVER GmbH\u000aCopyright (c) 2019-2026 ELYSIUM Inc.\u000aCopyright (c) 2019-2021 Fraunhofer IESE\u000aCopyright (c) 2026-2026 Infineon Technologies AG\u000aCopyright (c) 2025-2026 INOMIC Solutions GmbH\u000aCopyright (c) 2025-2026 JAXA Japan Aerospace Exploration Agency\u000aCopyright (c) 2021-2024 John Deere GmbH & Co KG\u000aCopyright (c) 2019-2021 Kromberg & Schubert Automotive GmbH & Co. KG\u000aCopyright (c) 2019-2026 Mercedes-Benz AG\u000aCopyright (c) 2024-2026 MTU Aero Engines AG\u000aCopyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche AG\u000aCopyright (c) 2019-2026 PROSTEP AG\u000aCopyright (c) 2025-2026 Collins Aerospace\u000aCopyright (c) 2019-2024 Schaeffler Technologies AG & Co. KG\u000aCopyright (c) 2025-2026 Sodius Willert\u000aCopyright (c) 2019-2020 SSC Services GmbH\u000aCopyright (c) 2026-2026 T-Systems International GmbH\u000aCopyright (c) 2022-2026 Volkswagen AG\u000aCopyright (c) 2019-2026 ZF Friedrichshafen\u000a\u000aPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.\u000ahttps://opensource.org/licenses/MIT"
@@ -212,6 +210,10 @@
 		"owl:versionInfo" : {
 			"@value" : "1.0"
 		},
+		"owl:imports" : { "@id" : "https://www.omg.org/spec/Commons/AboutCommons/" },
+		"rdfs:label" : {
+			"@value" : "Resources Ontology"
+		},
 		"@context" : {
 			
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -221,87 +223,87 @@
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/ontology/references/3D-Measurement-Data-Management-with-I++-DMS",
-		"@type" : "fabio:Standard",
+		"@id" : "http://www.omg.org/spec/CASCaRA/references/3D-Measurement-Data-Management-with-I++-DMS",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "3D Measurement Data Management with I++ DMS"
 		},
 		"dcterms:source" : { "@id" : "https://www.prostep.org/fileadmin/downloads/PSI_17_VDA_Recom_3DMDM_06_020_03.pdf" },
 		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:3MF-Format-Specification",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "3MF Format Specification"
 		},
 		"dcterms:source" : { "@id" : "https://3mf.io/specification/" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ARP4754B",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "Guidelines for Development of Civil Aircraft and Systems"
 		},
 		"dcterms:source" : { "@id" : "https://www.sae.org/standards/arp4754b-guidelines-development-civil-aircraft-systems" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ARP4761A",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "Guidelines for Conducting the Safety Assessment Process on Civil Aircraft, Systems, and Equipment"
 		},
 		"dcterms:source" : { "@id" : "https://www.sae.org/standards/arp4761a-guidelines-conducting-safety-assessment-process-civil-aircraft-systems-equipment" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:AutomationML-Website",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "AutomationML-Website"
 		},
 		"dcterms:source" : { "@id" : "https://www.automationml.org/about-automationml/specifications/" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:CSA-ISO-IEC-IEEE-15288",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -314,21 +316,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/can-csa-iso-iec-ieee-15288/269743351" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2016-12-0"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:DIN-23601",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -341,21 +343,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm-entwurf/din-23601/384600863" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2024-11"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:DIN-8580",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -368,21 +370,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/din-8580/65031153" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2003-09"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:DIN-EN-61508-1",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -395,21 +397,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/din-en-61508-1/135302584" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2011-02"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:DIN-EN-IEC-62714-1",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -422,21 +424,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/din-en-iec-62714-1/297556170" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2019-02"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:DIN-EN-ISO-1101",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "de",
@@ -449,21 +451,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/din-en-iso-1101/258479779" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2017-09"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:DIN-EN-ISO-14405-1",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "de",
@@ -476,21 +478,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/din-en-iso-14405-1/395356021" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2026-05"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:DIN-EN-ISO-14405-2",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "de",
@@ -503,21 +505,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/din-en-iso-14405-2/300588108" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2019-06"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:DIN-EN-ISO-14405-3",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "de",
@@ -530,21 +532,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/din-en-iso-14405-3/255107240" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2017-07"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:DIN-EN-ISO-21920",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "de",
@@ -557,15 +559,15 @@
 			
 		],
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:DIN-EN-ISO-21920-1",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "de",
@@ -578,21 +580,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/din-en-iso-21920-1/344762052" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2022-12"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:DIN-EN-ISO-21920-3",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "de",
@@ -605,21 +607,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/din-en-iso-21920-3/344762552" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2022-12"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:DIN-EN-ISO-4885",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -632,21 +634,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/en/standard/din-en-iso-4885/289121134" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2018-07"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:DIN-ISO-15786",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "de",
@@ -659,105 +661,105 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/din-iso-15786/223068266" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2014-12"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:DO-297",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "Integrated Modular Avionics (IMA) Development Guidance and Certification Considerations"
 		},
 		"dcterms:source" : { "@id" : "https://my.rtca.org/productdetails?id=a1B36000001IchGEAS" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:FAT-286",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "xMCF A Standard for Describing Connections and Joints in the Automotive Industry"
 		},
 		"dcterms:source" : { "@id" : "https://www.vda.de/dam/vda/publications/2016/FAT/FAT-Schriftenreihe_286.pdf" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:FMI",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "Functional Mockup Interface"
 		},
 		"dcterms:source" : { "@id" : "https://fmi-standard.org/" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:IGES",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "Initial Graphics Exchange Specification"
 		},
 		"dcterms:source" : { "@id" : "https://web.archive.org/web/20120821190122/http://www.uspro.org/documents/IGES5-3_forDownload.pdf" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "5.3, 1996"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:IPC-2581",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "Digital Product Model Exchange"
 		},
 		"dcterms:source" : { "@id" : "http://www.ipc2581.com/" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-10303-21",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "de",
@@ -770,21 +772,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/iso-10303-21/251313784" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2016-03"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-10303-28",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "de",
@@ -797,35 +799,35 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/iso-10303-28/103737461" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2007-10"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-14306",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "JT file format specification for 3D visualization"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-14739-1",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "de",
@@ -838,21 +840,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/iso-14739-1/228879952" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2014-12"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-16232",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -865,21 +867,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/iso-16232/300157067" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2018-12"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-20170",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -892,21 +894,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/din-en-iso-20170/298742961" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2019-11"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-21448",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -919,21 +921,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/iso-21448/356927331" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2022-06"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-22514-2",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -946,21 +948,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/iso-22514-2/270082896" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2017-02"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-22514-6",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -973,21 +975,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/iso-22514-6/180368162" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2013-02"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-22514-7",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -1000,21 +1002,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/iso-22514-7/345140722" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2021-08"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-26262-1",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "de",
@@ -1027,21 +1029,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/iso-26262-1/300423910" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2018-12"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-26580",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -1054,21 +1056,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/iso-iec-26580/340248389" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2021-04"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-7499",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "de",
@@ -1081,21 +1083,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/iso-7499/386871932" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2024-11"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-7533",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -1108,21 +1110,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/din-en-iso-7533/387125251" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2025-04"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-IEC-19513",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -1135,37 +1137,37 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/iso-iec-19513/282481275" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2017-10"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-IEC-19514",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "Object management group systems modeling language (OMG SysML)"
 		},
 		"dcterms:source" : { "@id" : "https://www.iso.org/standard/65231.html" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-IEC-20246",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -1178,21 +1180,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/iso-iec-20246/271358565" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2017-02"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-IEC-IEEE-29119-1",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -1205,21 +1207,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/en/standard/iso-iec-ieee-29119-1/351489600" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2022-01"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-IEC-IEEE-29148",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -1232,21 +1234,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/iso-iec-ieee-29148/299567544" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2018-11"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ISO-IEC-IEEE-42010",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "de",
@@ -1259,202 +1261,202 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/iso-iec-ieee-42010/361506868" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2022-11"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:MechML",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "Mechanics Modeling Language"
 		},
 		"dcterms:source" : { "@id" : "http://fasform.de/content/?ddownload=1431" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "1"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:Modelica-Language",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "Modelica Language"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:PLMXML-Documentation",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "PLMXML Documentation"
 		},
 		"dcterms:source" : { "@id" : "http://media.plm.automation.siemens.com/open/plm-xml/docs/v7.0.3/documentation/plmxml.htm" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:QIF",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "Quality Information Framework "
 		},
 		"dcterms:source" : { "@id" : "https://qifstandards.org/" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:QIFDocument",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "QIFDocument"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/ontology/references/Recommended-Practices-for-STEP-AP242-Business-Object-Model-XML-Product-&-Assembly-Structure",
-		"@type" : "fabio:Standard",
+		"@id" : "http://www.omg.org/spec/CASCaRA/references/Recommended-Practices-for-STEP-AP242-Business-Object-Model-XML-Product-&-Assembly-Structure",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "Recommended Practices for STEP AP242 Business Object Model XML Product & Assembly Structure"
 		},
 		"dcterms:source" : { "@id" : "https://www.cax-if.org/documents/rec_prac_ap242xml_assy_struct_v1.10.pdf" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "Release 1.1, May 20, 2016"
 		},
 		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ReqIF",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "Requirements Interchange Format"
 		},
 		"dcterms:source" : { "@id" : "https://www.omg.org/reqif/" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:ReqIF-Implementation-Guide",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "ReqIF Implementation Guide"
 		},
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "Version 1.4.3, 17 November 2014"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
-			"bibo" : "http://purl.org/ontology/bibo/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:SpecIF",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "Specification Integration Facility"
 		},
 		"dcterms:source" : { "@id" : "https://specif.de/en/" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:SpecIF-Vocabulary-v1.1",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "SpecIF Vocabulary v1.1"
 		},
 		"dcterms:source" : { "@id" : "https://github.com/GfSE/SpecIF/blob/master/documentation/04_SpecIF_Domain_Classes_Github.md" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:SysML",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "Systems Modeling Language"
 		},
 		"dcterms:source" : { "@id" : "http://www.omgsysml.org/index.htm" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:VDA-231-106",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "de",
@@ -1467,21 +1469,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://webshop.vda.de/VDA/de/vda-231-106-102021" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "01.10.2021 00:00:00"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:VDA-231-200",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "de",
@@ -1495,16 +1497,16 @@
 		],
 		"dcterms:source" : { "@id" : "https://webshop.vda.de/VDA/de/vda-231-200-09-2010" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:VDA-231-300",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "de",
@@ -1517,21 +1519,21 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://webshop.vda.de/VDA/de/vda-231-300-072022" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "01.07.2022 00:00:00"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:VDA-4951",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "en",
@@ -1544,75 +1546,75 @@
 			
 		],
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:VDA-4964",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "Harness Description List (KBL)"
 		},
 		"dcterms:source" : { "@id" : "https://www.vda.de/de/services/Publikationen/Publikation.~1312~.html" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "V2"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:VDA-4968",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "Vehicle Electric Container (VEC)"
 		},
 		"dcterms:source" : { "@id" : "https://www.vda.de/de/services/Publikationen/vehicle-electric-container-vec.html" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "VDA-Empfehlungen, 01. Juli 2014"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:VDA-5550",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "Funktionsdatenaustausch"
 		},
 		"dcterms:source" : { "@id" : "http://www.vda.de/dam/vda/publications/2018/Logistik/VDA_5550_T1_DE_V1_0_2018-03/VDA_5550_Funktionsdatenaustausch_T1_V1_0_2018-03.pdf" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2018-03"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
 		"@id" : "cas-ref:VDI-2519-Blatt-1",
-		"@type" : "fabio:Standard",
+		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
 				"@language" : "de",
@@ -1625,15 +1627,15 @@
 			
 		],
 		"dcterms:source" : { "@id" : "https://www.vdi.de/richtlinien/details/vdi-2519-blatt-1-vorgehensweise-bei-der-erstellung-von-lasten-pflichtenheften" },
-		"bibo:edition" : {
+		"owl:versionInfo" : {
 			"@value" : "2001-12"
 		},
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"fabio" : "http://purl.org/spar/fabio/",
+			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"bibo" : "http://purl.org/ontology/bibo/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	}

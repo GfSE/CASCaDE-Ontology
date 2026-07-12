@@ -7,16 +7,17 @@
 	xmlns:cas-ctx="http://www.omg.org/spec/CASCaRA/ontology/ContextElements/"
 	xmlns:cas-ee="http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/"
 	xmlns:cas-fld="http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
+	xmlns:cas-man="http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/"
 	xmlns:cas-mech="http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
-	xmlns:cas-mnf="http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/"
 	xmlns:cas-op="http://www.omg.org/spec/CASCaRA/ontology/Operation/"
 	xmlns:cas-org="http://www.omg.org/spec/CASCaRA/ontology/Organization/"
 	xmlns:cas-proc="http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/"
-	xmlns:cas-ref="http://www.omg.org/spec/CASCaRA/ontology/references/"
+	xmlns:cas-ref="http://www.omg.org/spec/CASCaRA/references/"
 	xmlns:cas-sw="http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/"
 	xmlns:cas-sys="http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/"
 	xmlns:cas-val="http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/"
 	xmlns:cas-ver="http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/"
+	xmlns:cmns-abt="https://www.omg.org/spec/Commons/AboutCommons/"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:dcterms="http://purl.org/dc/terms/"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -30,7 +31,6 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	
 	<owl:Ontology rdf:about="http://www.omg.org/spec/CASCaRA/ontology/">
-		<rdfs:label>Domain Ontology</rdfs:label>
 		<dcterms:abstract>The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\nNote that this version of the ontology is in development and may be subject to modifications without notice.</dcterms:abstract>
 		<dcterms:contributor>Alvarez Rodriguez, José Maria, UC3 Madrid</dcterms:contributor>
 		<dcterms:contributor>Arslan, Serkan, INOMIC Solutions GmbH</dcterms:contributor>
@@ -95,7 +95,7 @@
 		<dcterms:contributor>Williams, Mark, INCOSE</dcterms:contributor>
 		<dcterms:contributor>von Dungern, Dr. Oskar, enso managers GmbH</dcterms:contributor>
 		<dcterms:contributor>von Holst, Dr.-Ing. Christian, John Deere GmbH &amp; Co KG</dcterms:contributor>
-		<dcterms:created>07.07.2026 16:13:27</dcterms:created>
+		<dcterms:created rdf:datatype="&xsd;dateTime">12.07.2026 17:19:41</dcterms:created>
 		<dcterms:license>CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 88solutions
@@ -156,57 +156,12 @@ Copyright (c) 2019-2026 ZF Friedrichshafen
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &apos;Software&apos;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nThe software is provided &apos;as is&apos;, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
 https://opensource.org/licenses/MIT</dcterms:license>
 		<dcterms:title>CASCaRA Domain Ontology</dcterms:title>
-		<owl:imports rdf:resource="http://www.omg.org/spec/CASCaRA/metamodel/"/>
 		<owl:versionInfo>1.0</owl:versionInfo>
+		<owl:imports rdf:resource="http://www.omg.org/spec/CASCaRA/metamodel/"/>
+		<owl:imports rdf:resource="http://www.omg.org/spec/CASCaRA/references/"/>
+		<owl:imports rdf:resource="https://www.omg.org/spec/Commons/AboutCommons/"/>
+		<rdfs:label>Domain Ontology</rdfs:label>
 	</owl:Ontology>
-	
-	<owl:DatatypeProperty rdf:about="&dc;description">
-		<rdfs:subPropertyOf rdf:resource="&cas;Property"/>
-		<rdfs:label xml:lang="de">Beschreibung</rdfs:label>
-		<rdfs:label xml:lang="en">Description</rdfs:label>
-		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-07-05T23:39:05Z</dcterms:modified>
-		<rdfs:range rdf:resource="&xsd;string"/>
-		<skos:definition xml:lang="de">Beschreibung des Elements</skos:definition>
-		<skos:definition xml:lang="en">Description of the element</skos:definition>
-	</owl:DatatypeProperty>
-	
-	<sh:PropertyShape rdf:about="&dc;description_Shape">
-		<sh:datatype rdf:resource="&xsd;string"/>
-		<sh:path rdf:resource="&dc;description"/>
-		<sh:property rdf:resource="&dc;description_Shape"/>
-	</sh:PropertyShape>
-	
-	<owl:DatatypeProperty rdf:about="&dc;identifier">
-		<rdfs:subPropertyOf rdf:resource="&cas;Property"/>
-		<rdfs:label xml:lang="en">Identifier</rdfs:label>
-		<rdfs:label xml:lang="de">Identifikator</rdfs:label>
-		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-07-05T23:39:01Z</dcterms:modified>
-		<rdfs:range rdf:resource="&xsd;string"/>
-		<skos:definition xml:lang="de">Eindeutiger Identifikator des Elements</skos:definition>
-		<skos:definition xml:lang="en">Unambiguous identifier of the element</skos:definition>
-	</owl:DatatypeProperty>
-	
-	<sh:PropertyShape rdf:about="&dc;identifier_Shape">
-		<sh:datatype rdf:resource="&xsd;string"/>
-		<sh:path rdf:resource="&dc;identifier"/>
-		<sh:property rdf:resource="&dc;identifier_Shape"/>
-	</sh:PropertyShape>
-	
-	<owl:DatatypeProperty rdf:about="&dc;title">
-		<rdfs:subPropertyOf rdf:resource="&cas;Property"/>
-		<rdfs:label xml:lang="de">Titel</rdfs:label>
-		<rdfs:label xml:lang="en">Title</rdfs:label>
-		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-07-05T23:39:04Z</dcterms:modified>
-		<rdfs:range rdf:resource="&xsd;string"/>
-		<skos:definition xml:lang="de">Titel des Elements</skos:definition>
-		<skos:definition xml:lang="en">Title of the element</skos:definition>
-	</owl:DatatypeProperty>
-	
-	<sh:PropertyShape rdf:about="&dc;title_Shape">
-		<sh:datatype rdf:resource="&xsd;string"/>
-		<sh:path rdf:resource="&dc;title"/>
-		<sh:property rdf:resource="&dc;title_Shape"/>
-	</sh:PropertyShape>
 	
 	<owl:Class rdf:about="&cas-ctx;Change">
 		<rdfs:subClassOf rdf:resource="&cas;Entity"/>
@@ -219,6 +174,13 @@ https://opensource.org/licenses/MIT</dcterms:license>
 	
 	<sh:NodeShape rdf:about="&cas-ctx;Change_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/endDateTime_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/startDateTime_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-ctx;Change"/>
 	</sh:NodeShape>
 	
@@ -1211,13 +1173,20 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<rdfs:label xml:lang="en">Configuration</rdfs:label>
 		<rdfs:label xml:lang="de">Konfiguration</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2025-11-30T21:02:09Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;ISO-26580"/>
 		<skos:definition xml:lang="en">Represents a configuration as a context for other elements to be valid. The datamodel allows selected elements to be related to a revision, i. e. mechanical components</skos:definition>
 		<skos:definition xml:lang="de">Repräsentiert eine Konfiguration als Kontext, in dem verknüpfte Elemente gültig sein sollen. Das Datenmodell sieht vor, ausgewählte Elemente mit einer Konfiguration zu verknüpfen, z. B. mechanische Komponenten.</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;ISO-26580"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-ctx;Configuration_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/endDateTime_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/startDateTime_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-ctx;Configuration"/>
 	</sh:NodeShape>
 	
@@ -2175,6 +2144,13 @@ https://opensource.org/licenses/MIT</dcterms:license>
 	
 	<sh:NodeShape rdf:about="&cas-ctx;Reference_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/revision_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/url_Shape"/>
 		<sh:targetClass rdf:resource="&cas-ctx;Reference"/>
 	</sh:NodeShape>
 	
@@ -2265,13 +2241,18 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<rdfs:label xml:lang="en">Variant</rdfs:label>
 		<rdfs:label xml:lang="de">Variante</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2025-11-30T20:52:38Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;ISO-26580"/>
 		<skos:definition xml:lang="en">Represents a variant as a context for other elements to be valid. The datamodel allows selected elements to be related to a variant, i. e. mechanical components</skos:definition>
 		<skos:definition xml:lang="de">Repräsentiert eine Variante als Kontext, in dem verknüpfte Elemente gültig sein sollen. Das Datenmodell sieht vor, ausgewählte Elemente mit einer Variante zu verknüpfen, z. B. mechanische Komponenten.</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;ISO-26580"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-ctx;Variant_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-ctx;Variant"/>
 	</sh:NodeShape>
 	
@@ -3218,7 +3199,7 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<sh:path rdf:resource="&cas-ctx;Variant_specializes_Variant_Target"/>
 	</sh:PropertyShape>
 	
-	<owl:Class rdf:about="&cas-mnf;ControlPlan">
+	<owl:Class rdf:about="&cas-man;ControlPlan">
 		<rdfs:subClassOf rdf:resource="&cas;Entity"/>
 		<rdfs:label xml:lang="en">Control Plan</rdfs:label>
 		<rdfs:label xml:lang="de">Kontrollplan</rdfs:label>
@@ -3227,12 +3208,18 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<skos:definition xml:lang="de">Legt fest, welche Verifizierungs- und Validierungsmaßnahmen von der Produktentwicklung über den Hochlauf bis zur Serienproduktion verwendet werden.</skos:definition>
 	</owl:Class>
 	
-	<sh:NodeShape rdf:about="&cas-mnf;ControlPlan_Shape">
+	<sh:NodeShape rdf:about="&cas-man;ControlPlan_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
-		<sh:targetClass rdf:resource="&cas-mnf;ControlPlan"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/endDateTime_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/startDateTime_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:targetClass rdf:resource="&cas-man;ControlPlan"/>
 	</sh:NodeShape>
 	
-	<owl:Class rdf:about="&cas-mnf;ManufacturingEquipmentComponent">
+	<owl:Class rdf:about="&cas-man;ManufacturingEquipmentComponent">
 		<rdfs:subClassOf rdf:resource="&cas-mech;MechanicalComponent"/>
 		<rdfs:label xml:lang="en">Manufacturing Equipment Component</rdfs:label>
 		<rdfs:label xml:lang="de">Produktionsmittel-Komponente</rdfs:label>
@@ -3241,9 +3228,9 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<skos:definition xml:lang="de">Steht für alle Arten von Werkzeugen und Ausrüstungen, die zur Herstellung von Teilen und zum Zusammenbau des Produkts verwendet werden.</skos:definition>
 	</owl:Class>
 	
-	<sh:NodeShape rdf:about="&cas-mnf;ManufacturingEquipmentComponent_Shape">
+	<sh:NodeShape rdf:about="&cas-man;ManufacturingEquipmentComponent_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
-		<sh:targetClass rdf:resource="&cas-mnf;ManufacturingEquipmentComponent"/>
+		<sh:targetClass rdf:resource="&cas-man;ManufacturingEquipmentComponent"/>
 	</sh:NodeShape>
 	
 	<owl:Class rdf:about="&cas-proc;AssemblyOperation">
@@ -3311,6 +3298,8 @@ https://opensource.org/licenses/MIT</dcterms:license>
 	
 	<sh:NodeShape rdf:about="&cas-proc;HeatTreatment_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-proc;duration_Shape"/>
+		<sh:property rdf:resource="&cas-proc;temperature_Shape"/>
 		<sh:targetClass rdf:resource="&cas-proc;HeatTreatment"/>
 	</sh:NodeShape>
 	
@@ -3339,6 +3328,11 @@ https://opensource.org/licenses/MIT</dcterms:license>
 	
 	<sh:NodeShape rdf:about="&cas-proc;ManufacturingOperation_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-proc;ManufacturingOperation"/>
 	</sh:NodeShape>
 	
@@ -3742,11 +3736,11 @@ https://opensource.org/licenses/MIT</dcterms:license>
 	<rdf:Description rdf:about="&cas-proc;ManufacturingOperation_uses_ManufacturingEquipmentComponent_Target">
 		<rdfs:subPropertyOf rdf:resource="&cas;linksTarget"/>
 		<rdfs:domain rdf:resource="&cas-proc;ManufacturingOperation_uses_ManufacturingEquipmentComponent"/>
-		<rdfs:range rdf:resource="&cas-mnf;ManufacturingEquipmentComponent"/>
+		<rdfs:range rdf:resource="&cas-man;ManufacturingEquipmentComponent"/>
 	</rdf:Description>
 	
 	<sh:PropertyShape rdf:about="&cas-proc;ManufacturingOperation_uses_ManufacturingEquipmentComponent_Target_Shape">
-		<sh:class rdf:resource="&cas-mnf;ManufacturingEquipmentComponent"/>
+		<sh:class rdf:resource="&cas-man;ManufacturingEquipmentComponent"/>
 		<sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
 		<sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
 		<sh:path rdf:resource="&cas-proc;ManufacturingOperation_uses_ManufacturingEquipmentComponent_Target"/>
@@ -3765,7 +3759,6 @@ https://opensource.org/licenses/MIT</dcterms:license>
 	<sh:PropertyShape rdf:about="&cas-proc;duration_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="&cas-proc;duration"/>
-		<sh:property rdf:resource="&cas-proc;duration_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-proc;temperature">
@@ -3781,7 +3774,6 @@ https://opensource.org/licenses/MIT</dcterms:license>
 	<sh:PropertyShape rdf:about="&cas-proc;temperature_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="&cas-proc;temperature"/>
-		<sh:property rdf:resource="&cas-proc;temperature_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:Class rdf:about="&cas-op;OperationIncident">
@@ -3795,6 +3787,12 @@ https://opensource.org/licenses/MIT</dcterms:license>
 	
 	<sh:NodeShape rdf:about="&cas-op;OperationIncident_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/dateTime_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-op;OperationIncident"/>
 	</sh:NodeShape>
 	
@@ -3891,6 +3889,14 @@ https://opensource.org/licenses/MIT</dcterms:license>
 	
 	<sh:NodeShape rdf:about="&cas-op;Product_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/endDateTime_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/revision_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/startDateTime_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-op;Product"/>
 	</sh:NodeShape>
 	
@@ -4110,6 +4116,9 @@ https://opensource.org/licenses/MIT</dcterms:license>
 	
 	<sh:NodeShape rdf:about="&cas-org;Actor_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-org;mail_Shape"/>
+		<sh:property rdf:resource="&cas-org;phone_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
 		<sh:targetClass rdf:resource="&cas-org;Actor"/>
 	</sh:NodeShape>
 	
@@ -4163,6 +4172,12 @@ https://opensource.org/licenses/MIT</dcterms:license>
 	
 	<sh:NodeShape rdf:about="&cas-org;Event_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/endDateTime_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/startDateTime_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
 		<sh:targetClass rdf:resource="&cas-org;Event"/>
 	</sh:NodeShape>
 	
@@ -4293,13 +4308,16 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<rdfs:subClassOf rdf:resource="&cas-org;Actor"/>
 		<rdfs:label xml:lang="de">Organisationseinheit</rdfs:label>
 		<rdfs:label xml:lang="en">Organization Unit</rdfs:label>
-		<dcterms:modified rdf:datatype="&xsd;dateTime">2025-12-13T17:00:54Z</dcterms:modified>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-07-08T15:46:42Z</dcterms:modified>
 		<skos:definition xml:lang="en">An organization unit is part of a corporate structure. It comprises persons as well as sub-organization units.</skos:definition>
 		<skos:definition xml:lang="de">Eine Organisationseinheit ist Teil einer Unternehmensstruktur. Sie umfasst sowohl Personen als auch untergeordnete Organisationseinheiten.</skos:definition>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-org;OrganizationUnit_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
 		<sh:targetClass rdf:resource="&cas-org;OrganizationUnit"/>
 	</sh:NodeShape>
 	
@@ -4355,6 +4373,11 @@ https://opensource.org/licenses/MIT</dcterms:license>
 	
 	<sh:NodeShape rdf:about="&cas-org;Person_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-org;firstname_Shape"/>
+		<sh:property rdf:resource="&cas-org;lastname_Shape"/>
+		<sh:property rdf:resource="&cas-org;title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
 		<sh:targetClass rdf:resource="&cas-org;Person"/>
 	</sh:NodeShape>
 	
@@ -4408,6 +4431,13 @@ https://opensource.org/licenses/MIT</dcterms:license>
 	
 	<sh:NodeShape rdf:about="&cas-org;Place_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-org;city_Shape"/>
+		<sh:property rdf:resource="&cas-org;country_Shape"/>
+		<sh:property rdf:resource="&cas-org;street_Shape"/>
+		<sh:property rdf:resource="&cas-org;zipCode_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
 		<sh:targetClass rdf:resource="&cas-org;Place"/>
 	</sh:NodeShape>
 	
@@ -4477,6 +4507,7 @@ https://opensource.org/licenses/MIT</dcterms:license>
 	
 	<sh:NodeShape rdf:about="&cas-org;Project_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-org;costCenter_Shape"/>
 		<sh:targetClass rdf:resource="&cas-org;Project"/>
 	</sh:NodeShape>
 	
@@ -4493,6 +4524,10 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-org;Role_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
 		<sh:targetClass rdf:resource="&cas-org;Role"/>
 	</sh:NodeShape>
 	
@@ -4687,7 +4722,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-org;city_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="&cas-org;city"/>
-		<sh:property rdf:resource="&cas-org;city_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-org;costCenter">
@@ -4703,7 +4737,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-org;costCenter_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="&cas-org;costCenter"/>
-		<sh:property rdf:resource="&cas-org;costCenter_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-org;country">
@@ -4719,7 +4752,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-org;country_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="&cas-org;country"/>
-		<sh:property rdf:resource="&cas-org;country_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-org;firstname">
@@ -4735,7 +4767,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-org;firstname_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="&cas-org;firstname"/>
-		<sh:property rdf:resource="&cas-org;firstname_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-org;lastname">
@@ -4751,7 +4782,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-org;lastname_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="&cas-org;lastname"/>
-		<sh:property rdf:resource="&cas-org;lastname_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-org;mail">
@@ -4767,7 +4797,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-org;mail_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="&cas-org;mail"/>
-		<sh:property rdf:resource="&cas-org;mail_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-org;phone">
@@ -4783,7 +4812,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-org;phone_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="&cas-org;phone"/>
-		<sh:property rdf:resource="&cas-org;phone_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-org;street">
@@ -4799,7 +4827,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-org;street_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="&cas-org;street"/>
-		<sh:property rdf:resource="&cas-org;street_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-org;title">
@@ -4815,7 +4842,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-org;title_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="&cas-org;title"/>
-		<sh:property rdf:resource="&cas-org;title_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-org;zipCode">
@@ -4831,7 +4857,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-org;zipCode_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="&cas-org;zipCode"/>
-		<sh:property rdf:resource="&cas-org;zipCode_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:Class rdf:about="&cas-arch;EnergyFlow">
@@ -4867,15 +4892,21 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="en">Function</rdfs:label>
 		<rdfs:label xml:lang="de">Funktion</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-06-29T23:32:07Z</dcterms:modified>
+		<skos:definition xml:lang="en">A system, product or component function describes the way a system works or performs a specific task.</skos:definition>
+		<skos:definition xml:lang="de">Eine System-, Produkt- oder Komponentenfunktion beschreibt die Art und Weise, wie ein System arbeitet oder eine bestimmte Aufgabe ausführt.</skos:definition>
 		<rdfs:definedBy rdf:resource="&cas-ref;CSA-ISO-IEC-IEEE-15288"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-20246"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;VDI-2519-Blatt-1"/>
-		<skos:definition xml:lang="en">A system, product or component function describes the way a system works or performs a specific task.</skos:definition>
-		<skos:definition xml:lang="de">Eine System-, Produkt- oder Komponentenfunktion beschreibt die Art und Weise, wie ein System arbeitet oder eine bestimmte Aufgabe ausführt.</skos:definition>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-arch;Function_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/revision_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-arch;Function"/>
 	</sh:NodeShape>
 	
@@ -5259,6 +5290,11 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-arch;FunctionalInterface_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-arch;FunctionalInterface"/>
 	</sh:NodeShape>
 	
@@ -5328,6 +5364,11 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-arch;ItemFlow_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-arch;ItemFlow"/>
 	</sh:NodeShape>
 	
@@ -5432,9 +5473,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="de">Anforderung</rdfs:label>
 		<rdfs:label xml:lang="en">Requirement</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-06-29T23:31:48Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;CSA-ISO-IEC-IEEE-15288"/>
-		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-IEEE-29148"/>
-		<rdfs:definedBy rdf:resource="&cas-ref;VDI-2519-Blatt-1"/>
 		<skos:definition xml:lang="en">Characteristics that identify the accomplishment levels needed to achieve specific objectives for a given set of conditions.
 Requirements can be &apos;must have&apos;, &apos;can have&apos; and &apos;nice to have&apos;.
 A. A condition or capability needed by a user to solve a problem or achieve an objective.
@@ -5447,10 +5485,19 @@ A. Eine Bedingung oder Fähigkeit, die ein Benutzer benötigt, um ein Problem zu
 B. Eine Bedingung oder Fähigkeit, die ein System oder eine Systemkomponente erfüllen oder besitzen muss, um einen Vertrag, eine Norm, eine Spezifikation oder ein anderes formell vorgeschriebenes Dokument zu erfüllen.
 C. Eine dokumentierte Darstellung einer Bedingung oder Fähigkeit wie in Definition (A:) oder (B).
 https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;CSA-ISO-IEC-IEEE-15288"/>
+		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-IEEE-29148"/>
+		<rdfs:definedBy rdf:resource="&cas-ref;VDI-2519-Blatt-1"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-arch;Requirement_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/revision_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-arch;Requirement"/>
 	</sh:NodeShape>
 	
@@ -5806,6 +5853,10 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-arch;SystemBehavior_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
 		<sh:targetClass rdf:resource="&cas-arch;SystemBehavior"/>
 	</sh:NodeShape>
 	
@@ -5910,13 +5961,18 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="de">Anwendungsfall</rdfs:label>
 		<rdfs:label xml:lang="en">Use Case</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-06-29T23:31:32Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;VDI-2519-Blatt-1"/>
 		<skos:definition xml:lang="de">Legt fest, was der Nutzer eines Produkts tut, um ein Ziel zu erreichen</skos:definition>
 		<skos:definition xml:lang="en">Specifies what the user of a product will do in order to achieve a goal</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;VDI-2519-Blatt-1"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-arch;UseCase_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-arch;UseCase"/>
 	</sh:NodeShape>
 	
@@ -6491,6 +6547,10 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-mech;BendingSpecification_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-mech;bendingAngle_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;BendingSpecification"/>
 	</sh:NodeShape>
 	
@@ -6546,6 +6606,11 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-mech;Body_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-mech;volume_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;Body"/>
 	</sh:NodeShape>
 	
@@ -6677,13 +6742,20 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="en">Cleanliness</rdfs:label>
 		<rdfs:label xml:lang="de">Sauberkeit</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-03-30T09:08:39Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;ISO-16232"/>
 		<skos:definition xml:lang="en">Technical cleanliness of a set of faces</skos:definition>
 		<skos:definition xml:lang="de">Technische Sauberkeit für eine Gruppe von Teilflächen</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;ISO-16232"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-mech;Cleanliness_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-mech;particleDensity_Shape"/>
+		<sh:property rdf:resource="&cas-mech;particleSize_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;Cleanliness"/>
 	</sh:NodeShape>
 	
@@ -6903,15 +6975,18 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="en">Dimensional Size</rdfs:label>
 		<rdfs:label xml:lang="de">Größenmaß</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-05-16T06:25:56Z</dcterms:modified>
+		<skos:definition xml:lang="en">Represents a size</skos:definition>
+		<skos:definition xml:lang="de">Repräsentiert ein Größenmaß</skos:definition>
 		<rdfs:definedBy rdf:resource="&cas-ref;DIN-EN-ISO-14405-1"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;DIN-EN-ISO-14405-2"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;DIN-EN-ISO-14405-3"/>
-		<skos:definition xml:lang="en">Represents a size</skos:definition>
-		<skos:definition xml:lang="de">Repräsentiert ein Größenmaß</skos:definition>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-mech;DimensionalSize_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-mech;lowerTolerance_Shape"/>
+		<sh:property rdf:resource="&cas-mech;nominalValue_Shape"/>
+		<sh:property rdf:resource="&cas-mech;upperTolerance_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;DimensionalSize"/>
 	</sh:NodeShape>
 	
@@ -6926,6 +7001,9 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-mech;Edge_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;Edge"/>
 	</sh:NodeShape>
 	
@@ -6975,13 +7053,16 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="en">Face</rdfs:label>
 		<rdfs:label xml:lang="de">Teilfläche</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2025-11-30T21:07:25Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;ISO-7499"/>
 		<skos:definition xml:lang="en">Face on the geometric representation of the component</skos:definition>
 		<skos:definition xml:lang="de">Teilfläche der geometrische Repräsentation der mechanischen Komponente</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;ISO-7499"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-mech;Face_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;Face"/>
 	</sh:NodeShape>
 	
@@ -7031,13 +7112,18 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="en">Gearing</rdfs:label>
 		<rdfs:label xml:lang="de">Verzahnung</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-04-01T18:27:12Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;DIN-ISO-15786"/>
 		<skos:definition xml:lang="en">Gearing specification</skos:definition>
 		<skos:definition xml:lang="de">Verzahnungsspezifikation</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;DIN-ISO-15786"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-mech;Gearing_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-mech;pitch_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;Gearing"/>
 	</sh:NodeShape>
 	
@@ -7290,6 +7376,11 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-mech;GeometricInterference_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;GeometricInterference"/>
 	</sh:NodeShape>
 	
@@ -7380,13 +7471,14 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="en">Geometric Tolerance</rdfs:label>
 		<rdfs:label xml:lang="de">Geometrische Toleranz</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2025-09-28T14:15:44Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;DIN-EN-ISO-1101"/>
 		<skos:definition xml:lang="en">Represents a geometric tolerance, such as form, position, orientation, or runout</skos:definition>
 		<skos:definition xml:lang="de">Repräsentiert eine geometrische Toleranz wie z. B. Form, Ort, Richtung und Lauf</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;DIN-EN-ISO-1101"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-mech;GeometricTolerance_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-mech;toleranceValue_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;GeometricTolerance"/>
 	</sh:NodeShape>
 	
@@ -7436,13 +7528,19 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="en">Heat-treated Area</rdfs:label>
 		<rdfs:label xml:lang="de">Wärmebehandelter Bereich</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2025-12-01T01:01:22Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;DIN-EN-ISO-4885"/>
 		<skos:definition xml:lang="en">Heat treatment of a mechanical component</skos:definition>
 		<skos:definition xml:lang="de">Wärmebehandlung einer mechanischen Komponente</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;DIN-EN-ISO-4885"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-mech;HeatTreatedArea_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-mech;hardness_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;HeatTreatedArea"/>
 	</sh:NodeShape>
 	
@@ -7771,13 +7869,19 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="de">Bohrung</rdfs:label>
 		<rdfs:label xml:lang="en">Hole</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2025-11-26T02:39:29Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;DIN-ISO-15786"/>
 		<skos:definition xml:lang="en">A cylindrical or conical hole in a part, typically used as a mechanical interface to other mechanical components.</skos:definition>
 		<skos:definition xml:lang="de">Ein zylindrisches oder konisches Loch in einem Teil. Repräsentiert typischerweise eine mechanische Schnittstelle zu anderen mechanischen Komponenten.</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;DIN-ISO-15786"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-mech;Hole_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/diameter_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/length_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;Hole"/>
 	</sh:NodeShape>
 	
@@ -7956,6 +8060,7 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-mech;JoiningElement_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-mech;side_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;JoiningElement"/>
 	</sh:NodeShape>
 	
@@ -8747,6 +8852,9 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-mech;KinematicMechanism_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;KinematicMechanism"/>
 	</sh:NodeShape>
 	
@@ -8802,6 +8910,10 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-mech;KinematicMotion_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;KinematicMotion"/>
 	</sh:NodeShape>
 	
@@ -8898,6 +9010,11 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-mech;KinematicSensor_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;KinematicSensor"/>
 	</sh:NodeShape>
 	
@@ -9033,6 +9150,11 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-mech;MarkingLabeling_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;MarkingLabeling"/>
 	</sh:NodeShape>
 	
@@ -9279,14 +9401,25 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="en">Material</rdfs:label>
 		<rdfs:label xml:lang="de">Werkstoff</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-04-12T08:51:55Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;VDA-231-106"/>
-		<rdfs:definedBy rdf:resource="&cas-ref;VDA-231-200"/>
 		<skos:definition xml:lang="en">Material assigned to the mechanical component</skos:definition>
 		<skos:definition xml:lang="de">Werkstoff, das dieser mechanischen Komponente zugeordnet ist</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;VDA-231-106"/>
+		<rdfs:definedBy rdf:resource="&cas-ref;VDA-231-200"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-mech;Material_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-mech;density_Shape"/>
+		<sh:property rdf:resource="&cas-mech;elasticLimit_Shape"/>
+		<sh:property rdf:resource="&cas-mech;elongationAtBreak_Shape"/>
+		<sh:property rdf:resource="&cas-mech;flammability_Shape"/>
+		<sh:property rdf:resource="&cas-mech;tensileStrength_Shape"/>
+		<sh:property rdf:resource="&cas-mech;thermalExpansion_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;Material"/>
 	</sh:NodeShape>
 	
@@ -9424,6 +9557,7 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-mech;MechanicalComponent_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-mech;mass_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;MechanicalComponent"/>
 	</sh:NodeShape>
 	
@@ -9520,6 +9654,13 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-mech;ModelAnnotation_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-mech;classification_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/parent_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;ModelAnnotation"/>
 	</sh:NodeShape>
 	
@@ -9854,6 +9995,11 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-mech;ModelView_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;ModelView"/>
 	</sh:NodeShape>
 	
@@ -9909,6 +10055,12 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-mech;PaintedCoatedArea_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-mech;thickness_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;PaintedCoatedArea"/>
 	</sh:NodeShape>
 	
@@ -10243,6 +10395,10 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-mech;Substance_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;Substance"/>
 	</sh:NodeShape>
 	
@@ -10251,11 +10407,11 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="de">Oberflächenbeschaffenheit</rdfs:label>
 		<rdfs:label xml:lang="en">Surface Texture</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2025-09-28T14:15:57Z</dcterms:modified>
+		<skos:definition xml:lang="en">Represents surface texture such as roughness and waviness</skos:definition>
+		<skos:definition xml:lang="de">Repräsentiert die Oberflächenbeschaffenheit wie z. B. Rauheit und Welligkeit</skos:definition>
 		<rdfs:definedBy rdf:resource="&cas-ref;DIN-EN-ISO-21920"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;DIN-EN-ISO-21920-1"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;DIN-EN-ISO-21920-3"/>
-		<skos:definition xml:lang="en">Represents surface texture such as roughness and waviness</skos:definition>
-		<skos:definition xml:lang="de">Repräsentiert die Oberflächenbeschaffenheit wie z. B. Rauheit und Welligkeit</skos:definition>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-mech;SurfaceTexture_Shape">
@@ -10268,13 +10424,19 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="de">Gewinde</rdfs:label>
 		<rdfs:label xml:lang="en">Thread</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-06-25T07:04:48Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;DIN-ISO-15786"/>
 		<skos:definition xml:lang="en">A threaded hole or shaft on a part, typically used as a mechanical interface to other mechanical components.</skos:definition>
 		<skos:definition xml:lang="de">Eine Innen- oder Außengewinde an einem Bauteil. Repräsentiert typischerweise eine mechanische Schnittstelle zu anderen mechanischen Komponenten.</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;DIN-ISO-15786"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-mech;Thread_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/diameter_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/length_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-mech;Thread"/>
 	</sh:NodeShape>
 	
@@ -10529,7 +10691,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;bendingAngle_Shape">
 		<sh:datatype rdf:resource="&qudt;QuantityValue"/>
 		<sh:path rdf:resource="&cas-mech;bendingAngle"/>
-		<sh:property rdf:resource="&cas-mech;bendingAngle_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;classification">
@@ -10545,7 +10706,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;classification_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="&cas-mech;classification"/>
-		<sh:property rdf:resource="&cas-mech;classification_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;density">
@@ -10561,7 +10721,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;density_Shape">
 		<sh:datatype rdf:resource="&qudt;QuantityValue"/>
 		<sh:path rdf:resource="&cas-mech;density"/>
-		<sh:property rdf:resource="&cas-mech;density_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;elasticLimit">
@@ -10577,7 +10736,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;elasticLimit_Shape">
 		<sh:datatype rdf:resource="&qudt;QuantityValue"/>
 		<sh:path rdf:resource="&cas-mech;elasticLimit"/>
-		<sh:property rdf:resource="&cas-mech;elasticLimit_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;elongationAtBreak">
@@ -10593,7 +10751,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;elongationAtBreak_Shape">
 		<sh:datatype rdf:resource="&qudt;QuantityValue"/>
 		<sh:path rdf:resource="&cas-mech;elongationAtBreak"/>
-		<sh:property rdf:resource="&cas-mech;elongationAtBreak_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;flammability">
@@ -10609,7 +10766,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;flammability_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="&cas-mech;flammability"/>
-		<sh:property rdf:resource="&cas-mech;flammability_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;hardness">
@@ -10625,7 +10781,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;hardness_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="&cas-mech;hardness"/>
-		<sh:property rdf:resource="&cas-mech;hardness_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;lowerTolerance">
@@ -10641,7 +10796,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;lowerTolerance_Shape">
 		<sh:datatype rdf:resource="&qudt;QuantityValue"/>
 		<sh:path rdf:resource="&cas-mech;lowerTolerance"/>
-		<sh:property rdf:resource="&cas-mech;lowerTolerance_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;mass">
@@ -10657,7 +10811,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;mass_Shape">
 		<sh:datatype rdf:resource="&qudt;QuantityValue"/>
 		<sh:path rdf:resource="&cas-mech;mass"/>
-		<sh:property rdf:resource="&cas-mech;mass_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;nominalValue">
@@ -10673,7 +10826,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;nominalValue_Shape">
 		<sh:datatype rdf:resource="&qudt;QuantityValue"/>
 		<sh:path rdf:resource="&cas-mech;nominalValue"/>
-		<sh:property rdf:resource="&cas-mech;nominalValue_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;particleDensity">
@@ -10689,7 +10841,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;particleDensity_Shape">
 		<sh:datatype rdf:resource="&xsd;integer"/>
 		<sh:path rdf:resource="&cas-mech;particleDensity"/>
-		<sh:property rdf:resource="&cas-mech;particleDensity_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;particleSize">
@@ -10705,7 +10856,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;particleSize_Shape">
 		<sh:datatype rdf:resource="&qudt;QuantityValue"/>
 		<sh:path rdf:resource="&cas-mech;particleSize"/>
-		<sh:property rdf:resource="&cas-mech;particleSize_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;pitch">
@@ -10721,7 +10871,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;pitch_Shape">
 		<sh:datatype rdf:resource="&xsd;integer"/>
 		<sh:path rdf:resource="&cas-mech;pitch"/>
-		<sh:property rdf:resource="&cas-mech;pitch_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;side">
@@ -10737,7 +10886,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;side_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="&cas-mech;side"/>
-		<sh:property rdf:resource="&cas-mech;side_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;tensileStrength">
@@ -10753,7 +10901,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;tensileStrength_Shape">
 		<sh:datatype rdf:resource="&qudt;QuantityValue"/>
 		<sh:path rdf:resource="&cas-mech;tensileStrength"/>
-		<sh:property rdf:resource="&cas-mech;tensileStrength_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;thermalExpansion">
@@ -10769,7 +10916,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;thermalExpansion_Shape">
 		<sh:datatype rdf:resource="&qudt;QuantityValue"/>
 		<sh:path rdf:resource="&cas-mech;thermalExpansion"/>
-		<sh:property rdf:resource="&cas-mech;thermalExpansion_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;thickness">
@@ -10785,7 +10931,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;thickness_Shape">
 		<sh:datatype rdf:resource="&qudt;QuantityValue"/>
 		<sh:path rdf:resource="&cas-mech;thickness"/>
-		<sh:property rdf:resource="&cas-mech;thickness_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;toleranceValue">
@@ -10801,7 +10946,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;toleranceValue_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="&cas-mech;toleranceValue"/>
-		<sh:property rdf:resource="&cas-mech;toleranceValue_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;upperTolerance">
@@ -10817,7 +10961,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;upperTolerance_Shape">
 		<sh:datatype rdf:resource="&qudt;QuantityValue"/>
 		<sh:path rdf:resource="&cas-mech;upperTolerance"/>
-		<sh:property rdf:resource="&cas-mech;upperTolerance_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-mech;volume">
@@ -10833,7 +10976,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-mech;volume_Shape">
 		<sh:datatype rdf:resource="&qudt;QuantityValue"/>
 		<sh:path rdf:resource="&cas-mech;volume"/>
-		<sh:property rdf:resource="&cas-mech;volume_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:Class rdf:about="&cas-sw;SoftwareClass">
@@ -10841,10 +10983,10 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="en">Software Class</rdfs:label>
 		<rdfs:label xml:lang="de">Software-Klasse</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2025-12-01T01:45:52Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-19513"/>
-		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-20246"/>
 		<skos:definition xml:lang="en">A class in source code that represents a logical collection data and functions</skos:definition>
 		<skos:definition xml:lang="de">Eine Klasse im Quellcode, die eine logische Sammlung von Daten und Funktionen darstellt</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-19513"/>
+		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-20246"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-sw;SoftwareClass_Shape">
@@ -10857,11 +10999,11 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="en">Software Component</rdfs:label>
 		<rdfs:label xml:lang="de">Softwarekomponente</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2025-12-01T01:55:16Z</dcterms:modified>
+		<skos:definition xml:lang="en">A compiled component of software to be used in a product, i. e. executable or library</skos:definition>
+		<skos:definition xml:lang="de">Eine kompilierte Softwarekomponente, die in einem Produkt verwendet werden soll, d. h. eine ausführbare Datei oder Bibliothek</skos:definition>
 		<rdfs:definedBy rdf:resource="&cas-ref;DO-297"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-20246"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-IEEE-29119-1"/>
-		<skos:definition xml:lang="en">A compiled component of software to be used in a product, i. e. executable or library</skos:definition>
-		<skos:definition xml:lang="de">Eine kompilierte Softwarekomponente, die in einem Produkt verwendet werden soll, d. h. eine ausführbare Datei oder Bibliothek</skos:definition>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-sw;SoftwareComponent_Shape">
@@ -10874,11 +11016,11 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="en">Software Interface</rdfs:label>
 		<rdfs:label xml:lang="de">Software-Schnittstelle</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2025-12-01T01:55:13Z</dcterms:modified>
+		<skos:definition xml:lang="en">An interface in source code that allows a class to interact with other components of a software</skos:definition>
+		<skos:definition xml:lang="de">Eine Schnittstelle im Quellcode, die es einer Klasse ermöglicht, mit anderen Komponenten einer Software zu interagieren</skos:definition>
 		<rdfs:definedBy rdf:resource="&cas-ref;DO-297"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-20246"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-IEEE-29119-1"/>
-		<skos:definition xml:lang="en">An interface in source code that allows a class to interact with other components of a software</skos:definition>
-		<skos:definition xml:lang="de">Eine Schnittstelle im Quellcode, die es einer Klasse ermöglicht, mit anderen Komponenten einer Software zu interagieren</skos:definition>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-sw;SoftwareInterface_Shape">
@@ -10932,13 +11074,19 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="en">Component Connection</rdfs:label>
 		<rdfs:label xml:lang="de">Komponenten-Verbindung</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-05-31T07:58:37Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-20246"/>
 		<skos:definition xml:lang="en">Represents a connection between two components through interfaces</skos:definition>
 		<skos:definition xml:lang="de">Repräsentiert eine Verbindung zwischen zwei Komponenten über Schnittstellen</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-20246"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-sys;ComponentConnection_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/dateTime_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-sys;ComponentConnection"/>
 	</sh:NodeShape>
 	
@@ -11191,13 +11339,20 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="en">Component Interface</rdfs:label>
 		<rdfs:label xml:lang="de">Komponenten-Schnittstelle</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-06-09T00:15:41Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-20246"/>
 		<skos:definition xml:lang="en">Represents a generic interface of a system component</skos:definition>
 		<skos:definition xml:lang="de">Repräsentiert eine generische Schnittstelle einer Systemkomponente</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-20246"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-sys;ComponentInterface_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/dateTime_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/parent_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-sys;ComponentInterface"/>
 	</sh:NodeShape>
 	
@@ -11450,13 +11605,19 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="en">Component State</rdfs:label>
 		<rdfs:label xml:lang="de">Komponenten-Zustand</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-05-31T07:58:53Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-20246"/>
 		<skos:definition xml:lang="en">Represents the condition of a system component. Can be it a value, a condition, an information storage or a physical shape.</skos:definition>
 		<skos:definition xml:lang="de">Stellt den Zustand einer Systemkomponente dar. Es kann sich um einen Wert, eine Bedingung, eine Information oder eine physische Gestalt handeln.</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-20246"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-sys;ComponentState_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/dateTime_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-sys;ComponentState"/>
 	</sh:NodeShape>
 	
@@ -11629,18 +11790,27 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="de">Abweichung</rdfs:label>
 		<rdfs:label xml:lang="en">Deviation</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-05-31T07:59:01Z</dcterms:modified>
+		<skos:definition xml:lang="en">Represents a system, product or component deviation. A deviation affects a function. Deviations are typically managed in an FMEA.</skos:definition>
+		<skos:definition xml:lang="de">Repräsentiert eine Abweichung eines Systems, Produkts oder einer Komponente. Eine Abweichung beeinträchtigt eine Funktion. Abweichungen werden typischerweise in einer FMEA verwaltet.</skos:definition>
 		<rdfs:definedBy rdf:resource="&cas-ref;ARP4754B"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;ARP4761A"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;DIN-EN-61508-1"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;ISO-21448"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;ISO-26262-1"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-20246"/>
-		<skos:definition xml:lang="en">Represents a system, product or component deviation. A deviation affects a function. Deviations are typically managed in an FMEA.</skos:definition>
-		<skos:definition xml:lang="de">Repräsentiert eine Abweichung eines Systems, Produkts oder einer Komponente. Eine Abweichung beeinträchtigt eine Funktion. Abweichungen werden typischerweise in einer FMEA verwaltet.</skos:definition>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-sys;Deviation_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-sys;detection_Shape"/>
+		<sh:property rdf:resource="&cas-sys;occurrence_Shape"/>
+		<sh:property rdf:resource="&cas-sys;severity_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/revision_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-sys;Deviation"/>
 	</sh:NodeShape>
 	
@@ -12445,15 +12615,22 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="en">System Component</rdfs:label>
 		<rdfs:label xml:lang="de">Systemkomponente</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-05-31T07:58:06Z</dcterms:modified>
+		<skos:definition xml:lang="en">Represents a generic component of a system</skos:definition>
+		<skos:definition xml:lang="de">Repräsentiert eine generische Systemkomponente</skos:definition>
 		<rdfs:definedBy rdf:resource="&cas-ref;CSA-ISO-IEC-IEEE-15288"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-20246"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-IEEE-42010"/>
-		<skos:definition xml:lang="en">Represents a generic component of a system</skos:definition>
-		<skos:definition xml:lang="de">Repräsentiert eine generische Systemkomponente</skos:definition>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-sys;SystemComponent_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/dateTime_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/revision_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-sys;SystemComponent"/>
 	</sh:NodeShape>
 	
@@ -12755,7 +12932,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-sys;detection_Shape">
 		<sh:datatype rdf:resource="&xsd;double"/>
 		<sh:path rdf:resource="&cas-sys;detection"/>
-		<sh:property rdf:resource="&cas-sys;detection_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-sys;occurrence">
@@ -12771,7 +12947,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-sys;occurrence_Shape">
 		<sh:datatype rdf:resource="&xsd;double"/>
 		<sh:path rdf:resource="&cas-sys;occurrence"/>
-		<sh:property rdf:resource="&cas-sys;occurrence_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="&cas-sys;severity">
@@ -12787,7 +12962,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-sys;severity_Shape">
 		<sh:datatype rdf:resource="&xsd;double"/>
 		<sh:path rdf:resource="&cas-sys;severity"/>
-		<sh:property rdf:resource="&cas-sys;severity_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:Class rdf:about="&cas-val;Displacement">
@@ -12801,6 +12975,8 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-val;Displacement_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
 		<sh:targetClass rdf:resource="&cas-val;Displacement"/>
 	</sh:NodeShape>
 	
@@ -12815,6 +12991,11 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-val;ValidationBoundaryCondition_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-val;ValidationBoundaryCondition"/>
 	</sh:NodeShape>
 	
@@ -12823,13 +13004,18 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="en">Validation Criterium</rdfs:label>
 		<rdfs:label xml:lang="de">Validierungskriterium</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2025-12-01T01:51:03Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-IEEE-29119-1"/>
 		<skos:definition xml:lang="en">A specific validation criterium as part of a validation plan.</skos:definition>
 		<skos:definition xml:lang="de">Ein spezifisches Validierungskriterium als Teil eines Validierungsplans.</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;ISO-IEC-IEEE-29119-1"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-val;ValidationCriterium_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-val;ValidationCriterium"/>
 	</sh:NodeShape>
 	
@@ -12927,6 +13113,11 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-val;ValidationPlan_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-val;ValidationPlan"/>
 	</sh:NodeShape>
 	
@@ -12941,6 +13132,11 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-val;ValidationResult_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-val;ValidationResult"/>
 	</sh:NodeShape>
 	
@@ -12955,6 +13151,12 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-val;ValidationRun_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/dateTime_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-val;ValidationRun"/>
 	</sh:NodeShape>
 	
@@ -13044,16 +13246,21 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:subClassOf rdf:resource="&cas;Entity"/>
 		<rdfs:label xml:lang="en">Verification Characteristic</rdfs:label>
 		<rdfs:label xml:lang="de">Verifikationsmerkmal</rdfs:label>
-		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-01-01T10:33:39Z</dcterms:modified>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-07-08T17:20:07Z</dcterms:modified>
+		<skos:definition xml:lang="en">Represents a characteristic that must be inspected to ensure product function.</skos:definition>
+		<skos:definition xml:lang="de">Stellt ein Merkmal dar, das geprüft werden muss, um die Funktion des Produkts zu gewährleisten.</skos:definition>
 		<rdfs:definedBy rdf:resource="&cas-ref;DIN-23601"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;ISO-7533"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;VDA-231-300"/>
-		<skos:definition xml:lang="en">Represents a characteristic that must be inspected to ensure product function.</skos:definition>
-		<skos:definition xml:lang="de">Stellt ein Merkmal dar, das geprüft werden muss, um die Funktion des Produkts zu gewährleisten.</skos:definition>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-ver;VerificationCharacteristic_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-ver;VerificationCharacteristic"/>
 	</sh:NodeShape>
 	
@@ -13265,14 +13472,20 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="en">Verification Plan</rdfs:label>
 		<rdfs:label xml:lang="de">Verifikationsplan</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-05-16T06:34:40Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;DIN-23601"/>
-		<rdfs:definedBy rdf:resource="&cas-ref;ISO-22514-7"/>
 		<skos:definition xml:lang="de">Legt fest, welche Merkmale mit welchen Geräten zu welchem Zweck geprüft werden müssen.</skos:definition>
 		<skos:definition xml:lang="en">Specifies what characteristics must be inspected using which equipment for which purpose.</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;DIN-23601"/>
+		<rdfs:definedBy rdf:resource="&cas-ref;ISO-22514-7"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-ver;VerificationPlan_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/revision_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-ver;VerificationPlan"/>
 	</sh:NodeShape>
 	
@@ -13348,11 +13561,11 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<rdf:Description rdf:about="&cas-ver;VerificationPlan_usedIn_ControlPlan_Target">
 		<rdfs:subPropertyOf rdf:resource="&cas;linksTarget"/>
 		<rdfs:domain rdf:resource="&cas-ver;VerificationPlan_usedIn_ControlPlan"/>
-		<rdfs:range rdf:resource="&cas-mnf;ControlPlan"/>
+		<rdfs:range rdf:resource="&cas-man;ControlPlan"/>
 	</rdf:Description>
 	
 	<sh:PropertyShape rdf:about="&cas-ver;VerificationPlan_usedIn_ControlPlan_Target_Shape">
-		<sh:class rdf:resource="&cas-mnf;ControlPlan"/>
+		<sh:class rdf:resource="&cas-man;ControlPlan"/>
 		<sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
 		<sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
 		<sh:path rdf:resource="&cas-ver;VerificationPlan_usedIn_ControlPlan_Target"/>
@@ -13403,10 +13616,10 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:subClassOf rdf:resource="&cas-mech;MechanicalComponent"/>
 		<rdfs:label xml:lang="en">Verification Resource</rdfs:label>
 		<rdfs:label xml:lang="de">Verifikationsmittel</rdfs:label>
-		<dcterms:modified rdf:datatype="&xsd;dateTime">2025-12-05T15:29:03Z</dcterms:modified>
-		<rdfs:definedBy rdf:resource="&cas-ref;DIN-23601"/>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-07-08T17:19:30Z</dcterms:modified>
 		<skos:definition xml:lang="en">Represents a mechanical component used as an inspection resource</skos:definition>
 		<skos:definition xml:lang="de">Repräsentiert eine mechanische Komponente, die als Prüfmittel verwendet wird</skos:definition>
+		<rdfs:definedBy rdf:resource="&cas-ref;DIN-23601"/>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-ver;VerificationResource_Shape">
@@ -13460,15 +13673,21 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 		<rdfs:label xml:lang="en">Verification Result</rdfs:label>
 		<rdfs:label xml:lang="de">Verifikationsergebnis</rdfs:label>
 		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-05-16T06:34:03Z</dcterms:modified>
+		<skos:definition xml:lang="en">Represents an inspection result for an inspection criterium</skos:definition>
+		<skos:definition xml:lang="de">Repräsentiert ein Prüfergebnis für ein Prüfkriterium</skos:definition>
 		<rdfs:definedBy rdf:resource="&cas-ref;ISO-20170"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;ISO-22514-2"/>
 		<rdfs:definedBy rdf:resource="&cas-ref;ISO-22514-6"/>
-		<skos:definition xml:lang="en">Represents an inspection result for an inspection criterium</skos:definition>
-		<skos:definition xml:lang="de">Repräsentiert ein Prüfergebnis für ein Prüfkriterium</skos:definition>
 	</owl:Class>
 	
 	<sh:NodeShape rdf:about="&cas-ver;VerificationResult_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="&cas-ver;deviation_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-ver;VerificationResult"/>
 	</sh:NodeShape>
 	
@@ -13524,6 +13743,12 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	
 	<sh:NodeShape rdf:about="&cas-ver;VerificationRun_Shape">
 		<sh:close rdf:datatype="&xsd;boolean">true</sh:close>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/dateTime_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title_Shape"/>
+		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 		<sh:targetClass rdf:resource="&cas-ver;VerificationRun"/>
 	</sh:NodeShape>
 	
@@ -13622,7 +13847,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="&cas-ver;deviation_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="&cas-ver;deviation"/>
-		<sh:property rdf:resource="&cas-ver;deviation_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="http://www.omg.org/spec/CASCaRA/ontology/dateTime">
@@ -13638,7 +13862,21 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="http://www.omg.org/spec/CASCaRA/ontology/dateTime_Shape">
 		<sh:datatype rdf:resource="&xsd;dateTime"/>
 		<sh:path rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/dateTime"/>
-		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/dateTime_Shape"/>
+	</sh:PropertyShape>
+	
+	<owl:DatatypeProperty rdf:about="http://www.omg.org/spec/CASCaRA/ontology/description">
+		<rdfs:subPropertyOf rdf:resource="&cas;Property"/>
+		<rdfs:label xml:lang="de">Beschreibung</rdfs:label>
+		<rdfs:label xml:lang="en">Description</rdfs:label>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-07-05T23:39:05Z</dcterms:modified>
+		<rdfs:range rdf:resource="&xsd;string"/>
+		<skos:definition xml:lang="de">Beschreibung des Elements</skos:definition>
+		<skos:definition xml:lang="en">Description of the element</skos:definition>
+	</owl:DatatypeProperty>
+	
+	<sh:PropertyShape rdf:about="http://www.omg.org/spec/CASCaRA/ontology/description_Shape">
+		<sh:datatype rdf:resource="&xsd;string"/>
+		<sh:path rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/description"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="http://www.omg.org/spec/CASCaRA/ontology/diameter">
@@ -13654,7 +13892,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="http://www.omg.org/spec/CASCaRA/ontology/diameter_Shape">
 		<sh:datatype rdf:resource="&qudt;QuantityValue"/>
 		<sh:path rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/diameter"/>
-		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/diameter_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="http://www.omg.org/spec/CASCaRA/ontology/endDateTime">
@@ -13670,7 +13907,21 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="http://www.omg.org/spec/CASCaRA/ontology/endDateTime_Shape">
 		<sh:datatype rdf:resource="&xsd;dateTime"/>
 		<sh:path rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/endDateTime"/>
-		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/endDateTime_Shape"/>
+	</sh:PropertyShape>
+	
+	<owl:DatatypeProperty rdf:about="http://www.omg.org/spec/CASCaRA/ontology/identifier">
+		<rdfs:subPropertyOf rdf:resource="&cas;Property"/>
+		<rdfs:label xml:lang="en">Identifier</rdfs:label>
+		<rdfs:label xml:lang="de">Identifikator</rdfs:label>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-07-05T23:39:01Z</dcterms:modified>
+		<rdfs:range rdf:resource="&xsd;string"/>
+		<skos:definition xml:lang="de">Eindeutiger Identifikator des Elements</skos:definition>
+		<skos:definition xml:lang="en">Unambiguous identifier of the element</skos:definition>
+	</owl:DatatypeProperty>
+	
+	<sh:PropertyShape rdf:about="http://www.omg.org/spec/CASCaRA/ontology/identifier_Shape">
+		<sh:datatype rdf:resource="&xsd;string"/>
+		<sh:path rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/identifier"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="http://www.omg.org/spec/CASCaRA/ontology/length">
@@ -13686,7 +13937,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="http://www.omg.org/spec/CASCaRA/ontology/length_Shape">
 		<sh:datatype rdf:resource="&qudt;QuantityValue"/>
 		<sh:path rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/length"/>
-		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/length_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="http://www.omg.org/spec/CASCaRA/ontology/number">
@@ -13702,7 +13952,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="http://www.omg.org/spec/CASCaRA/ontology/number_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number"/>
-		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/number_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="http://www.omg.org/spec/CASCaRA/ontology/parent">
@@ -13716,7 +13965,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="http://www.omg.org/spec/CASCaRA/ontology/parent_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/parent"/>
-		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/parent_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="http://www.omg.org/spec/CASCaRA/ontology/revision">
@@ -13732,7 +13980,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="http://www.omg.org/spec/CASCaRA/ontology/revision_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/revision"/>
-		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/revision_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="http://www.omg.org/spec/CASCaRA/ontology/startDateTime">
@@ -13748,7 +13995,21 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="http://www.omg.org/spec/CASCaRA/ontology/startDateTime_Shape">
 		<sh:datatype rdf:resource="&xsd;dateTime"/>
 		<sh:path rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/startDateTime"/>
-		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/startDateTime_Shape"/>
+	</sh:PropertyShape>
+	
+	<owl:DatatypeProperty rdf:about="http://www.omg.org/spec/CASCaRA/ontology/title">
+		<rdfs:subPropertyOf rdf:resource="&cas;Property"/>
+		<rdfs:label xml:lang="de">Titel</rdfs:label>
+		<rdfs:label xml:lang="en">Title</rdfs:label>
+		<dcterms:modified rdf:datatype="&xsd;dateTime">2026-07-05T23:39:04Z</dcterms:modified>
+		<rdfs:range rdf:resource="&xsd;string"/>
+		<skos:definition xml:lang="de">Titel des Elements</skos:definition>
+		<skos:definition xml:lang="en">Title of the element</skos:definition>
+	</owl:DatatypeProperty>
+	
+	<sh:PropertyShape rdf:about="http://www.omg.org/spec/CASCaRA/ontology/title_Shape">
+		<sh:datatype rdf:resource="&xsd;string"/>
+		<sh:path rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/title"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="http://www.omg.org/spec/CASCaRA/ontology/type">
@@ -13764,7 +14025,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="http://www.omg.org/spec/CASCaRA/ontology/type_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type"/>
-		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/type_Shape"/>
 	</sh:PropertyShape>
 	
 	<owl:DatatypeProperty rdf:about="http://www.omg.org/spec/CASCaRA/ontology/url">
@@ -13780,7 +14040,6 @@ https://intranet.prostep.org/display/PROJ/Glossary</skos:definition>
 	<sh:PropertyShape rdf:about="http://www.omg.org/spec/CASCaRA/ontology/url_Shape">
 		<sh:datatype rdf:resource="&xsd;string"/>
 		<sh:path rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/url"/>
-		<sh:property rdf:resource="http://www.omg.org/spec/CASCaRA/ontology/url_Shape"/>
 	</sh:PropertyShape>
 
 </rdf:RDF>

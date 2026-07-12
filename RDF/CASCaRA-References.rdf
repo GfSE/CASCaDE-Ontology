@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <rdf:RDF
-	xmlns="http://www.omg.org/spec/CASCaRA/ontology/"
-	xmlns:bibo="http://purl.org/ontology/bibo/"
-	xmlns:cas-ref="http://www.omg.org/spec/CASCaRA/ontology/references/"
+	xmlns:cas-ref="http://www.omg.org/spec/CASCaRA/references/"
+	xmlns:cmns-abt="https://www.omg.org/spec/Commons/AboutCommons/"
+	xmlns:cmns-doc="https://www.omg.org/spec/Commons/Documents/"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:dcterms="http://purl.org/dc/terms/"
-	xmlns:fabio="http://purl.org/spar/fabio/"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
-	xmlns:quantitykind="http://qudt.org/vocab/quantitykind/"
-	xmlns:qudt="http://qudt.org/schema/qudt/"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-	xmlns:unit="http://qudt.org/vocab/unit/"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	
-	<owl:Ontology rdf:about="http://www.omg.org/spec/CASCaRA/ontology/">
-		<rdfs:label>Resources Ontology</rdfs:label>
+	<owl:Ontology rdf:about="http://www.omg.org/spec/CASCaRA/references/">
 		<dcterms:abstract>The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\nNote that this version of the ontology is in development and may be subject to modifications without notice.</dcterms:abstract>
 		<dcterms:contributor>Alvarez Rodriguez, José Maria, UC3 Madrid</dcterms:contributor>
 		<dcterms:contributor>Arslan, Serkan, INOMIC Solutions GmbH</dcterms:contributor>
@@ -82,7 +77,7 @@
 		<dcterms:contributor>Williams, Mark, INCOSE</dcterms:contributor>
 		<dcterms:contributor>von Dungern, Dr. Oskar, enso managers GmbH</dcterms:contributor>
 		<dcterms:contributor>von Holst, Dr.-Ing. Christian, John Deere GmbH &amp; Co KG</dcterms:contributor>
-		<dcterms:created>07.07.2026 16:13:27</dcterms:created>
+		<dcterms:created rdf:datatype="&xsd;dateTime">12.07.2026 17:19:41</dcterms:created>
 		<dcterms:license>CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 88solutions
@@ -144,393 +139,395 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 https://opensource.org/licenses/MIT</dcterms:license>
 		<dcterms:title>CASCaRA Resources Ontology</dcterms:title>
 		<owl:versionInfo>1.0</owl:versionInfo>
+		<owl:imports rdf:resource="https://www.omg.org/spec/Commons/AboutCommons/"/>
+		<rdfs:label>Resources Ontology</rdfs:label>
 	</owl:Ontology>
 	
-	<fabio:Standard rdf:about="http://www.omg.org/spec/CASCaRA/ontology/references/3D-Measurement-Data-Management-with-I++-DMS">
+	<cmns-doc:ReferenceDocument rdf:about="http://www.omg.org/spec/CASCaRA/references/3D-Measurement-Data-Management-with-I++-DMS">
 		<dc:title xml:lang="en">3D Measurement Data Management with I++ DMS</dc:title>
 		<dcterms:source rdf:resource="https://www.prostep.org/fileadmin/downloads/PSI_17_VDA_Recom_3DMDM_06_020_03.pdf"/>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;3MF-Format-Specification">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;3MF-Format-Specification">
 		<dc:title xml:lang="en">3MF Format Specification</dc:title>
 		<dcterms:source rdf:resource="https://3mf.io/specification/"/>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ARP4754B">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ARP4754B">
 		<dc:title xml:lang="en">Guidelines for Development of Civil Aircraft and Systems</dc:title>
 		<dcterms:source rdf:resource="https://www.sae.org/standards/arp4754b-guidelines-development-civil-aircraft-systems"/>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ARP4761A">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ARP4761A">
 		<dc:title xml:lang="en">Guidelines for Conducting the Safety Assessment Process on Civil Aircraft, Systems, and Equipment</dc:title>
 		<dcterms:source rdf:resource="https://www.sae.org/standards/arp4761a-guidelines-conducting-safety-assessment-process-civil-aircraft-systems-equipment"/>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;AutomationML-Website">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;AutomationML-Website">
 		<dc:title xml:lang="en">AutomationML-Website</dc:title>
 		<dcterms:source rdf:resource="https://www.automationml.org/about-automationml/specifications/"/>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;CSA-ISO-IEC-IEEE-15288">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;CSA-ISO-IEC-IEEE-15288">
 		<dc:title xml:lang="en">System life cycle processes</dc:title>
 		<dc:title xml:lang="de">System life cycle processes (Adopted ISO/IEC/IEEE 15288:2015, first edition, 2015-05-15)</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/can-csa-iso-iec-ieee-15288/269743351"/>
-		<bibo:edition>2016-12-0</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2016-12-0</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;DIN-23601">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-23601">
 		<dc:title xml:lang="en">Verification - Requirements for measurements to determine the characteristics for size, form, orientation, location and run-out</dc:title>
 		<dc:title xml:lang="de">Verifikation - Anforderungen an Messungen zur Bestimmung der Kenngrößen für Größenmaße, Form, Richtung, Ort und Lauf</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm-entwurf/din-23601/384600863"/>
-		<bibo:edition>2024-11</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2024-11</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;DIN-8580">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-8580">
 		<dc:title xml:lang="en">Begriffe, Einteilung</dc:title>
 		<dc:title xml:lang="de">Terms and definitions, division</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/din-8580/65031153"/>
-		<bibo:edition>2003-09</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2003-09</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;DIN-EN-61508-1">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-EN-61508-1">
 		<dc:title xml:lang="en">Part 1: General requirements</dc:title>
 		<dc:title xml:lang="de">Teil 1: Allgemeine Anforderungen</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/din-en-61508-1/135302584"/>
-		<bibo:edition>2011-02</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2011-02</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;DIN-EN-IEC-62714-1">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-EN-IEC-62714-1">
 		<dc:title xml:lang="en">Deutsche Fassung EN IEC 62714-1:2018</dc:title>
 		<dc:title xml:lang="de">German version EN IEC 62714-1:2018</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/din-en-iec-62714-1/297556170"/>
-		<bibo:edition>2019-02</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2019-02</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;DIN-EN-ISO-1101">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-EN-ISO-1101">
 		<dc:title xml:lang="de">Tolerances of form, orientation, location and run-out</dc:title>
 		<dc:title xml:lang="en">Tolerierung von Form, Richtung, Ort und Lauf (URL-Dublette!)</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/din-en-iso-1101/258479779"/>
-		<bibo:edition>2017-09</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2017-09</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;DIN-EN-ISO-14405-1">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-EN-ISO-14405-1">
 		<dc:title xml:lang="de">Part 1: Linear sizes</dc:title>
 		<dc:title xml:lang="en">Teil 1: Lineare Größenmaße</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/din-en-iso-14405-1/395356021"/>
-		<bibo:edition>2026-05</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2026-05</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;DIN-EN-ISO-14405-2">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-EN-ISO-14405-2">
 		<dc:title xml:lang="de">Part 2: Dimensions other than linear or angular sizes</dc:title>
 		<dc:title xml:lang="en">Teil 2: Andere als lineare oder Winkelgrößenmaße</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/din-en-iso-14405-2/300588108"/>
-		<bibo:edition>2019-06</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2019-06</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;DIN-EN-ISO-14405-3">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-EN-ISO-14405-3">
 		<dc:title xml:lang="de">Part 3: Angular sizes</dc:title>
 		<dc:title xml:lang="en">Teil 3: Winkelgrößenmaße</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/din-en-iso-14405-3/255107240"/>
-		<bibo:edition>2017-07</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2017-07</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;DIN-EN-ISO-21920">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-EN-ISO-21920">
 		<dc:title xml:lang="de">Part 2: Terms, definitions and surface texture parameters (ISO 21920-2:2021, Corrected version 2022-06)</dc:title>
 		<dc:title xml:lang="en">Teil 2: Begriffe und Kenngrößen für die Oberflächenbeschaffenheit (ISO 21920-2:2021, korrigierte Fassung 2022-06)</dc:title>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;DIN-EN-ISO-21920-1">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-EN-ISO-21920-1">
 		<dc:title xml:lang="de">Part 1: Indication of surface texture (ISO 21920-1:2021)</dc:title>
 		<dc:title xml:lang="en">Teil 1: Angabe der Oberflächenbeschaffenheit (ISO 21920-1:2021)</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/din-en-iso-21920-1/344762052"/>
-		<bibo:edition>2022-12</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2022-12</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;DIN-EN-ISO-21920-3">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-EN-ISO-21920-3">
 		<dc:title xml:lang="de">Part 3: Specification operators (ISO 21920-3:2021)</dc:title>
 		<dc:title xml:lang="en">Teil 3: Spezifikationsoperatoren (ISO 21920-3:2021)</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/din-en-iso-21920-3/344762552"/>
-		<bibo:edition>2022-12</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2022-12</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;DIN-EN-ISO-4885">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-EN-ISO-4885">
 		<dc:title xml:lang="en">Eisenwerkstoffe - Wärmebehandlung - Begriffe</dc:title>
 		<dc:title xml:lang="de">Ferrous materials - Heat treatments - Vocabulary</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/en/standard/din-en-iso-4885/289121134"/>
-		<bibo:edition>2018-07</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2018-07</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;DIN-ISO-15786">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-ISO-15786">
 		<dc:title xml:lang="de">Simplified representation and dimensioning of holes (ISO 15786:2008)</dc:title>
 		<dc:title xml:lang="en">Vereinfachte Darstellung und Bemaßung von Löchern (ISO 15786:2008)</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/din-iso-15786/223068266"/>
-		<bibo:edition>2014-12</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2014-12</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;DO-297">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DO-297">
 		<dc:title xml:lang="en">Integrated Modular Avionics (IMA) Development Guidance and Certification Considerations</dc:title>
 		<dcterms:source rdf:resource="https://my.rtca.org/productdetails?id=a1B36000001IchGEAS"/>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;FAT-286">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;FAT-286">
 		<dc:title xml:lang="en">xMCF A Standard for Describing Connections and Joints in the Automotive Industry</dc:title>
 		<dcterms:source rdf:resource="https://www.vda.de/dam/vda/publications/2016/FAT/FAT-Schriftenreihe_286.pdf"/>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;FMI">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;FMI">
 		<dc:title xml:lang="en">Functional Mockup Interface</dc:title>
 		<dcterms:source rdf:resource="https://fmi-standard.org/"/>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;IGES">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;IGES">
 		<dc:title xml:lang="en">Initial Graphics Exchange Specification</dc:title>
 		<dcterms:source rdf:resource="https://web.archive.org/web/20120821190122/http://www.uspro.org/documents/IGES5-3_forDownload.pdf"/>
-		<bibo:edition>5.3, 1996</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>5.3, 1996</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;IPC-2581">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;IPC-2581">
 		<dc:title xml:lang="en">Digital Product Model Exchange</dc:title>
 		<dcterms:source rdf:resource="http://www.ipc2581.com/"/>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-10303-21">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-10303-21">
 		<dc:title xml:lang="de">Part 21: Implementation methods: Clear text encoding of the exchange structure</dc:title>
 		<dc:title xml:lang="en">Teil 21: Implementierungsmethoden: Klartext-Kodierung der Austauschstruktur</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/iso-10303-21/251313784"/>
-		<bibo:edition>2016-03</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2016-03</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-10303-28">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-10303-28">
 		<dc:title xml:lang="de">Part 28: Implementation methods: XML representations of EXPRESS schemas and data, using XML schemas</dc:title>
 		<dc:title xml:lang="en">Teil 28: Implementierungsmethoden: XML Darsellungen von EXPRESS Schemata und Daten unter Verwendung von XML Schemata</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/iso-10303-28/103737461"/>
-		<bibo:edition>2007-10</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2007-10</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-14306">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-14306">
 		<dc:title xml:lang="en">JT file format specification for 3D visualization</dc:title>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-14739-1">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-14739-1">
 		<dc:title xml:lang="de">Part 1: PRC 10001</dc:title>
 		<dc:title xml:lang="en">Teil 1: PRC 10001</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/iso-14739-1/228879952"/>
-		<bibo:edition>2014-12</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2014-12</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-16232">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-16232">
 		<dc:title xml:lang="en">Cleanliness of components and systems</dc:title>
 		<dc:title xml:lang="de">Sauberkeit von Komponenten für Fluidsysteme</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/iso-16232/300157067"/>
-		<bibo:edition>2018-12</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2018-12</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-20170">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-20170">
 		<dc:title xml:lang="en">Decomposition of geometrical characteristics for manufacturing control</dc:title>
 		<dc:title xml:lang="de">Zerlegung von geometrischen Merkmalen für die Fertigungskontrolle</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/din-en-iso-20170/298742961"/>
-		<bibo:edition>2019-11</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2019-11</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-21448">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-21448">
 		<dc:title xml:lang="en">Safety of the intended functionality</dc:title>
 		<dc:title xml:lang="de">Sicherheit der beabsichtigten Funktionalität</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/iso-21448/356927331"/>
-		<bibo:edition>2022-06</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2022-06</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-22514-2">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-22514-2">
 		<dc:title xml:lang="en">Part 2: Process capability and performance of time-dependent process models</dc:title>
 		<dc:title xml:lang="de">Teil 2: Prozessleistungs- und Prozessfähigkeitskenngrößen von zeitabhängigen Prozessmodellen</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/iso-22514-2/270082896"/>
-		<bibo:edition>2017-02</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2017-02</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-22514-6">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-22514-6">
 		<dc:title xml:lang="en">Part 6: Process capability statistics for characteristics following a multivariate normal distribution</dc:title>
 		<dc:title xml:lang="de">Teil 6: Prozessfähigkeitskennwerte für mehrdimensional normalverteilte Merkmale</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/iso-22514-6/180368162"/>
-		<bibo:edition>2013-02</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2013-02</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-22514-7">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-22514-7">
 		<dc:title xml:lang="en">Part 7: Capability of measurement processes</dc:title>
 		<dc:title xml:lang="de">Teil 7 : Fähigkeit von Messprozessen</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/iso-22514-7/345140722"/>
-		<bibo:edition>2021-08</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2021-08</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-26262-1">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-26262-1">
 		<dc:title xml:lang="de">Part 1: Vocabulary</dc:title>
 		<dc:title xml:lang="en">Teil 1: Vokabular</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/iso-26262-1/300423910"/>
-		<bibo:edition>2018-12</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2018-12</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-26580">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-26580">
 		<dc:title xml:lang="en">Software and systems engineering - Methods and tools for the feature-based approach to software and systems product line engineering</dc:title>
 		<dc:title xml:lang="de">Software- und System-Engineering - Methoden und Werkzeuge für den merkmalbasierten Ansatz zur Entwicklung von Software- und Systemproduktlinien</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/iso-iec-26580/340248389"/>
-		<bibo:edition>2021-04</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2021-04</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-7499">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-7499">
 		<dc:title xml:lang="de">Eindeutige Identifikation integraler Geometrieelemente</dc:title>
 		<dc:title xml:lang="en">Unique integral feature identification (UIFI)</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/iso-7499/386871932"/>
-		<bibo:edition>2024-11</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2024-11</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-7533">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-7533">
 		<dc:title xml:lang="en">Identification of specifications in the technical product documentation (TPD)</dc:title>
 		<dc:title xml:lang="de">Identifikation von Spezifikationen in der technischen Produktdokumentation (TPD)</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/din-en-iso-7533/387125251"/>
-		<bibo:edition>2025-04</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2025-04</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-IEC-19513">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-IEC-19513">
 		<dc:title xml:lang="en">Information technology - Object Management Group Unified Profile for DoDAF and MODAF (UPDM)</dc:title>
 		<dc:title xml:lang="de">Informationstechnologie - Objektmanagement Gruppen einheitliche Profile für DoDAF und MODAF (UPDM)</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/iso-iec-19513/282481275"/>
-		<bibo:edition>2017-10</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2017-10</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-IEC-19514">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-IEC-19514">
 		<dc:title xml:lang="en">Object management group systems modeling language (OMG SysML)</dc:title>
 		<dcterms:source rdf:resource="https://www.iso.org/standard/65231.html"/>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-IEC-20246">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-IEC-20246">
 		<dc:title xml:lang="en">Bewertungen von Arbeitsergebnissen</dc:title>
 		<dc:title xml:lang="de">Work product reviews</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/iso-iec-20246/271358565"/>
-		<bibo:edition>2017-02</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2017-02</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-IEC-IEEE-29119-1">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-IEC-IEEE-29119-1">
 		<dc:title xml:lang="en">Software and systems engineering - Software testing - Part 1: General concepts</dc:title>
 		<dc:title xml:lang="de">Software- und Systemengineering - Software-Test - Teil 1: Allgemeine Konzepte</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/en/standard/iso-iec-ieee-29119-1/351489600"/>
-		<bibo:edition>2022-01</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2022-01</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-IEC-IEEE-29148">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-IEC-IEEE-29148">
 		<dc:title xml:lang="en">Requirements Engineering</dc:title>
 		<dc:title xml:lang="de">Requirements engineering</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/iso-iec-ieee-29148/299567544"/>
-		<bibo:edition>2018-11</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2018-11</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ISO-IEC-IEEE-42010">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-IEC-IEEE-42010">
 		<dc:title xml:lang="de">Software, Systeme und Unternehmen - Architekturbeschreibung</dc:title>
 		<dc:title xml:lang="en">Software, systems and enterprise - Architecture description</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/iso-iec-ieee-42010/361506868"/>
-		<bibo:edition>2022-11</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2022-11</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;MechML">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;MechML">
 		<dc:title xml:lang="en">Mechanics Modeling Language</dc:title>
 		<dcterms:source rdf:resource="http://fasform.de/content/?ddownload=1431"/>
-		<bibo:edition>1</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>1</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;Modelica-Language">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Modelica-Language">
 		<dc:title xml:lang="en">Modelica Language</dc:title>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;PLMXML-Documentation">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;PLMXML-Documentation">
 		<dc:title xml:lang="en">PLMXML Documentation</dc:title>
 		<dcterms:source rdf:resource="http://media.plm.automation.siemens.com/open/plm-xml/docs/v7.0.3/documentation/plmxml.htm"/>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;QIF">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;QIF">
 		<dc:title xml:lang="en">Quality Information Framework</dc:title>
 		<dcterms:source rdf:resource="https://qifstandards.org/"/>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;QIFDocument">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;QIFDocument">
 		<dc:title xml:lang="en">QIFDocument</dc:title>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="http://www.omg.org/spec/CASCaRA/ontology/references/Recommended-Practices-for-STEP-AP242-Business-Object-Model-XML-Product-&amp;-Assembly-Structure">
+	<cmns-doc:ReferenceDocument rdf:about="http://www.omg.org/spec/CASCaRA/references/Recommended-Practices-for-STEP-AP242-Business-Object-Model-XML-Product-&amp;-Assembly-Structure">
 		<dc:title xml:lang="en">Recommended Practices for STEP AP242 Business Object Model XML Product &amp; Assembly Structure</dc:title>
 		<dcterms:source rdf:resource="https://www.cax-if.org/documents/rec_prac_ap242xml_assy_struct_v1.10.pdf"/>
-		<bibo:edition>Release 1.1, May 20, 2016</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>Release 1.1, May 20, 2016</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ReqIF">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ReqIF">
 		<dc:title xml:lang="en">Requirements Interchange Format</dc:title>
 		<dcterms:source rdf:resource="https://www.omg.org/reqif/"/>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;ReqIF-Implementation-Guide">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ReqIF-Implementation-Guide">
 		<dc:title xml:lang="en">ReqIF Implementation Guide</dc:title>
-		<bibo:edition>Version 1.4.3, 17 November 2014</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>Version 1.4.3, 17 November 2014</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;SpecIF">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;SpecIF">
 		<dc:title xml:lang="en">Specification Integration Facility</dc:title>
 		<dcterms:source rdf:resource="https://specif.de/en/"/>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;SpecIF-Vocabulary-v1.1">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;SpecIF-Vocabulary-v1.1">
 		<dc:title xml:lang="en">SpecIF Vocabulary v1.1</dc:title>
 		<dcterms:source rdf:resource="https://github.com/GfSE/SpecIF/blob/master/documentation/04_SpecIF_Domain_Classes_Github.md"/>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;SysML">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;SysML">
 		<dc:title xml:lang="en">Systems Modeling Language</dc:title>
 		<dcterms:source rdf:resource="http://www.omgsysml.org/index.htm"/>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;VDA-231-106">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;VDA-231-106">
 		<dc:title xml:lang="de">Material classification in motor vehicle construction: Structure and nomenclature</dc:title>
 		<dc:title xml:lang="en">Werkstoff-Klassifizierung im Kraftfahrzeugbau: Aufbau und Nomenklatur</dc:title>
 		<dcterms:source rdf:resource="https://webshop.vda.de/VDA/de/vda-231-106-102021"/>
-		<bibo:edition>01.10.2021 00:00:00</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>01.10.2021 00:00:00</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;VDA-231-200">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;VDA-231-200">
 		<dc:title xml:lang="de">Material record - Specification of materials and finishes in IT systems</dc:title>
 		<dc:title xml:lang="en">Werkstoffdatensatz - Spezifikation von Werkstoffen und Oberflächen in IT-Systemen</dc:title>
 		<dcterms:source rdf:resource="https://webshop.vda.de/VDA/de/vda-231-200-09-2010"/>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;VDA-231-300">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;VDA-231-300">
 		<dc:title xml:lang="de">Digital data exchange in material sampling taking into account 3D data</dc:title>
 		<dc:title xml:lang="en">Digitaler Datenaustausch in der werkstofflichen Bemusterung unter Berücksichtigung der 3D-Daten</dc:title>
 		<dcterms:source rdf:resource="https://webshop.vda.de/VDA/de/vda-231-300-072022"/>
-		<bibo:edition>01.07.2022 00:00:00</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>01.07.2022 00:00:00</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;VDA-4951">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;VDA-4951">
 		<dc:title xml:lang="en">Datenfernübertragung von CAD/CAM Daten</dc:title>
 		<dc:title xml:lang="de">The non-binding VDA Recommendation 4951 describes agreements regarding procedures, formats and contents of files, which standardize the exchange of CAD/CAM data and the associated administrative information and thus make it reliable and secure.  Due to the large number of topics in the field of CAD/CAM data exchange, the recommendation is divided into individual sub-documents, each of which is dedicated to one topic, but some of which also refer to or build on each other.  The numbering of the sub-documents does not indicate any context or a priority, it is simply historical.</dc:title>
-	</fabio:Standard>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;VDA-4964">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;VDA-4964">
 		<dc:title xml:lang="en">Harness Description List (KBL)</dc:title>
 		<dcterms:source rdf:resource="https://www.vda.de/de/services/Publikationen/Publikation.~1312~.html"/>
-		<bibo:edition>V2</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>V2</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;VDA-4968">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;VDA-4968">
 		<dc:title xml:lang="en">Vehicle Electric Container (VEC)</dc:title>
 		<dcterms:source rdf:resource="https://www.vda.de/de/services/Publikationen/vehicle-electric-container-vec.html"/>
-		<bibo:edition>VDA-Empfehlungen, 01. Juli 2014</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>VDA-Empfehlungen, 01. Juli 2014</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;VDA-5550">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;VDA-5550">
 		<dc:title xml:lang="en">Funktionsdatenaustausch</dc:title>
 		<dcterms:source rdf:resource="http://www.vda.de/dam/vda/publications/2018/Logistik/VDA_5550_T1_DE_V1_0_2018-03/VDA_5550_Funktionsdatenaustausch_T1_V1_0_2018-03.pdf"/>
-		<bibo:edition>2018-03</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2018-03</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 	
-	<fabio:Standard rdf:about="&cas-ref;VDI-2519-Blatt-1">
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;VDI-2519-Blatt-1">
 		<dc:title xml:lang="de">Procedures for the compilation of tender and performance specifications</dc:title>
 		<dc:title xml:lang="en">Vorgehensweise bei der Erstellung von Lasten-/Pflichtenheften</dc:title>
 		<dcterms:source rdf:resource="https://www.vdi.de/richtlinien/details/vdi-2519-blatt-1-vorgehensweise-bei-der-erstellung-von-lasten-pflichtenheften"/>
-		<bibo:edition>2001-12</bibo:edition>
-	</fabio:Standard>
+		<owl:versionInfo>2001-12</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
 
 </rdf:RDF>

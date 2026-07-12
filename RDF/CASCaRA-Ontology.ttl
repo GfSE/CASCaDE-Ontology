@@ -1,21 +1,20 @@
-# imports: http://www.omg.org/spec/CASCaRA/metamodel/
-
 @prefix : <http://www.omg.org/spec/CASCaRA/ontology/> .
 @prefix cas: <http://www.omg.org/spec/CASCaRA/metamodel/> .
 @prefix cas-arch: <http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/> .
 @prefix cas-ctx: <http://www.omg.org/spec/CASCaRA/ontology/ContextElements/> .
 @prefix cas-ee: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/> .
 @prefix cas-fld: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/> .
+@prefix cas-man: <http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/> .
 @prefix cas-mech: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/> .
-@prefix cas-mnf: <http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/> .
 @prefix cas-op: <http://www.omg.org/spec/CASCaRA/ontology/Operation/> .
 @prefix cas-org: <http://www.omg.org/spec/CASCaRA/ontology/Organization/> .
 @prefix cas-proc: <http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/> .
-@prefix cas-ref: <http://www.omg.org/spec/CASCaRA/ontology/references/> .
+@prefix cas-ref: <http://www.omg.org/spec/CASCaRA/references/> .
 @prefix cas-sw: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/> .
 @prefix cas-sys: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/> .
 @prefix cas-val: <http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/> .
 @prefix cas-ver: <http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/> .
+@prefix cmns-abt: <https://www.omg.org/spec/Commons/AboutCommons/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -30,7 +29,6 @@
 
 <http://www.omg.org/spec/CASCaRA/ontology/>
 	a owl:Ontology ;
-	rdfs:label "Domain Ontology" ;
 	dcterms:abstract "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice." ;
 	dcterms:contributor
 		"Alvarez Rodriguez, José Maria, UC3 Madrid" ,
@@ -97,7 +95,7 @@
 		"von Dungern, Dr. Oskar, enso managers GmbH" ,
 		"von Holst, Dr.-Ing. Christian, John Deere GmbH & Co KG"
 		;
-	dcterms:created "07.07.2026 16:13:27" ;
+	dcterms:created "12.07.2026 17:19:41"^^xsd:dateTime ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 88solutions
@@ -158,74 +156,13 @@ Copyright (c) 2019-2026 ZF Friedrichshafen
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
 https://opensource.org/licenses/MIT""" ;
 	dcterms:title "CASCaRA Domain Ontology" ;
-	owl:imports <http://www.omg.org/spec/CASCaRA/metamodel/> ;
 	owl:versionInfo "1.0" ;
-	.
-
-dc:description
-	a owl:DatatypeProperty ;
-	rdfs:subPropertyOf cas:Property ;
-	rdfs:label
-		"Beschreibung"@de ,
-		"Description"@en
+	owl:imports
+		<http://www.omg.org/spec/CASCaRA/metamodel/> ,
+		<http://www.omg.org/spec/CASCaRA/references/> ,
+		<https://www.omg.org/spec/Commons/AboutCommons/>
 		;
-	dcterms:modified "2026-07-05T23:39:05Z"^^xsd:dateTime ;
-	rdfs:range xsd:string ;
-	skos:definition
-		"Beschreibung des Elements"@de ,
-		"Description of the element"@en
-		;
-	.
-
-dc:description_Shape
-	a sh:PropertyShape ;
-	sh:datatype xsd:string ;
-	sh:path dc:description ;
-	sh:property dc:description_Shape ;
-	.
-
-dc:identifier
-	a owl:DatatypeProperty ;
-	rdfs:subPropertyOf cas:Property ;
-	rdfs:label
-		"Identifier"@en ,
-		"Identifikator"@de
-		;
-	dcterms:modified "2026-07-05T23:39:01Z"^^xsd:dateTime ;
-	rdfs:range xsd:string ;
-	skos:definition
-		"Eindeutiger Identifikator des Elements"@de ,
-		"Unambiguous identifier of the element"@en
-		;
-	.
-
-dc:identifier_Shape
-	a sh:PropertyShape ;
-	sh:datatype xsd:string ;
-	sh:path dc:identifier ;
-	sh:property dc:identifier_Shape ;
-	.
-
-dc:title
-	a owl:DatatypeProperty ;
-	rdfs:subPropertyOf cas:Property ;
-	rdfs:label
-		"Titel"@de ,
-		"Title"@en
-		;
-	dcterms:modified "2026-07-05T23:39:04Z"^^xsd:dateTime ;
-	rdfs:range xsd:string ;
-	skos:definition
-		"Titel des Elements"@de ,
-		"Title of the element"@en
-		;
-	.
-
-dc:title_Shape
-	a sh:PropertyShape ;
-	sh:datatype xsd:string ;
-	sh:path dc:title ;
-	sh:property dc:title_Shape ;
+	rdfs:label "Domain Ontology" ;
 	.
 
 cas-ctx:Change
@@ -245,6 +182,15 @@ cas-ctx:Change
 cas-ctx:Change_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:endDateTime_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:startDateTime_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-ctx:Change ;
 	.
 
@@ -1480,16 +1426,25 @@ cas-ctx:Configuration
 		"Konfiguration"@de
 		;
 	dcterms:modified "2025-11-30T21:02:09Z"^^xsd:dateTime ;
-	rdfs:definedBy cas-ref:ISO-26580 ;
 	skos:definition
 		"Represents a configuration as a context for other elements to be valid. The datamodel allows selected elements to be related to a revision, i. e. mechanical components"@en ,
 		"Repräsentiert eine Konfiguration als Kontext, in dem verknüpfte Elemente gültig sein sollen. Das Datenmodell sieht vor, ausgewählte Elemente mit einer Konfiguration zu verknüpfen, z. B. mechanische Komponenten."@de
 		;
+	rdfs:definedBy cas-ref:ISO-26580 ;
 	.
 
 cas-ctx:Configuration_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:endDateTime_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:startDateTime_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-ctx:Configuration ;
 	.
 
@@ -2683,6 +2638,15 @@ cas-ctx:Reference
 cas-ctx:Reference_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:revision_Shape ,
+		:title_Shape ,
+		:type_Shape ,
+		:url_Shape
+		;
 	sh:targetClass cas-ctx:Reference ;
 	.
 
@@ -2796,16 +2760,23 @@ cas-ctx:Variant
 		"Variante"@de
 		;
 	dcterms:modified "2025-11-30T20:52:38Z"^^xsd:dateTime ;
-	rdfs:definedBy cas-ref:ISO-26580 ;
 	skos:definition
 		"Represents a variant as a context for other elements to be valid. The datamodel allows selected elements to be related to a variant, i. e. mechanical components"@en ,
 		"Repräsentiert eine Variante als Kontext, in dem verknüpfte Elemente gültig sein sollen. Das Datenmodell sieht vor, ausgewählte Elemente mit einer Variante zu verknüpfen, z. B. mechanische Komponenten."@de
 		;
+	rdfs:definedBy cas-ref:ISO-26580 ;
 	.
 
 cas-ctx:Variant_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-ctx:Variant ;
 	.
 
@@ -3982,7 +3953,7 @@ cas-ctx:Variant_specializes_Variant_Target_Shape
 	sh:path cas-ctx:Variant_specializes_Variant_Target ;
 	.
 
-cas-mnf:ControlPlan
+cas-man:ControlPlan
 	a owl:Class ;
 	rdfs:subClassOf cas:Entity ;
 	rdfs:label
@@ -3996,13 +3967,21 @@ cas-mnf:ControlPlan
 		;
 	.
 
-cas-mnf:ControlPlan_Shape
+cas-man:ControlPlan_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
-	sh:targetClass cas-mnf:ControlPlan ;
+	sh:property
+		:description_Shape ,
+		:endDateTime_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:startDateTime_Shape ,
+		:title_Shape
+		;
+	sh:targetClass cas-man:ControlPlan ;
 	.
 
-cas-mnf:ManufacturingEquipmentComponent
+cas-man:ManufacturingEquipmentComponent
 	a owl:Class ;
 	rdfs:subClassOf cas-mech:MechanicalComponent ;
 	rdfs:label
@@ -4016,10 +3995,10 @@ cas-mnf:ManufacturingEquipmentComponent
 		;
 	.
 
-cas-mnf:ManufacturingEquipmentComponent_Shape
+cas-man:ManufacturingEquipmentComponent_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
-	sh:targetClass cas-mnf:ManufacturingEquipmentComponent ;
+	sh:targetClass cas-man:ManufacturingEquipmentComponent ;
 	.
 
 cas-proc:AssemblyOperation
@@ -4107,6 +4086,10 @@ cas-proc:HeatTreatment
 cas-proc:HeatTreatment_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		cas-proc:duration_Shape ,
+		cas-proc:temperature_Shape
+		;
 	sh:targetClass cas-proc:HeatTreatment ;
 	.
 
@@ -4147,6 +4130,13 @@ cas-proc:ManufacturingOperation
 cas-proc:ManufacturingOperation_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-proc:ManufacturingOperation ;
 	.
 
@@ -4649,12 +4639,12 @@ cas-proc:ManufacturingOperation_uses_ManufacturingEquipmentComponent_Source_Shap
 cas-proc:ManufacturingOperation_uses_ManufacturingEquipmentComponent_Target
 	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-proc:ManufacturingOperation_uses_ManufacturingEquipmentComponent ;
-	rdfs:range cas-mnf:ManufacturingEquipmentComponent ;
+	rdfs:range cas-man:ManufacturingEquipmentComponent ;
 	.
 
 cas-proc:ManufacturingOperation_uses_ManufacturingEquipmentComponent_Target_Shape
 	a sh:PropertyShape ;
-	sh:class cas-mnf:ManufacturingEquipmentComponent ;
+	sh:class cas-man:ManufacturingEquipmentComponent ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:path cas-proc:ManufacturingOperation_uses_ManufacturingEquipmentComponent_Target ;
@@ -4679,7 +4669,6 @@ cas-proc:duration_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path cas-proc:duration ;
-	sh:property cas-proc:duration_Shape ;
 	.
 
 cas-proc:temperature
@@ -4701,7 +4690,6 @@ cas-proc:temperature_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path cas-proc:temperature ;
-	sh:property cas-proc:temperature_Shape ;
 	.
 
 cas-op:OperationIncident
@@ -4721,6 +4709,14 @@ cas-op:OperationIncident
 cas-op:OperationIncident_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:dateTime_Shape ,
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-op:OperationIncident ;
 	.
 
@@ -4843,6 +4839,16 @@ cas-op:Product
 cas-op:Product_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:endDateTime_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:revision_Shape ,
+		:startDateTime_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-op:Product ;
 	.
 
@@ -5118,6 +5124,11 @@ cas-org:Actor
 cas-org:Actor_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		cas-org:mail_Shape ,
+		cas-org:phone_Shape ,
+		:identifier_Shape
+		;
 	sh:targetClass cas-org:Actor ;
 	.
 
@@ -5185,6 +5196,14 @@ cas-org:Event
 cas-org:Event_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:endDateTime_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:startDateTime_Shape ,
+		:title_Shape
+		;
 	sh:targetClass cas-org:Event ;
 	.
 
@@ -5348,7 +5367,7 @@ cas-org:OrganizationUnit
 		"Organisationseinheit"@de ,
 		"Organization Unit"@en
 		;
-	dcterms:modified "2025-12-13T17:00:54Z"^^xsd:dateTime ;
+	dcterms:modified "2026-07-08T15:46:42Z"^^xsd:dateTime ;
 	skos:definition
 		"An organization unit is part of a corporate structure. It comprises persons as well as sub-organization units."@en ,
 		"Eine Organisationseinheit ist Teil einer Unternehmensstruktur. Sie umfasst sowohl Personen als auch untergeordnete Organisationseinheiten."@de
@@ -5358,6 +5377,11 @@ cas-org:OrganizationUnit
 cas-org:OrganizationUnit_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:number_Shape ,
+		:title_Shape
+		;
 	sh:targetClass cas-org:OrganizationUnit ;
 	.
 
@@ -5429,6 +5453,13 @@ cas-org:Person
 cas-org:Person_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		cas-org:firstname_Shape ,
+		cas-org:lastname_Shape ,
+		cas-org:title_Shape ,
+		:description_Shape ,
+		:number_Shape
+		;
 	sh:targetClass cas-org:Person ;
 	.
 
@@ -5496,6 +5527,15 @@ cas-org:Place
 cas-org:Place_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		cas-org:city_Shape ,
+		cas-org:country_Shape ,
+		cas-org:street_Shape ,
+		cas-org:zipCode_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape
+		;
 	sh:targetClass cas-org:Place ;
 	.
 
@@ -5587,6 +5627,7 @@ cas-org:Project
 cas-org:Project_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property cas-org:costCenter_Shape ;
 	sh:targetClass cas-org:Project ;
 	.
 
@@ -5609,6 +5650,12 @@ https://intranet.prostep.org/display/PROJ/Glossary"""@de
 cas-org:Role_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape
+		;
 	sh:targetClass cas-org:Role ;
 	.
 
@@ -5855,7 +5902,6 @@ cas-org:city_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path cas-org:city ;
-	sh:property cas-org:city_Shape ;
 	.
 
 cas-org:costCenter
@@ -5877,7 +5923,6 @@ cas-org:costCenter_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path cas-org:costCenter ;
-	sh:property cas-org:costCenter_Shape ;
 	.
 
 cas-org:country
@@ -5899,7 +5944,6 @@ cas-org:country_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path cas-org:country ;
-	sh:property cas-org:country_Shape ;
 	.
 
 cas-org:firstname
@@ -5921,7 +5965,6 @@ cas-org:firstname_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path cas-org:firstname ;
-	sh:property cas-org:firstname_Shape ;
 	.
 
 cas-org:lastname
@@ -5943,7 +5986,6 @@ cas-org:lastname_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path cas-org:lastname ;
-	sh:property cas-org:lastname_Shape ;
 	.
 
 cas-org:mail
@@ -5965,7 +6007,6 @@ cas-org:mail_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path cas-org:mail ;
-	sh:property cas-org:mail_Shape ;
 	.
 
 cas-org:phone
@@ -5987,7 +6028,6 @@ cas-org:phone_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path cas-org:phone ;
-	sh:property cas-org:phone_Shape ;
 	.
 
 cas-org:street
@@ -6009,7 +6049,6 @@ cas-org:street_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path cas-org:street ;
-	sh:property cas-org:street_Shape ;
 	.
 
 cas-org:title
@@ -6031,7 +6070,6 @@ cas-org:title_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path cas-org:title ;
-	sh:property cas-org:title_Shape ;
 	.
 
 cas-org:zipCode
@@ -6053,7 +6091,6 @@ cas-org:zipCode_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path cas-org:zipCode ;
-	sh:property cas-org:zipCode_Shape ;
 	.
 
 cas-arch:EnergyFlow
@@ -6104,20 +6141,28 @@ cas-arch:Function
 		"Funktion"@de
 		;
 	dcterms:modified "2026-06-29T23:32:07Z"^^xsd:dateTime ;
+	skos:definition
+		"A system, product or component function describes the way a system works or performs a specific task."@en ,
+		"Eine System-, Produkt- oder Komponentenfunktion beschreibt die Art und Weise, wie ein System arbeitet oder eine bestimmte Aufgabe ausführt."@de
+		;
 	rdfs:definedBy
 		cas-ref:CSA-ISO-IEC-IEEE-15288 ,
 		cas-ref:ISO-IEC-20246 ,
 		cas-ref:VDI-2519-Blatt-1
-		;
-	skos:definition
-		"A system, product or component function describes the way a system works or performs a specific task."@en ,
-		"Eine System-, Produkt- oder Komponentenfunktion beschreibt die Art und Weise, wie ein System arbeitet oder eine bestimmte Aufgabe ausführt."@de
 		;
 	.
 
 cas-arch:Function_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:revision_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-arch:Function ;
 	.
 
@@ -6597,6 +6642,13 @@ cas-arch:FunctionalInterface
 cas-arch:FunctionalInterface_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-arch:FunctionalInterface ;
 	.
 
@@ -6688,6 +6740,13 @@ cas-arch:ItemFlow
 cas-arch:ItemFlow_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-arch:ItemFlow ;
 	.
 
@@ -6821,11 +6880,6 @@ cas-arch:Requirement
 		"Requirement"@en
 		;
 	dcterms:modified "2026-06-29T23:31:48Z"^^xsd:dateTime ;
-	rdfs:definedBy
-		cas-ref:CSA-ISO-IEC-IEEE-15288 ,
-		cas-ref:ISO-IEC-IEEE-29148 ,
-		cas-ref:VDI-2519-Blatt-1
-		;
 	skos:definition
 		"""Characteristics that identify the accomplishment levels needed to achieve specific objectives for a given set of conditions.
 Requirements can be 'must have', 'can have' and 'nice to have'.
@@ -6840,11 +6894,24 @@ B. Eine Bedingung oder Fähigkeit, die ein System oder eine Systemkomponente erf
 C. Eine dokumentierte Darstellung einer Bedingung oder Fähigkeit wie in Definition (A:) oder (B).
 https://intranet.prostep.org/display/PROJ/Glossary'''@de
 		;
+	rdfs:definedBy
+		cas-ref:CSA-ISO-IEC-IEEE-15288 ,
+		cas-ref:ISO-IEC-IEEE-29148 ,
+		cas-ref:VDI-2519-Blatt-1
+		;
 	.
 
 cas-arch:Requirement_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:revision_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-arch:Requirement ;
 	.
 
@@ -7290,6 +7357,12 @@ cas-arch:SystemBehavior
 cas-arch:SystemBehavior_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape
+		;
 	sh:targetClass cas-arch:SystemBehavior ;
 	.
 
@@ -7423,16 +7496,23 @@ cas-arch:UseCase
 		"Use Case"@en
 		;
 	dcterms:modified "2026-06-29T23:31:32Z"^^xsd:dateTime ;
-	rdfs:definedBy cas-ref:VDI-2519-Blatt-1 ;
 	skos:definition
 		"Legt fest, was der Nutzer eines Produkts tut, um ein Ziel zu erreichen"@de ,
 		"Specifies what the user of a product will do in order to achieve a goal"@en
 		;
+	rdfs:definedBy cas-ref:VDI-2519-Blatt-1 ;
 	.
 
 cas-arch:UseCase_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-arch:UseCase ;
 	.
 
@@ -8161,6 +8241,12 @@ cas-mech:BendingSpecification
 cas-mech:BendingSpecification_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		cas-mech:bendingAngle_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape
+		;
 	sh:targetClass cas-mech:BendingSpecification ;
 	.
 
@@ -8232,6 +8318,13 @@ cas-mech:Body
 cas-mech:Body_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		cas-mech:volume_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-mech:Body ;
 	.
 
@@ -8396,16 +8489,25 @@ cas-mech:Cleanliness
 		"Sauberkeit"@de
 		;
 	dcterms:modified "2026-03-30T09:08:39Z"^^xsd:dateTime ;
-	rdfs:definedBy cas-ref:ISO-16232 ;
 	skos:definition
 		"Technical cleanliness of a set of faces"@en ,
 		"Technische Sauberkeit für eine Gruppe von Teilflächen"@de
 		;
+	rdfs:definedBy cas-ref:ISO-16232 ;
 	.
 
 cas-mech:Cleanliness_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		cas-mech:particleDensity_Shape ,
+		cas-mech:particleSize_Shape ,
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-mech:Cleanliness ;
 	.
 
@@ -8676,20 +8778,25 @@ cas-mech:DimensionalSize
 		"Größenmaß"@de
 		;
 	dcterms:modified "2026-05-16T06:25:56Z"^^xsd:dateTime ;
+	skos:definition
+		"Represents a size"@en ,
+		"Repräsentiert ein Größenmaß"@de
+		;
 	rdfs:definedBy
 		cas-ref:DIN-EN-ISO-14405-1 ,
 		cas-ref:DIN-EN-ISO-14405-2 ,
 		cas-ref:DIN-EN-ISO-14405-3
-		;
-	skos:definition
-		"Represents a size"@en ,
-		"Repräsentiert ein Größenmaß"@de
 		;
 	.
 
 cas-mech:DimensionalSize_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		cas-mech:lowerTolerance_Shape ,
+		cas-mech:nominalValue_Shape ,
+		cas-mech:upperTolerance_Shape
+		;
 	sh:targetClass cas-mech:DimensionalSize ;
 	.
 
@@ -8710,6 +8817,11 @@ cas-mech:Edge
 cas-mech:Edge_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:identifier_Shape ,
+		:number_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-mech:Edge ;
 	.
 
@@ -8772,16 +8884,21 @@ cas-mech:Face
 		"Teilfläche"@de
 		;
 	dcterms:modified "2025-11-30T21:07:25Z"^^xsd:dateTime ;
-	rdfs:definedBy cas-ref:ISO-7499 ;
 	skos:definition
 		"Face on the geometric representation of the component"@en ,
 		"Teilfläche der geometrische Repräsentation der mechanischen Komponente"@de
 		;
+	rdfs:definedBy cas-ref:ISO-7499 ;
 	.
 
 cas-mech:Face_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:identifier_Shape ,
+		:number_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-mech:Face ;
 	.
 
@@ -8844,16 +8961,23 @@ cas-mech:Gearing
 		"Verzahnung"@de
 		;
 	dcterms:modified "2026-04-01T18:27:12Z"^^xsd:dateTime ;
-	rdfs:definedBy cas-ref:DIN-ISO-15786 ;
 	skos:definition
 		"Gearing specification"@en ,
 		"Verzahnungsspezifikation"@de
 		;
+	rdfs:definedBy cas-ref:DIN-ISO-15786 ;
 	.
 
 cas-mech:Gearing_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		cas-mech:pitch_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-mech:Gearing ;
 	.
 
@@ -9164,6 +9288,13 @@ cas-mech:GeometricInterference
 cas-mech:GeometricInterference_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-mech:GeometricInterference ;
 	.
 
@@ -9277,16 +9408,17 @@ cas-mech:GeometricTolerance
 		"Geometrische Toleranz"@de
 		;
 	dcterms:modified "2025-09-28T14:15:44Z"^^xsd:dateTime ;
-	rdfs:definedBy cas-ref:DIN-EN-ISO-1101 ;
 	skos:definition
 		"Represents a geometric tolerance, such as form, position, orientation, or runout"@en ,
 		"Repräsentiert eine geometrische Toleranz wie z. B. Form, Ort, Richtung und Lauf"@de
 		;
+	rdfs:definedBy cas-ref:DIN-EN-ISO-1101 ;
 	.
 
 cas-mech:GeometricTolerance_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property cas-mech:toleranceValue_Shape ;
 	sh:targetClass cas-mech:GeometricTolerance ;
 	.
 
@@ -9349,16 +9481,24 @@ cas-mech:HeatTreatedArea
 		"Wärmebehandelter Bereich"@de
 		;
 	dcterms:modified "2025-12-01T01:01:22Z"^^xsd:dateTime ;
-	rdfs:definedBy cas-ref:DIN-EN-ISO-4885 ;
 	skos:definition
 		"Heat treatment of a mechanical component"@en ,
 		"Wärmebehandlung einer mechanischen Komponente"@de
 		;
+	rdfs:definedBy cas-ref:DIN-EN-ISO-4885 ;
 	.
 
 cas-mech:HeatTreatedArea_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		cas-mech:hardness_Shape ,
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-mech:HeatTreatedArea ;
 	.
 
@@ -9762,16 +9902,24 @@ cas-mech:Hole
 		"Hole"@en
 		;
 	dcterms:modified "2025-11-26T02:39:29Z"^^xsd:dateTime ;
-	rdfs:definedBy cas-ref:DIN-ISO-15786 ;
 	skos:definition
 		"A cylindrical or conical hole in a part, typically used as a mechanical interface to other mechanical components."@en ,
 		"Ein zylindrisches oder konisches Loch in einem Teil. Repräsentiert typischerweise eine mechanische Schnittstelle zu anderen mechanischen Komponenten."@de
 		;
+	rdfs:definedBy cas-ref:DIN-ISO-15786 ;
 	.
 
 cas-mech:Hole_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:diameter_Shape ,
+		:identifier_Shape ,
+		:length_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-mech:Hole ;
 	.
 
@@ -9996,6 +10144,7 @@ cas-mech:JoiningElement
 cas-mech:JoiningElement_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property cas-mech:side_Shape ;
 	sh:targetClass cas-mech:JoiningElement ;
 	.
 
@@ -10973,6 +11122,11 @@ cas-mech:KinematicMechanism
 cas-mech:KinematicMechanism_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:title_Shape
+		;
 	sh:targetClass cas-mech:KinematicMechanism ;
 	.
 
@@ -11044,6 +11198,12 @@ cas-mech:KinematicMotion
 cas-mech:KinematicMotion_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape
+		;
 	sh:targetClass cas-mech:KinematicMotion ;
 	.
 
@@ -11166,6 +11326,13 @@ cas-mech:KinematicSensor
 cas-mech:KinematicSensor_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-mech:KinematicSensor ;
 	.
 
@@ -11335,6 +11502,13 @@ cas-mech:MarkingLabeling
 cas-mech:MarkingLabeling_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-mech:MarkingLabeling ;
 	.
 
@@ -11636,19 +11810,32 @@ cas-mech:Material
 		"Werkstoff"@de
 		;
 	dcterms:modified "2026-04-12T08:51:55Z"^^xsd:dateTime ;
-	rdfs:definedBy
-		cas-ref:VDA-231-106 ,
-		cas-ref:VDA-231-200
-		;
 	skos:definition
 		"Material assigned to the mechanical component"@en ,
 		"Werkstoff, das dieser mechanischen Komponente zugeordnet ist"@de
+		;
+	rdfs:definedBy
+		cas-ref:VDA-231-106 ,
+		cas-ref:VDA-231-200
 		;
 	.
 
 cas-mech:Material_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		cas-mech:density_Shape ,
+		cas-mech:elasticLimit_Shape ,
+		cas-mech:elongationAtBreak_Shape ,
+		cas-mech:flammability_Shape ,
+		cas-mech:tensileStrength_Shape ,
+		cas-mech:thermalExpansion_Shape ,
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-mech:Material ;
 	.
 
@@ -11822,6 +12009,7 @@ cas-mech:MechanicalComponent
 cas-mech:MechanicalComponent_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property cas-mech:mass_Shape ;
 	sh:targetClass cas-mech:MechanicalComponent ;
 	.
 
@@ -11944,6 +12132,15 @@ cas-mech:ModelAnnotation
 cas-mech:ModelAnnotation_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		cas-mech:classification_Shape ,
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:parent_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-mech:ModelAnnotation ;
 	.
 
@@ -12356,6 +12553,13 @@ cas-mech:ModelView
 cas-mech:ModelView_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-mech:ModelView ;
 	.
 
@@ -12427,6 +12631,14 @@ cas-mech:PaintedCoatedArea
 cas-mech:PaintedCoatedArea_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		cas-mech:thickness_Shape ,
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-mech:PaintedCoatedArea ;
 	.
 
@@ -12839,6 +13051,12 @@ cas-mech:Substance
 cas-mech:Substance_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-mech:Substance ;
 	.
 
@@ -12850,14 +13068,14 @@ cas-mech:SurfaceTexture
 		"Surface Texture"@en
 		;
 	dcterms:modified "2025-09-28T14:15:57Z"^^xsd:dateTime ;
+	skos:definition
+		"Represents surface texture such as roughness and waviness"@en ,
+		"Repräsentiert die Oberflächenbeschaffenheit wie z. B. Rauheit und Welligkeit"@de
+		;
 	rdfs:definedBy
 		cas-ref:DIN-EN-ISO-21920 ,
 		cas-ref:DIN-EN-ISO-21920-1 ,
 		cas-ref:DIN-EN-ISO-21920-3
-		;
-	skos:definition
-		"Represents surface texture such as roughness and waviness"@en ,
-		"Repräsentiert die Oberflächenbeschaffenheit wie z. B. Rauheit und Welligkeit"@de
 		;
 	.
 
@@ -12875,16 +13093,24 @@ cas-mech:Thread
 		"Thread"@en
 		;
 	dcterms:modified "2026-06-25T07:04:48Z"^^xsd:dateTime ;
-	rdfs:definedBy cas-ref:DIN-ISO-15786 ;
 	skos:definition
 		"A threaded hole or shaft on a part, typically used as a mechanical interface to other mechanical components."@en ,
 		"Eine Innen- oder Außengewinde an einem Bauteil. Repräsentiert typischerweise eine mechanische Schnittstelle zu anderen mechanischen Komponenten."@de
 		;
+	rdfs:definedBy cas-ref:DIN-ISO-15786 ;
 	.
 
 cas-mech:Thread_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:diameter_Shape ,
+		:identifier_Shape ,
+		:length_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-mech:Thread ;
 	.
 
@@ -13197,7 +13423,6 @@ cas-mech:bendingAngle_Shape
 	a sh:PropertyShape ;
 	sh:datatype qudt:QuantityValue ;
 	sh:path cas-mech:bendingAngle ;
-	sh:property cas-mech:bendingAngle_Shape ;
 	.
 
 cas-mech:classification
@@ -13219,7 +13444,6 @@ cas-mech:classification_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path cas-mech:classification ;
-	sh:property cas-mech:classification_Shape ;
 	.
 
 cas-mech:density
@@ -13241,7 +13465,6 @@ cas-mech:density_Shape
 	a sh:PropertyShape ;
 	sh:datatype qudt:QuantityValue ;
 	sh:path cas-mech:density ;
-	sh:property cas-mech:density_Shape ;
 	.
 
 cas-mech:elasticLimit
@@ -13263,7 +13486,6 @@ cas-mech:elasticLimit_Shape
 	a sh:PropertyShape ;
 	sh:datatype qudt:QuantityValue ;
 	sh:path cas-mech:elasticLimit ;
-	sh:property cas-mech:elasticLimit_Shape ;
 	.
 
 cas-mech:elongationAtBreak
@@ -13285,7 +13507,6 @@ cas-mech:elongationAtBreak_Shape
 	a sh:PropertyShape ;
 	sh:datatype qudt:QuantityValue ;
 	sh:path cas-mech:elongationAtBreak ;
-	sh:property cas-mech:elongationAtBreak_Shape ;
 	.
 
 cas-mech:flammability
@@ -13307,7 +13528,6 @@ cas-mech:flammability_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path cas-mech:flammability ;
-	sh:property cas-mech:flammability_Shape ;
 	.
 
 cas-mech:hardness
@@ -13329,7 +13549,6 @@ cas-mech:hardness_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path cas-mech:hardness ;
-	sh:property cas-mech:hardness_Shape ;
 	.
 
 cas-mech:lowerTolerance
@@ -13351,7 +13570,6 @@ cas-mech:lowerTolerance_Shape
 	a sh:PropertyShape ;
 	sh:datatype qudt:QuantityValue ;
 	sh:path cas-mech:lowerTolerance ;
-	sh:property cas-mech:lowerTolerance_Shape ;
 	.
 
 cas-mech:mass
@@ -13373,7 +13591,6 @@ cas-mech:mass_Shape
 	a sh:PropertyShape ;
 	sh:datatype qudt:QuantityValue ;
 	sh:path cas-mech:mass ;
-	sh:property cas-mech:mass_Shape ;
 	.
 
 cas-mech:nominalValue
@@ -13395,7 +13612,6 @@ cas-mech:nominalValue_Shape
 	a sh:PropertyShape ;
 	sh:datatype qudt:QuantityValue ;
 	sh:path cas-mech:nominalValue ;
-	sh:property cas-mech:nominalValue_Shape ;
 	.
 
 cas-mech:particleDensity
@@ -13417,7 +13633,6 @@ cas-mech:particleDensity_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:integer ;
 	sh:path cas-mech:particleDensity ;
-	sh:property cas-mech:particleDensity_Shape ;
 	.
 
 cas-mech:particleSize
@@ -13439,7 +13654,6 @@ cas-mech:particleSize_Shape
 	a sh:PropertyShape ;
 	sh:datatype qudt:QuantityValue ;
 	sh:path cas-mech:particleSize ;
-	sh:property cas-mech:particleSize_Shape ;
 	.
 
 cas-mech:pitch
@@ -13461,7 +13675,6 @@ cas-mech:pitch_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:integer ;
 	sh:path cas-mech:pitch ;
-	sh:property cas-mech:pitch_Shape ;
 	.
 
 cas-mech:side
@@ -13483,7 +13696,6 @@ cas-mech:side_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path cas-mech:side ;
-	sh:property cas-mech:side_Shape ;
 	.
 
 cas-mech:tensileStrength
@@ -13505,7 +13717,6 @@ cas-mech:tensileStrength_Shape
 	a sh:PropertyShape ;
 	sh:datatype qudt:QuantityValue ;
 	sh:path cas-mech:tensileStrength ;
-	sh:property cas-mech:tensileStrength_Shape ;
 	.
 
 cas-mech:thermalExpansion
@@ -13527,7 +13738,6 @@ cas-mech:thermalExpansion_Shape
 	a sh:PropertyShape ;
 	sh:datatype qudt:QuantityValue ;
 	sh:path cas-mech:thermalExpansion ;
-	sh:property cas-mech:thermalExpansion_Shape ;
 	.
 
 cas-mech:thickness
@@ -13549,7 +13759,6 @@ cas-mech:thickness_Shape
 	a sh:PropertyShape ;
 	sh:datatype qudt:QuantityValue ;
 	sh:path cas-mech:thickness ;
-	sh:property cas-mech:thickness_Shape ;
 	.
 
 cas-mech:toleranceValue
@@ -13571,7 +13780,6 @@ cas-mech:toleranceValue_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path cas-mech:toleranceValue ;
-	sh:property cas-mech:toleranceValue_Shape ;
 	.
 
 cas-mech:upperTolerance
@@ -13593,7 +13801,6 @@ cas-mech:upperTolerance_Shape
 	a sh:PropertyShape ;
 	sh:datatype qudt:QuantityValue ;
 	sh:path cas-mech:upperTolerance ;
-	sh:property cas-mech:upperTolerance_Shape ;
 	.
 
 cas-mech:volume
@@ -13615,7 +13822,6 @@ cas-mech:volume_Shape
 	a sh:PropertyShape ;
 	sh:datatype qudt:QuantityValue ;
 	sh:path cas-mech:volume ;
-	sh:property cas-mech:volume_Shape ;
 	.
 
 cas-sw:SoftwareClass
@@ -13626,13 +13832,13 @@ cas-sw:SoftwareClass
 		"Software-Klasse"@de
 		;
 	dcterms:modified "2025-12-01T01:45:52Z"^^xsd:dateTime ;
-	rdfs:definedBy
-		cas-ref:ISO-IEC-19513 ,
-		cas-ref:ISO-IEC-20246
-		;
 	skos:definition
 		"A class in source code that represents a logical collection data and functions"@en ,
 		"Eine Klasse im Quellcode, die eine logische Sammlung von Daten und Funktionen darstellt"@de
+		;
+	rdfs:definedBy
+		cas-ref:ISO-IEC-19513 ,
+		cas-ref:ISO-IEC-20246
 		;
 	.
 
@@ -13650,14 +13856,14 @@ cas-sw:SoftwareComponent
 		"Softwarekomponente"@de
 		;
 	dcterms:modified "2025-12-01T01:55:16Z"^^xsd:dateTime ;
+	skos:definition
+		"A compiled component of software to be used in a product, i. e. executable or library"@en ,
+		"Eine kompilierte Softwarekomponente, die in einem Produkt verwendet werden soll, d. h. eine ausführbare Datei oder Bibliothek"@de
+		;
 	rdfs:definedBy
 		cas-ref:DO-297 ,
 		cas-ref:ISO-IEC-20246 ,
 		cas-ref:ISO-IEC-IEEE-29119-1
-		;
-	skos:definition
-		"A compiled component of software to be used in a product, i. e. executable or library"@en ,
-		"Eine kompilierte Softwarekomponente, die in einem Produkt verwendet werden soll, d. h. eine ausführbare Datei oder Bibliothek"@de
 		;
 	.
 
@@ -13675,14 +13881,14 @@ cas-sw:SoftwareInterface
 		"Software-Schnittstelle"@de
 		;
 	dcterms:modified "2025-12-01T01:55:13Z"^^xsd:dateTime ;
+	skos:definition
+		"An interface in source code that allows a class to interact with other components of a software"@en ,
+		"Eine Schnittstelle im Quellcode, die es einer Klasse ermöglicht, mit anderen Komponenten einer Software zu interagieren"@de
+		;
 	rdfs:definedBy
 		cas-ref:DO-297 ,
 		cas-ref:ISO-IEC-20246 ,
 		cas-ref:ISO-IEC-IEEE-29119-1
-		;
-	skos:definition
-		"An interface in source code that allows a class to interact with other components of a software"@en ,
-		"Eine Schnittstelle im Quellcode, die es einer Klasse ermöglicht, mit anderen Komponenten einer Software zu interagieren"@de
 		;
 	.
 
@@ -13751,16 +13957,24 @@ cas-sys:ComponentConnection
 		"Komponenten-Verbindung"@de
 		;
 	dcterms:modified "2026-05-31T07:58:37Z"^^xsd:dateTime ;
-	rdfs:definedBy cas-ref:ISO-IEC-20246 ;
 	skos:definition
 		"Represents a connection between two components through interfaces"@en ,
 		"Repräsentiert eine Verbindung zwischen zwei Komponenten über Schnittstellen"@de
 		;
+	rdfs:definedBy cas-ref:ISO-IEC-20246 ;
 	.
 
 cas-sys:ComponentConnection_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:dateTime_Shape ,
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-sys:ComponentConnection ;
 	.
 
@@ -14074,16 +14288,25 @@ cas-sys:ComponentInterface
 		"Komponenten-Schnittstelle"@de
 		;
 	dcterms:modified "2026-06-09T00:15:41Z"^^xsd:dateTime ;
-	rdfs:definedBy cas-ref:ISO-IEC-20246 ;
 	skos:definition
 		"Represents a generic interface of a system component"@en ,
 		"Repräsentiert eine generische Schnittstelle einer Systemkomponente"@de
 		;
+	rdfs:definedBy cas-ref:ISO-IEC-20246 ;
 	.
 
 cas-sys:ComponentInterface_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:dateTime_Shape ,
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:parent_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-sys:ComponentInterface ;
 	.
 
@@ -14397,16 +14620,24 @@ cas-sys:ComponentState
 		"Komponenten-Zustand"@de
 		;
 	dcterms:modified "2026-05-31T07:58:53Z"^^xsd:dateTime ;
-	rdfs:definedBy cas-ref:ISO-IEC-20246 ;
 	skos:definition
 		"Represents the condition of a system component. Can be it a value, a condition, an information storage or a physical shape."@en ,
 		"Stellt den Zustand einer Systemkomponente dar. Es kann sich um einen Wert, eine Bedingung, eine Information oder eine physische Gestalt handeln."@de
 		;
+	rdfs:definedBy cas-ref:ISO-IEC-20246 ;
 	.
 
 cas-sys:ComponentState_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:dateTime_Shape ,
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-sys:ComponentState ;
 	.
 
@@ -14622,6 +14853,10 @@ cas-sys:Deviation
 		"Deviation"@en
 		;
 	dcterms:modified "2026-05-31T07:59:01Z"^^xsd:dateTime ;
+	skos:definition
+		"Represents a system, product or component deviation. A deviation affects a function. Deviations are typically managed in an FMEA."@en ,
+		"Repräsentiert eine Abweichung eines Systems, Produkts oder einer Komponente. Eine Abweichung beeinträchtigt eine Funktion. Abweichungen werden typischerweise in einer FMEA verwaltet."@de
+		;
 	rdfs:definedBy
 		cas-ref:ARP4754B ,
 		cas-ref:ARP4761A ,
@@ -14630,15 +14865,22 @@ cas-sys:Deviation
 		cas-ref:ISO-26262-1 ,
 		cas-ref:ISO-IEC-20246
 		;
-	skos:definition
-		"Represents a system, product or component deviation. A deviation affects a function. Deviations are typically managed in an FMEA."@en ,
-		"Repräsentiert eine Abweichung eines Systems, Produkts oder einer Komponente. Eine Abweichung beeinträchtigt eine Funktion. Abweichungen werden typischerweise in einer FMEA verwaltet."@de
-		;
 	.
 
 cas-sys:Deviation_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		cas-sys:detection_Shape ,
+		cas-sys:occurrence_Shape ,
+		cas-sys:severity_Shape ,
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:revision_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-sys:Deviation ;
 	.
 
@@ -15622,20 +15864,29 @@ cas-sys:SystemComponent
 		"Systemkomponente"@de
 		;
 	dcterms:modified "2026-05-31T07:58:06Z"^^xsd:dateTime ;
+	skos:definition
+		"Represents a generic component of a system"@en ,
+		"Repräsentiert eine generische Systemkomponente"@de
+		;
 	rdfs:definedBy
 		cas-ref:CSA-ISO-IEC-IEEE-15288 ,
 		cas-ref:ISO-IEC-20246 ,
 		cas-ref:ISO-IEC-IEEE-42010
-		;
-	skos:definition
-		"Represents a generic component of a system"@en ,
-		"Repräsentiert eine generische Systemkomponente"@de
 		;
 	.
 
 cas-sys:SystemComponent_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:dateTime_Shape ,
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:revision_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-sys:SystemComponent ;
 	.
 
@@ -16011,7 +16262,6 @@ cas-sys:detection_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:double ;
 	sh:path cas-sys:detection ;
-	sh:property cas-sys:detection_Shape ;
 	.
 
 cas-sys:occurrence
@@ -16033,7 +16283,6 @@ cas-sys:occurrence_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:double ;
 	sh:path cas-sys:occurrence ;
-	sh:property cas-sys:occurrence_Shape ;
 	.
 
 cas-sys:severity
@@ -16055,7 +16304,6 @@ cas-sys:severity_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:double ;
 	sh:path cas-sys:severity ;
-	sh:property cas-sys:severity_Shape ;
 	.
 
 cas-val:Displacement
@@ -16075,6 +16323,10 @@ cas-val:Displacement
 cas-val:Displacement_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:identifier_Shape ,
+		:number_Shape
+		;
 	sh:targetClass cas-val:Displacement ;
 	.
 
@@ -16095,6 +16347,13 @@ cas-val:ValidationBoundaryCondition
 cas-val:ValidationBoundaryCondition_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-val:ValidationBoundaryCondition ;
 	.
 
@@ -16106,16 +16365,23 @@ cas-val:ValidationCriterium
 		"Validierungskriterium"@de
 		;
 	dcterms:modified "2025-12-01T01:51:03Z"^^xsd:dateTime ;
-	rdfs:definedBy cas-ref:ISO-IEC-IEEE-29119-1 ;
 	skos:definition
 		"A specific validation criterium as part of a validation plan."@en ,
 		"Ein spezifisches Validierungskriterium als Teil eines Validierungsplans."@de
 		;
+	rdfs:definedBy cas-ref:ISO-IEC-IEEE-29119-1 ;
 	.
 
 cas-val:ValidationCriterium_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-val:ValidationCriterium ;
 	.
 
@@ -16239,6 +16505,13 @@ https://intranet.prostep.org/display/PROJ/Glossary"""@en ,
 cas-val:ValidationPlan_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-val:ValidationPlan ;
 	.
 
@@ -16259,6 +16532,13 @@ cas-val:ValidationResult
 cas-val:ValidationResult_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-val:ValidationResult ;
 	.
 
@@ -16279,6 +16559,14 @@ cas-val:ValidationRun
 cas-val:ValidationRun_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:dateTime_Shape ,
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-val:ValidationRun ;
 	.
 
@@ -16391,21 +16679,28 @@ cas-ver:VerificationCharacteristic
 		"Verification Characteristic"@en ,
 		"Verifikationsmerkmal"@de
 		;
-	dcterms:modified "2026-01-01T10:33:39Z"^^xsd:dateTime ;
+	dcterms:modified "2026-07-08T17:20:07Z"^^xsd:dateTime ;
+	skos:definition
+		"Represents a characteristic that must be inspected to ensure product function."@en ,
+		"Stellt ein Merkmal dar, das geprüft werden muss, um die Funktion des Produkts zu gewährleisten."@de
+		;
 	rdfs:definedBy
 		cas-ref:DIN-23601 ,
 		cas-ref:ISO-7533 ,
 		cas-ref:VDA-231-300
-		;
-	skos:definition
-		"Represents a characteristic that must be inspected to ensure product function."@en ,
-		"Stellt ein Merkmal dar, das geprüft werden muss, um die Funktion des Produkts zu gewährleisten."@de
 		;
 	.
 
 cas-ver:VerificationCharacteristic_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-ver:VerificationCharacteristic ;
 	.
 
@@ -16668,19 +16963,27 @@ cas-ver:VerificationPlan
 		"Verifikationsplan"@de
 		;
 	dcterms:modified "2026-05-16T06:34:40Z"^^xsd:dateTime ;
-	rdfs:definedBy
-		cas-ref:DIN-23601 ,
-		cas-ref:ISO-22514-7
-		;
 	skos:definition
 		"Legt fest, welche Merkmale mit welchen Geräten zu welchem Zweck geprüft werden müssen."@de ,
 		"Specifies what characteristics must be inspected using which equipment for which purpose."@en
+		;
+	rdfs:definedBy
+		cas-ref:DIN-23601 ,
+		cas-ref:ISO-22514-7
 		;
 	.
 
 cas-ver:VerificationPlan_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:revision_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-ver:VerificationPlan ;
 	.
 
@@ -16775,12 +17078,12 @@ cas-ver:VerificationPlan_usedIn_ControlPlan_Source_Shape
 cas-ver:VerificationPlan_usedIn_ControlPlan_Target
 	rdfs:subPropertyOf cas:linksTarget ;
 	rdfs:domain cas-ver:VerificationPlan_usedIn_ControlPlan ;
-	rdfs:range cas-mnf:ControlPlan ;
+	rdfs:range cas-man:ControlPlan ;
 	.
 
 cas-ver:VerificationPlan_usedIn_ControlPlan_Target_Shape
 	a sh:PropertyShape ;
-	sh:class cas-mnf:ControlPlan ;
+	sh:class cas-man:ControlPlan ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:path cas-ver:VerificationPlan_usedIn_ControlPlan_Target ;
@@ -16844,12 +17147,12 @@ cas-ver:VerificationResource
 		"Verification Resource"@en ,
 		"Verifikationsmittel"@de
 		;
-	dcterms:modified "2025-12-05T15:29:03Z"^^xsd:dateTime ;
-	rdfs:definedBy cas-ref:DIN-23601 ;
+	dcterms:modified "2026-07-08T17:19:30Z"^^xsd:dateTime ;
 	skos:definition
 		"Represents a mechanical component used as an inspection resource"@en ,
 		"Repräsentiert eine mechanische Komponente, die als Prüfmittel verwendet wird"@de
 		;
+	rdfs:definedBy cas-ref:DIN-23601 ;
 	.
 
 cas-ver:VerificationResource_Shape
@@ -16917,20 +17220,28 @@ cas-ver:VerificationResult
 		"Verifikationsergebnis"@de
 		;
 	dcterms:modified "2026-05-16T06:34:03Z"^^xsd:dateTime ;
+	skos:definition
+		"Represents an inspection result for an inspection criterium"@en ,
+		"Repräsentiert ein Prüfergebnis für ein Prüfkriterium"@de
+		;
 	rdfs:definedBy
 		cas-ref:ISO-20170 ,
 		cas-ref:ISO-22514-2 ,
 		cas-ref:ISO-22514-6
-		;
-	skos:definition
-		"Represents an inspection result for an inspection criterium"@en ,
-		"Repräsentiert ein Prüfergebnis für ein Prüfkriterium"@de
 		;
 	.
 
 cas-ver:VerificationResult_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		cas-ver:deviation_Shape ,
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-ver:VerificationResult ;
 	.
 
@@ -17002,6 +17313,14 @@ cas-ver:VerificationRun
 cas-ver:VerificationRun_Shape
 	a sh:NodeShape ;
 	sh:close "true"^^xsd:boolean ;
+	sh:property
+		:dateTime_Shape ,
+		:description_Shape ,
+		:identifier_Shape ,
+		:number_Shape ,
+		:title_Shape ,
+		:type_Shape
+		;
 	sh:targetClass cas-ver:VerificationRun ;
 	.
 
@@ -17126,7 +17445,6 @@ cas-ver:deviation_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path cas-ver:deviation ;
-	sh:property cas-ver:deviation_Shape ;
 	.
 
 :dateTime
@@ -17148,7 +17466,27 @@ cas-ver:deviation_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:dateTime ;
 	sh:path :dateTime ;
-	sh:property :dateTime_Shape ;
+	.
+
+:description
+	a owl:DatatypeProperty ;
+	rdfs:subPropertyOf cas:Property ;
+	rdfs:label
+		"Beschreibung"@de ,
+		"Description"@en
+		;
+	dcterms:modified "2026-07-05T23:39:05Z"^^xsd:dateTime ;
+	rdfs:range xsd:string ;
+	skos:definition
+		"Beschreibung des Elements"@de ,
+		"Description of the element"@en
+		;
+	.
+
+:description_Shape
+	a sh:PropertyShape ;
+	sh:datatype xsd:string ;
+	sh:path :description ;
 	.
 
 :diameter
@@ -17170,7 +17508,6 @@ cas-ver:deviation_Shape
 	a sh:PropertyShape ;
 	sh:datatype qudt:QuantityValue ;
 	sh:path :diameter ;
-	sh:property :diameter_Shape ;
 	.
 
 :endDateTime
@@ -17192,7 +17529,27 @@ cas-ver:deviation_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:dateTime ;
 	sh:path :endDateTime ;
-	sh:property :endDateTime_Shape ;
+	.
+
+:identifier
+	a owl:DatatypeProperty ;
+	rdfs:subPropertyOf cas:Property ;
+	rdfs:label
+		"Identifier"@en ,
+		"Identifikator"@de
+		;
+	dcterms:modified "2026-07-05T23:39:01Z"^^xsd:dateTime ;
+	rdfs:range xsd:string ;
+	skos:definition
+		"Eindeutiger Identifikator des Elements"@de ,
+		"Unambiguous identifier of the element"@en
+		;
+	.
+
+:identifier_Shape
+	a sh:PropertyShape ;
+	sh:datatype xsd:string ;
+	sh:path :identifier ;
 	.
 
 :length
@@ -17214,7 +17571,6 @@ cas-ver:deviation_Shape
 	a sh:PropertyShape ;
 	sh:datatype qudt:QuantityValue ;
 	sh:path :length ;
-	sh:property :length_Shape ;
 	.
 
 :number
@@ -17236,7 +17592,6 @@ cas-ver:deviation_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path :number ;
-	sh:property :number_Shape ;
 	.
 
 :parent
@@ -17254,7 +17609,6 @@ cas-ver:deviation_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path :parent ;
-	sh:property :parent_Shape ;
 	.
 
 :revision
@@ -17276,7 +17630,6 @@ cas-ver:deviation_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path :revision ;
-	sh:property :revision_Shape ;
 	.
 
 :startDateTime
@@ -17298,7 +17651,27 @@ cas-ver:deviation_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:dateTime ;
 	sh:path :startDateTime ;
-	sh:property :startDateTime_Shape ;
+	.
+
+:title
+	a owl:DatatypeProperty ;
+	rdfs:subPropertyOf cas:Property ;
+	rdfs:label
+		"Titel"@de ,
+		"Title"@en
+		;
+	dcterms:modified "2026-07-05T23:39:04Z"^^xsd:dateTime ;
+	rdfs:range xsd:string ;
+	skos:definition
+		"Titel des Elements"@de ,
+		"Title of the element"@en
+		;
+	.
+
+:title_Shape
+	a sh:PropertyShape ;
+	sh:datatype xsd:string ;
+	sh:path :title ;
 	.
 
 :type
@@ -17320,7 +17693,6 @@ cas-ver:deviation_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path :type ;
-	sh:property :type_Shape ;
 	.
 
 :url
@@ -17342,6 +17714,5 @@ cas-ver:deviation_Shape
 	a sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:path :url ;
-	sh:property :url_Shape ;
 	.
 

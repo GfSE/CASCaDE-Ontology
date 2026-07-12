@@ -2,9 +2,6 @@
 	{
 		"@id" : "http://www.omg.org/spec/CASCaRA/ontology/",
 		"@type" : "owl:Ontology",
-		"rdfs:label" : {
-			"@value" : "Domain Ontology"
-		},
 		"dcterms:abstract" : {
 			"@value" : "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice."
 		},
@@ -201,7 +198,8 @@
 			
 		],
 		"dcterms:created" : {
-			"@value" : "07.07.2026 16:13:27"
+			"@type" : "xsd:dateTime",
+			"@value" : "12.07.2026 17:19:41"
 		},
 		"dcterms:license" : {
 			"@value" : "CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA\u000aCopyright (c) 2024-2026 :em engineering methods AG\u000aCopyright (c) 2024-2026 88solutions\u000aCopyright (c) 2024-2026 Aerospace Corp.\u000aCopyright (c) 2024-2026 Airbus Operations GmbH\u000aCopyright (c) 2024-2026 ATLAS Elektronik\u000aCopyright (c) 2024-2026 The Boeing Company\u000aCopyright (c) 2024-2026 enso managers GmbH\u000aCopyright (c) 2024-2026 GfSE Gesellschaft für Systems Engineering\u000aCopyright (c) 2024-2026 INCOSE\u000aCopyright (c) 2024-2026 INOMIC Solutions GmbH\u000aCopyright (c) 2024-2026 Intuitive AI\u000aCopyright (c) 2024-2026 Manfred Harms Consulting\u000aCopyright (c) 2024-2026 ModelAlchemy Consulting\u000aCopyright (c) 2024-2026 Modern Technology Solutions, Inc.\u000aCopyright (c) 2024-2026 oose eG\u000aCopyright (c) 2024-2025 PDES, Inc.\u000aCopyright (c) 2024-2026 PROSTEP AG\u000aCopyright (c) 2024-2026 prostep ivip Association\u000aCopyright (c) 2024-2026 PSG Prime Solutions Group\u000aCopyright (c) 2024-2026 Division of Design of Cyber-Physical Systems\u000aCopyright (c) 2024-2026 Collins Aerospace\u000aCopyright (c) 2024-2026 Schaeffler Technologies AG & Co. KG\u000aCopyright (c) 2024-2026 Thematix Partners\u000aCopyright (c) 2024-2026 TU Hamburg-Harburg\u000aCopyright (c) 2024-2026 Product and Systems Engineering Group\u000aCopyright (c) 2024-2026 UC3 Madrid\u000aCopyright (c) 2024-2026 VDA Verband der deutschen Automobilindustrie\u000a\u000aDigital Data Package Working Group: Defines use-cases and domain ontology as a foundation for CASCaRA\u000aCopyright (c) 2019-2026 :em engineering methods AG\u000aCopyright (c) 2019-2020 Airbus Operations GmbH\u000aCopyright (c) 2019-2026 Anark Corporation Inc.\u000aCopyright (c) 2026-2026 Aumovio SE\u000aCopyright (c) 2019-2026 AVL List\u000aCopyright (c) 2022-2026 The Boeing Company\u000aCopyright (c) 2022-2026 Robert Bosch GmbH\u000aCopyright (c) 2019-2022 CONWEAVER GmbH\u000aCopyright (c) 2019-2026 ELYSIUM Inc.\u000aCopyright (c) 2019-2021 Fraunhofer IESE\u000aCopyright (c) 2026-2026 Infineon Technologies AG\u000aCopyright (c) 2025-2026 INOMIC Solutions GmbH\u000aCopyright (c) 2025-2026 JAXA Japan Aerospace Exploration Agency\u000aCopyright (c) 2021-2024 John Deere GmbH & Co KG\u000aCopyright (c) 2019-2021 Kromberg & Schubert Automotive GmbH & Co. KG\u000aCopyright (c) 2019-2026 Mercedes-Benz AG\u000aCopyright (c) 2024-2026 MTU Aero Engines AG\u000aCopyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche AG\u000aCopyright (c) 2019-2026 PROSTEP AG\u000aCopyright (c) 2025-2026 Collins Aerospace\u000aCopyright (c) 2019-2024 Schaeffler Technologies AG & Co. KG\u000aCopyright (c) 2025-2026 Sodius Willert\u000aCopyright (c) 2019-2020 SSC Services GmbH\u000aCopyright (c) 2026-2026 T-Systems International GmbH\u000aCopyright (c) 2022-2026 Volkswagen AG\u000aCopyright (c) 2019-2026 ZF Friedrichshafen\u000a\u000aPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.\u000ahttps://opensource.org/licenses/MIT"
@@ -209,9 +207,17 @@
 		"dcterms:title" : {
 			"@value" : "CASCaRA Domain Ontology"
 		},
-		"owl:imports" : { "@id" : "http://www.omg.org/spec/CASCaRA/metamodel/" },
 		"owl:versionInfo" : {
 			"@value" : "1.0"
+		},
+		"owl:imports" : [
+			{ "@id" : "http://www.omg.org/spec/CASCaRA/metamodel/" },
+			{ "@id" : "http://www.omg.org/spec/CASCaRA/references/" },
+			{ "@id" : "https://www.omg.org/spec/Commons/AboutCommons/" }
+			
+		],
+		"rdfs:label" : {
+			"@value" : "Domain Ontology"
 		},
 		"@context" : {
 			
@@ -219,171 +225,6 @@
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
-		}
-	},
-	{
-		"@id" : "dc:description",
-		"@type" : "owl:DatatypeProperty",
-		"rdfs:subPropertyOf" : { "@id" : "cas:Property" },
-		"rdfs:label" : [
-			{
-				"@language" : "de",
-				"@value" : "Beschreibung"
-			},
-			{
-				"@language" : "en",
-				"@value" : "Description"
-			}
-			
-		],
-		"dcterms:modified" : {
-			"@type" : "xsd:dateTime",
-			"@value" : "2026-07-05T23:39:05Z"
-		},
-		"rdfs:range" : { "@id" : "xsd:string" },
-		"skos:definition" : [
-			{
-				"@language" : "de",
-				"@value" : "Beschreibung des Elements"
-			},
-			{
-				"@language" : "en",
-				"@value" : "Description of the element"
-			}
-			
-		],
-		"@context" : {
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
-			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"owl" : "http://www.w3.org/2002/07/owl#",
-			"xsd" : "http://www.w3.org/2001/XMLSchema#",
-			"dcterms" : "http://purl.org/dc/terms/",
-			"skos" : "http://www.w3.org/2004/02/skos/core#",
-			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
-			"dc" : "http://purl.org/dc/elements/1.1/"
-		}
-	},
-	{
-		"@id" : "dc:description_Shape",
-		"@type" : "sh:PropertyShape",
-		"sh:datatype" : { "@id" : "xsd:string" },
-		"sh:path" : { "@id" : "dc:description" },
-		"sh:property" : { "@id" : "dc:description_Shape" },
-		"@context" : {
-			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"sh" : "http://www.w3.org/ns/shacl#",
-			"xsd" : "http://www.w3.org/2001/XMLSchema#",
-			"dc" : "http://purl.org/dc/elements/1.1/"
-		}
-	},
-	{
-		"@id" : "dc:identifier",
-		"@type" : "owl:DatatypeProperty",
-		"rdfs:subPropertyOf" : { "@id" : "cas:Property" },
-		"rdfs:label" : [
-			{
-				"@language" : "en",
-				"@value" : "Identifier"
-			},
-			{
-				"@language" : "de",
-				"@value" : "Identifikator"
-			}
-			
-		],
-		"dcterms:modified" : {
-			"@type" : "xsd:dateTime",
-			"@value" : "2026-07-05T23:39:01Z"
-		},
-		"rdfs:range" : { "@id" : "xsd:string" },
-		"skos:definition" : [
-			{
-				"@language" : "de",
-				"@value" : "Eindeutiger Identifikator des Elements"
-			},
-			{
-				"@language" : "en",
-				"@value" : "Unambiguous identifier of the element"
-			}
-			
-		],
-		"@context" : {
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
-			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"owl" : "http://www.w3.org/2002/07/owl#",
-			"xsd" : "http://www.w3.org/2001/XMLSchema#",
-			"dcterms" : "http://purl.org/dc/terms/",
-			"skos" : "http://www.w3.org/2004/02/skos/core#",
-			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
-			"dc" : "http://purl.org/dc/elements/1.1/"
-		}
-	},
-	{
-		"@id" : "dc:identifier_Shape",
-		"@type" : "sh:PropertyShape",
-		"sh:datatype" : { "@id" : "xsd:string" },
-		"sh:path" : { "@id" : "dc:identifier" },
-		"sh:property" : { "@id" : "dc:identifier_Shape" },
-		"@context" : {
-			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"sh" : "http://www.w3.org/ns/shacl#",
-			"xsd" : "http://www.w3.org/2001/XMLSchema#",
-			"dc" : "http://purl.org/dc/elements/1.1/"
-		}
-	},
-	{
-		"@id" : "dc:title",
-		"@type" : "owl:DatatypeProperty",
-		"rdfs:subPropertyOf" : { "@id" : "cas:Property" },
-		"rdfs:label" : [
-			{
-				"@language" : "de",
-				"@value" : "Titel"
-			},
-			{
-				"@language" : "en",
-				"@value" : "Title"
-			}
-			
-		],
-		"dcterms:modified" : {
-			"@type" : "xsd:dateTime",
-			"@value" : "2026-07-05T23:39:04Z"
-		},
-		"rdfs:range" : { "@id" : "xsd:string" },
-		"skos:definition" : [
-			{
-				"@language" : "de",
-				"@value" : "Titel des Elements"
-			},
-			{
-				"@language" : "en",
-				"@value" : "Title of the element"
-			}
-			
-		],
-		"@context" : {
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
-			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"owl" : "http://www.w3.org/2002/07/owl#",
-			"xsd" : "http://www.w3.org/2001/XMLSchema#",
-			"dcterms" : "http://purl.org/dc/terms/",
-			"skos" : "http://www.w3.org/2004/02/skos/core#",
-			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
-			"dc" : "http://purl.org/dc/elements/1.1/"
-		}
-	},
-	{
-		"@id" : "dc:title_Shape",
-		"@type" : "sh:PropertyShape",
-		"sh:datatype" : { "@id" : "xsd:string" },
-		"sh:path" : { "@id" : "dc:title" },
-		"sh:property" : { "@id" : "dc:title_Shape" },
-		"@context" : {
-			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"sh" : "http://www.w3.org/ns/shacl#",
-			"xsd" : "http://www.w3.org/2001/XMLSchema#",
-			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
@@ -433,8 +274,19 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":endDateTime_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":startDateTime_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-ctx:Change" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-ctx" : "http://www.omg.org/spec/CASCaRA/ontology/ContextElements/"
@@ -3265,7 +3117,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-11-30T21:02:09Z"
 		},
-		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-26580" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -3277,8 +3128,9 @@
 			}
 			
 		],
+		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-26580" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -3295,8 +3147,19 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":endDateTime_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":startDateTime_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-ctx:Configuration" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-ctx" : "http://www.omg.org/spec/CASCaRA/ontology/ContextElements/"
@@ -6036,8 +5899,19 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":revision_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" },
+			{ "@id" : ":url_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-ctx:Reference" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-ctx" : "http://www.omg.org/spec/CASCaRA/ontology/ContextElements/"
@@ -6292,7 +6166,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-11-30T20:52:38Z"
 		},
-		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-26580" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -6304,8 +6177,9 @@
 			}
 			
 		],
+		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-26580" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -6322,8 +6196,17 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-ctx:Variant" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-ctx" : "http://www.omg.org/spec/CASCaRA/ontology/ContextElements/"
@@ -9017,7 +8900,7 @@
 		}
 	},
 	{
-		"@id" : "cas-mnf:ControlPlan",
+		"@id" : "cas-man:ControlPlan",
 		"@type" : "owl:Class",
 		"rdfs:subClassOf" : { "@id" : "cas:Entity" },
 		"rdfs:label" : [
@@ -9047,31 +8930,41 @@
 			
 		],
 		"@context" : {
-			"cas-mnf" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"skos" : "http://www.w3.org/2004/02/skos/core#",
-			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+			"cas-man" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/"
 		}
 	},
 	{
-		"@id" : "cas-mnf:ControlPlan_Shape",
+		"@id" : "cas-man:ControlPlan_Shape",
 		"@type" : "sh:NodeShape",
 		"sh:close" : {
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
-		"sh:targetClass" : { "@id" : "cas-mnf:ControlPlan" },
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":endDateTime_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":startDateTime_Shape" },
+			{ "@id" : ":title_Shape" }
+			
+		],
+		"sh:targetClass" : { "@id" : "cas-man:ControlPlan" },
 		"@context" : {
-			"cas-mnf" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"sh" : "http://www.w3.org/ns/shacl#"
+			"sh" : "http://www.w3.org/ns/shacl#",
+			"cas-man" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/"
 		}
 	},
 	{
-		"@id" : "cas-mnf:ManufacturingEquipmentComponent",
+		"@id" : "cas-man:ManufacturingEquipmentComponent",
 		"@type" : "owl:Class",
 		"rdfs:subClassOf" : { "@id" : "cas-mech:MechanicalComponent" },
 		"rdfs:label" : [
@@ -9101,27 +8994,27 @@
 			
 		],
 		"@context" : {
-			"cas-mnf" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"skos" : "http://www.w3.org/2004/02/skos/core#",
 			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+			"cas-man" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
 		}
 	},
 	{
-		"@id" : "cas-mnf:ManufacturingEquipmentComponent_Shape",
+		"@id" : "cas-man:ManufacturingEquipmentComponent_Shape",
 		"@type" : "sh:NodeShape",
 		"sh:close" : {
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
-		"sh:targetClass" : { "@id" : "cas-mnf:ManufacturingEquipmentComponent" },
+		"sh:targetClass" : { "@id" : "cas-man:ManufacturingEquipmentComponent" },
 		"@context" : {
-			"cas-mnf" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"sh" : "http://www.w3.org/ns/shacl#"
+			"sh" : "http://www.w3.org/ns/shacl#",
+			"cas-man" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/"
 		}
 	},
 	{
@@ -9316,7 +9209,7 @@
 		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-8580" },
 		"@context" : {
 			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -9330,6 +9223,11 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : "cas-proc:duration_Shape" },
+			{ "@id" : "cas-proc:temperature_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-proc:HeatTreatment" },
 		"@context" : {
 			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
@@ -9437,8 +9335,17 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-proc:ManufacturingOperation" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
@@ -10578,18 +10485,18 @@
 		"@id" : "cas-proc:ManufacturingOperation_uses_ManufacturingEquipmentComponent_Target",
 		"rdfs:subPropertyOf" : { "@id" : "cas:linksTarget" },
 		"rdfs:domain" : { "@id" : "cas-proc:ManufacturingOperation_uses_ManufacturingEquipmentComponent" },
-		"rdfs:range" : { "@id" : "cas-mnf:ManufacturingEquipmentComponent" },
+		"rdfs:range" : { "@id" : "cas-man:ManufacturingEquipmentComponent" },
 		"@context" : {
 			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
-			"cas-mnf" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
-			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+			"cas-man" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/"
 		}
 	},
 	{
 		"@id" : "cas-proc:ManufacturingOperation_uses_ManufacturingEquipmentComponent_Target_Shape",
 		"@type" : "sh:PropertyShape",
-		"sh:class" : { "@id" : "cas-mnf:ManufacturingEquipmentComponent" },
+		"sh:class" : { "@id" : "cas-man:ManufacturingEquipmentComponent" },
 		"sh:maxCount" : {
 			"@type" : "xsd:integer",
 			"@value" : "1"
@@ -10601,9 +10508,9 @@
 		"sh:path" : { "@id" : "cas-proc:ManufacturingOperation_uses_ManufacturingEquipmentComponent_Target" },
 		"@context" : {
 			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
-			"cas-mnf" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"sh" : "http://www.w3.org/ns/shacl#"
+			"sh" : "http://www.w3.org/ns/shacl#",
+			"cas-man" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/"
 		}
 	},
 	{
@@ -10653,7 +10560,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : "cas-proc:duration" },
-		"sh:property" : { "@id" : "cas-proc:duration_Shape" },
 		"@context" : {
 			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -10708,7 +10614,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : "cas-proc:temperature" },
-		"sh:property" : { "@id" : "cas-proc:temperature_Shape" },
 		"@context" : {
 			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -10763,8 +10668,18 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":dateTime_Shape" },
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-op:OperationIncident" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"cas-op" : "http://www.omg.org/spec/CASCaRA/ontology/Operation/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
@@ -11051,8 +10966,20 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":endDateTime_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":revision_Shape" },
+			{ "@id" : ":startDateTime_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-op:Product" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"cas-op" : "http://www.omg.org/spec/CASCaRA/ontology/Operation/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
@@ -11684,8 +11611,15 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : "cas-org:mail_Shape" },
+			{ "@id" : "cas-org:phone_Shape" },
+			{ "@id" : ":identifier_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-org:Actor" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
@@ -11841,8 +11775,18 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":endDateTime_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":startDateTime_Shape" },
+			{ "@id" : ":title_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-org:Event" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
@@ -12210,7 +12154,7 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2025-12-13T17:00:54Z"
+			"@value" : "2026-07-08T15:46:42Z"
 		},
 		"skos:definition" : [
 			{
@@ -12239,8 +12183,15 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-org:OrganizationUnit" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
@@ -12407,8 +12358,17 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : "cas-org:firstname_Shape" },
+			{ "@id" : "cas-org:lastname_Shape" },
+			{ "@id" : "cas-org:title_Shape" },
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":number_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-org:Person" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
@@ -12564,8 +12524,19 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : "cas-org:city_Shape" },
+			{ "@id" : "cas-org:country_Shape" },
+			{ "@id" : "cas-org:street_Shape" },
+			{ "@id" : "cas-org:zipCode_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-org:Place" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
@@ -12785,6 +12756,7 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : { "@id" : "cas-org:costCenter_Shape" },
 		"sh:targetClass" : { "@id" : "cas-org:Project" },
 		"@context" : {
 			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
@@ -12839,8 +12811,16 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-org:Role" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
@@ -13406,7 +13386,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : "cas-org:city" },
-		"sh:property" : { "@id" : "cas-org:city_Shape" },
 		"@context" : {
 			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -13461,7 +13440,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : "cas-org:costCenter" },
-		"sh:property" : { "@id" : "cas-org:costCenter_Shape" },
 		"@context" : {
 			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -13516,7 +13494,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : "cas-org:country" },
-		"sh:property" : { "@id" : "cas-org:country_Shape" },
 		"@context" : {
 			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -13571,7 +13548,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : "cas-org:firstname" },
-		"sh:property" : { "@id" : "cas-org:firstname_Shape" },
 		"@context" : {
 			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -13626,7 +13602,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : "cas-org:lastname" },
-		"sh:property" : { "@id" : "cas-org:lastname_Shape" },
 		"@context" : {
 			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -13681,7 +13656,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : "cas-org:mail" },
-		"sh:property" : { "@id" : "cas-org:mail_Shape" },
 		"@context" : {
 			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -13736,7 +13710,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : "cas-org:phone" },
-		"sh:property" : { "@id" : "cas-org:phone_Shape" },
 		"@context" : {
 			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -13791,7 +13764,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : "cas-org:street" },
-		"sh:property" : { "@id" : "cas-org:street_Shape" },
 		"@context" : {
 			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -13846,7 +13818,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : "cas-org:title" },
-		"sh:property" : { "@id" : "cas-org:title_Shape" },
 		"@context" : {
 			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -13901,7 +13872,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : "cas-org:zipCode" },
-		"sh:property" : { "@id" : "cas-org:zipCode_Shape" },
 		"@context" : {
 			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -14034,12 +14004,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-06-29T23:32:07Z"
 		},
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:CSA-ISO-IEC-IEEE-15288" },
-			{ "@id" : "cas-ref:ISO-IEC-20246" },
-			{ "@id" : "cas-ref:VDI-2519-Blatt-1" }
-			
-		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -14051,8 +14015,14 @@
 			}
 			
 		],
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:CSA-ISO-IEC-IEEE-15288" },
+			{ "@id" : "cas-ref:ISO-IEC-20246" },
+			{ "@id" : "cas-ref:VDI-2519-Blatt-1" }
+			
+		],
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -14069,8 +14039,18 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":revision_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-arch:Function" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/"
@@ -15160,8 +15140,17 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-arch:FunctionalInterface" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/"
@@ -15382,8 +15371,17 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-arch:ItemFlow" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/"
@@ -15691,12 +15689,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-06-29T23:31:48Z"
 		},
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:CSA-ISO-IEC-IEEE-15288" },
-			{ "@id" : "cas-ref:ISO-IEC-IEEE-29148" },
-			{ "@id" : "cas-ref:VDI-2519-Blatt-1" }
-			
-		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -15708,8 +15700,14 @@
 			}
 			
 		],
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:CSA-ISO-IEC-IEEE-15288" },
+			{ "@id" : "cas-ref:ISO-IEC-IEEE-29148" },
+			{ "@id" : "cas-ref:VDI-2519-Blatt-1" }
+			
+		],
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -15726,8 +15724,18 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":revision_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-arch:Requirement" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/"
@@ -16680,7 +16688,7 @@
 		},
 		"rdfs:definedBy" : { "@id" : "cas-ref:CSA-ISO-IEC-IEEE-15288" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/",
@@ -16749,8 +16757,16 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-arch:SystemBehavior" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/"
@@ -17011,7 +17027,7 @@
 			
 		],
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/",
@@ -17052,7 +17068,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-06-29T23:31:32Z"
 		},
-		"rdfs:definedBy" : { "@id" : "cas-ref:VDI-2519-Blatt-1" },
 		"skos:definition" : [
 			{
 				"@language" : "de",
@@ -17064,8 +17079,9 @@
 			}
 			
 		],
+		"rdfs:definedBy" : { "@id" : "cas-ref:VDI-2519-Blatt-1" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -17082,8 +17098,17 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-arch:UseCase" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/"
@@ -18788,8 +18813,16 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : "cas-mech:bendingAngle_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:BendingSpecification" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -18959,8 +18992,17 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : "cas-mech:volume_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:Body" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -19330,7 +19372,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-03-30T09:08:39Z"
 		},
-		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-16232" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -19342,8 +19383,9 @@
 			}
 			
 		],
+		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-16232" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -19360,8 +19402,19 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : "cas-mech:particleDensity_Shape" },
+			{ "@id" : "cas-mech:particleSize_Shape" },
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:Cleanliness" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -19968,12 +20021,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-05-16T06:25:56Z"
 		},
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:DIN-EN-ISO-14405-1" },
-			{ "@id" : "cas-ref:DIN-EN-ISO-14405-2" },
-			{ "@id" : "cas-ref:DIN-EN-ISO-14405-3" }
-			
-		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -19985,8 +20032,14 @@
 			}
 			
 		],
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:DIN-EN-ISO-14405-1" },
+			{ "@id" : "cas-ref:DIN-EN-ISO-14405-2" },
+			{ "@id" : "cas-ref:DIN-EN-ISO-14405-3" }
+			
+		],
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -20002,6 +20055,12 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : "cas-mech:lowerTolerance_Shape" },
+			{ "@id" : "cas-mech:nominalValue_Shape" },
+			{ "@id" : "cas-mech:upperTolerance_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:DimensionalSize" },
 		"@context" : {
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -20056,8 +20115,15 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:Edge" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -20197,7 +20263,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-11-30T21:07:25Z"
 		},
-		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-7499" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -20209,8 +20274,9 @@
 			}
 			
 		],
+		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-7499" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -20227,8 +20293,15 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:Face" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -20368,7 +20441,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-04-01T18:27:12Z"
 		},
-		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-ISO-15786" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -20380,8 +20452,9 @@
 			}
 			
 		],
+		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-ISO-15786" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -20398,8 +20471,17 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : "cas-mech:pitch_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:Gearing" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -21096,8 +21178,17 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:GeometricInterference" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -21352,7 +21443,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-09-28T14:15:44Z"
 		},
-		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-EN-ISO-1101" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -21364,8 +21454,9 @@
 			}
 			
 		],
+		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-EN-ISO-1101" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -21381,6 +21472,7 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : { "@id" : "cas-mech:toleranceValue_Shape" },
 		"sh:targetClass" : { "@id" : "cas-mech:GeometricTolerance" },
 		"@context" : {
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -21522,7 +21614,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-12-01T01:01:22Z"
 		},
-		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-EN-ISO-4885" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -21534,8 +21625,9 @@
 			}
 			
 		],
+		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-EN-ISO-4885" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -21552,8 +21644,18 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : "cas-mech:hardness_Shape" },
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:HeatTreatedArea" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -22456,7 +22558,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-11-26T02:39:29Z"
 		},
-		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-ISO-15786" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -22468,8 +22569,9 @@
 			}
 			
 		],
+		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-ISO-15786" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -22486,8 +22588,18 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":diameter_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":length_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:Hole" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -23004,6 +23116,7 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : { "@id" : "cas-mech:side_Shape" },
 		"sh:targetClass" : { "@id" : "cas-mech:JoiningElement" },
 		"@context" : {
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -25209,8 +25322,15 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":title_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:KinematicMechanism" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -25378,8 +25498,16 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:KinematicMotion" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -25662,8 +25790,17 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:KinematicSensor" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -26049,8 +26186,17 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:MarkingLabeling" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -26719,11 +26865,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-04-12T08:51:55Z"
 		},
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:VDA-231-106" },
-			{ "@id" : "cas-ref:VDA-231-200" }
-			
-		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -26735,8 +26876,13 @@
 			}
 			
 		],
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:VDA-231-106" },
+			{ "@id" : "cas-ref:VDA-231-200" }
+			
+		],
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -26753,8 +26899,23 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : "cas-mech:density_Shape" },
+			{ "@id" : "cas-mech:elasticLimit_Shape" },
+			{ "@id" : "cas-mech:elongationAtBreak_Shape" },
+			{ "@id" : "cas-mech:flammability_Shape" },
+			{ "@id" : "cas-mech:tensileStrength_Shape" },
+			{ "@id" : "cas-mech:thermalExpansion_Shape" },
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:Material" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -27154,6 +27315,7 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : { "@id" : "cas-mech:mass_Shape" },
 		"sh:targetClass" : { "@id" : "cas-mech:MechanicalComponent" },
 		"@context" : {
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -27438,8 +27600,19 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : "cas-mech:classification_Shape" },
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":parent_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:ModelAnnotation" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -28366,8 +28539,17 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:ModelView" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -28535,8 +28717,18 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : "cas-mech:thickness_Shape" },
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:PaintedCoatedArea" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -29465,8 +29657,16 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:Substance" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -29491,12 +29691,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-09-28T14:15:57Z"
 		},
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:DIN-EN-ISO-21920" },
-			{ "@id" : "cas-ref:DIN-EN-ISO-21920-1" },
-			{ "@id" : "cas-ref:DIN-EN-ISO-21920-3" }
-			
-		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -29508,8 +29702,14 @@
 			}
 			
 		],
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:DIN-EN-ISO-21920" },
+			{ "@id" : "cas-ref:DIN-EN-ISO-21920-1" },
+			{ "@id" : "cas-ref:DIN-EN-ISO-21920-3" }
+			
+		],
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -29551,7 +29751,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-06-25T07:04:48Z"
 		},
-		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-ISO-15786" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -29563,8 +29762,9 @@
 			}
 			
 		],
+		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-ISO-15786" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -29581,8 +29781,18 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":diameter_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":length_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-mech:Thread" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/"
@@ -30279,7 +30489,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "qudt:QuantityValue" },
 		"sh:path" : { "@id" : "cas-mech:bendingAngle" },
-		"sh:property" : { "@id" : "cas-mech:bendingAngle_Shape" },
 		"@context" : {
 			"qudt" : "http://qudt.org/schema/qudt/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -30334,7 +30543,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : "cas-mech:classification" },
-		"sh:property" : { "@id" : "cas-mech:classification_Shape" },
 		"@context" : {
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
@@ -30389,7 +30597,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "qudt:QuantityValue" },
 		"sh:path" : { "@id" : "cas-mech:density" },
-		"sh:property" : { "@id" : "cas-mech:density_Shape" },
 		"@context" : {
 			"qudt" : "http://qudt.org/schema/qudt/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -30444,7 +30651,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "qudt:QuantityValue" },
 		"sh:path" : { "@id" : "cas-mech:elasticLimit" },
-		"sh:property" : { "@id" : "cas-mech:elasticLimit_Shape" },
 		"@context" : {
 			"qudt" : "http://qudt.org/schema/qudt/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -30499,7 +30705,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "qudt:QuantityValue" },
 		"sh:path" : { "@id" : "cas-mech:elongationAtBreak" },
-		"sh:property" : { "@id" : "cas-mech:elongationAtBreak_Shape" },
 		"@context" : {
 			"qudt" : "http://qudt.org/schema/qudt/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -30554,7 +30759,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : "cas-mech:flammability" },
-		"sh:property" : { "@id" : "cas-mech:flammability_Shape" },
 		"@context" : {
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
@@ -30609,7 +30813,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : "cas-mech:hardness" },
-		"sh:property" : { "@id" : "cas-mech:hardness_Shape" },
 		"@context" : {
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
@@ -30664,7 +30867,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "qudt:QuantityValue" },
 		"sh:path" : { "@id" : "cas-mech:lowerTolerance" },
-		"sh:property" : { "@id" : "cas-mech:lowerTolerance_Shape" },
 		"@context" : {
 			"qudt" : "http://qudt.org/schema/qudt/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -30719,7 +30921,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "qudt:QuantityValue" },
 		"sh:path" : { "@id" : "cas-mech:mass" },
-		"sh:property" : { "@id" : "cas-mech:mass_Shape" },
 		"@context" : {
 			"qudt" : "http://qudt.org/schema/qudt/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -30774,7 +30975,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "qudt:QuantityValue" },
 		"sh:path" : { "@id" : "cas-mech:nominalValue" },
-		"sh:property" : { "@id" : "cas-mech:nominalValue_Shape" },
 		"@context" : {
 			"qudt" : "http://qudt.org/schema/qudt/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -30829,7 +31029,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:integer" },
 		"sh:path" : { "@id" : "cas-mech:particleDensity" },
-		"sh:property" : { "@id" : "cas-mech:particleDensity_Shape" },
 		"@context" : {
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
@@ -30884,7 +31083,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "qudt:QuantityValue" },
 		"sh:path" : { "@id" : "cas-mech:particleSize" },
-		"sh:property" : { "@id" : "cas-mech:particleSize_Shape" },
 		"@context" : {
 			"qudt" : "http://qudt.org/schema/qudt/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -30939,7 +31137,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:integer" },
 		"sh:path" : { "@id" : "cas-mech:pitch" },
-		"sh:property" : { "@id" : "cas-mech:pitch_Shape" },
 		"@context" : {
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
@@ -30994,7 +31191,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : "cas-mech:side" },
-		"sh:property" : { "@id" : "cas-mech:side_Shape" },
 		"@context" : {
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
@@ -31049,7 +31245,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "qudt:QuantityValue" },
 		"sh:path" : { "@id" : "cas-mech:tensileStrength" },
-		"sh:property" : { "@id" : "cas-mech:tensileStrength_Shape" },
 		"@context" : {
 			"qudt" : "http://qudt.org/schema/qudt/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -31104,7 +31299,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "qudt:QuantityValue" },
 		"sh:path" : { "@id" : "cas-mech:thermalExpansion" },
-		"sh:property" : { "@id" : "cas-mech:thermalExpansion_Shape" },
 		"@context" : {
 			"qudt" : "http://qudt.org/schema/qudt/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -31159,7 +31353,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "qudt:QuantityValue" },
 		"sh:path" : { "@id" : "cas-mech:thickness" },
-		"sh:property" : { "@id" : "cas-mech:thickness_Shape" },
 		"@context" : {
 			"qudt" : "http://qudt.org/schema/qudt/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -31214,7 +31407,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : "cas-mech:toleranceValue" },
-		"sh:property" : { "@id" : "cas-mech:toleranceValue_Shape" },
 		"@context" : {
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
@@ -31269,7 +31461,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "qudt:QuantityValue" },
 		"sh:path" : { "@id" : "cas-mech:upperTolerance" },
-		"sh:property" : { "@id" : "cas-mech:upperTolerance_Shape" },
 		"@context" : {
 			"qudt" : "http://qudt.org/schema/qudt/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -31324,7 +31515,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "qudt:QuantityValue" },
 		"sh:path" : { "@id" : "cas-mech:volume" },
-		"sh:property" : { "@id" : "cas-mech:volume_Shape" },
 		"@context" : {
 			"qudt" : "http://qudt.org/schema/qudt/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -31351,11 +31541,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-12-01T01:45:52Z"
 		},
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:ISO-IEC-19513" },
-			{ "@id" : "cas-ref:ISO-IEC-20246" }
-			
-		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -31367,8 +31552,13 @@
 			}
 			
 		],
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:ISO-IEC-19513" },
+			{ "@id" : "cas-ref:ISO-IEC-20246" }
+			
+		],
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"cas-sw" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/",
@@ -31411,12 +31601,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-12-01T01:55:16Z"
 		},
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:DO-297" },
-			{ "@id" : "cas-ref:ISO-IEC-20246" },
-			{ "@id" : "cas-ref:ISO-IEC-IEEE-29119-1" }
-			
-		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -31428,8 +31612,14 @@
 			}
 			
 		],
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:DO-297" },
+			{ "@id" : "cas-ref:ISO-IEC-20246" },
+			{ "@id" : "cas-ref:ISO-IEC-IEEE-29119-1" }
+			
+		],
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"cas-sw" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/",
@@ -31472,12 +31662,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-12-01T01:55:13Z"
 		},
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:DO-297" },
-			{ "@id" : "cas-ref:ISO-IEC-20246" },
-			{ "@id" : "cas-ref:ISO-IEC-IEEE-29119-1" }
-			
-		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -31489,8 +31673,14 @@
 			}
 			
 		],
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:DO-297" },
+			{ "@id" : "cas-ref:ISO-IEC-20246" },
+			{ "@id" : "cas-ref:ISO-IEC-IEEE-29119-1" }
+			
+		],
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"cas-sw" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/",
@@ -31648,7 +31838,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-05-31T07:58:37Z"
 		},
-		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-IEC-20246" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -31660,8 +31849,9 @@
 			}
 			
 		],
+		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-IEC-20246" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -31678,8 +31868,18 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":dateTime_Shape" },
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-sys:ComponentConnection" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-sys" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/"
@@ -32382,7 +32582,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-06-09T00:15:41Z"
 		},
-		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-IEC-20246" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -32394,8 +32593,9 @@
 			}
 			
 		],
+		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-IEC-20246" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -32412,8 +32612,19 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":dateTime_Shape" },
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":parent_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-sys:ComponentInterface" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-sys" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/"
@@ -33118,7 +33329,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-05-31T07:58:53Z"
 		},
-		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-IEC-20246" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -33130,8 +33340,9 @@
 			}
 			
 		],
+		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-IEC-20246" },
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -33148,8 +33359,18 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":dateTime_Shape" },
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-sys:ComponentState" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-sys" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/"
@@ -33634,15 +33855,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-05-31T07:59:01Z"
 		},
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:ARP4754B" },
-			{ "@id" : "cas-ref:ARP4761A" },
-			{ "@id" : "cas-ref:DIN-EN-61508-1" },
-			{ "@id" : "cas-ref:ISO-21448" },
-			{ "@id" : "cas-ref:ISO-26262-1" },
-			{ "@id" : "cas-ref:ISO-IEC-20246" }
-			
-		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -33654,8 +33866,17 @@
 			}
 			
 		],
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:ARP4754B" },
+			{ "@id" : "cas-ref:ARP4761A" },
+			{ "@id" : "cas-ref:DIN-EN-61508-1" },
+			{ "@id" : "cas-ref:ISO-21448" },
+			{ "@id" : "cas-ref:ISO-26262-1" },
+			{ "@id" : "cas-ref:ISO-IEC-20246" }
+			
+		],
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -33672,8 +33893,21 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : "cas-sys:detection_Shape" },
+			{ "@id" : "cas-sys:occurrence_Shape" },
+			{ "@id" : "cas-sys:severity_Shape" },
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":revision_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-sys:Deviation" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-sys" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/"
@@ -35884,12 +36118,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-05-31T07:58:06Z"
 		},
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:CSA-ISO-IEC-IEEE-15288" },
-			{ "@id" : "cas-ref:ISO-IEC-20246" },
-			{ "@id" : "cas-ref:ISO-IEC-IEEE-42010" }
-			
-		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -35901,8 +36129,14 @@
 			}
 			
 		],
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:CSA-ISO-IEC-IEEE-15288" },
+			{ "@id" : "cas-ref:ISO-IEC-20246" },
+			{ "@id" : "cas-ref:ISO-IEC-IEEE-42010" }
+			
+		],
 		"@context" : {
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -35919,8 +36153,19 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":dateTime_Shape" },
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":revision_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-sys:SystemComponent" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"cas-sys" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/"
@@ -36772,7 +37017,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:double" },
 		"sh:path" : { "@id" : "cas-sys:detection" },
-		"sh:property" : { "@id" : "cas-sys:detection_Shape" },
 		"@context" : {
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
@@ -36827,7 +37071,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:double" },
 		"sh:path" : { "@id" : "cas-sys:occurrence" },
-		"sh:property" : { "@id" : "cas-sys:occurrence_Shape" },
 		"@context" : {
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
@@ -36882,7 +37125,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:double" },
 		"sh:path" : { "@id" : "cas-sys:severity" },
-		"sh:property" : { "@id" : "cas-sys:severity_Shape" },
 		"@context" : {
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
@@ -36937,9 +37179,15 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-val:Displacement" },
 		"@context" : {
 			"cas-val" : "http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/",
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
 		}
@@ -36991,9 +37239,18 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-val:ValidationBoundaryCondition" },
 		"@context" : {
 			"cas-val" : "http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/",
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
 		}
@@ -37017,7 +37274,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-12-01T01:51:03Z"
 		},
-		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-IEC-IEEE-29119-1" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -37029,9 +37285,10 @@
 			}
 			
 		],
+		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-IEC-IEEE-29119-1" },
 		"@context" : {
 			"cas-val" : "http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -37047,9 +37304,18 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-val:ValidationCriterium" },
 		"@context" : {
 			"cas-val" : "http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/",
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
 		}
@@ -37335,9 +37601,18 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-val:ValidationPlan" },
 		"@context" : {
 			"cas-val" : "http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/",
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
 		}
@@ -37389,9 +37664,18 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-val:ValidationResult" },
 		"@context" : {
 			"cas-val" : "http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/",
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
 		}
@@ -37443,9 +37727,19 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":dateTime_Shape" },
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-val:ValidationRun" },
 		"@context" : {
 			"cas-val" : "http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/",
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
 		}
@@ -37699,14 +37993,8 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2026-01-01T10:33:39Z"
+			"@value" : "2026-07-08T17:20:07Z"
 		},
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:DIN-23601" },
-			{ "@id" : "cas-ref:ISO-7533" },
-			{ "@id" : "cas-ref:VDA-231-300" }
-			
-		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -37718,9 +38006,15 @@
 			}
 			
 		],
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:DIN-23601" },
+			{ "@id" : "cas-ref:ISO-7533" },
+			{ "@id" : "cas-ref:VDA-231-300" }
+			
+		],
 		"@context" : {
 			"cas-ver" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -37736,8 +38030,17 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-ver:VerificationCharacteristic" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"cas-ver" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
@@ -38329,11 +38632,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-05-16T06:34:40Z"
 		},
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:DIN-23601" },
-			{ "@id" : "cas-ref:ISO-22514-7" }
-			
-		],
 		"skos:definition" : [
 			{
 				"@language" : "de",
@@ -38345,9 +38643,14 @@
 			}
 			
 		],
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:DIN-23601" },
+			{ "@id" : "cas-ref:ISO-22514-7" }
+			
+		],
 		"@context" : {
 			"cas-ver" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -38363,8 +38666,18 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":revision_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-ver:VerificationPlan" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"cas-ver" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
@@ -38574,18 +38887,18 @@
 		"@id" : "cas-ver:VerificationPlan_usedIn_ControlPlan_Target",
 		"rdfs:subPropertyOf" : { "@id" : "cas:linksTarget" },
 		"rdfs:domain" : { "@id" : "cas-ver:VerificationPlan_usedIn_ControlPlan" },
-		"rdfs:range" : { "@id" : "cas-mnf:ControlPlan" },
+		"rdfs:range" : { "@id" : "cas-man:ControlPlan" },
 		"@context" : {
 			"cas-ver" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/",
-			"cas-mnf" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
-			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+			"cas-man" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/"
 		}
 	},
 	{
 		"@id" : "cas-ver:VerificationPlan_usedIn_ControlPlan_Target_Shape",
 		"@type" : "sh:PropertyShape",
-		"sh:class" : { "@id" : "cas-mnf:ControlPlan" },
+		"sh:class" : { "@id" : "cas-man:ControlPlan" },
 		"sh:maxCount" : {
 			"@type" : "xsd:integer",
 			"@value" : "1"
@@ -38597,9 +38910,9 @@
 		"sh:path" : { "@id" : "cas-ver:VerificationPlan_usedIn_ControlPlan_Target" },
 		"@context" : {
 			"cas-ver" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/",
-			"cas-mnf" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"sh" : "http://www.w3.org/ns/shacl#"
+			"sh" : "http://www.w3.org/ns/shacl#",
+			"cas-man" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/"
 		}
 	},
 	{
@@ -38734,9 +39047,8 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2025-12-05T15:29:03Z"
+			"@value" : "2026-07-08T17:19:30Z"
 		},
-		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-23601" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -38748,9 +39060,10 @@
 			}
 			
 		],
+		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-23601" },
 		"@context" : {
 			"cas-ver" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -38909,12 +39222,6 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-05-16T06:34:03Z"
 		},
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:ISO-20170" },
-			{ "@id" : "cas-ref:ISO-22514-2" },
-			{ "@id" : "cas-ref:ISO-22514-6" }
-			
-		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -38926,9 +39233,15 @@
 			}
 			
 		],
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:ISO-20170" },
+			{ "@id" : "cas-ref:ISO-22514-2" },
+			{ "@id" : "cas-ref:ISO-22514-6" }
+			
+		],
 		"@context" : {
 			"cas-ver" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/ontology/references/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
@@ -38944,8 +39257,18 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : "cas-ver:deviation_Shape" },
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-ver:VerificationResult" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"cas-ver" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
@@ -39113,8 +39436,18 @@
 			"@type" : "xsd:boolean",
 			"@value" : "true"
 		},
+		"sh:property" : [
+			{ "@id" : ":dateTime_Shape" },
+			{ "@id" : ":description_Shape" },
+			{ "@id" : ":identifier_Shape" },
+			{ "@id" : ":number_Shape" },
+			{ "@id" : ":title_Shape" },
+			{ "@id" : ":type_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas-ver:VerificationRun" },
 		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"cas-ver" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#"
@@ -39399,7 +39732,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : "cas-ver:deviation" },
-		"sh:property" : { "@id" : "cas-ver:deviation_Shape" },
 		"@context" : {
 			"cas-ver" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -39454,7 +39786,60 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:dateTime" },
 		"sh:path" : { "@id" : ":dateTime" },
-		"sh:property" : { "@id" : ":dateTime_Shape" },
+		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"sh" : "http://www.w3.org/ns/shacl#",
+			"xsd" : "http://www.w3.org/2001/XMLSchema#"
+		}
+	},
+	{
+		"@id" : ":description",
+		"@type" : "owl:DatatypeProperty",
+		"rdfs:subPropertyOf" : { "@id" : "cas:Property" },
+		"rdfs:label" : [
+			{
+				"@language" : "de",
+				"@value" : "Beschreibung"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Description"
+			}
+			
+		],
+		"dcterms:modified" : {
+			"@type" : "xsd:dateTime",
+			"@value" : "2026-07-05T23:39:05Z"
+		},
+		"rdfs:range" : { "@id" : "xsd:string" },
+		"skos:definition" : [
+			{
+				"@language" : "de",
+				"@value" : "Beschreibung des Elements"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Description of the element"
+			}
+			
+		],
+		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"owl" : "http://www.w3.org/2002/07/owl#",
+			"xsd" : "http://www.w3.org/2001/XMLSchema#",
+			"dcterms" : "http://purl.org/dc/terms/",
+			"skos" : "http://www.w3.org/2004/02/skos/core#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : ":description_Shape",
+		"@type" : "sh:PropertyShape",
+		"sh:datatype" : { "@id" : "xsd:string" },
+		"sh:path" : { "@id" : ":description" },
 		"@context" : {
 			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -39509,7 +39894,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "qudt:QuantityValue" },
 		"sh:path" : { "@id" : ":diameter" },
-		"sh:property" : { "@id" : ":diameter_Shape" },
 		"@context" : {
 			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"qudt" : "http://qudt.org/schema/qudt/",
@@ -39564,7 +39948,60 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:dateTime" },
 		"sh:path" : { "@id" : ":endDateTime" },
-		"sh:property" : { "@id" : ":endDateTime_Shape" },
+		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"sh" : "http://www.w3.org/ns/shacl#",
+			"xsd" : "http://www.w3.org/2001/XMLSchema#"
+		}
+	},
+	{
+		"@id" : ":identifier",
+		"@type" : "owl:DatatypeProperty",
+		"rdfs:subPropertyOf" : { "@id" : "cas:Property" },
+		"rdfs:label" : [
+			{
+				"@language" : "en",
+				"@value" : "Identifier"
+			},
+			{
+				"@language" : "de",
+				"@value" : "Identifikator"
+			}
+			
+		],
+		"dcterms:modified" : {
+			"@type" : "xsd:dateTime",
+			"@value" : "2026-07-05T23:39:01Z"
+		},
+		"rdfs:range" : { "@id" : "xsd:string" },
+		"skos:definition" : [
+			{
+				"@language" : "de",
+				"@value" : "Eindeutiger Identifikator des Elements"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Unambiguous identifier of the element"
+			}
+			
+		],
+		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"owl" : "http://www.w3.org/2002/07/owl#",
+			"xsd" : "http://www.w3.org/2001/XMLSchema#",
+			"dcterms" : "http://purl.org/dc/terms/",
+			"skos" : "http://www.w3.org/2004/02/skos/core#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : ":identifier_Shape",
+		"@type" : "sh:PropertyShape",
+		"sh:datatype" : { "@id" : "xsd:string" },
+		"sh:path" : { "@id" : ":identifier" },
 		"@context" : {
 			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -39619,7 +40056,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "qudt:QuantityValue" },
 		"sh:path" : { "@id" : ":length" },
-		"sh:property" : { "@id" : ":length_Shape" },
 		"@context" : {
 			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"qudt" : "http://qudt.org/schema/qudt/",
@@ -39674,7 +40110,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : ":number" },
-		"sh:property" : { "@id" : ":number_Shape" },
 		"@context" : {
 			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -39717,7 +40152,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : ":parent" },
-		"sh:property" : { "@id" : ":parent_Shape" },
 		"@context" : {
 			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -39772,7 +40206,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : ":revision" },
-		"sh:property" : { "@id" : ":revision_Shape" },
 		"@context" : {
 			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -39827,7 +40260,60 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:dateTime" },
 		"sh:path" : { "@id" : ":startDateTime" },
-		"sh:property" : { "@id" : ":startDateTime_Shape" },
+		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"sh" : "http://www.w3.org/ns/shacl#",
+			"xsd" : "http://www.w3.org/2001/XMLSchema#"
+		}
+	},
+	{
+		"@id" : ":title",
+		"@type" : "owl:DatatypeProperty",
+		"rdfs:subPropertyOf" : { "@id" : "cas:Property" },
+		"rdfs:label" : [
+			{
+				"@language" : "de",
+				"@value" : "Titel"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Title"
+			}
+			
+		],
+		"dcterms:modified" : {
+			"@type" : "xsd:dateTime",
+			"@value" : "2026-07-05T23:39:04Z"
+		},
+		"rdfs:range" : { "@id" : "xsd:string" },
+		"skos:definition" : [
+			{
+				"@language" : "de",
+				"@value" : "Titel des Elements"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Title of the element"
+			}
+			
+		],
+		"@context" : {
+			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"owl" : "http://www.w3.org/2002/07/owl#",
+			"xsd" : "http://www.w3.org/2001/XMLSchema#",
+			"dcterms" : "http://purl.org/dc/terms/",
+			"skos" : "http://www.w3.org/2004/02/skos/core#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : ":title_Shape",
+		"@type" : "sh:PropertyShape",
+		"sh:datatype" : { "@id" : "xsd:string" },
+		"sh:path" : { "@id" : ":title" },
 		"@context" : {
 			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -39882,7 +40368,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : ":type" },
-		"sh:property" : { "@id" : ":type_Shape" },
 		"@context" : {
 			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -39937,7 +40422,6 @@
 		"@type" : "sh:PropertyShape",
 		"sh:datatype" : { "@id" : "xsd:string" },
 		"sh:path" : { "@id" : ":url" },
-		"sh:property" : { "@id" : ":url_Shape" },
 		"@context" : {
 			"" : "http://www.omg.org/spec/CASCaRA/ontology/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",

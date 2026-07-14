@@ -1,3 +1,7 @@
+# imports: http://www.omg.org/spec/CASCaRA/metamodel/
+# imports: http://www.omg.org/spec/CASCaRA/references/
+# imports: https://www.omg.org/spec/Commons/AboutCommons/
+
 @prefix : <http://www.omg.org/spec/CASCaRA/ontology/> .
 @prefix cas: <http://www.omg.org/spec/CASCaRA/metamodel/> .
 @prefix cas-arch: <http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/> .
@@ -29,6 +33,7 @@
 
 <http://www.omg.org/spec/CASCaRA/ontology/>
 	a owl:Ontology ;
+	rdfs:label "Domain Ontology" ;
 	dcterms:abstract "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice." ;
 	dcterms:contributor
 		"Alvarez Rodriguez, José Maria, UC3 Madrid" ,
@@ -156,13 +161,12 @@ Copyright (c) 2019-2026 ZF Friedrichshafen
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
 https://opensource.org/licenses/MIT""" ;
 	dcterms:title "CASCaRA Domain Ontology" ;
-	owl:versionInfo "1.0" ;
 	owl:imports
 		<http://www.omg.org/spec/CASCaRA/metamodel/> ,
 		<http://www.omg.org/spec/CASCaRA/references/> ,
 		<https://www.omg.org/spec/Commons/AboutCommons/>
 		;
-	rdfs:label "Domain Ontology" ;
+	owl:versionInfo "1.0" ;
 	.
 
 cas-ctx:Change
@@ -1426,11 +1430,11 @@ cas-ctx:Configuration
 		"Konfiguration"@de
 		;
 	dcterms:modified "2025-11-30T21:02:09Z"^^xsd:dateTime ;
+	rdfs:definedBy cas-ref:ISO-26580 ;
 	skos:definition
 		"Represents a configuration as a context for other elements to be valid. The datamodel allows selected elements to be related to a revision, i. e. mechanical components"@en ,
 		"Repräsentiert eine Konfiguration als Kontext, in dem verknüpfte Elemente gültig sein sollen. Das Datenmodell sieht vor, ausgewählte Elemente mit einer Konfiguration zu verknüpfen, z. B. mechanische Komponenten."@de
 		;
-	rdfs:definedBy cas-ref:ISO-26580 ;
 	.
 
 cas-ctx:Configuration_Shape
@@ -2760,11 +2764,11 @@ cas-ctx:Variant
 		"Variante"@de
 		;
 	dcterms:modified "2025-11-30T20:52:38Z"^^xsd:dateTime ;
+	rdfs:definedBy cas-ref:ISO-26580 ;
 	skos:definition
 		"Represents a variant as a context for other elements to be valid. The datamodel allows selected elements to be related to a variant, i. e. mechanical components"@en ,
 		"Repräsentiert eine Variante als Kontext, in dem verknüpfte Elemente gültig sein sollen. Das Datenmodell sieht vor, ausgewählte Elemente mit einer Variante zu verknüpfen, z. B. mechanische Komponenten."@de
 		;
-	rdfs:definedBy cas-ref:ISO-26580 ;
 	.
 
 cas-ctx:Variant_Shape
@@ -6141,14 +6145,14 @@ cas-arch:Function
 		"Funktion"@de
 		;
 	dcterms:modified "2026-06-29T23:32:07Z"^^xsd:dateTime ;
-	skos:definition
-		"A system, product or component function describes the way a system works or performs a specific task."@en ,
-		"Eine System-, Produkt- oder Komponentenfunktion beschreibt die Art und Weise, wie ein System arbeitet oder eine bestimmte Aufgabe ausführt."@de
-		;
 	rdfs:definedBy
 		cas-ref:CSA-ISO-IEC-IEEE-15288 ,
 		cas-ref:ISO-IEC-20246 ,
 		cas-ref:VDI-2519-Blatt-1
+		;
+	skos:definition
+		"A system, product or component function describes the way a system works or performs a specific task."@en ,
+		"Eine System-, Produkt- oder Komponentenfunktion beschreibt die Art und Weise, wie ein System arbeitet oder eine bestimmte Aufgabe ausführt."@de
 		;
 	.
 
@@ -6880,6 +6884,11 @@ cas-arch:Requirement
 		"Requirement"@en
 		;
 	dcterms:modified "2026-06-29T23:31:48Z"^^xsd:dateTime ;
+	rdfs:definedBy
+		cas-ref:CSA-ISO-IEC-IEEE-15288 ,
+		cas-ref:ISO-IEC-IEEE-29148 ,
+		cas-ref:VDI-2519-Blatt-1
+		;
 	skos:definition
 		"""Characteristics that identify the accomplishment levels needed to achieve specific objectives for a given set of conditions.
 Requirements can be 'must have', 'can have' and 'nice to have'.
@@ -6893,11 +6902,6 @@ A. Eine Bedingung oder Fähigkeit, die ein Benutzer benötigt, um ein Problem zu
 B. Eine Bedingung oder Fähigkeit, die ein System oder eine Systemkomponente erfüllen oder besitzen muss, um einen Vertrag, eine Norm, eine Spezifikation oder ein anderes formell vorgeschriebenes Dokument zu erfüllen.
 C. Eine dokumentierte Darstellung einer Bedingung oder Fähigkeit wie in Definition (A:) oder (B).
 https://intranet.prostep.org/display/PROJ/Glossary'''@de
-		;
-	rdfs:definedBy
-		cas-ref:CSA-ISO-IEC-IEEE-15288 ,
-		cas-ref:ISO-IEC-IEEE-29148 ,
-		cas-ref:VDI-2519-Blatt-1
 		;
 	.
 
@@ -7496,11 +7500,11 @@ cas-arch:UseCase
 		"Use Case"@en
 		;
 	dcterms:modified "2026-06-29T23:31:32Z"^^xsd:dateTime ;
+	rdfs:definedBy cas-ref:VDI-2519-Blatt-1 ;
 	skos:definition
 		"Legt fest, was der Nutzer eines Produkts tut, um ein Ziel zu erreichen"@de ,
 		"Specifies what the user of a product will do in order to achieve a goal"@en
 		;
-	rdfs:definedBy cas-ref:VDI-2519-Blatt-1 ;
 	.
 
 cas-arch:UseCase_Shape
@@ -8489,11 +8493,11 @@ cas-mech:Cleanliness
 		"Sauberkeit"@de
 		;
 	dcterms:modified "2026-03-30T09:08:39Z"^^xsd:dateTime ;
+	rdfs:definedBy cas-ref:ISO-16232 ;
 	skos:definition
 		"Technical cleanliness of a set of faces"@en ,
 		"Technische Sauberkeit für eine Gruppe von Teilflächen"@de
 		;
-	rdfs:definedBy cas-ref:ISO-16232 ;
 	.
 
 cas-mech:Cleanliness_Shape
@@ -8778,14 +8782,14 @@ cas-mech:DimensionalSize
 		"Größenmaß"@de
 		;
 	dcterms:modified "2026-05-16T06:25:56Z"^^xsd:dateTime ;
-	skos:definition
-		"Represents a size"@en ,
-		"Repräsentiert ein Größenmaß"@de
-		;
 	rdfs:definedBy
 		cas-ref:DIN-EN-ISO-14405-1 ,
 		cas-ref:DIN-EN-ISO-14405-2 ,
 		cas-ref:DIN-EN-ISO-14405-3
+		;
+	skos:definition
+		"Represents a size"@en ,
+		"Repräsentiert ein Größenmaß"@de
 		;
 	.
 
@@ -8884,11 +8888,11 @@ cas-mech:Face
 		"Teilfläche"@de
 		;
 	dcterms:modified "2025-11-30T21:07:25Z"^^xsd:dateTime ;
+	rdfs:definedBy cas-ref:ISO-7499 ;
 	skos:definition
 		"Face on the geometric representation of the component"@en ,
 		"Teilfläche der geometrische Repräsentation der mechanischen Komponente"@de
 		;
-	rdfs:definedBy cas-ref:ISO-7499 ;
 	.
 
 cas-mech:Face_Shape
@@ -8961,11 +8965,11 @@ cas-mech:Gearing
 		"Verzahnung"@de
 		;
 	dcterms:modified "2026-04-01T18:27:12Z"^^xsd:dateTime ;
+	rdfs:definedBy cas-ref:DIN-ISO-15786 ;
 	skos:definition
 		"Gearing specification"@en ,
 		"Verzahnungsspezifikation"@de
 		;
-	rdfs:definedBy cas-ref:DIN-ISO-15786 ;
 	.
 
 cas-mech:Gearing_Shape
@@ -9408,11 +9412,11 @@ cas-mech:GeometricTolerance
 		"Geometrische Toleranz"@de
 		;
 	dcterms:modified "2025-09-28T14:15:44Z"^^xsd:dateTime ;
+	rdfs:definedBy cas-ref:DIN-EN-ISO-1101 ;
 	skos:definition
 		"Represents a geometric tolerance, such as form, position, orientation, or runout"@en ,
 		"Repräsentiert eine geometrische Toleranz wie z. B. Form, Ort, Richtung und Lauf"@de
 		;
-	rdfs:definedBy cas-ref:DIN-EN-ISO-1101 ;
 	.
 
 cas-mech:GeometricTolerance_Shape
@@ -9481,11 +9485,11 @@ cas-mech:HeatTreatedArea
 		"Wärmebehandelter Bereich"@de
 		;
 	dcterms:modified "2025-12-01T01:01:22Z"^^xsd:dateTime ;
+	rdfs:definedBy cas-ref:DIN-EN-ISO-4885 ;
 	skos:definition
 		"Heat treatment of a mechanical component"@en ,
 		"Wärmebehandlung einer mechanischen Komponente"@de
 		;
-	rdfs:definedBy cas-ref:DIN-EN-ISO-4885 ;
 	.
 
 cas-mech:HeatTreatedArea_Shape
@@ -9902,11 +9906,11 @@ cas-mech:Hole
 		"Hole"@en
 		;
 	dcterms:modified "2025-11-26T02:39:29Z"^^xsd:dateTime ;
+	rdfs:definedBy cas-ref:DIN-ISO-15786 ;
 	skos:definition
 		"A cylindrical or conical hole in a part, typically used as a mechanical interface to other mechanical components."@en ,
 		"Ein zylindrisches oder konisches Loch in einem Teil. Repräsentiert typischerweise eine mechanische Schnittstelle zu anderen mechanischen Komponenten."@de
 		;
-	rdfs:definedBy cas-ref:DIN-ISO-15786 ;
 	.
 
 cas-mech:Hole_Shape
@@ -11810,13 +11814,13 @@ cas-mech:Material
 		"Werkstoff"@de
 		;
 	dcterms:modified "2026-04-12T08:51:55Z"^^xsd:dateTime ;
-	skos:definition
-		"Material assigned to the mechanical component"@en ,
-		"Werkstoff, das dieser mechanischen Komponente zugeordnet ist"@de
-		;
 	rdfs:definedBy
 		cas-ref:VDA-231-106 ,
 		cas-ref:VDA-231-200
+		;
+	skos:definition
+		"Material assigned to the mechanical component"@en ,
+		"Werkstoff, das dieser mechanischen Komponente zugeordnet ist"@de
 		;
 	.
 
@@ -13068,14 +13072,14 @@ cas-mech:SurfaceTexture
 		"Surface Texture"@en
 		;
 	dcterms:modified "2025-09-28T14:15:57Z"^^xsd:dateTime ;
-	skos:definition
-		"Represents surface texture such as roughness and waviness"@en ,
-		"Repräsentiert die Oberflächenbeschaffenheit wie z. B. Rauheit und Welligkeit"@de
-		;
 	rdfs:definedBy
 		cas-ref:DIN-EN-ISO-21920 ,
 		cas-ref:DIN-EN-ISO-21920-1 ,
 		cas-ref:DIN-EN-ISO-21920-3
+		;
+	skos:definition
+		"Represents surface texture such as roughness and waviness"@en ,
+		"Repräsentiert die Oberflächenbeschaffenheit wie z. B. Rauheit und Welligkeit"@de
 		;
 	.
 
@@ -13093,11 +13097,11 @@ cas-mech:Thread
 		"Thread"@en
 		;
 	dcterms:modified "2026-06-25T07:04:48Z"^^xsd:dateTime ;
+	rdfs:definedBy cas-ref:DIN-ISO-15786 ;
 	skos:definition
 		"A threaded hole or shaft on a part, typically used as a mechanical interface to other mechanical components."@en ,
 		"Eine Innen- oder Außengewinde an einem Bauteil. Repräsentiert typischerweise eine mechanische Schnittstelle zu anderen mechanischen Komponenten."@de
 		;
-	rdfs:definedBy cas-ref:DIN-ISO-15786 ;
 	.
 
 cas-mech:Thread_Shape
@@ -13832,13 +13836,13 @@ cas-sw:SoftwareClass
 		"Software-Klasse"@de
 		;
 	dcterms:modified "2025-12-01T01:45:52Z"^^xsd:dateTime ;
-	skos:definition
-		"A class in source code that represents a logical collection data and functions"@en ,
-		"Eine Klasse im Quellcode, die eine logische Sammlung von Daten und Funktionen darstellt"@de
-		;
 	rdfs:definedBy
 		cas-ref:ISO-IEC-19513 ,
 		cas-ref:ISO-IEC-20246
+		;
+	skos:definition
+		"A class in source code that represents a logical collection data and functions"@en ,
+		"Eine Klasse im Quellcode, die eine logische Sammlung von Daten und Funktionen darstellt"@de
 		;
 	.
 
@@ -13856,14 +13860,14 @@ cas-sw:SoftwareComponent
 		"Softwarekomponente"@de
 		;
 	dcterms:modified "2025-12-01T01:55:16Z"^^xsd:dateTime ;
-	skos:definition
-		"A compiled component of software to be used in a product, i. e. executable or library"@en ,
-		"Eine kompilierte Softwarekomponente, die in einem Produkt verwendet werden soll, d. h. eine ausführbare Datei oder Bibliothek"@de
-		;
 	rdfs:definedBy
 		cas-ref:DO-297 ,
 		cas-ref:ISO-IEC-20246 ,
 		cas-ref:ISO-IEC-IEEE-29119-1
+		;
+	skos:definition
+		"A compiled component of software to be used in a product, i. e. executable or library"@en ,
+		"Eine kompilierte Softwarekomponente, die in einem Produkt verwendet werden soll, d. h. eine ausführbare Datei oder Bibliothek"@de
 		;
 	.
 
@@ -13881,14 +13885,14 @@ cas-sw:SoftwareInterface
 		"Software-Schnittstelle"@de
 		;
 	dcterms:modified "2025-12-01T01:55:13Z"^^xsd:dateTime ;
-	skos:definition
-		"An interface in source code that allows a class to interact with other components of a software"@en ,
-		"Eine Schnittstelle im Quellcode, die es einer Klasse ermöglicht, mit anderen Komponenten einer Software zu interagieren"@de
-		;
 	rdfs:definedBy
 		cas-ref:DO-297 ,
 		cas-ref:ISO-IEC-20246 ,
 		cas-ref:ISO-IEC-IEEE-29119-1
+		;
+	skos:definition
+		"An interface in source code that allows a class to interact with other components of a software"@en ,
+		"Eine Schnittstelle im Quellcode, die es einer Klasse ermöglicht, mit anderen Komponenten einer Software zu interagieren"@de
 		;
 	.
 
@@ -13957,11 +13961,11 @@ cas-sys:ComponentConnection
 		"Komponenten-Verbindung"@de
 		;
 	dcterms:modified "2026-05-31T07:58:37Z"^^xsd:dateTime ;
+	rdfs:definedBy cas-ref:ISO-IEC-20246 ;
 	skos:definition
 		"Represents a connection between two components through interfaces"@en ,
 		"Repräsentiert eine Verbindung zwischen zwei Komponenten über Schnittstellen"@de
 		;
-	rdfs:definedBy cas-ref:ISO-IEC-20246 ;
 	.
 
 cas-sys:ComponentConnection_Shape
@@ -14288,11 +14292,11 @@ cas-sys:ComponentInterface
 		"Komponenten-Schnittstelle"@de
 		;
 	dcterms:modified "2026-06-09T00:15:41Z"^^xsd:dateTime ;
+	rdfs:definedBy cas-ref:ISO-IEC-20246 ;
 	skos:definition
 		"Represents a generic interface of a system component"@en ,
 		"Repräsentiert eine generische Schnittstelle einer Systemkomponente"@de
 		;
-	rdfs:definedBy cas-ref:ISO-IEC-20246 ;
 	.
 
 cas-sys:ComponentInterface_Shape
@@ -14620,11 +14624,11 @@ cas-sys:ComponentState
 		"Komponenten-Zustand"@de
 		;
 	dcterms:modified "2026-05-31T07:58:53Z"^^xsd:dateTime ;
+	rdfs:definedBy cas-ref:ISO-IEC-20246 ;
 	skos:definition
 		"Represents the condition of a system component. Can be it a value, a condition, an information storage or a physical shape."@en ,
 		"Stellt den Zustand einer Systemkomponente dar. Es kann sich um einen Wert, eine Bedingung, eine Information oder eine physische Gestalt handeln."@de
 		;
-	rdfs:definedBy cas-ref:ISO-IEC-20246 ;
 	.
 
 cas-sys:ComponentState_Shape
@@ -14853,10 +14857,6 @@ cas-sys:Deviation
 		"Deviation"@en
 		;
 	dcterms:modified "2026-05-31T07:59:01Z"^^xsd:dateTime ;
-	skos:definition
-		"Represents a system, product or component deviation. A deviation affects a function. Deviations are typically managed in an FMEA."@en ,
-		"Repräsentiert eine Abweichung eines Systems, Produkts oder einer Komponente. Eine Abweichung beeinträchtigt eine Funktion. Abweichungen werden typischerweise in einer FMEA verwaltet."@de
-		;
 	rdfs:definedBy
 		cas-ref:ARP4754B ,
 		cas-ref:ARP4761A ,
@@ -14864,6 +14864,10 @@ cas-sys:Deviation
 		cas-ref:ISO-21448 ,
 		cas-ref:ISO-26262-1 ,
 		cas-ref:ISO-IEC-20246
+		;
+	skos:definition
+		"Represents a system, product or component deviation. A deviation affects a function. Deviations are typically managed in an FMEA."@en ,
+		"Repräsentiert eine Abweichung eines Systems, Produkts oder einer Komponente. Eine Abweichung beeinträchtigt eine Funktion. Abweichungen werden typischerweise in einer FMEA verwaltet."@de
 		;
 	.
 
@@ -15864,14 +15868,14 @@ cas-sys:SystemComponent
 		"Systemkomponente"@de
 		;
 	dcterms:modified "2026-05-31T07:58:06Z"^^xsd:dateTime ;
-	skos:definition
-		"Represents a generic component of a system"@en ,
-		"Repräsentiert eine generische Systemkomponente"@de
-		;
 	rdfs:definedBy
 		cas-ref:CSA-ISO-IEC-IEEE-15288 ,
 		cas-ref:ISO-IEC-20246 ,
 		cas-ref:ISO-IEC-IEEE-42010
+		;
+	skos:definition
+		"Represents a generic component of a system"@en ,
+		"Repräsentiert eine generische Systemkomponente"@de
 		;
 	.
 
@@ -16365,11 +16369,11 @@ cas-val:ValidationCriterium
 		"Validierungskriterium"@de
 		;
 	dcterms:modified "2025-12-01T01:51:03Z"^^xsd:dateTime ;
+	rdfs:definedBy cas-ref:ISO-IEC-IEEE-29119-1 ;
 	skos:definition
 		"A specific validation criterium as part of a validation plan."@en ,
 		"Ein spezifisches Validierungskriterium als Teil eines Validierungsplans."@de
 		;
-	rdfs:definedBy cas-ref:ISO-IEC-IEEE-29119-1 ;
 	.
 
 cas-val:ValidationCriterium_Shape
@@ -16680,14 +16684,14 @@ cas-ver:VerificationCharacteristic
 		"Verifikationsmerkmal"@de
 		;
 	dcterms:modified "2026-07-08T17:20:07Z"^^xsd:dateTime ;
-	skos:definition
-		"Represents a characteristic that must be inspected to ensure product function."@en ,
-		"Stellt ein Merkmal dar, das geprüft werden muss, um die Funktion des Produkts zu gewährleisten."@de
-		;
 	rdfs:definedBy
 		cas-ref:DIN-23601 ,
 		cas-ref:ISO-7533 ,
 		cas-ref:VDA-231-300
+		;
+	skos:definition
+		"Represents a characteristic that must be inspected to ensure product function."@en ,
+		"Stellt ein Merkmal dar, das geprüft werden muss, um die Funktion des Produkts zu gewährleisten."@de
 		;
 	.
 
@@ -16963,13 +16967,13 @@ cas-ver:VerificationPlan
 		"Verifikationsplan"@de
 		;
 	dcterms:modified "2026-05-16T06:34:40Z"^^xsd:dateTime ;
-	skos:definition
-		"Legt fest, welche Merkmale mit welchen Geräten zu welchem Zweck geprüft werden müssen."@de ,
-		"Specifies what characteristics must be inspected using which equipment for which purpose."@en
-		;
 	rdfs:definedBy
 		cas-ref:DIN-23601 ,
 		cas-ref:ISO-22514-7
+		;
+	skos:definition
+		"Legt fest, welche Merkmale mit welchen Geräten zu welchem Zweck geprüft werden müssen."@de ,
+		"Specifies what characteristics must be inspected using which equipment for which purpose."@en
 		;
 	.
 
@@ -17148,11 +17152,11 @@ cas-ver:VerificationResource
 		"Verifikationsmittel"@de
 		;
 	dcterms:modified "2026-07-08T17:19:30Z"^^xsd:dateTime ;
+	rdfs:definedBy cas-ref:DIN-23601 ;
 	skos:definition
 		"Represents a mechanical component used as an inspection resource"@en ,
 		"Repräsentiert eine mechanische Komponente, die als Prüfmittel verwendet wird"@de
 		;
-	rdfs:definedBy cas-ref:DIN-23601 ;
 	.
 
 cas-ver:VerificationResource_Shape
@@ -17220,14 +17224,14 @@ cas-ver:VerificationResult
 		"Verifikationsergebnis"@de
 		;
 	dcterms:modified "2026-05-16T06:34:03Z"^^xsd:dateTime ;
-	skos:definition
-		"Represents an inspection result for an inspection criterium"@en ,
-		"Repräsentiert ein Prüfergebnis für ein Prüfkriterium"@de
-		;
 	rdfs:definedBy
 		cas-ref:ISO-20170 ,
 		cas-ref:ISO-22514-2 ,
 		cas-ref:ISO-22514-6
+		;
+	skos:definition
+		"Represents an inspection result for an inspection criterium"@en ,
+		"Repräsentiert ein Prüfergebnis für ein Prüfkriterium"@de
 		;
 	.
 

@@ -179,6 +179,7 @@ cas:Entity
 
 cas:Entity_Shape
 	a sh:NodeShape ;
+	sh:property cas:label_Shape ;
 	sh:targetClass cas:Entity ;
 	.
 
@@ -216,8 +217,11 @@ cas:Organizer
 
 cas:Organizer_Shape
 	a sh:NodeShape ;
-	sh:or _:blank3 ;
-	sh:property cas:Category_Shape ;
+	sh:property
+		cas:Category_Shape ,
+		cas:comment_Shape ,
+		cas:label_Shape
+		;
 	sh:targetClass cas:Organizer ;
 	.
 
@@ -236,7 +240,10 @@ cas:Outline
 
 cas:Outline_Shape
 	a sh:NodeShape ;
-	sh:or _:blank4 ;
+	sh:property
+		cas:comment_Shape ,
+		cas:label_Shape
+		;
 	sh:targetClass cas:Outline ;
 	.
 
@@ -292,6 +299,17 @@ cas:Relationship_Shape
 		cas:linksTarget_Shape
 		;
 	sh:targetClass cas:Relationship ;
+	.
+
+cas:comment_Shape
+	a sh:PropertyShape ;
+	sh:path rdfs:comment ;
+	.
+
+cas:label_Shape
+	a sh:PropertyShape ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:path rdfs:label ;
 	.
 
 cas:linksSource
@@ -372,45 +390,5 @@ cas:uses_Shape
 	a sh:PropertyShape ;
 	sh:class cas:Entity ;
 	sh:path cas:uses ;
-	.
-
-_:blank1
-	rdf:first _:blank5 ;
-	rdf:rest rdf:nil ;
-	.
-
-_:blank2
-	rdf:first _:blank6 ;
-	rdf:rest rdf:nil ;
-	.
-
-_:blank3
-	rdf:first _:blank7 ;
-	rdf:rest _:blank1 ;
-	.
-
-_:blank4
-	rdf:first _:blank8 ;
-	rdf:rest _:blank2 ;
-	.
-
-_:blank5
-	sh:minCount "1"^^xsd:integer ;
-	sh:path rdfs:comment ;
-	.
-
-_:blank6
-	sh:minCount "1"^^xsd:integer ;
-	sh:path rdfs:comment ;
-	.
-
-_:blank7
-	sh:minCount "1"^^xsd:integer ;
-	sh:path rdfs:label ;
-	.
-
-_:blank8
-	sh:minCount "1"^^xsd:integer ;
-	sh:path rdfs:label ;
 	.
 

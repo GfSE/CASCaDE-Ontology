@@ -2,6 +2,9 @@
 	{
 		"@id" : "http://www.omg.org/spec/CASCaRA/ontology/",
 		"@type" : "owl:Ontology",
+		"rdfs:label" : {
+			"@value" : "Domain Ontology"
+		},
 		"dcterms:abstract" : {
 			"@value" : "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice."
 		},
@@ -207,17 +210,14 @@
 		"dcterms:title" : {
 			"@value" : "CASCaRA Domain Ontology"
 		},
-		"owl:versionInfo" : {
-			"@value" : "1.0"
-		},
 		"owl:imports" : [
 			{ "@id" : "http://www.omg.org/spec/CASCaRA/metamodel/" },
 			{ "@id" : "http://www.omg.org/spec/CASCaRA/references/" },
 			{ "@id" : "https://www.omg.org/spec/Commons/AboutCommons/" }
 			
 		],
-		"rdfs:label" : {
-			"@value" : "Domain Ontology"
+		"owl:versionInfo" : {
+			"@value" : "1.0"
 		},
 		"@context" : {
 			
@@ -3117,6 +3117,7 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-11-30T21:02:09Z"
 		},
+		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-26580" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -3128,7 +3129,6 @@
 			}
 			
 		],
-		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-26580" },
 		"@context" : {
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
@@ -6166,6 +6166,7 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-11-30T20:52:38Z"
 		},
+		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-26580" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -6177,7 +6178,6 @@
 			}
 			
 		],
-		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-26580" },
 		"@context" : {
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
@@ -14004,6 +14004,12 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-06-29T23:32:07Z"
 		},
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:CSA-ISO-IEC-IEEE-15288" },
+			{ "@id" : "cas-ref:ISO-IEC-20246" },
+			{ "@id" : "cas-ref:VDI-2519-Blatt-1" }
+			
+		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -14013,12 +14019,6 @@
 				"@language" : "de",
 				"@value" : "Eine System-, Produkt- oder Komponentenfunktion beschreibt die Art und Weise, wie ein System arbeitet oder eine bestimmte Aufgabe ausführt."
 			}
-			
-		],
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:CSA-ISO-IEC-IEEE-15288" },
-			{ "@id" : "cas-ref:ISO-IEC-20246" },
-			{ "@id" : "cas-ref:VDI-2519-Blatt-1" }
 			
 		],
 		"@context" : {
@@ -15689,6 +15689,12 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-06-29T23:31:48Z"
 		},
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:CSA-ISO-IEC-IEEE-15288" },
+			{ "@id" : "cas-ref:ISO-IEC-IEEE-29148" },
+			{ "@id" : "cas-ref:VDI-2519-Blatt-1" }
+			
+		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -15698,12 +15704,6 @@
 				"@language" : "de",
 				"@value" : "Merkmale, die die erforderliche Leistung spezifizieren, um bestimmte Ziele unter bestimmten Bedingungen zu erreichen.\u000aAnforderungen können als \"muss\", \"kann\" und \"soll\" klassifiziert sein.\u000aA. Eine Bedingung oder Fähigkeit, die ein Benutzer benötigt, um ein Problem zu lösen oder ein Ziel zu erreichen.\u000aB. Eine Bedingung oder Fähigkeit, die ein System oder eine Systemkomponente erfüllen oder besitzen muss, um einen Vertrag, eine Norm, eine Spezifikation oder ein anderes formell vorgeschriebenes Dokument zu erfüllen.\u000aC. Eine dokumentierte Darstellung einer Bedingung oder Fähigkeit wie in Definition (A:) oder (B).\u000ahttps://intranet.prostep.org/display/PROJ/Glossary"
 			}
-			
-		],
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:CSA-ISO-IEC-IEEE-15288" },
-			{ "@id" : "cas-ref:ISO-IEC-IEEE-29148" },
-			{ "@id" : "cas-ref:VDI-2519-Blatt-1" }
 			
 		],
 		"@context" : {
@@ -17068,6 +17068,7 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-06-29T23:31:32Z"
 		},
+		"rdfs:definedBy" : { "@id" : "cas-ref:VDI-2519-Blatt-1" },
 		"skos:definition" : [
 			{
 				"@language" : "de",
@@ -17079,7 +17080,6 @@
 			}
 			
 		],
-		"rdfs:definedBy" : { "@id" : "cas-ref:VDI-2519-Blatt-1" },
 		"@context" : {
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
@@ -19372,6 +19372,7 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-03-30T09:08:39Z"
 		},
+		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-16232" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -19383,7 +19384,6 @@
 			}
 			
 		],
-		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-16232" },
 		"@context" : {
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
@@ -20021,6 +20021,12 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-05-16T06:25:56Z"
 		},
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:DIN-EN-ISO-14405-1" },
+			{ "@id" : "cas-ref:DIN-EN-ISO-14405-2" },
+			{ "@id" : "cas-ref:DIN-EN-ISO-14405-3" }
+			
+		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -20030,12 +20036,6 @@
 				"@language" : "de",
 				"@value" : "Repräsentiert ein Größenmaß"
 			}
-			
-		],
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:DIN-EN-ISO-14405-1" },
-			{ "@id" : "cas-ref:DIN-EN-ISO-14405-2" },
-			{ "@id" : "cas-ref:DIN-EN-ISO-14405-3" }
 			
 		],
 		"@context" : {
@@ -20263,6 +20263,7 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-11-30T21:07:25Z"
 		},
+		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-7499" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -20274,7 +20275,6 @@
 			}
 			
 		],
-		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-7499" },
 		"@context" : {
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
@@ -20441,6 +20441,7 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-04-01T18:27:12Z"
 		},
+		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-ISO-15786" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -20452,7 +20453,6 @@
 			}
 			
 		],
-		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-ISO-15786" },
 		"@context" : {
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
@@ -21443,6 +21443,7 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-09-28T14:15:44Z"
 		},
+		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-EN-ISO-1101" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -21454,7 +21455,6 @@
 			}
 			
 		],
-		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-EN-ISO-1101" },
 		"@context" : {
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -21614,6 +21614,7 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-12-01T01:01:22Z"
 		},
+		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-EN-ISO-4885" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -21625,7 +21626,6 @@
 			}
 			
 		],
-		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-EN-ISO-4885" },
 		"@context" : {
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
@@ -22558,6 +22558,7 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-11-26T02:39:29Z"
 		},
+		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-ISO-15786" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -22569,7 +22570,6 @@
 			}
 			
 		],
-		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-ISO-15786" },
 		"@context" : {
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
@@ -26865,6 +26865,11 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-04-12T08:51:55Z"
 		},
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:VDA-231-106" },
+			{ "@id" : "cas-ref:VDA-231-200" }
+			
+		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -26874,11 +26879,6 @@
 				"@language" : "de",
 				"@value" : "Werkstoff, das dieser mechanischen Komponente zugeordnet ist"
 			}
-			
-		],
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:VDA-231-106" },
-			{ "@id" : "cas-ref:VDA-231-200" }
 			
 		],
 		"@context" : {
@@ -29691,6 +29691,12 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-09-28T14:15:57Z"
 		},
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:DIN-EN-ISO-21920" },
+			{ "@id" : "cas-ref:DIN-EN-ISO-21920-1" },
+			{ "@id" : "cas-ref:DIN-EN-ISO-21920-3" }
+			
+		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -29700,12 +29706,6 @@
 				"@language" : "de",
 				"@value" : "Repräsentiert die Oberflächenbeschaffenheit wie z. B. Rauheit und Welligkeit"
 			}
-			
-		],
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:DIN-EN-ISO-21920" },
-			{ "@id" : "cas-ref:DIN-EN-ISO-21920-1" },
-			{ "@id" : "cas-ref:DIN-EN-ISO-21920-3" }
 			
 		],
 		"@context" : {
@@ -29751,6 +29751,7 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-06-25T07:04:48Z"
 		},
+		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-ISO-15786" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -29762,7 +29763,6 @@
 			}
 			
 		],
-		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-ISO-15786" },
 		"@context" : {
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
@@ -31541,6 +31541,11 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-12-01T01:45:52Z"
 		},
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:ISO-IEC-19513" },
+			{ "@id" : "cas-ref:ISO-IEC-20246" }
+			
+		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -31550,11 +31555,6 @@
 				"@language" : "de",
 				"@value" : "Eine Klasse im Quellcode, die eine logische Sammlung von Daten und Funktionen darstellt"
 			}
-			
-		],
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:ISO-IEC-19513" },
-			{ "@id" : "cas-ref:ISO-IEC-20246" }
 			
 		],
 		"@context" : {
@@ -31601,6 +31601,12 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-12-01T01:55:16Z"
 		},
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:DO-297" },
+			{ "@id" : "cas-ref:ISO-IEC-20246" },
+			{ "@id" : "cas-ref:ISO-IEC-IEEE-29119-1" }
+			
+		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -31610,12 +31616,6 @@
 				"@language" : "de",
 				"@value" : "Eine kompilierte Softwarekomponente, die in einem Produkt verwendet werden soll, d. h. eine ausführbare Datei oder Bibliothek"
 			}
-			
-		],
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:DO-297" },
-			{ "@id" : "cas-ref:ISO-IEC-20246" },
-			{ "@id" : "cas-ref:ISO-IEC-IEEE-29119-1" }
 			
 		],
 		"@context" : {
@@ -31662,6 +31662,12 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-12-01T01:55:13Z"
 		},
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:DO-297" },
+			{ "@id" : "cas-ref:ISO-IEC-20246" },
+			{ "@id" : "cas-ref:ISO-IEC-IEEE-29119-1" }
+			
+		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -31671,12 +31677,6 @@
 				"@language" : "de",
 				"@value" : "Eine Schnittstelle im Quellcode, die es einer Klasse ermöglicht, mit anderen Komponenten einer Software zu interagieren"
 			}
-			
-		],
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:DO-297" },
-			{ "@id" : "cas-ref:ISO-IEC-20246" },
-			{ "@id" : "cas-ref:ISO-IEC-IEEE-29119-1" }
 			
 		],
 		"@context" : {
@@ -31838,6 +31838,7 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-05-31T07:58:37Z"
 		},
+		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-IEC-20246" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -31849,7 +31850,6 @@
 			}
 			
 		],
-		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-IEC-20246" },
 		"@context" : {
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
@@ -32582,6 +32582,7 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-06-09T00:15:41Z"
 		},
+		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-IEC-20246" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -32593,7 +32594,6 @@
 			}
 			
 		],
-		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-IEC-20246" },
 		"@context" : {
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
@@ -33329,6 +33329,7 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-05-31T07:58:53Z"
 		},
+		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-IEC-20246" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -33340,7 +33341,6 @@
 			}
 			
 		],
-		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-IEC-20246" },
 		"@context" : {
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
@@ -33855,6 +33855,15 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-05-31T07:59:01Z"
 		},
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:ARP4754B" },
+			{ "@id" : "cas-ref:ARP4761A" },
+			{ "@id" : "cas-ref:DIN-EN-61508-1" },
+			{ "@id" : "cas-ref:ISO-21448" },
+			{ "@id" : "cas-ref:ISO-26262-1" },
+			{ "@id" : "cas-ref:ISO-IEC-20246" }
+			
+		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -33864,15 +33873,6 @@
 				"@language" : "de",
 				"@value" : "Repräsentiert eine Abweichung eines Systems, Produkts oder einer Komponente. Eine Abweichung beeinträchtigt eine Funktion. Abweichungen werden typischerweise in einer FMEA verwaltet."
 			}
-			
-		],
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:ARP4754B" },
-			{ "@id" : "cas-ref:ARP4761A" },
-			{ "@id" : "cas-ref:DIN-EN-61508-1" },
-			{ "@id" : "cas-ref:ISO-21448" },
-			{ "@id" : "cas-ref:ISO-26262-1" },
-			{ "@id" : "cas-ref:ISO-IEC-20246" }
 			
 		],
 		"@context" : {
@@ -36118,6 +36118,12 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-05-31T07:58:06Z"
 		},
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:CSA-ISO-IEC-IEEE-15288" },
+			{ "@id" : "cas-ref:ISO-IEC-20246" },
+			{ "@id" : "cas-ref:ISO-IEC-IEEE-42010" }
+			
+		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -36127,12 +36133,6 @@
 				"@language" : "de",
 				"@value" : "Repräsentiert eine generische Systemkomponente"
 			}
-			
-		],
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:CSA-ISO-IEC-IEEE-15288" },
-			{ "@id" : "cas-ref:ISO-IEC-20246" },
-			{ "@id" : "cas-ref:ISO-IEC-IEEE-42010" }
 			
 		],
 		"@context" : {
@@ -37274,6 +37274,7 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2025-12-01T01:51:03Z"
 		},
+		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-IEC-IEEE-29119-1" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -37285,7 +37286,6 @@
 			}
 			
 		],
-		"rdfs:definedBy" : { "@id" : "cas-ref:ISO-IEC-IEEE-29119-1" },
 		"@context" : {
 			"cas-val" : "http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/",
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
@@ -37995,6 +37995,12 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-07-08T17:20:07Z"
 		},
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:DIN-23601" },
+			{ "@id" : "cas-ref:ISO-7533" },
+			{ "@id" : "cas-ref:VDA-231-300" }
+			
+		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -38004,12 +38010,6 @@
 				"@language" : "de",
 				"@value" : "Stellt ein Merkmal dar, das geprüft werden muss, um die Funktion des Produkts zu gewährleisten."
 			}
-			
-		],
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:DIN-23601" },
-			{ "@id" : "cas-ref:ISO-7533" },
-			{ "@id" : "cas-ref:VDA-231-300" }
 			
 		],
 		"@context" : {
@@ -38632,6 +38632,11 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-05-16T06:34:40Z"
 		},
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:DIN-23601" },
+			{ "@id" : "cas-ref:ISO-22514-7" }
+			
+		],
 		"skos:definition" : [
 			{
 				"@language" : "de",
@@ -38641,11 +38646,6 @@
 				"@language" : "en",
 				"@value" : "Specifies what characteristics must be inspected using which equipment for which purpose."
 			}
-			
-		],
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:DIN-23601" },
-			{ "@id" : "cas-ref:ISO-22514-7" }
 			
 		],
 		"@context" : {
@@ -39049,6 +39049,7 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-07-08T17:19:30Z"
 		},
+		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-23601" },
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -39060,7 +39061,6 @@
 			}
 			
 		],
-		"rdfs:definedBy" : { "@id" : "cas-ref:DIN-23601" },
 		"@context" : {
 			"cas-ver" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/",
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
@@ -39222,6 +39222,12 @@
 			"@type" : "xsd:dateTime",
 			"@value" : "2026-05-16T06:34:03Z"
 		},
+		"rdfs:definedBy" : [
+			{ "@id" : "cas-ref:ISO-20170" },
+			{ "@id" : "cas-ref:ISO-22514-2" },
+			{ "@id" : "cas-ref:ISO-22514-6" }
+			
+		],
 		"skos:definition" : [
 			{
 				"@language" : "en",
@@ -39231,12 +39237,6 @@
 				"@language" : "de",
 				"@value" : "Repräsentiert ein Prüfergebnis für ein Prüfkriterium"
 			}
-			
-		],
-		"rdfs:definedBy" : [
-			{ "@id" : "cas-ref:ISO-20170" },
-			{ "@id" : "cas-ref:ISO-22514-2" },
-			{ "@id" : "cas-ref:ISO-22514-6" }
 			
 		],
 		"@context" : {

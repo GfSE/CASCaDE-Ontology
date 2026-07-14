@@ -13,6 +13,7 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	
 	<owl:Ontology rdf:about="http://www.omg.org/spec/CASCaRA/references/">
+		<rdfs:label>Resources Ontology</rdfs:label>
 		<dcterms:abstract>The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\nNote that this version of the ontology is in development and may be subject to modifications without notice.</dcterms:abstract>
 		<dcterms:contributor>Alvarez Rodriguez, José Maria, UC3 Madrid</dcterms:contributor>
 		<dcterms:contributor>Arslan, Serkan, INOMIC Solutions GmbH</dcterms:contributor>
@@ -138,9 +139,8 @@ Copyright (c) 2019-2026 ZF Friedrichshafen
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &apos;Software&apos;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nThe software is provided &apos;as is&apos;, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
 https://opensource.org/licenses/MIT</dcterms:license>
 		<dcterms:title>CASCaRA Resources Ontology</dcterms:title>
-		<owl:versionInfo>1.0</owl:versionInfo>
 		<owl:imports rdf:resource="https://www.omg.org/spec/Commons/AboutCommons/"/>
-		<rdfs:label>Resources Ontology</rdfs:label>
+		<owl:versionInfo>1.0</owl:versionInfo>
 	</owl:Ontology>
 	
 	<cmns-doc:ReferenceDocument rdf:about="http://www.omg.org/spec/CASCaRA/references/3D-Measurement-Data-Management-with-I++-DMS">

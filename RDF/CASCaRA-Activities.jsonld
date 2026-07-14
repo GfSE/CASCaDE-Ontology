@@ -2,6 +2,9 @@
 	{
 		"@id" : "http://www.omg.org/spec/CASCaRA/activities/",
 		"@type" : "owl:Ontology",
+		"rdfs:label" : {
+			"@value" : "Process Ontology"
+		},
 		"dcterms:abstract" : {
 			"@value" : "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice."
 		},
@@ -207,17 +210,14 @@
 		"dcterms:title" : {
 			"@value" : "CASCaRA Process Ontology"
 		},
-		"owl:versionInfo" : {
-			"@value" : "1.0"
-		},
 		"owl:imports" : [
 			{ "@id" : "http://www.omg.org/spec/CASCaRA/metamodel/" },
 			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/" },
 			{ "@id" : "https://www.omg.org/spec/Commons/AboutCommons/" }
 			
 		],
-		"rdfs:label" : {
-			"@value" : "Process Ontology"
+		"owl:versionInfo" : {
+			"@value" : "1.0"
 		},
 		"@context" : {
 			

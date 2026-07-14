@@ -2,6 +2,9 @@
 	{
 		"@id" : "http://www.omg.org/spec/CASCaRA/references/",
 		"@type" : "owl:Ontology",
+		"rdfs:label" : {
+			"@value" : "Resources Ontology"
+		},
 		"dcterms:abstract" : {
 			"@value" : "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice."
 		},
@@ -207,12 +210,9 @@
 		"dcterms:title" : {
 			"@value" : "CASCaRA Resources Ontology"
 		},
+		"owl:imports" : { "@id" : "https://www.omg.org/spec/Commons/AboutCommons/" },
 		"owl:versionInfo" : {
 			"@value" : "1.0"
-		},
-		"owl:imports" : { "@id" : "https://www.omg.org/spec/Commons/AboutCommons/" },
-		"rdfs:label" : {
-			"@value" : "Resources Ontology"
 		},
 		"@context" : {
 			

@@ -1,6 +1,7 @@
 ﻿// SPDX-FileCopyrightText: 2026 prostep ivip Association
 // SPDX-FileCopyrightText: 2026 Michael Kirsch <michael.kirsch@em.ag>
 
+using VDS.RDF;
 using VDS.RDF.Shacl;
 using VDS.RDF.Shacl.Validation;
 
@@ -44,7 +45,7 @@ public class RdfValidation
                 {
                     _resultsListBox.Items.Add("----------------------------------------");
 
-                    _resultsListBox.Items.Add($"Severity: {instanceValidationReportResult.Severity}");
+                    _resultsListBox.Items.Add($"Severity: " + GetResolveNodeValue(referenceShapesGraph, instanceValidationReportResult.Severity));
 
                     if (instanceValidationReportResult.FocusNode != null)
                     {
@@ -72,5 +73,33 @@ public class RdfValidation
                 _resultsListBox.Items.Add("Validation successful. Instance conforms to SHACL shapes.");
             }
         }
+    }
+
+    private string GetResolveNodeValue(ShapesGraph referenceShapesGraph, INode node)
+    {
+        string resolvedNodeValue = node.ToString();
+        if (node is UriNode uriNode)
+        {
+            if (uriNode.Uri.OriginalString.StartsWith("http://www.w3.org/ns/shacl#"))
+            {
+                resolvedNodeValue = resolvedNodeValue.Replace("http://www.w3.org/ns/shacl#", "sh:");
+            }
+            else
+            {
+                foreach (string namespacePrefix in referenceShapesGraph.NamespaceMap.Prefixes)
+                {
+                    if (_graphToValidate.Graph.NamespaceMap.HasNamespace(namespacePrefix))
+                    {
+                        Uri namespaceUri = _graphToValidate.Graph.NamespaceMap.GetNamespaceUri(namespacePrefix);
+                        if (uriNode.Uri.OriginalString.StartsWith(namespaceUri.OriginalString))
+                        {
+                            resolvedNodeValue = resolvedNodeValue.Replace(namespaceUri.OriginalString, namespacePrefix);
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        return resolvedNodeValue;
     }
 }

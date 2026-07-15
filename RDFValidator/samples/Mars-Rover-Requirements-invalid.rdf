@@ -6,56 +6,50 @@
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935">
 		<rdfs:label>Legal requirements</rdfs:label>
 		<default:identifier>_17_0_3_1_60c0217_1554373817716_227628_13935</default:identifier>
-		<default:number></default:number>
-		<default:title>Legal requirements</default:title>
-		<default:description></default:description>
+		<default:number/>
+		<default:description/>
 		<default:type>MDReqIF_1712564283421_181534_4</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_540169_14529">
 		<rdfs:label>Legal safety requirements manufacturing</rdfs:label>
 		<default:identifier>_17_0_3_1_60c0217_1554373833970_540169_14529</default:identifier>
-		<default:number></default:number>
-		<default:title>Legal safety requirements manufacturing</default:title>
-		<default:description></default:description>
+		<default:number/>
 		<default:type>MDReqIF_1712564283421_181534_4</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146322885_948291_5555">
 		<rdfs:label>Legal safety requirement testing</rdfs:label>
-		<default:identifier>_2021x_2_8d501e7_1710146322885_948291_5555</default:identifier>
-		<default:number></default:number>
+		<default:number/>
 		<default:title>Legal safety requirement testing</default:title>
-		<default:description></default:description>
+		<default:description/>
 		<default:type>MDReqIF_1712564283421_181534_4</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146360070_21059_5559">
 		<rdfs:label>Legal ergonomy requierments manufacturing</rdfs:label>
 		<default:identifier>_2021x_2_8d501e7_1710146360070_21059_5559</default:identifier>
-		<default:number></default:number>
 		<default:title>Legal ergonomy requierments manufacturing</default:title>
-		<default:description></default:description>
+		<default:description/>
 		<default:type>MDReqIF_1712564283421_181534_4</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528">
 		<rdfs:label>2 Technical requirements</rdfs:label>
 		<default:identifier>_17_0_3_1_60c0217_1554373833970_87496_14528</default:identifier>
 		<default:number>2</default:number>
-		<default:title>Technical requirements</default:title>
-		<default:description></default:description>
+		<default:description/>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027">
 		<rdfs:label>2.1 Structure</rdfs:label>
 		<default:identifier>_17_0_3_1_60c0217_1554373894872_831523_16027</default:identifier>
 		<default:number>2.1</default:number>
 		<default:title>Structure</default:title>
-		<default:description></default:description>
+		<default:description/>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_619833_17513">
 		<rdfs:label>2.1.1 Head</rdfs:label>
@@ -64,7 +58,7 @@
 		<default:title>Head</default:title>
 		<default:description>The Mars Rover shall have a head</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152799440_775076_5744">
 		<rdfs:label>2.1.1.1 Head Position</rdfs:label>
@@ -73,7 +67,7 @@
 		<default:title>Head Position</default:title>
 		<default:description>The Head of the Mars Rover shall be higher mounted than body, suspension and traction unit.</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153330085_930613_5754">
 		<rdfs:label>2.1.1.2 Head Function</rdfs:label>
@@ -82,7 +76,7 @@
 		<default:title>Head Function</default:title>
 		<default:description>The Head of the Mars Rover shall carry sensors and a LED Display.</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146462874_714909_5562">
 		<rdfs:label>2.1.2 Body</rdfs:label>
@@ -91,7 +85,7 @@
 		<default:title>Body</default:title>
 		<default:description>The Mars Rover shall have a body</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146492047_939247_5565">
 		<rdfs:label>2.1.3 Suspension</rdfs:label>
@@ -100,7 +94,7 @@
 		<default:title>Suspension</default:title>
 		<default:description>The Mars Rover shall have a suspension suspending the traction unit</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146526694_117941_5568">
 		<rdfs:label>2.1.4 Traction Unit</rdfs:label>
@@ -109,7 +103,7 @@
 		<default:title>Traction Unit</default:title>
 		<default:description>The Mars Rover shall have a traction unit providing traction to the ground</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028">
 		<rdfs:label>2.2 Power Supply</rdfs:label>
@@ -118,7 +112,7 @@
 		<default:title>Power Supply</default:title>
 		<default:description>The Mars Rover shall have a power supply.</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_334692_17515">
 		<rdfs:label>2.2.1 External Power Supply</rdfs:label>
@@ -127,7 +121,7 @@
 		<default:title>External Power Supply</default:title>
 		<default:description>The Mars Rover shall be operable with internal power supply only.</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_839759_17516">
 		<rdfs:label>2.2.2 Internal Power Supply</rdfs:label>
@@ -139,7 +133,7 @@
 * it contains an energy management system
 * it contains a power distribution system</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373992768_924005_18953">
 		<rdfs:label>2.2.2.1 Energy Storage</rdfs:label>
@@ -148,7 +142,7 @@
 		<default:title>Energy Storage</default:title>
 		<default:description>The Mars Rover shall have means to re-charde its energy storage system.</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373992768_101922_18958">
 		<rdfs:label>2.2.2.2 Available Power</rdfs:label>
@@ -160,7 +154,7 @@
 * The operation requires less than or equal to 60% of the max energy in peak load
 * the environmental conditions are mission normal</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_80329_17517">
 		<rdfs:label>2.2.3 Energy Re-Charging</rdfs:label>
@@ -171,7 +165,7 @@
 * re-charging at mission normal conditions
 * no energy consumption of the Mars Rover since the re-charging period</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912">
 		<rdfs:label>2.2.5 Electrical Values</rdfs:label>
@@ -180,7 +174,7 @@
 		<default:title>Electrical Values</default:title>
 		<default:description>The Mars Rover shall use 12 V DC voltage</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555340930579_881851_34234">
 		<rdfs:label>2.2.5.1 Motor Voltage</rdfs:label>
@@ -191,7 +185,7 @@
 * using 12 V voltage
 * using not more than 30 A current</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2022x_8a9027b_1707924576905_883240_5487">
 		<rdfs:label>2.2.5.2 Encoder Voltage</rdfs:label>
@@ -200,7 +194,7 @@
 		<default:title>Encoder Voltage</default:title>
 		<default:description>The Mars Rover shall have an encoder powered by 5 V voltage.</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_551019_15911">
 		<rdfs:label>2.2.4 Energy Management</rdfs:label>
@@ -213,7 +207,7 @@
 * limiting energy to individual systems to prioritize individual systems
 * managing energy that the Mars Rover can recharge by itself in a time period of less than 24 hours</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029">
 		<rdfs:label>2.3 Motion</rdfs:label>
@@ -222,7 +216,7 @@
 		<default:title>Motion</default:title>
 		<default:description>The Mars Rover shall be able to move by itself.</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_635549_17411">
 		<rdfs:label>2.3.2 Motion over Obstacles</rdfs:label>
@@ -235,7 +229,7 @@
 * the slope angle downhil is max. 30 degree
 * the roll angle of the Mars Rover since moving over the obstacle never exceeds an angle of 30 degree</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2022x_8a9027b_1708424764583_139395_5943">
 		<rdfs:label>2.3.2.1 Deformation of the bogie</rdfs:label>
@@ -244,7 +238,7 @@
 		<default:title>Deformation of the bogie</default:title>
 		<default:description>The bogie of the suspension system shall not bend more than 5% since all motion events.</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710147594026_511625_5572">
 		<rdfs:label>2.3.2.2 Plastic deformation of the bogie</rdfs:label>
@@ -253,7 +247,7 @@
 		<default:title>Plastic deformation of the bogie</default:title>
 		<default:description>The bogie of the suspension system shall not deform plastically for bending less than or equal to 7%.</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_606232_17414">
 		<rdfs:label>2.3.4 Motion Ground Contact</rdfs:label>
@@ -262,7 +256,7 @@
 		<default:title>Motion Ground Contact</default:title>
 		<default:description>The Mars Rover shall produce a ground pressure of max. 20 kPa.</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947253_22759_17417">
 		<rdfs:label>2.3.1 Max Motion Speed</rdfs:label>
@@ -271,7 +265,7 @@
 		<default:title>Max Motion Speed</default:title>
 		<default:description>The Mars Rover shall be able to move by itself with a max. speed of 7 m/s.</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947253_787088_17420">
 		<rdfs:label>2.3.3 Motion over slopes</rdfs:label>
@@ -283,7 +277,7 @@
 * slope angle downhill max. 30 degree
 * slope angle sidehill max 15 degree</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_76355_15935">
 		<rdfs:label>2.3.5 Electric Motion Drive</rdfs:label>
@@ -292,7 +286,7 @@
 		<default:title>Electric Motion Drive</default:title>
 		<default:description>The Mars Rover shall have one left and one right traction device both driven by one electrical motor each.</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_384276_15938">
 		<rdfs:label>2.3.8 Motion Distance</rdfs:label>
@@ -301,7 +295,7 @@
 		<default:title>Motion Distance</default:title>
 		<default:description>The Mars Rover shall be able to move at least 100m per day on all slopes where it is able to move on.</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_923366_15937">
 		<rdfs:label>2.3.7 Min Motion Speed</rdfs:label>
@@ -310,7 +304,7 @@
 		<default:title>Min Motion Speed</default:title>
 		<default:description>The Mars Rover shall be able to move by itself with a min. speed of 1 m/min</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_941195_15936">
 		<rdfs:label>2.3.6 Start Driving</rdfs:label>
@@ -319,7 +313,7 @@
 		<default:title>Start Driving</default:title>
 		<default:description>The Mars Rover shall start driving by itself on all slopes where it is able to move on.</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555336591336_85392_31015">
 		<rdfs:label>2.3.9 Stopping</rdfs:label>
@@ -328,7 +322,7 @@
 		<default:title>Stopping</default:title>
 		<default:description>The Mars Rover shall be able to stop moving by itself down to 0 m/s speed.</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148366772_438416_5581">
 		<rdfs:label>2.3.10 Hill Holding</rdfs:label>
@@ -338,7 +332,7 @@
 		<default:description>The Mars Rover shall maintain 0 m/s motion on all slopes it is able to move on.
 </default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148561688_473742_5584">
 		<rdfs:label>2.3.11 Steering</rdfs:label>
@@ -347,7 +341,7 @@
 		<default:title>Steering</default:title>
 		<default:description>The Mars Rover shall be able to change driving direction to the left and to the right.</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148601847_750005_5587">
 		<rdfs:label>2.3.12 Diving Direction</rdfs:label>
@@ -356,7 +350,7 @@
 		<default:title>Diving Direction</default:title>
 		<default:description>The Mars Rover shall be able to drive forwards and backwards.</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590">
 		<rdfs:label>2.3.13 Navigate</rdfs:label>
@@ -365,7 +359,7 @@
 		<default:title>Navigate</default:title>
 		<default:description>The Mars Rover shall be able to calculate a route between its actual position and a target position</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148712446_394547_5593">
 		<rdfs:label>2.3.13.1 Detecting Obstacles</rdfs:label>
@@ -374,7 +368,7 @@
 		<default:title>Detecting Obstacles</default:title>
 		<default:description>The Mars Rover shall be able to identify obstacles by itself</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148782585_264451_5596">
 		<rdfs:label>2.3.13.2 Map Data</rdfs:label>
@@ -383,7 +377,7 @@
 		<default:title>Map Data</default:title>
 		<default:description>The Mars Rover shall have map data stored enabling it to calculate a route between its actual position and a target position</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148844988_144183_5599">
 		<rdfs:label>2.3.13.3 Preventing Obstacles</rdfs:label>
@@ -394,7 +388,7 @@
 * the obstacle exceeds the measures of an acceptable obstacle as required in 1.1.3.2
 * a rout is available around the obstacle or rearwards to a position capable to reach the target without crossing the obstacle.</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030">
 		<rdfs:label>2.4 Remote Control</rdfs:label>
@@ -403,7 +397,7 @@
 		<default:title>Remote Control</default:title>
 		<default:description>The Mars Rover shall be controllable remote.</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888790_510287_15941">
 		<rdfs:label>2.4.2 Remote Steering</rdfs:label>
@@ -412,7 +406,7 @@
 		<default:title>Remote Steering</default:title>
 		<default:description>The Mars Rover steering direction shall be controllable remote.</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_288492_15940">
 		<rdfs:label>2.4.1 Remote Speed Control</rdfs:label>
@@ -421,7 +415,7 @@
 		<default:title>Remote Speed Control</default:title>
 		<default:description>The Mars Rover speed shall be controllable remote.</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710149292477_668117_5602">
 		<rdfs:label>2.4.3 Remote Control Priority</rdfs:label>
@@ -430,7 +424,7 @@
 		<default:title>Remote Control Priority</default:title>
 		<default:description>The Mars Rover remote control shall be able to overrule the auto navigation function.</default:description>
 		<default:type>MDReqIF_1712564283503_898570_59</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_183392_16031">
 		<rdfs:label>2.5 Optical Feedback</rdfs:label>
@@ -439,7 +433,7 @@
 		<default:title>Optical Feedback</default:title>
 		<default:description>The Mars Rover shall provide optical information if it is operable or not.</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373890795_302548_15964">
 		<rdfs:label>2.5.1 LED</rdfs:label>
@@ -448,7 +442,7 @@
 		<default:title>LED</default:title>
 		<default:description>The Mars Rover shall have a LED for optical information if it is operable or not.</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_124599_16032">
 		<rdfs:label>2.6 Max Mass</rdfs:label>
@@ -457,7 +451,7 @@
 		<default:title>Max Mass</default:title>
 		<default:description>The Mars Rover shall have a total mass of not more than 12 kg</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153834097_967050_5805">
 		<rdfs:label>2.6.1 Mars Rover Mass</rdfs:label>
@@ -466,7 +460,7 @@
 		<default:title>Mars Rover Mass</default:title>
 		<default:description>The Mars Rover shall have a total mass of not more than 10 kg</default:description>
 		<default:type>MDReqIF_1712564283503_898570_59</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153885017_514661_5808">
 		<rdfs:label>2.6.2 Payload</rdfs:label>
@@ -475,7 +469,7 @@
 		<default:title>Payload</default:title>
 		<default:description>The Mars Rover shall have a payload of 2 kg.</default:description>
 		<default:type>MDReqIF_1712564283446_317325_10</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749">
 		<rdfs:label>2.7 Mars Rover Capabilities</rdfs:label>
@@ -492,7 +486,7 @@
 * Sampling of probes of gas of not more than 50 mm³ volume and pressure between 1 hPa up to 3.000 hPa
 * Sampling of biological probes of not more than 50 mm³ volume and not more than 30 mm length in any direction</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153615080_304380_5787">
 		<rdfs:label>2.7.1 Mars Rover Communication</rdfs:label>
@@ -501,7 +495,7 @@
 		<default:title>Mars Rover Communication</default:title>
 		<default:description>The Mars Rover shall be able to communicate sampled information to the Mars station.</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153678770_496381_5792">
 		<rdfs:label>2.7.2 Information Storage</rdfs:label>
@@ -510,7 +504,7 @@
 		<default:title>Information Storage</default:title>
 		<default:description>The Mars Rover shall be capable to store information up to 2 TB</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153727491_409919_5797">
 		<rdfs:label>2.7.3 Sample Storage</rdfs:label>
@@ -519,7 +513,7 @@
 		<default:title>Sample Storage</default:title>
 		<default:description>The Mars Rover shall be able to store probes up to 48 h long.</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153776399_96192_5800">
 		<rdfs:label>2.7.4 Unloading</rdfs:label>
@@ -528,7 +522,7 @@
 		<default:title>Unloading</default:title>
 		<default:description>The Mars Rover shall be able to unload stored probes into the Mars Station.</default:description>
 		<default:type>MDReqIF_1712564283461_752038_19</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695">
 		<rdfs:label>2.9 Operating on Mars</rdfs:label>
@@ -537,7 +531,7 @@
 		<default:title>Operating on Mars</default:title>
 		<default:description>The Mars Rover shall be able to operate on the planet Mars.</default:description>
 		<default:type>MDReqIF_1712564283513_737771_74</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151675649_994932_5700">
 		<rdfs:label>2.9.1 Operating Atmosphere</rdfs:label>
@@ -546,7 +540,7 @@
 		<default:title>Operating Atmosphere</default:title>
 		<default:description>The Mars Rover shall be able to operate in Mars atmosphere for at least 25 years.</default:description>
 		<default:type>MDReqIF_1712564283513_737771_74</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151718558_644987_5705">
 		<rdfs:label>2.9.2 Mars Gravity</rdfs:label>
@@ -555,7 +549,7 @@
 		<default:title>Mars Gravity</default:title>
 		<default:description>The Mars Rover shall be able to operate under Mars gravity of 3.71 m/s².</default:description>
 		<default:type>MDReqIF_1712564283513_737771_74</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151896250_201297_5710">
 		<rdfs:label>2.9.3 Mars Temperatures</rdfs:label>
@@ -564,7 +558,7 @@
 		<default:title>Mars Temperatures</default:title>
 		<default:description>The Mars Rover shall be able to operate in a temperature range from -80°C up to 80°C</default:description>
 		<default:type>MDReqIF_1712564283513_737771_74</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152037892_253674_5713">
 		<rdfs:label>2.9.4 Mars Radiation</rdfs:label>
@@ -573,7 +567,7 @@
 		<default:title>Mars Radiation</default:title>
 		<default:description>The Mars Rover shall be able to be fully operable under constant cosmic radiation of at least 250 mSv.</default:description>
 		<default:type>MDReqIF_1712564283513_737771_74</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653">
 		<rdfs:label>2.8 Landing on Mars</rdfs:label>
@@ -582,7 +576,7 @@
 		<default:title>Landing on Mars</default:title>
 		<default:description>The Mars Rover shall be able to land on planet Mars.</default:description>
 		<default:type>MDReqIF_1712564283513_737771_74</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150476050_13127_5658">
 		<rdfs:label>2.8.1 Landing Temperatures</rdfs:label>
@@ -591,7 +585,7 @@
 		<default:title>Landing Temperatures</default:title>
 		<default:description>The Mars Rover shall resist temperatures of not more than 100°C for not more than 7 minutes while staying full functional.</default:description>
 		<default:type>MDReqIF_1712564283513_737771_74</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150561344_954069_5661">
 		<rdfs:label>2.8.2 Landing Deceleration</rdfs:label>
@@ -602,7 +596,7 @@
 * Deceleration from 20.000 km/h at Mars atmosphere entry to 1.500 km/h in 4 minutes.
 * Deceleration from 1.500 km/s to 25 m/s in 3 minutes</default:description>
 		<default:type>MDReqIF_1712564283513_737771_74</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150880576_958104_5666">
 		<rdfs:label>2.8.3 Landing speed</rdfs:label>
@@ -613,7 +607,7 @@
 * The vertical speed at ground contact is not higher than 1 m/s
 * The horizontal speed at graund contact is not higher than 1 m/s</default:description>
 		<default:type>MDReqIF_1712564283513_737771_74</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151377993_602525_5676">
 		<rdfs:label>2.8.4 Landing Orientation</rdfs:label>
@@ -622,278 +616,278 @@
 		<default:title>Landing Orientation</default:title>
 		<default:description>The Mars Rover shall land on Mars with the traction units first contacting the ground.</default:description>
 		<default:type>MDReqIF_1712564283513_737771_74</default:type>
-		<default:type></default:type>
+		<default:type/>
 	</arch:Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373833970_540169_14529">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_540169_14529</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_540169_14529"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935_Requirement.partOf.Requirement__2021x_2_8d501e7_1710146322885_948291_5555">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146322885_948291_5555</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146322885_948291_5555"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935_Requirement.partOf.Requirement__2021x_2_8d501e7_1710146360070_21059_5559">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146360070_21059_5559</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146360070_21059_5559"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373894872_831523_16027">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373894872_990229_16028">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373894872_489031_16029">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373894872_844710_16030">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373894872_183392_16031">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_183392_16031</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_183392_16031"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373894872_124599_16032">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_124599_16032</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_124599_16032"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528_Requirement.partOf.Requirement__2021x_2_8d501e7_1710152920321_382759_5749">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528_Requirement.partOf.Requirement__2021x_2_8d501e7_1710151635216_154098_5695">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528_Requirement.partOf.Requirement__2021x_2_8d501e7_1710150433825_282917_5653">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373947269_619833_17513">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_619833_17513</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_619833_17513"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027_Requirement.partOf.Requirement__2021x_2_8d501e7_1710146462874_714909_5562">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146462874_714909_5562</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146462874_714909_5562"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027_Requirement.partOf.Requirement__2021x_2_8d501e7_1710146492047_939247_5565">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146492047_939247_5565</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146492047_939247_5565"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027_Requirement.partOf.Requirement__2021x_2_8d501e7_1710146526694_117941_5568">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146526694_117941_5568</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146526694_117941_5568"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_619833_17513_Requirement.partOf.Requirement__2021x_2_8d501e7_1710152799440_775076_5744">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_619833_17513</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152799440_775076_5744</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_619833_17513"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152799440_775076_5744"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_619833_17513_Requirement.partOf.Requirement__2021x_2_8d501e7_1710153330085_930613_5754">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_619833_17513</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153330085_930613_5754</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_619833_17513"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153330085_930613_5754"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373947269_334692_17515">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_334692_17515</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_334692_17515"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373947269_839759_17516">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_839759_17516</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_839759_17516"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373947269_80329_17517">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_80329_17517</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_80329_17517"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373886850_739640_15912">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373886850_551019_15911">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_551019_15911</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_551019_15911"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_839759_17516_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373992768_924005_18953">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_839759_17516</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373992768_924005_18953</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_839759_17516"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373992768_924005_18953"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_839759_17516_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373992768_101922_18958">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_839759_17516</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373992768_101922_18958</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_839759_17516"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373992768_101922_18958"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912_Requirement.partOf.Requirement__17_0_3_1_60c0217_1555340930579_881851_34234">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555340930579_881851_34234</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555340930579_881851_34234"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912_Requirement.partOf.Requirement__2022x_8a9027b_1707924576905_883240_5487">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2022x_8a9027b_1707924576905_883240_5487</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2022x_8a9027b_1707924576905_883240_5487"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_derivedFrom_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555340930579_881851_34234_Requirement.derivedFrom.Requirement__17_0_3_1_60c0217_1554373947238_606232_17414">
-		<arch:Requirement_derivedFrom_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555340930579_881851_34234</arch:Requirement_derivedFrom_Requirement_Source>
-		<arch:Requirement_derivedFrom_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_606232_17414</arch:Requirement_derivedFrom_Requirement_Target>
+		<arch:Requirement_derivedFrom_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555340930579_881851_34234"/>
+		<arch:Requirement_derivedFrom_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_606232_17414"/>
 	</arch:Requirement_derivedFrom_Requirement>
 	<arch:Requirement_derivedFrom_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555340930579_881851_34234_Requirement.derivedFrom.Requirement__17_0_3_1_60c0217_1554373886850_739640_15912">
-		<arch:Requirement_derivedFrom_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555340930579_881851_34234</arch:Requirement_derivedFrom_Requirement_Source>
-		<arch:Requirement_derivedFrom_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912</arch:Requirement_derivedFrom_Requirement_Target>
+		<arch:Requirement_derivedFrom_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555340930579_881851_34234"/>
+		<arch:Requirement_derivedFrom_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912"/>
 	</arch:Requirement_derivedFrom_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373947238_635549_17411">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_635549_17411</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_635549_17411"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373947238_606232_17414">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_606232_17414</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_606232_17414"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373947253_22759_17417">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947253_22759_17417</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947253_22759_17417"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373947253_787088_17420">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947253_787088_17420</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947253_787088_17420"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373888774_76355_15935">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_76355_15935</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_76355_15935"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373888774_384276_15938">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_384276_15938</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_384276_15938"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373888774_923366_15937">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_923366_15937</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_923366_15937"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373888774_941195_15936">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_941195_15936</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_941195_15936"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__17_0_3_1_60c0217_1555336591336_85392_31015">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555336591336_85392_31015</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555336591336_85392_31015"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__2021x_2_8d501e7_1710148366772_438416_5581">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148366772_438416_5581</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148366772_438416_5581"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__2021x_2_8d501e7_1710148561688_473742_5584">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148561688_473742_5584</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148561688_473742_5584"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__2021x_2_8d501e7_1710148601847_750005_5587">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148601847_750005_5587</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148601847_750005_5587"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__2021x_2_8d501e7_1710148650016_796202_5590">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_635549_17411_Requirement.partOf.Requirement__2022x_8a9027b_1708424764583_139395_5943">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_635549_17411</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2022x_8a9027b_1708424764583_139395_5943</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_635549_17411"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2022x_8a9027b_1708424764583_139395_5943"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_635549_17411_Requirement.partOf.Requirement__2021x_2_8d501e7_1710147594026_511625_5572">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_635549_17411</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710147594026_511625_5572</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_635549_17411"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710147594026_511625_5572"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_derivedFrom_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_606232_17414_Requirement.derivedFrom.Requirement__17_0_3_1_60c0217_1554373894872_489031_16029">
-		<arch:Requirement_derivedFrom_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_606232_17414</arch:Requirement_derivedFrom_Requirement_Source>
-		<arch:Requirement_derivedFrom_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_derivedFrom_Requirement_Target>
+		<arch:Requirement_derivedFrom_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_606232_17414"/>
+		<arch:Requirement_derivedFrom_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
 	</arch:Requirement_derivedFrom_Requirement>
 	<arch:Requirement_derivedFrom_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_384276_15938_Requirement.derivedFrom.Requirement__17_0_3_1_60c0217_1554373947253_22759_17417">
-		<arch:Requirement_derivedFrom_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_384276_15938</arch:Requirement_derivedFrom_Requirement_Source>
-		<arch:Requirement_derivedFrom_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947253_22759_17417</arch:Requirement_derivedFrom_Requirement_Target>
+		<arch:Requirement_derivedFrom_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_384276_15938"/>
+		<arch:Requirement_derivedFrom_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947253_22759_17417"/>
 	</arch:Requirement_derivedFrom_Requirement>
 	<arch:Requirement_derivedFrom_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_923366_15937_Requirement.derivedFrom.Requirement__17_0_3_1_60c0217_1554373947253_22759_17417">
-		<arch:Requirement_derivedFrom_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_923366_15937</arch:Requirement_derivedFrom_Requirement_Source>
-		<arch:Requirement_derivedFrom_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947253_22759_17417</arch:Requirement_derivedFrom_Requirement_Target>
+		<arch:Requirement_derivedFrom_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_923366_15937"/>
+		<arch:Requirement_derivedFrom_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947253_22759_17417"/>
 	</arch:Requirement_derivedFrom_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590_Requirement.partOf.Requirement__2021x_2_8d501e7_1710148712446_394547_5593">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148712446_394547_5593</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148712446_394547_5593"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590_Requirement.partOf.Requirement__2021x_2_8d501e7_1710148782585_264451_5596">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148782585_264451_5596</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148782585_264451_5596"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590_Requirement.partOf.Requirement__2021x_2_8d501e7_1710148844988_144183_5599">
 		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148844988_144183_5599</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148844988_144183_5599"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373888790_510287_15941">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888790_510287_15941</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888790_510287_15941"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373888774_288492_15940">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_288492_15940</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_288492_15940"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030_Requirement.partOf.Requirement__2021x_2_8d501e7_1710149292477_668117_5602">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710149292477_668117_5602</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710149292477_668117_5602"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_183392_16031_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373890795_302548_15964">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_183392_16031</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373890795_302548_15964</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_183392_16031"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373890795_302548_15964"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_124599_16032_Requirement.partOf.Requirement__2021x_2_8d501e7_1710153834097_967050_5805">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_124599_16032</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153834097_967050_5805</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_124599_16032"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153834097_967050_5805"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_124599_16032_Requirement.partOf.Requirement__2021x_2_8d501e7_1710153885017_514661_5808">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_124599_16032</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153885017_514661_5808</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_124599_16032"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153885017_514661_5808"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749_Requirement.partOf.Requirement__2021x_2_8d501e7_1710153615080_304380_5787">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153615080_304380_5787</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153615080_304380_5787"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749_Requirement.partOf.Requirement__2021x_2_8d501e7_1710153678770_496381_5792">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153678770_496381_5792</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153678770_496381_5792"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749_Requirement.partOf.Requirement__2021x_2_8d501e7_1710153727491_409919_5797">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153727491_409919_5797</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153727491_409919_5797"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749_Requirement.partOf.Requirement__2021x_2_8d501e7_1710153776399_96192_5800">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153776399_96192_5800</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153776399_96192_5800"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695_Requirement.partOf.Requirement__2021x_2_8d501e7_1710151675649_994932_5700">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151675649_994932_5700</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151675649_994932_5700"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695_Requirement.partOf.Requirement__2021x_2_8d501e7_1710151718558_644987_5705">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151718558_644987_5705</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151718558_644987_5705"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695_Requirement.partOf.Requirement__2021x_2_8d501e7_1710151896250_201297_5710">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151896250_201297_5710</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151896250_201297_5710"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695_Requirement.partOf.Requirement__2021x_2_8d501e7_1710152037892_253674_5713">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152037892_253674_5713</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152037892_253674_5713"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653_Requirement.partOf.Requirement__2021x_2_8d501e7_1710150476050_13127_5658">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150476050_13127_5658</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150476050_13127_5658"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653_Requirement.partOf.Requirement__2021x_2_8d501e7_1710150561344_954069_5661">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150561344_954069_5661</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150561344_954069_5661"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653_Requirement.partOf.Requirement__2021x_2_8d501e7_1710150880576_958104_5666">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150880576_958104_5666</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150880576_958104_5666"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653_Requirement.partOf.Requirement__2021x_2_8d501e7_1710151377993_602525_5676">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151377993_602525_5676</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151377993_602525_5676"/>
 	</arch:Requirement_partOf_Requirement>
 </rdf:RDF>

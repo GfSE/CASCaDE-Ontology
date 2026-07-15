@@ -625,275 +625,275 @@
 		<default:type></default:type>
 	</arch:Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373833970_540169_14529">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_540169_14529</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_540169_14529"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935_Requirement.partOf.Requirement__2021x_2_8d501e7_1710146322885_948291_5555">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146322885_948291_5555</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146322885_948291_5555"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935_Requirement.partOf.Requirement__2021x_2_8d501e7_1710146360070_21059_5559">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146360070_21059_5559</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373817716_227628_13935"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146360070_21059_5559"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373894872_831523_16027">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373894872_990229_16028">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373894872_489031_16029">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373894872_844710_16030">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373894872_183392_16031">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_183392_16031</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_183392_16031"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373894872_124599_16032">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_124599_16032</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_124599_16032"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528_Requirement.partOf.Requirement__2021x_2_8d501e7_1710152920321_382759_5749">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528_Requirement.partOf.Requirement__2021x_2_8d501e7_1710151635216_154098_5695">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528_Requirement.partOf.Requirement__2021x_2_8d501e7_1710150433825_282917_5653">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373833970_87496_14528"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373947269_619833_17513">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_619833_17513</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_619833_17513"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027_Requirement.partOf.Requirement__2021x_2_8d501e7_1710146462874_714909_5562">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146462874_714909_5562</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146462874_714909_5562"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027_Requirement.partOf.Requirement__2021x_2_8d501e7_1710146492047_939247_5565">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146492047_939247_5565</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146492047_939247_5565"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027_Requirement.partOf.Requirement__2021x_2_8d501e7_1710146526694_117941_5568">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146526694_117941_5568</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_831523_16027"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710146526694_117941_5568"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_619833_17513_Requirement.partOf.Requirement__2021x_2_8d501e7_1710152799440_775076_5744">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_619833_17513</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152799440_775076_5744</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_619833_17513"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152799440_775076_5744"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_619833_17513_Requirement.partOf.Requirement__2021x_2_8d501e7_1710153330085_930613_5754">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_619833_17513</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153330085_930613_5754</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_619833_17513"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153330085_930613_5754"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373947269_334692_17515">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_334692_17515</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_334692_17515"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373947269_839759_17516">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_839759_17516</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_839759_17516"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373947269_80329_17517">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_80329_17517</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_80329_17517"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373886850_739640_15912">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373886850_551019_15911">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_551019_15911</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_990229_16028"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_551019_15911"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_839759_17516_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373992768_924005_18953">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_839759_17516</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373992768_924005_18953</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_839759_17516"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373992768_924005_18953"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_839759_17516_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373992768_101922_18958">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_839759_17516</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373992768_101922_18958</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947269_839759_17516"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373992768_101922_18958"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912_Requirement.partOf.Requirement__17_0_3_1_60c0217_1555340930579_881851_34234">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555340930579_881851_34234</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555340930579_881851_34234"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912_Requirement.partOf.Requirement__2022x_8a9027b_1707924576905_883240_5487">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2022x_8a9027b_1707924576905_883240_5487</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2022x_8a9027b_1707924576905_883240_5487"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_derivedFrom_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555340930579_881851_34234_Requirement.derivedFrom.Requirement__17_0_3_1_60c0217_1554373947238_606232_17414">
-		<arch:Requirement_derivedFrom_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555340930579_881851_34234</arch:Requirement_derivedFrom_Requirement_Source>
-		<arch:Requirement_derivedFrom_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_606232_17414</arch:Requirement_derivedFrom_Requirement_Target>
+		<arch:Requirement_derivedFrom_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555340930579_881851_34234"/>
+		<arch:Requirement_derivedFrom_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_606232_17414"/>
 	</arch:Requirement_derivedFrom_Requirement>
 	<arch:Requirement_derivedFrom_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555340930579_881851_34234_Requirement.derivedFrom.Requirement__17_0_3_1_60c0217_1554373886850_739640_15912">
-		<arch:Requirement_derivedFrom_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555340930579_881851_34234</arch:Requirement_derivedFrom_Requirement_Source>
-		<arch:Requirement_derivedFrom_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912</arch:Requirement_derivedFrom_Requirement_Target>
+		<arch:Requirement_derivedFrom_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555340930579_881851_34234"/>
+		<arch:Requirement_derivedFrom_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373886850_739640_15912"/>
 	</arch:Requirement_derivedFrom_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373947238_635549_17411">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_635549_17411</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_635549_17411"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373947238_606232_17414">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_606232_17414</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_606232_17414"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373947253_22759_17417">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947253_22759_17417</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947253_22759_17417"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373947253_787088_17420">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947253_787088_17420</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947253_787088_17420"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373888774_76355_15935">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_76355_15935</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_76355_15935"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373888774_384276_15938">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_384276_15938</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_384276_15938"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373888774_923366_15937">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_923366_15937</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_923366_15937"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373888774_941195_15936">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_941195_15936</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_941195_15936"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__17_0_3_1_60c0217_1555336591336_85392_31015">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555336591336_85392_31015</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1555336591336_85392_31015"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__2021x_2_8d501e7_1710148366772_438416_5581">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148366772_438416_5581</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148366772_438416_5581"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__2021x_2_8d501e7_1710148561688_473742_5584">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148561688_473742_5584</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148561688_473742_5584"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__2021x_2_8d501e7_1710148601847_750005_5587">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148601847_750005_5587</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148601847_750005_5587"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029_Requirement.partOf.Requirement__2021x_2_8d501e7_1710148650016_796202_5590">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_635549_17411_Requirement.partOf.Requirement__2022x_8a9027b_1708424764583_139395_5943">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_635549_17411</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2022x_8a9027b_1708424764583_139395_5943</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_635549_17411"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2022x_8a9027b_1708424764583_139395_5943"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_635549_17411_Requirement.partOf.Requirement__2021x_2_8d501e7_1710147594026_511625_5572">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_635549_17411</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710147594026_511625_5572</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_635549_17411"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710147594026_511625_5572"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_derivedFrom_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_606232_17414_Requirement.derivedFrom.Requirement__17_0_3_1_60c0217_1554373894872_489031_16029">
-		<arch:Requirement_derivedFrom_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_606232_17414</arch:Requirement_derivedFrom_Requirement_Source>
-		<arch:Requirement_derivedFrom_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029</arch:Requirement_derivedFrom_Requirement_Target>
+		<arch:Requirement_derivedFrom_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947238_606232_17414"/>
+		<arch:Requirement_derivedFrom_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_489031_16029"/>
 	</arch:Requirement_derivedFrom_Requirement>
 	<arch:Requirement_derivedFrom_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_384276_15938_Requirement.derivedFrom.Requirement__17_0_3_1_60c0217_1554373947253_22759_17417">
-		<arch:Requirement_derivedFrom_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_384276_15938</arch:Requirement_derivedFrom_Requirement_Source>
-		<arch:Requirement_derivedFrom_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947253_22759_17417</arch:Requirement_derivedFrom_Requirement_Target>
+		<arch:Requirement_derivedFrom_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_384276_15938"/>
+		<arch:Requirement_derivedFrom_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947253_22759_17417"/>
 	</arch:Requirement_derivedFrom_Requirement>
 	<arch:Requirement_derivedFrom_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_923366_15937_Requirement.derivedFrom.Requirement__17_0_3_1_60c0217_1554373947253_22759_17417">
-		<arch:Requirement_derivedFrom_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_923366_15937</arch:Requirement_derivedFrom_Requirement_Source>
-		<arch:Requirement_derivedFrom_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947253_22759_17417</arch:Requirement_derivedFrom_Requirement_Target>
+		<arch:Requirement_derivedFrom_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_923366_15937"/>
+		<arch:Requirement_derivedFrom_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373947253_22759_17417"/>
 	</arch:Requirement_derivedFrom_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590_Requirement.partOf.Requirement__2021x_2_8d501e7_1710148712446_394547_5593">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148712446_394547_5593</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148712446_394547_5593"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590_Requirement.partOf.Requirement__2021x_2_8d501e7_1710148782585_264451_5596">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148782585_264451_5596</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148782585_264451_5596"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590_Requirement.partOf.Requirement__2021x_2_8d501e7_1710148844988_144183_5599">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148844988_144183_5599</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148650016_796202_5590"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710148844988_144183_5599"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373888790_510287_15941">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888790_510287_15941</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888790_510287_15941"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373888774_288492_15940">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_288492_15940</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373888774_288492_15940"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030_Requirement.partOf.Requirement__2021x_2_8d501e7_1710149292477_668117_5602">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710149292477_668117_5602</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_844710_16030"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710149292477_668117_5602"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_183392_16031_Requirement.partOf.Requirement__17_0_3_1_60c0217_1554373890795_302548_15964">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_183392_16031</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373890795_302548_15964</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_183392_16031"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373890795_302548_15964"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_124599_16032_Requirement.partOf.Requirement__2021x_2_8d501e7_1710153834097_967050_5805">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_124599_16032</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153834097_967050_5805</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_124599_16032"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153834097_967050_5805"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_124599_16032_Requirement.partOf.Requirement__2021x_2_8d501e7_1710153885017_514661_5808">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_124599_16032</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153885017_514661_5808</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_17_0_3_1_60c0217_1554373894872_124599_16032"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153885017_514661_5808"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749_Requirement.partOf.Requirement__2021x_2_8d501e7_1710153615080_304380_5787">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153615080_304380_5787</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153615080_304380_5787"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749_Requirement.partOf.Requirement__2021x_2_8d501e7_1710153678770_496381_5792">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153678770_496381_5792</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153678770_496381_5792"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749_Requirement.partOf.Requirement__2021x_2_8d501e7_1710153727491_409919_5797">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153727491_409919_5797</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153727491_409919_5797"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749_Requirement.partOf.Requirement__2021x_2_8d501e7_1710153776399_96192_5800">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153776399_96192_5800</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152920321_382759_5749"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710153776399_96192_5800"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695_Requirement.partOf.Requirement__2021x_2_8d501e7_1710151675649_994932_5700">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151675649_994932_5700</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151675649_994932_5700"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695_Requirement.partOf.Requirement__2021x_2_8d501e7_1710151718558_644987_5705">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151718558_644987_5705</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151718558_644987_5705"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695_Requirement.partOf.Requirement__2021x_2_8d501e7_1710151896250_201297_5710">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151896250_201297_5710</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151896250_201297_5710"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695_Requirement.partOf.Requirement__2021x_2_8d501e7_1710152037892_253674_5713">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152037892_253674_5713</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151635216_154098_5695"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710152037892_253674_5713"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653_Requirement.partOf.Requirement__2021x_2_8d501e7_1710150476050_13127_5658">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150476050_13127_5658</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150476050_13127_5658"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653_Requirement.partOf.Requirement__2021x_2_8d501e7_1710150561344_954069_5661">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150561344_954069_5661</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150561344_954069_5661"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653_Requirement.partOf.Requirement__2021x_2_8d501e7_1710150880576_958104_5666">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150880576_958104_5666</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150880576_958104_5666"/>
 	</arch:Requirement_partOf_Requirement>
 	<arch:Requirement_partOf_Requirement rdf:about="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653_Requirement.partOf.Requirement__2021x_2_8d501e7_1710151377993_602525_5676">
-		<arch:Requirement_partOf_Requirement_Source>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653</arch:Requirement_partOf_Requirement_Source>
-		<arch:Requirement_partOf_Requirement_Target>http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151377993_602525_5676</arch:Requirement_partOf_Requirement_Target>
+		<arch:Requirement_partOf_Requirement_Source rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710150433825_282917_5653"/>
+		<arch:Requirement_partOf_Requirement_Target rdf:resource="http://www.example.org/idrootx2x0/_2021x_2_8d501e7_1710151377993_602525_5676"/>
 	</arch:Requirement_partOf_Requirement>
 </rdf:RDF>

@@ -1,5 +1,6 @@
 ﻿// SPDX-FileCopyrightText: 2026 prostep ivip Association
 // SPDX-FileCopyrightText: 2026 Michael Kirsch <michael.kirsch@em.ag>
+// SPDX-FileCopyrightText: 2026 René Bielert
 
 using Microsoft.Win32;
 using VDS.RDF;

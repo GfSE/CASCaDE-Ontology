@@ -321,6 +321,7 @@ cas:definition_Shape
 	a sh:PropertyShape ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:path skos:definition ;
+	.
 
 cas:label_Shape
 	a sh:PropertyShape ;

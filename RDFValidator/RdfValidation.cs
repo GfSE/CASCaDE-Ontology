@@ -1,11 +1,12 @@
 ﻿// SPDX-FileCopyrightText: 2026 prostep ivip Association
 // SPDX-FileCopyrightText: 2026 Michael Kirsch <michael.kirsch@em.ag>
+// SPDX-FileCopyrightText: 2026 René Bielert
 
 using VDS.RDF;
 using VDS.RDF.Shacl;
 using VDS.RDF.Shacl.Validation;
 
-namespace CascaraValidator;
+namespace CascaraRdfValidator;
 
 /// <summary>
 /// Handles the validation of an RDF graph against a SHACL shapes graph
@@ -14,20 +15,87 @@ public class RdfValidation
 {
     private RdfGraph _graphToValidate;
     private RdfGraph _referenceGraph;
-    private ListBox _resultsListBox;
+    private TreeView _resultsTreeView;
 
-    public RdfValidation(RdfGraph graphToValidate, RdfGraph referenceGraph, ListBox resultsListBox)
+    public RdfValidation(RdfGraph graphToValidate, RdfGraph referenceGraph, TreeView resultsTreeView)
     {
         _graphToValidate = graphToValidate;
         _referenceGraph = referenceGraph;
 
-        _resultsListBox = resultsListBox;
+        _resultsTreeView = resultsTreeView;
+    }
+
+    // Analyze applicable nodes
+    public void Analyze()
+    {
+        _resultsTreeView.Nodes.Clear();
+
+        if (_graphToValidate.Graph != null && _referenceGraph.Graph != null)
+        {
+            _resultsTreeView.Visible = false;
+
+            // Get shapes from reference and validate graph
+            ShapesGraph referenceShapesGraph = new ShapesGraph(_referenceGraph.Graph);
+
+            List<IUriNode> shaclPredicateNodes = new List<IUriNode>
+            {
+                referenceShapesGraph.CreateUriNode(new Uri("http://www.w3.org/ns/shacl#path")),
+                referenceShapesGraph.CreateUriNode(new Uri("http://www.w3.org/ns/shacl#targetClass"))
+            };
+
+            IUriNode typeUriNode = _graphToValidate.Graph.CreateUriNode(new Uri("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"));
+            IUriNode labelUriNode = _graphToValidate.Graph.CreateUriNode(new Uri("http://www.w3.org/2000/01/rdf-schema#label"));
+
+            foreach (IUriNode shaclPredicateNode in shaclPredicateNodes)
+            {
+                foreach (Triple shapeTriple in referenceShapesGraph.GetTriplesWithPredicate(shaclPredicateNode))
+                {
+                    if (shapeTriple.Subject is IUriNode shapeUriNode)
+                    {
+                        if (shapeTriple.Object is IUriNode targetUriNode)
+                        {
+                            TreeNode shapeTreeNode = _resultsTreeView.Nodes.Add(GetResolveNodeValue(referenceShapesGraph, shapeUriNode) + " > " + GetResolveNodeValue(referenceShapesGraph, targetUriNode));
+                            foreach (Triple targetNodeTriple in _graphToValidate.Graph.GetTriplesWithPredicateObject(typeUriNode, shapeTriple.Object))
+                            {
+                                if (targetNodeTriple.Subject is IUriNode targetNodeUriNode)
+                                {
+                                    List<string> labels = [];
+                                    foreach (Triple targetNodeLabelTriple in _graphToValidate.Graph.GetTriplesWithSubjectPredicate(targetNodeUriNode, labelUriNode))
+                                    {
+                                        if (targetNodeLabelTriple.Object is LiteralNode labelLiteralNode)
+                                        {
+                                            labels.Add(GetResolveNodeValue(_graphToValidate.Graph, labelLiteralNode));
+                                        }
+                                    }
+                                    string nodeLabel = GetResolveNodeValue(_graphToValidate.Graph, targetNodeUriNode);
+                                    if (labels.Count > 0)
+                                    {
+                                        nodeLabel = string.Join(", ", labels.ToArray()) + " (" + nodeLabel + ")";
+                                    }
+                                    shapeTreeNode.Nodes.Add(nodeLabel);
+                                }
+                            }
+                            if (shapeTreeNode.Nodes.Count > 0)
+                            {
+                                shapeTreeNode.Expand();
+                            }
+                            else
+                            {
+                                shapeTreeNode.Remove();
+                            }
+                        }
+                    }
+                }
+            }
+
+            _resultsTreeView.Visible = true;
+        }
     }
 
     // Perform validation
     public void Validate()
     {
-        _resultsListBox.Items.Clear();
+        _resultsTreeView.Nodes.Clear();
 
         if (_graphToValidate.Graph != null && _referenceGraph.Graph != null)
         {
@@ -35,69 +103,61 @@ public class RdfValidation
             ShapesGraph referenceShapesGraph = new ShapesGraph(_referenceGraph.Graph);
             Report validationReport = referenceShapesGraph.Validate(_graphToValidate.Graph);
 
-            _resultsListBox.Items.Add($"Conforms: {validationReport.Conforms}");
-
             if (!validationReport.Conforms)
             {
-                _resultsListBox.Items.Add($"Validation failed. Results: {validationReport.Results.Count()}");
-
                 foreach (Result instanceValidationReportResult in validationReport.Results)
                 {
-                    _resultsListBox.Items.Add("----------------------------------------");
-
-                    _resultsListBox.Items.Add($"Severity: " + GetResolveNodeValue(referenceShapesGraph, instanceValidationReportResult.Severity));
-
-                    if (instanceValidationReportResult.FocusNode != null)
-                    {
-                        _resultsListBox.Items.Add($"Focus node: {instanceValidationReportResult.FocusNode}");
-                    }
-
-                    if (instanceValidationReportResult.SourceShape != null)
-                    {
-                        _resultsListBox.Items.Add($"Source shape: {instanceValidationReportResult.SourceShape}");
-                    }
-
-                    if (instanceValidationReportResult.ResultPath != null)
-                    {
-                        _resultsListBox.Items.Add($"Property path: {instanceValidationReportResult.ResultPath}");
-                    }
-
-                    if (!string.IsNullOrEmpty(instanceValidationReportResult.Message.Value))
-                    {
-                        _resultsListBox.Items.Add($"Message: {instanceValidationReportResult.Message}");
-                    }
+                    TreeNode resultNode = _resultsTreeView.Nodes.Add(GetResolveNodeValue(referenceShapesGraph, instanceValidationReportResult.Severity) + " > " + GetResolveNodeValue(referenceShapesGraph, instanceValidationReportResult.ResultPath));
+                    resultNode.Nodes.Add("Focus node: " + GetResolveNodeValue(referenceShapesGraph, instanceValidationReportResult.FocusNode));
+                    resultNode.Nodes.Add("Source shape: " + GetResolveNodeValue(referenceShapesGraph, instanceValidationReportResult.SourceShape));
+                    resultNode.Nodes.Add("Message: " + GetResolveNodeValue(referenceShapesGraph, instanceValidationReportResult.Message));
                 }
             }
             else
             {
-                _resultsListBox.Items.Add("Validation successful. Instance conforms to SHACL shapes.");
+                _resultsTreeView.Nodes.Add("Validation successful. Instance conforms to SHACL shapes.");
             }
         }
     }
 
-    private string GetResolveNodeValue(ShapesGraph referenceShapesGraph, INode node)
+    // Returns a node value, replaces namespace URI with prefix
+    private string GetResolveNodeValue(IGraph graph, INode node)
     {
         string resolvedNodeValue = node.ToString();
-        if (node is UriNode uriNode)
+        if (node is LiteralNode literalNode)
         {
-            if (uriNode.Uri.OriginalString.StartsWith("http://www.w3.org/ns/shacl#"))
+            resolvedNodeValue = literalNode.Value;
+            if (!string.IsNullOrEmpty(literalNode.Language))
             {
-                resolvedNodeValue = resolvedNodeValue.Replace("http://www.w3.org/ns/shacl#", "sh:");
+                resolvedNodeValue += "@" + literalNode.Language;
             }
-            else
+        }
+        else if (node is IUriNode uriNode)
+        {
+            string matchUri = "";
+            string matchPrefix = "";
+            foreach (string namespacePrefix in graph.NamespaceMap.Prefixes)
             {
-                foreach (string namespacePrefix in referenceShapesGraph.NamespaceMap.Prefixes)
+                if (graph.NamespaceMap.HasNamespace(namespacePrefix))
                 {
-                    if (_graphToValidate.Graph.NamespaceMap.HasNamespace(namespacePrefix))
+                    Uri namespaceUri = graph.NamespaceMap.GetNamespaceUri(namespacePrefix);
+                    if (uriNode.Uri.OriginalString.StartsWith(namespaceUri.OriginalString))
                     {
-                        Uri namespaceUri = _graphToValidate.Graph.NamespaceMap.GetNamespaceUri(namespacePrefix);
-                        if (uriNode.Uri.OriginalString.StartsWith(namespaceUri.OriginalString))
+                        if (namespaceUri.OriginalString.Length > matchUri.Length)
                         {
-                            resolvedNodeValue = resolvedNodeValue.Replace(namespaceUri.OriginalString, namespacePrefix);
-                            break;
+                            matchUri = namespaceUri.OriginalString;
+                            matchPrefix = namespacePrefix;
                         }
                     }
                 }
+            }
+            if (!string.IsNullOrEmpty(matchPrefix))
+            {
+                matchPrefix += ":";
+            }
+            if (!string.IsNullOrEmpty(matchUri))
+            {
+                resolvedNodeValue = resolvedNodeValue.Replace(matchUri, matchPrefix);
             }
         }
         return resolvedNodeValue;

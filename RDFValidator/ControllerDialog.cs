@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CascaraValidator;
+namespace CascaraRdfValidator;
 
 public partial class ControllerDialog : Form
 {

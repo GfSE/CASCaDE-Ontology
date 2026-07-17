@@ -179,19 +179,11 @@ cas:Entity
 
 cas:Entity_Shape
 	a sh:NodeShape ;
-    sh:target [
-        a sh:SPARQLTarget ;
-        sh:select """
-            SELECT ?this
-            WHERE {
-                ?this rdfs:subClassOf+ cas:Entity .
-            }
-        """ ;
-    ] ;
-	sh:property cas:label_Shape ;
-	sh:property rdfs:label ;
-	sh:property skos:definition ;
-	sh:property rdfs:comment ;
+	sh:property
+		cas:definition_Shape ,
+		cas:label_Shape
+		;
+	sh:targetClass cas:Entity ;
 	.
 
 cas:Link
@@ -211,6 +203,10 @@ cas:Link
 cas:Link_Shape
 	a sh:PropertyShape ;
 	sh:path cas:Link ;
+	sh:property
+		cas:definition_Shape ,
+		cas:label_Shape
+		;
 	.
 
 cas:Organizer
@@ -306,6 +302,8 @@ cas:Relationship
 cas:Relationship_Shape
 	a sh:NodeShape ;
 	sh:property
+		cas:definition_Shape ,
+		cas:label_Shape ,
 		cas:linksSource_Shape ,
 		cas:linksTarget_Shape
 		;
@@ -321,6 +319,7 @@ cas:definition_Shape
 	a sh:PropertyShape ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:path skos:definition ;
+	.
 
 cas:label_Shape
 	a sh:PropertyShape ;
@@ -345,7 +344,6 @@ cas:linksSource
 
 cas:linksSource_Shape
 	a sh:PropertyShape ;
-	sh:class cas:Entity ;
 	sh:path cas:linksSource ;
 	.
 

@@ -305,7 +305,11 @@
 	{
 		"@id" : "cas:Entity_Shape",
 		"@type" : "sh:NodeShape",
-		"sh:property" : { "@id" : "cas:label_Shape" },
+		"sh:property" : [
+			{ "@id" : "cas:definition_Shape" },
+			{ "@id" : "cas:label_Shape" }
+			
+		],
 		"sh:targetClass" : { "@id" : "cas:Entity" },
 		"@context" : {
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
@@ -352,6 +356,11 @@
 		"@id" : "cas:Link_Shape",
 		"@type" : "sh:PropertyShape",
 		"sh:path" : { "@id" : "cas:Link" },
+		"sh:property" : [
+			{ "@id" : "cas:definition_Shape" },
+			{ "@id" : "cas:label_Shape" }
+			
+		],
 		"@context" : {
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -576,6 +585,8 @@
 		"@id" : "cas:Relationship_Shape",
 		"@type" : "sh:NodeShape",
 		"sh:property" : [
+			{ "@id" : "cas:definition_Shape" },
+			{ "@id" : "cas:label_Shape" },
 			{ "@id" : "cas:linksSource_Shape" },
 			{ "@id" : "cas:linksTarget_Shape" }
 			
@@ -596,6 +607,21 @@
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : "cas:definition_Shape",
+		"@type" : "sh:PropertyShape",
+		"sh:minCount" : {
+			"@type" : "xsd:integer",
+			"@value" : "1"
+		},
+		"sh:path" : { "@id" : "skos:definition" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"sh" : "http://www.w3.org/ns/shacl#",
+			"skos" : "http://www.w3.org/2004/02/skos/core#"
 		}
 	},
 	{
@@ -652,7 +678,6 @@
 	{
 		"@id" : "cas:linksSource_Shape",
 		"@type" : "sh:PropertyShape",
-		"sh:class" : { "@id" : "cas:Entity" },
 		"sh:path" : { "@id" : "cas:linksSource" },
 		"@context" : {
 			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",

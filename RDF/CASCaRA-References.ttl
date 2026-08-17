@@ -1,5 +1,7 @@
+# imports: http://www.omg.org/spec/CASCaRA/metamodel/
 # imports: https://www.omg.org/spec/Commons/AboutCommons/
 
+@prefix cas: <http://www.omg.org/spec/CASCaRA/metamodel/> .
 @prefix cas-ref: <http://www.omg.org/spec/CASCaRA/references/> .
 @prefix cmns-abt: <https://www.omg.org/spec/Commons/AboutCommons/> .
 @prefix cmns-doc: <https://www.omg.org/spec/Commons/Documents/> .
@@ -80,7 +82,7 @@
 		"von Dungern, Dr. Oskar, enso managers GmbH" ,
 		"von Holst, Dr.-Ing. Christian, John Deere GmbH & Co KG"
 		;
-	dcterms:created "12.07.2026 17:19:41"^^xsd:dateTime ;
+	dcterms:created "14.08.2026 01:56:26"^^xsd:dateTime ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 88solutions
@@ -141,7 +143,10 @@ Copyright (c) 2019-2026 ZF Friedrichshafen
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
 https://opensource.org/licenses/MIT""" ;
 	dcterms:title "CASCaRA Resources Ontology" ;
-	owl:imports <https://www.omg.org/spec/Commons/AboutCommons/> ;
+	owl:imports
+		<http://www.omg.org/spec/CASCaRA/metamodel/> ,
+		<https://www.omg.org/spec/Commons/AboutCommons/>
+		;
 	owl:versionInfo "1.0" ;
 	.
 
@@ -157,6 +162,11 @@ cas-ref:3MF-Format-Specification
 	dcterms:source <https://3mf.io/specification/> ;
 	.
 
+cas-ref:AP242-MIM-Part-21
+	a cmns-doc:ReferenceDocument ;
+	dc:title "AP242 MIM Part 21"@en ;
+	.
+
 cas-ref:ARP4754B
 	a cmns-doc:ReferenceDocument ;
 	dc:title "Guidelines for Development of Civil Aircraft and Systems"@en ;
@@ -169,10 +179,34 @@ cas-ref:ARP4761A
 	dcterms:source <https://www.sae.org/standards/arp4761a-guidelines-conducting-safety-assessment-process-civil-aircraft-systems-equipment> ;
 	.
 
+cas-ref:ASME
+	a cmns-doc:ReferenceDocument ;
+	dc:title "The American Society of Mechanical Engineers"@en ;
+	.
+
+cas-ref:Assembly
+	a cmns-doc:ReferenceDocument ;
+	dc:title "Assembly"@en ;
+	.
+
+cas-ref:Automation-markup-language
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Automation markup language"@de ,
+		"Automation markup language"@en
+		;
+	.
+
 cas-ref:AutomationML-Website
 	a cmns-doc:ReferenceDocument ;
 	dc:title "AutomationML-Website"@en ;
 	dcterms:source <https://www.automationml.org/about-automationml/specifications/> ;
+	.
+
+cas-ref:CAx-IF-Implementor-Forum
+	a cmns-doc:ReferenceDocument ;
+	dc:title "CAx-IF Implementor Forum"@en ;
+	dcterms:source <https://www.mbx-if.org/home/> ;
 	.
 
 cas-ref:CSA-ISO-IEC-IEEE-15288
@@ -205,6 +239,14 @@ cas-ref:DIN-8580
 	owl:versionInfo "2003-09" ;
 	.
 
+cas-ref:DIN-EN-61508
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Functional safety of electrical/electronic/programmable electronic safety-related systems"@de ,
+		"Funktionale Sicherheit sicherheitsbezogener elektrischer/elektronischer/programmierbarer elektronischer Systeme"@en
+		;
+	.
+
 cas-ref:DIN-EN-61508-1
 	a cmns-doc:ReferenceDocument ;
 	dc:title
@@ -213,6 +255,14 @@ cas-ref:DIN-EN-61508-1
 		;
 	dcterms:source <https://www.dinmedia.de/de/norm/din-en-61508-1/135302584> ;
 	owl:versionInfo "2011-02" ;
+	.
+
+cas-ref:DIN-EN-IEC-62714
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Part 1: Architecture and general requirements (IEC 62714-1:2018)"@de ,
+		"Teil 1: Architektur und allgemeine Festlegungen (IEC 62714-1:2018)"@en
+		;
 	.
 
 cas-ref:DIN-EN-IEC-62714-1
@@ -303,6 +353,14 @@ cas-ref:DIN-EN-ISO-4885
 	owl:versionInfo "2018-07" ;
 	.
 
+cas-ref:DIN-EN-ISO-Normen
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"DIN-/EN-/ISO-Normen"@de ,
+		"DIN/EN/ISO Standards"@en
+		;
+	.
+
 cas-ref:DIN-ISO-15786
 	a cmns-doc:ReferenceDocument ;
 	dc:title
@@ -313,10 +371,55 @@ cas-ref:DIN-ISO-15786
 	owl:versionInfo "2014-12" ;
 	.
 
+cas-ref:DMSC
+	a cmns-doc:ReferenceDocument ;
+	dc:title "Digital Metrology Standards Consortium"@en ;
+	.
+
 cas-ref:DO-297
 	a cmns-doc:ReferenceDocument ;
 	dc:title "Integrated Modular Avionics (IMA) Development Guidance and Certification Considerations"@en ;
 	dcterms:source <https://my.rtca.org/productdetails?id=a1B36000001IchGEAS> ;
+	.
+
+cas-ref:DTC
+	a cmns-doc:ReferenceDocument ;
+	dc:title "Domain Technical Committee"@en ;
+	.
+
+cas-ref:Dimensional-tolerancing
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Dimensional tolerancing"@de ,
+		"Dimensionelle Tolerierung"@en
+		;
+	.
+
+cas-ref:Document-management
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Document management"@de ,
+		"Dokumenten-Management"@en
+		;
+	.
+
+cas-ref:Engineering-data-exchange-format-for-use-in-industrial-automation-systems-engineering
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Datenaustauschformat für Planungsdaten industrieller Automatisierungssysteme"@en ,
+		"Engineering data exchange format for use in industrial automation systems engineering"@de
+		;
+	.
+
+cas-ref:FAS4M
+	a cmns-doc:ReferenceDocument ;
+	dc:title "Functional Architectures of Systems for Mechanical Engineers"@en ;
+	dcterms:source <http://fasform.de/content/> ;
+	.
+
+cas-ref:FAT
+	a cmns-doc:ReferenceDocument ;
+	dc:title "Forschungsvereinigung Automobiltechnik e. V."@en ;
 	.
 
 cas-ref:FAT-286
@@ -331,6 +434,56 @@ cas-ref:FMI
 	dcterms:source <https://fmi-standard.org/> ;
 	.
 
+cas-ref:Fachgebiete
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Fachgebiete"@de ,
+		"Key Industry Sectors"@en
+		;
+	.
+
+cas-ref:Forschungsprojekte
+	a cmns-doc:ReferenceDocument ;
+	dc:title "Forschungsprojekte"@en ;
+	.
+
+<http://www.omg.org/spec/CASCaRA/references/Geometrical-Product-Specifications-(GPS)>
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Geometrical Product Specifications (GPS)"@de ,
+		"Geometrische Produktspezifikationen (GPS)"@en
+		;
+	.
+
+<http://www.omg.org/spec/CASCaRA/references/Geometrical-product-specifications-(GPS)>
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Geometrical product specifications (GPS)"@de ,
+		"Geometrische Produktspezifikation (GPS)"@en
+		;
+	.
+
+cas-ref:Geometrical-tolerancing
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Geometrical tolerancing"@de ,
+		"Geometrische Tolerierung"@en
+		;
+	.
+
+<http://www.omg.org/spec/CASCaRA/references/Geometrische-Produktspezifikation-(GPS)>
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Geometrical product specifications (GPS)"@en ,
+		"Geometrische Produktspezifikation (GPS)"@de
+		;
+	.
+
+cas-ref:GfSE
+	a cmns-doc:ReferenceDocument ;
+	dc:title "Gesellschaft für Systems Engineering e. V."@en ;
+	.
+
 cas-ref:IGES
 	a cmns-doc:ReferenceDocument ;
 	dc:title "Initial Graphics Exchange Specification"@en ;
@@ -338,10 +491,24 @@ cas-ref:IGES
 	owl:versionInfo "5.3, 1996" ;
 	.
 
+cas-ref:IPC
+	a cmns-doc:ReferenceDocument ;
+	dc:title "Association Connecting Electronics Industries"@en ;
+	dcterms:source <https://www.ipc.org/> ;
+	.
+
 cas-ref:IPC-2581
 	a cmns-doc:ReferenceDocument ;
 	dc:title "Digital Product Model Exchange"@en ;
 	dcterms:source <http://www.ipc2581.com/> ;
+	.
+
+cas-ref:ISO-10303
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Product data representation and exchange"@de ,
+		"Produktdatendarstellung und -austausch"@en
+		;
 	.
 
 cas-ref:ISO-10303-21
@@ -367,6 +534,14 @@ cas-ref:ISO-10303-28
 cas-ref:ISO-14306
 	a cmns-doc:ReferenceDocument ;
 	dc:title "JT file format specification for 3D visualization"@en ;
+	.
+
+cas-ref:ISO-14739
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"3D use of Product Representation Compact (PRC) format"@de ,
+		"Einsatz von 3D Product Representation Compact (PRC) Formaten"@en
+		;
 	.
 
 cas-ref:ISO-14739-1
@@ -409,6 +584,14 @@ cas-ref:ISO-21448
 	owl:versionInfo "2022-06" ;
 	.
 
+cas-ref:ISO-22514
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Capability and performance"@en ,
+		"Fähigkeit und Leistung"@de
+		;
+	.
+
 cas-ref:ISO-22514-2
 	a cmns-doc:ReferenceDocument ;
 	dc:title
@@ -439,6 +622,14 @@ cas-ref:ISO-22514-7
 	owl:versionInfo "2021-08" ;
 	.
 
+cas-ref:ISO-26262
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Functional safety"@de ,
+		"Funktionale Sicherheit"@en
+		;
+	.
+
 cas-ref:ISO-26262-1
 	a cmns-doc:ReferenceDocument ;
 	dc:title
@@ -457,6 +648,14 @@ cas-ref:ISO-26580
 		;
 	dcterms:source <https://www.dinmedia.de/de/norm/iso-iec-26580/340248389> ;
 	owl:versionInfo "2021-04" ;
+	.
+
+cas-ref:ISO-5436
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Geometrical Product Specifications (GPS)"@de ,
+		"Geometrische Produktspezifikation (GPS)"@en
+		;
 	.
 
 cas-ref:ISO-7499
@@ -535,6 +734,65 @@ cas-ref:ISO-IEC-IEEE-42010
 	owl:versionInfo "2022-11" ;
 	.
 
+cas-ref:Industrial-automation-systems-and-integration
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Industrial automation systems and integration"@de ,
+		"Industrielle Automatisierungssysteme und Integration"@en
+		;
+	.
+
+cas-ref:Information-technology
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Information technology"@de ,
+		"Informationstechnik"@en
+		;
+	.
+
+cas-ref:Interfaces
+	a cmns-doc:ReferenceDocument ;
+	dc:title "Interfaces"@en ;
+	.
+
+cas-ref:Life-cycle-processes
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Lebenszyklus-Prozesse"@en ,
+		"Life cycle processes"@de
+		;
+	.
+
+cas-ref:Management-und-Qualität
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Management and Quality"@en ,
+		"Management und Qualität"@de
+		;
+	.
+
+cas-ref:Manufacturing
+	a cmns-doc:ReferenceDocument ;
+	dc:title "Manufacturing"@en ;
+	dcterms:source <https://www.omg.org/industries/manufacturing.htm> ;
+	.
+
+cas-ref:Manufacturing-processes
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Fertigungsverfahren"@en ,
+		"Manufacturing processes"@de
+		;
+	.
+
+cas-ref:Maschinenbau-und-Messtechnik
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Maschinenbau und Messtechnik"@de ,
+		"Mechanical engineering"@en
+		;
+	.
+
 cas-ref:MechML
 	a cmns-doc:ReferenceDocument ;
 	dc:title "Mechanics Modeling Language"@en ;
@@ -545,6 +803,12 @@ cas-ref:MechML
 cas-ref:Modelica-Language
 	a cmns-doc:ReferenceDocument ;
 	dc:title "Modelica Language"@en ;
+	.
+
+cas-ref:OMG
+	a cmns-doc:ReferenceDocument ;
+	dc:title "Object Management Group"@en ;
+	dcterms:source <https://www.omg.org/> ;
 	.
 
 cas-ref:PLMXML-Documentation
@@ -562,6 +826,12 @@ cas-ref:QIF
 cas-ref:QIFDocument
 	a cmns-doc:ReferenceDocument ;
 	dc:title "QIFDocument"@en ;
+	.
+
+cas-ref:RTCA
+	a cmns-doc:ReferenceDocument ;
+	dc:title "Radio Technical Commission for Aeronautics"@en ;
+	dcterms:source <https://www.rtca.org/> ;
 	.
 
 <http://www.omg.org/spec/CASCaRA/references/Recommended-Practices-for-STEP-AP242-Business-Object-Model-XML-Product-&-Assembly-Structure>
@@ -583,10 +853,27 @@ cas-ref:ReqIF-Implementation-Guide
 	owl:versionInfo "Version 1.4.3, 17 November 2014" ;
 	.
 
+cas-ref:Road-vehicles
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Road vehicles"@de ,
+		"Straßenfahrzeuge"@en
+		;
+	.
+
+cas-ref:SAE
+	a cmns-doc:ReferenceDocument ;
+	dc:title "Society of Automotive Engineers"@en ;
+	dcterms:source <https://www.sae.org/> ;
+	.
+
 cas-ref:SpecIF
 	a cmns-doc:ReferenceDocument ;
 	dc:title "Specification Integration Facility"@en ;
-	dcterms:source <https://specif.de/en/> ;
+	dcterms:source
+		<https://github.com/GfSE/SpecIF> ,
+		<https://specif.de/en/>
+		;
 	.
 
 cas-ref:SpecIF-Vocabulary-v1.1
@@ -595,10 +882,75 @@ cas-ref:SpecIF-Vocabulary-v1.1
 	dcterms:source <https://github.com/GfSE/SpecIF/blob/master/documentation/04_SpecIF_Domain_Classes_Github.md> ;
 	.
 
+<http://www.omg.org/spec/CASCaRA/references/Standardization,-Technical-principles,-Metrology>
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Normung, Kommunikation, Dokumentation"@en ,
+		"Standardization, Technical principles, Metrology"@de ,
+		"Standardization, Technical principles, Metrology"@en
+		;
+	.
+
+cas-ref:Statistische-Verfahren-im-Prozessmanagement
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Statistical methods in process management"@en ,
+		"Statistische Verfahren im Prozessmanagement"@de
+		;
+	.
+
+cas-ref:Surface-texture:-Profile
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Oberflächenbeschaffenheit: Profile"@en ,
+		"Surface texture: Profile"@de
+		;
+	.
+
 cas-ref:SysML
 	a cmns-doc:ReferenceDocument ;
 	dc:title "Systems Modeling Language"@en ;
 	dcterms:source <http://www.omgsysml.org/index.htm> ;
+	.
+
+cas-ref:Systems-and-software-engineering
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"System-und Software-Engineering"@en ,
+		"Systems and software engineering"@de
+		;
+	.
+
+cas-ref:Technical-drawings
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Technical drawings"@de ,
+		"Technische Zeichnungen"@en
+		;
+	.
+
+<http://www.omg.org/spec/CASCaRA/references/Technical-product-documentation-(TPD)>
+	a cmns-doc:ReferenceDocument ;
+	dc:title
+		"Technical product documentation (TPD)"@de ,
+		"Technische Produktdokumentation (TPD)"@en
+		;
+	.
+
+cas-ref:The-Modelica-Association
+	a cmns-doc:ReferenceDocument ;
+	dc:title "The Modelica Association"@en ;
+	dcterms:source <https://www.modelica.org/> ;
+	.
+
+cas-ref:U.S.-Product-Data-Association
+	a cmns-doc:ReferenceDocument ;
+	dc:title "U.S. Product Data Association"@en ;
+	.
+
+cas-ref:VDA
+	a cmns-doc:ReferenceDocument ;
+	dc:title "Verband der deutschen Automobilindustrie"@en ;
 	.
 
 cas-ref:VDA-231-106
@@ -659,13 +1011,30 @@ cas-ref:VDA-5550
 	owl:versionInfo "2018-03" ;
 	.
 
-cas-ref:VDI-2519-Blatt-1
+cas-ref:VDI
+	a cmns-doc:ReferenceDocument ;
+	dc:title "Verein Deutscher Ingenieure"@en ;
+	dcterms:source <https://www.vdi.de/> ;
+	.
+
+cas-ref:VDI-2519-Sheet-1
 	a cmns-doc:ReferenceDocument ;
 	dc:title
-		"Procedures for the compilation of tender and performance specifications"@de ,
-		"Vorgehensweise bei der Erstellung von Lasten-/Pflichtenheften"@en
+		"Procedures for the compilation of tender and performance specifications"@en ,
+		"Vorgehensweise bei der Erstellung von Lasten-/Pflichtenheften"@de
 		;
 	dcterms:source <https://www.vdi.de/richtlinien/details/vdi-2519-blatt-1-vorgehensweise-bei-der-erstellung-von-lasten-pflichtenheften> ;
 	owl:versionInfo "2001-12" ;
+	.
+
+cas-ref:prostep-ivip-Association-e.-V.
+	a cmns-doc:ReferenceDocument ;
+	dc:title "prostep ivip Association e. V."@en ;
+	dcterms:source <https://www.prostep.org/> ;
+	.
+
+cas-ref:sonstige-Industriestandards
+	a cmns-doc:ReferenceDocument ;
+	dc:title "sonstige Industriestandards"@en ;
 	.
 

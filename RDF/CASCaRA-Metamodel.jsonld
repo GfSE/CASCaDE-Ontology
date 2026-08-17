@@ -303,6 +303,55 @@
 		}
 	},
 	{
+		"@id" : "cas:EntityGroup",
+		"@type" : "owl:Class",
+		"rdfs:label" : [
+			{
+				"@language" : "en",
+				"@value" : "Groupe of entities"
+			},
+			{
+				"@language" : "de",
+				"@value" : "Gruppe von Elementen"
+			}
+			
+		],
+		"skos:definition" : [
+			{
+				"@language" : "en",
+				"@value" : "Represents a group of entities as part of the CASCaRA semantic infrastructure."
+			},
+			{
+				"@language" : "de",
+				"@value" : "Repräsentiert eine Gruppe von Elementen als Bestandteil der CASCaRA semantischen Infrastruktur."
+			}
+			
+		],
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"owl" : "http://www.w3.org/2002/07/owl#",
+			"skos" : "http://www.w3.org/2004/02/skos/core#",
+			"rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+		}
+	},
+	{
+		"@id" : "cas:EntityGroup_Shape",
+		"@type" : "sh:NodeShape",
+		"sh:property" : [
+			{ "@id" : "cas:definition_Shape" },
+			{ "@id" : "cas:hasPart_Shape" },
+			{ "@id" : "cas:label_Shape" }
+			
+		],
+		"sh:targetClass" : { "@id" : "cas:Entity" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"sh" : "http://www.w3.org/ns/shacl#"
+		}
+	},
+	{
 		"@id" : "cas:Entity_Shape",
 		"@type" : "sh:NodeShape",
 		"sh:property" : [
@@ -622,6 +671,17 @@
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"sh" : "http://www.w3.org/ns/shacl#",
 			"skos" : "http://www.w3.org/2004/02/skos/core#"
+		}
+	},
+	{
+		"@id" : "cas:hasPart_Shape",
+		"@type" : "sh:PropertyShape",
+		"sh:path" : { "@id" : "dcterms:hasPart" },
+		"@context" : {
+			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"sh" : "http://www.w3.org/ns/shacl#",
+			"dcterms" : "http://purl.org/dc/terms/"
 		}
 	},
 	{

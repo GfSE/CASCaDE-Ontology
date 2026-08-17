@@ -11,6 +11,7 @@ namespace CascaraRdfValidator;
 /// </summary>
 public static class Controller
 {
+    private const string _registryKey = "FilePaths";
     private const string _rdfFileSelectionFilter =
         "RDF files (*.ttl;*.rdf;*.xml;*.json;*.jsonld)|*.ttl;*.rdf;*.xml;*.json;*.jsonld|" +
         "Turtle (*.ttl)|*.ttl|" +
@@ -30,6 +31,18 @@ public static class Controller
     private static RdfValidation _ontologyValidation;
 
     public static Logger Logger = LogManager.GetCurrentClassLogger();
+
+    // Handles the graph loaded event
+    public static void GraphLoaded(object sender, EventArgs e)
+    {
+
+    }
+
+    // Handles the source removed event
+    public static void SourceRemoved(object sender, EventArgs e)
+    {
+
+    }
 
     // Handles the analyze button click event
     private static void AnalyzeButton_Click(object sender, EventArgs e)
@@ -59,26 +72,37 @@ public static class Controller
         LogManager.Configuration.Variables["productName"] = Application.ProductName;
 
         // Try assign dialog values from registry
-        string registryGroupKeyPath = "SOFTWARE\\" + Application.ProductName + "\\GraphFilePath";
+        string registryGroupKeyPath = "SOFTWARE\\" + Application.ProductName + "\\" + _registryKey;
         _registryGroupKey = Registry.CurrentUser.OpenSubKey(registryGroupKeyPath, true);
         if (_registryGroupKey == null)
         {
             _registryGroupKey = Registry.CurrentUser.CreateSubKey(registryGroupKeyPath, true);
         }
 
-        // Initialize source and transformation
-        int index = 0;
+        // Try initialize sources
         XmlSource source = null;
         do
         {
-            source = new XmlSource(1, _registryGroupKey, _dialog.MainPanel, 0, 1);
+            source = new XmlSource(_sources.Count, _registryGroupKey, _dialog.SourcesPanel, _sources.Count, 0);
+            source.GraphLoaded += GraphLoaded;
             _sources.Add(source);
+
+            if (source.Graph != null)
+            {
+                _dialog.SourcesPanel.RowCount = _sources.Count;
+                _dialog.SourcesPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 28));
+            }
+
         } while (source.Graph != null);
 
-        // Initialize RDF graphs
-        _individualsGraph = new RdfGraph(new ResourceSelection("Individuals", _registryGroupKey, _rdfFileSelectionFilter, _dialog.MainPanel, 1, 1));
-        _ontologyGraph = new RdfGraph(new ResourceSelection("Ontology", _registryGroupKey, _rdfFileSelectionFilter, _dialog.MainPanel, 2, 1), true);
-        _metamodelGraph = new RdfGraph(new ResourceSelection("Metamodel", _registryGroupKey, _rdfFileSelectionFilter, _dialog.MainPanel, 3, 1));
+        // Initialize RDF individuals graphs
+        _individualsGraph = new RdfGraph(new FileSelection("Individuals", _registryGroupKey, _rdfFileSelectionFilter, _dialog.MainPanel, 1, 1));
+
+        // Initialize RDF ontology graph
+        _ontologyGraph = new RdfGraph(new FileSelection("Ontology", _registryGroupKey, _rdfFileSelectionFilter, _dialog.MainPanel, 2, 1), true);
+
+        // Initialize RDF metamodel graph
+        _metamodelGraph = new RdfGraph(new FileSelection("Metamodel", _registryGroupKey, _rdfFileSelectionFilter, _dialog.MainPanel, 3, 1));
 
         // Initialize RDF validations
         _individualsValidation = new RdfValidation(_individualsGraph, _ontologyGraph, _dialog.IndividualsValidationTreeView);

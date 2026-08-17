@@ -177,6 +177,28 @@ cas:Entity
 		;
 	.
 
+cas:EntityGroup
+	a owl:Class ;
+	rdfs:label
+		"Groupe of entities"@en ,
+		"Gruppe von Elementen"@de
+		;
+	skos:definition
+		"Represents a group of entities as part of the CASCaRA semantic infrastructure."@en ,
+		"Repräsentiert eine Gruppe von Elementen als Bestandteil der CASCaRA semantischen Infrastruktur."@de
+		;
+	.
+
+cas:EntityGroup_Shape
+	a sh:NodeShape ;
+	sh:property
+		cas:definition_Shape ,
+		cas:hasPart_Shape ,
+		cas:label_Shape
+		;
+	sh:targetClass cas:Entity ;
+	.
+
 cas:Entity_Shape
 	a sh:NodeShape ;
 	sh:property
@@ -319,6 +341,11 @@ cas:definition_Shape
 	a sh:PropertyShape ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:path skos:definition ;
+	.
+
+cas:hasPart_Shape
+	a sh:PropertyShape ;
+	sh:path dcterms:hasPart ;
 	.
 
 cas:label_Shape

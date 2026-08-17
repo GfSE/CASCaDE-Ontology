@@ -92,7 +92,6 @@ cas-org:Role rdfs:subClassOf bfo:role .
 cas-val:ValidationPlan rdfs:subClassOf bfo:Plan .
 cas-val:ValidationCriterium rdfs:subClassOf bfo:QualitySpecification .
 cas-mech:KinematicMotion rdfs:subClassOf bfo:DescriptiveInformationContentEntity .
-cas-val:ValidationRun rdfs:subClassOf bfo:INDUSTRIALPROCESS .
 cas-arch:Requirement rdfs:subClassOf bfo:PrescriptiveInformationContentEntity .
 cas-mech:Gearing rdfs:subClassOf bfo:QualitySpecification .
 cas-ver:VerificationCharacteristic rdfs:subClassOf bfo:QualitySpecification .
@@ -104,8 +103,6 @@ cas-sys:ComponentInterface rdfs:subClassOf bfo:RepresentationalInformationConten
 cas-mech:Heat-treatedArea rdfs:subClassOf bfo:RepresentationalInformationContentEntity .
 cas-mech:Hole rdfs:subClassOf bfo:site .
 cas-val:Displacement rdfs:subClassOf bfo:SpatialRegionIdentifier .
-cas-ctx:Change rdfs:subClassOf bfo:INDUSTRIALPROCESS .
-cas-mnf:ManufacturingOperation rdfs:subClassOf bfo:INDUSTRIALPROCESS .
 cas-op:Product rdfs:subClassOf bfo:RepresentationalInformationContentEntity .
 cas-mech:BendingSpecification rdfs:subClassOf bfo:QualitySpecification .
 cas-sys:ComponentConnection rdfs:subClassOf bfo:RepresentationalInformationContentEntity .

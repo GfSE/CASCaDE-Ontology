@@ -202,7 +202,7 @@
 		],
 		"dcterms:created" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "12.07.2026 17:19:41"
+			"@value" : "14.08.2026 01:56:26"
 		},
 		"dcterms:license" : {
 			"@value" : "CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA\u000aCopyright (c) 2024-2026 :em engineering methods AG\u000aCopyright (c) 2024-2026 88solutions\u000aCopyright (c) 2024-2026 Aerospace Corp.\u000aCopyright (c) 2024-2026 Airbus Operations GmbH\u000aCopyright (c) 2024-2026 ATLAS Elektronik\u000aCopyright (c) 2024-2026 The Boeing Company\u000aCopyright (c) 2024-2026 enso managers GmbH\u000aCopyright (c) 2024-2026 GfSE Gesellschaft für Systems Engineering\u000aCopyright (c) 2024-2026 INCOSE\u000aCopyright (c) 2024-2026 INOMIC Solutions GmbH\u000aCopyright (c) 2024-2026 Intuitive AI\u000aCopyright (c) 2024-2026 Manfred Harms Consulting\u000aCopyright (c) 2024-2026 ModelAlchemy Consulting\u000aCopyright (c) 2024-2026 Modern Technology Solutions, Inc.\u000aCopyright (c) 2024-2026 oose eG\u000aCopyright (c) 2024-2025 PDES, Inc.\u000aCopyright (c) 2024-2026 PROSTEP AG\u000aCopyright (c) 2024-2026 prostep ivip Association\u000aCopyright (c) 2024-2026 PSG Prime Solutions Group\u000aCopyright (c) 2024-2026 Division of Design of Cyber-Physical Systems\u000aCopyright (c) 2024-2026 Collins Aerospace\u000aCopyright (c) 2024-2026 Schaeffler Technologies AG & Co. KG\u000aCopyright (c) 2024-2026 Thematix Partners\u000aCopyright (c) 2024-2026 TU Hamburg-Harburg\u000aCopyright (c) 2024-2026 Product and Systems Engineering Group\u000aCopyright (c) 2024-2026 UC3 Madrid\u000aCopyright (c) 2024-2026 VDA Verband der deutschen Automobilindustrie\u000a\u000aDigital Data Package Working Group: Defines use-cases and domain ontology as a foundation for CASCaRA\u000aCopyright (c) 2019-2026 :em engineering methods AG\u000aCopyright (c) 2019-2020 Airbus Operations GmbH\u000aCopyright (c) 2019-2026 Anark Corporation Inc.\u000aCopyright (c) 2026-2026 Aumovio SE\u000aCopyright (c) 2019-2026 AVL List\u000aCopyright (c) 2022-2026 The Boeing Company\u000aCopyright (c) 2022-2026 Robert Bosch GmbH\u000aCopyright (c) 2019-2022 CONWEAVER GmbH\u000aCopyright (c) 2019-2026 ELYSIUM Inc.\u000aCopyright (c) 2019-2021 Fraunhofer IESE\u000aCopyright (c) 2026-2026 Infineon Technologies AG\u000aCopyright (c) 2025-2026 INOMIC Solutions GmbH\u000aCopyright (c) 2025-2026 JAXA Japan Aerospace Exploration Agency\u000aCopyright (c) 2021-2024 John Deere GmbH & Co KG\u000aCopyright (c) 2019-2021 Kromberg & Schubert Automotive GmbH & Co. KG\u000aCopyright (c) 2019-2026 Mercedes-Benz AG\u000aCopyright (c) 2024-2026 MTU Aero Engines AG\u000aCopyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche AG\u000aCopyright (c) 2019-2026 PROSTEP AG\u000aCopyright (c) 2025-2026 Collins Aerospace\u000aCopyright (c) 2019-2024 Schaeffler Technologies AG & Co. KG\u000aCopyright (c) 2025-2026 Sodius Willert\u000aCopyright (c) 2019-2020 SSC Services GmbH\u000aCopyright (c) 2026-2026 T-Systems International GmbH\u000aCopyright (c) 2022-2026 Volkswagen AG\u000aCopyright (c) 2019-2026 ZF Friedrichshafen\u000a\u000aPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.\u000ahttps://opensource.org/licenses/MIT"
@@ -210,7 +210,11 @@
 		"dcterms:title" : {
 			"@value" : "CASCaRA Resources Ontology"
 		},
-		"owl:imports" : { "@id" : "https://www.omg.org/spec/Commons/AboutCommons/" },
+		"owl:imports" : [
+			{ "@id" : "http://www.omg.org/spec/CASCaRA/metamodel/" },
+			{ "@id" : "https://www.omg.org/spec/Commons/AboutCommons/" }
+			
+		],
 		"owl:versionInfo" : {
 			"@value" : "1.0"
 		},
@@ -254,6 +258,20 @@
 		}
 	},
 	{
+		"@id" : "cas-ref:AP242-MIM-Part-21",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "AP242 MIM Part 21"
+		},
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
 		"@id" : "cas-ref:ARP4754B",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
@@ -286,6 +304,55 @@
 		}
 	},
 	{
+		"@id" : "cas-ref:ASME",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "The American Society of Mechanical Engineers"
+		},
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:Assembly",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "Assembly"
+		},
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:Automation-markup-language",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "Automation markup language"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Automation markup language"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
 		"@id" : "cas-ref:AutomationML-Website",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
@@ -293,6 +360,22 @@
 			"@value" : "AutomationML-Website"
 		},
 		"dcterms:source" : { "@id" : "https://www.automationml.org/about-automationml/specifications/" },
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dcterms" : "http://purl.org/dc/terms/",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:CAx-IF-Implementor-Forum",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "CAx-IF Implementor Forum"
+		},
+		"dcterms:source" : { "@id" : "https://www.mbx-if.org/home/" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
@@ -383,6 +466,27 @@
 		}
 	},
 	{
+		"@id" : "cas-ref:DIN-EN-61508",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "Functional safety of electrical/electronic/programmable electronic safety-related systems"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Funktionale Sicherheit sicherheitsbezogener elektrischer/elektronischer/programmierbarer elektronischer Systeme"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
 		"@id" : "cas-ref:DIN-EN-61508-1",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
@@ -406,6 +510,27 @@
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:DIN-EN-IEC-62714",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "Part 1: Architecture and general requirements (IEC 62714-1:2018)"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Teil 1: Architektur und allgemeine Festlegungen (IEC 62714-1:2018)"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
@@ -647,6 +772,27 @@
 		}
 	},
 	{
+		"@id" : "cas-ref:DIN-EN-ISO-Normen",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "DIN-/EN-/ISO-Normen"
+			},
+			{
+				"@language" : "en",
+				"@value" : "DIN/EN/ISO Standards"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
 		"@id" : "cas-ref:DIN-ISO-15786",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
@@ -674,6 +820,20 @@
 		}
 	},
 	{
+		"@id" : "cas-ref:DMSC",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "Digital Metrology Standards Consortium"
+		},
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
 		"@id" : "cas-ref:DO-297",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
@@ -686,6 +846,113 @@
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:DTC",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "Domain Technical Committee"
+		},
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:Dimensional-tolerancing",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "Dimensional tolerancing"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Dimensionelle Tolerierung"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:Document-management",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "Document management"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Dokumenten-Management"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:Engineering-data-exchange-format-for-use-in-industrial-automation-systems-engineering",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "en",
+				"@value" : "Datenaustauschformat für Planungsdaten industrieller Automatisierungssysteme"
+			},
+			{
+				"@language" : "de",
+				"@value" : "Engineering data exchange format for use in industrial automation systems engineering"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:FAS4M",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "Functional Architectures of Systems for Mechanical Engineers"
+		},
+		"dcterms:source" : { "@id" : "http://fasform.de/content/" },
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dcterms" : "http://purl.org/dc/terms/",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:FAT",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "Forschungsvereinigung Automobiltechnik e. V."
+		},
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
@@ -722,6 +989,136 @@
 		}
 	},
 	{
+		"@id" : "cas-ref:Fachgebiete",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "Fachgebiete"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Key Industry Sectors"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:Forschungsprojekte",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "Forschungsprojekte"
+		},
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "http://www.omg.org/spec/CASCaRA/references/Geometrical-Product-Specifications-(GPS)",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "Geometrical Product Specifications (GPS)"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Geometrische Produktspezifikationen (GPS)"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "http://www.omg.org/spec/CASCaRA/references/Geometrical-product-specifications-(GPS)",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "Geometrical product specifications (GPS)"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Geometrische Produktspezifikation (GPS)"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:Geometrical-tolerancing",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "Geometrical tolerancing"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Geometrische Tolerierung"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "http://www.omg.org/spec/CASCaRA/references/Geometrische-Produktspezifikation-(GPS)",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "en",
+				"@value" : "Geometrical product specifications (GPS)"
+			},
+			{
+				"@language" : "de",
+				"@value" : "Geometrische Produktspezifikation (GPS)"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:GfSE",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "Gesellschaft für Systems Engineering e. V."
+		},
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
 		"@id" : "cas-ref:IGES",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
@@ -742,6 +1139,22 @@
 		}
 	},
 	{
+		"@id" : "cas-ref:IPC",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "Association Connecting Electronics Industries"
+		},
+		"dcterms:source" : { "@id" : "https://www.ipc.org/" },
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dcterms" : "http://purl.org/dc/terms/",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
 		"@id" : "cas-ref:IPC-2581",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
@@ -754,6 +1167,27 @@
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:ISO-10303",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "Product data representation and exchange"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Produktdatendarstellung und -austausch"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
@@ -818,6 +1252,27 @@
 			"@language" : "en",
 			"@value" : "JT file format specification for 3D visualization"
 		},
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:ISO-14739",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "3D use of Product Representation Compact (PRC) format"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Einsatz von 3D Product Representation Compact (PRC) Formaten"
+			}
+			
+		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
@@ -934,6 +1389,27 @@
 		}
 	},
 	{
+		"@id" : "cas-ref:ISO-22514",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "en",
+				"@value" : "Capability and performance"
+			},
+			{
+				"@language" : "de",
+				"@value" : "Fähigkeit und Leistung"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
 		"@id" : "cas-ref:ISO-22514-2",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
@@ -1015,6 +1491,27 @@
 		}
 	},
 	{
+		"@id" : "cas-ref:ISO-26262",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "Functional safety"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Funktionale Sicherheit"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
 		"@id" : "cas-ref:ISO-26262-1",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
@@ -1065,6 +1562,27 @@
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:ISO-5436",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "Geometrical Product Specifications (GPS)"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Geometrische Produktspezifikation (GPS)"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
@@ -1274,6 +1792,162 @@
 		}
 	},
 	{
+		"@id" : "cas-ref:Industrial-automation-systems-and-integration",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "Industrial automation systems and integration"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Industrielle Automatisierungssysteme und Integration"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:Information-technology",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "Information technology"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Informationstechnik"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:Interfaces",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "Interfaces"
+		},
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:Life-cycle-processes",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "en",
+				"@value" : "Lebenszyklus-Prozesse"
+			},
+			{
+				"@language" : "de",
+				"@value" : "Life cycle processes"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:Management-und-Qualität",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "en",
+				"@value" : "Management and Quality"
+			},
+			{
+				"@language" : "de",
+				"@value" : "Management und Qualität"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:Manufacturing",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "Manufacturing"
+		},
+		"dcterms:source" : { "@id" : "https://www.omg.org/industries/manufacturing.htm" },
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dcterms" : "http://purl.org/dc/terms/",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:Manufacturing-processes",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "en",
+				"@value" : "Fertigungsverfahren"
+			},
+			{
+				"@language" : "de",
+				"@value" : "Manufacturing processes"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:Maschinenbau-und-Messtechnik",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "Maschinenbau und Messtechnik"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Mechanical engineering"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
 		"@id" : "cas-ref:MechML",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
@@ -1304,6 +1978,22 @@
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:OMG",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "Object Management Group"
+		},
+		"dcterms:source" : { "@id" : "https://www.omg.org/" },
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
@@ -1350,6 +2040,22 @@
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:RTCA",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "Radio Technical Commission for Aeronautics"
+		},
+		"dcterms:source" : { "@id" : "https://www.rtca.org/" },
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
@@ -1407,13 +2113,54 @@
 		}
 	},
 	{
+		"@id" : "cas-ref:Road-vehicles",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "Road vehicles"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Straßenfahrzeuge"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:SAE",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "Society of Automotive Engineers"
+		},
+		"dcterms:source" : { "@id" : "https://www.sae.org/" },
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dcterms" : "http://purl.org/dc/terms/",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
 		"@id" : "cas-ref:SpecIF",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
 			"@value" : "Specification Integration Facility"
 		},
-		"dcterms:source" : { "@id" : "https://specif.de/en/" },
+		"dcterms:source" : [
+			{ "@id" : "https://github.com/GfSE/SpecIF" },
+			{ "@id" : "https://specif.de/en/" }
+			
+		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
@@ -1439,6 +2186,72 @@
 		}
 	},
 	{
+		"@id" : "http://www.omg.org/spec/CASCaRA/references/Standardization,-Technical-principles,-Metrology",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "en",
+				"@value" : "Normung, Kommunikation, Dokumentation"
+			},
+			{
+				"@language" : "de",
+				"@value" : "Standardization, Technical principles, Metrology"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Standardization, Technical principles, Metrology"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:Statistische-Verfahren-im-Prozessmanagement",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "en",
+				"@value" : "Statistical methods in process management"
+			},
+			{
+				"@language" : "de",
+				"@value" : "Statistische Verfahren im Prozessmanagement"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:Surface-texture:-Profile",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "en",
+				"@value" : "Oberflächenbeschaffenheit: Profile"
+			},
+			{
+				"@language" : "de",
+				"@value" : "Surface texture: Profile"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
 		"@id" : "cas-ref:SysML",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
@@ -1451,6 +2264,112 @@
 			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:Systems-and-software-engineering",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "en",
+				"@value" : "System-und Software-Engineering"
+			},
+			{
+				"@language" : "de",
+				"@value" : "Systems and software engineering"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:Technical-drawings",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "Technical drawings"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Technische Zeichnungen"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "http://www.omg.org/spec/CASCaRA/references/Technical-product-documentation-(TPD)",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "de",
+				"@value" : "Technical product documentation (TPD)"
+			},
+			{
+				"@language" : "en",
+				"@value" : "Technische Produktdokumentation (TPD)"
+			}
+			
+		],
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:The-Modelica-Association",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "The Modelica Association"
+		},
+		"dcterms:source" : { "@id" : "https://www.modelica.org/" },
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dcterms" : "http://purl.org/dc/terms/",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:U.S.-Product-Data-Association",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "U.S. Product Data Association"
+		},
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:VDA",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "Verband der deutschen Automobilindustrie"
+		},
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
@@ -1613,15 +2532,31 @@
 		}
 	},
 	{
-		"@id" : "cas-ref:VDI-2519-Blatt-1",
+		"@id" : "cas-ref:VDI",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "Verein Deutscher Ingenieure"
+		},
+		"dcterms:source" : { "@id" : "https://www.vdi.de/" },
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dcterms" : "http://purl.org/dc/terms/",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:VDI-2519-Sheet-1",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
-				"@language" : "de",
+				"@language" : "en",
 				"@value" : "Procedures for the compilation of tender and performance specifications"
 			},
 			{
-				"@language" : "en",
+				"@language" : "de",
 				"@value" : "Vorgehensweise bei der Erstellung von Lasten-/Pflichtenheften"
 			}
 			
@@ -1636,6 +2571,36 @@
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:prostep-ivip-Association-e.-V.",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "prostep ivip Association e. V."
+		},
+		"dcterms:source" : { "@id" : "https://www.prostep.org/" },
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"dcterms" : "http://purl.org/dc/terms/",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:sonstige-Industriestandards",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : {
+			"@language" : "en",
+			"@value" : "sonstige Industriestandards"
+		},
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	}

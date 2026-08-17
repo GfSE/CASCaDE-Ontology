@@ -164,6 +164,20 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<skos:definition xml:lang="de">Repräsentiert ein Element als Bestandteil der CASCaRA semantischen Infrastruktur.</skos:definition>
 	</owl:Class>
 	
+	<owl:Class rdf:about="&cas;EntityGroup">
+		<rdfs:label xml:lang="en">Groupe of entities</rdfs:label>
+		<rdfs:label xml:lang="de">Gruppe von Elementen</rdfs:label>
+		<skos:definition xml:lang="en">Represents a group of entities as part of the CASCaRA semantic infrastructure.</skos:definition>
+		<skos:definition xml:lang="de">Repräsentiert eine Gruppe von Elementen als Bestandteil der CASCaRA semantischen Infrastruktur.</skos:definition>
+	</owl:Class>
+	
+	<sh:NodeShape rdf:about="&cas;EntityGroup_Shape">
+		<sh:property rdf:resource="&cas;definition_Shape"/>
+		<sh:property rdf:resource="&cas;hasPart_Shape"/>
+		<sh:property rdf:resource="&cas;label_Shape"/>
+		<sh:targetClass rdf:resource="&cas;Entity"/>
+	</sh:NodeShape>
+	
 	<sh:NodeShape rdf:about="&cas;Entity_Shape">
 		<sh:property rdf:resource="&cas;definition_Shape"/>
 		<sh:property rdf:resource="&cas;label_Shape"/>
@@ -259,6 +273,10 @@ https://opensource.org/licenses/MIT</dcterms:license>
 	<sh:PropertyShape rdf:about="&cas;definition_Shape">
 		<sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
 		<sh:path rdf:resource="&skos;definition"/>
+	</sh:PropertyShape>
+	
+	<sh:PropertyShape rdf:about="&cas;hasPart_Shape">
+		<sh:path rdf:resource="&dcterms;hasPart"/>
 	</sh:PropertyShape>
 	
 	<sh:PropertyShape rdf:about="&cas;label_Shape">

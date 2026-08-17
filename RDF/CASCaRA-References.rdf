@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <rdf:RDF
+	xmlns:cas="http://www.omg.org/spec/CASCaRA/metamodel/"
 	xmlns:cas-ref="http://www.omg.org/spec/CASCaRA/references/"
 	xmlns:cmns-abt="https://www.omg.org/spec/Commons/AboutCommons/"
 	xmlns:cmns-doc="https://www.omg.org/spec/Commons/Documents/"
@@ -78,7 +79,7 @@
 		<dcterms:contributor>Williams, Mark, INCOSE</dcterms:contributor>
 		<dcterms:contributor>von Dungern, Dr. Oskar, enso managers GmbH</dcterms:contributor>
 		<dcterms:contributor>von Holst, Dr.-Ing. Christian, John Deere GmbH &amp; Co KG</dcterms:contributor>
-		<dcterms:created rdf:datatype="&xsd;dateTime">12.07.2026 17:19:41</dcterms:created>
+		<dcterms:created rdf:datatype="&xsd;dateTime">14.08.2026 01:56:26</dcterms:created>
 		<dcterms:license>CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
 Copyright (c) 2024-2026 :em engineering methods AG
 Copyright (c) 2024-2026 88solutions
@@ -139,6 +140,7 @@ Copyright (c) 2019-2026 ZF Friedrichshafen
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &apos;Software&apos;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nThe software is provided &apos;as is&apos;, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
 https://opensource.org/licenses/MIT</dcterms:license>
 		<dcterms:title>CASCaRA Resources Ontology</dcterms:title>
+		<owl:imports rdf:resource="http://www.omg.org/spec/CASCaRA/metamodel/"/>
 		<owl:imports rdf:resource="https://www.omg.org/spec/Commons/AboutCommons/"/>
 		<owl:versionInfo>1.0</owl:versionInfo>
 	</owl:Ontology>
@@ -153,6 +155,10 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<dcterms:source rdf:resource="https://3mf.io/specification/"/>
 	</cmns-doc:ReferenceDocument>
 	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;AP242-MIM-Part-21">
+		<dc:title xml:lang="en">AP242 MIM Part 21</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ARP4754B">
 		<dc:title xml:lang="en">Guidelines for Development of Civil Aircraft and Systems</dc:title>
 		<dcterms:source rdf:resource="https://www.sae.org/standards/arp4754b-guidelines-development-civil-aircraft-systems"/>
@@ -163,9 +169,27 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<dcterms:source rdf:resource="https://www.sae.org/standards/arp4761a-guidelines-conducting-safety-assessment-process-civil-aircraft-systems-equipment"/>
 	</cmns-doc:ReferenceDocument>
 	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ASME">
+		<dc:title xml:lang="en">The American Society of Mechanical Engineers</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Assembly">
+		<dc:title xml:lang="en">Assembly</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Automation-markup-language">
+		<dc:title xml:lang="de">Automation markup language</dc:title>
+		<dc:title xml:lang="en">Automation markup language</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;AutomationML-Website">
 		<dc:title xml:lang="en">AutomationML-Website</dc:title>
 		<dcterms:source rdf:resource="https://www.automationml.org/about-automationml/specifications/"/>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;CAx-IF-Implementor-Forum">
+		<dc:title xml:lang="en">CAx-IF Implementor Forum</dc:title>
+		<dcterms:source rdf:resource="https://www.mbx-if.org/home/"/>
 	</cmns-doc:ReferenceDocument>
 	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;CSA-ISO-IEC-IEEE-15288">
@@ -189,11 +213,21 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<owl:versionInfo>2003-09</owl:versionInfo>
 	</cmns-doc:ReferenceDocument>
 	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-EN-61508">
+		<dc:title xml:lang="de">Functional safety of electrical/electronic/programmable electronic safety-related systems</dc:title>
+		<dc:title xml:lang="en">Funktionale Sicherheit sicherheitsbezogener elektrischer/elektronischer/programmierbarer elektronischer Systeme</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-EN-61508-1">
 		<dc:title xml:lang="en">Part 1: General requirements</dc:title>
 		<dc:title xml:lang="de">Teil 1: Allgemeine Anforderungen</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/din-en-61508-1/135302584"/>
 		<owl:versionInfo>2011-02</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-EN-IEC-62714">
+		<dc:title xml:lang="de">Part 1: Architecture and general requirements (IEC 62714-1:2018)</dc:title>
+		<dc:title xml:lang="en">Teil 1: Architektur und allgemeine Festlegungen (IEC 62714-1:2018)</dc:title>
 	</cmns-doc:ReferenceDocument>
 	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-EN-IEC-62714-1">
@@ -257,6 +291,11 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<owl:versionInfo>2018-07</owl:versionInfo>
 	</cmns-doc:ReferenceDocument>
 	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-EN-ISO-Normen">
+		<dc:title xml:lang="de">DIN-/EN-/ISO-Normen</dc:title>
+		<dc:title xml:lang="en">DIN/EN/ISO Standards</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DIN-ISO-15786">
 		<dc:title xml:lang="de">Simplified representation and dimensioning of holes (ISO 15786:2008)</dc:title>
 		<dc:title xml:lang="en">Vereinfachte Darstellung und Bemaßung von Löchern (ISO 15786:2008)</dc:title>
@@ -264,9 +303,41 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<owl:versionInfo>2014-12</owl:versionInfo>
 	</cmns-doc:ReferenceDocument>
 	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DMSC">
+		<dc:title xml:lang="en">Digital Metrology Standards Consortium</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DO-297">
 		<dc:title xml:lang="en">Integrated Modular Avionics (IMA) Development Guidance and Certification Considerations</dc:title>
 		<dcterms:source rdf:resource="https://my.rtca.org/productdetails?id=a1B36000001IchGEAS"/>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;DTC">
+		<dc:title xml:lang="en">Domain Technical Committee</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Dimensional-tolerancing">
+		<dc:title xml:lang="de">Dimensional tolerancing</dc:title>
+		<dc:title xml:lang="en">Dimensionelle Tolerierung</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Document-management">
+		<dc:title xml:lang="de">Document management</dc:title>
+		<dc:title xml:lang="en">Dokumenten-Management</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Engineering-data-exchange-format-for-use-in-industrial-automation-systems-engineering">
+		<dc:title xml:lang="en">Datenaustauschformat für Planungsdaten industrieller Automatisierungssysteme</dc:title>
+		<dc:title xml:lang="de">Engineering data exchange format for use in industrial automation systems engineering</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;FAS4M">
+		<dc:title xml:lang="en">Functional Architectures of Systems for Mechanical Engineers</dc:title>
+		<dcterms:source rdf:resource="http://fasform.de/content/"/>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;FAT">
+		<dc:title xml:lang="en">Forschungsvereinigung Automobiltechnik e. V.</dc:title>
 	</cmns-doc:ReferenceDocument>
 	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;FAT-286">
@@ -279,15 +350,58 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<dcterms:source rdf:resource="https://fmi-standard.org/"/>
 	</cmns-doc:ReferenceDocument>
 	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Fachgebiete">
+		<dc:title xml:lang="de">Fachgebiete</dc:title>
+		<dc:title xml:lang="en">Key Industry Sectors</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Forschungsprojekte">
+		<dc:title xml:lang="en">Forschungsprojekte</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="http://www.omg.org/spec/CASCaRA/references/Geometrical-Product-Specifications-(GPS)">
+		<dc:title xml:lang="de">Geometrical Product Specifications (GPS)</dc:title>
+		<dc:title xml:lang="en">Geometrische Produktspezifikationen (GPS)</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="http://www.omg.org/spec/CASCaRA/references/Geometrical-product-specifications-(GPS)">
+		<dc:title xml:lang="de">Geometrical product specifications (GPS)</dc:title>
+		<dc:title xml:lang="en">Geometrische Produktspezifikation (GPS)</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Geometrical-tolerancing">
+		<dc:title xml:lang="de">Geometrical tolerancing</dc:title>
+		<dc:title xml:lang="en">Geometrische Tolerierung</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="http://www.omg.org/spec/CASCaRA/references/Geometrische-Produktspezifikation-(GPS)">
+		<dc:title xml:lang="en">Geometrical product specifications (GPS)</dc:title>
+		<dc:title xml:lang="de">Geometrische Produktspezifikation (GPS)</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;GfSE">
+		<dc:title xml:lang="en">Gesellschaft für Systems Engineering e. V.</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;IGES">
 		<dc:title xml:lang="en">Initial Graphics Exchange Specification</dc:title>
 		<dcterms:source rdf:resource="https://web.archive.org/web/20120821190122/http://www.uspro.org/documents/IGES5-3_forDownload.pdf"/>
 		<owl:versionInfo>5.3, 1996</owl:versionInfo>
 	</cmns-doc:ReferenceDocument>
 	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;IPC">
+		<dc:title xml:lang="en">Association Connecting Electronics Industries</dc:title>
+		<dcterms:source rdf:resource="https://www.ipc.org/"/>
+	</cmns-doc:ReferenceDocument>
+	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;IPC-2581">
 		<dc:title xml:lang="en">Digital Product Model Exchange</dc:title>
 		<dcterms:source rdf:resource="http://www.ipc2581.com/"/>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-10303">
+		<dc:title xml:lang="de">Product data representation and exchange</dc:title>
+		<dc:title xml:lang="en">Produktdatendarstellung und -austausch</dc:title>
 	</cmns-doc:ReferenceDocument>
 	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-10303-21">
@@ -306,6 +420,11 @@ https://opensource.org/licenses/MIT</dcterms:license>
 	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-14306">
 		<dc:title xml:lang="en">JT file format specification for 3D visualization</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-14739">
+		<dc:title xml:lang="de">3D use of Product Representation Compact (PRC) format</dc:title>
+		<dc:title xml:lang="en">Einsatz von 3D Product Representation Compact (PRC) Formaten</dc:title>
 	</cmns-doc:ReferenceDocument>
 	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-14739-1">
@@ -336,6 +455,11 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<owl:versionInfo>2022-06</owl:versionInfo>
 	</cmns-doc:ReferenceDocument>
 	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-22514">
+		<dc:title xml:lang="en">Capability and performance</dc:title>
+		<dc:title xml:lang="de">Fähigkeit und Leistung</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-22514-2">
 		<dc:title xml:lang="en">Part 2: Process capability and performance of time-dependent process models</dc:title>
 		<dc:title xml:lang="de">Teil 2: Prozessleistungs- und Prozessfähigkeitskenngrößen von zeitabhängigen Prozessmodellen</dc:title>
@@ -357,6 +481,11 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<owl:versionInfo>2021-08</owl:versionInfo>
 	</cmns-doc:ReferenceDocument>
 	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-26262">
+		<dc:title xml:lang="de">Functional safety</dc:title>
+		<dc:title xml:lang="en">Funktionale Sicherheit</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-26262-1">
 		<dc:title xml:lang="de">Part 1: Vocabulary</dc:title>
 		<dc:title xml:lang="en">Teil 1: Vokabular</dc:title>
@@ -369,6 +498,11 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<dc:title xml:lang="de">Software- und System-Engineering - Methoden und Werkzeuge für den merkmalbasierten Ansatz zur Entwicklung von Software- und Systemproduktlinien</dc:title>
 		<dcterms:source rdf:resource="https://www.dinmedia.de/de/norm/iso-iec-26580/340248389"/>
 		<owl:versionInfo>2021-04</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-5436">
+		<dc:title xml:lang="de">Geometrical Product Specifications (GPS)</dc:title>
+		<dc:title xml:lang="en">Geometrische Produktspezifikation (GPS)</dc:title>
 	</cmns-doc:ReferenceDocument>
 	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;ISO-7499">
@@ -425,6 +559,45 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<owl:versionInfo>2022-11</owl:versionInfo>
 	</cmns-doc:ReferenceDocument>
 	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Industrial-automation-systems-and-integration">
+		<dc:title xml:lang="de">Industrial automation systems and integration</dc:title>
+		<dc:title xml:lang="en">Industrielle Automatisierungssysteme und Integration</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Information-technology">
+		<dc:title xml:lang="de">Information technology</dc:title>
+		<dc:title xml:lang="en">Informationstechnik</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Interfaces">
+		<dc:title xml:lang="en">Interfaces</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Life-cycle-processes">
+		<dc:title xml:lang="en">Lebenszyklus-Prozesse</dc:title>
+		<dc:title xml:lang="de">Life cycle processes</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Management-und-Qualität">
+		<dc:title xml:lang="en">Management and Quality</dc:title>
+		<dc:title xml:lang="de">Management und Qualität</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Manufacturing">
+		<dc:title xml:lang="en">Manufacturing</dc:title>
+		<dcterms:source rdf:resource="https://www.omg.org/industries/manufacturing.htm"/>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Manufacturing-processes">
+		<dc:title xml:lang="en">Fertigungsverfahren</dc:title>
+		<dc:title xml:lang="de">Manufacturing processes</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Maschinenbau-und-Messtechnik">
+		<dc:title xml:lang="de">Maschinenbau und Messtechnik</dc:title>
+		<dc:title xml:lang="en">Mechanical engineering</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;MechML">
 		<dc:title xml:lang="en">Mechanics Modeling Language</dc:title>
 		<dcterms:source rdf:resource="http://fasform.de/content/?ddownload=1431"/>
@@ -433,6 +606,11 @@ https://opensource.org/licenses/MIT</dcterms:license>
 	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Modelica-Language">
 		<dc:title xml:lang="en">Modelica Language</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;OMG">
+		<dc:title xml:lang="en">Object Management Group</dc:title>
+		<dcterms:source rdf:resource="https://www.omg.org/"/>
 	</cmns-doc:ReferenceDocument>
 	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;PLMXML-Documentation">
@@ -447,6 +625,11 @@ https://opensource.org/licenses/MIT</dcterms:license>
 	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;QIFDocument">
 		<dc:title xml:lang="en">QIFDocument</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;RTCA">
+		<dc:title xml:lang="en">Radio Technical Commission for Aeronautics</dc:title>
+		<dcterms:source rdf:resource="https://www.rtca.org/"/>
 	</cmns-doc:ReferenceDocument>
 	
 	<cmns-doc:ReferenceDocument rdf:about="http://www.omg.org/spec/CASCaRA/references/Recommended-Practices-for-STEP-AP242-Business-Object-Model-XML-Product-&amp;-Assembly-Structure">
@@ -465,8 +648,19 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<owl:versionInfo>Version 1.4.3, 17 November 2014</owl:versionInfo>
 	</cmns-doc:ReferenceDocument>
 	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Road-vehicles">
+		<dc:title xml:lang="de">Road vehicles</dc:title>
+		<dc:title xml:lang="en">Straßenfahrzeuge</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;SAE">
+		<dc:title xml:lang="en">Society of Automotive Engineers</dc:title>
+		<dcterms:source rdf:resource="https://www.sae.org/"/>
+	</cmns-doc:ReferenceDocument>
+	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;SpecIF">
 		<dc:title xml:lang="en">Specification Integration Facility</dc:title>
+		<dcterms:source rdf:resource="https://github.com/GfSE/SpecIF"/>
 		<dcterms:source rdf:resource="https://specif.de/en/"/>
 	</cmns-doc:ReferenceDocument>
 	
@@ -475,9 +669,53 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<dcterms:source rdf:resource="https://github.com/GfSE/SpecIF/blob/master/documentation/04_SpecIF_Domain_Classes_Github.md"/>
 	</cmns-doc:ReferenceDocument>
 	
+	<cmns-doc:ReferenceDocument rdf:about="http://www.omg.org/spec/CASCaRA/references/Standardization,-Technical-principles,-Metrology">
+		<dc:title xml:lang="en">Normung, Kommunikation, Dokumentation</dc:title>
+		<dc:title xml:lang="de">Standardization, Technical principles, Metrology</dc:title>
+		<dc:title xml:lang="en">Standardization, Technical principles, Metrology</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Statistische-Verfahren-im-Prozessmanagement">
+		<dc:title xml:lang="en">Statistical methods in process management</dc:title>
+		<dc:title xml:lang="de">Statistische Verfahren im Prozessmanagement</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Surface-texture:-Profile">
+		<dc:title xml:lang="en">Oberflächenbeschaffenheit: Profile</dc:title>
+		<dc:title xml:lang="de">Surface texture: Profile</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;SysML">
 		<dc:title xml:lang="en">Systems Modeling Language</dc:title>
 		<dcterms:source rdf:resource="http://www.omgsysml.org/index.htm"/>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Systems-and-software-engineering">
+		<dc:title xml:lang="en">System-und Software-Engineering</dc:title>
+		<dc:title xml:lang="de">Systems and software engineering</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;Technical-drawings">
+		<dc:title xml:lang="de">Technical drawings</dc:title>
+		<dc:title xml:lang="en">Technische Zeichnungen</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="http://www.omg.org/spec/CASCaRA/references/Technical-product-documentation-(TPD)">
+		<dc:title xml:lang="de">Technical product documentation (TPD)</dc:title>
+		<dc:title xml:lang="en">Technische Produktdokumentation (TPD)</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;The-Modelica-Association">
+		<dc:title xml:lang="en">The Modelica Association</dc:title>
+		<dcterms:source rdf:resource="https://www.modelica.org/"/>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;U.S.-Product-Data-Association">
+		<dc:title xml:lang="en">U.S. Product Data Association</dc:title>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;VDA">
+		<dc:title xml:lang="en">Verband der deutschen Automobilindustrie</dc:title>
 	</cmns-doc:ReferenceDocument>
 	
 	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;VDA-231-106">
@@ -523,11 +761,25 @@ https://opensource.org/licenses/MIT</dcterms:license>
 		<owl:versionInfo>2018-03</owl:versionInfo>
 	</cmns-doc:ReferenceDocument>
 	
-	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;VDI-2519-Blatt-1">
-		<dc:title xml:lang="de">Procedures for the compilation of tender and performance specifications</dc:title>
-		<dc:title xml:lang="en">Vorgehensweise bei der Erstellung von Lasten-/Pflichtenheften</dc:title>
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;VDI">
+		<dc:title xml:lang="en">Verein Deutscher Ingenieure</dc:title>
+		<dcterms:source rdf:resource="https://www.vdi.de/"/>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;VDI-2519-Sheet-1">
+		<dc:title xml:lang="en">Procedures for the compilation of tender and performance specifications</dc:title>
+		<dc:title xml:lang="de">Vorgehensweise bei der Erstellung von Lasten-/Pflichtenheften</dc:title>
 		<dcterms:source rdf:resource="https://www.vdi.de/richtlinien/details/vdi-2519-blatt-1-vorgehensweise-bei-der-erstellung-von-lasten-pflichtenheften"/>
 		<owl:versionInfo>2001-12</owl:versionInfo>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;prostep-ivip-Association-e.-V.">
+		<dc:title xml:lang="en">prostep ivip Association e. V.</dc:title>
+		<dcterms:source rdf:resource="https://www.prostep.org/"/>
+	</cmns-doc:ReferenceDocument>
+	
+	<cmns-doc:ReferenceDocument rdf:about="&cas-ref;sonstige-Industriestandards">
+		<dc:title xml:lang="en">sonstige Industriestandards</dc:title>
 	</cmns-doc:ReferenceDocument>
 
 </rdf:RDF>

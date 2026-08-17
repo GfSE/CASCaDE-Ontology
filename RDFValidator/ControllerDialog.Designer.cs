@@ -57,10 +57,10 @@ protected override void Dispose(bool disposing)
         MainPanel.Controls.Add(IndividualsValidationLabel, 0, 4);
         MainPanel.Controls.Add(OntologyValidationLbl, 0, 5);
         MainPanel.Controls.Add(SourcesLabel, 0, 0);
-        MainPanel.Controls.Add(SourcesPanel, 1, 0);
         MainPanel.Controls.Add(ButtonsTable, 1, 6);
         MainPanel.Controls.Add(IndividualsValidationTreeView, 1, 4);
         MainPanel.Controls.Add(OntologyValidationTreeView, 1, 5);
+        MainPanel.Controls.Add(SourcesPanel, 1, 0);
         MainPanel.Dock = DockStyle.Fill;
         MainPanel.Location = new Point(0, 0);
         MainPanel.Margin = new Padding(0);
@@ -80,7 +80,7 @@ protected override void Dispose(bool disposing)
         // 
         IndividualsLabel.AutoSize = true;
         IndividualsLabel.Dock = DockStyle.Fill;
-        IndividualsLabel.Location = new Point(3, 100);
+        IndividualsLabel.Location = new Point(3, 28);
         IndividualsLabel.Name = "IndividualsLabel";
         IndividualsLabel.Size = new Size(94, 28);
         IndividualsLabel.TabIndex = 0;
@@ -91,7 +91,7 @@ protected override void Dispose(bool disposing)
         // 
         OntologyLabel.AutoSize = true;
         OntologyLabel.Dock = DockStyle.Fill;
-        OntologyLabel.Location = new Point(3, 128);
+        OntologyLabel.Location = new Point(3, 56);
         OntologyLabel.Name = "OntologyLabel";
         OntologyLabel.Size = new Size(94, 28);
         OntologyLabel.TabIndex = 1;
@@ -102,7 +102,7 @@ protected override void Dispose(bool disposing)
         // 
         Metamodel.AutoSize = true;
         Metamodel.Dock = DockStyle.Left;
-        Metamodel.Location = new Point(3, 156);
+        Metamodel.Location = new Point(3, 84);
         Metamodel.Name = "Metamodel";
         Metamodel.Size = new Size(68, 28);
         Metamodel.TabIndex = 5;
@@ -113,9 +113,9 @@ protected override void Dispose(bool disposing)
         // 
         IndividualsValidationLabel.AutoSize = true;
         IndividualsValidationLabel.Dock = DockStyle.Fill;
-        IndividualsValidationLabel.Location = new Point(3, 184);
+        IndividualsValidationLabel.Location = new Point(3, 112);
         IndividualsValidationLabel.Name = "IndividualsValidationLabel";
-        IndividualsValidationLabel.Size = new Size(94, 119);
+        IndividualsValidationLabel.Size = new Size(94, 155);
         IndividualsValidationLabel.TabIndex = 9;
         IndividualsValidationLabel.Text = "Individuals > Ontology";
         IndividualsValidationLabel.TextAlign = ContentAlignment.MiddleLeft;
@@ -125,9 +125,9 @@ protected override void Dispose(bool disposing)
         OntologyValidationLbl.AutoSize = true;
         OntologyValidationLbl.Dock = DockStyle.Fill;
         OntologyValidationLbl.ImageAlign = ContentAlignment.MiddleLeft;
-        OntologyValidationLbl.Location = new Point(3, 303);
+        OntologyValidationLbl.Location = new Point(3, 267);
         OntologyValidationLbl.Name = "OntologyValidationLbl";
-        OntologyValidationLbl.Size = new Size(94, 119);
+        OntologyValidationLbl.Size = new Size(94, 155);
         OntologyValidationLbl.TabIndex = 10;
         OntologyValidationLbl.Text = "Ontology > Metamodel";
         OntologyValidationLbl.TextAlign = ContentAlignment.MiddleLeft;
@@ -138,7 +138,7 @@ protected override void Dispose(bool disposing)
         SourcesLabel.Dock = DockStyle.Fill;
         SourcesLabel.Location = new Point(3, 0);
         SourcesLabel.Name = "SourcesLabel";
-        SourcesLabel.Size = new Size(94, 100);
+        SourcesLabel.Size = new Size(94, 28);
         SourcesLabel.TabIndex = 14;
         SourcesLabel.Text = "Sources";
         SourcesLabel.TextAlign = ContentAlignment.MiddleLeft;
@@ -189,9 +189,9 @@ protected override void Dispose(bool disposing)
         IndividualsValidationTreeView.BackColor = SystemColors.Control;
         IndividualsValidationTreeView.BorderStyle = BorderStyle.None;
         IndividualsValidationTreeView.Dock = DockStyle.Fill;
-        IndividualsValidationTreeView.Location = new Point(103, 187);
+        IndividualsValidationTreeView.Location = new Point(103, 115);
         IndividualsValidationTreeView.Name = "IndividualsValidationTreeView";
-        IndividualsValidationTreeView.Size = new Size(694, 113);
+        IndividualsValidationTreeView.Size = new Size(694, 149);
         IndividualsValidationTreeView.TabIndex = 18;
         // 
         // OntologyValidationTreeView
@@ -199,25 +199,25 @@ protected override void Dispose(bool disposing)
         OntologyValidationTreeView.BackColor = SystemColors.Control;
         OntologyValidationTreeView.BorderStyle = BorderStyle.None;
         OntologyValidationTreeView.Dock = DockStyle.Fill;
-        OntologyValidationTreeView.Location = new Point(103, 306);
+        OntologyValidationTreeView.Location = new Point(103, 270);
         OntologyValidationTreeView.Name = "OntologyValidationTreeView";
-        OntologyValidationTreeView.Size = new Size(694, 113);
+        OntologyValidationTreeView.Size = new Size(694, 149);
         OntologyValidationTreeView.TabIndex = 19;
         // 
         // SourcesPanel
         // 
-        SourcesPanel.ColumnCount = 2;
-        SourcesPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-        SourcesPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-        SourcesPanel.Dock = DockStyle.Fill;
+        SourcesPanel.AutoSize = true;
+        SourcesPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+        SourcesPanel.ColumnCount = 1;
+        SourcesPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+        SourcesPanel.Dock = DockStyle.Top;
         SourcesPanel.Location = new Point(100, 0);
         SourcesPanel.Margin = new Padding(0);
         SourcesPanel.Name = "SourcesPanel";
-        SourcesPanel.RowCount = 2;
+        SourcesPanel.RowCount = 1;
         SourcesPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 28F));
-        SourcesPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-        SourcesPanel.Size = new Size(700, 100);
-        SourcesPanel.TabIndex = 15;
+        SourcesPanel.Size = new Size(700, 28);
+        SourcesPanel.TabIndex = 20;
         // 
         // ControllerDialog
         // 

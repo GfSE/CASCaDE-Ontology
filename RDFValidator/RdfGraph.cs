@@ -2,7 +2,6 @@
 // SPDX-FileCopyrightText: 2026 Michael Kirsch <michael.kirsch@em.ag>
 // SPDX-FileCopyrightText: 2026 René Bielert
 
-using System.Xml;
 using System.Xml.Linq;
 using VDS.RDF;
 using VDS.RDF.Parsing;
@@ -18,7 +17,10 @@ public class RdfGraph
     private RdfXmlParser _rdfXmlParser = new RdfXmlParser();
     private JsonLdParser _jsonLdParser = new JsonLdParser();
 
-    private ResourceSelection _resourceSelection;
+    private bool _instantiateGraph;
+    private FileSelection _fileSelection;
+
+    public event EventHandler<EventArgs> GraphAssigned;
 
     public Graph Graph { get; private set; }
 
@@ -31,31 +33,27 @@ public class RdfGraph
         }
     }
 
-    public RdfGraph(ResourceSelection resourceSelection, bool instantiateReference = false)
+    public RdfGraph(FileSelection fileSelection, bool instantiateGraph = false)
     {
-        _resourceSelection = resourceSelection;
-        _resourceSelection.FileSelected += ResourceSelection_FileSelected;
+        _instantiateGraph = instantiateGraph;
+        _fileSelection = fileSelection;
+        _fileSelection.FileSelected += FileSelection_FileSelected;
 
-        if (!string.IsNullOrEmpty(_resourceSelection.FilePath))
+        if (File.Exists(_fileSelection.FilePath))
         {
-            ResourceSelection_FileSelected(_resourceSelection, new EventArgs());
-           
-            if (instantiateReference)
-            {
-                InstantiateGraph();
-            }
+            FileSelection_FileSelected(_fileSelection, new EventArgs());
         }
     }
 
-    // Handles the resource file selected event
-    private void ResourceSelection_FileSelected(object source, EventArgs e)
+    // Handles the file selected event
+    private void FileSelection_FileSelected(object source, EventArgs e)
     {
         // Reset graph and try parse as Turtle
         Graph = new Graph();
         try
         {
-            _ttlParser.Load(Graph, _resourceSelection.FilePath);
-            Controller.Logger.Debug("Graph loaded from Turtle file " + _resourceSelection.FilePath);
+            _ttlParser.Load(Graph, _fileSelection.FilePath);
+            Controller.Logger.Debug("Graph loaded from Turtle file " + _fileSelection.FilePath);
         }
         catch (RdfParseException turtleParseException)
         {
@@ -63,8 +61,8 @@ public class RdfGraph
             Graph.Clear();
             try
             {
-                _rdfXmlParser.Load(Graph, _resourceSelection.FilePath);
-                Controller.Logger.Debug("Graph loaded from RDF XML file " + _resourceSelection.FilePath);
+                _rdfXmlParser.Load(Graph, _fileSelection.FilePath);
+                Controller.Logger.Debug("Graph loaded from RDF XML file " + _fileSelection.FilePath);
             }
             catch (RdfParseException rdfXmlParseException)
             {
@@ -75,17 +73,29 @@ public class RdfGraph
                     ITripleStore tripleStore = new TripleStore();
                     tripleStore.Add(Graph);
 
-                    _jsonLdParser.Load(tripleStore, _resourceSelection.FilePath);
-                    Controller.Logger.Debug("Graph loaded from JSON-LD file " + _resourceSelection.FilePath);
+                    _jsonLdParser.Load(tripleStore, _fileSelection.FilePath);
+                    Controller.Logger.Debug("Graph loaded from JSON-LD file " + _fileSelection.FilePath);
                 }
 
                 // Set graph 
                 catch (RdfParseException jsonLdParseException)
                 {
                     Graph = null;
-                    Controller.Logger.Debug("Unable to load graph from file " + _resourceSelection.FilePath);
+                    Controller.Logger.Debug("Unable to load graph from file " + _fileSelection.FilePath);
                 }
             }
+        }
+
+        // Continue if graph has been parsed
+        if (Graph != null)
+        {
+            // Instantiate graph
+            if (_instantiateGraph)
+            {
+                InstantiateGraph();
+            }
+
+            GraphAssigned?.Invoke(this, EventArgs.Empty);
         }
     }
 

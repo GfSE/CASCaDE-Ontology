@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<g class="fill transparent outline">
+		<rect x="3" y="3" width="8" height="3"/>
+		<rect x="13" y="18" width="8" height="3"/>
+		<rect x="8" y="10.5" width="8" height="3"/>
+	</g>
+	<g class="outline">
+		<polyline points="11,4.5 14,4.5 14,8.5 3,8.5 3,12 5,12"/>
+		<polyline points="16,12 19,12 19,16 8,16 8,19.5 10,19.5"/>
+	</g>
+	<g class="fill">
+		<polygon points="8,12 5,12.5 5,11.5"/>
+		<polygon points="13,19.5 10,20 10,19"/>
+	</g>
+</svg>

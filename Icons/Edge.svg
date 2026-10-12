@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<g class="fill transparent">
+		<path d="M 16.759766,7.0175781 6,4.5 v 11.777344 l 10.759766,2.888672 z"/>
+	</g>
+	<g class="outline">
+		<path d="M 16.759766,7.0175781 6,4.5 v 11.777344 l 10.759766,2.888672"/>
+	</g>
+	<g class="outline strong">
+		<path d="M 18,19.5 18,7.3076255"/>
+	</g>
+</svg>

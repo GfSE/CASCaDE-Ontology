@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<g class="outline strong">
+		<line x1="2.5" y1="12" x2="7.25" y2="12"/>
+		<line x1="15.25" y1="12" x2="21.5" y2="12"/>
+	</g>
+	<g class="outline">
+		<path d="M12 7.5 c-2.48 0 -4.5 2.02 -4.5 4.5 c0 2.48 2.02 4.5 4.5 4.5"/>
+		<circle cx="12" cy="12" r="3"/>
+	</g>
+</svg>

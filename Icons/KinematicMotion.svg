@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xml="http://www.w3.org/XML/1998/namespace" viewBox="0 0 24 24">
+	<g class="fill">
+		<polygon points="9.11,17 9.11,7 17.77,12"/>
+		<polygon points="16.5,3 12,4.5 12,1.5"/>
+	</g>
+	<g class="outline">
+		<path d="M21 12 c0 4.97 -4.03 9 -9 9 c-4.97 0 -9 -4.03 -9 -9 c0 -4.97 4.03 -9 9 -9"/>
+	</g>
+</svg>

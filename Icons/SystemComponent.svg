@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xml="http://www.w3.org/XML/1998/namespace" viewBox="0 0 24 24">
+	<g class="outline">
+		<rect x="3" y="3" width="8" height="3"/>
+		<rect x="10" y="18" width="8" height="3"/>
+		<line x1="11.5" y1="9.5" x2="19.5" y2="9.5"/>
+		<line x1="11.5" y1="12.5" x2="19.5" y2="12.5"/>
+		<line x1="11.5" y1="14.5" x2="19.5" y2="14.5"/>
+		<polyline points="10,12 7,12 7,6"/>
+		<polyline points="10,19.5 7,19.5 7,12"/>
+	</g>
+	<g class="fill transparent outline">
+		<rect x="10" y="8" width="11" height="3"/>
+		<rect x="10" y="11" width="11" height="5"/>
+	</g>
+</svg>

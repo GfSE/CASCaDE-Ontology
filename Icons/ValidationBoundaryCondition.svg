@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xml="http://www.w3.org/XML/1998/namespace" viewBox="0 0 24 24">
+	<g class="outline">
+		<polygon points="18,14.62 18,7.38 12,9.1 12,16.6"/>
+		<polygon points="6,14.62 6,7.38 12,9.1 12,16.6"/>
+		<polygon points="6,7.38 12,5.6 18,7.38 12,9.1"/>
+		<line x1="11.44" y1="18.31" x2="5.44" y2="16.33"/>
+		<line x1="12.56" y1="18.31" x2="18.56" y2="16.33"/>
+		<line x1="19.8" y1="14.62" x2="19.8" y2="7.38"/>
+	</g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<g class="outline">
+		<line x1="10.73" y1="12.6" x2="8.65" y2="11.4"/>
+		<line x1="14.88" y1="11.4" x2="12.8" y2="12.6"/>
+		<line x1="11.77" y1="14.4" x2="11.77" y2="16.8"/>
+		<line x1="15.92" y1="7.2" x2="15.92" y2="9.6"/>
+	</g>
+	<g class="fill">
+		<circle cx="15.92" cy="6" r="0.9001"/>
+		<circle cx="15.92" cy="10.8" r="0.9002"/>
+		<circle cx="7.61" cy="10.8" r="0.9001"/>
+		<circle cx="11.76" cy="13.2" r="0.9001"/>
+		<circle cx="11.76" cy="18" r="0.9"/>
+	</g>
+</svg>

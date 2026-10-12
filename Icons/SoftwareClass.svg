@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<g class="outline">
+		<polyline points="14,14.5 16,12.5 14,10.5"/>
+		<polyline points="10,10.5 8,12.5 10,14.5"/>
+		<line x1="11" y1="14.5" x2="13" y2="10.5"/>
+	</g>
+	<g class="fill">
+		<path d="M5 6 l14 0 l0 12 l-14 0 l0 -12 z m1 2 l12 0 l0 9 l-12 0 l0 -9 z m11.5 -0.5 c0.28 0 0.5 -0.22 0.5 -0.5 c0 -0.28 -0.22 -0.5 -0.5 -0.5 c-0.28 0 -0.5 0.22 -0.5 0.5 c0 0.28 0.22 0.5 0.5 0.5 z"/>
+	</g>
+</svg>

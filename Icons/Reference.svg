@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<g class="fill transparent outline">
+		<polygon points="4,6 6,4 13,4 13,16 4,16"/>
+	</g>
+	<g class="outline">
+		<polygon points="4,6 6,6 6,4"/>
+		<polyline points="13.5,6 16.5,6 16.5,18 7.5,18 7.5,16.5"/>
+		<polyline points="17,8 20,8 20,20 11,20 11,18.5"/>
+	</g>
+	<g class="outline">
+		<line x1="5.5" y1="14.5" x2="11.5" y2="14.5"/>
+		<line x1="5.5" y1="13" x2="11.5" y2="13"/>
+		<line x1="5.5" y1="11.5" x2="11.5" y2="11.5"/>
+		<line x1="5.5" y1="10" x2="11.5" y2="10"/>
+		<line x1="5.5" y1="8.5" x2="11.5" y2="8.5"/>
+		<line x1="5.5" y1="7" x2="11.5" y2="7"/>
+		<line x1="7" y1="5.5" x2="11.5" y2="5.5"/>
+	</g>
+</svg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xml="http://www.w3.org/XML/1998/namespace" viewBox="0 0 24 24">
+	<g class="outline">
+		<polygon points="19.5,16.4 19.5,7.34 12,9.5 12,18.88"/>
+		<polygon points="4.5,16.4 4.5,7.34 12,9.5 12,18.88"/>
+		<polygon points="4.5,7.34 12,5.12 19.5,7.34 12,9.5"/>
+		<polygon points="4.5,16.4 12,18.88 19.5,16.4 19.5,7.34 12,5.12 4.5,7.34"/>
+		<polyline points="7.92,17.53 7.92,8.31 15.42,6.12"/>
+		<polyline points="8.58,6.12 16.08,8.31 16.08,17.53"/>
+	</g>
+</svg>

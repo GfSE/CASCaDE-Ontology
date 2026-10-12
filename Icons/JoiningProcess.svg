@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<g class="fill transparent outline">
+		<path d="M15 9.5 c-0.77 -0.76 -1.83 -1.23 -3 -1.23 c-1.17 0 -2.23 0.47 -3 1.23 l1 1 l0 5.5 l4 0 l0 -5.5 l1 -1 z"/>
+		<path d="M7 20.5 l10 0 l0 -4 l-2 0 c-0.77 0.76 -1.83 1.23 -3 1.23 c-1.17 0 -2.23 -0.47 -3 -1.23 l-2 0 l0 4 z"/>
+		<path d="M7 3.5 l10 0 l0 4 l-2 0 c-0.77 -0.76 -1.83 -1.23 -3 -1.23 c-1.17 0 -2.23 0.47 -3 1.23 l-2 0 l0 -4 z"/>
+	</g>
+	<g class="fill transparent">
+		<path d="M3 12 l7 0 l0 1.5 l-1 1 l-6 0 l0 -2.5 z m11 0 l7 0 l0 2.5 l-6 0 l-1 -1 l0 -1.5 z"/>
+		<path d="M3 9.5 l6 0 l1 1 l0 1.5 l-7 0 l0 -2.5 z m18 0 l0 2.5 l-7 0 l0 -1.5 l1 -1 l6 0 z"/>
+	</g>
+	<g class="outline">
+		<line x1="3" y1="9.5" x2="21" y2="9.5"/>
+		<line x1="3" y1="12" x2="21" y2="12"/>
+		<line x1="3" y1="14.5" x2="21" y2="14.5"/>
+	</g>
+</svg>

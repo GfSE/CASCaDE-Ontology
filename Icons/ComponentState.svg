@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<g class="outline">
+		<line x1="4" y1="6.5" x2="8" y2="6.5"/>
+		<line x1="12" y1="9.5" x2="16" y2="9.5"/>
+		<line x1="20" y1="13.5" x2="16" y2="13.5"/>
+		<line x1="4" y1="17.5" x2="16" y2="17.5"/>
+	</g>
+	<g class="outline strong">
+		<line x1="4" y1="4.5" x2="4" y2="19.5"/>
+		<line x1="12" y1="4.5" x2="12" y2="15.5"/>
+		<line x1="20" y1="7.5" x2="20" y2="19.5"/>
+	</g>
+	<g class="fill">
+		<polygon points="12,6.5 8,5.5 8,7.5"/>
+		<polygon points="20,9.5 16,8.5 16,10.5"/>
+		<polygon points="12,13.5 16,14.5 16,12.5"/>
+		<polygon points="20,17.5 16,16.5 16,18.5"/>
+	</g>
+</svg>

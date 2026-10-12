@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xml="http://www.w3.org/XML/1998/namespace" viewBox="0 0 24 24">
+	<g class="outline">
+		<rect x="14.5" y="4.5" width="5" height="5"/>
+		<rect x="14.5" y="14.5" width="5" height="5"/>
+		<polyline points="15.75,7 16.58,7.83 18.25,6.17"/>
+		<path d="M15.75 10.75 l2.5 2.5 m-2.5 0 l2.5 -2.5"/>
+		<polyline points="15.75,17 16.58,17.83 18.25,16.17"/>
+		<polyline points="5.21,14.5 4.5,14.5 4.5,9.5 5.21,9.5"/>
+		<polyline points="14.5,13.45 14.5,14.5 19.5,14.5 19.5,9.5 14.5,9.5 14.5,10.55"/>
+		<polyline points="12.67,14.5 14.5,14.5 14.5,19.5 4.5,19.5 4.5,14.5 5.21,14.5"/>
+		<polyline points="5.21,9.5 4.5,9.5 4.5,4.5 14.5,4.5 14.5,9.5 12.67,9.5"/>
+		<line x1="12.5" y1="17" x2="8.34" y2="17"/>
+		<line x1="12.5" y1="7" x2="8.34" y2="7"/>
+	</g>
+	<g class="fill">
+		<polygon points="6.21,17 6.21,7 14.87,12"/>
+	</g>
+</svg>

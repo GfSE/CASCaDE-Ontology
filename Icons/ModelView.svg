@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<g class="outline">
+		<polygon points="20.86,15.65 20.86,7.08 13.77,9.13 13.77,17.99"/>
+		<polygon points="6.68,15.65 6.68,7.08 13.77,9.13 13.77,17.99"/>
+		<polygon points="6.68,7.08 13.77,4.99 20.86,7.08 13.77,9.13"/>
+	</g>
+	<g class="fill transparent outline strong">
+		<polygon points="3.14,16.67 10.23,19.01 10.23,10.15 3.14,8.11"/>
+	</g>
+</svg>

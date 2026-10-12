@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xml="http://www.w3.org/XML/1998/namespace" viewBox="0 0 24 24">
+	<g class="outline">
+		<rect x="9" y="5" width="6" height="4.5"/>
+		<line x1="12" y1="9.5" x2="8.75" y2="15.13"/>
+	</g>
+	<g class="fill">
+		<polygon points="6.75,18.59 9.62,15.63 7.88,14.63"/>
+		<path d="M 12.99,8.23 H 12.56 L 12.39,7.78 H 11.6 l -0.16,0.45 h -0.42 l 0.77,-1.97 h 0.42 L 13,8.23 Z M 12.26,7.45 11.99,6.72 11.72,7.45 Z"/>
+	</g>
+</svg>

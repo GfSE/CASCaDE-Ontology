@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<g class="outline">
+		<rect x="6" y="4" width="12" height="4"/>
+	</g>
+	<g class="outline fill transparent">
+		<rect x="6" y="9" width="12" height="10"/>
+	</g>
+	<g class="fill">
+		<rect x="8" y="2" width="1" height="4" rx="0.5"/>
+		<rect x="15" y="2" width="1" height="4" rx="0.5"/>
+	</g>
+</svg>

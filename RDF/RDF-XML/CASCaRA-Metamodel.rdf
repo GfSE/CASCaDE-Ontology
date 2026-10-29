@@ -26,7 +26,7 @@
 		<dcterms:contributor>Bleisinger, Oliver, Fraunhofer IESE</dcterms:contributor>
 		<dcterms:contributor>Bosse, Rolf, Mercedes-Benz AG</dcterms:contributor>
 		<dcterms:contributor>Burkhart, Roger, Thematix Partners</dcterms:contributor>
-		<dcterms:contributor>Christmann, Simon, :em engineering methods AG</dcterms:contributor>
+		<dcterms:contributor>Christmann, Simon, PROSTEP AG</dcterms:contributor>
 		<dcterms:contributor>Delpeuch, Ghislain, SSC Services GmbH</dcterms:contributor>
 		<dcterms:contributor>Dörr, Sebastian, CONWEAVER GmbH</dcterms:contributor>
 		<dcterms:contributor>Engelhardt, Joachim, Sodius Willert</dcterms:contributor>
@@ -44,20 +44,20 @@
 		<dcterms:contributor>Kaufmann, Uwe, ModelAlchemy Consulting</dcterms:contributor>
 		<dcterms:contributor>Kendall, Elisa, Thematix Partners</dcterms:contributor>
 		<dcterms:contributor>Kiehlmann, Karsten, Aumovio SE</dcterms:contributor>
-		<dcterms:contributor>Kirsch, Michael, :em engineering methods AG</dcterms:contributor>
+		<dcterms:contributor>Kirsch, Michael, PROSTEP AG</dcterms:contributor>
 		<dcterms:contributor>Klaar, Dr. Oliver, ZF Friedrichshafen</dcterms:contributor>
-		<dcterms:contributor>Kleiner, Dr.-Ing. Sven, :em engineering methods AG</dcterms:contributor>
+		<dcterms:contributor>Kleiner, Dr.-Ing. Sven, PROSTEP AG</dcterms:contributor>
 		<dcterms:contributor>Klöppner, Robert, MTU Aero Engines AG</dcterms:contributor>
 		<dcterms:contributor>Koch, Dr. Walter, GfSE Gesellschaft für Systems Engineering</dcterms:contributor>
 		<dcterms:contributor>Koethe, Manfred, 88solutions</dcterms:contributor>
 		<dcterms:contributor>Krems, Daniel, AVL List</dcterms:contributor>
-		<dcterms:contributor>Lehnen, Johannes, :em engineering methods AG</dcterms:contributor>
+		<dcterms:contributor>Lehnen, Johannes, PROSTEP AG</dcterms:contributor>
 		<dcterms:contributor>Li, Zirui, Product and Systems Engineering Group</dcterms:contributor>
 		<dcterms:contributor>Martin, James, Anark Corporation Inc.</dcterms:contributor>
 		<dcterms:contributor>Marvin, Joe, PSG Prime Solutions Group</dcterms:contributor>
 		<dcterms:contributor>Mendo, Juan Carlos, The Boeing Company</dcterms:contributor>
 		<dcterms:contributor>Meyer, Nico, Volkswagen AG</dcterms:contributor>
-		<dcterms:contributor>Mogo Nem, Dr. Fabrice, :em engineering methods AG</dcterms:contributor>
+		<dcterms:contributor>Mogo Nem, Dr. Fabrice, PROSTEP AG</dcterms:contributor>
 		<dcterms:contributor>Mogo Nem, Dr.-Ing. Fabrice, Schaeffler Technologies AG &amp; Co. KG</dcterms:contributor>
 		<dcterms:contributor>Moreland, Clarence Moe, Modern Technology Solutions, Inc.</dcterms:contributor>
 		<dcterms:contributor>Mueller, Andreas, Schaeffler Technologies AG &amp; Co. KG</dcterms:contributor>
@@ -81,7 +81,7 @@
 		<dcterms:contributor>von Holst, Dr.-Ing. Christian, John Deere GmbH &amp; Co KG</dcterms:contributor>
 		<dcterms:created>03.07.2026 07:49:32</dcterms:created>
 		<dcterms:license>CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
-Copyright (c) 2024-2026 :em engineering methods AG
+Copyright (c) 2024-2026 PROSTEP AG
 Copyright (c) 2024-2026 88solutions
 Copyright (c) 2024-2026 Aerospace Corp.
 Copyright (c) 2024-2026 Airbus Operations GmbH
@@ -110,7 +110,7 @@ Copyright (c) 2024-2026 UC3 Madrid
 Copyright (c) 2024-2026 VDA Verband der deutschen Automobilindustrie
 
 Digital Data Package Working Group: Defines use-cases and domain ontology as a foundation for CASCaRA
-Copyright (c) 2019-2026 :em engineering methods AG
+Copyright (c) 2019-2026 PROSTEP AG
 Copyright (c) 2019-2020 Airbus Operations GmbH
 Copyright (c) 2019-2026 Anark Corporation Inc.
 Copyright (c) 2026-2026 Aumovio SE

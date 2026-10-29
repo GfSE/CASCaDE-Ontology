@@ -1,6 +1,6 @@
 [
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/references/",
+		"@id" : "https://www.omg.org/spec/CASCaRA/references/",
 		"@type" : "owl:Ontology",
 		"rdfs:label" : {
 			"@value" : "Resources Ontology"
@@ -40,9 +40,6 @@
 				"@value" : "Burkhart, Roger, Thematix Partners"
 			},
 			{
-				"@value" : "Christmann, Simon, :em engineering methods AG"
-			},
-			{
 				"@value" : "Delpeuch, Ghislain, SSC Services GmbH"
 			},
 			{
@@ -55,7 +52,7 @@
 				"@value" : "Esquerra, Fredwilliam, The Boeing Company"
 			},
 			{
-				"@value" : "Giese, Sarah, PROSTEP AG"
+				"@value" : "Giese, Sarah, PROSTEP Group, PROSTEP AG"
 			},
 			{
 				"@value" : "Gliniorz, Stefan, Robert Bosch GmbH"
@@ -82,9 +79,6 @@
 				"@value" : "Hashimoto, Atsushi, JAXA Japan Aerospace Exploration Agency"
 			},
 			{
-				"@value" : "Husung, Dr.-Ing. Stephan, TU Ilmenau, Department of Mechanical Engineering, Product and Systems Engineering Group"
-			},
-			{
 				"@value" : "Kaufmann, Uwe, ModelAlchemy Consulting"
 			},
 			{
@@ -94,13 +88,16 @@
 				"@value" : "Kiehlmann, Karsten, Aumovio SE"
 			},
 			{
-				"@value" : "Kirsch, Michael, :em engineering methods AG"
+				"@value" : "Kirsch, Michael"
+			},
+			{
+				"@value" : "Kirsch, Michael, PROSTEP Group, PROSTEP AG"
 			},
 			{
 				"@value" : "Klaar, Dr. Oliver, ZF Group, ZF Friedrichshafen"
 			},
 			{
-				"@value" : "Kleiner, Dr.-Ing. Sven, :em engineering methods AG"
+				"@value" : "Kleiner, Dr.-Ing. Sven"
 			},
 			{
 				"@value" : "Klöppner, Robert, MTU Aero Engines AG"
@@ -115,7 +112,7 @@
 				"@value" : "Krems, Daniel, AVL List"
 			},
 			{
-				"@value" : "Lehnen, Johannes, :em engineering methods AG"
+				"@value" : "Lehnen, Johannes"
 			},
 			{
 				"@value" : "Li, Zirui, TU Ilmenau, Department of Mechanical Engineering, Product and Systems Engineering Group"
@@ -133,16 +130,13 @@
 				"@value" : "Meyer, Nico, Volkswagen AG"
 			},
 			{
-				"@value" : "Mogo Nem, Dr. Fabrice, :em engineering methods AG"
-			},
-			{
-				"@value" : "Mogo Nem, Dr. Fabrice, Schaeffler AG, Schaeffler Technologies AG & Co. KG"
+				"@value" : "Mogo Nem, Dr. Fabrice"
 			},
 			{
 				"@value" : "Moreland, Clarence Moe, Modern Technology Solutions, Inc."
 			},
 			{
-				"@value" : "Mueller, Andreas, Schaeffler AG, Schaeffler Technologies AG & Co. KG"
+				"@value" : "Mueller, Andreas"
 			},
 			{
 				"@value" : "Nielsen, Johan, ELYSIUM Inc."
@@ -163,7 +157,7 @@
 				"@value" : "Sauvage, Michel, Airbus Operations GmbH"
 			},
 			{
-				"@value" : "Schmied, Torsten, PROSTEP AG"
+				"@value" : "Schmied, Torsten, PROSTEP Group, PROSTEP AG"
 			},
 			{
 				"@value" : "Schopper, Dominik, Mercedes-Benz AG"
@@ -175,7 +169,7 @@
 				"@value" : "Stoib, Martin, Kromberg & Schubert Automotive GmbH & Co. KG"
 			},
 			{
-				"@value" : "Stürken, Dr. Momme, Schaeffler AG, Schaeffler Technologies AG & Co. KG"
+				"@value" : "Stürken, Dr. Momme"
 			},
 			{
 				"@value" : "Tazir, Nora, prostep ivip Association"
@@ -201,25 +195,26 @@
 			
 		],
 		"dcterms:created" : {
-			"@type" : "xsd:dateTime",
-			"@value" : "14.08.2026 01:56:26"
+			"@value" : "2026-10-27T23:38:43.43Z"
 		},
 		"dcterms:license" : {
-			"@value" : "CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA\u000aCopyright (c) 2024-2026 :em engineering methods AG\u000aCopyright (c) 2024-2026 88solutions\u000aCopyright (c) 2024-2026 Aerospace Corp.\u000aCopyright (c) 2024-2026 Airbus Operations GmbH\u000aCopyright (c) 2024-2026 ATLAS Elektronik\u000aCopyright (c) 2024-2026 The Boeing Company\u000aCopyright (c) 2024-2026 enso managers GmbH\u000aCopyright (c) 2024-2026 GfSE Gesellschaft für Systems Engineering\u000aCopyright (c) 2024-2026 INCOSE\u000aCopyright (c) 2024-2026 INOMIC Solutions GmbH\u000aCopyright (c) 2024-2026 Intuitive AI\u000aCopyright (c) 2024-2026 Manfred Harms Consulting\u000aCopyright (c) 2024-2026 ModelAlchemy Consulting\u000aCopyright (c) 2024-2026 Modern Technology Solutions, Inc.\u000aCopyright (c) 2024-2026 oose eG\u000aCopyright (c) 2024-2025 PDES, Inc.\u000aCopyright (c) 2024-2026 PROSTEP AG\u000aCopyright (c) 2024-2026 prostep ivip Association\u000aCopyright (c) 2024-2026 PSG Prime Solutions Group\u000aCopyright (c) 2024-2026 Division of Design of Cyber-Physical Systems\u000aCopyright (c) 2024-2026 Collins Aerospace\u000aCopyright (c) 2024-2026 Schaeffler Technologies AG & Co. KG\u000aCopyright (c) 2024-2026 Thematix Partners\u000aCopyright (c) 2024-2026 TU Hamburg-Harburg\u000aCopyright (c) 2024-2026 Product and Systems Engineering Group\u000aCopyright (c) 2024-2026 UC3 Madrid\u000aCopyright (c) 2024-2026 VDA Verband der deutschen Automobilindustrie\u000a\u000aDigital Data Package Working Group: Defines use-cases and domain ontology as a foundation for CASCaRA\u000aCopyright (c) 2019-2026 :em engineering methods AG\u000aCopyright (c) 2019-2020 Airbus Operations GmbH\u000aCopyright (c) 2019-2026 Anark Corporation Inc.\u000aCopyright (c) 2026-2026 Aumovio SE\u000aCopyright (c) 2019-2026 AVL List\u000aCopyright (c) 2022-2026 The Boeing Company\u000aCopyright (c) 2022-2026 Robert Bosch GmbH\u000aCopyright (c) 2019-2022 CONWEAVER GmbH\u000aCopyright (c) 2019-2026 ELYSIUM Inc.\u000aCopyright (c) 2019-2021 Fraunhofer IESE\u000aCopyright (c) 2026-2026 Infineon Technologies AG\u000aCopyright (c) 2025-2026 INOMIC Solutions GmbH\u000aCopyright (c) 2025-2026 JAXA Japan Aerospace Exploration Agency\u000aCopyright (c) 2021-2024 John Deere GmbH & Co KG\u000aCopyright (c) 2019-2021 Kromberg & Schubert Automotive GmbH & Co. KG\u000aCopyright (c) 2019-2026 Mercedes-Benz AG\u000aCopyright (c) 2024-2026 MTU Aero Engines AG\u000aCopyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche AG\u000aCopyright (c) 2019-2026 PROSTEP AG\u000aCopyright (c) 2025-2026 Collins Aerospace\u000aCopyright (c) 2019-2024 Schaeffler Technologies AG & Co. KG\u000aCopyright (c) 2025-2026 Sodius Willert\u000aCopyright (c) 2019-2020 SSC Services GmbH\u000aCopyright (c) 2026-2026 T-Systems International GmbH\u000aCopyright (c) 2022-2026 Volkswagen AG\u000aCopyright (c) 2019-2026 ZF Friedrichshafen\u000a\u000aPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.\u000ahttps://opensource.org/licenses/MIT"
+			"@value" : "CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA\u000aCopyright (c) 2024-2026 :em AG\u000aCopyright (c) 2024-2026 88solutions\u000aCopyright (c) 2024-2026 Aerospace Corp.\u000aCopyright (c) 2024-2026 Airbus Operations GmbH\u000aCopyright (c) 2024-2026 ATLAS Elektronik\u000aCopyright (c) 2024-2026 The Boeing Company\u000aCopyright (c) 2024-2026 enso managers GmbH\u000aCopyright (c) 2024-2026 GfSE Gesellschaft für Systems Engineering\u000aCopyright (c) 2024-2026 INCOSE\u000aCopyright (c) 2024-2026 INOMIC Solutions GmbH\u000aCopyright (c) 2024-2026 Intuitive AI\u000aCopyright (c) 2024-2026 Manfred Harms Consulting\u000aCopyright (c) 2024-2026 ModelAlchemy Consulting\u000aCopyright (c) 2024-2026 Modern Technology Solutions, Inc.\u000aCopyright (c) 2024-2026 oose eG\u000aCopyright (c) 2024-2025 PDES, Inc.\u000aCopyright (c) 2024-2026 PROSTEP AG\u000aCopyright (c) 2024-2026 prostep ivip Association\u000aCopyright (c) 2024-2026 PSG Prime Solutions Group\u000aCopyright (c) 2024-2026 Division of Design of Cyber-Physical Systems\u000aCopyright (c) 2024-2026 Collins Aerospace\u000aCopyright (c) 2024-2026 Schaeffler\u000aCopyright (c) 2024-2026 Thematix Partners\u000aCopyright (c) 2024-2026 TU Hamburg-Harburg\u000aCopyright (c) 2024-2026 Product and Systems Engineering Group\u000aCopyright (c) 2024-2026 UC3 Madrid\u000aCopyright (c) 2024-2026 VDA Verband der deutschen Automobilindustrie\u000a\u000aDigital Data Package Working Group: Defines use-cases and domain ontology as a foundation for CASCaRA\u000aCopyright (c) 2019-2026 :em AG\u000aCopyright (c) 2019-2020 Airbus Operations GmbH\u000aCopyright (c) 2019-2026 Anark Corporation Inc.\u000aCopyright (c) 2026-2026 Aumovio SE\u000aCopyright (c) 2019-2026 AVL List\u000aCopyright (c) 2022-2026 The Boeing Company\u000aCopyright (c) 2022-2026 Robert Bosch GmbH\u000aCopyright (c) 2019-2022 CONWEAVER GmbH\u000aCopyright (c) 2019-2026 ELYSIUM Inc.\u000aCopyright (c) 2019-2021 Fraunhofer IESE\u000aCopyright (c) 2026-2026 Infineon Technologies AG\u000aCopyright (c) 2025-2026 INOMIC Solutions GmbH\u000aCopyright (c) 2025-2026 JAXA Japan Aerospace Exploration Agency\u000aCopyright (c) 2021-2024 John Deere GmbH & Co KG\u000aCopyright (c) 2019-2021 Kromberg & Schubert Automotive GmbH & Co. KG\u000aCopyright (c) 2019-2026 Mercedes-Benz AG\u000aCopyright (c) 2024-2026 MTU Aero Engines AG\u000aCopyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche AG\u000aCopyright (c) 2019-2026 PROSTEP AG\u000aCopyright (c) 2025-2026 Collins Aerospace\u000aCopyright (c) 2019-2024 Schaeffler\u000aCopyright (c) 2025-2026 Sodius Willert\u000aCopyright (c) 2019-2020 SSC Services GmbH\u000aCopyright (c) 2026-2026 T-Systems International GmbH\u000aCopyright (c) 2022-2026 Volkswagen AG\u000aCopyright (c) 2019-2026 ZF Friedrichshafen\u000a\u000aPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.\u000ahttps://opensource.org/licenses/MIT"
 		},
 		"dcterms:title" : {
 			"@value" : "CASCaRA Resources Ontology"
 		},
 		"owl:imports" : [
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/metamodel/" },
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/metamodel/" },
 			{ "@id" : "https://www.omg.org/spec/Commons/AboutCommons/" }
 			
 		],
-		"owl:versionInfo" : {
-			"@value" : "1.0"
+		"owl:version" : {
+			"@value" : "20261001"
 		},
+		"owl:versionIRI" : { "@id" : "cas-ref:20261001" },
 		"@context" : {
 			
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -227,7 +222,7 @@
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/references/3D-Measurement-Data-Management-with-I++-DMS",
+		"@id" : "https://www.omg.org/spec/CASCaRA/references/3D-Measurement-Data-Management-with-I++-DMS",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
@@ -251,7 +246,7 @@
 		"dcterms:source" : { "@id" : "https://3mf.io/specification/" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -266,7 +261,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -281,7 +276,7 @@
 		"dcterms:source" : { "@id" : "https://www.sae.org/standards/arp4754b-guidelines-development-civil-aircraft-systems" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -297,7 +292,7 @@
 		"dcterms:source" : { "@id" : "https://www.sae.org/standards/arp4761a-guidelines-conducting-safety-assessment-process-civil-aircraft-systems-equipment" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -312,7 +307,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -326,7 +321,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -347,7 +342,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -362,7 +357,7 @@
 		"dcterms:source" : { "@id" : "https://www.automationml.org/about-automationml/specifications/" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -378,7 +373,7 @@
 		"dcterms:source" : { "@id" : "https://www.mbx-if.org/home/" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -404,7 +399,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -431,7 +426,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -458,7 +453,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -481,7 +476,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -506,7 +501,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -529,7 +524,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -554,7 +549,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -566,12 +561,12 @@
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
-				"@language" : "de",
+				"@language" : "en",
 				"@value" : "Tolerances of form, orientation, location and run-out"
 			},
 			{
-				"@language" : "en",
-				"@value" : "Tolerierung von Form, Richtung, Ort und Lauf (URL-Dublette!)"
+				"@language" : "de",
+				"@value" : "Tolerierung von Form, Richtung, Ort und Lauf"
 			}
 			
 		],
@@ -581,7 +576,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -593,11 +588,11 @@
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
-				"@language" : "de",
+				"@language" : "en",
 				"@value" : "Part 1: Linear sizes"
 			},
 			{
-				"@language" : "en",
+				"@language" : "de",
 				"@value" : "Teil 1: Lineare Größenmaße"
 			}
 			
@@ -608,7 +603,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -620,11 +615,11 @@
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
-				"@language" : "de",
+				"@language" : "en",
 				"@value" : "Part 2: Dimensions other than linear or angular sizes"
 			},
 			{
-				"@language" : "en",
+				"@language" : "de",
 				"@value" : "Teil 2: Andere als lineare oder Winkelgrößenmaße"
 			}
 			
@@ -635,7 +630,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -647,11 +642,11 @@
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
-				"@language" : "de",
+				"@language" : "en",
 				"@value" : "Part 3: Angular sizes"
 			},
 			{
-				"@language" : "en",
+				"@language" : "de",
 				"@value" : "Teil 3: Winkelgrößenmaße"
 			}
 			
@@ -662,31 +657,10 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
-			"dc" : "http://purl.org/dc/elements/1.1/"
-		}
-	},
-	{
-		"@id" : "cas-ref:DIN-EN-ISO-21920",
-		"@type" : "cmns-doc:ReferenceDocument",
-		"dc:title" : [
-			{
-				"@language" : "de",
-				"@value" : "Part 2: Terms, definitions and surface texture parameters (ISO 21920-2:2021, Corrected version 2022-06)"
-			},
-			{
-				"@language" : "en",
-				"@value" : "Teil 2: Begriffe und Kenngrößen für die Oberflächenbeschaffenheit (ISO 21920-2:2021, korrigierte Fassung 2022-06)"
-			}
-			
-		],
-		"@context" : {
-			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
-			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
@@ -695,11 +669,11 @@
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
-				"@language" : "de",
+				"@language" : "en",
 				"@value" : "Part 1: Indication of surface texture (ISO 21920-1:2021)"
 			},
 			{
-				"@language" : "en",
+				"@language" : "de",
 				"@value" : "Teil 1: Angabe der Oberflächenbeschaffenheit (ISO 21920-1:2021)"
 			}
 			
@@ -710,7 +684,34 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
+			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"owl" : "http://www.w3.org/2002/07/owl#",
+			"dcterms" : "http://purl.org/dc/terms/",
+			"dc" : "http://purl.org/dc/elements/1.1/"
+		}
+	},
+	{
+		"@id" : "cas-ref:DIN-EN-ISO-21920-2",
+		"@type" : "cmns-doc:ReferenceDocument",
+		"dc:title" : [
+			{
+				"@language" : "en",
+				"@value" : "Part 2: Terms, definitions and surface texture parameters (ISO 21920-2:2021, Corrected version 2022-06)"
+			},
+			{
+				"@language" : "de",
+				"@value" : "Teil 2: Begriffe und Kenngrößen für die Oberflächenbeschaffenheit "
+			}
+			
+		],
+		"dcterms:source" : { "@id" : "https://www.dinmedia.de/de/norm/din-en-iso-21920-2/344762428" },
+		"owl:versionInfo" : {
+			"@value" : "2022-06"
+		},
+		"@context" : {
+			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -722,11 +723,11 @@
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
-				"@language" : "de",
+				"@language" : "en",
 				"@value" : "Part 3: Specification operators (ISO 21920-3:2021)"
 			},
 			{
-				"@language" : "en",
+				"@language" : "de",
 				"@value" : "Teil 3: Spezifikationsoperatoren (ISO 21920-3:2021)"
 			}
 			
@@ -737,7 +738,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -749,11 +750,11 @@
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
-				"@language" : "en",
+				"@language" : "de",
 				"@value" : "Eisenwerkstoffe - Wärmebehandlung - Begriffe"
 			},
 			{
-				"@language" : "de",
+				"@language" : "en",
 				"@value" : "Ferrous materials - Heat treatments - Vocabulary"
 			}
 			
@@ -764,7 +765,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -787,7 +788,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -797,11 +798,11 @@
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
-				"@language" : "de",
+				"@language" : "en",
 				"@value" : "Simplified representation and dimensioning of holes (ISO 15786:2008)"
 			},
 			{
-				"@language" : "en",
+				"@language" : "de",
 				"@value" : "Vereinfachte Darstellung und Bemaßung von Löchern (ISO 15786:2008)"
 			}
 			
@@ -812,7 +813,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -828,7 +829,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -843,7 +844,7 @@
 		"dcterms:source" : { "@id" : "https://my.rtca.org/productdetails?id=a1B36000001IchGEAS" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -858,7 +859,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -879,7 +880,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -900,7 +901,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -921,7 +922,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -936,7 +937,7 @@
 		"dcterms:source" : { "@id" : "http://fasform.de/content/" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -951,7 +952,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -966,7 +967,7 @@
 		"dcterms:source" : { "@id" : "https://www.vda.de/dam/vda/publications/2016/FAT/FAT-Schriftenreihe_286.pdf" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -982,7 +983,7 @@
 		"dcterms:source" : { "@id" : "https://fmi-standard.org/" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -1004,7 +1005,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -1018,13 +1019,13 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/references/Geometrical-Product-Specifications-(GPS)",
+		"@id" : "https://www.omg.org/spec/CASCaRA/references/Geometrical-Product-Specifications-(GPS)",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
@@ -1044,7 +1045,7 @@
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/references/Geometrical-product-specifications-(GPS)",
+		"@id" : "https://www.omg.org/spec/CASCaRA/references/Geometrical-product-specifications-(GPS)",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
@@ -1079,13 +1080,13 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/references/Geometrische-Produktspezifikation-(GPS)",
+		"@id" : "https://www.omg.org/spec/CASCaRA/references/Geometrische-Produktspezifikation-(GPS)",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
@@ -1113,7 +1114,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -1131,7 +1132,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1148,7 +1149,7 @@
 		"dcterms:source" : { "@id" : "https://www.ipc.org/" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -1164,7 +1165,7 @@
 		"dcterms:source" : { "@id" : "http://www.ipc2581.com/" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -1186,7 +1187,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -1211,7 +1212,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1238,7 +1239,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1254,7 +1255,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -1275,7 +1276,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -1300,7 +1301,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1327,7 +1328,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1354,7 +1355,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1381,7 +1382,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1404,7 +1405,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -1429,7 +1430,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1456,7 +1457,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1483,7 +1484,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1506,7 +1507,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -1516,11 +1517,11 @@
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
-				"@language" : "de",
+				"@language" : "en",
 				"@value" : "Part 1: Vocabulary"
 			},
 			{
-				"@language" : "en",
+				"@language" : "de",
 				"@value" : "Teil 1: Vokabular"
 			}
 			
@@ -1531,7 +1532,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1558,7 +1559,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1581,7 +1582,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -1606,7 +1607,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1633,7 +1634,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1660,7 +1661,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1677,7 +1678,7 @@
 		"dcterms:source" : { "@id" : "https://www.iso.org/standard/65231.html" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -1688,11 +1689,11 @@
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
-				"@language" : "en",
+				"@language" : "de",
 				"@value" : "Bewertungen von Arbeitsergebnissen"
 			},
 			{
-				"@language" : "de",
+				"@language" : "en",
 				"@value" : "Work product reviews"
 			}
 			
@@ -1703,7 +1704,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1730,7 +1731,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1757,7 +1758,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1784,7 +1785,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1807,7 +1808,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -1828,7 +1829,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -1842,7 +1843,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -1863,7 +1864,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -1884,7 +1885,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -1899,7 +1900,7 @@
 		"dcterms:source" : { "@id" : "https://www.omg.org/industries/manufacturing.htm" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -1921,7 +1922,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -1942,7 +1943,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -1960,7 +1961,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1976,7 +1977,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -1991,7 +1992,7 @@
 		"dcterms:source" : { "@id" : "https://www.omg.org/" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -2007,7 +2008,7 @@
 		"dcterms:source" : { "@id" : "http://media.plm.automation.siemens.com/open/plm-xml/docs/v7.0.3/documentation/plmxml.htm" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -2023,7 +2024,7 @@
 		"dcterms:source" : { "@id" : "https://qifstandards.org/" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -2038,7 +2039,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -2053,14 +2054,14 @@
 		"dcterms:source" : { "@id" : "https://www.rtca.org/" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/references/Recommended-Practices-for-STEP-AP242-Business-Object-Model-XML-Product-&-Assembly-Structure",
+		"@id" : "https://www.omg.org/spec/CASCaRA/references/Recommended-Practices-for-STEP-AP242-Business-Object-Model-XML-Product-&-Assembly-Structure",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : {
 			"@language" : "en",
@@ -2088,7 +2089,7 @@
 		"dcterms:source" : { "@id" : "https://www.omg.org/reqif/" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -2106,7 +2107,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -2128,7 +2129,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -2143,7 +2144,7 @@
 		"dcterms:source" : { "@id" : "https://www.sae.org/" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -2163,7 +2164,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -2179,14 +2180,14 @@
 		"dcterms:source" : { "@id" : "https://github.com/GfSE/SpecIF/blob/master/documentation/04_SpecIF_Domain_Classes_Github.md" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/references/Standardization,-Technical-principles,-Metrology",
+		"@id" : "https://www.omg.org/spec/CASCaRA/references/Standardization,-Technical-principles,-Metrology",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
@@ -2225,7 +2226,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -2246,7 +2247,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -2261,7 +2262,7 @@
 		"dcterms:source" : { "@id" : "http://www.omgsysml.org/index.htm" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -2283,7 +2284,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -2304,13 +2305,13 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/references/Technical-product-documentation-(TPD)",
+		"@id" : "https://www.omg.org/spec/CASCaRA/references/Technical-product-documentation-(TPD)",
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
@@ -2339,7 +2340,7 @@
 		"dcterms:source" : { "@id" : "https://www.modelica.org/" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -2354,7 +2355,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -2368,7 +2369,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -2378,11 +2379,11 @@
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
-				"@language" : "de",
+				"@language" : "en",
 				"@value" : "Material classification in motor vehicle construction: Structure and nomenclature"
 			},
 			{
-				"@language" : "en",
+				"@language" : "de",
 				"@value" : "Werkstoff-Klassifizierung im Kraftfahrzeugbau: Aufbau und Nomenklatur"
 			}
 			
@@ -2393,7 +2394,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -2405,11 +2406,11 @@
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
-				"@language" : "de",
+				"@language" : "en",
 				"@value" : "Material record - Specification of materials and finishes in IT systems"
 			},
 			{
-				"@language" : "en",
+				"@language" : "de",
 				"@value" : "Werkstoffdatensatz - Spezifikation von Werkstoffen und Oberflächen in IT-Systemen"
 			}
 			
@@ -2417,7 +2418,7 @@
 		"dcterms:source" : { "@id" : "https://webshop.vda.de/VDA/de/vda-231-200-09-2010" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -2428,11 +2429,11 @@
 		"@type" : "cmns-doc:ReferenceDocument",
 		"dc:title" : [
 			{
-				"@language" : "de",
+				"@language" : "en",
 				"@value" : "Digital data exchange in material sampling taking into account 3D data"
 			},
 			{
-				"@language" : "en",
+				"@language" : "de",
 				"@value" : "Digitaler Datenaustausch in der werkstofflichen Bemusterung unter Berücksichtigung der 3D-Daten"
 			}
 			
@@ -2443,7 +2444,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -2466,7 +2467,7 @@
 		],
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
@@ -2484,7 +2485,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -2504,7 +2505,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -2524,7 +2525,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -2541,7 +2542,7 @@
 		"dcterms:source" : { "@id" : "https://www.vdi.de/" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -2567,7 +2568,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -2584,7 +2585,7 @@
 		"dcterms:source" : { "@id" : "https://www.prostep.org/" },
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dcterms" : "http://purl.org/dc/terms/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
@@ -2599,7 +2600,7 @@
 		},
 		"@context" : {
 			"cmns-doc" : "https://www.omg.org/spec/Commons/Documents/",
-			"cas-ref" : "http://www.omg.org/spec/CASCaRA/references/",
+			"cas-ref" : "https://www.omg.org/spec/CASCaRA/references/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}

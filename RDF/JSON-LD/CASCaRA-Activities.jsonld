@@ -1,6 +1,6 @@
 [
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/",
 		"@type" : "owl:Ontology",
 		"rdfs:label" : {
 			"@value" : "Process Ontology"
@@ -40,9 +40,6 @@
 				"@value" : "Burkhart, Roger, Thematix Partners"
 			},
 			{
-				"@value" : "Christmann, Simon, :em engineering methods AG"
-			},
-			{
 				"@value" : "Delpeuch, Ghislain, SSC Services GmbH"
 			},
 			{
@@ -55,7 +52,7 @@
 				"@value" : "Esquerra, Fredwilliam, The Boeing Company"
 			},
 			{
-				"@value" : "Giese, Sarah, PROSTEP AG"
+				"@value" : "Giese, Sarah, PROSTEP Group, PROSTEP AG"
 			},
 			{
 				"@value" : "Gliniorz, Stefan, Robert Bosch GmbH"
@@ -82,9 +79,6 @@
 				"@value" : "Hashimoto, Atsushi, JAXA Japan Aerospace Exploration Agency"
 			},
 			{
-				"@value" : "Husung, Dr.-Ing. Stephan, TU Ilmenau, Department of Mechanical Engineering, Product and Systems Engineering Group"
-			},
-			{
 				"@value" : "Kaufmann, Uwe, ModelAlchemy Consulting"
 			},
 			{
@@ -94,13 +88,16 @@
 				"@value" : "Kiehlmann, Karsten, Aumovio SE"
 			},
 			{
-				"@value" : "Kirsch, Michael, :em engineering methods AG"
+				"@value" : "Kirsch, Michael"
+			},
+			{
+				"@value" : "Kirsch, Michael, PROSTEP Group, PROSTEP AG"
 			},
 			{
 				"@value" : "Klaar, Dr. Oliver, ZF Group, ZF Friedrichshafen"
 			},
 			{
-				"@value" : "Kleiner, Dr.-Ing. Sven, :em engineering methods AG"
+				"@value" : "Kleiner, Dr.-Ing. Sven"
 			},
 			{
 				"@value" : "Klöppner, Robert, MTU Aero Engines AG"
@@ -115,7 +112,7 @@
 				"@value" : "Krems, Daniel, AVL List"
 			},
 			{
-				"@value" : "Lehnen, Johannes, :em engineering methods AG"
+				"@value" : "Lehnen, Johannes"
 			},
 			{
 				"@value" : "Li, Zirui, TU Ilmenau, Department of Mechanical Engineering, Product and Systems Engineering Group"
@@ -133,16 +130,13 @@
 				"@value" : "Meyer, Nico, Volkswagen AG"
 			},
 			{
-				"@value" : "Mogo Nem, Dr. Fabrice, :em engineering methods AG"
-			},
-			{
-				"@value" : "Mogo Nem, Dr. Fabrice, Schaeffler AG, Schaeffler Technologies AG & Co. KG"
+				"@value" : "Mogo Nem, Dr. Fabrice"
 			},
 			{
 				"@value" : "Moreland, Clarence Moe, Modern Technology Solutions, Inc."
 			},
 			{
-				"@value" : "Mueller, Andreas, Schaeffler AG, Schaeffler Technologies AG & Co. KG"
+				"@value" : "Mueller, Andreas"
 			},
 			{
 				"@value" : "Nielsen, Johan, ELYSIUM Inc."
@@ -163,7 +157,7 @@
 				"@value" : "Sauvage, Michel, Airbus Operations GmbH"
 			},
 			{
-				"@value" : "Schmied, Torsten, PROSTEP AG"
+				"@value" : "Schmied, Torsten, PROSTEP Group, PROSTEP AG"
 			},
 			{
 				"@value" : "Schopper, Dominik, Mercedes-Benz AG"
@@ -175,7 +169,7 @@
 				"@value" : "Stoib, Martin, Kromberg & Schubert Automotive GmbH & Co. KG"
 			},
 			{
-				"@value" : "Stürken, Dr. Momme, Schaeffler AG, Schaeffler Technologies AG & Co. KG"
+				"@value" : "Stürken, Dr. Momme"
 			},
 			{
 				"@value" : "Tazir, Nora, prostep ivip Association"
@@ -201,26 +195,27 @@
 			
 		],
 		"dcterms:created" : {
-			"@type" : "xsd:dateTime",
-			"@value" : "14.08.2026 01:56:26"
+			"@value" : "2026-10-27T23:38:43.43Z"
 		},
 		"dcterms:license" : {
-			"@value" : "CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA\u000aCopyright (c) 2024-2026 :em engineering methods AG\u000aCopyright (c) 2024-2026 88solutions\u000aCopyright (c) 2024-2026 Aerospace Corp.\u000aCopyright (c) 2024-2026 Airbus Operations GmbH\u000aCopyright (c) 2024-2026 ATLAS Elektronik\u000aCopyright (c) 2024-2026 The Boeing Company\u000aCopyright (c) 2024-2026 enso managers GmbH\u000aCopyright (c) 2024-2026 GfSE Gesellschaft für Systems Engineering\u000aCopyright (c) 2024-2026 INCOSE\u000aCopyright (c) 2024-2026 INOMIC Solutions GmbH\u000aCopyright (c) 2024-2026 Intuitive AI\u000aCopyright (c) 2024-2026 Manfred Harms Consulting\u000aCopyright (c) 2024-2026 ModelAlchemy Consulting\u000aCopyright (c) 2024-2026 Modern Technology Solutions, Inc.\u000aCopyright (c) 2024-2026 oose eG\u000aCopyright (c) 2024-2025 PDES, Inc.\u000aCopyright (c) 2024-2026 PROSTEP AG\u000aCopyright (c) 2024-2026 prostep ivip Association\u000aCopyright (c) 2024-2026 PSG Prime Solutions Group\u000aCopyright (c) 2024-2026 Division of Design of Cyber-Physical Systems\u000aCopyright (c) 2024-2026 Collins Aerospace\u000aCopyright (c) 2024-2026 Schaeffler Technologies AG & Co. KG\u000aCopyright (c) 2024-2026 Thematix Partners\u000aCopyright (c) 2024-2026 TU Hamburg-Harburg\u000aCopyright (c) 2024-2026 Product and Systems Engineering Group\u000aCopyright (c) 2024-2026 UC3 Madrid\u000aCopyright (c) 2024-2026 VDA Verband der deutschen Automobilindustrie\u000a\u000aDigital Data Package Working Group: Defines use-cases and domain ontology as a foundation for CASCaRA\u000aCopyright (c) 2019-2026 :em engineering methods AG\u000aCopyright (c) 2019-2020 Airbus Operations GmbH\u000aCopyright (c) 2019-2026 Anark Corporation Inc.\u000aCopyright (c) 2026-2026 Aumovio SE\u000aCopyright (c) 2019-2026 AVL List\u000aCopyright (c) 2022-2026 The Boeing Company\u000aCopyright (c) 2022-2026 Robert Bosch GmbH\u000aCopyright (c) 2019-2022 CONWEAVER GmbH\u000aCopyright (c) 2019-2026 ELYSIUM Inc.\u000aCopyright (c) 2019-2021 Fraunhofer IESE\u000aCopyright (c) 2026-2026 Infineon Technologies AG\u000aCopyright (c) 2025-2026 INOMIC Solutions GmbH\u000aCopyright (c) 2025-2026 JAXA Japan Aerospace Exploration Agency\u000aCopyright (c) 2021-2024 John Deere GmbH & Co KG\u000aCopyright (c) 2019-2021 Kromberg & Schubert Automotive GmbH & Co. KG\u000aCopyright (c) 2019-2026 Mercedes-Benz AG\u000aCopyright (c) 2024-2026 MTU Aero Engines AG\u000aCopyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche AG\u000aCopyright (c) 2019-2026 PROSTEP AG\u000aCopyright (c) 2025-2026 Collins Aerospace\u000aCopyright (c) 2019-2024 Schaeffler Technologies AG & Co. KG\u000aCopyright (c) 2025-2026 Sodius Willert\u000aCopyright (c) 2019-2020 SSC Services GmbH\u000aCopyright (c) 2026-2026 T-Systems International GmbH\u000aCopyright (c) 2022-2026 Volkswagen AG\u000aCopyright (c) 2019-2026 ZF Friedrichshafen\u000a\u000aPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.\u000ahttps://opensource.org/licenses/MIT"
+			"@value" : "CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA\u000aCopyright (c) 2024-2026 :em AG\u000aCopyright (c) 2024-2026 88solutions\u000aCopyright (c) 2024-2026 Aerospace Corp.\u000aCopyright (c) 2024-2026 Airbus Operations GmbH\u000aCopyright (c) 2024-2026 ATLAS Elektronik\u000aCopyright (c) 2024-2026 The Boeing Company\u000aCopyright (c) 2024-2026 enso managers GmbH\u000aCopyright (c) 2024-2026 GfSE Gesellschaft für Systems Engineering\u000aCopyright (c) 2024-2026 INCOSE\u000aCopyright (c) 2024-2026 INOMIC Solutions GmbH\u000aCopyright (c) 2024-2026 Intuitive AI\u000aCopyright (c) 2024-2026 Manfred Harms Consulting\u000aCopyright (c) 2024-2026 ModelAlchemy Consulting\u000aCopyright (c) 2024-2026 Modern Technology Solutions, Inc.\u000aCopyright (c) 2024-2026 oose eG\u000aCopyright (c) 2024-2025 PDES, Inc.\u000aCopyright (c) 2024-2026 PROSTEP AG\u000aCopyright (c) 2024-2026 prostep ivip Association\u000aCopyright (c) 2024-2026 PSG Prime Solutions Group\u000aCopyright (c) 2024-2026 Division of Design of Cyber-Physical Systems\u000aCopyright (c) 2024-2026 Collins Aerospace\u000aCopyright (c) 2024-2026 Schaeffler\u000aCopyright (c) 2024-2026 Thematix Partners\u000aCopyright (c) 2024-2026 TU Hamburg-Harburg\u000aCopyright (c) 2024-2026 Product and Systems Engineering Group\u000aCopyright (c) 2024-2026 UC3 Madrid\u000aCopyright (c) 2024-2026 VDA Verband der deutschen Automobilindustrie\u000a\u000aDigital Data Package Working Group: Defines use-cases and domain ontology as a foundation for CASCaRA\u000aCopyright (c) 2019-2026 :em AG\u000aCopyright (c) 2019-2020 Airbus Operations GmbH\u000aCopyright (c) 2019-2026 Anark Corporation Inc.\u000aCopyright (c) 2026-2026 Aumovio SE\u000aCopyright (c) 2019-2026 AVL List\u000aCopyright (c) 2022-2026 The Boeing Company\u000aCopyright (c) 2022-2026 Robert Bosch GmbH\u000aCopyright (c) 2019-2022 CONWEAVER GmbH\u000aCopyright (c) 2019-2026 ELYSIUM Inc.\u000aCopyright (c) 2019-2021 Fraunhofer IESE\u000aCopyright (c) 2026-2026 Infineon Technologies AG\u000aCopyright (c) 2025-2026 INOMIC Solutions GmbH\u000aCopyright (c) 2025-2026 JAXA Japan Aerospace Exploration Agency\u000aCopyright (c) 2021-2024 John Deere GmbH & Co KG\u000aCopyright (c) 2019-2021 Kromberg & Schubert Automotive GmbH & Co. KG\u000aCopyright (c) 2019-2026 Mercedes-Benz AG\u000aCopyright (c) 2024-2026 MTU Aero Engines AG\u000aCopyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche AG\u000aCopyright (c) 2019-2026 PROSTEP AG\u000aCopyright (c) 2025-2026 Collins Aerospace\u000aCopyright (c) 2019-2024 Schaeffler\u000aCopyright (c) 2025-2026 Sodius Willert\u000aCopyright (c) 2019-2020 SSC Services GmbH\u000aCopyright (c) 2026-2026 T-Systems International GmbH\u000aCopyright (c) 2022-2026 Volkswagen AG\u000aCopyright (c) 2019-2026 ZF Friedrichshafen\u000a\u000aPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\\nThe software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.\u000ahttps://opensource.org/licenses/MIT"
 		},
 		"dcterms:title" : {
 			"@value" : "CASCaRA Process Ontology"
 		},
 		"owl:imports" : [
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/metamodel/" },
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/" },
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/metamodel/" },
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/" },
 			{ "@id" : "https://www.omg.org/spec/Commons/AboutCommons/" }
 			
 		],
-		"owl:versionInfo" : {
-			"@value" : "1.0"
+		"owl:version" : {
+			"@value" : "20261001"
 		},
+		"owl:versionIRI" : { "@id" : "cas-act:20261001" },
 		"@context" : {
 			
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -244,15 +239,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2026-07-07T16:04:07Z"
+			"@value" : "2026-07-07T16:04:07.07Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Design Failure Modes and Effects Analysis (D-FMEA) is performed to systematically identify and evaluate potential failure modes in a product design before implementation. It assesses the impact, causes, and likelihood of failures, enabling teams to prioritize risks and define corrective actions early in the development process. This proactive approach improves product reliability, safety, and overall design quality while reducing development costs and rework."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -277,15 +273,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2026-07-07T16:03:47Z"
+			"@value" : "2026-07-07T16:03:47.47Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "A Functional Safety Assessment (FSA) is conducted to independently evaluate whether a product, system, or process complies with applicable functional safety standards and safety requirements throughout its lifecycle. The assessment verifies the effectiveness of safety activities, identifies potential gaps, and provides evidence that safety objectives have been achieved before release or operation. It supports risk reduction and strengthens confidence in the safety integrity of the overall system."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -310,15 +307,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2025-08-16T13:43:43Z"
+			"@value" : "2025-08-16T13:43:43.43Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Product Planning is the ongoing process of identifying and articulating market requirements that define a product's feature set. Product planning serves as the basis for decisions about price, distribution and promotion.\u000aProduct planning is the process of creating a product idea and following through on it until the product is introduced to the market. Additionally, a small company must have an exit strategy for its product in case the product does not sell.\u000aProduct planning entails managing the product throughout its life using various marketing strategies, including product extensions or improvements, increased distribution, price changes and promotions.\u000a\u000d\u000aAlso includes the identification of relevant legal requirements as well as customs and tax regulations applicable to the product and the respective target markets.\u000d\u000aDescription based on: https://en.wikipedia.org/wiki/Product_planning"
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -343,15 +341,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2022-02-18T11:17:54Z"
+			"@value" : "2022-02-18T11:17:54.54Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "In conceptual design, new products or systems are defined through requirements and specified through a functional structure in mechanical, electrics/electronics, and software domains. A logical structure specifies the future product architecture in order to implement the specified functions.\u000d\u000aBesides new products, existing products may be changed or modified significantly to better comply with customer needs, or to attract new customers. Eventually, the product may be changed or adopted to comply to new standards, regulations or laws.\u000d\u000aConceptual design is usually performed at a high abstraction level and low level of detail, using parameter studies, system models, and rough geometry, if any.\u000d\u000aFor the Digital Data Package, model-based methods and data for product conceptual design are assumed."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -376,15 +375,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2024-01-31T16:54:38Z"
+			"@value" : "2024-01-31T16:54:38.38Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Includes the calculation of product cost using relevant information from product and production specifications, including dimensions, material, mass, geometric & topological complexity, surface finish including paint or coatings."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -409,15 +409,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2026-07-06T11:54:50Z"
+			"@value" : "2026-07-06T11:54:50.50Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Design of the CU product asset instance, implying the definition of the bill of features: the ultimate goal of this collaboration use case is the specification of the features, selected from the feature catalogue, that define the solution to the specific customer problem within the solution/family portfolio. The bill of feature is basically the set of actual values assigned to the variation point, which fully determine a single specific family instance. Collaboration still happens between product and CU architects, with the former specifying requirements and high level architecture for a specific problem (within their problem domain) and the latter providing a set of potential solutions, all belonging to the same CU family."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -442,15 +443,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2026-07-06T11:54:52Z"
+			"@value" : "2026-07-06T11:54:52.52Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Definition of the CU product asset instance configurability space: the objective is to define the set of configuration options that will be made available to the CU end user for each CU instance. Typical options available for CU include clock selection, clock speed, caching and cache policy, protocol for external bus interfaces, general purpose I/O configuration (direction, active etc.) as well as dedicated options for peripherals and co-processors. A key aspect is also the definition of the configuration mechanisms that will be made available to the user including configuration protection features to prevent undesired/unauthorized changes. This is a collaborative efforts involving the same actors as Use Case 1, though driven by different criteria. The CU architect must balance the flexibility provided by configurability options with the added complexity it typically brings in terms of hardware design as well as verification effort. The product owner must balance programming complexity, potential higher cost and lower efficiency, with the capability of having their single CU instance capable of covering a broader problem space."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -475,15 +477,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2026-07-06T11:54:49Z"
+			"@value" : "2026-07-06T11:54:49.49Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Definition of the “shared asset supersets” and feature catalog: this is a collaborative effort typically involving the CU architect, customer product owner and possibly supplier tech marketing team. The goal is eventually to define the product family i.e. to identify all the assets and their potential variations that can be used to provide a solution to any given problem within the target problem domain, rather than building for each problem an ad-hoc solution. The problem domain is specified by the customer/product owner, but can be typically expanded by the tech marketing team who captures requirements from other customers and push for alignment with strategic objectives. In defining the product line the CU architect is driven by objectives as costs, reuse, IPs while the product owner wants the product family to allow for a problem solution as close as possible to an “optimal” ad-hoc architecture."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -508,15 +511,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2026-07-04T21:45:52Z"
+			"@value" : "2026-07-04T21:45:52.52Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Systems architecture refers to the cross-domain definition of functions and logical structures at systems level, that will be pursued in detail by the individual domains mechanical design, electric/electronic design and software design."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -541,15 +545,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2024-01-31T16:24:37Z"
+			"@value" : "2024-01-31T16:24:37.37Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Includes all end-of-life activities required to putting a product or its component to recycling."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -574,15 +579,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2023-10-22T15:48:44Z"
+			"@value" : "2023-10-22T15:48:44.44Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "In Electrical/Electronic Design, all electrical and electronic products functions will be implemented through electrical and electonic components selection and allocation, circuit board design, and wire and harness routing.\u000d\u000aElectrical/Electronic Design is usually performed using an electrical/electronic CAD system."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -607,15 +613,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2023-10-22T15:48:42Z"
+			"@value" : "2023-10-22T15:48:42.42Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "In Electrical/Mechanical Design Collaboration, both design disciplines involved will collaborate in a common 3D space in order to adjust and coordinate allocation, dimensioning and positioning of components."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -640,15 +647,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2026-07-04T21:50:24Z"
+			"@value" : "2026-07-04T21:50:24.24Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Includes the selection of relevant inspection criteria from product and production specifications, identification and assignment of appropriate inspection methods and equipment, as well as the allocation of appropriate inspection criteria per inspection event (first-article inspection, re-qualification, inspection in production, etc.)"
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -673,15 +681,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2026-07-06T11:54:58Z"
+			"@value" : "2026-07-06T11:54:58.58Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "For long-term archiving, all product information must be configured and stored in a retrievable way. Product information includes domain-specifc models, relations between models and model entities, and meta-data about the documents and models."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -705,19 +714,30 @@
 		],
 		"cas:uses" : [
 			{ "@id" : "cas-proc:JoiningProcess" },
-			{ "@id" : "cas-arch:Function" },
-			{ "@id" : "cas-arch:FunctionalInterface" },
-			{ "@id" : "cas-arch:ItemFlow" },
-			{ "@id" : "cas-arch:StakeholderRequirement" },
-			{ "@id" : "cas-arch:SystemBehavior" },
-			{ "@id" : "cas-arch:SystemRequirement" },
+			{ "@id" : "cas-ee:ElectricElectronicComponent" },
+			{ "@id" : "cas-ee:ElectricElectronicConnection" },
+			{ "@id" : "cas-ee:ElectricElectronicPort" },
+			{ "@id" : "cas-fld:HydraulicPneumaticConnection" },
+			{ "@id" : "cas-fld:HydraulicPneumaticPort" },
+			{ "@id" : "cas-mech:BendingSpecification" },
 			{ "@id" : "cas-mech:Body" },
+			{ "@id" : "cas-mech:Cleanliness" },
+			{ "@id" : "cas-mech:Gearing" },
+			{ "@id" : "cas-mech:HeatTreatedArea" },
+			{ "@id" : "cas-mech:Hole" },
 			{ "@id" : "cas-mech:JoiningElement" },
 			{ "@id" : "cas-mech:KinematicJoint" },
 			{ "@id" : "cas-mech:KinematicMechanism" },
+			{ "@id" : "cas-mech:LubriatedSurface" },
+			{ "@id" : "cas-mech:MarkingLabeling" },
 			{ "@id" : "cas-mech:Material" },
 			{ "@id" : "cas-mech:MechanicalComponent" },
 			{ "@id" : "cas-mech:ModelAnnotation" },
+			{ "@id" : "cas-mech:PaintedCoatedArea" },
+			{ "@id" : "cas-mech:Thread" },
+			{ "@id" : "cas-sw:SoftwareClass" },
+			{ "@id" : "cas-sw:SoftwareComponent" },
+			{ "@id" : "cas-sw:SoftwareInterface" },
 			{ "@id" : "cas-sys:ComponentConnection" },
 			{ "@id" : "cas-sys:ComponentInterface" },
 			{ "@id" : "cas-sys:ComponentState" },
@@ -726,20 +746,29 @@
 			{ "@id" : "cas-val:Displacement" },
 			{ "@id" : "cas-val:ValidationResult" },
 			{ "@id" : "cas-val:ValidationRun" },
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResult" },
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationRun" }
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResult" },
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationRun" },
+			{ "@id" : "cas-arch:Function" },
+			{ "@id" : "cas-arch:FunctionalInterface" },
+			{ "@id" : "cas-arch:ItemFlow" },
+			{ "@id" : "cas-arch:StakeholderRequirement" },
+			{ "@id" : "cas-arch:SystemBehavior" },
+			{ "@id" : "cas-arch:SystemRequirement" }
 			
 		],
 		"@context" : {
-			"cas-val" : "http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/",
-			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-val" : "https://www.omg.org/spec/CASCaRA/ontology/ProductValidation/",
+			"cas-proc" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas-ee" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/",
-			"cas-sys" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
-			"dc" : "http://purl.org/dc/elements/1.1/"
+			"cas-sw" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/",
+			"cas-arch" : "https://www.omg.org/spec/CASCaRA/ontology/SystemsArchitecture/",
+			"cas-sys" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"dc" : "http://purl.org/dc/elements/1.1/",
+			"cas-fld" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
 		}
 	},
 	{
@@ -759,15 +788,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2024-01-31T16:23:43Z"
+			"@value" : "2024-01-31T16:23:43.43Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Includes all activities performed in order to maintain a product in operation."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -792,15 +822,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2021-11-24T10:35:16Z"
+			"@value" : "2021-11-24T10:35:16.16Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Includes all activities related to source and manufacture a product in different companies, plants, or locations."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -809,7 +840,7 @@
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ManufacturingSupplyChain/PackagingLogisticsPackagingLogistics",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ManufacturingSupplyChain/PackagingLogisticsPackagingLogistics",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -827,22 +858,32 @@
 			{ "@id" : "cas-fld:HydraulicPneumaticConnection" },
 			{ "@id" : "cas-fld:HydraulicPneumaticPort" },
 			{ "@id" : "cas-mech:Body" },
+			{ "@id" : "cas-mech:Cleanliness" },
+			{ "@id" : "cas-mech:Gearing" },
+			{ "@id" : "cas-mech:HeatTreatedArea" },
+			{ "@id" : "cas-mech:Hole" },
 			{ "@id" : "cas-mech:JoiningElement" },
+			{ "@id" : "cas-mech:KinematicMechanism" },
+			{ "@id" : "cas-mech:LubriatedSurface" },
+			{ "@id" : "cas-mech:MarkingLabeling" },
 			{ "@id" : "cas-mech:Material" },
-			{ "@id" : "cas-mech:MechanicalComponent" }
+			{ "@id" : "cas-mech:MechanicalComponent" },
+			{ "@id" : "cas-mech:ModelAnnotation" },
+			{ "@id" : "cas-mech:PaintedCoatedArea" },
+			{ "@id" : "cas-mech:Thread" }
 			
 		],
 		"@context" : {
-			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-proc" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/",
-			"cas-fld" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
+			"cas-fld" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ManufacturingSupplyChain/PartsManufacturingPartsManufacturing",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ManufacturingSupplyChain/PartsManufacturingPartsManufacturing",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -857,6 +898,7 @@
 		],
 		"cas:uses" : [
 			{ "@id" : "cas-man:ManufacturingEquipmentComponent" },
+			{ "@id" : "cas-proc:HeatTreatment" },
 			{ "@id" : "cas-proc:ManufacturingOperation" },
 			{ "@id" : "cas-mech:AngularDimension" },
 			{ "@id" : "cas-mech:BendingSpecification" },
@@ -868,6 +910,7 @@
 			{ "@id" : "cas-mech:HeatTreatedArea" },
 			{ "@id" : "cas-mech:Hole" },
 			{ "@id" : "cas-mech:LinearDimension" },
+			{ "@id" : "cas-mech:LubriatedSurface" },
 			{ "@id" : "cas-mech:MarkingLabeling" },
 			{ "@id" : "cas-mech:Material" },
 			{ "@id" : "cas-mech:MechanicalComponent" },
@@ -878,16 +921,16 @@
 			
 		],
 		"@context" : {
-			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-proc" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-man" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-man" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ManufacturingSupplyChain/ProductAssemblyProductAssembly",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ManufacturingSupplyChain/ProductAssemblyProductAssembly",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -902,16 +945,19 @@
 		],
 		"cas:uses" : [
 			{ "@id" : "cas-man:ManufacturingEquipmentComponent" },
+			{ "@id" : "cas-proc:AssemblyOperation" },
 			{ "@id" : "cas-proc:JoiningProcess" },
 			{ "@id" : "cas-proc:ManufacturingOperation" },
 			{ "@id" : "cas-mech:AngularDimension" },
 			{ "@id" : "cas-mech:Body" },
+			{ "@id" : "cas-mech:Cleanliness" },
 			{ "@id" : "cas-mech:Datum" },
 			{ "@id" : "cas-mech:GeometricTolerance" },
 			{ "@id" : "cas-mech:JoiningElement" },
 			{ "@id" : "cas-mech:KinematicJoint" },
 			{ "@id" : "cas-mech:KinematicMechanism" },
 			{ "@id" : "cas-mech:LinearDimension" },
+			{ "@id" : "cas-mech:LubriatedSurface" },
 			{ "@id" : "cas-mech:Material" },
 			{ "@id" : "cas-mech:MechanicalComponent" },
 			{ "@id" : "cas-mech:ModelView" },
@@ -919,16 +965,16 @@
 			
 		],
 		"@context" : {
-			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-proc" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-man" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-man" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ManufacturingSupplyChain/QualityInspectionQualityInspection",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ManufacturingSupplyChain/QualityInspectionQualityInspection",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -945,19 +991,18 @@
 			{ "@id" : "cas-man:ControlPlan" },
 			{ "@id" : "cas-proc:JoiningProcess" },
 			{ "@id" : "cas-mech:Body" },
-			{ "@id" : "cas-mech:JoiningElement" },
 			{ "@id" : "cas-mech:MechanicalComponent" },
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationCharacteristic" },
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationPlan" },
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResource" }
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationCharacteristic" },
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationPlan" },
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResource" }
 			
 		],
 		"@context" : {
-			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-proc" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-man" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-man" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
@@ -978,15 +1023,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2023-10-22T15:48:39Z"
+			"@value" : "2023-10-22T15:48:39.39Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "In Mechanical Design, physical product structure, product geometry, as well as all specifications are defined.\u000d\u000aThis includes shape, dimensioning and tolerancing, material (including semi-finished parts and treatment), surface and edge specifications.\u000d\u000aMechanical design is usually conducted using a mechanical CAD system."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1011,15 +1057,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2025-08-15T23:30:19Z"
+			"@value" : "2025-08-15T23:30:19.19Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Includes the definition of all kinds of packaging and transport equipment to ensure a product or its components will be supplied to their destination safely."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1044,15 +1091,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2025-08-15T23:29:08Z"
+			"@value" : "2025-08-15T23:29:08.08Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Manufacturing of single parts using a variety of production processes and methods, each with specific sets of data, such as CNC programs, bending specification, holes specifications, joining features, etc."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1077,15 +1125,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2023-10-22T15:48:53Z"
+			"@value" : "2023-10-22T15:48:53.53Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Simulation execution includes performing the simulation as well as documenting and summarizing the simulation results."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1110,15 +1159,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2024-01-31T16:27:17Z"
+			"@value" : "2024-01-31T16:27:17.17Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Testing execution includes scheduling tests, allocating the test rig, executing and documenting the test."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1143,11 +1193,12 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2026-07-06T11:54:18Z"
+			"@value" : "2026-07-06T11:54:18.18Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1171,8 +1222,9 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2023-10-22T15:48:51Z"
+			"@value" : "2023-10-22T15:48:51.51Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : [
 			{
 				"@language" : "de",
@@ -1185,8 +1237,8 @@
 			
 		],
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1211,15 +1263,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2026-07-04T21:50:36Z"
+			"@value" : "2026-07-04T21:50:36.36Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Defines the logical and physical layout of a production line in a plant or buiding using information from product and production specifications, including production steps, material handling, as well as the physical dimensions of product components, tools, fixtures and equipment within the  topology and systems of the manufacturing site or building."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1244,15 +1297,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2024-01-31T16:27:15Z"
+			"@value" : "2024-01-31T16:27:15.15Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Testing preparation includes the definition of product requirements and functions to be validated, the specification, design and manufacturing of samples, prototypes and test rigs."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1277,15 +1331,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2023-10-22T15:49:02Z"
+			"@value" : "2023-10-22T15:49:02.02Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "The task in the manufacturing process planning domain is to find a plan to manufacture a set of parts.\u000d\u000aSource: https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume15/ambite01a-html/node23.html"
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1310,15 +1365,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2025-08-15T23:28:39Z"
+			"@value" : "2025-08-15T23:28:39.39Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Communication between procurement and suppliers in the bidding and iquiry phase. Supports the OMG Model-Based Aqcuisition initiative."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1356,6 +1412,7 @@
 			{ "@id" : "cas-mech:Hole" },
 			{ "@id" : "cas-mech:JoiningElement" },
 			{ "@id" : "cas-mech:LinearDimension" },
+			{ "@id" : "cas-mech:LubriatedSurface" },
 			{ "@id" : "cas-mech:MarkingLabeling" },
 			{ "@id" : "cas-mech:Material" },
 			{ "@id" : "cas-mech:MechanicalComponent" },
@@ -1365,12 +1422,12 @@
 			
 		],
 		"@context" : {
-			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas-ee" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-proc" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas-ee" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
@@ -1391,15 +1448,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2025-08-15T23:29:22Z"
+			"@value" : "2025-08-15T23:29:22.22Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Assembly of components or products from single parts or sub-components according to a production plan, using all kinds of joinig and bonding."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1424,15 +1482,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2021-11-29T12:59:20Z"
+			"@value" : "2021-11-29T12:59:20.20Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Product Design is the specific synthesis, implentation and documentation of design solutions suggested by systems engineering.\u000d\u000aProduct design comprises the domain-specific design processes of mechanical, electrical/electronical design, and software engineering."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1457,15 +1516,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2022-02-18T11:15:52Z"
+			"@value" : "2022-02-18T11:15:52.52Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Product development is the creation of products with new or modified characteristics that offer new or additional benefits to the customer, or comply with new or changed standards, rules and regulations.\u000d\u000aProduct development may involve modification of an existing product or its presentation or formulation of an entirely new product that satisfies a newly-defined or changed customer need or market segment.\u000d\u000aDescription based on: https://cio-wiki.org/wiki/Product_Development"
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -1487,12 +1547,22 @@
 			}
 			
 		],
-		"cas:uses" : { "@id" : "cas-arch:Function" },
+		"cas:uses" : [
+			{ "@id" : "cas-sys:ComponentConnection" },
+			{ "@id" : "cas-sys:ComponentInterface" },
+			{ "@id" : "cas-sys:SystemComponent" },
+			{ "@id" : "cas-arch:Function" },
+			{ "@id" : "cas-arch:FunctionalInterface" },
+			{ "@id" : "cas-arch:ItemFlow" },
+			{ "@id" : "cas-arch:UseCase" }
+			
+		],
 		"@context" : {
-			"cas-con" : "http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ConceptDefinition/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-con" : "https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ConceptDefinition/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/",
+			"cas-arch" : "https://www.omg.org/spec/CASCaRA/ontology/SystemsArchitecture/",
+			"cas-sys" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
@@ -1511,35 +1581,32 @@
 			
 		],
 		"cas:provides" : [
-			{ "@id" : "cas-arch:Function" },
 			{ "@id" : "cas-sys:ComponentConnection" },
 			{ "@id" : "cas-sys:ComponentInterface" },
 			{ "@id" : "cas-sys:ComponentState" },
 			{ "@id" : "cas-sys:Deviation" },
-			{ "@id" : "cas-sys:SystemComponent" }
+			{ "@id" : "cas-sys:SystemComponent" },
+			{ "@id" : "cas-arch:Function" }
 			
 		],
 		"cas:uses" : [
-			{ "@id" : "cas-org:Role" },
+			{ "@id" : "cas-sys:ComponentConnection" },
+			{ "@id" : "cas-sys:ComponentInterface" },
+			{ "@id" : "cas-sys:ComponentState" },
+			{ "@id" : "cas-sys:SystemComponent" },
 			{ "@id" : "cas-arch:Function" },
 			{ "@id" : "cas-arch:FunctionalInterface" },
 			{ "@id" : "cas-arch:ItemFlow" },
 			{ "@id" : "cas-arch:SystemBehavior" },
-			{ "@id" : "cas-arch:SystemRequirement" },
-			{ "@id" : "cas-arch:UseCase" },
-			{ "@id" : "cas-sys:ComponentConnection" },
-			{ "@id" : "cas-sys:ComponentInterface" },
-			{ "@id" : "cas-sys:ComponentState" },
-			{ "@id" : "cas-sys:SystemComponent" }
+			{ "@id" : "cas-arch:UseCase" }
 			
 		],
 		"@context" : {
-			"cas-con" : "http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ConceptDefinition/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
-			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
+			"cas-con" : "https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ConceptDefinition/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/",
-			"cas-sys" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
+			"cas-arch" : "https://www.omg.org/spec/CASCaRA/ontology/SystemsArchitecture/",
+			"cas-sys" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
@@ -1563,11 +1630,11 @@
 			
 		],
 		"@context" : {
-			"cas-con" : "http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ConceptDefinition/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
-			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
+			"cas-con" : "https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ConceptDefinition/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/",
+			"cas-org" : "https://www.omg.org/spec/CASCaRA/ontology/Organization/",
+			"cas-arch" : "https://www.omg.org/spec/CASCaRA/ontology/SystemsArchitecture/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
@@ -1586,12 +1653,12 @@
 			
 		],
 		"cas:provides" : [
-			{ "@id" : "cas-arch:Function" },
 			{ "@id" : "cas-sys:ComponentConnection" },
 			{ "@id" : "cas-sys:ComponentInterface" },
 			{ "@id" : "cas-sys:ComponentState" },
 			{ "@id" : "cas-sys:Deviation" },
-			{ "@id" : "cas-sys:SystemComponent" }
+			{ "@id" : "cas-sys:SystemComponent" },
+			{ "@id" : "cas-arch:Function" }
 			
 		],
 		"cas:uses" : [
@@ -1601,12 +1668,12 @@
 			
 		],
 		"@context" : {
-			"cas-con" : "http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ConceptDefinition/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
-			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
+			"cas-con" : "https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ConceptDefinition/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/",
-			"cas-sys" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
+			"cas-org" : "https://www.omg.org/spec/CASCaRA/ontology/Organization/",
+			"cas-arch" : "https://www.omg.org/spec/CASCaRA/ontology/SystemsArchitecture/",
+			"cas-sys" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
@@ -1631,16 +1698,16 @@
 			
 		],
 		"@context" : {
-			"cas-con" : "http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ConceptDefinition/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
-			"cas-org" : "http://www.omg.org/spec/CASCaRA/ontology/Organization/",
+			"cas-con" : "https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ConceptDefinition/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/",
+			"cas-org" : "https://www.omg.org/spec/CASCaRA/ontology/Organization/",
+			"cas-arch" : "https://www.omg.org/spec/CASCaRA/ontology/SystemsArchitecture/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ProductDesign/ElectricalElectronicalDesignElectricalElectronicalDesign",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ProductDesign/ElectricalElectronicalDesignElectricalElectronicalDesign",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -1663,32 +1730,32 @@
 			
 		],
 		"cas:uses" : [
-			{ "@id" : "cas-arch:EnergyFlow" },
-			{ "@id" : "cas-arch:Function" },
-			{ "@id" : "cas-arch:FunctionalInterface" },
-			{ "@id" : "cas-arch:ItemFlow" },
-			{ "@id" : "cas-arch:SystemRequirement" },
 			{ "@id" : "cas-mech:Body" },
 			{ "@id" : "cas-mech:MechanicalComponent" },
 			{ "@id" : "cas-sys:ComponentConnection" },
 			{ "@id" : "cas-sys:ComponentInterface" },
 			{ "@id" : "cas-sys:ComponentState" },
-			{ "@id" : "cas-sys:SystemComponent" }
+			{ "@id" : "cas-sys:SystemComponent" },
+			{ "@id" : "cas-arch:EnergyFlow" },
+			{ "@id" : "cas-arch:Function" },
+			{ "@id" : "cas-arch:FunctionalInterface" },
+			{ "@id" : "cas-arch:ItemFlow" },
+			{ "@id" : "cas-arch:SystemRequirement" }
 			
 		],
 		"@context" : {
-			"cas-ee" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-ee" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-ctx" : "http://www.omg.org/spec/CASCaRA/ontology/ContextElements/",
-			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/",
-			"cas-sys" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-ctx" : "https://www.omg.org/spec/CASCaRA/ontology/ContextElements/",
+			"cas-arch" : "https://www.omg.org/spec/CASCaRA/ontology/SystemsArchitecture/",
+			"cas-sys" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ProductDesign/ElectricalMechanicalDesignCollaborationElectricalMechanicalDesignCollaboration",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ProductDesign/ElectricalMechanicalDesignCollaborationElectricalMechanicalDesignCollaboration",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -1710,15 +1777,15 @@
 			
 		],
 		"@context" : {
-			"cas-ee" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-ee" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ProductDesign/MechanicalDesignMechanicalDesign",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ProductDesign/MechanicalDesignMechanicalDesign",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -1752,33 +1819,33 @@
 			
 		],
 		"cas:uses" : [
+			{ "@id" : "cas-sys:ComponentConnection" },
+			{ "@id" : "cas-sys:ComponentInterface" },
+			{ "@id" : "cas-sys:ComponentState" },
+			{ "@id" : "cas-sys:SystemComponent" },
 			{ "@id" : "cas-arch:EnergyFlow" },
 			{ "@id" : "cas-arch:Function" },
 			{ "@id" : "cas-arch:FunctionalInterface" },
 			{ "@id" : "cas-arch:ItemFlow" },
 			{ "@id" : "cas-arch:MaterialFlow" },
 			{ "@id" : "cas-arch:SystemBehavior" },
-			{ "@id" : "cas-arch:SystemRequirement" },
-			{ "@id" : "cas-sys:ComponentConnection" },
-			{ "@id" : "cas-sys:ComponentInterface" },
-			{ "@id" : "cas-sys:ComponentState" },
-			{ "@id" : "cas-sys:SystemComponent" }
+			{ "@id" : "cas-arch:SystemRequirement" }
 			
 		],
 		"@context" : {
-			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-proc" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-ctx" : "http://www.omg.org/spec/CASCaRA/ontology/ContextElements/",
-			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/",
-			"cas-sys" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-ctx" : "https://www.omg.org/spec/CASCaRA/ontology/ContextElements/",
+			"cas-arch" : "https://www.omg.org/spec/CASCaRA/ontology/SystemsArchitecture/",
+			"cas-sys" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/",
-			"cas-fld" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
+			"cas-fld" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ProductDesign/SoftwareEngineeringSoftwareEngineering",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ProductDesign/SoftwareEngineeringSoftwareEngineering",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -1801,11 +1868,6 @@
 			
 		],
 		"cas:uses" : [
-			{ "@id" : "cas-arch:Function" },
-			{ "@id" : "cas-arch:FunctionalInterface" },
-			{ "@id" : "cas-arch:InformationFlow" },
-			{ "@id" : "cas-arch:ItemFlow" },
-			{ "@id" : "cas-arch:SystemRequirement" },
 			{ "@id" : "cas-ee:ElectricElectronicComponent" },
 			{ "@id" : "cas-ee:ElectricElectronicConnection" },
 			{ "@id" : "cas-ee:ElectricElectronicPort" },
@@ -1814,18 +1876,23 @@
 			{ "@id" : "cas-sys:ComponentConnection" },
 			{ "@id" : "cas-sys:ComponentInterface" },
 			{ "@id" : "cas-sys:ComponentState" },
-			{ "@id" : "cas-sys:SystemComponent" }
+			{ "@id" : "cas-sys:SystemComponent" },
+			{ "@id" : "cas-arch:Function" },
+			{ "@id" : "cas-arch:FunctionalInterface" },
+			{ "@id" : "cas-arch:InformationFlow" },
+			{ "@id" : "cas-arch:ItemFlow" },
+			{ "@id" : "cas-arch:SystemRequirement" }
 			
 		],
 		"@context" : {
-			"cas-ee" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-ee" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-ctx" : "http://www.omg.org/spec/CASCaRA/ontology/ContextElements/",
-			"cas-sw" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/",
-			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/",
-			"cas-sys" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-ctx" : "https://www.omg.org/spec/CASCaRA/ontology/ContextElements/",
+			"cas-sw" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/",
+			"cas-arch" : "https://www.omg.org/spec/CASCaRA/ontology/SystemsArchitecture/",
+			"cas-sys" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
@@ -1846,8 +1913,8 @@
 		"cas:provides" : [
 			{ "@id" : "cas-val:ValidationResult" },
 			{ "@id" : "cas-val:ValidationRun" },
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResult" },
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationRun" }
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResult" },
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationRun" }
 			
 		],
 		"cas:uses" : [
@@ -1861,11 +1928,11 @@
 			
 		],
 		"@context" : {
-			"cas-val" : "http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/",
-			"cas-ver" : "http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/VerificationValidationUsingSimulation/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-val" : "https://www.omg.org/spec/CASCaRA/ontology/ProductValidation/",
+			"cas-ver" : "https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/VerificationValidationUsingSimulation/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
@@ -1887,17 +1954,12 @@
 			{ "@id" : "cas-val:ValidationBoundaryCondition" },
 			{ "@id" : "cas-val:ValidationCriterium" },
 			{ "@id" : "cas-val:ValidationPlan" },
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationCharacteristic" },
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationPlan" },
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResource" }
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationCharacteristic" },
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationPlan" },
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResource" }
 			
 		],
 		"cas:uses" : [
-			{ "@id" : "cas-arch:Function" },
-			{ "@id" : "cas-arch:FunctionalInterface" },
-			{ "@id" : "cas-arch:ItemFlow" },
-			{ "@id" : "cas-arch:SystemBehavior" },
-			{ "@id" : "cas-arch:SystemRequirement" },
 			{ "@id" : "cas-ee:ElectricElectronicComponent" },
 			{ "@id" : "cas-ee:ElectricElectronicConnection" },
 			{ "@id" : "cas-ee:ElectricElectronicPort" },
@@ -1919,6 +1981,7 @@
 			{ "@id" : "cas-mech:KinematicMotion" },
 			{ "@id" : "cas-mech:KinematicSensor" },
 			{ "@id" : "cas-mech:LinearDimension" },
+			{ "@id" : "cas-mech:LubriatedSurface" },
 			{ "@id" : "cas-mech:MarkingLabeling" },
 			{ "@id" : "cas-mech:Material" },
 			{ "@id" : "cas-mech:MechanicalComponent" },
@@ -1927,24 +1990,29 @@
 			{ "@id" : "cas-mech:Thread" },
 			{ "@id" : "cas-sw:SoftwareClass" },
 			{ "@id" : "cas-sw:SoftwareComponent" },
-			{ "@id" : "cas-sw:SoftwareInterface" }
+			{ "@id" : "cas-sw:SoftwareInterface" },
+			{ "@id" : "cas-arch:Function" },
+			{ "@id" : "cas-arch:FunctionalInterface" },
+			{ "@id" : "cas-arch:ItemFlow" },
+			{ "@id" : "cas-arch:SystemBehavior" },
+			{ "@id" : "cas-arch:SystemRequirement" }
 			
 		],
 		"@context" : {
-			"cas-val" : "http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/",
-			"cas-ver" : "http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/VerificationValidationUsingSimulation/",
-			"cas-ee" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-val" : "https://www.omg.org/spec/CASCaRA/ontology/ProductValidation/",
+			"cas-ver" : "https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/VerificationValidationUsingSimulation/",
+			"cas-ee" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-sw" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/",
-			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-sw" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/",
+			"cas-arch" : "https://www.omg.org/spec/CASCaRA/ontology/SystemsArchitecture/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/",
-			"cas-fld" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
+			"cas-fld" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/VerificationValidationUsingTest/PerformAndDocumentTestingPerformAndDocumentTesting",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/VerificationValidationUsingTest/PerformAndDocumentTestingPerformAndDocumentTesting",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -1960,8 +2028,8 @@
 		"cas:provides" : [
 			{ "@id" : "cas-val:ValidationResult" },
 			{ "@id" : "cas-val:ValidationRun" },
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResult" },
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationRun" }
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResult" },
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationRun" }
 			
 		],
 		"cas:uses" : [
@@ -1974,15 +2042,15 @@
 			
 		],
 		"@context" : {
-			"cas-val" : "http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-val" : "https://www.omg.org/spec/CASCaRA/ontology/ProductValidation/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/VerificationValidationUsingTest/PrepareTestingPrepareTesting",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/VerificationValidationUsingTest/PrepareTestingPrepareTesting",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -1999,17 +2067,12 @@
 			{ "@id" : "cas-val:ValidationBoundaryCondition" },
 			{ "@id" : "cas-val:ValidationCriterium" },
 			{ "@id" : "cas-val:ValidationPlan" },
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationCharacteristic" },
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationPlan" },
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResource" }
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationCharacteristic" },
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationPlan" },
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResource" }
 			
 		],
 		"cas:uses" : [
-			{ "@id" : "cas-arch:Function" },
-			{ "@id" : "cas-arch:FunctionalInterface" },
-			{ "@id" : "cas-arch:ItemFlow" },
-			{ "@id" : "cas-arch:SystemBehavior" },
-			{ "@id" : "cas-arch:SystemRequirement" },
 			{ "@id" : "cas-ee:ElectricElectronicComponent" },
 			{ "@id" : "cas-ee:ElectricElectronicConnection" },
 			{ "@id" : "cas-ee:ElectricElectronicPort" },
@@ -2030,6 +2093,7 @@
 			{ "@id" : "cas-mech:KinematicMotion" },
 			{ "@id" : "cas-mech:KinematicSensor" },
 			{ "@id" : "cas-mech:LinearDimension" },
+			{ "@id" : "cas-mech:LubriatedSurface" },
 			{ "@id" : "cas-mech:MarkingLabeling" },
 			{ "@id" : "cas-mech:Material" },
 			{ "@id" : "cas-mech:MechanicalComponent" },
@@ -2038,19 +2102,24 @@
 			{ "@id" : "cas-mech:Thread" },
 			{ "@id" : "cas-sw:SoftwareClass" },
 			{ "@id" : "cas-sw:SoftwareComponent" },
-			{ "@id" : "cas-sw:SoftwareInterface" }
+			{ "@id" : "cas-sw:SoftwareInterface" },
+			{ "@id" : "cas-arch:Function" },
+			{ "@id" : "cas-arch:FunctionalInterface" },
+			{ "@id" : "cas-arch:ItemFlow" },
+			{ "@id" : "cas-arch:SystemBehavior" },
+			{ "@id" : "cas-arch:SystemRequirement" }
 			
 		],
 		"@context" : {
-			"cas-val" : "http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/",
-			"cas-ee" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-val" : "https://www.omg.org/spec/CASCaRA/ontology/ProductValidation/",
+			"cas-ee" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-sw" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/",
-			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-sw" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/",
+			"cas-arch" : "https://www.omg.org/spec/CASCaRA/ontology/SystemsArchitecture/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/",
-			"cas-fld" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
+			"cas-fld" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
 		}
 	},
 	{
@@ -2070,15 +2139,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2026-07-07T16:05:14Z"
+			"@value" : "2026-07-07T16:05:14.14Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Product Line Engineering (PLE) enables the systematic development and management of a family of related products by leveraging shared assets, architectures, and requirements. It helps organizations efficiently handle product variability and customization while maintaining consistency, quality, and compliance across product variants. This approach reduces development effort, accelerates time-to-market, and improves reuse throughout the product lifecycle."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -2087,7 +2157,7 @@
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ProductLineEngineering/DefineProductAssetInstanceConfigurabilitySpaceDefineProductAssetInstanceConfigurabilitySpace",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ProductLineEngineering/DefineProductAssetInstanceConfigurabilitySpaceDefineProductAssetInstanceConfigurabilitySpace",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -2108,14 +2178,14 @@
 			
 		],
 		"@context" : {
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-sys" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
+			"cas-sys" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ProductLineEngineering/DefineProductAssetInstanceDefineProductAssetInstance",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ProductLineEngineering/DefineProductAssetInstanceDefineProductAssetInstance",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -2136,14 +2206,14 @@
 			
 		],
 		"@context" : {
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-sys" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
+			"cas-sys" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ProductLineEngineering/DefineProductLineDefineProductLine",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ProductLineEngineering/DefineProductLineDefineProductLine",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -2157,20 +2227,20 @@
 			
 		],
 		"cas:uses" : [
-			{ "@id" : "cas-arch:Function" },
-			{ "@id" : "cas-arch:FunctionalInterface" },
-			{ "@id" : "cas-arch:SystemRequirement" },
 			{ "@id" : "cas-sys:ComponentConnection" },
 			{ "@id" : "cas-sys:ComponentInterface" },
 			{ "@id" : "cas-sys:ComponentState" },
-			{ "@id" : "cas-sys:SystemComponent" }
+			{ "@id" : "cas-sys:SystemComponent" },
+			{ "@id" : "cas-arch:Function" },
+			{ "@id" : "cas-arch:FunctionalInterface" },
+			{ "@id" : "cas-arch:SystemRequirement" }
 			
 		],
 		"@context" : {
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/",
-			"cas-sys" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
+			"cas-arch" : "https://www.omg.org/spec/CASCaRA/ontology/SystemsArchitecture/",
+			"cas-sys" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
@@ -2191,15 +2261,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2021-11-24T10:30:35Z"
+			"@value" : "2021-11-24T10:30:35.35Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Includes all phases and activities in the operation phase of a product."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -2208,7 +2279,7 @@
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ProductOperation/DisassemblyRecyclingDisassemblyRecycling",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ProductOperation/DisassemblyRecyclingDisassemblyRecycling",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -2223,7 +2294,7 @@
 		],
 		"cas:uses" : [
 			{ "@id" : "cas-proc:JoiningProcess" },
-			{ "@id" : "cas-arch:Function" },
+			{ "@id" : "cas-op:PhysicalComponent" },
 			{ "@id" : "cas-ee:ElectricElectronicComponent" },
 			{ "@id" : "cas-ee:ElectricElectronicConnection" },
 			{ "@id" : "cas-ee:ElectricElectronicPort" },
@@ -2235,22 +2306,25 @@
 			{ "@id" : "cas-mech:Material" },
 			{ "@id" : "cas-mech:MechanicalComponent" },
 			{ "@id" : "cas-mech:PaintedCoatedArea" },
-			{ "@id" : "cas-mech:Thread" }
+			{ "@id" : "cas-mech:Substance" },
+			{ "@id" : "cas-mech:Thread" },
+			{ "@id" : "cas-arch:Function" }
 			
 		],
 		"@context" : {
-			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
-			"cas-ee" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-proc" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
+			"cas-op" : "https://www.omg.org/spec/CASCaRA/ontology/Operation/",
+			"cas-ee" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-arch" : "https://www.omg.org/spec/CASCaRA/ontology/SystemsArchitecture/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/",
-			"cas-fld" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
+			"cas-fld" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ProductOperation/MaintenanceServiceMaintenanceService",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ProductOperation/MaintenanceServiceMaintenanceService",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -2265,8 +2339,7 @@
 		],
 		"cas:uses" : [
 			{ "@id" : "cas-proc:JoiningProcess" },
-			{ "@id" : "cas-arch:Function" },
-			{ "@id" : "cas-arch:UseCase" },
+			{ "@id" : "cas-op:PhysicalComponent" },
 			{ "@id" : "cas-ee:ElectricElectronicComponent" },
 			{ "@id" : "cas-ee:ElectricElectronicConnection" },
 			{ "@id" : "cas-ee:ElectricElectronicPort" },
@@ -2276,25 +2349,29 @@
 			{ "@id" : "cas-mech:JoiningElement" },
 			{ "@id" : "cas-mech:Material" },
 			{ "@id" : "cas-mech:MechanicalComponent" },
+			{ "@id" : "cas-mech:Substance" },
 			{ "@id" : "cas-sw:SoftwareClass" },
 			{ "@id" : "cas-sw:SoftwareComponent" },
-			{ "@id" : "cas-sw:SoftwareInterface" }
+			{ "@id" : "cas-sw:SoftwareInterface" },
+			{ "@id" : "cas-arch:Function" },
+			{ "@id" : "cas-arch:UseCase" }
 			
 		],
 		"@context" : {
-			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
-			"cas-ee" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-proc" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
+			"cas-op" : "https://www.omg.org/spec/CASCaRA/ontology/Operation/",
+			"cas-ee" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-sw" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/",
-			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-sw" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/",
+			"cas-arch" : "https://www.omg.org/spec/CASCaRA/ontology/SystemsArchitecture/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/",
-			"cas-fld" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
+			"cas-fld" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ProductOperation/ProductUsageProductUsage",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ProductOperation/ProductUsageProductUsage",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -2309,8 +2386,7 @@
 		],
 		"cas:provides" : { "@id" : "cas-op:OperationIncident" },
 		"cas:uses" : [
-			{ "@id" : "cas-arch:Function" },
-			{ "@id" : "cas-arch:UseCase" },
+			{ "@id" : "cas-op:PhysicalComponent" },
 			{ "@id" : "cas-ee:ElectricElectronicComponent" },
 			{ "@id" : "cas-ee:ElectricElectronicConnection" },
 			{ "@id" : "cas-ee:ElectricElectronicPort" },
@@ -2319,19 +2395,21 @@
 			{ "@id" : "cas-mech:Material" },
 			{ "@id" : "cas-mech:MechanicalComponent" },
 			{ "@id" : "cas-sw:SoftwareComponent" },
-			{ "@id" : "cas-sw:SoftwareInterface" }
+			{ "@id" : "cas-sw:SoftwareInterface" },
+			{ "@id" : "cas-arch:Function" },
+			{ "@id" : "cas-arch:UseCase" }
 			
 		],
 		"@context" : {
-			"cas-op" : "http://www.omg.org/spec/CASCaRA/ontology/Operation/",
-			"cas-ee" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-op" : "https://www.omg.org/spec/CASCaRA/ontology/Operation/",
+			"cas-ee" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-sw" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/",
-			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-sw" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/",
+			"cas-arch" : "https://www.omg.org/spec/CASCaRA/ontology/SystemsArchitecture/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/",
-			"cas-fld" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
+			"cas-fld" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
 		}
 	},
 	{
@@ -2351,15 +2429,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2023-10-22T15:49:14Z"
+			"@value" : "2023-10-22T15:49:14.14Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Usage of a product according to the designated purpose and function."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -2384,15 +2463,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2020-10-29T12:15:18Z"
+			"@value" : "2020-10-29T12:15:18.18Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "The manufacturing or production engineer's primary focus is to turn raw material into an updated or new product in the most effective, efficient & economic way possible.\u000d\u000aManufacturing Engineering is based on core industrial engineering and mechanical engineering skills, adding important elements from mechatronics, commerce, economics and business management.\u000d\u000aSource: https://en.wikipedia.org/wiki/Manufacturing_engineering"
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -2401,7 +2481,7 @@
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/CostCalculationCostCalculation",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/CostCalculationCostCalculation",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -2447,17 +2527,17 @@
 			
 		],
 		"@context" : {
-			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
-			"cas-ee" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-proc" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
+			"cas-ee" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-man" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-man" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/InspectionPlanningInspectionPlanning",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/InspectionPlanningInspectionPlanning",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -2471,9 +2551,9 @@
 			
 		],
 		"cas:provides" : [
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationCharacteristic" },
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationPlan" },
-			{ "@id" : "http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResource" }
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationCharacteristic" },
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationPlan" },
+			{ "@id" : "https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResource" }
 			
 		],
 		"cas:uses" : [
@@ -2504,16 +2584,16 @@
 			
 		],
 		"@context" : {
-			"cas-ee" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-ee" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-sys" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-sys" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/PerformProductionFailureModesAndEffectsPFmeaPerformProductionFailureModesAndEffectsPFmea",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/PerformProductionFailureModesAndEffectsPFmeaPerformProductionFailureModesAndEffectsPFmea",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -2527,20 +2607,20 @@
 			
 		],
 		"cas:uses" : [
-			{ "@id" : "cas-arch:Function" },
-			{ "@id" : "cas-sys:Deviation" }
+			{ "@id" : "cas-sys:Deviation" },
+			{ "@id" : "cas-arch:Function" }
 			
 		],
 		"@context" : {
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-arch" : "http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/",
-			"cas-sys" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
+			"cas-arch" : "https://www.omg.org/spec/CASCaRA/ontology/SystemsArchitecture/",
+			"cas-sys" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/PlantLayoutPlantLayout",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/PlantLayoutPlantLayout",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -2573,17 +2653,17 @@
 			
 		],
 		"@context" : {
-			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
-			"cas-ee" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-proc" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
+			"cas-ee" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-man" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-man" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/ProcessPlanningProcessPlanning",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/ProcessPlanningProcessPlanning",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -2626,17 +2706,17 @@
 			
 		],
 		"@context" : {
-			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
-			"cas-ee" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-proc" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
+			"cas-ee" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/",
-			"cas-fld" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
+			"cas-fld" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/"
 		}
 	},
 	{
-		"@id" : "http://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/ToolsEquipmentDesignToolsEquipmentDesign",
+		"@id" : "https://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/ToolsEquipmentDesignToolsEquipmentDesign",
 		"@type" : "cas:Activity",
 		"dc:title" : [
 			{
@@ -2676,12 +2756,12 @@
 			
 		],
 		"@context" : {
-			"cas-proc" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
-			"cas-ee" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-proc" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/",
+			"cas-ee" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-			"cas-man" : "http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
-			"cas-mech" : "http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
+			"cas-man" : "https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/",
+			"cas-mech" : "https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/",
 			"dc" : "http://purl.org/dc/elements/1.1/"
 		}
 	},
@@ -2702,15 +2782,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2025-08-15T23:29:56Z"
+			"@value" : "2025-08-15T23:29:56.56Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Includes the inspection of single parts, components or products during or after the manufacturing process, as well as the documentation of inspection results."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -2735,15 +2816,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2024-01-31T16:47:36Z"
+			"@value" : "2024-01-31T16:47:36.36Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Requirements engineering is the process of defining, eliciting, documenting, and maintaining requirements in the engineering design process.\u000d\u000aDescription based on: https://en.wikipedia.org/wiki/Requirements_engineering"
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -2768,15 +2850,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2026-07-06T11:53:58Z"
+			"@value" : "2026-07-06T11:53:58.58Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "In Software Engineering, embedded software is developed that will connect the product to the user, as well as to other products and systems.\u000aFor configuration reasons it may be that software is treated a part to be considered in Bills of Material of products or systems and to be configured related to mechanical or electronic configurations of a system."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -2801,15 +2884,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2026-07-04T21:50:45Z"
+			"@value" : "2026-07-04T21:50:45.45Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "The design of tools and equipment aligned with product design, the manufacturing process plan and plant layout."
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -2834,15 +2918,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2023-03-10T07:09:37Z"
+			"@value" : "2023-03-10T07:09:37.37Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "Modeling and simulation (M&S) is the domain-specific use of models (e.g., physical, mathematical, or logical representation of a system, entity, phenomenon, or process) as a basis for simulations to develop data utilized for management or technical decision making.\u000d\u000aSimulation may include finite elements analysis, fluid analysis, DMU simulation, kinematics simulation, as well as simulation based on software prototypes. It also includes X-in-the-Loop (XiL), using integrated design and simulation models and capabilities.\u000aVerification aims at the demonstration of product compliance to the specified design requirements.\u000aValidation aims at the demonstration of conformance to stakeholder requirements.\u000aDescription based on: https://en.wikipedia.org/wiki/Modeling_and_simulation, ISO 29148, ISO 15288"
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",
@@ -2867,15 +2952,16 @@
 		],
 		"dcterms:modified" : {
 			"@type" : "xsd:dateTime",
-			"@value" : "2023-03-10T07:29:10Z"
+			"@value" : "2023-03-10T07:29:10.10Z"
 		},
+		"rdfs:definedBy" : { "@id" : "https://www.omg.org/spec/CASCaRA/activities/" },
 		"skos:definition" : {
 			"@language" : "en",
 			"@value" : "While simulation is based on virtual models, testing is based on prototypes and samples.\u000d\u000aVerification is to demonstrate product compliance to the specified design requirements. Validation is to demonstrate conformance to stakeholder requirements.\u000d\u000aDescription based on ISO 29148, resp. ISO 15288"
 		},
 		"@context" : {
-			"cas-act" : "http://www.omg.org/spec/CASCaRA/activities/",
-			"cas" : "http://www.omg.org/spec/CASCaRA/metamodel/",
+			"cas-act" : "https://www.omg.org/spec/CASCaRA/activities/",
+			"cas" : "https://www.omg.org/spec/CASCaRA/metamodel/",
 			"rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 			"owl" : "http://www.w3.org/2002/07/owl#",
 			"dcterms" : "http://purl.org/dc/terms/",

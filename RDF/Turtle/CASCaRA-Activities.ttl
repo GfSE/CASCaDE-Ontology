@@ -1,25 +1,25 @@
-# imports: http://www.omg.org/spec/CASCaRA/metamodel/
-# imports: http://www.omg.org/spec/CASCaRA/ontology/
+# imports: https://www.omg.org/spec/CASCaRA/metamodel/
+# imports: https://www.omg.org/spec/CASCaRA/ontology/
 # imports: https://www.omg.org/spec/Commons/AboutCommons/
 
-@prefix : <http://www.omg.org/spec/CASCaRA/ontology/> .
-@prefix cas: <http://www.omg.org/spec/CASCaRA/metamodel/> .
-@prefix cas-act: <http://www.omg.org/spec/CASCaRA/activities/> .
-@prefix cas-arch: <http://www.omg.org/spec/CASCaRA/ontology/ProductArchitecture/> .
-@prefix cas-con: <http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ConceptDefinition/> .
-@prefix cas-ctx: <http://www.omg.org/spec/CASCaRA/ontology/ContextElements/> .
-@prefix cas-ee: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/> .
-@prefix cas-fld: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/> .
-@prefix cas-man: <http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/> .
-@prefix cas-mech: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/> .
-@prefix cas-op: <http://www.omg.org/spec/CASCaRA/ontology/Operation/> .
-@prefix cas-org: <http://www.omg.org/spec/CASCaRA/ontology/Organization/> .
-@prefix cas-pro: <http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/> .
-@prefix cas-proc: <http://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/> .
-@prefix cas-sw: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/> .
-@prefix cas-sys: <http://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/> .
-@prefix cas-val: <http://www.omg.org/spec/CASCaRA/ontology/ProductValidation/> .
-@prefix cas-ver: <http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/VerificationValidationUsingSimulation/> .
+@prefix : <https://www.omg.org/spec/CASCaRA/ontology/> .
+@prefix cas: <https://www.omg.org/spec/CASCaRA/metamodel/> .
+@prefix cas-act: <https://www.omg.org/spec/CASCaRA/activities/> .
+@prefix cas-arch: <https://www.omg.org/spec/CASCaRA/ontology/SystemsArchitecture/> .
+@prefix cas-con: <https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ConceptDefinition/> .
+@prefix cas-ctx: <https://www.omg.org/spec/CASCaRA/ontology/ContextElements/> .
+@prefix cas-ee: <https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/ElectricElectronicDesign/> .
+@prefix cas-fld: <https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/Fluids/> .
+@prefix cas-man: <https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/> .
+@prefix cas-mech: <https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/MechanicalDesign/> .
+@prefix cas-op: <https://www.omg.org/spec/CASCaRA/ontology/Operation/> .
+@prefix cas-org: <https://www.omg.org/spec/CASCaRA/ontology/Organization/> .
+@prefix cas-pro: <https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/> .
+@prefix cas-proc: <https://www.omg.org/spec/CASCaRA/ontology/ManufacturingSupplyChain/ManufacturingProcess/> .
+@prefix cas-sw: <https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SoftwareDesign/> .
+@prefix cas-sys: <https://www.omg.org/spec/CASCaRA/ontology/ProductDesign/SystemsDesign/> .
+@prefix cas-val: <https://www.omg.org/spec/CASCaRA/ontology/ProductValidation/> .
+@prefix cas-ver: <https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/VerificationValidationUsingSimulation/> .
 @prefix cmns-abt: <https://www.omg.org/spec/Commons/AboutCommons/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -32,7 +32,7 @@
 @prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.omg.org/spec/CASCaRA/activities/>
+<https://www.omg.org/spec/CASCaRA/activities/>
 	a owl:Ontology ;
 	rdfs:label "Process Ontology" ;
 	dcterms:abstract "The CASCaRA ontology provides a definition of data entities, attributes and relationships representing the Digital Thread.\\nNote that this version of the ontology is in development and may be subject to modifications without notice." ;
@@ -47,12 +47,11 @@
 		"Bleisinger, Oliver, Fraunhofer Gesellschaft, Fraunhofer IESE" ,
 		"Bosse, Rolf, Mercedes-Benz AG" ,
 		"Burkhart, Roger, Thematix Partners" ,
-		"Christmann, Simon, :em engineering methods AG" ,
 		"Delpeuch, Ghislain, SSC Services GmbH" ,
 		"Dörr, Sebastian, CONWEAVER GmbH" ,
 		"Engelhardt, Joachim, Sodius Willert" ,
 		"Esquerra, Fredwilliam, The Boeing Company" ,
-		"Giese, Sarah, PROSTEP AG" ,
+		"Giese, Sarah, PROSTEP Group, PROSTEP AG" ,
 		"Gliniorz, Stefan, Robert Bosch GmbH" ,
 		"Grimm, Prof. Dr. Christoph, RPTU Rheinland-Pfälzische Technische Universität, Department of Computer Science in Kaiserslautern, Division of Design of Cyber-Physical Systems" ,
 		"Grünwald, Dr. Christian, Volkswagen AG" ,
@@ -61,38 +60,37 @@
 		"Hall, Kyle, Airbus Operations GmbH" ,
 		"Harms, Manfred, Manfred Harms Consulting" ,
 		"Hashimoto, Atsushi, JAXA Japan Aerospace Exploration Agency" ,
-		"Husung, Dr.-Ing. Stephan, TU Ilmenau, Department of Mechanical Engineering, Product and Systems Engineering Group" ,
 		"Kaufmann, Uwe, ModelAlchemy Consulting" ,
 		"Kendall, Elisa, Thematix Partners" ,
 		"Kiehlmann, Karsten, Aumovio SE" ,
-		"Kirsch, Michael, :em engineering methods AG" ,
+		"Kirsch, Michael" ,
+		"Kirsch, Michael, PROSTEP Group, PROSTEP AG" ,
 		"Klaar, Dr. Oliver, ZF Group, ZF Friedrichshafen" ,
-		"Kleiner, Dr.-Ing. Sven, :em engineering methods AG" ,
+		"Kleiner, Dr.-Ing. Sven" ,
 		"Klöppner, Robert, MTU Aero Engines AG" ,
 		"Koch, Dr. Walter, GfSE Gesellschaft für Systems Engineering" ,
 		"Koethe, Manfred, 88solutions" ,
 		"Krems, Daniel, AVL List" ,
-		"Lehnen, Johannes, :em engineering methods AG" ,
+		"Lehnen, Johannes" ,
 		"Li, Zirui, TU Ilmenau, Department of Mechanical Engineering, Product and Systems Engineering Group" ,
 		"Martin, James, Anark Corporation Inc." ,
 		"Marvin, Joe, PSG Prime Solutions Group" ,
 		"Mendo, Juan Carlos, The Boeing Company" ,
 		"Meyer, Nico, Volkswagen AG" ,
-		"Mogo Nem, Dr. Fabrice, :em engineering methods AG" ,
-		"Mogo Nem, Dr. Fabrice, Schaeffler AG, Schaeffler Technologies AG & Co. KG" ,
+		"Mogo Nem, Dr. Fabrice" ,
 		"Moreland, Clarence Moe, Modern Technology Solutions, Inc." ,
-		"Mueller, Andreas, Schaeffler AG, Schaeffler Technologies AG & Co. KG" ,
+		"Mueller, Andreas" ,
 		"Nielsen, Johan, ELYSIUM Inc." ,
 		"Noguchi, Ryan, Aerospace Corp." ,
 		"Psota, Thomas, Fraunhofer Gesellschaft, Fraunhofer IESE" ,
 		"Rieger, Dr. Viola, Infineon Technologies AG" ,
 		"Rivett, Pete, Intuitive AI" ,
 		"Sauvage, Michel, Airbus Operations GmbH" ,
-		"Schmied, Torsten, PROSTEP AG" ,
+		"Schmied, Torsten, PROSTEP Group, PROSTEP AG" ,
 		"Schopper, Dominik, Mercedes-Benz AG" ,
 		"Spreier, Phil, ELYSIUM Inc." ,
 		"Stoib, Martin, Kromberg & Schubert Automotive GmbH & Co. KG" ,
-		"Stürken, Dr. Momme, Schaeffler AG, Schaeffler Technologies AG & Co. KG" ,
+		"Stürken, Dr. Momme" ,
 		"Tazir, Nora, prostep ivip Association" ,
 		"Tonelli, Cecilia, RTX Technologies, Collins Aerospace" ,
 		"Weilkiens, Tim, oose eG" ,
@@ -101,9 +99,9 @@
 		"von Dungern, Dr. Oskar, enso managers GmbH" ,
 		"von Holst, Dr.-Ing. Christian, John Deere GmbH & Co KG"
 		;
-	dcterms:created "14.08.2026 01:56:26"^^xsd:dateTime ;
+	dcterms:created "2026-10-27T23:38:43.43Z" ;
 	dcterms:license """CASCaRA Submission Team: Defines the metamodel and implements the domain ontology for CASCaRA
-Copyright (c) 2024-2026 :em engineering methods AG
+Copyright (c) 2024-2026 :em AG
 Copyright (c) 2024-2026 88solutions
 Copyright (c) 2024-2026 Aerospace Corp.
 Copyright (c) 2024-2026 Airbus Operations GmbH
@@ -124,7 +122,7 @@ Copyright (c) 2024-2026 prostep ivip Association
 Copyright (c) 2024-2026 PSG Prime Solutions Group
 Copyright (c) 2024-2026 Division of Design of Cyber-Physical Systems
 Copyright (c) 2024-2026 Collins Aerospace
-Copyright (c) 2024-2026 Schaeffler Technologies AG & Co. KG
+Copyright (c) 2024-2026 Schaeffler
 Copyright (c) 2024-2026 Thematix Partners
 Copyright (c) 2024-2026 TU Hamburg-Harburg
 Copyright (c) 2024-2026 Product and Systems Engineering Group
@@ -132,7 +130,7 @@ Copyright (c) 2024-2026 UC3 Madrid
 Copyright (c) 2024-2026 VDA Verband der deutschen Automobilindustrie
 
 Digital Data Package Working Group: Defines use-cases and domain ontology as a foundation for CASCaRA
-Copyright (c) 2019-2026 :em engineering methods AG
+Copyright (c) 2019-2026 :em AG
 Copyright (c) 2019-2020 Airbus Operations GmbH
 Copyright (c) 2019-2026 Anark Corporation Inc.
 Copyright (c) 2026-2026 Aumovio SE
@@ -152,7 +150,7 @@ Copyright (c) 2024-2026 MTU Aero Engines AG
 Copyright (c) 2019-2023 Dr.-Ing. h.c. F. Porsche AG
 Copyright (c) 2019-2026 PROSTEP AG
 Copyright (c) 2025-2026 Collins Aerospace
-Copyright (c) 2019-2024 Schaeffler Technologies AG & Co. KG
+Copyright (c) 2019-2024 Schaeffler
 Copyright (c) 2025-2026 Sodius Willert
 Copyright (c) 2019-2020 SSC Services GmbH
 Copyright (c) 2026-2026 T-Systems International GmbH
@@ -163,11 +161,12 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 https://opensource.org/licenses/MIT""" ;
 	dcterms:title "CASCaRA Process Ontology" ;
 	owl:imports
-		<http://www.omg.org/spec/CASCaRA/metamodel/> ,
-		<http://www.omg.org/spec/CASCaRA/ontology/> ,
+		<https://www.omg.org/spec/CASCaRA/metamodel/> ,
+		<https://www.omg.org/spec/CASCaRA/ontology/> ,
 		<https://www.omg.org/spec/Commons/AboutCommons/>
 		;
-	owl:versionInfo "1.0" ;
+	owl:version "20261001" ;
+	owl:versionIRI cas-act:20261001 ;
 	.
 
 cas-act:AnalyzeDesignFailureModesAndEffectsDFmea
@@ -177,7 +176,8 @@ cas-act:AnalyzeDesignFailureModesAndEffectsDFmea
 		"Analyze design failure modes and effects (D-FMEA)"@en ,
 		"Fehlermöglichkeiten und -einfluss analysieren (D-FMEA)"@de
 		;
-	dcterms:modified "2026-07-07T16:04:07Z"^^xsd:dateTime ;
+	dcterms:modified "2026-07-07T16:04:07.07Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Design Failure Modes and Effects Analysis (D-FMEA) is performed to systematically identify and evaluate potential failure modes in a product design before implementation. It assesses the impact, causes, and likelihood of failures, enabling teams to prioritize risks and define corrective actions early in the development process. This proactive approach improves product reliability, safety, and overall design quality while reducing development costs and rework."@en ;
 	.
 
@@ -188,7 +188,8 @@ cas-act:AssessFunctionalSafety
 		"Assess functional safety"@en ,
 		"Funktionale Sicherheit bewerten"@de
 		;
-	dcterms:modified "2026-07-07T16:03:47Z"^^xsd:dateTime ;
+	dcterms:modified "2026-07-07T16:03:47.47Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "A Functional Safety Assessment (FSA) is conducted to independently evaluate whether a product, system, or process complies with applicable functional safety standards and safety requirements throughout its lifecycle. The assessment verifies the effectiveness of safety activities, identifies potential gaps, and provides evidence that safety objectives have been achieved before release or operation. It supports risk reduction and strengthens confidence in the safety integrity of the overall system."@en ;
 	.
 
@@ -199,7 +200,8 @@ cas-act:BusinessOrMissionAnalysis
 		"Business or Mission Analysis"@en ,
 		"Geschäfts- oder Einsatzanalyse"@de
 		;
-	dcterms:modified "2025-08-16T13:43:43Z"^^xsd:dateTime ;
+	dcterms:modified "2025-08-16T13:43:43.43Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition """Product Planning is the ongoing process of identifying and articulating market requirements that define a product's feature set. Product planning serves as the basis for decisions about price, distribution and promotion.
 Product planning is the process of creating a product idea and following through on it until the product is introduced to the market. Additionally, a small company must have an exit strategy for its product in case the product does not sell.
 Product planning entails managing the product throughout its life using various marketing strategies, including product extensions or improvements, increased distribution, price changes and promotions.
@@ -215,7 +217,8 @@ cas-act:ConceptDefinition
 		"Concept definition"@en ,
 		"Konzeptdefinition"@de
 		;
-	dcterms:modified "2022-02-18T11:17:54Z"^^xsd:dateTime ;
+	dcterms:modified "2022-02-18T11:17:54.54Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition """In conceptual design, new products or systems are defined through requirements and specified through a functional structure in mechanical, electrics/electronics, and software domains. A logical structure specifies the future product architecture in order to implement the specified functions.
 Besides new products, existing products may be changed or modified significantly to better comply with customer needs, or to attract new customers. Eventually, the product may be changed or adopted to comply to new standards, regulations or laws.
 Conceptual design is usually performed at a high abstraction level and low level of detail, using parameter studies, system models, and rough geometry, if any.
@@ -229,7 +232,8 @@ cas-act:CostCalculation
 		"Cost Calculation"@en ,
 		"Kostenkalkulation"@de
 		;
-	dcterms:modified "2024-01-31T16:54:38Z"^^xsd:dateTime ;
+	dcterms:modified "2024-01-31T16:54:38.38Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Includes the calculation of product cost using relevant information from product and production specifications, including dimensions, material, mass, geometric & topological complexity, surface finish including paint or coatings."@en ;
 	.
 
@@ -240,7 +244,8 @@ cas-act:DefineProductAssetInstance
 		"Define product asset instance"@en ,
 		"Produktausprägung definieren"@de
 		;
-	dcterms:modified "2026-07-06T11:54:50Z"^^xsd:dateTime ;
+	dcterms:modified "2026-07-06T11:54:50.50Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Design of the CU product asset instance, implying the definition of the bill of features: the ultimate goal of this collaboration use case is the specification of the features, selected from the feature catalogue, that define the solution to the specific customer problem within the solution/family portfolio. The bill of feature is basically the set of actual values assigned to the variation point, which fully determine a single specific family instance. Collaboration still happens between product and CU architects, with the former specifying requirements and high level architecture for a specific problem (within their problem domain) and the latter providing a set of potential solutions, all belonging to the same CU family."@en ;
 	.
 
@@ -251,7 +256,8 @@ cas-act:DefineProductAssetInstanceConfigurabilitySpace
 		"Define product asset instance configurability space"@en ,
 		"Konfigurationsraum der Produktinstanz definieren"@de
 		;
-	dcterms:modified "2026-07-06T11:54:52Z"^^xsd:dateTime ;
+	dcterms:modified "2026-07-06T11:54:52.52Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Definition of the CU product asset instance configurability space: the objective is to define the set of configuration options that will be made available to the CU end user for each CU instance. Typical options available for CU include clock selection, clock speed, caching and cache policy, protocol for external bus interfaces, general purpose I/O configuration (direction, active etc.) as well as dedicated options for peripherals and co-processors. A key aspect is also the definition of the configuration mechanisms that will be made available to the user including configuration protection features to prevent undesired/unauthorized changes. This is a collaborative efforts involving the same actors as Use Case 1, though driven by different criteria. The CU architect must balance the flexibility provided by configurability options with the added complexity it typically brings in terms of hardware design as well as verification effort. The product owner must balance programming complexity, potential higher cost and lower efficiency, with the capability of having their single CU instance capable of covering a broader problem space."@en ;
 	.
 
@@ -262,7 +268,8 @@ cas-act:DefineProductLine
 		"Define product line"@en ,
 		"Produktlinie definieren"@de
 		;
-	dcterms:modified "2026-07-06T11:54:49Z"^^xsd:dateTime ;
+	dcterms:modified "2026-07-06T11:54:49.49Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Definition of the “shared asset supersets” and feature catalog: this is a collaborative effort typically involving the CU architect, customer product owner and possibly supplier tech marketing team. The goal is eventually to define the product family i.e. to identify all the assets and their potential variations that can be used to provide a solution to any given problem within the target problem domain, rather than building for each problem an ad-hoc solution. The problem domain is specified by the customer/product owner, but can be typically expanded by the tech marketing team who captures requirements from other customers and push for alignment with strategic objectives. In defining the product line the CU architect is driven by objectives as costs, reuse, IPs while the product owner wants the product family to allow for a problem solution as close as possible to an “optimal” ad-hoc architecture."@en ;
 	.
 
@@ -273,7 +280,8 @@ cas-act:DefineSystemsArchitecture
 		"Define systems Architecture"@en ,
 		"Systemarchitektur definieren"@de
 		;
-	dcterms:modified "2026-07-04T21:45:52Z"^^xsd:dateTime ;
+	dcterms:modified "2026-07-04T21:45:52.52Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Systems architecture refers to the cross-domain definition of functions and logical structures at systems level, that will be pursued in detail by the individual domains mechanical design, electric/electronic design and software design."@en ;
 	.
 
@@ -284,7 +292,8 @@ cas-act:DisassemblyRecycling
 		"Disassembly & Recycling"@en ,
 		"Zerlegung & Recycling"@de
 		;
-	dcterms:modified "2024-01-31T16:24:37Z"^^xsd:dateTime ;
+	dcterms:modified "2024-01-31T16:24:37.37Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Includes all end-of-life activities required to putting a product or its component to recycling."@en ;
 	.
 
@@ -295,7 +304,8 @@ cas-act:ElectricalElectronicalDesign
 		"Electrical/Electronical Design"@en ,
 		"Elektrik-/Elektronikentwicklung"@de
 		;
-	dcterms:modified "2023-10-22T15:48:44Z"^^xsd:dateTime ;
+	dcterms:modified "2023-10-22T15:48:44.44Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition """In Electrical/Electronic Design, all electrical and electronic products functions will be implemented through electrical and electonic components selection and allocation, circuit board design, and wire and harness routing.
 Electrical/Electronic Design is usually performed using an electrical/electronic CAD system."""@en ;
 	.
@@ -307,7 +317,8 @@ cas-act:ElectricalMechanicalDesignCollaboration
 		"Electrical/Mechanical Design Collaboration"@en ,
 		"Zusammenarbeit Elektrik/Mechanik-Konstruktion"@de
 		;
-	dcterms:modified "2023-10-22T15:48:42Z"^^xsd:dateTime ;
+	dcterms:modified "2023-10-22T15:48:42.42Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "In Electrical/Mechanical Design Collaboration, both design disciplines involved will collaborate in a common 3D space in order to adjust and coordinate allocation, dimensioning and positioning of components."@en ;
 	.
 
@@ -318,7 +329,8 @@ cas-act:InspectionPlanning
 		"Inspection Planning"@en ,
 		"Prüfplanung"@de
 		;
-	dcterms:modified "2026-07-04T21:50:24Z"^^xsd:dateTime ;
+	dcterms:modified "2026-07-04T21:50:24.24Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Includes the selection of relevant inspection criteria from product and production specifications, identification and assignment of appropriate inspection methods and equipment, as well as the allocation of appropriate inspection criteria per inspection event (first-article inspection, re-qualification, inspection in production, etc.)"@en ;
 	.
 
@@ -329,7 +341,8 @@ cas-act:LongTermArchiving
 		"Langzeitarchivierung"@de ,
 		"Long-Term Archiving"@en
 		;
-	dcterms:modified "2026-07-06T11:54:58Z"^^xsd:dateTime ;
+	dcterms:modified "2026-07-06T11:54:58.58Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "For long-term archiving, all product information must be configured and stored in a retrievable way. Product information includes domain-specifc models, relations between models and model entities, and meta-data about the documents and models."@en ;
 	.
 
@@ -341,19 +354,30 @@ cas-act:LongTermArchivingLongTermArchiving
 		;
 	cas:uses
 		cas-proc:JoiningProcess ,
-		cas-arch:Function ,
-		cas-arch:FunctionalInterface ,
-		cas-arch:ItemFlow ,
-		cas-arch:StakeholderRequirement ,
-		cas-arch:SystemBehavior ,
-		cas-arch:SystemRequirement ,
+		cas-ee:ElectricElectronicComponent ,
+		cas-ee:ElectricElectronicConnection ,
+		cas-ee:ElectricElectronicPort ,
+		cas-fld:HydraulicPneumaticConnection ,
+		cas-fld:HydraulicPneumaticPort ,
+		cas-mech:BendingSpecification ,
 		cas-mech:Body ,
+		cas-mech:Cleanliness ,
+		cas-mech:Gearing ,
+		cas-mech:HeatTreatedArea ,
+		cas-mech:Hole ,
 		cas-mech:JoiningElement ,
 		cas-mech:KinematicJoint ,
 		cas-mech:KinematicMechanism ,
+		cas-mech:LubriatedSurface ,
+		cas-mech:MarkingLabeling ,
 		cas-mech:Material ,
 		cas-mech:MechanicalComponent ,
 		cas-mech:ModelAnnotation ,
+		cas-mech:PaintedCoatedArea ,
+		cas-mech:Thread ,
+		cas-sw:SoftwareClass ,
+		cas-sw:SoftwareComponent ,
+		cas-sw:SoftwareInterface ,
 		cas-sys:ComponentConnection ,
 		cas-sys:ComponentInterface ,
 		cas-sys:ComponentState ,
@@ -362,8 +386,14 @@ cas-act:LongTermArchivingLongTermArchiving
 		cas-val:Displacement ,
 		cas-val:ValidationResult ,
 		cas-val:ValidationRun ,
-		<http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResult> ,
-		<http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationRun>
+		<https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResult> ,
+		<https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationRun> ,
+		cas-arch:Function ,
+		cas-arch:FunctionalInterface ,
+		cas-arch:ItemFlow ,
+		cas-arch:StakeholderRequirement ,
+		cas-arch:SystemBehavior ,
+		cas-arch:SystemRequirement
 		;
 	.
 
@@ -374,7 +404,8 @@ cas-act:MaintenanceService
 		"Maintenance & Service"@en ,
 		"Wartung & Instandhaltung"@de
 		;
-	dcterms:modified "2024-01-31T16:23:43Z"^^xsd:dateTime ;
+	dcterms:modified "2024-01-31T16:23:43.43Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Includes all activities performed in order to maintain a product in operation."@en ;
 	.
 
@@ -385,11 +416,12 @@ cas-act:ManufacturingSupplyChain
 		"Manufacturing & Supply Chain"@en ,
 		"Produktion & Lieferkette"@de
 		;
-	dcterms:modified "2021-11-24T10:35:16Z"^^xsd:dateTime ;
+	dcterms:modified "2021-11-24T10:35:16.16Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Includes all activities related to source and manufacture a product in different companies, plants, or locations."@en ;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ManufacturingSupplyChain/PackagingLogisticsPackagingLogistics>
+<https://www.omg.org/spec/CASCaRA/activities/ManufacturingSupplyChain/PackagingLogisticsPackagingLogistics>
 	a cas:Activity ;
 	dc:title
 		"Packaging & Logistics"@en ,
@@ -400,13 +432,23 @@ cas-act:ManufacturingSupplyChain
 		cas-fld:HydraulicPneumaticConnection ,
 		cas-fld:HydraulicPneumaticPort ,
 		cas-mech:Body ,
+		cas-mech:Cleanliness ,
+		cas-mech:Gearing ,
+		cas-mech:HeatTreatedArea ,
+		cas-mech:Hole ,
 		cas-mech:JoiningElement ,
+		cas-mech:KinematicMechanism ,
+		cas-mech:LubriatedSurface ,
+		cas-mech:MarkingLabeling ,
 		cas-mech:Material ,
-		cas-mech:MechanicalComponent
+		cas-mech:MechanicalComponent ,
+		cas-mech:ModelAnnotation ,
+		cas-mech:PaintedCoatedArea ,
+		cas-mech:Thread
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ManufacturingSupplyChain/PartsManufacturingPartsManufacturing>
+<https://www.omg.org/spec/CASCaRA/activities/ManufacturingSupplyChain/PartsManufacturingPartsManufacturing>
 	a cas:Activity ;
 	dc:title
 		"Parts Manufacturing"@en ,
@@ -414,6 +456,7 @@ cas-act:ManufacturingSupplyChain
 		;
 	cas:uses
 		cas-man:ManufacturingEquipmentComponent ,
+		cas-proc:HeatTreatment ,
 		cas-proc:ManufacturingOperation ,
 		cas-mech:AngularDimension ,
 		cas-mech:BendingSpecification ,
@@ -425,6 +468,7 @@ cas-act:ManufacturingSupplyChain
 		cas-mech:HeatTreatedArea ,
 		cas-mech:Hole ,
 		cas-mech:LinearDimension ,
+		cas-mech:LubriatedSurface ,
 		cas-mech:MarkingLabeling ,
 		cas-mech:Material ,
 		cas-mech:MechanicalComponent ,
@@ -435,7 +479,7 @@ cas-act:ManufacturingSupplyChain
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ManufacturingSupplyChain/ProductAssemblyProductAssembly>
+<https://www.omg.org/spec/CASCaRA/activities/ManufacturingSupplyChain/ProductAssemblyProductAssembly>
 	a cas:Activity ;
 	dc:title
 		"Montage"@de ,
@@ -443,16 +487,19 @@ cas-act:ManufacturingSupplyChain
 		;
 	cas:uses
 		cas-man:ManufacturingEquipmentComponent ,
+		cas-proc:AssemblyOperation ,
 		cas-proc:JoiningProcess ,
 		cas-proc:ManufacturingOperation ,
 		cas-mech:AngularDimension ,
 		cas-mech:Body ,
+		cas-mech:Cleanliness ,
 		cas-mech:Datum ,
 		cas-mech:GeometricTolerance ,
 		cas-mech:JoiningElement ,
 		cas-mech:KinematicJoint ,
 		cas-mech:KinematicMechanism ,
 		cas-mech:LinearDimension ,
+		cas-mech:LubriatedSurface ,
 		cas-mech:Material ,
 		cas-mech:MechanicalComponent ,
 		cas-mech:ModelView ,
@@ -460,7 +507,7 @@ cas-act:ManufacturingSupplyChain
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ManufacturingSupplyChain/QualityInspectionQualityInspection>
+<https://www.omg.org/spec/CASCaRA/activities/ManufacturingSupplyChain/QualityInspectionQualityInspection>
 	a cas:Activity ;
 	dc:title
 		"Quality Inspection"@en ,
@@ -470,11 +517,10 @@ cas-act:ManufacturingSupplyChain
 		cas-man:ControlPlan ,
 		cas-proc:JoiningProcess ,
 		cas-mech:Body ,
-		cas-mech:JoiningElement ,
 		cas-mech:MechanicalComponent ,
-		<http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationCharacteristic> ,
-		<http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationPlan> ,
-		<http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResource>
+		<https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationCharacteristic> ,
+		<https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationPlan> ,
+		<https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResource>
 		;
 	.
 
@@ -485,7 +531,8 @@ cas-act:MechanicalDesign
 		"Mechanical Design"@en ,
 		"Mechanische Konstruktion"@de
 		;
-	dcterms:modified "2023-10-22T15:48:39Z"^^xsd:dateTime ;
+	dcterms:modified "2023-10-22T15:48:39.39Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition """In Mechanical Design, physical product structure, product geometry, as well as all specifications are defined.
 This includes shape, dimensioning and tolerancing, material (including semi-finished parts and treatment), surface and edge specifications.
 Mechanical design is usually conducted using a mechanical CAD system."""@en ;
@@ -498,7 +545,8 @@ cas-act:PackagingLogistics
 		"Packaging & Logistics"@en ,
 		"Verpackung & Logistik"@de
 		;
-	dcterms:modified "2025-08-15T23:30:19Z"^^xsd:dateTime ;
+	dcterms:modified "2025-08-15T23:30:19.19Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Includes the definition of all kinds of packaging and transport equipment to ensure a product or its components will be supplied to their destination safely."@en ;
 	.
 
@@ -509,7 +557,8 @@ cas-act:PartsManufacturing
 		"Parts Manufacturing"@en ,
 		"Teilefertigung"@de
 		;
-	dcterms:modified "2025-08-15T23:29:08Z"^^xsd:dateTime ;
+	dcterms:modified "2025-08-15T23:29:08.08Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Manufacturing of single parts using a variety of production processes and methods, each with specific sets of data, such as CNC programs, bending specification, holes specifications, joining features, etc."@en ;
 	.
 
@@ -520,7 +569,8 @@ cas-act:PerformAndDocumentSimulation
 		"Perform and document Simulation"@en ,
 		"Simulation durchführen und dokumentieren"@de
 		;
-	dcterms:modified "2023-10-22T15:48:53Z"^^xsd:dateTime ;
+	dcterms:modified "2023-10-22T15:48:53.53Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Simulation execution includes performing the simulation as well as documenting and summarizing the simulation results."@en ;
 	.
 
@@ -531,7 +581,8 @@ cas-act:PerformAndDocumentTesting
 		"Perform and document Testing"@en ,
 		"Versuch durchführen und dokumentieren"@de
 		;
-	dcterms:modified "2024-01-31T16:27:17Z"^^xsd:dateTime ;
+	dcterms:modified "2024-01-31T16:27:17.17Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Testing execution includes scheduling tests, allocating the test rig, executing and documenting the test."@en ;
 	.
 
@@ -542,7 +593,8 @@ cas-act:PerformProductionFailureModesAndEffectsPFmea
 		"Perform production failure modes and effects (P-FMEA)"@en ,
 		"Produktions-Fehlermöglichkeits- und Einflussanalyse durchführen (P-FMEA)"@de
 		;
-	dcterms:modified "2026-07-06T11:54:18Z"^^xsd:dateTime ;
+	dcterms:modified "2026-07-06T11:54:18.18Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	.
 
 cas-act:PlanAndPrepareSimulation
@@ -552,7 +604,8 @@ cas-act:PlanAndPrepareSimulation
 		"Plan and prepare Simulation"@en ,
 		"Simulation planen und vorbereiten"@de
 		;
-	dcterms:modified "2023-10-22T15:48:51Z"^^xsd:dateTime ;
+	dcterms:modified "2023-10-22T15:48:51.51Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition
 		"Die Planung und Vorbereitung einer Simulation umfasst die Spezifikation der Simulationsziele auf der Grundlage der Produktanforderungen und -funktionen. Es folgt die Definition der Simulationsrandbedingungen und die Erstellung von Simulationsmodellen entsprechend den Simulationszielen."@de ,
 		"Planning and preparation of a simulation includes the specification of the simulation objectives based on product requirements and functions. This is followed by the definition of the simulation boundary conditions and the createion of simulation models according to simulation objectives."@en
@@ -566,7 +619,8 @@ cas-act:PlantLayout
 		"Fabriklayout"@de ,
 		"Plant Layout"@en
 		;
-	dcterms:modified "2026-07-04T21:50:36Z"^^xsd:dateTime ;
+	dcterms:modified "2026-07-04T21:50:36.36Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Defines the logical and physical layout of a production line in a plant or buiding using information from product and production specifications, including production steps, material handling, as well as the physical dimensions of product components, tools, fixtures and equipment within the  topology and systems of the manufacturing site or building."@en ;
 	.
 
@@ -577,7 +631,8 @@ cas-act:PrepareTesting
 		"Prepare Testing"@en ,
 		"Versuch vorbereiten"@de
 		;
-	dcterms:modified "2024-01-31T16:27:15Z"^^xsd:dateTime ;
+	dcterms:modified "2024-01-31T16:27:15.15Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Testing preparation includes the definition of product requirements and functions to be validated, the specification, design and manufacturing of samples, prototypes and test rigs."@en ;
 	.
 
@@ -588,7 +643,8 @@ cas-act:ProcessPlanning
 		"Process Planning"@en ,
 		"Prozessplanung"@de
 		;
-	dcterms:modified "2023-10-22T15:49:02Z"^^xsd:dateTime ;
+	dcterms:modified "2023-10-22T15:49:02.02Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition """The task in the manufacturing process planning domain is to find a plan to manufacture a set of parts.
 Source: https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume15/ambite01a-html/node23.html"""@en ;
 	.
@@ -600,7 +656,8 @@ cas-act:Procurement
 		"Beschaffung"@de ,
 		"Procurement"@en
 		;
-	dcterms:modified "2025-08-15T23:28:39Z"^^xsd:dateTime ;
+	dcterms:modified "2025-08-15T23:28:39.39Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Communication between procurement and suppliers in the bidding and iquiry phase. Supports the OMG Model-Based Aqcuisition initiative."@en ;
 	.
 
@@ -626,6 +683,7 @@ cas-act:ProcurementProcurement
 		cas-mech:Hole ,
 		cas-mech:JoiningElement ,
 		cas-mech:LinearDimension ,
+		cas-mech:LubriatedSurface ,
 		cas-mech:MarkingLabeling ,
 		cas-mech:Material ,
 		cas-mech:MechanicalComponent ,
@@ -642,7 +700,8 @@ cas-act:ProductAssembly
 		"Montage"@de ,
 		"Product Assembly"@en
 		;
-	dcterms:modified "2025-08-15T23:29:22Z"^^xsd:dateTime ;
+	dcterms:modified "2025-08-15T23:29:22.22Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Assembly of components or products from single parts or sub-components according to a production plan, using all kinds of joinig and bonding."@en ;
 	.
 
@@ -653,7 +712,8 @@ cas-act:ProductDesign
 		"Product Design"@en ,
 		"Produktentwurf"@de
 		;
-	dcterms:modified "2021-11-29T12:59:20Z"^^xsd:dateTime ;
+	dcterms:modified "2021-11-29T12:59:20.20Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition """Product Design is the specific synthesis, implentation and documentation of design solutions suggested by systems engineering.
 Product design comprises the domain-specific design processes of mechanical, electrical/electronical design, and software engineering."""@en ;
 	.
@@ -665,7 +725,8 @@ cas-act:ProductDevelopment
 		"Product Development"@en ,
 		"Produktentwicklung"@de
 		;
-	dcterms:modified "2022-02-18T11:15:52Z"^^xsd:dateTime ;
+	dcterms:modified "2022-02-18T11:15:52.52Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition """Product development is the creation of products with new or modified characteristics that offer new or additional benefits to the customer, or comply with new or changed standards, rules and regulations.
 Product development may involve modification of an existing product or its presentation or formulation of an entirely new product that satisfies a newly-defined or changed customer need or market segment.
 Description based on: https://cio-wiki.org/wiki/Product_Development"""@en ;
@@ -677,7 +738,15 @@ cas-con:AnalyzeDesignFailureModesAndEffectsDFmeaAnalyzeDesignFailureModesAndEffe
 		"Analyze design failure modes and effects (D-FMEA)"@en ,
 		"Fehlermöglichkeiten und -einfluss analysieren (D-FMEA)"@de
 		;
-	cas:uses cas-arch:Function ;
+	cas:uses
+		cas-sys:ComponentConnection ,
+		cas-sys:ComponentInterface ,
+		cas-sys:SystemComponent ,
+		cas-arch:Function ,
+		cas-arch:FunctionalInterface ,
+		cas-arch:ItemFlow ,
+		cas-arch:UseCase
+		;
 	.
 
 cas-con:AssessFunctionalSafetyAssessFunctionalSafety
@@ -687,25 +756,23 @@ cas-con:AssessFunctionalSafetyAssessFunctionalSafety
 		"Funktionale Sicherheit bewerten"@de
 		;
 	cas:provides
-		cas-arch:Function ,
 		cas-sys:ComponentConnection ,
 		cas-sys:ComponentInterface ,
 		cas-sys:ComponentState ,
 		cas-sys:Deviation ,
-		cas-sys:SystemComponent
+		cas-sys:SystemComponent ,
+		cas-arch:Function
 		;
 	cas:uses
-		cas-org:Role ,
+		cas-sys:ComponentConnection ,
+		cas-sys:ComponentInterface ,
+		cas-sys:ComponentState ,
+		cas-sys:SystemComponent ,
 		cas-arch:Function ,
 		cas-arch:FunctionalInterface ,
 		cas-arch:ItemFlow ,
 		cas-arch:SystemBehavior ,
-		cas-arch:SystemRequirement ,
-		cas-arch:UseCase ,
-		cas-sys:ComponentConnection ,
-		cas-sys:ComponentInterface ,
-		cas-sys:ComponentState ,
-		cas-sys:SystemComponent
+		cas-arch:UseCase
 		;
 	.
 
@@ -728,12 +795,12 @@ cas-con:DefineSystemsArchitectureDefineSystemsArchitecture
 		"Systemarchitektur definieren"@de
 		;
 	cas:provides
-		cas-arch:Function ,
 		cas-sys:ComponentConnection ,
 		cas-sys:ComponentInterface ,
 		cas-sys:ComponentState ,
 		cas-sys:Deviation ,
-		cas-sys:SystemComponent
+		cas-sys:SystemComponent ,
+		cas-arch:Function
 		;
 	cas:uses
 		cas-org:Role ,
@@ -755,7 +822,7 @@ cas-con:RequirementsEngineeringRequirementsEngineering
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ProductDesign/ElectricalElectronicalDesignElectricalElectronicalDesign>
+<https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ProductDesign/ElectricalElectronicalDesignElectricalElectronicalDesign>
 	a cas:Activity ;
 	dc:title
 		"Electrical/Electronical Design"@en ,
@@ -770,21 +837,21 @@ cas-con:RequirementsEngineeringRequirementsEngineering
 		cas-ee:ElectricElectronicPort
 		;
 	cas:uses
-		cas-arch:EnergyFlow ,
-		cas-arch:Function ,
-		cas-arch:FunctionalInterface ,
-		cas-arch:ItemFlow ,
-		cas-arch:SystemRequirement ,
 		cas-mech:Body ,
 		cas-mech:MechanicalComponent ,
 		cas-sys:ComponentConnection ,
 		cas-sys:ComponentInterface ,
 		cas-sys:ComponentState ,
-		cas-sys:SystemComponent
+		cas-sys:SystemComponent ,
+		cas-arch:EnergyFlow ,
+		cas-arch:Function ,
+		cas-arch:FunctionalInterface ,
+		cas-arch:ItemFlow ,
+		cas-arch:SystemRequirement
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ProductDesign/ElectricalMechanicalDesignCollaborationElectricalMechanicalDesignCollaboration>
+<https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ProductDesign/ElectricalMechanicalDesignCollaborationElectricalMechanicalDesignCollaboration>
 	a cas:Activity ;
 	dc:title
 		"Electrical/Mechanical Design Collaboration"@en ,
@@ -799,7 +866,7 @@ cas-con:RequirementsEngineeringRequirementsEngineering
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ProductDesign/MechanicalDesignMechanicalDesign>
+<https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ProductDesign/MechanicalDesignMechanicalDesign>
 	a cas:Activity ;
 	dc:title
 		"Mechanical Design"@en ,
@@ -825,21 +892,21 @@ cas-con:RequirementsEngineeringRequirementsEngineering
 		cas-mech:ModelView
 		;
 	cas:uses
+		cas-sys:ComponentConnection ,
+		cas-sys:ComponentInterface ,
+		cas-sys:ComponentState ,
+		cas-sys:SystemComponent ,
 		cas-arch:EnergyFlow ,
 		cas-arch:Function ,
 		cas-arch:FunctionalInterface ,
 		cas-arch:ItemFlow ,
 		cas-arch:MaterialFlow ,
 		cas-arch:SystemBehavior ,
-		cas-arch:SystemRequirement ,
-		cas-sys:ComponentConnection ,
-		cas-sys:ComponentInterface ,
-		cas-sys:ComponentState ,
-		cas-sys:SystemComponent
+		cas-arch:SystemRequirement
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ProductDesign/SoftwareEngineeringSoftwareEngineering>
+<https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/ProductDesign/SoftwareEngineeringSoftwareEngineering>
 	a cas:Activity ;
 	dc:title
 		"Software Engineering"@en ,
@@ -854,11 +921,6 @@ cas-con:RequirementsEngineeringRequirementsEngineering
 		cas-sw:SoftwareInterface
 		;
 	cas:uses
-		cas-arch:Function ,
-		cas-arch:FunctionalInterface ,
-		cas-arch:InformationFlow ,
-		cas-arch:ItemFlow ,
-		cas-arch:SystemRequirement ,
 		cas-ee:ElectricElectronicComponent ,
 		cas-ee:ElectricElectronicConnection ,
 		cas-ee:ElectricElectronicPort ,
@@ -867,7 +929,12 @@ cas-con:RequirementsEngineeringRequirementsEngineering
 		cas-sys:ComponentConnection ,
 		cas-sys:ComponentInterface ,
 		cas-sys:ComponentState ,
-		cas-sys:SystemComponent
+		cas-sys:SystemComponent ,
+		cas-arch:Function ,
+		cas-arch:FunctionalInterface ,
+		cas-arch:InformationFlow ,
+		cas-arch:ItemFlow ,
+		cas-arch:SystemRequirement
 		;
 	.
 
@@ -880,8 +947,8 @@ cas-ver:PerformAndDocumentSimulationPerformAndDocumentSimulation
 	cas:provides
 		cas-val:ValidationResult ,
 		cas-val:ValidationRun ,
-		<http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResult> ,
-		<http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationRun>
+		<https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResult> ,
+		<https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationRun>
 		;
 	cas:uses
 		cas-mech:Body ,
@@ -904,16 +971,11 @@ cas-ver:PlanAndPrepareSimulationPlanAndPrepareSimulation
 		cas-val:ValidationBoundaryCondition ,
 		cas-val:ValidationCriterium ,
 		cas-val:ValidationPlan ,
-		<http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationCharacteristic> ,
-		<http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationPlan> ,
-		<http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResource>
+		<https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationCharacteristic> ,
+		<https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationPlan> ,
+		<https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResource>
 		;
 	cas:uses
-		cas-arch:Function ,
-		cas-arch:FunctionalInterface ,
-		cas-arch:ItemFlow ,
-		cas-arch:SystemBehavior ,
-		cas-arch:SystemRequirement ,
 		cas-ee:ElectricElectronicComponent ,
 		cas-ee:ElectricElectronicConnection ,
 		cas-ee:ElectricElectronicPort ,
@@ -935,6 +997,7 @@ cas-ver:PlanAndPrepareSimulationPlanAndPrepareSimulation
 		cas-mech:KinematicMotion ,
 		cas-mech:KinematicSensor ,
 		cas-mech:LinearDimension ,
+		cas-mech:LubriatedSurface ,
 		cas-mech:MarkingLabeling ,
 		cas-mech:Material ,
 		cas-mech:MechanicalComponent ,
@@ -943,11 +1006,16 @@ cas-ver:PlanAndPrepareSimulationPlanAndPrepareSimulation
 		cas-mech:Thread ,
 		cas-sw:SoftwareClass ,
 		cas-sw:SoftwareComponent ,
-		cas-sw:SoftwareInterface
+		cas-sw:SoftwareInterface ,
+		cas-arch:Function ,
+		cas-arch:FunctionalInterface ,
+		cas-arch:ItemFlow ,
+		cas-arch:SystemBehavior ,
+		cas-arch:SystemRequirement
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/VerificationValidationUsingTest/PerformAndDocumentTestingPerformAndDocumentTesting>
+<https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/VerificationValidationUsingTest/PerformAndDocumentTestingPerformAndDocumentTesting>
 	a cas:Activity ;
 	dc:title
 		"Perform and document Testing"@en ,
@@ -956,8 +1024,8 @@ cas-ver:PlanAndPrepareSimulationPlanAndPrepareSimulation
 	cas:provides
 		cas-val:ValidationResult ,
 		cas-val:ValidationRun ,
-		<http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResult> ,
-		<http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationRun>
+		<https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResult> ,
+		<https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationRun>
 		;
 	cas:uses
 		cas-mech:Material ,
@@ -969,7 +1037,7 @@ cas-ver:PlanAndPrepareSimulationPlanAndPrepareSimulation
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/VerificationValidationUsingTest/PrepareTestingPrepareTesting>
+<https://www.omg.org/spec/CASCaRA/activities/ProductDevelopment/VerificationValidationUsingTest/PrepareTestingPrepareTesting>
 	a cas:Activity ;
 	dc:title
 		"Prepare Testing"@en ,
@@ -979,16 +1047,11 @@ cas-ver:PlanAndPrepareSimulationPlanAndPrepareSimulation
 		cas-val:ValidationBoundaryCondition ,
 		cas-val:ValidationCriterium ,
 		cas-val:ValidationPlan ,
-		<http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationCharacteristic> ,
-		<http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationPlan> ,
-		<http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResource>
+		<https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationCharacteristic> ,
+		<https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationPlan> ,
+		<https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResource>
 		;
 	cas:uses
-		cas-arch:Function ,
-		cas-arch:FunctionalInterface ,
-		cas-arch:ItemFlow ,
-		cas-arch:SystemBehavior ,
-		cas-arch:SystemRequirement ,
 		cas-ee:ElectricElectronicComponent ,
 		cas-ee:ElectricElectronicConnection ,
 		cas-ee:ElectricElectronicPort ,
@@ -1009,6 +1072,7 @@ cas-ver:PlanAndPrepareSimulationPlanAndPrepareSimulation
 		cas-mech:KinematicMotion ,
 		cas-mech:KinematicSensor ,
 		cas-mech:LinearDimension ,
+		cas-mech:LubriatedSurface ,
 		cas-mech:MarkingLabeling ,
 		cas-mech:Material ,
 		cas-mech:MechanicalComponent ,
@@ -1017,7 +1081,12 @@ cas-ver:PlanAndPrepareSimulationPlanAndPrepareSimulation
 		cas-mech:Thread ,
 		cas-sw:SoftwareClass ,
 		cas-sw:SoftwareComponent ,
-		cas-sw:SoftwareInterface
+		cas-sw:SoftwareInterface ,
+		cas-arch:Function ,
+		cas-arch:FunctionalInterface ,
+		cas-arch:ItemFlow ,
+		cas-arch:SystemBehavior ,
+		cas-arch:SystemRequirement
 		;
 	.
 
@@ -1028,11 +1097,12 @@ cas-act:ProductLineEngineering
 		"Product Line Engineering"@en ,
 		"Produktlinienentwicklung"@de
 		;
-	dcterms:modified "2026-07-07T16:05:14Z"^^xsd:dateTime ;
+	dcterms:modified "2026-07-07T16:05:14.14Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Product Line Engineering (PLE) enables the systematic development and management of a family of related products by leveraging shared assets, architectures, and requirements. It helps organizations efficiently handle product variability and customization while maintaining consistency, quality, and compliance across product variants. This approach reduces development effort, accelerates time-to-market, and improves reuse throughout the product lifecycle."@en ;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ProductLineEngineering/DefineProductAssetInstanceConfigurabilitySpaceDefineProductAssetInstanceConfigurabilitySpace>
+<https://www.omg.org/spec/CASCaRA/activities/ProductLineEngineering/DefineProductAssetInstanceConfigurabilitySpaceDefineProductAssetInstanceConfigurabilitySpace>
 	a cas:Activity ;
 	dc:title
 		"Define product asset instance configurability space"@en ,
@@ -1046,7 +1116,7 @@ cas-act:ProductLineEngineering
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ProductLineEngineering/DefineProductAssetInstanceDefineProductAssetInstance>
+<https://www.omg.org/spec/CASCaRA/activities/ProductLineEngineering/DefineProductAssetInstanceDefineProductAssetInstance>
 	a cas:Activity ;
 	dc:title
 		"Define product asset instance"@en ,
@@ -1060,20 +1130,20 @@ cas-act:ProductLineEngineering
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ProductLineEngineering/DefineProductLineDefineProductLine>
+<https://www.omg.org/spec/CASCaRA/activities/ProductLineEngineering/DefineProductLineDefineProductLine>
 	a cas:Activity ;
 	dc:title
 		"Define product line"@en ,
 		"Produktlinie definieren"@de
 		;
 	cas:uses
-		cas-arch:Function ,
-		cas-arch:FunctionalInterface ,
-		cas-arch:SystemRequirement ,
 		cas-sys:ComponentConnection ,
 		cas-sys:ComponentInterface ,
 		cas-sys:ComponentState ,
-		cas-sys:SystemComponent
+		cas-sys:SystemComponent ,
+		cas-arch:Function ,
+		cas-arch:FunctionalInterface ,
+		cas-arch:SystemRequirement
 		;
 	.
 
@@ -1084,11 +1154,12 @@ cas-act:ProductOperation
 		"Product Operation"@en ,
 		"Produktbetrieb"@de
 		;
-	dcterms:modified "2021-11-24T10:30:35Z"^^xsd:dateTime ;
+	dcterms:modified "2021-11-24T10:30:35.35Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Includes all phases and activities in the operation phase of a product."@en ;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ProductOperation/DisassemblyRecyclingDisassemblyRecycling>
+<https://www.omg.org/spec/CASCaRA/activities/ProductOperation/DisassemblyRecyclingDisassemblyRecycling>
 	a cas:Activity ;
 	dc:title
 		"Disassembly & Recycling"@en ,
@@ -1096,7 +1167,7 @@ cas-act:ProductOperation
 		;
 	cas:uses
 		cas-proc:JoiningProcess ,
-		cas-arch:Function ,
+		cas-op:PhysicalComponent ,
 		cas-ee:ElectricElectronicComponent ,
 		cas-ee:ElectricElectronicConnection ,
 		cas-ee:ElectricElectronicPort ,
@@ -1108,11 +1179,13 @@ cas-act:ProductOperation
 		cas-mech:Material ,
 		cas-mech:MechanicalComponent ,
 		cas-mech:PaintedCoatedArea ,
-		cas-mech:Thread
+		cas-mech:Substance ,
+		cas-mech:Thread ,
+		cas-arch:Function
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ProductOperation/MaintenanceServiceMaintenanceService>
+<https://www.omg.org/spec/CASCaRA/activities/ProductOperation/MaintenanceServiceMaintenanceService>
 	a cas:Activity ;
 	dc:title
 		"Maintenance & Service"@en ,
@@ -1120,8 +1193,7 @@ cas-act:ProductOperation
 		;
 	cas:uses
 		cas-proc:JoiningProcess ,
-		cas-arch:Function ,
-		cas-arch:UseCase ,
+		cas-op:PhysicalComponent ,
 		cas-ee:ElectricElectronicComponent ,
 		cas-ee:ElectricElectronicConnection ,
 		cas-ee:ElectricElectronicPort ,
@@ -1131,13 +1203,16 @@ cas-act:ProductOperation
 		cas-mech:JoiningElement ,
 		cas-mech:Material ,
 		cas-mech:MechanicalComponent ,
+		cas-mech:Substance ,
 		cas-sw:SoftwareClass ,
 		cas-sw:SoftwareComponent ,
-		cas-sw:SoftwareInterface
+		cas-sw:SoftwareInterface ,
+		cas-arch:Function ,
+		cas-arch:UseCase
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ProductOperation/ProductUsageProductUsage>
+<https://www.omg.org/spec/CASCaRA/activities/ProductOperation/ProductUsageProductUsage>
 	a cas:Activity ;
 	dc:title
 		"Product Usage"@en ,
@@ -1145,8 +1220,7 @@ cas-act:ProductOperation
 		;
 	cas:provides cas-op:OperationIncident ;
 	cas:uses
-		cas-arch:Function ,
-		cas-arch:UseCase ,
+		cas-op:PhysicalComponent ,
 		cas-ee:ElectricElectronicComponent ,
 		cas-ee:ElectricElectronicConnection ,
 		cas-ee:ElectricElectronicPort ,
@@ -1155,7 +1229,9 @@ cas-act:ProductOperation
 		cas-mech:Material ,
 		cas-mech:MechanicalComponent ,
 		cas-sw:SoftwareComponent ,
-		cas-sw:SoftwareInterface
+		cas-sw:SoftwareInterface ,
+		cas-arch:Function ,
+		cas-arch:UseCase
 		;
 	.
 
@@ -1166,7 +1242,8 @@ cas-act:ProductUsage
 		"Product Usage"@en ,
 		"Produktnutzung"@de
 		;
-	dcterms:modified "2023-10-22T15:49:14Z"^^xsd:dateTime ;
+	dcterms:modified "2023-10-22T15:49:14.14Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Usage of a product according to the designated purpose and function."@en ;
 	.
 
@@ -1177,13 +1254,14 @@ cas-act:ProductionDevelopment
 		"Production Development"@en ,
 		"Produktionsentwicklung"@de
 		;
-	dcterms:modified "2020-10-29T12:15:18Z"^^xsd:dateTime ;
+	dcterms:modified "2020-10-29T12:15:18.18Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition """The manufacturing or production engineer's primary focus is to turn raw material into an updated or new product in the most effective, efficient & economic way possible.
 Manufacturing Engineering is based on core industrial engineering and mechanical engineering skills, adding important elements from mechatronics, commerce, economics and business management.
 Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/CostCalculationCostCalculation>
+<https://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/CostCalculationCostCalculation>
 	a cas:Activity ;
 	dc:title
 		"Cost Calculation"@en ,
@@ -1222,16 +1300,16 @@ Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/InspectionPlanningInspectionPlanning>
+<https://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/InspectionPlanningInspectionPlanning>
 	a cas:Activity ;
 	dc:title
 		"Inspection Planning"@en ,
 		"Prüfplanung"@de
 		;
 	cas:provides
-		<http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationCharacteristic> ,
-		<http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationPlan> ,
-		<http://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResource>
+		<https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationCharacteristic> ,
+		<https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationPlan> ,
+		<https://www.omg.org/spec/CASCaRA/ontology/ProductVerification/VerificationResource>
 		;
 	cas:uses
 		cas-ee:ElectricElectronicComponent ,
@@ -1261,19 +1339,19 @@ Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/PerformProductionFailureModesAndEffectsPFmeaPerformProductionFailureModesAndEffectsPFmea>
+<https://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/PerformProductionFailureModesAndEffectsPFmeaPerformProductionFailureModesAndEffectsPFmea>
 	a cas:Activity ;
 	dc:title
 		"Perform production failure modes and effects (P-FMEA)"@en ,
 		"Produktions-Fehlermöglichkeits- und Einflussanalyse durchführen (P-FMEA)"@de
 		;
 	cas:uses
-		cas-arch:Function ,
-		cas-sys:Deviation
+		cas-sys:Deviation ,
+		cas-arch:Function
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/PlantLayoutPlantLayout>
+<https://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/PlantLayoutPlantLayout>
 	a cas:Activity ;
 	dc:title
 		"Fabriklayout"@de ,
@@ -1299,7 +1377,7 @@ Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/ProcessPlanningProcessPlanning>
+<https://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/ProcessPlanningProcessPlanning>
 	a cas:Activity ;
 	dc:title
 		"Process Planning"@en ,
@@ -1335,7 +1413,7 @@ Source: https://en.wikipedia.org/wiki/Manufacturing_engineering"""@en ;
 		;
 	.
 
-<http://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/ToolsEquipmentDesignToolsEquipmentDesign>
+<https://www.omg.org/spec/CASCaRA/activities/ProductionDevelopment/ToolsEquipmentDesignToolsEquipmentDesign>
 	a cas:Activity ;
 	dc:title
 		"Tools & Equipment Design"@en ,
@@ -1375,7 +1453,8 @@ cas-act:QualityInspection
 		"Quality Inspection"@en ,
 		"Qualitätskontrolle"@de
 		;
-	dcterms:modified "2025-08-15T23:29:56Z"^^xsd:dateTime ;
+	dcterms:modified "2025-08-15T23:29:56.56Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "Includes the inspection of single parts, components or products during or after the manufacturing process, as well as the documentation of inspection results."@en ;
 	.
 
@@ -1386,7 +1465,8 @@ cas-act:RequirementsEngineering
 		"Anforderungsmanagement"@de ,
 		"Requirements Engineering"@en
 		;
-	dcterms:modified "2024-01-31T16:47:36Z"^^xsd:dateTime ;
+	dcterms:modified "2024-01-31T16:47:36.36Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition """Requirements engineering is the process of defining, eliciting, documenting, and maintaining requirements in the engineering design process.
 Description based on: https://en.wikipedia.org/wiki/Requirements_engineering"""@en ;
 	.
@@ -1398,7 +1478,8 @@ cas-act:SoftwareEngineering
 		"Software Engineering"@en ,
 		"Softwareentwicklung"@de
 		;
-	dcterms:modified "2026-07-06T11:53:58Z"^^xsd:dateTime ;
+	dcterms:modified "2026-07-06T11:53:58.58Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition """In Software Engineering, embedded software is developed that will connect the product to the user, as well as to other products and systems.
 For configuration reasons it may be that software is treated a part to be considered in Bills of Material of products or systems and to be configured related to mechanical or electronic configurations of a system."""@en ;
 	.
@@ -1410,7 +1491,8 @@ cas-act:ToolsEquipmentDesign
 		"Tools & Equipment Design"@en ,
 		"Werkzeug- & Vorrichtungsbau"@de
 		;
-	dcterms:modified "2026-07-04T21:50:45Z"^^xsd:dateTime ;
+	dcterms:modified "2026-07-04T21:50:45.45Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition "The design of tools and equipment aligned with product design, the manufacturing process plan and plant layout."@en ;
 	.
 
@@ -1421,7 +1503,8 @@ cas-act:VerificationValidationUsingSimulation
 		"Verification & Validation using Simulation"@en ,
 		"Verifikation & Validierung durch Simulation"@de
 		;
-	dcterms:modified "2023-03-10T07:09:37Z"^^xsd:dateTime ;
+	dcterms:modified "2023-03-10T07:09:37.37Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition """Modeling and simulation (M&S) is the domain-specific use of models (e.g., physical, mathematical, or logical representation of a system, entity, phenomenon, or process) as a basis for simulations to develop data utilized for management or technical decision making.
 Simulation may include finite elements analysis, fluid analysis, DMU simulation, kinematics simulation, as well as simulation based on software prototypes. It also includes X-in-the-Loop (XiL), using integrated design and simulation models and capabilities.
 Verification aims at the demonstration of product compliance to the specified design requirements.
@@ -1436,7 +1519,8 @@ cas-act:VerificationValidationUsingTest
 		"Verification & Validation using Test"@en ,
 		"Verifikation & Validierung durch Test"@de
 		;
-	dcterms:modified "2023-03-10T07:29:10Z"^^xsd:dateTime ;
+	dcterms:modified "2023-03-10T07:29:10.10Z"^^xsd:dateTime ;
+	rdfs:definedBy <https://www.omg.org/spec/CASCaRA/activities/> ;
 	skos:definition """While simulation is based on virtual models, testing is based on prototypes and samples.
 Verification is to demonstrate product compliance to the specified design requirements. Validation is to demonstrate conformance to stakeholder requirements.
 Description based on ISO 29148, resp. ISO 15288"""@en ;
